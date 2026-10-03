@@ -83,10 +83,31 @@ const paginasEnImagen = (pdf) => {
 };
 console.log(`\n=== Etapas 3-5: localizar, validar, extraer (${EJECUTAR ? 'DE VERDAD' : 'ENSAYO, sin API'}) ===`);
 for (const pdf of docs) {
-  const e = registro.find((x) => x.pdf === pdf);
+  let e = registro.find((x) => x.pdf === pdf);
   // (Versión 407) el registro puede tener la ruta del .md sin el archivo en disco (tieneMd: false, "PAGADO SIN .md": Novorizontino 2022);
   // antes pasaba a localizar.mjs y el lote entero se caía con ENOENT.
   if (!e?.md || !existsSync(resolve(ROOT, e.md))) { estado[pdf] = 'sin transcripción (etapa 2)'; console.log(`  ${pdf}: sin .md`); continue; }
+  // ETAPA 2, ESCALÓN 1a (Versión 433, cambio E, aprobado por Guido el 2026-10-03): si el inventario dice "revisar", primero las VOCES
+  // (tools/resolver-inventario.mjs, la herramienta que ya existía en el proceso viejo): compara cada página del .md con el texto del PDF,
+  // ignora las dudas en prosa y manda a Claude solo las páginas con cifras que no coinciden. COMPUERTA: se regenera el inventario y el
+  // documento queda "listo" -> sigue. Si no, el escalón 1b de abajo (rearmar con el texto propio) como antes. Hasta acá el lote iba directo
+  // al rearmado, que con la marca "dígito distinto" reescribía TODAS las páginas por un código postal (Juventus 2017-18: "10121 Torino"
+  // contra "10151 Turin"; 1 página con cifras dudosas de 117). Se llama como comando aparte: una sola versión de la lógica.
+  let resolverEnsayo = false;
+  if (e.estado === 'revisar' && !e.cargado) {
+    const R = node('tools/resolver-inventario.mjs', ['--pdf', pdf, ...(EJECUTAR ? ['--ejecutar'] : [])], { silencioso: true });
+    const sal = `${R.stdout || ''}`;
+    if (!EJECUTAR) {
+      const l = sal.split('\n').find((x) => x.includes(pdf)) || '';
+      usd += Number((l.match(/~\$([\d.]+)/) || [])[1] || 0);
+      console.log(`  ${pdf}: el inventario dice "revisar" -> resolver-inventario (etapa 2, escalón 1a): ${l.replace(pdf, '').replace(/\s+/g, ' ').trim()}`);
+      resolverEnsayo = true;
+    } else {
+      node('tools/inventario-transcripciones.mjs', [], { silencioso: true }); registro = leerRegistro();
+      e = registro.find((x) => x.pdf === pdf) || e;
+      console.log(`  ${pdf}: resolver-inventario (etapa 2, escalón 1a): el inventario ahora dice "${e.estado}"${e.estado === 'listo' ? '' : ` (${String(e.detalle || '').slice(0, 120)}): sigue el escalón 1b`}`);
+    }
+  }
   // AÑO YA CARGADO (Versión 406, auditoría del pipeline): con --reintentar, un documento cuyo año ya está en el sitio NO se reintenta por
   // "desglose que no suma" (se cargó con el renglón sin abrir, a propósito; en Fortaleza 2018-2020 esas marcas eran ruido: 5.867,807 contra
   // 5.867,804). Solo por "categoría en 0" de su propuesta de carga, y solo si esa propuesta es posterior al último ajuste manual (si no, es
@@ -125,7 +146,7 @@ for (const pdf of docs) {
   // se rearman con él (tools/texto-propio-a-md.mjs, gratis) y el documento vuelve a localizar, validar y extraer. Una vez por documento
   // (el .md queda marcado). Compuerta: la etapa 4 sobre el .md nuevo y, después, la etapa 6. Caso: Goiás 2008-2016 (balances de diario).
   // (Versión 397) el rearmado tiene su propia escalera: método "columnas" primero; "regiones" solo si con "columnas" la etapa 6 no cerró.
-  const TP = paginasARearmar(pdf, e.md, e); const pagsTP = TP?.paginas;
+  const TP = resolverEnsayo ? null : paginasARearmar(pdf, e.md, e); const pagsTP = TP?.paginas; // (Versión 433) en el ensayo, el 1a va primero
   if (pagsTP) {
     if (!(REINTENTAR && EJECUTAR)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: ${TP.metodo === 'regiones' ? 'rearmada con el texto propio (columnas) y sigue sin cerrar' : 'la transcripción no coincide con el texto propio del PDF'} (págs. ${pagsTP.join(', ')}): rearmar (método ${TP.metodo}, --reintentar, gratis) + localizar y extraer ~US$ 0,12`); if (!EJECUTAR) usd += 0.12; continue; }
     const RA = rearmar(pdf, pagsTP, TP.metodo);

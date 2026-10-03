@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 433 — Cambio E: el lote pasa por las voces (resolver-inventario) antes de rearmar una transcripción "revisar" (2026-10-03)
+
+- `tools/lote.mjs`, etapa 2, escalón 1a: si el inventario dice "revisar", corre `resolver-inventario.mjs --pdf` (en el ensayo, su estimación; con `--ejecutar`, de verdad), regenera el inventario y, si queda "listo", sigue; si no, el rearmado (escalón 1b) como antes. Pedido y diseño aprobados por Guido.
+- Caso: Juventus 2015-16 a 2019-20, marcados "revisar" por códigos postales y años ("10121 Torino" contra "10151 Turin"); el lote los salteaba o les reescribía todas las páginas. Ahora: 5 páginas con cifras dudosas de 650, ~US$ 0,10.
+- Medido: el ensayo de los lotes 07-11 da idéntico (sus 64 documentos están "cargado").
+
 ## Versión 432 — Juventus: alta del club y ejercicio 2012 (2026-10-03)
 
 - Alta `juventus-it` (Italia, EUR, ejercicio desde el 07-01, "Juventus Football Club S.p.A."). Perfil (sin socios ni otros deportes) y ligas 2003-2025 en la caché (Serie B en 2007).

@@ -149,6 +149,8 @@ Mitigaciones:
  ESCALÓN 0  la transcripción que hay ──────── ¿localizar encuentra el estado de resultados? sí → sigue
  ESCALÓN 1  si no, la transcripción no es de Mistral y el PDF tiene páginas interiores en imagen
             → re-transcribir con Mistral y volver a localizar (con --reintentar) ── ¿lo encuentra? sí → sigue
+ ESCALÓN 1a (Versión 433) el inventario dice "revisar" → resolver-inventario.mjs (las VOCES): Claude solo en las páginas con cifras que
+            no coinciden con el texto del PDF; ignora las dudas en prosa ── compuerta: el inventario queda "listo" → sigue
  ESCALÓN 1b (Versión 395, camino de error) PDF digital, la etapa 4 dice que el .md no coincide con el texto propio y la verificación no
             quedó ok → texto-propio-a-md.mjs rearma esas páginas (gratis) y se vuelve a localizar ── compuerta: etapas 4 y 6
             rearmado, con su escalera (Versión 397): método "columnas" ─► si la etapa 6 sigue sin cerrar, método "regiones" (una vez cada uno)
