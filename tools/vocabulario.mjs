@@ -543,7 +543,7 @@ export const VOCABULARIO = {
   },
   DEUDA_FINANCIERA: {
     es: ['prestamo*', 'otros pasivos financieros', 'pasivos financieros', 'deudas bancarias*', 'deudas financieras', 'obligaciones financieras', 'obligaciones con bancos*', 'deudas con entidades de credito'],
-    pt: ['emprestimo*', 'financiamento*', 'emprestimos e financiamentos'], en: ['borrowings', 'bank loans*', 'loans and borrowings', 'bank overdraft*', 'loans'],
+    pt: ['emprestimo*', 'financiamento*', 'emprestimos e financiamentos', 'mutuo*'], // mutuo: Versión 422 (Novorizontino, préstamo de I-9 Sports) en: ['borrowings', 'bank loans*', 'loans and borrowings', 'bank overdraft*', 'loans'],
     de: ['verbindlichkeiten gegenuber kreditinstitut*', 'darlehen', 'finanzverbindlichkeiten'], fr: ['emprunts*', 'dettes financieres'],
     it: ['debiti verso banche', 'debiti finanziari'], nl: ['schulden aan kredietinstellingen', 'leningen'], da: ['gaeld til kreditinstitutter', 'bankgaeld'],
     no: ['gjeld til kredittinstitusjoner', 'banklan'], sv: ['skulder till kreditinstitut', 'banklan'],

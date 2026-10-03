@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 422 — Caja y deuda: el diccionario ignora el código de cuenta del balancete; "mutuo" (2026-10-02)
+
+- `caja-deuda.mjs`: para el diccionario (`norm`), la etiqueta va sin el código de cuenta del principio ("2.2.01 EMPRESTIMOS…", "29 2201010001 - …"); la etiqueta impresa y la familia no cambian. `vocabulario.mjs`: "mutuo*" en DEUDA_FINANCIERA (pt).
+- Caso: Novorizontino 2013-2017. El escalón 1 de deuda ahora propone (antes "sin propuesta"), pero todavía no destraba: suma el préstamo en los tres niveles del balancete (2016: 31,9 M contra ~10 M) y la compuerta lo frena.
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos.
+
 ## Versión 421 — Caja y deuda: una sola referencia a nota por fila (2026-10-02)
 
 - `caja-deuda.mjs` (lectura de filas): se saca UNA referencia a nota al principio de las cifras, no en bucle; el importe siguiente también puede ser un entero chico (en miles).

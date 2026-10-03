@@ -101,7 +101,11 @@ export function filasDelMd(md) {
     if (nums.length > 1 && Number.isInteger(nums[0]) && Math.abs(nums[0]) >= 1 && Math.abs(nums[0]) < 100 && !/[.,]/.test(String(crudos[0]))) { nums = nums.slice(1); crudos = crudos.slice(1); }
     if (!nums.length) continue;
     nums = nums.map(Math.abs); // LEER UNA FILA: valor absoluto (ver cabecera)
-    filas.push({ linea: i + 1, pagina, etiqueta, norm: normalizar(etiqueta), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums });
+    // (Versión 422) para el DICCIONARIO (vocabulario.mjs, que busca la palabra al principio) la etiqueta va sin el código de cuenta de un
+    // balancete ("2.2.01 EMPRESTIMOS...", "29 2201010001 - I-9 SPORTS"): la familia y la etiqueta impresa no cambian. Caso: Novorizontino
+    // 2013-2017, "2.2.01 EMPRESTIMOS E FINANCIAMENTOS" no la reconocía el escalón 1 de deuda.
+    const sinCodigo = etiqueta.replace(/^\s*(?:\d+\s+)?\d+(?:[.\-]\d+)*\s*(?:-\s+)?(?=\p{L})/u, '');
+    filas.push({ linea: i + 1, pagina, etiqueta, norm: normalizar(sinCodigo), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums });
   }
   // Páginas del balance: título o total del activo/pasivo, y sin el título del flujo de efectivo / cambios en el patrimonio.
   // Dos ajustes PROPIOS de esta tool (no se tocaron las regex compartidas de vocabulario.mjs, que usan otras tools): (1) plurales: UC 2024
