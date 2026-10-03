@@ -179,7 +179,8 @@ const aellarissagrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:2.300317, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: año anterior): "Δάνεια" pág. 6; cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 6
+    grossDebt:0.007031, cash:0.252356,
     officialTotalRevenue:3.384045, officialTotalExpenses:2.718314, officialPAT:0.649637,
   },
   2024: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -197,7 +198,8 @@ const aellarissagrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.418981, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: documento siguiente): "Δάνεια" pág. 7; cash escalón 0 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
+    grossDebt:0.0075, cash:0.212242,
     officialTotalRevenue:1.21248, officialTotalExpenses:3.568785, officialPAT:-2.363346,
   },
   2022: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -216,7 +218,8 @@ const aellarissagrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:2.068146, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: año anterior): "Δάνεια" pág. 7; cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
+    grossDebt:0.015, cash:0.243669,
     officialTotalRevenue:2.332679, officialTotalExpenses:2.386989, officialPAT:-0.062813,
   },
   2020: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -230,7 +233,8 @@ const aellarissagrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Πωλήσεις υπηρεσιών', lado:'revenue', importe:2.168926, motivo:'Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)'},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 6; cash escalón 0 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 6
+    grossDebt:0.015, cash:0.208989,
     officialTotalRevenue:2.793526, officialTotalExpenses:3.312966, officialPAT:-0.525172,
   },
   2018: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -245,7 +249,8 @@ const aellarissagrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:2.710883, motivo:'el documento no desglosa este renglón'},
       {renglon:'(-) Κόστος πωλήσεων', lado:'expense', importe:1.541699, motivo:'Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)'},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
+    grossDebt:null, cash:0.468862,
     officialTotalRevenue:3.40008, officialTotalExpenses:2.658492, officialPAT:0.730033,
   },
   2017: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -264,7 +269,8 @@ const aellarissagrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:1.881042, motivo:'el documento no desglosa este renglón'},
       {renglon:'(-) Κόστος πωλήσεων', lado:'expense', importe:1.477726, motivo:'Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)'},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
+    grossDebt:null, cash:0.230582,
     officialTotalRevenue:2.219786, officialTotalExpenses:2.567982, officialPAT:-0.35446,
   },
   2016: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -283,7 +289,8 @@ const aellarissagrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.596069, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:0.726277, motivo:'Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)'},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
+    grossDebt:null, cash:0.098071,
     officialTotalRevenue:1.001265, officialTotalExpenses:1.351793, officialPAT:-0.352929,
   },
   2021: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -302,7 +309,8 @@ const aellarissagrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Πωλήσεις υπηρεσιών', lado:'revenue', importe:2.067665, motivo:'Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)'},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: año anterior): "Δάνεια" pág. 7; cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
+    grossDebt:0.015, cash:0.899113,
     officialTotalRevenue:4.31844, officialTotalExpenses:3.819903, officialPAT:0.473197,
   },
 };
