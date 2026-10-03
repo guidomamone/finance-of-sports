@@ -122,7 +122,7 @@ window.CLUB_INDEX = {
   "newells-ar": {"n":"Newell's Old Boys","c":"AR","q":"full","y":1,"last":2019,"yrs":[[2019,"official_balance_sheet"]]},
   "nordsjaelland-dk": {"n":"FC Nordsjælland","c":"DK","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "nottinghamforest-gb": {"n":"Nottingham Forest","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
-  "novorizontino-br": {"n":"Novorizontino","c":"BR","q":"full","y":8,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2010,"official_balance_sheet"]]},
+  "novorizontino-br": {"n":"Novorizontino","c":"BR","q":"full","y":9,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2010,"official_balance_sheet"]]},
   "oncecaldas": {"n":"Once Caldas","c":"CO","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "operarioferroviario-br": {"n":"Operário Ferroviário","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "osasuna-es": {"n":"CA Osasuna","c":"ES","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2022,"official_balance_sheet"]]},

@@ -65,3 +65,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2025 desde `Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2025.pdf` (sourceId `novorizontino-br-demonstracoes-financeiras-2025`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2010 desde `Clubes/Brasil/Novorizontino/balanco-2010.pdf` (sourceId `novorizontino-br-balanco-2010`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2022 desde `Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.pdf` (sourceId `novorizontino-br-demonstracoes-financeiras-2022`).

@@ -127,6 +127,18 @@ const novorizontinobrRevenueLinesByYear = {
     { rawLabel:'Convênio P.M.N.H nº 21/10', normalizedCategory:'other_income', amountNative:0.07, disclosureLevel:'aggregated' }, // pág. 1, precedente
     { rawLabel:'Doações, Receitas de Patrocínio, Locação de Espaço, e Ev', normalizedCategory:'other_income', amountNative:0.06035, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
   ],
+  // 2022: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/demonstracoes-financeiras-2022.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2022: [
+    { rawLabel:'Direitos de transmissão de TV', normalizedCategory:'broadcasting', amountNative:11.951683, disclosureLevel:'aggregated' }, // pág. 10, precedente
+    { rawLabel:'Negociação de atletas', normalizedCategory:'player_sales', amountNative:12.741552, disclosureLevel:'aggregated' }, // pág. 10, precedente
+    { rawLabel:'Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:2.038276, disclosureLevel:'aggregated' }, // pág. 10, precedente
+    { rawLabel:'Patrocínio', normalizedCategory:'sponsorship_commercial', amountNative:1.0085, disclosureLevel:'aggregated' }, // pág. 10, precedente
+    { rawLabel:'Arrecadação de jogos', normalizedCategory:'matchday_competition', amountNative:0.764723, disclosureLevel:'aggregated' }, // pág. 10, precedente
+    { rawLabel:'Premiações', normalizedCategory:'competition_bonus', amountNative:0.596, disclosureLevel:'aggregated' }, // pág. 10, precedente
+    { rawLabel:'Convênios', normalizedCategory:'other_income', amountNative:0.897625, disclosureLevel:'aggregated' }, // pág. 10, precedente
+    { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0.004875, disclosureLevel:'aggregated' }, // pág. 10, precedente
+  ],
 };
 const novorizontinobrExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-03)
@@ -273,6 +285,40 @@ const novorizontinobrExpenseLinesByYear = {
     { rawLabel:'Despesas Gerais e Manutenção', normalizedCategory:'admin_general_expense', amountNative:-0.056758, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
     { rawLabel:'Projeto Escola de Futebol -Conv. Nº 21/10', normalizedCategory:'youth_other_sports_expense', amountNative:-0.066653, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
   ],
+  2022: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Com pessoal', normalizedCategory:'wages_squad', amountNative:-21.71003, disclosureLevel:'aggregated' }, // pág. 10, precedente
+    { rawLabel:'Aluguel de imóveis', normalizedCategory:'admin_general_expense', amountNative:-1.470969, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Serviços e exames médicos', normalizedCategory:'admin_general_expense', amountNative:-0.464222, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Taxa da FPF e CBF', normalizedCategory:'match_organisation_expense', amountNative:-0.219177, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Gastos com negociação de atletas', normalizedCategory:'other_expenses', amountNative:-0.736584, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Multa indenizatória', normalizedCategory:'other_expenses', amountNative:-0.582358, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.9
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.075291, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'Lanches e refeições', normalizedCategory:'admin_general_expense', amountNative:-1.043357, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Assessoria esportiva', normalizedCategory:'admin_general_expense', amountNative:-5.540142, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Assessoria de imprensa', normalizedCategory:'admin_general_expense', amountNative:-0.0778, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Lavanderia', normalizedCategory:'admin_general_expense', amountNative:-0.153501, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Estadias', normalizedCategory:'admin_general_expense', amountNative:-0.255755, disclosureLevel:'aggregated' }, // pág. 30, ? 0.6
+    { rawLabel:'Combustíveis e lubrificantes', normalizedCategory:'admin_general_expense', amountNative:-0.159702, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Energia elétrica', normalizedCategory:'admin_general_expense', amountNative:-0.060312, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Água e esgoto', normalizedCategory:'admin_general_expense', amountNative:-0.059144, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Assessoria jurídica', normalizedCategory:'admin_general_expense', amountNative:-0.199767, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Depreciação', normalizedCategory:'depreciation', amountNative:-0.129289, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Assessoria administrativa', normalizedCategory:'admin_general_expense', amountNative:-0.041259, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Serviços médicos', normalizedCategory:'admin_general_expense', amountNative:-0.039559, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Medicamentos', normalizedCategory:'admin_general_expense', amountNative:-0.066936, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Matriais de escritório e de limpeza', normalizedCategory:'admin_general_expense', amountNative:-0.038877, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Software', normalizedCategory:'admin_general_expense', amountNative:-0.093435, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Serviços contábeis e auditoria', normalizedCategory:'admin_general_expense', amountNative:-0.083652, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Segurança patrimonial', normalizedCategory:'admin_general_expense', amountNative:-0.047528, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Telefone e internet', normalizedCategory:'admin_general_expense', amountNative:-0.069927, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Outras', normalizedCategory:'other_expenses', amountNative:-0.074989, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Com jogos', normalizedCategory:'match_organisation_expense', amountNative:-2.516472, disclosureLevel:'aggregated' }, // pág. 10, precedente
+    { rawLabel:'Manutenção', normalizedCategory:'admin_general_expense', amountNative:-1.935664, disclosureLevel:'aggregated' }, // pág. 10, precedente
+    { rawLabel:'Atletas não profissionais', normalizedCategory:'youth_other_sports_expense', amountNative:-2.369901, disclosureLevel:'aggregated' }, // pág. 10, precedente
+    { rawLabel:'Aluguéis', normalizedCategory:'other_expenses', amountNative:-0.653795, disclosureLevel:'aggregated' }, // pág. 10, precedente
+    { rawLabel:'Material esportivo', normalizedCategory:'other_expenses', amountNative:-0.231931, disclosureLevel:'aggregated' }, // pág. 10, precedente
+    { rawLabel:'Tributária', normalizedCategory:'admin_general_expense', amountNative:-0.017334, disclosureLevel:'aggregated' }, // pág. 10, precedente
+  ],
 };
 const novorizontinobrFiscalYearMeta = {
   // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = matchday_competition. Guido 2026-10-02: como 'Vendas de ingressos e bar' (matchday_competition); R$ 6 mil, inmaterial
@@ -386,6 +432,21 @@ const novorizontinobrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.13035, officialTotalExpenses:0.163946, officialPAT:-0.035287,
   },
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): cierre = 2022-12-31. Guido 2026-10-02: el detector de período tomó la fecha de la firma (28/04/2023, L17); el ejercicio cierra el 31/12/2022 (29 menciones)
+  2022: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2022-12-31',
+    sourceId:'novorizontino-br-demonstracoes-financeiras-2022',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-2.433943, tax:0,
+    extraRows: [
+      {label:'Receita financeira', value:0.007515},
+      {label:'Despesas financeiras', value:-2.441458},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:30.003234, officialTotalExpenses:41.218659, officialPAT:-13.649368,
+  },
 };
 const novorizontinobrPresupuestoOverlayByYear = {};
 
@@ -451,6 +512,12 @@ Object.assign(sources, {
     title:'Grêmio Novorizontino Sociedade Anônima do Futebol — balanco-2010 (ejercicio 2010)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/balanco-2010.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'novorizontino-br-demonstracoes-financeiras-2022': {
+    id:'novorizontino-br-demonstracoes-financeiras-2022', clubId:'novorizontino-br',
+    title:'Grêmio Novorizontino Sociedade Anônima do Futebol — demonstracoes-financeiras-2022 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

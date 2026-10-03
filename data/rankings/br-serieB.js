@@ -7,7 +7,7 @@
 //   2025: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -112,6 +112,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"pontepreta-br", revenue:8.595, reportType:"official_balance_sheet",
         sourceId:"pontepreta-br-balanco-2021-2022",
         mix:[["Comercial / Sponsors",0.466],["Estadio",0.175],["Televisión",2.673],["Venta de Jugadores",4.396],["Otras secciones deportivas",0.101],["Otros ingresos",0.784]] },
+      { id:"novorizontino-br", revenue:5.75, reportType:"official_balance_sheet",
+        sourceId:"novorizontino-br-demonstracoes-financeiras-2022",
+        mix:[["Comercial / Sponsors",0.584],["Estadio",0.147],["Televisión",2.291],["Premios por competencias",0.114],["Venta de Jugadores",2.442],["Otros ingresos",0.173]] },
     ],
   },
   2021: {
