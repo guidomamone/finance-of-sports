@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 438 — `carpetas-clubes.mjs --json` ya no se corta en 64 KB (2026-10-03)
+
+- `tools/carpetas-clubes.mjs`: con `--json` sale recién cuando terminó de escribir (antes `process.exit(0)` inmediato perdía todo lo que pasaba de 64 KB por un pipe). La lista llegó a ~68 KB con las carpetas nuevas de otra sesión y `audit.js` daba P1 `carpetas-clubes-fallo`, así que `cargar.mjs --escribir` revertía cualquier carga. Aprobado por Guido.
+- Verificado: JSON completo (68.785 bytes, 644 carpetas), salida normal idéntica, auditoría P1 0.
+
 ## Versión 437 — Arreglo de G: un ajuste `fila` financiero también entra en las lecturas 5 y 6; ajustes manuales de Juventus 2003-2006 y 2021 (2026-10-03)
 
 - `tools/verificar.mjs`: en las lecturas 5/6 el ajuste `fila` del lado financiero con `reemplaza` saca la fila vieja Y agrega la suya (antes solo la sacaba). Medido: lotes 07-13 idénticos.

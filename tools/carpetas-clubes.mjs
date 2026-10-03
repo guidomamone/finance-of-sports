@@ -96,8 +96,12 @@ export function todasLasCarpetas() {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const todas = todasLasCarpetas();
-  if (process.argv.includes('--json')) { console.log(JSON.stringify(todas, null, 1)); process.exit(0); }
+  // (Versión 438) salir recién cuando terminó de escribir: con process.exit() inmediato, por un pipe se perdía todo lo que pasaba de
+  // 64 KB y audit.js daba P1 'carpetas-clubes-fallo' (JSON cortado en 65.536 bytes cuando la lista llegó a ~68 KB, 2026-10-03)
+  if (process.argv.includes('--json')) { process.stdout.write(JSON.stringify(todas, null, 1) + '\n', () => process.exit(0)); }
+  else {
   const by = {}; for (const t of todas) (by[t.via] ??= []).push(t);
   console.log(`${todas.length} carpetas de club en Clubes/: ${Object.entries(by).map(([k, v]) => `${k} ${v.length}`).join(' · ')}`);
   for (const t of [...(by.ambigua || []), ...(by.nombre || [])]) console.log(`  ${t.via.padEnd(8)} ${t.pais}/${t.carpeta} -> ${t.clubId || t.ids?.join(', ')}  (${t.fuente})`);
+}
 }
