@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 423 — Caja y deuda, escalón 1: jerarquía de un balancete y lado de la cuenta (2026-10-02)
+
+- `caja-deuda.mjs` (`propuestaVocabulario`): una fila hija de otra que también coincide sale (código de cuenta que empieza con el de la otra, o, sin códigos, pegada abajo con el mismo importe); en deuda, una fila con marca D (deudora, activo) no cuenta.
+- Caso: Novorizontino 2016, "2.2.01 EMPRESTIMOS E FINANCIAMENTOS" y "2.2.01.01 EMPRESTIMOS E MUTUOS" se sumaban (31,9 M) más "1.2.02.05 CONTRATOS DE MUTUOS 4.000 D"; ahora 15.965.049.
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos.
+
 ## Versión 422 — Caja y deuda: el diccionario ignora el código de cuenta del balancete; "mutuo" (2026-10-02)
 
 - `caja-deuda.mjs`: para el diccionario (`norm`), la etiqueta va sin el código de cuenta del principio ("2.2.01 EMPRESTIMOS…", "29 2201010001 - …"); la etiqueta impresa y la familia no cambian. `vocabulario.mjs`: "mutuo*" en DEUDA_FINANCIERA (pt).
