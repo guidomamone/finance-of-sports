@@ -360,3 +360,30 @@ perdieron sino que se descartaron:
     recomendación es un PILOTO ACOTADO sobre esos ~27 clubes de los clusters de color repetido
     (no barrer los 41 de una), para probar legibilidad real a 24px antes de comprometerse.
     EN PAUSA (decisión de Guido, 2026-09-22): no retomar antes de ~un mes (fines de octubre 2026).
+
+113. EL SALVADOR: CERTIFICACIÓN DE BALANCE PARTICULAR DEL CNR (gestión de Guido, sourcing Centroamérica,
+    2026-10-03). El Registro de Comercio del CNR (cnr.gob.sv) recibe el balance anual auditado de toda
+    sociedad mercantil y entrega copia fiel por US$ 6 + US$ 0,25 por hoja (solicitud con denominación
+    y año + recibo de pago; ver `fuentes/El Salvador/_notas-generales.md`). Los agentes no pueden
+    pagar ni identificarse. ANTES de pagar: averiguar si Alianza, FAS y Águila son S.A. de C.V. o
+    asociaciones (FAS pertenecería a SSports Inc., una entidad foránea) y su denominación exacta;
+    sitio oficial y Wayback CDX de los 3 todavía no se corrieron.
+
+114. COSTA RICA: MAIL A SAPRISSA Y ALAJUELENSE (candidatos a mail, 0.3, 2026-10-03). Documento confirmado
+    por prensa y no público: Saprissa EEFF consolidados 2023-2024 auditados por Grant Thornton
+    (accionistas, asamblea de julio); Alajuelense Informe de Tesorería a socios 2023 y 2025. Proceso
+    de envío en `club-outreach`; no se redactó nada.
+
+115. PANAMÁ: CONSEGUIR EL REGLAMENTO DE LICENCIAMIENTO MASCULINO DE LA FPF (2026-10-03). Las URLs de
+    2024/2025 dan 404 (el sitio solo muestra el femenino JUL 2026): buscar en Wayback
+    (`fepafut.com/wp-content/uploads/2025/*`) y leer si tiene cláusula de confidencialidad como el
+    art. 12 de Costa Rica. Misma pregunta para la FENAFUTH (Honduras) y la FEDEFUT de Guatemala.
+
+116. REGIÓN CENTROAMÉRICA/CARIBE SIN BARRER (2026-10-03): Nicaragua, Belice, Trinidad y Tobago (la
+    búsqueda secundaria dice que el Companies Registry exige cuenta con PIN y que las privadas no
+    presentan cuentas auditadas: verificar en la ley), República Dominicana (Registro Mercantil de las
+    Cámaras de Comercio, Ley 479-08), Haití, Cuba, Puerto Rico, Curazao, Surinam y los otros deportes
+    (béisbol dominicano/boricua, cricket de Jamaica/Caribe: Cricket West Indies publica como
+    federación). Esta sesión no tuvo Firecrawl ni Exa (`Admin/firecrawl/.env` y `Admin/exa/.env`
+    vacíos) y la WebSearch devuelve casi solo Wikipedia: cualquier barrido serio de estos países los
+    necesita.

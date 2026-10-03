@@ -20,4 +20,12 @@ sociedad anónima bursátil ni de haber emitido deuda pública.
   listado completo de "Emisores Registrados" de la BCV (bcv.hn/emisores/emisores-registrados-2022/)
   no se revisó línea por línea — sería el primer paso de una sesión futura antes de descartar del
   todo la vía bursátil.
-- Último chequeo: 2026-09-13.
+## Chequeo 2026-10-03 (sourcing Centroamérica): listado de emisores de la BCV revisado completo
+
+`bcv.hn/emisores/emisores-registrados-2022/` lista 15 emisores: Financiera Credi Q, Banco Atlántida,
+Banco Davivienda, Banco del País, BAC Honduras, Banco FICOHSA (Financiera Comercial Hondureña),
+Banco Financiera Centroamericana, BCIE, Banco Popular, BANRURAL, LAFISE Honduras, Banco Cuscatlán
+Honduras, ALUTECH, Financiera Solidaria y Compañía Financiera. **Ningún club ni entidad deportiva.**
+Cierra la vía bursátil para Honduras (confirmado, la pendiente de la nota anterior); reabrir solo ante
+un anuncio de emisión. Sigue sin explorar: licenciamiento de la FENAFUTH.
+- Último chequeo: 2026-10-03.

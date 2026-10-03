@@ -15,6 +15,20 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Sourcing Centroamérica, 2026-10-03
+
+- Región CENTROAMERICA (Costa Rica, Guatemala, Honduras, Panamá, Jamaica + El Salvador nuevo): 0 PDFs
+  descargados, pero 3 canales cerrados con evidencia y 2 candidatos a mail confirmados.
+- Jamaica: el Form 19A del Companies Office (Thirteenth Schedule) exime de presentar cuentas a las
+  compañías privadas sin accionista corporativo, y la ficha pública no muestra estados financieros:
+  el "lead más prometedor de la región" se achica a gestión de Guido de bajo valor esperado.
+- Honduras: listado completo de emisores de la BCV (15) sin ningún club. Guatemala: portal de
+  información pública de la FEDEFUT sin clubes. Panamá: la FPF publica sus propios EEFF (federación,
+  no club); el reglamento de licencias masculino da 404.
+- Costa Rica: Saprissa (2023-2024, Grant Thornton) y Alajuelense (2023, 2025) quedan como candidatos a
+  mail. El Salvador: país nuevo con índice, notas y 3 clubes; el CNR deposita y certifica balances
+  (US$ 6 + 0,25/hoja). Pendientes en `Admin/TODO.md` 113-116.
+
 ## Versión 279 — to-do 67 cerrado: confirmado en producción
 
 - Guido confirmó en Chrome (sin bloqueador de trackers) que los 3 eventos del funnel del selector
