@@ -503,6 +503,8 @@ perdieron sino que se descartaron:
     contexto completo del club → si Sonnet tampoco está seguro, cae en `Admin/dudas-por-club.md` como
     ya pasa hoy.
 
+113. SOURCING ITALIA — LO QUE QUEDÓ ABIERTO (2026-10-03). Fútbol: (a) Lazio, faltan 2014/15 y 2015/16-2023/24 (probar la web nueva `/it/images/stories/...` y `/ima-ges/documents/investors/`, y los adjuntos `cms/view/sNNN/cNNN?download=true` de las páginas viejas `investor_relator/comunicati/`); (b) Cremonese, muestrear más de las 132 capturas de `uscremonese.it/societa/` para 2021 y 2023 (Wayback rechazaba conexiones al cortar); (c) Verona 2024; (d) Genoa, 4 ejercicios y no se pudo mirar Wayback antes de 2022; (e) Como, 2 ejercicios, sin tocar; (f) Bologna 2023/24-2024/25 y Udinese 2022/23-2023/24 siguen siendo mail al club; (g) Fiorentina (4-5 ejercicios) y Cagliari (2018 y 2021) solo existen como Issuu/Drive sin descarga: decide Guido si se escribe al club; (h) Serie A restante (Atalanta, Roma, Milan, Napoli, Parma, Sassuolo, Inter ya tienen 5+), Serie B y Serie C: no se empezó; Torino 2021-2024 son escaneos (van por Mistral/Gemini). Rugby (Top10, Benetton, Zebre), vóley (SuperLega, A1 femenina) y básquet (LBA): sin empezar.
+
 51. PROCESO DE EMAIL A CLUBES — EN CONSTRUCCIÓN, ETAPA 1 (rediseñado 2026-09-24, decisión de Guido
     tras comparar alternativas: Gmail/MCP, APIs transaccionales, no-code, agentes dedicados). El
     diseño original de este punto ("Claude redacta, Guido aprueba en el chat, envío por Gmail")

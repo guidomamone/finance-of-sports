@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Sourcing Italia, 2026-10-03 (fútbol; sin número de versión, para no chocar con otras sesiones)
+
+- Fútbol: **+24 ejercicios en disco** (PDFs en `Clubes/Italia/`, no trackeados). Lazio +8 (2006/07-2013/14, CMS viejo de `sslazio.it` vía Wayback), Torino +8 (dic 2018-2025: la sección `torinofc.it/relazioni_e_bilanci` SÍ existía, la nota del 2026-09-17 era incorrecta), Hellas Verona +4 (2020, 2021, 2022, 2025, de dos CDN viejos), Bologna +4 (consolidados 2018/19-2021/22), Cremonese +1 (30/06/2022). Ya tienen 5 o más: Lazio, Torino, Verona, Bologna (+ los que ya tenían).
+- Pisa y Lecce: confirmado que no publican nada (solo Registro Imprese, pago). Cagliari: bilancio 2018 en Issuu y 2021 en Drive de solo lectura (candidato a mail). Fiorentina: 4-5 ejercicios más en Issuu oficial sin descarga. Udinese: 2022/23 y 2023/24 solo truncados en Wayback.
+- Fichas de los 10 clubes con la línea `Ángulos`. `fuentes/_indice/Italia.md` actualizado y `node tools/generate-fuentes-index.js` corrido.
+- Rugby, vóley y básquet: no se empezaron en esta tanda.
+- Nota de tooling: `archive.org` empezó a rechazar conexiones (rate limit) tras ~60 consultas CDX seguidas; la página `España.md` del skill que citaba el prompt no existe en el repo.
+
 ## Versión 433 — Cambio E: el lote pasa por las voces (resolver-inventario) antes de rearmar una transcripción "revisar" (2026-10-03)
 
 - `tools/lote.mjs`, etapa 2, escalón 1a: si el inventario dice "revisar", corre `resolver-inventario.mjs --pdf` (en el ensayo, su estimación; con `--ejecutar`, de verdad), regenera el inventario y, si queda "listo", sigue; si no, el rearmado (escalón 1b) como antes. Pedido y diseño aprobados por Guido.
