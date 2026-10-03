@@ -40,7 +40,9 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en U
    errores de Goiás. Chequeo de coherencia entre años: prototipado y NO construido (con 403-404 encontró solo 2 casos en tres clubes,
    contestados por Guido: Fortaleza 2020 "Auxilio hotelero" y UC 2018 "Indemnizaciones"); retomarlo si con los próximos clubes vuelven los
    errores de categoría. Sigue, en orden: Fortaleza 2017 (sueldos en 0 sin aviso) y las 55 dudas silenciadas por `sin-dudas`; que el lote
-   no reprocese años cargados y cierre casos viejos de la cola; escalones automáticos para lo que hoy son ajustes.
+   no reprocese años cargados y cierre casos viejos de la cola (ensayo real del 2026-10-03: `lote-08 --reintentar` iba a reprocesar
+   Fortaleza 2018-2024, ya cargados, por marcas de "desglose que no suma" que en 2018-2020 son ruido: 5.867,807 contra 5.867,804; 137,713
+   contra 137,713); escalones automáticos para lo que hoy son ajustes. Fortaleza 2017: reintento por sueldos en 0 con `Admin/lote-08b.txt`.
 3. **Notas de la auditoría (detalle)** (pedido de Guido, 2026-10-02). Recorrer las etapas 1-9 con lo aprendido en
    UC, Fortaleza y Goiás: qué escaleras y escalones existen y cuáles se usaron de verdad; reglas que se agregaron por un solo caso y conviene
    revisar; casos que se resolvieron a mano o con ajustes y deberían tener escalón; gastos innecesarios (p. ej. el lote que volvió a
