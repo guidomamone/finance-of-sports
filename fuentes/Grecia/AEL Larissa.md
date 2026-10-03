@@ -50,3 +50,5 @@ confirmados como `PDF document` real (2 duplicados idénticos descartados por `d
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2020 desde `Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2020-06-30.pdf` (sourceId `aellarissa-gr-ael-notes-elp-2020-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2018 desde `Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.pdf` (sourceId `aellarissa-gr-ael-notes-elp-2018-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2017 desde `Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2017-06-30.pdf` (sourceId `aellarissa-gr-ael-notes-elp-2017-06-30`).
