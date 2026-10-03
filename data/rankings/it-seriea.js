@@ -3,7 +3,8 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Serie A (IT) — 1 ejercicio(s) con ranking:
+// Serie A (IT) — 2 ejercicio(s) con ranking:
+//   2013: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2012: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -12,6 +13,14 @@
 // ============================================================================
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["it-seriea"] = {
+  2013: {
+    leagueSize: null,
+    clubs: [
+      { id:"juventus-it", revenue:371.212, reportType:"official_balance_sheet",
+        sourceId:"juventus-it-annual-financial-report-2012-13",
+        mix:[["Comercial / Sponsors",68.799],["Estadio",49.771],["Televisión",213.829],["Venta de Jugadores",14.907],["Otros ingresos",23.906]] },
+    ],
+  },
   2012: {
     leagueSize: null,
     clubs: [

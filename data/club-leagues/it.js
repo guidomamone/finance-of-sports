@@ -14,5 +14,5 @@ window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Juventus (alta-club.mjs, 2026-10-03): verificado contra roster cacheado de "2011–12 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Juventus".
-  'juventus-it': { 2012: 'it-seriea' },
+  'juventus-it': { 2012: 'it-seriea', 2013: 'it-seriea' }, // 2013: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "2012–13 Serie A" (tools/club-league-reference/it.json), coincidencia e
 });

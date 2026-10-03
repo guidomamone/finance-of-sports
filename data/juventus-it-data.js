@@ -41,6 +41,15 @@ const juventusitRevenueLinesByYear = {
     { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:18.433501, disclosureLevel:'aggregated' }, // pág. 86, Jev 0.94
     { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:19.494134, disclosureLevel:'aggregated' }, // pág. 86, Jev 0.98
   ],
+  // 2013: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2012-13.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Juventus/Juventus-annual-financial-report-2012-13.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2013: [
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:38.051069, disclosureLevel:'aggregated' }, // pág. 79, precedente
+    { rawLabel:'Television and radio rights and media revenues', normalizedCategory:'broadcasting', amountNative:163.47767, disclosureLevel:'aggregated' }, // pág. 79, precedente
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:52.598893, disclosureLevel:'aggregated' }, // pág. 79, precedente
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:11.397065, disclosureLevel:'aggregated' }, // pág. 79, precedente
+    { rawLabel:'Other revenues', normalizedCategory:'other_income', amountNative:18.276776, disclosureLevel:'aggregated' }, // pág. 79, precedente
+  ],
 };
 const juventusitExpenseLinesByYear = {
   2012: [ // tools/cargar.mjs (2026-10-03)
@@ -53,6 +62,17 @@ const juventusitExpenseLinesByYear = {
     { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-52.304836, disclosureLevel:'aggregated' }, // pág. 86, Jev 0.96
     { rawLabel:'Amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-6.794484, disclosureLevel:'aggregated' }, // pág. 86, Jev 0.96
     { rawLabel:'Provisions and other write-downs/reverses and releases', normalizedCategory:'other_amortisation', amountNative:10.443216, disclosureLevel:'aggregated' }, // pág. 86, precedente
+  ],
+  2013: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Purchase of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-2.93377, disclosureLevel:'aggregated' }, // pág. 79, precedente
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-45.079682, disclosureLevel:'aggregated' }, // pág. 79, precedente
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-149.010399, disclosureLevel:'aggregated' }, // pág. 79, precedente
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-14.452797, disclosureLevel:'aggregated' }, // pág. 79, precedente
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-5.579779, disclosureLevel:'aggregated' }, // pág. 79, precedente
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-10.03385, disclosureLevel:'aggregated' }, // pág. 79, precedente
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-51.414589, disclosureLevel:'aggregated' }, // pág. 79, precedente
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-8.291739, disclosureLevel:'aggregated' }, // pág. 79, Jev 0.99
+    { rawLabel:'Provisions and other write-downs/reverses and releases', normalizedCategory:'other_amortisation', amountNative:-0.810874, disclosureLevel:'aggregated' }, // pág. 79, precedente
   ],
 };
 const juventusitFiscalYearMeta = {
@@ -71,6 +91,22 @@ const juventusitFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:213.786231, officialTotalExpenses:254.974604, officialPAT:-48.65455,
+  },
+  2013: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2013-06-30',
+    sourceId:'juventus-it-annual-financial-report-2012-13',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-7.108992, tax:-4.995651,
+    extraRows: [
+      {label:'Financial income', value:2.364266},
+      {label:'Financial expenses', value:-9.473258},
+      {label:'Current taxes', value:-5.924068},
+      {label:'Deferred taxes', value:0.928417},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:283.801473, officialTotalExpenses:287.607479, officialPAT:-15.910649,
   },
 };
 const juventusitPresupuestoOverlayByYear = {};
@@ -95,6 +131,12 @@ Object.assign(sources, {
     title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2011-12 (ejercicio 2012)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'juventus-it-annual-financial-report-2012-13': {
+    id:'juventus-it-annual-financial-report-2012-13', clubId:'juventus-it',
+    title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2012-13 (ejercicio 2013)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2012-13.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
