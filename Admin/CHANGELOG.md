@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 409 — Etapa 6, lectura 4: deducciones de la receita bruta (2026-10-02)
+
+- `verificar.mjs`, solo en la lectura 4 (signos impresos): (1) un subtotal igual al único renglón que tiene arriba es ese renglón repetido, no una fila más; (2) el total impreso puede ser el bruto: si los renglones de signo normal lo suman, cierra, y las deducciones restan aparte. La compuerta sigue siendo el resultado impreso.
+- Caso: Novorizontino 2024, "Receita bruta" 40.157.783, "Impostos incidentes sobre a receita" (1.303.783) y "(-) Deduções" (1.303.783): ingresos 81.619.349 → 38.854.000; el resultado −22.692.012 cierra con el impreso.
+- Medido: lotes 07 (UC), 08 (Fortaleza) y 09 (Goiás) idénticos; lote 10, 2024 pasa de 5 casos en la cola a 1.
+
 ## Versión 408 — Cola: --corregir-categoria graba la corrección aunque la fila ya tenga un caso abierto (2026-10-02)
 
 - `cola.mjs --corregir-categoria`: la respuesta es `corregir` con la categoría, no `aceptar`. Si la fila ya tenía un caso abierto, `aceptar` aceptaba la propuesta vieja de ese caso.

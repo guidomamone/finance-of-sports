@@ -238,6 +238,14 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         const esSumaDe = (lista) => { let acc = 0; let accF = 0; for (let j = 0; j < lista.length; j++) { acc += Math.abs(lista[j][campo] || 0); accF += lista[j][campo] || 0; if (j >= 1 && (cerca(acc, Math.abs(f[campo] || 0)) || ((conOtros || firmado) && cerca(Math.abs(accF), Math.abs(f[campo] || 0))))) return true; } return false; };
         const arriba = delLado.slice(0, k).filter((x) => x.tipo === 'renglon').reverse(); const abajo = delLado.slice(k + 1).filter((x) => x.tipo === 'renglon');
         if (esSumaDe(arriba) || esSumaDe(abajo)) continue;
+        // (Versión 409, solo en la lectura 4) un subtotal igual al ÚNICO renglón que tiene arriba desde el total/subtotal anterior del mismo
+        // lado es ese renglón repetido, no una fila más (esSumaDe pide dos o más). Caso: Novorizontino 2024, "Impostos incidentes sobre a
+        // receita" (1.303.783) y debajo "(-) Deduções da receita bruta" (1.303.783): se restaba una vez y se sumaba otra.
+        if (firmado) {
+          let i = k - 1; const solos = [];
+          while (i >= 0 && delLado[i].tipo === 'renglon') { if (delLado[i].lado === lado) solos.push(delLado[i]); i--; }
+          if (solos.length === 1 && cerca(Math.abs(solos[0][campo] || 0), Math.abs(f[campo] || 0))) continue;
+        }
       }
       // Todas las filas de nota que dicen desglosar este renglón (renglones Y subtotales/totales: la estructura impresa hace falta para
       // saber qué suma qué; ver cerrarNota()).
@@ -395,6 +403,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         if (deEsa.length && cerca(suma(deEsa), total)) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `"${filaTotal.etiqueta}" ${r6(total)} cierra; además se suman ${arr.length - deEsa.length} línea(s) fuera de ese total (${r6(sm - total)})` }); return arr; }
       }
       if (Math.abs(sm - total) <= tolRed) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `${r6(sm)} contra ${r6(total)}: fila "Diferencia de redondeo" de ${r6(total - sm)}` }); return [...arr, { etiqueta: 'Diferencia de redondeo', lado: nombre === 'ingresos' ? 'ingreso' : 'gasto', M: total - sm, origen: 'redondeo' }]; }
+      // (Versión 409, solo en la lectura 4) el total impreso puede ser el BRUTO: los renglones con el signo normal del lado suman el total y
+      // los negativos (deducciones) restan aparte. La compuerta sigue siendo el resultado impreso (sin él la lectura no cierra). Caso:
+      // Novorizontino 2024, "Receita bruta" 40.157.783 y debajo "Impostos incidentes sobre a receita" (1.303.783).
+      if (nivel >= 4) {
+        const pos = arr.filter((f) => (f.M || 0) > 0); const neg = arr.filter((f) => (f.M || 0) < 0);
+        if (neg.length && cerca(suma(pos), total)) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `total bruto ${r6(total)} cierra con los renglones de signo normal; ${neg.length} deducción(es) restan aparte (${r6(suma(neg))})` }); return arr; }
+      }
       ch.push({ nombre: `total de ${nombre}`, ok: false, detalle: `las líneas suman ${r6(sm)} y el total impreso dice ${r6(total)}` });
       return arr;
     };
