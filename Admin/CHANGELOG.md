@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 414 — Etapa 6, lectura 5: solo las hojas con su signo (C/D de los balancetes) (2026-10-02)
+
+- `verificar.mjs`: lectura 5, después de la 4. Usa solo los renglones del estado (ningún subtotal ni total), con su signo: la marca C/D de un balancete si la trae (D en ingresos resta, C en gastos resta, financiero C − D) y si no, el impreso. No usa los totales como chequeo; la única compuerta es el resultado impreso, exacto a media unidad por fila. El chequeo de año vecino usa la misma lectura.
+- Casos (diagnóstico de Novorizontino 2013-2017): grupos de un solo renglón repetidos como subtotal y total (2017: 8.019.563,48 contado 3 veces), subtotales que mezclan lados (en los 5), marcas C/D descartadas (2013-2015).
+- Medido: lotes 07 (UC), 08 (Fortaleza) y 09 (Goiás) idénticos; lote 10: 2017, 2016 y 2014 cierran exacto con la lectura 5 (2017 y 2016 OK; 2014 frena por el falso rojo de año vecino; 2013 y 2015 no tienen resultado impreso en sus bloques).
+
 ## Versión 413 — Ajustes manuales `cierre` y `reportType` (2026-10-02)
 
 - `ajustes.mjs`: `cierre` (AAAA-MM-DD) y `reportType` (official_balance_sheet | official_budget), por documento. Escalón 0 en `alta-club.mjs` (ganan sobre lo detectado y sobre la respuesta de Claude por API) y, el cierre, en `localizar.mjs` (el ejercicio que se le pide buscar).
