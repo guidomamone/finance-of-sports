@@ -544,5 +544,10 @@
     "code": "doc-interno-no-excluido",
     "match": "terminos.html",
     "motivo": "VERIFICADO 2026-09-28: es contenido PARA EL VISITANTE (términos de uso, mismo motivo que privacidad.html), no un documento interno — a propósito en la raíz, linkeado desde el footer de index.html."
+  },
+  {
+    "code": "escala-implausible",
+    "match": "novorizontino-br 2010: revenue",
+    "motivo": "VERIFICADO 2026-10-02 (onboarding de Novorizontino): año de fundación del club. balanco-2010.md L3 dice '(em reais)' y L10 'Receita Líquida Operacional' 130.350,36: unos US$ 78 mil reales, no un error de escala."
   }
 ]

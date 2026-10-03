@@ -121,6 +121,12 @@ const novorizontinobrRevenueLinesByYear = {
     { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0.09438, disclosureLevel:'aggregated' }, // pág. 7, precedente
     { rawLabel:'Impostos incidentes sobre a receita', normalizedCategory:'other_income', amountNative:-1.978549, disclosureLevel:'aggregated' }, // pág. 7, precedente
   ],
+  // 2010: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/balanco-2010.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/balanco-2010.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2010: [
+    { rawLabel:'Convênio P.M.N.H nº 21/10', normalizedCategory:'other_income', amountNative:0.07, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Doações, Receitas de Patrocínio, Locação de Espaço, e Ev', normalizedCategory:'other_income', amountNative:0.06035, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
+  ],
 };
 const novorizontinobrExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-03)
@@ -262,6 +268,11 @@ const novorizontinobrExpenseLinesByYear = {
     { rawLabel:'Tributária', normalizedCategory:'admin_general_expense', amountNative:-0.097091, disclosureLevel:'aggregated' }, // pág. 8, precedente
     { rawLabel:'Outras despesas', normalizedCategory:'other_expenses', amountNative:-0.42879, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.95
   ],
+  2010: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.040536, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Despesas Gerais e Manutenção', normalizedCategory:'admin_general_expense', amountNative:-0.056758, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
+    { rawLabel:'Projeto Escola de Futebol -Conv. Nº 21/10', normalizedCategory:'youth_other_sports_expense', amountNative:-0.066653, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
+  ],
 };
 const novorizontinobrFiscalYearMeta = {
   // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = matchday_competition. Guido 2026-10-02: como 'Vendas de ingressos e bar' (matchday_competition); R$ 6 mil, inmaterial
@@ -365,6 +376,16 @@ const novorizontinobrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:67.564252, officialTotalExpenses:89.496986, officialPAT:-25.254161,
   },
+  2010: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2010-12-31',
+    sourceId:'novorizontino-br-balanco-2010',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.001691, tax:0,
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.13035, officialTotalExpenses:0.163946, officialPAT:-0.035287,
+  },
 };
 const novorizontinobrPresupuestoOverlayByYear = {};
 
@@ -424,6 +445,12 @@ Object.assign(sources, {
     title:'Grêmio Novorizontino Sociedade Anônima do Futebol — demonstracoes-financeiras-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'novorizontino-br-balanco-2010': {
+    id:'novorizontino-br-balanco-2010', clubId:'novorizontino-br',
+    title:'Grêmio Novorizontino Sociedade Anônima do Futebol — balanco-2010 (ejercicio 2010)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/balanco-2010.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
