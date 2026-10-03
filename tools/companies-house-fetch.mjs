@@ -54,7 +54,7 @@ for (let p = 1; p < 40; p++) {
     const m = text.match(/(.*?accounts.*?) made up to (\d{1,2}) (\w+) (\d{4})/i);
     if (!m) continue;
     const kind = m[1].toLowerCase();
-    // "total exemption"/"small"/"micro" = régimen de sociedad chica, suele venir SIN cuenta de resultados: se saltean salvo --include-small
+    // "total exemption"/"small"/"micro": a veces traen cuenta de resultados y a veces no (hay que abrir y chequear): se saltean salvo --include-small
     if (/dormant/.test(kind) || (!args.includes('--include-small') && /micro|total exemption|small/.test(kind))) continue;
     const date = `${m[4]}-${String(MONTHS[m[3]]).padStart(2, '0')}-${String(m[2]).padStart(2, '0')}`;
     const type = /group/.test(kind) ? 'group' : /full/.test(kind) ? 'full' : /medium/.test(kind) ? 'medium' : 'other';

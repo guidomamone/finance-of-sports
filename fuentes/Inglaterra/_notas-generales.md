@@ -142,6 +142,20 @@ Championship, League One y League Two con 5 ejercicios cada uno.
 - **Cuentas "Total exemption full accounts" / "small" / "micro" = régimen de sociedad chica, sin
   cuenta de resultados.** El script las saltea salvo `--include-small`. Oxford United 2021/22-2022/23
   están así (hueco en la serie). No contar como ejercicio útil sin abrirlo y ver si trae TURNOVER.
+- **CORRECCIÓN (barrido de clubes cortos, mismo día): la etiqueta NO decide, hay que abrir y mirar.** El
+  filtro del script es solo una heurística. Con P&L aunque diga "small"/"Total exemption": Newport
+  (2018/19-2022/23, 18-22 págs.), Crawley (2016/17-2018/19, 13-15 págs.), Bromley (2019-2024, 17-19 págs.),
+  Oxford (2019/20-2022/23, 21-22 págs.). Sin P&L: Barnet, Salford, Notts County, Doncaster Rovers,
+  Port Vale, Stockport, Fleetwood Wanderers 2021/22+, Crawley 2019/20+ (casi siempre ≤15 págs.).
+  Regla práctica: con `--include-small` bajar 1 ejercicio, OCR de todas las páginas y buscar `TURNOVER` /
+  "Profit and loss account"; el frase "elected not to include a copy of the profit and loss account" o
+  "Income Statement has not been delivered" confirma la omisión.
+- **La operativa no siempre lleva el nombre del club** (hallar por PSC, por prensa o por búsqueda web):
+  Portsmouth = Portsmouth Community Football Club Limited 07940335; Fleetwood = Fleetwood Wanderers Limited
+  03359117 (holding Jaymel 06989818); Newport = Newport Association Football Club Limited 02395863;
+  Bromley = Bromley F.C. (95) Limited 03060560; Chesterfield = CFC 2001 Ltd 04273743; MK Dons = Milton
+  Keynes Dons Limited 04787003; Bolton = holding Football Ventures (Whites) Limited 11761052; Salford =
+  holding Project 92 Limited 09112699; Doncaster = Doncaster Rovers Limited 03739676.
 - **Hay sociedades con el nombre del club que son cascarones.** Doncaster Rovers FC Ltd (00170192): el
   balance 2025/26 muestra solo pasivos (£264 K), sin actividad; Bolton Wanderers Football Club
   Limited (12184224) y Portsmouth Football Club Limited (11538360) presentan "dormant". La operativa

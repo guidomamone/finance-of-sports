@@ -134,6 +134,8 @@ const SENAL_NO = [
 // que se pueda borrar).
 // ---------------------------------------------------------------------------
 const OVERRIDES = {
+  'Inglaterra|Fleetwood Town': { doc: true, motivo: 'grupo Jaymel con P&L 2015/16-2023/24 (perímetro a verificar)' },
+  'Inglaterra|Notts County': { doc: false, motivo: 'balances sin cuenta de resultados (sociedad pequeña), dead-end real' },
   'Argentina|Belgrano': { doc: false, motivo: 'memorias descargadas, pero sin datos financieros' },
   'Argentina|Temperley': { doc: false, motivo: 'memorias narrativas' },
   'Brasil|Ceará': { doc: true, motivo: 'dead-end viejo destrabado, 8 ejercicios reales' },

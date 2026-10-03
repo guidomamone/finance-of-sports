@@ -41,7 +41,7 @@ que es el archivo a leer antes de tocar cualquier club británico.
 - [Leicester City](../Inglaterra/Leicester City.md) — **Championship** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
 - [Millwall](../Inglaterra/Millwall.md) — **Championship** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
 - [Norwich City](../Inglaterra/Norwich City.md) — **Championship** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
-- [Oxford United](../Inglaterra/Oxford United.md) — **Championship** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
+- [Oxford United](../Inglaterra/Oxford United.md) — **Championship** — 13 ejercicios en disco, con cuenta de resultados verificada en 2015/16, 2017/18 y 2019/20-2024/25 (2018/19 sin P&L), sin cargar al sitio — Último chequeo: 2026-10-03
 - [Preston North End](../Inglaterra/Preston North End.md) — **Championship** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
 - [Queens Park Rangers](../Inglaterra/Queens Park Rangers.md) — **Championship** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
 - [Sheffield Wednesday](../Inglaterra/Sheffield Wednesday.md) — **Championship** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
@@ -74,6 +74,22 @@ que es el archivo a leer antes de tocar cualquier club británico.
 - [Wycombe Wanderers](../Inglaterra/Wycombe Wanderers.md) — **League One** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
 - [AFC Wimbledon](../Inglaterra/AFC Wimbledon.md) — **League One** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
 - [Exeter City](../Inglaterra/Exeter City.md) — **League One** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
+- [Bolton Wanderers](../Inglaterra/Bolton Wanderers.md) — **League One** — 5 ejercicios en disco (grupo Football Ventures (Whites), consolidado), sin cargar al sitio — Último chequeo: 2026-10-03
+- [Portsmouth](../Inglaterra/Portsmouth.md) — **Championship** — 5 ejercicios en disco (Portsmouth Community Football Club Limited), sin cargar al sitio — Último chequeo: 2026-10-03
+- [Derby County](../Inglaterra/Derby County.md) — **Championship** — 5 ejercicios en disco en DOS entidades (Derby County (The Rams) Limited 3 + DC Realisations 1 Limited 2, con hueco 2018/19-2021/22), sin cargar al sitio — Último chequeo: 2026-10-03
+- [Stockport County](../Inglaterra/Stockport County.md) — **League One** — 0 ejercicios útiles (3 balances sin cuenta de resultados en disco, régimen de sociedad pequeña); cifras oficiales solo en comunicados — candidato a mail — Último chequeo: 2026-10-03
+- [Grimsby Town](../Inglaterra/Grimsby Town.md) — **League Two** — 5 ejercicios en disco (2016/17-2020/21), sin cargar al sitio; 2021/22 en adelante sin cuenta de resultados — Último chequeo: 2026-10-03
+- [Fleetwood Town](../Inglaterra/Fleetwood Town.md) — **League Two** — 5+ ejercicios en disco (grupo Jaymel Limited 2015/16-2024/25 + Fleetwood Wanderers Limited), sin cargar al sitio — Último chequeo: 2026-10-03
+- [MK Dons](../Inglaterra/MK Dons.md) — **League Two** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
+- [Newport County](../Inglaterra/Newport County.md) — **League Two** — 5 ejercicios útiles en disco (2018/19-2022/23) + 2 sin cuenta de resultados, sin cargar al sitio — Último chequeo: 2026-10-03
+- [Bromley](../Inglaterra/Bromley.md) — **League Two** — 6 ejercicios en disco (2019-2024, con cuenta de resultados), sin cargar al sitio — Último chequeo: 2026-10-03
+- [Crawley Town](../Inglaterra/Crawley Town.md) — **League Two** — 3 ejercicios útiles en disco (2016/17-2018/19); 2019/20 en adelante sin cuenta de resultados — parcial — Último chequeo: 2026-10-03
+- [Barnet](../Inglaterra/Barnet.md) — **League Two** — 2 ejercicios útiles en disco (grupo Barnet FC Holdings 2015/16-2016/17); resto sin cuenta de resultados — parcial — Último chequeo: 2026-10-03
+- [Notts County](../Inglaterra/Notts County.md) — **League Two** — 0 ejercicios útiles (5 balances sin cuenta de resultados en disco); dead-end real — Último chequeo: 2026-10-03
+- [Salford City](../Inglaterra/Salford City.md) — **League Two** — 5 ejercicios en disco (grupo Project 92 Limited), sin cargar al sitio — Último chequeo: 2026-10-03
+- [Chesterfield](../Inglaterra/Chesterfield.md) — **League Two** — 5 ejercicios en disco (CFC 2001 Ltd), sin cargar al sitio — Último chequeo: 2026-10-03
+- [Doncaster Rovers](../Inglaterra/Doncaster Rovers.md) — **League One** — 0 ejercicios útiles (5 balances sin cuenta de resultados en disco, sociedad operativa Doncaster Rovers Limited); candidato a mail — Último chequeo: 2026-10-03
+- [Port Vale](../Inglaterra/Port Vale.md) — **League One** — 0 ejercicios útiles (2 balances sin cuenta de resultados en disco); candidato a mail — Último chequeo: 2026-10-03
 - [Derbyshire CCC](../Inglaterra/Derbyshire CCC.md) — **cricket (County Championship)** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
 - [Essex CCC](../Inglaterra/Essex CCC.md) — **cricket (County Championship)** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
 - [Glamorgan CCC](../Inglaterra/Glamorgan CCC.md) — **cricket (County Championship, Gales)** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
@@ -99,6 +115,11 @@ que es el archivo a leer antes de tocar cualquier club británico.
 - [Tranmere Rovers](../Inglaterra/Tranmere Rovers.md) — **League Two** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
 - [Walsall](../Inglaterra/Walsall.md) — **League Two** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
 - [Carlisle United](../Inglaterra/Carlisle United.md) — **League Two** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
+- [Exeter Chiefs](../Inglaterra/Exeter Chiefs.md) — **rugby union (Premiership)** — 5 ejercicios en disco (grupo), sin cargar al sitio — Último chequeo: 2026-10-03
+- [Bristol Bears](../Inglaterra/Bristol Bears.md) — **rugby union (Premiership)** — 5 ejercicios en disco (grupo), sin cargar al sitio — Último chequeo: 2026-10-03
+- [Gloucester Rugby](../Inglaterra/Gloucester Rugby.md) — **rugby union (Premiership)** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
+- [London Irish](../Inglaterra/London Irish.md) — **rugby union (clausurado 2022)** — 5 ejercicios en disco (2016/17-2020/21), sin cargar al sitio — Último chequeo: 2026-10-03
+- [Leeds Rugby](../Inglaterra/Leeds Rugby.md) — **rugby league (Super League)** — 5 ejercicios en disco, perímetro a verificar — Último chequeo: 2026-10-03
 - [Bath Rugby](../Inglaterra/Bath Rugby.md) — **rugby union (Premiership)** — 2 ejercicios reales, ingresos £23,3 M verificados, 16 disponibles — Último chequeo: 2026-09-13
 - [Harlequins](../Inglaterra/Harlequins.md) — **rugby union (Premiership)** — 1 ejercicio real (2022/23), 13 disponibles; los 2 últimos son cuentas abreviadas, verificar — Último chequeo: 2026-09-13
 - [Leicester Tigers](../Inglaterra/Leicester Tigers.md) — **rugby union (Premiership)** — 2 ejercicios reales, 12 disponibles — Último chequeo: 2026-09-13

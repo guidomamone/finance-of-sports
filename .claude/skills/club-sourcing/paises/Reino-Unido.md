@@ -101,3 +101,34 @@ fueron en comunidades de ~22.000 miembros para arriba (nffc 21,9k, Everton 61,7k
 angloparlantes" quedó refutada por los datos. Antes de descartar un club por esto, chequear el
 tamaño de su subreddit real (`/api/subreddits/search?subreddit_prefix=` de Arctic Shift), no su
 país.
+
+## Barrido de profundidad y EFL (2026-10-03) — herramientas y reglas
+
+**No hace falta bajar a mano**: `node tools/companies-house-fetch.mjs <número|nombre> --list` lista los
+ejercicios (con un nombre en vez de número busca la sociedad); `--club "<Carpeta>" --slug <x> --want 5`
+baja los que falten hasta tener 5. Para cricket: `node tools/fca-mutuals-fetch.mjs <societyId> ...`
+(el societyId sale de `https://mutuals.fca.org.uk/Search/Search?SearchTerm=<número>R`). Para Manchester
+United y otros cotizantes en EE.UU., el canal es EDGAR (20-F), no Companies House.
+
+- **"Total exemption full accounts" / "small" / "micro" NO implican ni dan por hecho falta de cuenta de
+  resultados**: verificado por OCR que Newport, Bromley, Crawley 2016-19 y Oxford 2019/20-2022/23 SÍ la
+  traen, y que Barnet, Salford (sociedad propia), Notts County, Doncaster, Port Vale, Stockport y Crawley
+  2019/20+ NO (omiten el income statement, s.444 Companies Act). Casi siempre son documentos de ≤15
+  páginas. El script las saltea salvo `--include-small`; hay que bajar una y buscar TURNOVER.
+- **El nombre del club puede ser un cascarón.** Doncaster Rovers FC Ltd (00170192) muestra solo pasivos;
+  Bolton (12184224) y Portsmouth (11538360) presentan "dormant". La sociedad operativa es otra (holding
+  del dueño): se encuentra por directores/PSC o por búsqueda web, no por nombre. Resueltos así: Bolton ->
+  Football Ventures (Whites) Ltd 11761052; Portsmouth -> Portsmouth Community Football Club Ltd 07940335;
+  Fleetwood -> Fleetwood Wanderers Ltd 03359117; Salford -> Project 92 Ltd 09112699; Chesterfield -> CFC
+  2001 Ltd 04273743; Doncaster -> Doncaster Rovers Limited 03739676 (sin P&L).
+- **Holding vs. operativa**: si la holding presenta `Group of companies' accounts`, se baja esa (Cardiff
+  04044254, Blackpool 12022161); si no, la operativa. Un club reconstituido tras administración tiene una
+  entidad nueva con serie corta (Wigan 13161421: exactamente 5 ejercicios desde 2021).
+- **Un club puede presentar versión "Amended" (AAMD)** además de la original (Exeter 2024/25, Norwich
+  2019/20): verificar cuál es la vigente.
+- **Fechas absurdas**: Companies House parsea mal presentaciones de los años 70 (1974 sale como 2074);
+  hay que descartar fechas futuras.
+- **FCA: el mismo ejercicio puede tener dos documentos** (reenvío; Leicestershire 2025): queda el de
+  mayor `docId`.
+- Estado: Premier, Championship y gran parte de League One/Two cubiertos con 5 ejercicios; detalle y
+  pendientes en `fuentes/Inglaterra/_notas-generales.md` sección 6.
