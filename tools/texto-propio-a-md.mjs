@@ -273,14 +273,38 @@ export function paginasARearmar(pdfRel, mdRel, registroDoc = null) {
   return pags.length ? { paginas: pags, metodo: 'columnas' } : null;
 }
 
+// COMPUERTA DEL REARMADO (Versión 411, escalera aprobada por Guido el 2026-10-02): el rearmado es un escalón que PROPONE una página nueva;
+// se usa solo si conserva las filas de tabla (etiqueta + número) que tenía la página anterior. Si pierde más de la mitad, se queda la
+// anterior, con una marca (para que el escalón no se repita: la marca dice "TEXTO PROPIO del PDF" y el método, como una página rearmada).
+// Caso: Novorizontino 2025, pág. 7 (estado de resultados dibujado girado 90° en una hoja vertical): el texto propio sale en columnas de
+// palabras sueltas; Mistral 16 filas, rearmada 3. Medido sobre los 12 documentos ya rearmados: Goiás (9) ninguna página rechazada.
+const NUM_CELDA = /^\(?-?\d{1,3}(\.\d{3})+(,\d+)?\)?$|^\(?-?\d+(,\d+)?\)?$/;
+function filasDeTabla(texto) {
+  return String(texto || '').split('\n').filter((l) => {
+    if (!l.trim().startsWith('|')) return false;
+    const c = l.split('|').map((x) => x.trim().replace(/\*/g, '')).filter(Boolean);
+    return c.some((x) => /[A-Za-zÀ-ú]{3}/.test(x) && !NUM_CELDA.test(x)) && c.some((x) => NUM_CELDA.test(x) && x.replace(/\D/g, '').length >= 3);
+  }).length;
+}
+function paginasDelMd(md) { const m = new Map(); let p = null; for (const l of md.split('\n')) { const x = l.match(/^---\s*pág\.\s*(\d+)\s*---/i); if (x) { p = Number(x[1]); m.set(p, []); } else if (p) m.get(p).push(l); } return new Map([...m].map(([k, v]) => [k, v.join('\n')])); }
+
 export function rearmar(pdfRel, pags, metodo = 'columnas') {
   const pdf = resolve(ROOT, pdfRel); const mdRel = pdfRel.replace(/\.pdf$/i, '.md'); const mdAbs = resolve(ROOT, mdRel);
-  const nuevas = new Map(); for (const p of pags) { const t = paginaAMd(pdf, p, metodo); if (t) nuevas.set(p, t); }
+  const actuales = paginasDelMd(readFileSync(mdAbs, 'utf8')); const rechazadas = [];
+  const nuevas = new Map(); for (const p of pags) {
+    const t = paginaAMd(pdf, p, metodo); if (!t) continue;
+    const antes = actuales.get(p) || ''; const a = filasDeTabla(antes); const b = filasDeTabla(t);
+    if (b < a / 2) {
+      rechazadas.push(p);
+      const sinMarca = antes.replace(/^\s*>\s*Página (NO )?rearmada[^\n]*\n+/, '').trim();
+      nuevas.set(p, `> Página NO rearmada (compuerta del rearmado, método ${metodo}): el TEXTO PROPIO del PDF perdía filas de tabla (${a} → ${b}); queda la transcripción anterior.\n\n${sinMarca}`);
+    } else nuevas.set(p, t);
+  }
   const respaldo = resolve(ROOT, derivado(mdRel, '.antes-texto-propio.md'));
   mkdirSync(dirname(respaldo), { recursive: true });
   if (!existsSync(respaldo)) copyFileSync(mdAbs, respaldo);
   writeFileSync(mdAbs, reemplazarPaginas(readFileSync(mdAbs, 'utf8'), nuevas));
-  return { mdRel, respaldo: relative(ROOT, respaldo), paginas: [...nuevas.keys()] };
+  return { mdRel, respaldo: relative(ROOT, respaldo), paginas: [...nuevas.keys()].filter((p) => !rechazadas.includes(p)), rechazadas };
 }
 
 async function main() {

@@ -128,8 +128,8 @@ for (const pdf of docs) {
   const TP = paginasARearmar(pdf, e.md, e); const pagsTP = TP?.paginas;
   if (pagsTP) {
     if (!(REINTENTAR && EJECUTAR)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: ${TP.metodo === 'regiones' ? 'rearmada con el texto propio (columnas) y sigue sin cerrar' : 'la transcripción no coincide con el texto propio del PDF'} (págs. ${pagsTP.join(', ')}): rearmar (método ${TP.metodo}, --reintentar, gratis) + localizar y extraer ~US$ 0,12`); if (!EJECUTAR) usd += 0.12; continue; }
-    rearmar(pdf, pagsTP, TP.metodo);
-    console.log(`  ${pdf}: págs. ${pagsTP.join(', ')} rearmadas con el texto propio del PDF (etapa 2, escalón 1, método ${TP.metodo})`);
+    const RA = rearmar(pdf, pagsTP, TP.metodo);
+    console.log(`  ${pdf}: págs. ${RA.paginas.join(', ') || 'ninguna'} rearmadas con el texto propio del PDF (etapa 2, escalón 1, método ${TP.metodo})${RA.rechazadas.length ? `; págs. ${RA.rechazadas.join(', ')} NO (la compuerta del rearmado: perdían filas de tabla, queda la transcripción anterior)` : ''}`);
     const L4 = await localizar(pdf, { registro, ejecutar: true, rehacer: true }); usd += L4.costo || 0;
     if (L4.error || L4.datos?.sin_estado) { estado[pdf] = L4.error ? `localizar: ${L4.error}` : 'sin estado de resultados aun con el texto propio (queda como fuente)'; continue; }
     const V4 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += V4.costo || V4.usd || 0;

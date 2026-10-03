@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 411 — Etapa 2, escalón 1b: compuerta del rearmado por página (2026-10-02)
+
+- `texto-propio-a-md.mjs` (`rearmar`): una página rearmada con el texto propio se usa solo si conserva al menos la mitad de las filas de tabla (etiqueta + número) de la anterior; si no, queda la anterior con una marca "Página NO rearmada" (el escalón no se repite). `lote.mjs` dice qué páginas rechazó.
+- Caso: Novorizontino 2025, pág. 7 (estado de resultados girado 90° en una hoja vertical): Mistral 16 filas, rearmada 3. Rechazadas 6, 7, 8 y 10; rearmadas las otras 19.
+- Medido sobre los 12 documentos ya rearmados: Goiás (9) ninguna página rechazada; Novorizontino 2023 rechazaría las págs. 20 y 25, que su carga no usa (7, 8 y 26), y su rearmado ya está hecho.
+
 ## Versión 410 — Ligas: celdas de estado con rowspan en las tablas de Wikipedia; Série D en el catálogo (2026-10-02)
 
 - `fetch-club-league-reference.mjs`: una fila que abre un grupo de estado (`|rowspan=N |{{flagicon|...}}`, también dentro de `{{nowrap|...}}`) toma como club la celda siguiente. Antes guardaba el estado y perdía el primer club del grupo.
