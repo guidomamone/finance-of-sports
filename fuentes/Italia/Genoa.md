@@ -1,5 +1,7 @@
 # Genoa (Genoa CFC)
 
+**Ángulos**: sitio oficial: agotado (`/governance/` solo publica desde 2022) · Wayback CDX: agotado (la CDX no lista ningún PDF financiero previo) · búsqueda web: agotado · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: Genoa Cricket and Football Club S.p.A., propiedad de Dan Șucu (777 Partners
@@ -35,3 +37,7 @@ en prensa pero sin PDF localizado en `genoacfc.it` en esta sesión) — candidat
 Wayback Machine en una sesión futura si se quiere profundizar el histórico.
 
 - Último chequeo: 2026-09-17.
+
+## 2ª tanda (2026-10-03): sin ejercicios nuevos, total 4 (+ comparativos 2021)
+
+El ejercicio al 31/12/2021 no se publica por separado: solo aparece como columna comparativa dentro del fascicolo del 31/12/2022 (que ya está en disco). La serie publicada arranca en 31/12/2022 (individual, consolidado y Genoa Image S.r.l.), sigue con 31/12/2023, 30/06/2024 (período de transición, ver duda) y 30/06/2025. Búsqueda web y CDX no mostraron nada anterior. Genoa queda en 4 ejercicios publicados.
