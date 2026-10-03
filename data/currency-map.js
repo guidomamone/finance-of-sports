@@ -333,6 +333,7 @@ const FX_CLOSE = {
   'BRL@2010-12-31': { fx: 1.6662, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 2010-12-31' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
   'BRL@2011-12-31': { fx: 1.8758, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil, última rueda hábil antes del cierre (2011-12-30, 2011-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
   'BRL@2012-12-31': { fx: 2.0435, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 2012-12-31' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'BRL@2013-12-31': { fx: 2.3426, source: 'market_close', label: 'PTAX de cierre (venda) del Banco Central do Brasil al 2013-12-31' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay
