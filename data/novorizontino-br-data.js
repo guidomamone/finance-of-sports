@@ -96,6 +96,15 @@ const novorizontinobrRevenueLinesByYear = {
     { rawLabel:'Convênios', normalizedCategory:'other_income', amountNative:0.189906, disclosureLevel:'aggregated' }, // pág. 7, precedente
     { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0.309436, disclosureLevel:'aggregated' }, // pág. 7, precedente
   ],
+  // 2018: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2018.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/demonstracoes-financeiras-2018.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2018: [
+    { rawLabel:'Repasse da federação', normalizedCategory:'broadcasting', amountNative:3.928, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Negociação e empréstimo de atletas', normalizedCategory:'player_sales', amountNative:1.729, disclosureLevel:'aggregated' }, // pág. 24, Jev 1
+    { rawLabel:'Receita com patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:0.161, disclosureLevel:'aggregated' }, // pág. 24, Jev 1
+    { rawLabel:'Vendas de ingressos e bar', normalizedCategory:'matchday_competition', amountNative:1.093, disclosureLevel:'aggregated' }, // pág. 24, Claude 0.8
+    { rawLabel:'Subvenções', normalizedCategory:'other_income', amountNative:0.25, disclosureLevel:'aggregated' }, // pág. 24, precedente
+  ],
 };
 const novorizontinobrExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-03)
@@ -190,6 +199,21 @@ const novorizontinobrExpenseLinesByYear = {
     { rawLabel:'Material esportivo', normalizedCategory:'other_expenses', amountNative:-0.197044, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.95
     { rawLabel:'Tributária', normalizedCategory:'admin_general_expense', amountNative:-0.015053, disclosureLevel:'aggregated' }, // pág. 7, precedente
   ],
+  2018: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Salários, ordenados e outros custos com pessoal', normalizedCategory:'wages_squad', amountNative:-8.377, disclosureLevel:'aggregated' }, // pág. 24, Claude 0.8
+    { rawLabel:'Gastos com jogos', normalizedCategory:'match_organisation_expense', amountNative:-1.459, disclosureLevel:'aggregated' }, // pág. 24, Jev 1
+    { rawLabel:'Aluguéis', normalizedCategory:'admin_general_expense', amountNative:-0.525, disclosureLevel:'aggregated' }, // pág. 24, Jev 1
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.304, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.98
+    { rawLabel:'Serviços prestados', normalizedCategory:'admin_general_expense', amountNative:-1.523, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.99
+    { rawLabel:'Provisão para contingências', normalizedCategory:'admin_general_expense', amountNative:-1.227, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.777, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Manutenções', normalizedCategory:'admin_general_expense', amountNative:-0.516, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.95
+    { rawLabel:'Salários, ordenados e outras despesas com pessoal', normalizedCategory:'admin_general_expense', amountNative:-0.205, disclosureLevel:'aggregated' }, // pág. 25, Claude 0.85
+    { rawLabel:'Gastos com negociação de atletas', normalizedCategory:'other_expenses', amountNative:-0.13, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.98
+    { rawLabel:'Combustível e lubrificantes', normalizedCategory:'admin_general_expense', amountNative:-0.101, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.94
+    { rawLabel:'Depreciação', normalizedCategory:'depreciation', amountNative:-0.061, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.152, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.98
+  ],
 };
 const novorizontinobrFiscalYearMeta = {
   // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = matchday_competition. Guido 2026-10-02: como 'Vendas de ingressos e bar' (matchday_competition); R$ 6 mil, inmaterial
@@ -265,6 +289,20 @@ const novorizontinobrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:22.072861, officialTotalExpenses:50.54116, officialPAT:-29.716647,
   },
+  2018: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2018-12-31',
+    sourceId:'novorizontino-br-demonstracoes-financeiras-2018',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.289, tax:0,
+    extraRows: [
+      {label:'Despesas financeiras', value:-0.349},
+      {label:'Receitas financeiras', value:0.06},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:7.161, officialTotalExpenses:15.357, officialPAT:-8.485,
+  },
 };
 const novorizontinobrPresupuestoOverlayByYear = {};
 
@@ -312,6 +350,12 @@ Object.assign(sources, {
     title:'Grêmio Novorizontino Sociedade Anônima do Futebol — demonstracoes-financeiras-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'novorizontino-br-demonstracoes-financeiras-2018': {
+    id:'novorizontino-br-demonstracoes-financeiras-2018', clubId:'novorizontino-br',
+    title:'Grêmio Novorizontino Sociedade Anônima do Futebol — demonstracoes-financeiras-2018 (ejercicio 2018)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
