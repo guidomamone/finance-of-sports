@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 168 clubes, 365 ejercicios, 15 países.
+TOTAL: 168 clubes, 366 ejercicios, 15 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -190,7 +190,7 @@ INGLATERRA (19)
   Wolverhampton Wanderers  2 ejercicios (2023/2024 a 2024/2025), balance, GBP
 
 GR (2)
-  AEL Larissa    9 ejercicios (2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2023/2024, 2024/2025), balance, EUR
+  AEL Larissa    10 ejercicios (2015/2016 a 2024/2025), balance, EUR
   Panathinaikos  1 ejercicio (2024/2025), balance, EUR
 
 HR (8)
