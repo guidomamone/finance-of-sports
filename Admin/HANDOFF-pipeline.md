@@ -36,7 +36,12 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera, medir en U
 
 1. **Goiás** (`goias-br`, Brasil) **entero en el sitio local: 2008-2017 y 2021-2025 (15 años)**, `Admin/lote-09.txt` y `lote-09b.txt`.
    Con liga en las 15 temporadas (Versiones 401-402).
-2. **Próximo: auditoría de TODO el proceso** (pedido de Guido, 2026-10-02). Recorrer las etapas 1-9 con lo aprendido en
+2. **Auditoría del proceso hecha** (`Admin/auditoria-pipeline-2026-10-02.md`). Ya resuelto: categorías por nota (Versiones 403-404) y los
+   errores de Goiás. Chequeo de coherencia entre años: prototipado y NO construido (con 403-404 encontró solo 2 casos en tres clubes,
+   contestados por Guido: Fortaleza 2020 "Auxilio hotelero" y UC 2018 "Indemnizaciones"); retomarlo si con los próximos clubes vuelven los
+   errores de categoría. Sigue, en orden: Fortaleza 2017 (sueldos en 0 sin aviso) y las 55 dudas silenciadas por `sin-dudas`; que el lote
+   no reprocese años cargados y cierre casos viejos de la cola; escalones automáticos para lo que hoy son ajustes.
+3. **Notas de la auditoría (detalle)** (pedido de Guido, 2026-10-02). Recorrer las etapas 1-9 con lo aprendido en
    UC, Fortaleza y Goiás: qué escaleras y escalones existen y cuáles se usaron de verdad; reglas que se agregaron por un solo caso y conviene
    revisar; casos que se resolvieron a mano o con ajustes y deberían tener escalón; gastos innecesarios (p. ej. el lote que volvió a
    localizar 2025 y 2017 ya cargados porque su .carga.json viejo pedía reintentar); trampas que el HANDOFF todavía no cuenta. Anotado para esa auditoría: el precedente exacto SIN contexto categorizó "Despesa com pessoal"

@@ -47,7 +47,7 @@ window.RANKINGS["co-primeraB"] = {
     clubs: [
       { id:"fortalezaceif-co", revenue:0.648, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2020",
-        mix:[["Comercial / Sponsors",0.022],["Estadio",0.056],["Televisión",0.159],["Premios por competencias",0.089],["Venta de Jugadores",0.108],["Otros ingresos",0.215]] },
+        mix:[["Comercial / Sponsors",0.022],["Estadio",0.056],["Televisión",0.159],["Premios por competencias",0.116],["Venta de Jugadores",0.108],["Otros ingresos",0.187]] },
     ],
   },
   2019: {
