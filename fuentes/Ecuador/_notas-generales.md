@@ -67,3 +67,11 @@ fuzzy poco predecible. No se logró operar este portal para ningún club esta se
 retomar con el RUC exacto y verificado (no se encontró un lookup público de RUC por nombre de
 empresa que confirmara 1790463265001).
 
+
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet) — Wayback CDX por dominio y hallazgos
+
+- Corrección clave: SÍ hay clubes grandes que presentan estados a socios en la asamblea anual (los estatutos exigen informe económico + informe de auditores externos): **Emelec** (Estados Financieros 2023 auditados, 40 págs, en `Clubes/Ecuador/Emelec/`) y **Barcelona SC** (Estado de Resultado y Situación 2018, 3 págs, en `Clubes/Ecuador/Barcelona SC/`). Ambos estaban en el sitio VIEJO del club y hoy solo se recuperan por Wayback (los sitios nuevos no los publican). La técnica que los encontró: CDX del dominio completo filtrando `application/pdf` y mirando nombres (`informe_financiero`, `INFORME-FINANCIERO-2023`).
+- **Truncado de capturas**: PDFs de Wayback que salen exactamente 1.048.576 bytes están cortados (rotos). Hay que probar otras capturas del mismo URL (`cdx ... &fl=original,timestamp,length`): para Emelec 2023 la de 2025-08-03 salió completa y la de 2024-10-12 no.
+- Dominios sin nada financiero en CDX: Deportivo Cuenca, Independiente del Valle (solo "Memoria de sostenibilidad" en Drive, sin acceso público), Aucas (`aucas.ec/download/<id>/` da 500 hoy y 0 captura utilizable), Delfín, Macara (artículo sobre gestión financiera, sin balance), Mushuc Runa (imágenes "Financ1/2" 2022 sin abrir), Orense (revista "Mundo Orense 2022"), LDU. Técnico Universitario y El Nacional: 0 URLs archivadas.
+- Pendiente de bajo costo: abrir las imágenes `mushucrunasc.ec/wp-content/uploads/2022/05/Financ1-e1653427532471.png` y `Financ2-...png` (Wayback `20230510231246/44`) para ver si son una presentación financiera.

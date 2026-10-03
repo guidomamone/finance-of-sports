@@ -1,5 +1,7 @@
 # Universidad César Vallejo - UCV (Club Cultural Social y Deportivo Universidad César Vallejo)
 
+**Ángulos**: sitio oficial: agotado (ver notas previas) · regulador/país: sin obligación de publicar · Wayback CDX: hecho, 0 señal (ucvclub.com) · búsqueda web: previa agotada · barrido: 4 (Sonnet) — 2026-10-03
+
 - Sin PDF ni fuente pública identificada. Dead-end estructural: a diferencia de la mayoría de los
   clubes de Liga 1 (asociaciones civiles), el club UCV SÍ es una **sociedad — S.A.C. (Sociedad
   Anónima Cerrada)** ("Club Cultural Social y Deportivo Universidad César Vallejo S.A.C.", inicio de
@@ -18,3 +20,7 @@
   preguntarles").
 - Contacto: ucvclub.com (sin sección de transparencia).
 - Último chequeo: 2026-09-13.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+Wayback CDX del dominio completo `ucvclub.com`: 1.116 URLs; 0 PDFs. Ningún estado financiero, memoria ni balance archivado. Dead-end del canal Wayback; el club no tiene obligación de publicar (asociación civil o S.A. cerrada).

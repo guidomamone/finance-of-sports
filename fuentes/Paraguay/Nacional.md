@@ -1,6 +1,7 @@
 # Nacional
 
-**Ángulos**: sitio oficial: agotado (sitio propio, no WordPress, sin wp-json; menú completo revisado —
+**Ángulos**: sitio oficial: clubnacional.com.py: menú sin sección de transparencia/balances · regulador/país: sin regulador público (APF fair play financiero es reservado) · Wayback CDX: sin PDF útil · búsqueda web: solo prensa/asambleas · barrido: 1 (Sonnet) — 2026-10-03
+
 Comisión Directiva, Subcomisiones, Instalaciones, Estadio, Historia, Planteles, Asociate, Contacto — sin
 sección de transparencia ni PDFs; páginas Comisión Directiva/Subcomisiones/Asociate/Contacto sin links a
 PDF ni menciones de balance/memoria/ejercicio) · Wayback CDX: agotado (0 PDFs archivados en las 2061 URLs
@@ -35,3 +36,8 @@ regulador/país: no aplica · barrido: 1 (Sonnet) — 2026-09-27
   combinando con nombres de dirigentes actuales, que esta sesión no llegó a hacer a fondo por la
   homonimia.
 - Último chequeo: 2026-09-27.
+
+## Barrido 2026-10-03
+
+- clubnacional.com.py: menú sin sección de transparencia/balances; Wayback CDX sin resultados.
+- Ver `_notas-generales.md` de Paraguay para la metodología del país (qué obligación de publicar existe y por qué no hay canal público).

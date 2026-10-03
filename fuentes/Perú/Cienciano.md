@@ -1,11 +1,4 @@
-**Ángulos**: sitio oficial: agotado (menú completo — Noticias, Partidos, El Club [Historia, Prensa,
-Contacto, Red card], Equipos, Cienciano TV, Hotel Cienciano, Sorteo 4x4 — más `wp-json/wp/v2/search`
-con `balance`/`asamblea`/`ejercicio`/`memoria`/`estados`/`financiero`/`transparencia`: ningún hit
-relevante, solo coincidencias sueltas en notas deportivas) · Wayback CDX: agotado (2 PDFs archivados
-en todo el dominio `cienciano.com`, ninguno financiero — ver detalle abajo) · búsqueda web: agotado
-(`filetype:pdf` sin resultados propios del club) · prensa: confirmado que el único "balance
-financiero" que aparece en prensa reciente es el de la FPF (Federación), no el del club — ver
-detalle · regulador/país: no aplica · barrido: 1 (Sonnet) — 2026-09-26
+**Ángulos**: sitio oficial: agotado (ver notas previas) · regulador/país: sin obligación de publicar · Wayback CDX: hecho, 0 señal (cienciano.com) · búsqueda web: previa agotada · barrido: 4 (Sonnet) — 2026-10-03
 
 # Cienciano (Club Cienciano del Cusco)
 
@@ -47,3 +40,7 @@ detalle · regulador/país: no aplica · barrido: 1 (Sonnet) — 2026-09-26
 - **Conclusión**: dead-end real, 0 señal de que exista un documento financiero propio de Cienciano —
   no amerita mail por ahora. Revisar de nuevo sin fecha fija.
 - Último chequeo: 2026-09-26.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+Wayback CDX del dominio completo `cienciano.com`: 12.291 URLs; PDFs solo OFICIO FPF y exención de responsabilidad. Ningún estado financiero, memoria ni balance archivado. Dead-end del canal Wayback; el club no tiene obligación de publicar (asociación civil o S.A. cerrada).

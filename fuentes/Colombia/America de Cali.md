@@ -1,5 +1,7 @@
 # América de Cali (América de Cali S.A., en reorganización)
 
+**Ángulos**: sitio oficial: no intentado esta sesión · regulador/país: agotado (SIIS API, serie completa bajada) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit fuerte, club nuevo.** 3 PDFs descargados a `Clubes/Colombia/America de Cali/`:
   `estados-financieros-2025.pdf` (40 páginas, paquete completo 2025/2024),
   `dictamen-revisor-fiscal-2025.pdf`, `certificacion-ef-2025.pdf` — vía SIIS, NIT 890305773. Cifras
@@ -28,3 +30,8 @@
   el rojo escarlata" (es.wikipedia.org/wiki/América_de_Cali) + tabla por liga de footylogos
   (Categoría Primera A), verificado 2026-09-22.
 
+## Barrido 2026-10-03 (completar a 5 ejercicios, SIIS por API)
+
+- NIT 890305773, en reorganización, 6 registros en SIIS (2017, 2021-2025).
+- Bajado a `Clubes/Colombia/America de Cali/`: estados-financieros 2021-2024 (+certificación y dictamen); 2017 sin bajar. Total en disco: 5 ejercicios con estados-financieros.
+- Ninguno transcripto ni cargado todavía.

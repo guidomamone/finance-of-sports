@@ -1,5 +1,7 @@
 # América Mineiro (América Futebol Clube, Belo Horizonte-MG — asociación civil, con SAF en formación)
 
+**Ángulos**: sitio oficial: HIT (2023-2025) · federación/regulador: FMF no publica · Wayback CDX: HIT (2020 y 2021 en el dominio viejo americamineiro.com.br y en irp.cdn-website.com) · búsqueda web: sin 2022 · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Dead-end viejo destrabado.** La nota anterior (barrido 2026-09) decía que `americafc.com.br/transparencia`
   mencionaba "Demonstrações Financeiras 2024" pero no se encontraba la URL directa del PDF. El problema no era
   el club: era el ángulo. La página **sí** trae los links planos en el HTML servido, pero apuntan a un CDN de
@@ -38,3 +40,9 @@
   protesta, sin vigencia hoy. footylogos.com declara un verde algo distinto (#016738) para el mismo
   club, misma familia de color (verde oscuro) — se prefirió el hex propio del sitio oficial del club
   por ser más preciso para SU identidad puntual, no un agregador genérico.
+
+## Barrido 2026-10-03 (grupo C Brasil): de 3 a 5 ejercicios en disco (2020, 2021, 2023, 2024, 2025)
+
+- `demonstracoes-financeiras-2021.pdf` (34 pp, "Em 31 de dezembro de 2021") ← Wayback id_ de `irp.cdn-website.com/05448cb5/files/uploaded/Relatorio_Anual_Demonstracoes_2021_Site.pdf`.
+- `demonstracoes-financeiras-2020.pdf` (34 pp, "Em 31 de dezembro de 2020") ← Wayback id_ de `americamineiro.com.br/wp-content/uploads/2021/04/Relatorio_Anual_Demonstracoes_2020_-_America_Futebol_Clube_-_Versao_Final_Site.pdf` (el club usaba otro dominio hasta ~2022).
+- **Hueco: 2022.** La prensa del club ("Pelo segundo ano seguido América apresenta superávit", receita recorde R$ 121,47 M) confirma que se publicó, pero el PDF no está en la página de transparencia live, ni en los listados Wayback de `americafc.com.br`, `americamineiro.com.br` ni del CDN (`Relatorio_Anual_Demonstracoes_2022*` da 403 por S3-style). Cubierto como comparativo dentro del PDF de 2023. Ángulo pendiente: capturas Wayback de `americafc.com.br/transparencia` de 2023 (la de 20230912 devolvió 403).

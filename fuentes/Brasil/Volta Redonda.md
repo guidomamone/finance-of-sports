@@ -1,5 +1,7 @@
 # Volta Redonda (Volta Redonda Futebol Clube, RJ — associação, no SAF)
 
+**Ángulos**: sitio oficial: HIT parcial (API /api/documents solo 2025) · federación/regulador: FERJ solo 2024 · Wayback CDX: HIT (sitio WordPress viejo voltaco.com.br/wp-content, 2017-2023) · búsqueda web: no necesaria · barrido: 1 (Sonnet) — 2026-10-03
+
 - Club nuevo esta sesión (Série B 2025). Sigue siendo **associação** (CNPJ 29.444.957/0001-09,
   confirmado en la DRE), no se convirtió a SAF, y publica igual en su propio portal de
   transparencia.
@@ -53,3 +55,10 @@
 - Pendiente: ejercicios 2023 y anteriores (ver arriba, portal propio sin histórico y FERJ con un
   solo balance).
 - Último chequeo: 2026-09-24.
+
+## Barrido 2026-10-03 (grupo C Brasil): de 2 a 7 ejercicios en disco (2018-2022, 2024, 2025)
+
+- El sitio viejo (WordPress, `voltaco.com.br/wp-content/uploads/2019..2023/`) está completo en Wayback aunque el Next.js nuevo solo exponga 2025. Bajados vía `web.archive.org/web/<ts>id_/<url>` a `Clubes/Brasil/Volta Redonda/`: `demonstracoes-financeiras-2022.pdf` (25 pp), `-2021.pdf` (25), `-2020.pdf` (28), `-2019.pdf` (29), `-2018.pdf` (35 pp, escaneo; carátula verificada a mano: "Volta Redonda Futebol Clube, 31 de dezembro de 2018 e 2017").
+- **No conseguidos por truncado de Wayback (1.048.576 bytes)**: 2023 (`.../2023/04/Demonstra%C3%A7%C3%B5es%20Financeiras%20-%202023%20DEFINITIVAS.pdf`, captura 20240724113130; también existen `Balanço Patrimonial 2023` y `DRE 2023`) y 2017 (`Demonstracoes-Financeiras-31-de-dezembro-2017.pdf`, captura 20231209145255). El link live ya da 404. Ángulo que falta: pedirlas al club o la FERJ.
+- Existen además (no bajados): pareceres de auditoría 2019/2021/2022/2023, pareceres del Conselho Fiscal 2019-2022, DRE/Balanço sueltos 2019-2022, Orçamento 2021/2022.
+- Ficha FERJ (`servicos.fferj.com.br/ClubesLigas/ViewTeam?alias=134`) sigue con un solo balance (2024).

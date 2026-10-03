@@ -1,5 +1,7 @@
 # Vitória (Esporte Clube Vitória, Salvador-BA)
 
+**Ángulos**: sitio oficial: HIT (ecvitoria.com.br, 2025; carpeta vieja /public/assets/pdf/Documentos_Vitoria/ ya muerta en vivo) · federación/regulador: no consultada · Wayback CDX: HIT · búsqueda web: sin hallazgos nuevos · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Dead-end viejo destrabado — la URL cambió, no era un bloqueo estructural.** La nota anterior
   (`_notas-generales.md`) decía que `ecvitoria.com.br/relatorios-de-transparencia/` daba 404. Esa
   ruta ya no existe, pero el portal se movió a `ecvitoria.com.br/transparencia/
@@ -44,3 +46,9 @@
   primer componente del apodo "Rubro-Negro", y el escudo tiene el rojo en la mitad SUPERIOR (más
   prominente visualmente).
 
+## Barrido 2026-10-03 (grupo C Brasil): de 1 a 5 ejercicios en disco (2016, 2018, 2019, 2024, 2025)
+
+- La nota anterior decía que 2024 y anteriores estaban "Nenhum documento encontrado"; en realidad el sitio viejo (`ecvitoria.com.br/public/assets/pdf/Documentos_Vitoria/DEMONSTRAÇÃO FINANCEIRA/`) los tenía y el Wayback CDX los conserva (capturas de 2026-03-05, antes de la migración). Los links live dan 404; bajados vía `web.archive.org/web/<ts>id_/`:
+  - `demonstracoes-financeiras-2024.pdf` (49 pp, 1,01 MB: justo bajo el límite de truncado; "Em 31 de dezembro de 2024"), `demonstracoes-financeiras-2019.pdf` (49 pp, "31 de dezembro de 2019 e de 2018"; era el archivo `Relatório dos auditores independentes sobre as demonstrações financeiras.pdf`), `demonstracoes-financeiras-2018.pdf` (49 pp, "2018 e de 2017"), `demonstracoes-financeiras-2016.pdf` (22 pp, "31 de dezembro de 2016 e 2015", con carta de remisión).
+  - `parcial-dre-ebitda-jan-nov-2021.pdf` (1 pp): DRE/EBITDA enero-noviembre 2021, NO es un ejercicio completo (era `DEMONSTRAÇÕES FINANCEIRAS 2021.pdf`).
+- **Huecos: 2017 (cubierto como comparativo en el de 2018), 2020, 2021, 2022, 2023.** Del sitio solo hay balancetes mensuales (2019, 2021-2024), balanços/DRE mensuales de 2022 y un "Escopo Auditoria Externa 2023". No se ubicó la demonstração anual de 2020-2023.

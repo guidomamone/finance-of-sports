@@ -1,5 +1,7 @@
 # Olimpia
 
+**Ángulos**: sitio oficial: clubolimpia.com.py no responde a curl (000) hoy · regulador/país: sin regulador público (APF fair play financiero es reservado) · Wayback CDX: sin PDF útil · búsqueda web: solo prensa/asambleas · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Olimpia, Cerro Porteño, Libertad**: recheck rápido en esta sesión (búsqueda dirigida a
   novedades de 2025), mismo resultado — sin PDFs encontrados para ninguno de los tres. Prensa
   paraguaya (abc.com.py, d10.ultimahora.com, megacadena.com.py, versus.com.py) confirma que los tres
@@ -15,3 +17,7 @@
   transparencia financiera identificada; probar contacto directo institucional.
 - Último chequeo: 2026-09-12.
 
+## Barrido 2026-10-03
+
+- clubolimpia.com.py no responde a curl (000) hoy; Wayback CDX (PDF) sin resultados.
+- Ver `_notas-generales.md` de Paraguay para la metodología del país (qué obligación de publicar existe y por qué no hay canal público).

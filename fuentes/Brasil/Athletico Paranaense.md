@@ -1,5 +1,7 @@
 # Athletico Paranaense (Club Athletico Paranaense — no es SAF)
 
+**Ángulos**: sitio oficial: HIT (athletico.com.br/gestao, solo vía Browser pane; curl da 403) · federación/regulador: no hizo falta (FPF bucket tiene solo 2025) · Wayback CDX: no necesario · búsqueda web: no necesaria · barrido: 1 (Sonnet) — 2026-10-03
+
 - Club nuevo esta sesión. **No convertido a SAF** (sigue como associação tradicional) pero publica
   demonstrações financeiras auditadas todos los años desde al menos 2016, con muy buena cobertura
   histórica. 2 ejercicios descargados a `Clubes/Brasil/Athletico Paranaense/`:
@@ -30,3 +32,18 @@
   dice "Black and Red" en ese orden — señal mixta, se priorizó el nombre del club sobre el orden de
   un agregador de terceros).
 
+## Barrido 2026-10-03 (sourcing Brasil grupo B) — de 2 a 7 ejercicios en disco
+
+- **Hallazgo clave**: `athletico.com.br/gestao/` (y `www.`) devuelve **403 por curl** (awselb), pero carga en el Browser pane;
+  extrayendo los `href` por JS (`#grupo5` "Balanços do Clube") salen todos los PDF, alojados en el bucket
+  `atleticopr-www-static.s3.sa-east-1.amazonaws.com/wp-content/uploads/...`, que **sí baja con curl directo** (con las
+  tildes en NFD codificadas, `%CC%A7` etc., tal cual el href; lo que fallaba antes era el encoding, no el bucket).
+- Nuevos en `Clubes/Brasil/Athletico Paranaense/` (todos Club Athletico Paranaense, columna del club; verificado en carátula/texto):
+  `demonstracoes-financeiras-2023.pdf` (44 pp, "Demonstrações Financeiras 2023", mayormente imágenes), `-2022.pdf` (39 pp, 2022 y 2021),
+  `-2021.pdf` (37 pp), `-2020.pdf` (35 pp, "NEs-Club-Athletico-Paranaense-2020"), `-2019.pdf` (42 pp, "CAP-DF-2019").
+  md5 distintos entre todos (y contra 2024/2025 existentes).
+- **Disponibles en la misma página y NO bajados** (la meta de 5 ya estaba cumplida): 2006-2018 (Club; 2018 tiene además "Relatório Financeiro 2018"),
+  y la serie paralela de **CAP S.A. (Arena dos Paranaenses) 2016-2025** — es otra entidad (la sociedad de la Arena), no la del club.
+  También pareceres del Conselho Fiscal 2022-2025 y actas de aprobación de cuentas.
+- Link 2025 en el sitio: `.../2026/05/2559-26-Relatorio-Club-Athletico-Paranaense-2025.pdf` y 2024 `.../2026/04/Relatorio-de-Atividades-e-Demonstracoes-Contabeis-2024.pdf` (re-subidos; los ya en disco vienen de otras fuentes, no se comparó md5).
+- Ejercicios en disco ahora: 2019, 2020, 2021, 2022, 2023, 2024, 2025.

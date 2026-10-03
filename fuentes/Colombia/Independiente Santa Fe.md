@@ -1,5 +1,7 @@
 # Independiente Santa Fe (Independiente Santa Fe S.A., en reorganización)
 
+**Ángulos**: sitio oficial: no intentado esta sesión · regulador/país: agotado (SIIS API, serie completa bajada) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit fuerte, club nuevo.** 3 PDFs descargados a `Clubes/Colombia/Independiente Santa Fe/`:
   `estados-financieros-2025.pdf` (42 páginas, paquete completo separado 2025/2024),
   `dictamen-revisor-fiscal-2025.pdf`, `certificacion-ef-2025.pdf` — vía SIIS, NIT 860009807. Cifras
@@ -29,3 +31,8 @@
   (eltiempo.com/deportes/futbol-colombiano/independiente-santa-fe-la-historia-del-escudo-y-los-colores-del-equipo-756556)
   y footylogos, verificado 2026-09-22.
 
+## Barrido 2026-10-03 (completar a 5 ejercicios, SIIS por API)
+
+- NIT 860009807, en reorganización desde ~2021, 11 registros en SIIS.
+- Bajado a `Clubes/Colombia/Independiente Santa Fe/`: estados-financieros 2020-2024 (+certificación y dictamen). Total en disco: 6 ejercicios con estados-financieros.
+- Ninguno transcripto ni cargado todavía.

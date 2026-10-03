@@ -144,6 +144,12 @@ const OVERRIDES = {
   'Portugal|Tondela': { doc: true, motivo: '1 ejercicio parcial real vía arquivo.pt' },
   'Portugal|Arouca': { doc: false, motivo: '4 ejercicios existen pero truncados en Wayback, no usables' },
   'Suiza|Basel': { doc: true, motivo: '18 documentos 2005-2021' },
+  'Brasil|Juventude': { doc: true, motivo: '9 ejercicios 2017-2025 en juventude.com.br/publicacoes-e-editais (barrido 2026-10-03)' },
+  'Brasil|Vasco da Gama': { doc: true, motivo: 'SAF 2022-2023 + asociación 2012-2025 en disco; SAF 2024-25 bloqueados por Cloudflare' },
+  'Brasil|Minas Tênis Náutico Clube': { doc: true, motivo: '8 relatórios anuales 2017-2024 (otro deporte, poliesportivo)' },
+  'Ecuador|Emelec': { doc: true, motivo: 'Estados Financieros 2023 auditados (escaneado) recuperados por Wayback, 1 ejercicio' },
+  'Perú|Sporting Cristal': { doc: false, motivo: 'S.A. cerrada, CDX completo sin ningún financiero' },
+  'Perú|Universitario de Deportes': { doc: true, motivo: 'Memoria 2018 con cifras 2016-2018 + comunicados de auditoría BDO; no son EEFF completos pero sí documento oficial' },
   'España|Real Sociedad': { doc: false, motivo: 'el depósito existe, el PDF queda detrás de un informe pago' },
 
   // 13 CONFLICTOS de la corrida del 2026-09-23 (to-do 48), tras sumarse el sourcing

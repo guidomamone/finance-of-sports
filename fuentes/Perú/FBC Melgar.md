@@ -1,5 +1,7 @@
 # FBC Melgar (Foot Ball Club Melgar)
 
+**Ángulos**: sitio oficial: agotado (ver notas previas) · regulador/país: sin obligación de publicar · Wayback CDX: hecho, 0 señal (fbcmelgar.com.pe) · búsqueda web: previa agotada · barrido: 4 (Sonnet) — 2026-10-03
+
 - Sin PDF ni fuente pública identificada. Dead-end estructural, no solo "no se encontró": Melgar es
   hoy una **asociación civil sin fines de lucro** (confirmado en el propio pie de página legal de
   fbcmelgar.com.pe, que además revela que el club está en un **proceso concursal ante INDECOPI desde
@@ -32,3 +34,7 @@
 - Contacto: fbcmelgar.com.pe (sin sección de transparencia); IFCO de INDECOPI para el expediente
   concursal (número exacto no ubicado esta sesión).
 - Último chequeo: 2026-09-13.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+Wayback CDX del dominio completo `fbcmelgar.com.pe`: 2.687 URLs; PDFs solo formularios de abono y protocolo 2020. Ningún estado financiero, memoria ni balance archivado. Dead-end del canal Wayback; el club no tiene obligación de publicar (asociación civil o S.A. cerrada).

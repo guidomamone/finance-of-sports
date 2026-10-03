@@ -1,10 +1,4 @@
-**Ángulos**: sitio oficial: agotado (menú completo — Noticias, El Club [Historia, Comisión Directiva,
-Palmarés, Estadio], Plantel, Inferiores, Clasificación, Fixture, Fotos, Sponsors, Contactos —
-ninguna sección institucional/transparencia/balance) · Wayback CDX: agotado (0 capturas archivadas
-NUNCA en todo el dominio `adtarma.com`) · búsqueda web: agotado (`filetype:pdf` sin resultados;
-búsqueda de prensa sobre crisis económica solo trae la nota de 2023 sobre atraso de sueldos a
-jugadores, sin ninguna cifra de balance ni mención de documento) · regulador/país: no aplica ·
-barrido: 1 (Sonnet) — 2026-09-26
+**Ángulos**: sitio oficial: agotado (ver notas previas) · regulador/país: sin obligación de publicar · Wayback CDX: hecho, 0 señal (adtarma.com y adt.pe) · búsqueda web: previa agotada · barrido: 4 (Sonnet) — 2026-10-03
 
 # ADT (Asociación Deportiva Tarma)
 
@@ -38,3 +32,7 @@ barrido: 1 (Sonnet) — 2026-09-26
   prensa a una asamblea económica con cifras) — no amerita mail por ahora. Revisar de nuevo sin
   fecha fija.
 - Último chequeo: 2026-09-26.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+Wayback CDX del dominio completo `adtarma.com y adt.pe`: 0 URLs en ambos. Ningún estado financiero, memoria ni balance archivado. Dead-end del canal Wayback; el club no tiene obligación de publicar (asociación civil o S.A. cerrada).

@@ -1,5 +1,7 @@
 # RB Bragantino (Red Bull Bragantino Futebol Ltda., Bragança Paulista-SP)
 
+**Ángulos**: sitio oficial: SPA, no sirve PDFs en vivo · federación/regulador: FPF índice (Red Bull Bragantino: 2010-2017, 2019, 2020, 2025; sin 2018 ni 2021-2024) · Wayback CDX: OK, recuperó 2021, 2022, 2023 · búsqueda web: no hizo falta · barrido: 7 ejercicios Ltda en disco (2019-2025) (Sonnet) — 2026-10-03
+
 - **Caso atípico: NO es SAF ni associação — es una Ltda ("Sociedade Empresária Limitada"), CNPJ
   51.315.976/0001-94** (constituida antes de la Lei 14.193/2021, así que nunca tuvo que convertirse
   a SAF). Publica igual demonstrações financeiras auditadas por BDO en una carpeta propia del
@@ -73,3 +75,16 @@
   Notas explicativas (no transcriptas, ver arriba) no se pudo separar, se cargó todo a `wages_squad`.
   Si en el futuro se consigue/transcribe el PDF completo con Notas, revisar este split.
 - Último chequeo: 2026-09-24.
+
+## Barrido 2026-10-03 (objetivo ≥5 ejercicios: CUMPLIDO, 2 → 7)
+
+- Federação Paulista (índice JSON): `Red Bull Bragantino` tiene 2019, 2020 y 2025 (más 2010-2017 de la entidad anterior). **Los años 2021-2024 NO están en el índice FPF** (el club no los presentó ahí) — no es un hueco del repositorio.
+- `balanco-2020.pdf` — ej. 2020 con comparativo 2019, "RED BULL BRAGANTINO FUTEBOL LTDA." (FPF `Institucional/2020/DF Bragantino - quadros.pdf`, 5 pp.; mismo tipo de PDF vectorial "Print To PDF" sin capa de texto que el de 2019; leído por OCR de carátula).
+- `balanco-2025-auditado.pdf` — ej. 2025, FPF `Institucional/2025/3333-26  Relatório dos auditores independentes RB Bragantino 2025.pdf` (43 pp., 4,7 MB, texto nativo, "Red Bull Bragantino Futebol Ltda."). Confirma el cambio a divulgación completa (con auditoría y notas) para 2025.
+- **Wayback CDX** (`web.archive.org/cdx/search/cdx?url=redbullbragantino.com.br/balanco/*&filter=statuscode:200&collapse=urlkey`, funcionó a la primera, una consulta por vez) lista 7 archivos; bajados con `web.archive.org/web/<timestamp>if_/<url>`:
+  - `balanco-2021.pdf` — ej. 2021 (con 2020), snapshot 20220519, `0404_22_DF_Red_Bull_Bragantino_BDO_Quadros.pdf`, 5 pp., "Print To PDF" sin texto; OCR de carátula confirma entidad y ejercicio.
+  - `balanco-2022.pdf` — ej. 2022 (con 2021 reclasificado), snapshot 20230508, `red_bull_bragantino_bdo_rcs_..._23_de_janeiro_de_2023.pdf`, 6 pp., con texto.
+  - `balanco-2023.pdf` — ej. 2023 (con 2022 reclasificado), snapshot 20240515, `Red_Bull_Bragantino_futebol_LTDA_BDO_RCS_..._31_de_Janeiro_de_2024.pdf`, 5 pp. (31 KB, PDFium; solo "quadros", sin notas ni informe del auditor). Cuenta, pero es el más delgado.
+  - Los otros 2 de la lista ya los teníamos (2019, 2024) o son otra entidad (`DF_RB_Futebol_-_quadros_.pdf` = RB Futebol, la matriz; el snapshot no se pudo bajar, devolvió vacío — sin intentar de nuevo, no es el club).
+- `balanco-2017-clube-atletico-bragantino-associacao.pdf` — ex. 2017/2016/2015, **entidad distinta**: "CLUBE ATLÉTICO BRAGANTINO" (la asociación anterior a la Ltda; FPF lo lista bajo el mismo idClube hasta 2017). Guardado como contexto, NO cuenta para el objetivo.
+Serie en disco de la Ltda: 2019, 2020, 2021, 2022, 2023, 2024, 2025 (2018 solo como comparativo reexpresado dentro del 2019).

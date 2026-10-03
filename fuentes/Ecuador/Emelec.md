@@ -1,5 +1,7 @@
 # Emelec (Club Sport Emelec)
 
+**Ángulos**: sitio oficial: **ENCONTRADO vía Wayback** (el sitio fue rehecho y ya no sirve los PDFs) · regulador/país: no aplica (club civil) · Wayback CDX: **ENCONTRADO** (2023 auditado) · búsqueda web: sin más años · barrido: 4 (Sonnet) — 2026-10-03
+
 - Sin PDFs ni fuente pública identificada. Ninguno de los dos tiene una sección de transparencia o
   estados financieros en su propio sitio (barcelonasc.com.ec, emelec.com.ec — se probaron rutas
   típicas tipo `/transparencia/` y `/estados-financieros/`, ambas 404). No se intentó buscarlos en
@@ -26,3 +28,12 @@
   SAD. Sin ángulo nuevo mientras tanto.
 - Contacto: sin sección propia identificada; supercias.gob.ec no aplica todavía (ver arriba).
 - Último chequeo: 2026-09-13.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet) — HALLAZGO: Estados Financieros 2023 auditados
+
+La corrección de la nota de 2026-09-13 ("sin PDFs"): el sitio viejo (WordPress, `emelec.com.ec/content/uploads/2024/08/`) publicó en agosto de 2024, junto a la convocatoria a asamblea de socios, el
+**"CLUB SPORT EMELEC — Estados Financieros al 31 de diciembre de 2023, con el informe de los auditores independientes"** (carátula verificada a ojo).
+- Guardado: `Clubes/Ecuador/Emelec/informe-financiero-2023.pdf` (40 págs, ESCANEADO, sin capa de texto → requiere OCR/Mistral; es 1 ejercicio, estados devengados auditados). Fuente: Wayback `20250803112828` de `https://emelec.com.ec/content/uploads/2024/08/EMELEC-INFORME-FINANCIERO-2023.pdf` (el sitio actual rehecho devuelve 404). OJO: la captura `20241012190121` está TRUNCADA a 1.048.576 bytes (PDF roto); sirvió la de 2025-08. El archivo `1.-INFORME-FINANCIERO-1.pdf` (captura 2024-08-15) es el mismo documento (misma carátula y 40 págs) — no se guardó duplicado.
+- Otros PDFs de esa tanda en el mismo directorio, NO descargados por no ser financieros directos: `ACTA-DE-ASAMBLEA-SCAN.pdf`, `Adobe-Scan-13-ago-2024.pdf`, `Presentacion1.pdf`, `Exo-pag-7-mar-23-5-1.pdf`, `20240814122858.pdf` (posible presentación/acta del informe: vale abrir si se onboardea 2023).
+- Ejercicios anteriores (2018-2022): CDX del dominio completo (19.522 URLs) NO muestra ningún otro informe financiero; el club presentó informes a socios solo en esa asamblea. Prensa dice que los auditados se publican en redes sociales (no verificable). Ejercicios en disco: **1** (2023).
+- Candidato a mail/socio: pedir los estados auditados 2019-2022 y 2024 (el estatuto/asamblea los trata como informe anual).

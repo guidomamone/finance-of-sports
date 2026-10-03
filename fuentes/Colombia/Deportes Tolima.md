@@ -1,5 +1,7 @@
 # Deportes Tolima (Club Deportes Tolima S.A.)
 
+**Ángulos**: sitio oficial: no intentado esta sesión · regulador/país: agotado (SIIS API, serie completa bajada) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit fuerte vía SIIS, y el primer club del barrido colombiano SIN proceso de reorganización
   activo (Procesos en superintendencia: 0 activos, 0 cerrados).** 3 PDFs descargados a
   `Clubes/Colombia/Deportes Tolima/`: `estados-financieros-2025.pdf` (53 páginas, "NOTAS A LOS
@@ -31,3 +33,9 @@
   (la categorización de ingresos/gastos ya está hecha en
   `Clubes/Colombia/Deportes Tolima/estados-financieros-2025.md`).
 - Último chequeo: 2026-09-13.
+
+## Barrido 2026-10-03 (completar a 5 ejercicios, SIIS por API)
+
+- NIT 890700863 (CLUB DEPORTES TOLIMA S.A), 9 ejercicios en SIIS.
+- Bajado a `Clubes/Colombia/Deportes Tolima/`: estados-financieros 2020-2024 (+certificación y dictamen). Total en disco: 6 ejercicios con estados-financieros.
+- Ninguno transcripto ni cargado todavía.

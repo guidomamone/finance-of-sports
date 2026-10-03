@@ -1,5 +1,7 @@
 # Millonarios (Azul & Blanco Millonarios FC S.A.)
 
+**Ángulos**: sitio oficial: no intentado esta sesión · regulador/país: agotado (SIIS API, serie completa bajada) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit fuerte, ahora con un tercer ejercicio.** 3 ejercicios/paquetes descargados a
   `Clubes/Colombia/Millonarios/`: `informe-gestion-2023.pdf` e `informe-gestion-2024.pdf` (de la
   sesión anterior, el "Informe Periódico Fin de Ejercicio" completo con comparativo, cubren 2022,
@@ -23,3 +25,8 @@
   confirma "Azul y Blanco" como colores oficiales (blanco es secundario, azul gana por ser el color
   no-blanco, criterio de la sección 3 de `club-or-year-onboarding`).
 
+## Barrido 2026-10-03 (completar a 5 ejercicios, SIIS por API)
+
+- NIT 900430878 (Azul & Blanco Millonarios FC S.A.), 11 ejercicios en SIIS.
+- Bajado a `Clubes/Colombia/Millonarios/`: estados-financieros 2020, 2021, 2022, 2024 (+certificación y dictamen); 2023 devuelve 404 en documentos-adicionales (sin documentos depositados). Total en disco: 5 ejercicios con estados-financieros.
+- Ninguno transcripto ni cargado todavía.

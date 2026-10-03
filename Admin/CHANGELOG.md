@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Sourcing Sudamérica, 2026-10-03
+
+- Colombia: 6 clubes con 1 ejercicio pasaron a 5-6 (Nacional, Junior, Tolima, Millonarios, Santa Fe, América de Cali) y Unión Magdalena a 5, todo por la API de SIIS. Clubes nuevos de Primera B y otros deportes, 4-6 ejercicios cada uno: Real Santander, Jaguares, Atlético FC, Barranquilla FC, Tigres FC, Boca Juniors de Cali, Atlético Huila, Real Cartagena, Bogotá FC, Corsarios (4), Leones FC, Orsomarso, Cúcuta, Cortuluá, Caimanes (béisbol), Titanes (básquet), Toros (béisbol).
+- Brasil: 21 clubes a 5+ ejercicios (federación paulista, sitios oficiales, Wayback); Amazonas y Athletic Club (SAF) siguen cortos (candidatos a mail). Otros deportes: Minas Tênis Clube, Minas Tênis Náutico, Paulistano, Praia Clube, Pinheiros (1 ejercicio).
+- Chile: Palestino 1 → 8 ejercicios (wp-json/media del sitio oficial). Uruguay: Peñarol 2018 vía Wayback. Ecuador: Emelec 2023 y Barcelona SC 2018. Perú: Universitario parcial (Memoria 2018 + comunicados BDO). Paraguay, Bolivia, Venezuela y Nacional (Uruguay): dead-end documentado.
+- Notas nuevas: `fuentes/{Paraguay,Bolivia,Venezuela,Perú}/_notas-generales.md`, `fuentes/Brasil/_otros-deportes.md`, 17 fichas de Colombia. `tools/generate-fuentes-index.js`: 6 OVERRIDES nuevos. Texto propuesto para las skills en `Admin/propuestas-skills-sudamerica.md` (no aplicado).
+
+---
+
 ## Versión 279 — to-do 67 cerrado: confirmado en producción
 
 - Guido confirmó en Chrome (sin bloqueador de trackers) que los 3 eventos del funnel del selector

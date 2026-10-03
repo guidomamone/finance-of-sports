@@ -1,5 +1,7 @@
 # Universitario de Deportes (Club Universitario de Deportes)
 
+**Ángulos**: sitio oficial: **ENCONTRADO parcial** (memoria 2018 + comunicados de auditoría BDO como imágenes) · regulador/país: INDECOPI dead-end (ya probado) · Wayback CDX: hecho (22.342 URLs; el único PDF financiero es Memoria2018) · búsqueda web: sin PDF de EEFF · barrido: 4 (Sonnet) — 2026-10-03
+
 - Sin PDF descargado. El club estuvo (y sigue, aunque "SUSPENDIDO") en un proceso concursal ante
   INDECOPI desde 2011 (expediente 00172-2011/CCO-INDECOPI, 408 acreedores, declarado vía el sistema
   público IFCO — servicio.indecopi.gob.pe/e-value/pgw_infoXDeudor.seam, buscable por razón social sin
@@ -49,3 +51,11 @@
   confirmado como dead-end para documentos financieros).
 - Último chequeo: 2026-09-13.
 
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet) — material oficial parcial (no son EEFF completos)
+
+El club, aun bajo administración concursal/provisional, SÍ publica resúmenes de sus estados. Guardado en `Clubes/Perú/Universitario de Deportes/`:
+- `memoria-2018.pdf` (44 págs, con capa de texto): Memoria 2018 oficial. Trae totales comparativos 2016-2018 (ingresos 36,2 / 33,5 / 41,5 M S/; utilidad operativa -5,3 / -5,1 / +10,2 M S/), deuda concursal 2012-2018, ingresos por taquilla/marca, pasivo corriente. NO trae estados financieros completos. Fuente: `https://universitario.pe/media/download/memorias/Memoria2018.pdf` (hoy 404; Wayback `20191119064248`, 18,6 MB, OK).
+- `comunicado-auditoria-BDO-2021-p1.jpg`/`p2.jpg`: Comunicado 027-2022 (27-dic-2022) con hallazgos de la auditoría BDO al 31-12-2021 (pasivo corriente acumulado S/68.604.932; deudas tributarias pagadas; discusión de la deuda Gremco). Texto en imagen; no es el dictamen ni los estados. URL de la página: `universitario.pe/noticias/comunicados/informe-auditoria-2021`.
+- `comunicado-auditoria-BDO-2023-p1..p4.jpg` (4 imágenes del 10-jul-2024, `universitario.pe/noticias/institucional/universitario-de-deportes-vuelve-a-ser-un-club-rentable-despues-de-una-decada`): conclusiones de la auditoría BDO 2023 (ingresos 2023 S/111 M; +69% vs 2022). La p2 trae el resultado NETO 2014-2023 "según auditoría 2023 ejecutada por BDO": 2014 -13.795.680; 2015 -19.438.907; 2016 -6.269.985; 2017 -2.367.305; 2018 -5.754.188; 2019 +1.224.176; 2020 -26.819.896; 2021 -42.005.376; 2022 +12.782.851; 2023 +24.145.922 (S/) — (leído a ojo de la imagen, verificar al onboardear).
+- Memoria 2019-2025: probados `Memoria<año>.pdf` 2015-2024 en la misma carpeta: 404 todos; el CDX no tiene otra. Hay noticias narrativas ("balance primer año de gestión" 2022, resumen económico 2017/2018/2020) sin estados.
+- Veredicto de ejercicios: **no hay ningún ejercicio con estados completos**. Material utilizable como serie de resultado neto 2014-2023 (fuente: comunicado oficial del club citando a BDO) y totales 2016-2018. Candidato a mail: pedir al club el dictamen BDO completo 2021-2023 (ya los muestra "en señal de transparencia").

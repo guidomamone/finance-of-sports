@@ -1,6 +1,7 @@
 # Sportivo Luqueño
 
-**Ángulos**: sitio oficial: agotado — HALLAZGO FUERTE: página viva `/socios/asamblea.php` confirma
+**Ángulos**: sitio oficial: clubsportivoluqueno.com.py/socios/asamblea.php ofrece "Solicitar Estados Financieros" por WhatsApp (wa.me/595981001921) — sin cambios, candidato a mail · regulador/país: sin regulador público (APF fair play financiero es reservado) · Wayback CDX: sin PDF útil · búsqueda web: solo prensa/asambleas · barrido: 1 (Sonnet) — 2026-10-03
+
 Estados Financieros auditados externamente y ofrece entregarlos en formato digital a pedido (WhatsApp/
 email) · Wayback CDX: agotado (9 PDFs en todo el dominio: estatutos sociales y reglamento disciplinario,
 ninguno financiero) · búsqueda web: agotado (prensa confirma asamblea del 26/04/2026 aprobó balance del
@@ -44,3 +45,8 @@ ejercicio 2025) · regulador/país: no aplica · barrido: 1 (Sonnet) — 2026-09
   mismo ofrece el documento — evaluar con Guido si conviene escribir como no-socio (periodista/proyecto)
   pidiendo los Estados Financieros de los últimos ejercicios.
 - Último chequeo: 2026-09-27.
+
+## Barrido 2026-10-03
+
+- clubsportivoluqueno.com.py/socios/asamblea.php ofrece "Solicitar Estados Financieros" por WhatsApp (wa.me/595981001921) — sin cambios, candidato a mail.
+- Ver `_notas-generales.md` de Paraguay para la metodología del país (qué obligación de publicar existe y por qué no hay canal público).

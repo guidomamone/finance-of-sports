@@ -1,5 +1,7 @@
 # Cruzeiro (Cruzeiro Esporte Clube SAF)
 
+**Ángulos**: sitio oficial: HIT (bucket S3, 2022-2025) · federación/regulador: FMF no publica · Wayback CDX: HIT (2018, 2019 de la asociación en cms.cruzeiro.com.br) · búsqueda web: no necesaria · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Ahora completo 2022-2025.** Esta sesión se agregaron `informativo-financeiro-2022.pdf` y
   `informativo-financeiro-2023.pdf` a `Clubes/Brasil/Cruzeiro/`, encontrados en el mismo bucket S3
   del club adivinando el patrón de nombre de archivo (`[3.1.1] Informativo Financeiro 2022.pdf`,
@@ -13,3 +15,10 @@
 - Último chequeo: 2026-09-12.
 - Color de marca: `#2F529E` — tabla por liga de footylogos (Brasileirão A), 1er color, exacto,
   verificado 2026-09-21.
+
+## Barrido 2026-10-03 (grupo C Brasil): de 4 a 6 ejercicios en disco (2018, 2019, 2022-2025)
+
+- Del Wayback CDX de `cruzeiro.com.br` (ejercicios previos a la SAF, **Cruzeiro Esporte Clube asociación**): `demonstracoes-financeiras-2019.pdf` (46 pp, "31 de dezembro de 2019 e 2018", `cms.cruzeiro.com.br/ckfinder/userfiles/files/cruzeiro_df2019_auditor.pdf`), `demonstracoes-financeiras-2018.pdf` (40 pp, escaneo; carátula verificada "Cruzeiro Esporte Clube — 31 de dezembro de 2018 e de 2017", `.../Balanco_2018.pdf`), `demonstracoes-financeiras-2017-2018.pdf` (3 pp, publicación en diario oficial del 26/04/2019, solo balanços).
+- Los hosts live `cms.cruzeiro.com.br`/`cruzeiro.com.br/ckfinder/...` ya no sirven (dan error/HTML); solo Wayback. Capturas sin truncar.
+- Hueco 2020-2021 (asociación, año de la transición a SAF): no aparece en el CDX. También hay `2007-2009` balanços patrimoniais (no bajados) y `DF2023_CECSAF_Final.pdf` (versión alternativa de 2023).
+- Cuidado: los S3 `[3.1.N] Informativo Financeiro <año>.pdf` con N distinto de 1-4 dan 403 (inexistentes).

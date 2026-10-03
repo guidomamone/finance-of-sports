@@ -1,5 +1,7 @@
 # Unión Magdalena (Unión Magdalena S.A., Santa Marta)
 
+**Ángulos**: sitio oficial: no intentado esta sesión · regulador/país: agotado (SIIS API, serie completa bajada) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Club nuevo de la sesión 2026-09-22, pero el más pobre de los 7 nuevos: un solo ejercicio con PDF
   real (2018).** Vía SIIS (Supersociedades), NIT **891700992**, punto de entrada
   "Pymes-Individuales", Santa Marta (Magdalena), estado "INSPECCION". Se bajaron las "NOTAS EF" (44
@@ -42,3 +44,9 @@
   es ambiguo, `null`, que es un resultado cerrado, no un pendiente").
 - Contacto: siis.ia.supersociedades.gov.co (NIT 891700992); unionmagdalena.com.co.
 - Último chequeo: 2026-09-24.
+
+## Barrido 2026-10-03 (completar a 5 ejercicios, SIIS por API)
+
+- NIT 891700992, 9 registros en SIIS; 2021 (régimen Pymes) no baja: el subvisor no devuelve ruta de PDF.
+- Bajado a `Clubes/Colombia/Union Magdalena/`: estados-financieros 2022-2025 (+certificación y dictamen), con el 2018 ya existente = 5 ejercicios. Total en disco: 5 ejercicios con estados-financieros.
+- Ninguno transcripto ni cargado todavía.

@@ -1,5 +1,7 @@
 # Athletic Club (São João del-Rei-MG — la SAF opera como **A.C. Esportes SAF**)
 
+**Ángulos**: sitio oficial: HIT (SAF acfutebol.com.br/transparencia, solo 2023-2025; asociación athleticclub.com.br: piezas 2019, 2021, 2022, 2023, otro CNPJ) · federación/regulador: FMF no publica · Wayback CDX: sin hallazgos nuevos (acfutebol.com.br no capturó 2021-2022 financiero) · búsqueda web: HIT (página /relatorios-de-gestao-financeira/ de la asociación) · diario oficial/Junta: sin hallazgos (búsqueda web no indexa DOE-MG) · barrido: 3 (Sonnet) — 2026-10-03
+
 - Club nuevo esta sesión. Fue uno de los primeros del país en adoptar el modelo SAF (2021), y la SAF tiene
   **sitio propio, distinto del sitio del club social**: `athleticclub.com.br` es la asociación (noticias,
   sócios, licitaciones — en su sección "Governança" solo hay cartas-convite de compras, ningún balance), y
@@ -28,3 +30,14 @@
 - Contacto: acfutebol.com.br/transparencia (SAF); athleticclub.com.br/o-clube/governanca/ (club social, sin
   balances).
 - Último chequeo: 2026-09-22.
+
+## Barrido 2026-10-03 (grupo C Brasil): sigue en 3 ejercicios completos (SAF 2023-2025) + 3 piezas de la asociación — NO llega a 5
+
+- Nuevo en disco: tres piezas de la **asociación Athletic Club** (CNPJ 24.735.169/0001-58, distinta de la SAF A.C. Esportes) halladas por Wayback CDX en `athleticclub.com.br/wp-content/uploads/`: `associacao-balanco-patrimonial-2019.pdf` (1 pp, Balanço al 31/12/2019, escaneo), `associacao-relatorio-financeiro-2019.pdf` (3 pp), `associacao-balanco-patrimonial-2023.pdf` (3 pp, Balanço al 31/12/2023). Son documentos livianos de una asociación chica (activo ~R$ 2,1 M), no paquetes auditados.
+- La página `acfutebol.com.br/transparencia` (Wix) solo lista 2023-2025; no hay 2021-2022. Búsqueda web sin resultados.
+- Ángulo que falta: Diario Oficial de MG (publicaciones de la SAF 2021-2022), pedido directo al club, o capturas Wayback del sitio WordPress viejo `acfutebol.com.br` de 2022 (el CDX solo mostró `escudos_do_athletic.pdf`).
+
+## Barrido 3 (2026-10-03, Sonnet): suma 2 piezas de la asociación (2021, 2022); la SAF sigue en 2023-2025
+
+- **Nuevo en disco** (asociación Athletic Club, NO la SAF): `associacao-relatorio-gestao-financeira-2021.pdf` (2 pp) y `associacao-relatorio-gestao-financeira-2022.pdf` (2 pp), "Athletic Futebol de Base — Relatório Financeiro", flujo de caja resumido firmado por presidente y contador (receta 2021 R$ 5,95 M; 2022 R$ 7,21 M). Fuente: `athleticclub.com.br/relatorios-de-gestao-financeira/` (links Drive `1XRXboArM_yQ77uWv-U5emnIBCfimHQn0` y `1wynm0WVZfKkr-gzvLdc7Y1A1L5c3hx-b`, bajables con `drive.google.com/uc?export=download&id=`). Con las de 2019 y 2023 la asociación queda en 2019, 2021, 2022, 2023 — son informes livianos, no estados auditados.
+- La SAF A.C. Esportes (CNPJ 44.637.793/0001-20) no tiene 2021-2022 público en ningún canal hallado: Wix `/transparencia` y `/transparency-portal/financeiro` (dinámico, sin PDFs en el HTML), Wayback de acfutebol.com.br, WP REST media de athleticclub.com.br (búsquedas balan/relat/demonstra/2020/2024/2025/contab: solo `balanco.pdf` y `relatorio-financeiro.pdf` 2020/12 = 2019, y `Balanco-Athletic-2023.pdf`, ya en disco). `publicacao-relatorios-contabeis.pdf` es de la Tribuna Sanjoanense (jul 2025): el diario local de São João del-Rei publica los relatórios; ediciones 2022-2024 no encontradas por búsqueda web. Junta Comercial (JUCEMG) y DOE-MG: no consultados (cobran / no indexados). Candidato a mail: pedir al club las demonstrações 2022 (primer ejercicio completo de la SAF).

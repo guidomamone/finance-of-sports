@@ -1,5 +1,7 @@
 # Juventude (Esporte Clube Juventude, Caxias do Sul-RS)
 
+**Ángulos**: sitio oficial: HIT (juventude.com.br/publicacoes-e-editais, 2004-2025) · federación/regulador: FGF solo 2020 (ya conocido) · Wayback CDX: no necesario · búsqueda web: no necesaria · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Dead-end viejo parcialmente destrabado — ángulo nuevo fue el repositorio de la federación
   estadual, no el sitio del club.** La nota anterior decía "sin balance auditado encontrado en la
   búsqueda". El hallazgo nuevo esta sesión fue la Federação Gaúcha de Futebol
@@ -29,3 +31,15 @@
   de año en `?/2020`, `/2021`, `/2022`); sitio propio del club sin sección de transparencia
   encontrada todavía.
 - Último chequeo: 2026-09-16.
+
+## Barrido 2026-10-03 (sourcing Brasil grupo B) — de 1 a 9 ejercicios en disco; el dead-end estaba en el dominio equivocado
+
+- **Corrección grande**: el club SÍ publica. El dominio actual es **`www.juventude.com.br`** (no `ecjuventude.com.br`, que da 522/caído) y la sección es
+  **`/publicacoes-e-editais`** (HTML estático, curl 200): "Balanço E.C. Juventude 2004 ... 2025" con PDF en `https://r2.juventude.com.br/Juventude/multimedia/notices/<ULID>.pdf`
+  (baja con curl directo). Lo de prensa de que no publicó 2024 a tiempo quedó superado: el balance 2024 está publicado (auditor HLB Brasil) y el 2025 también.
+- Bajados a `Clubes/Brasil/Juventude/`: `demonstracoes-financeiras-2025.pdf` (30 pp, con texto), `-2024.pdf` (29 pp, escaneo, carátula "31 de dezembro de 2024", HLB Brasil),
+  `-2023.pdf` (13 pp, con texto), `-2022.pdf` (28 pp, con texto), `-2021.pdf` (16 pp, escaneo, "2021 e 2020", Rosito & Filomena), `-2019.pdf` (16 pp, escaneo, "2019 e 2018"),
+  `-2018.pdf` (16 pp, "2018 e 2017"), `-2017.pdf` (16 pp, escaneo, "2017 e 2016"), y `-2020-site.pdf` (18 pp, versión del sitio, md5 distinto del escaneo FGF ya existente `-2020.pdf`; mismo ejercicio, comparar antes de usar).
+- Sin bajar pero disponibles: 2004, 2005, 2007-2010, 2012-2016. Escaneos (2017, 2019, 2021, 2024, 2020) requieren OCR/verificación manual; 2022, 2023, 2025 y 2018 tienen capa de texto.
+- Se puede cerrar la pregunta de `Admin/dudas-por-club.md` sobre el balance 2024 de Juventude (ya está publicado).
+- Ejercicios en disco ahora: 2017-2025 (9).

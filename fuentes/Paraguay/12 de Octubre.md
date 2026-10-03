@@ -1,5 +1,7 @@
 # 12 de Octubre
 
+**Ángulos**: sitio oficial: club12deoctubre.com.py no responde · regulador/país: sin regulador público (APF fair play financiero es reservado) · Wayback CDX: sin PDF útil · búsqueda web: solo prensa/asambleas · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Sin sitio oficial identificado (familia 1 no aplica en el sentido tradicional).** Ni el
   infobox de Wikipedia (revisado el wikitext crudo vía API, sin campo `website`), ni la búsqueda
   web, encontraron un dominio propio del club. Se probaron dos dominios candidatos por patrón
@@ -35,3 +37,8 @@
 - Contacto: Facebook facebook.com/Club12DeOctubreDeItaugua/, X @12deOctubreI — ninguno con
   sección de transparencia financiera, ni email institucional visible.
 - Último chequeo: 2026-09-27.
+
+## Barrido 2026-10-03
+
+- club12deoctubre.com.py no responde; Wayback CDX sin resultados.
+- Ver `_notas-generales.md` de Paraguay para la metodología del país (qué obligación de publicar existe y por qué no hay canal público).

@@ -1,10 +1,4 @@
-**Ángulos**: sitio oficial: agotado (menú completo — Noticias, El Club [Historia, Comisión Directiva,
-Palmarés, Estadio], Plantel, Inferiores, Clasificación, Fixture, Fotos, footer con Contactos y
-Sponsors — ninguna sección institucional/transparencia/balance) · Wayback CDX: agotado (0 capturas
-archivadas NUNCA en todo el dominio `cuscofc.pe`) · búsqueda web: agotado (`filetype:pdf` sin
-resultados; búsqueda de prensa sobre asamblea/deuda/crisis económica sin ningún resultado relevante,
-solo resultados de otros clubes homónimos por error de motor de búsqueda) · regulador/país: no
-aplica · barrido: 1 (Sonnet) — 2026-09-26
+**Ángulos**: sitio oficial: agotado (ver notas previas) · regulador/país: sin obligación de publicar · Wayback CDX: hecho, 0 señal (cuscofc.pe y cuscofc.com) · búsqueda web: previa agotada · barrido: 4 (Sonnet) — 2026-10-03
 
 # Cusco FC (antes Real Atlético Garcilaso)
 
@@ -35,3 +29,7 @@ aplica · barrido: 1 (Sonnet) — 2026-09-26
 - **Conclusión**: dead-end real, 0 señal de que exista un documento (ni PDF, ni video, ni mención de
   prensa) — no amerita mail por ahora. Revisar de nuevo sin fecha fija.
 - Último chequeo: 2026-09-26.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+Wayback CDX del dominio completo `cuscofc.pe y cuscofc.com`: 0 y 1.461 URLs; 0 PDFs. Ningún estado financiero, memoria ni balance archivado. Dead-end del canal Wayback; el club no tiene obligación de publicar (asociación civil o S.A. cerrada).

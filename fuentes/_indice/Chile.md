@@ -17,7 +17,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Everton](../Chile/Everton.md) — OTODP, sin EEFF auditado descargable — Último chequeo: 2026-09-12
 - [Huachipato](../Chile/Huachipato.md) — OTODP, sin EEFF auditado descargable — Último chequeo: 2026-09-12
 - [O'Higgins](../Chile/O'Higgins.md) — OTODP, sin EEFF auditado descargable — Último chequeo: 2026-09-12
-- [Palestino](../Chile/Palestino.md) — 1 ejercicio real (2018), resto sin ubicar — Último chequeo: 2026-09-12
+- [Palestino](../Chile/Palestino.md) — 1 ejercicio real (2018), resto sin ubicar · **Barrido 2026-10-03**: 8 Memorias 2017-2024 con EEFF auditados bajadas del wp-json/media del sitio oficial; faltan 2010-2016 y 2025 — Último chequeo: 2026-10-03
 - [Universidad Católica (Cruzados)](<../Chile/Universidad Catolica (Cruzados).md>) — 17 ejercicios reales, serie completa 2009-2025; 2022-2024 CARGADOS al sitio (`catolica-cl`) — Último chequeo: 2026-09-12
 - [Universidad de Chile (Azul Azul)](<../Chile/Universidad de Chile (Azul Azul).md>) — 16 ejercicios reales, serie 2010-2025; 2022-2024 CARGADOS al sitio (`udechile-cl`) — Último chequeo: 2026-09-12
 - [Unión Española](../Chile/Unión Española.md) — OTODP, sin EEFF auditado descargable — Último chequeo: 2026-09-12
