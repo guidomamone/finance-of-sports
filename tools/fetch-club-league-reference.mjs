@@ -121,6 +121,37 @@ function parseWikitableTeams(tableWikitext) {
   return teams;
 }
 
+// lee los equipos de una plantilla {{#invoke:sports table|...}}: `teamN=XXX` da el orden y `name_XXX=[[Destino|Nombre]]` el nombre
+function equiposDeSportsTable(wikitext) {
+  const i = wikitext.search(/\{\{\s*#invoke:\s*sports table/i);
+  if (i < 0) return [];
+  const t = wikitext.slice(i, i + 20000);
+  const orden = [...t.matchAll(/\|\s*team(\d+)\s*=\s*([A-Za-z0-9_]+)/g)].sort((a, b) => Number(a[1]) - Number(b[1])).map((m) => m[2]);
+  const nombre = (cod) => { const m = t.match(new RegExp('\\|\\s*name_' + cod + '\\s*=\\s*(\\[\\[[^\\]]*\\]\\]|[^|\\n]*)')); return m ? cleanWikilinkCell(m[1]) : null; };
+  return [...new Set(orden.map(nombre).filter(Boolean))];
+}
+
+function guardar(teams, { wikipediaTitle, leagueId, year, pais, lang, seccion }) {
+  const sec = { name: seccion };
+  mkdirSync(refDir, { recursive: true });
+  const cachePath = resolve(refDir, `${pais}.json`);
+  const cache = existsSync(cachePath) ? JSON.parse(readFileSync(cachePath, 'utf8')) : { leagues: {} };
+  cache.leagues[leagueId] = cache.leagues[leagueId] || {};
+  cache.leagues[leagueId][year] = {
+    wikipediaPage: wikipediaTitle,
+    lang,
+    section: sec.name,
+    fetchedAt: new Date().toISOString(),
+    clubs: teams,
+  };
+  writeFileSync(cachePath, JSON.stringify(cache, null, 2) + '\n', 'utf8');
+
+  console.log(`\n${teams.length} equipos encontrados (sección "${sec.name}"):`);
+  teams.forEach((t) => console.log(`  - ${t}`));
+  console.log(`\nGuardado en ${cachePath.replace(projectRoot + '/', '')} -- leagues.${leagueId}.${year}`);
+  console.log('OJO: esto es una caché de roster, no un dato ya cargado a data/club-leagues/. Confirmar el club puntual que hace falta contra esta lista antes de usarlo.');
+}
+
 async function main() {
   const args = process.argv.slice(2);
   const paisFlag = args.indexOf('--pais');
@@ -137,14 +168,21 @@ async function main() {
   console.log(`Bajando wikitext de "${wikipediaTitle}" (${lang}.wikipedia.org)...`);
   const wikitext = await fetchWikitext(wikipediaTitle, lang);
 
+  // ESCALERA DE LA FUENTE DEL ROSTER (Versión 401, pedido de Guido):
+  //   ESCALÓN 0  una tabla wikitable en la sección de equipos ("Teams", "Clubs"...) — lo de siempre
+  //   ESCALÓN 1  si no hay, la tabla de posiciones hecha con la plantilla {{#invoke:sports table}} en CUALQUIER parte de la página: se
+  //              leen sus `name_XXX=[[...|Nombre]]` en el orden de `teamN`. Caso: Brasileirão 2009 y 2010 Série A y 2011 Série B (Goiás
+  //              9°, 19° y 11°, confirmados con capturas de Guido): la página no tiene tabla común de equipos.
+  //   COMPUERTA  al menos 4 equipos únicos (si no, no se escribe nada, como antes)
   const sec = extractTeamsSection(wikitext, section);
-  if (!sec) {
-    console.error(`No encontré ninguna sección ${JSON.stringify(section)} en la página. Probar --section "<nombre exacto>" mirando la página a mano.`);
-    process.exit(1);
-  }
-  const tables = extractAllWikitables(sec.text);
+  const tables = sec ? extractAllWikitables(sec.text) : [];
   if (!tables.length) {
-    console.error(`Encontré la sección "${sec.name}" pero ninguna tabla wikitable adentro (puede ser una plantilla tipo {{#invoke:Sports table}} en vez de wikitext de tabla -- ese caso no lo resuelve esta tool, confirmar a mano). No escribo nada.`);
+    const st = equiposDeSportsTable(wikitext);
+    if (st.length >= 4) {
+      guardar(st, { wikipediaTitle, leagueId, year, pais, lang, seccion: 'plantilla sports table (escalón 1)' });
+      return;
+    }
+    console.error(sec ? `Encontré la sección "${sec.name}" pero ninguna tabla wikitable adentro, y tampoco una plantilla {{#invoke:sports table}} en la página. No escribo nada.` : `No encontré ninguna sección ${JSON.stringify(section)} ni una plantilla {{#invoke:sports table}} en la página. Probar --section "<nombre exacto>" mirando la página a mano.`);
     process.exit(1);
   }
   // Nos quedamos con la tabla que más equipos ÚNICOS parsea, NO con la de más
@@ -168,23 +206,7 @@ async function main() {
     console.log(`(${tables.length} tablas encontradas en la sección, me quedé con la de ${teams.length} equipos)`);
   }
 
-  mkdirSync(refDir, { recursive: true });
-  const cachePath = resolve(refDir, `${pais}.json`);
-  const cache = existsSync(cachePath) ? JSON.parse(readFileSync(cachePath, 'utf8')) : { leagues: {} };
-  cache.leagues[leagueId] = cache.leagues[leagueId] || {};
-  cache.leagues[leagueId][year] = {
-    wikipediaPage: wikipediaTitle,
-    lang,
-    section: sec.name,
-    fetchedAt: new Date().toISOString(),
-    clubs: teams,
-  };
-  writeFileSync(cachePath, JSON.stringify(cache, null, 2) + '\n', 'utf8');
-
-  console.log(`\n${teams.length} equipos encontrados (sección "${sec.name}"):`);
-  teams.forEach((t) => console.log(`  - ${t}`));
-  console.log(`\nGuardado en ${cachePath.replace(projectRoot + '/', '')} -- leagues.${leagueId}.${year}`);
-  console.log('OJO: esto es una caché de roster, no un dato ya cargado a data/club-leagues/. Confirmar el club puntual que hace falta contra esta lista antes de usarlo.');
+  guardar(teams, { wikipediaTitle, leagueId, year, pais, lang, seccion: sec.name });
 }
 
 main().catch((err) => {

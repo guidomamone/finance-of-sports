@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 401 — Ligas: escalón por la plantilla "sports table" de Wikipedia (2026-10-02)
+
+- `fetch-club-league-reference.mjs`: escalón 0, una tabla común en la sección de equipos (lo de siempre); escalón 1, si no hay, la tabla de posiciones hecha con la plantilla `{{#invoke:sports table}}` en cualquier parte de la página (sus `name_XXX`). Compuerta: al menos 4 equipos.
+- Caso: Brasileirão 2009 y 2010 Série A y 2011 Série B: 20 equipos cada uno, Goiás 9°, 19° y 11° (coincide con las capturas de Guido). Caché `tools/club-league-reference/br.json`.
+
 ## Versión 400 — Texto propio: etiquetas partidas en dos renglones (escalón con compuerta) (2026-10-02)
 
 - `texto-propio-a-md.mjs`: escalón 0, el renglón tal cual; escalón 1, se une con el renglón de texto inmediatamente de arriba solo si la compuerta dice que es su continuación (el de arriba termina en un conector, "DAS", "de", "e", "com"…, o este empieza en minúscula; y están pegados). Un título arriba de un renglón completo ("RECEITAS" / "Futebol profissional e de base") no pasa.
