@@ -33,13 +33,35 @@ adjuntos. La consulta es de pago bajo, por documento (verificado en
   pagar. No se pudo leer: el sitio responde con challenge de Cloudflare a `curl`/`WebFetch` (se pasa
   con un Browser pane real) y la descarga desde el Browser pane cae como archivo; el servidor local
   de recepción que se probó para sacarlo del navegador fue bloqueado por el navegador. Sin
-  Firecrawl (`Admin/firecrawl/.env` vacío) no se pudo seguir.
+  Firecrawl no se había probado todavía en ese momento (ver el chequeo siguiente).
 - **Bolsa de Valores de El Salvador (bolsadevalores.com.sv)**: compila la información financiera de
   los emisores inscritos; no se revisó el listado de emisores buscando clubes (no hay señal de que
   ninguno emita). Pendiente barato.
 
-**No hecho en esta sesión** (el primer barrido de país quedó corto, a propósito, para no gastar sin
-señal): sitios oficiales de Alianza (alianzafc.com.sv), FAS (clubdeportivofas.com) y Águila; Wayback
-CDX de esos dominios; Licencia de clubes de FESFUT y si exige estados auditados; Segunda División.
+## Segundo chequeo, mismo día (2026-10-03): sitios oficiales y Wayback de los 3 clubes
+
+- **Alianza** (`alianzafc.com.sv`): Firecrawl `/map` devolvió 882 URLs (12 son "portfolio" de plantilla);
+  menú completo = noticias, directiva, institución (solo misión), historia, partners, descargas
+  (fondos de pantalla), sin ninguna sección de transparencia/documentos. `/directiva` lista Presidente,
+  Vicepresidente, Secretario, Pro Secretario y Tesorero (estructura de **asociación con junta
+  directiva**, no de S.A.); la misión habla de "socios". Wayback CDX de dominio completo: 0 PDFs reales
+  (solo el ícono `blue-document-pdf.png` del plugin). Sitio y CDX agotados.
+- **FAS** (`clubdeportivofas.com`): 104 URLs, un sitio estático viejo (noticias 2004-2014, "Documentos
+  Antiguos" = boletos y portadas de periódico). Wayback CDX: un único PDF, `Ficha_de_Inscripcion_CD_FAS.pdf`
+  (2009, ficha de inscripción, no financiero). El dueño declarado (SSports Inc., dic-2024) no
+  aparece en ese sitio; el sitio vigente podría ser otro dominio, no verificado.
+- **Águila** (`cdaguila.com.sv`): el dominio hoy no resuelve (DNS). Wayback CDX: solo los tomos de
+  "Historia del Águila" (2007), ningún documento financiero. Junta directiva con presidente, vicepresidente,
+  secretario, tesorero y vocal (jun-2025): también asociación.
+- Una búsqueda semántica con Exa ("estados financieros auditados / balance Alianza FC") solo devolvió
+  Wikipedia, el sitio del club y LinkedIn.
+
+**Consecuencia para el canal del CNR**: el depósito anual de balance del Registro de Comercio aplica
+a SOCIEDADES mercantiles. Si Alianza y Águila son asociaciones sin fines de lucro (lo que la junta
+directiva sugiere, pero no está confirmado: Wikipedia dice "owner Adolfo Salume" para Alianza), no
+están en ese registro y el trámite de US$ 6 no tendría nada que certificar. Por eso el paso de
+Guido (to-do 113) sigue condicionado a confirmar primero la forma jurídica; el siguiente
+escalón con valor es la licencia de clubes de la FESFUT (¿exige estados auditados y los blinda como
+Costa Rica?), todavía no investigada.
 
 - Último chequeo: 2026-10-03.
