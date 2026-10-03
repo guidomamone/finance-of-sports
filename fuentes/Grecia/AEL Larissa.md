@@ -40,3 +40,5 @@ confirmados como `PDF document` real (2 duplicados idénticos descartados por `d
   capturado por la búsqueda de texto usada esta sesión.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2025 desde `Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2025-06-30_a.pdf` (sourceId `aellarissa-gr-ael-notes-elp-2025-06-30-a`).

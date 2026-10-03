@@ -393,6 +393,9 @@ const clubs = {
   // Novorizontino: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf. brandColor AUSENTE a propósito
   // (nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
   'novorizontino-br': { id:'novorizontino-br', name:'Grêmio Novorizontino Sociedade Anônima do Futebol', displayName:'Novorizontino', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFDD00' }, // name: demonstracoes-financeiras-2023.md L70 (SAF desde 06/12/2023; antes associação 'Grêmio Novorizontino'). Color: aurinegro, amarillo primero (pt.wikipedia, himno 'Amarelo e negro'); hex como Amazonas,
+  // AEL Larissa: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2025-06-30_a.pdf. brandColor AUSENTE a propósito
+  // (nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
+  'aellarissa-gr': { id:'aellarissa-gr', name:'Athlitiki Enosi Larissas AEL P.A.E.', displayName:'AEL Larissa', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
