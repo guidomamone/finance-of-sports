@@ -58,7 +58,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria'];
+export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 function leer() {
@@ -75,6 +75,15 @@ export function ajustesDe(pdf) {
 export function ajusteDe(pdf, campo) {
   return ajustesDe(pdf).find((a) => a.campo === campo) || null;
 }
+// PERÍMETRO (Versión 412, pedido de Guido el 2026-10-02: "ruta de ajuste manual para que no joda"): `perimetro` = individual | consolidado.
+// Se puede fijar para UN documento o para TODO EL CLUB (en vez del pdf, la carpeta `Clubes/<País>/<Club>/`); el del documento gana sobre el
+// del club. Escalón 0 del perímetro en cargar.mjs: gana sobre lo que detecta el documento y sobre la cola. Caso: Novorizontino, una sola
+// entidad; "Consolidado" aparece en el membrete del auditor (2018-2020) y el script preguntaba cada año.
+export function ajustePerimetroDe(pdf) {
+  const todos = leer().filter((a) => a.campo === 'perimetro');
+  const delDoc = todos.filter((a) => a.pdf === pdf); if (delDoc.length) return delDoc[delDoc.length - 1];
+  const delClub = todos.filter((a) => a.pdf.endsWith('/') && pdf.startsWith(a.pdf)); return delClub.length ? delClub[delClub.length - 1] : null;
+}
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2);
@@ -83,6 +92,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const i = A.indexOf('--agregar'); const pdf = A[i + 1]; const campo = A[i + 2];
     if (!pdf || !CAMPOS.includes(campo)) { console.error(`Uso: --agregar "<pdf>" <campo> (campos: ${CAMPOS.join(', ')})`); process.exit(1); }
     if (!existsSync(resolve(ROOT, pdf))) { console.error(`No existe ${pdf}`); process.exit(1); }
+    if (campo === 'perimetro' && !['individual', 'consolidado'].includes(flag('--valor'))) { console.error('perimetro necesita --valor individual|consolidado (pdf = un documento, o la carpeta del club terminada en "/")'); process.exit(1); }
+    if (campo !== 'perimetro' && pdf.endsWith('/')) { console.error('solo `perimetro` se fija para la carpeta de un club'); process.exit(1); }
     if (['resultado-final', 'fila', 'fx', 'cero-real', 'desglose'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }
     if (campo === 'fila' && (!flag('--etiqueta') || !LADOS.includes(flag('--lado')))) { console.error(`fila necesita --etiqueta y --lado (${LADOS.join(', ')})`); process.exit(1); }
     if (!flag('--motivo')) { console.error('Falta --motivo'); process.exit(1); }

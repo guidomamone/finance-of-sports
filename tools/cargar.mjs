@@ -104,7 +104,7 @@ const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
 const { agregarCaso, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub } = await import('./cola.mjs');
 const { perfilDe, guardarPerfil } = await import('./perfil-clubes.mjs');
-const { ajusteDe, ajustesDe } = await import('./ajustes.mjs');
+const { ajusteDe, ajustesDe, ajustePerimetroDe } = await import('./ajustes.mjs');
 const { cierrePorVecinos } = await import('./cierre-vecinos.mjs');
 const { VERSION_AMPLIADO } = await import('./indice-bloques.mjs');
 const { ARCHIVO: ARCHIVO_APRENDIDAS, padreDe } = await import('./memoria-categorias.mjs');
@@ -273,7 +273,9 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   // perímetro
   const perC = campo('perimetro'); const her = perimetroHeredado(sitio, clubId);
   let perimetro = perC.valor;
-  if (perC.estado === 'pregunta') {
+  const ajPer = ajustePerimetroDe(pdf); // escalón 0 (Versión 412): ajuste manual del documento o del club
+  if (ajPer) { perimetro = ajPer.valor; P.avisos.push(`perímetro: ${perimetro} (ajuste manual ${ajPer.pdf.endsWith('/') ? 'del club' : 'del documento'}, ${ajPer.fecha}: ${ajPer.motivo})`); }
+  else if (perC.estado === 'pregunta') {
     // Qué dice el documento, según la pregunta del alta: solo el grupo consolidado, consolidado + individual, o dos entidades en la carpeta.
     const docTipo = perC.dosEntidades ? 'dos-entidades' : /solo del GRUPO/.test(perC.pregunta || '') ? 'consolidado' : /CONSOLIDADOS y también individuales/.test(perC.pregunta || '') ? 'ambos' : '?';
     const listaAnios = Object.entries(her.porAnio).map(([y, v]) => `${y} ${v}`).join(', ') || 'ninguno';

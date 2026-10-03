@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 412 — Ajuste manual `perimetro`, por documento o por club (2026-10-02)
+
+- `ajustes.mjs`: campo `perimetro` (individual | consolidado); se fija para un documento o para la carpeta del club (`Clubes/<País>/<Club>/`), y el del documento gana. `cargar.mjs`: es el escalón 0 del perímetro (gana sobre lo que detecta el documento y sobre la cola).
+- Caso: Novorizontino, una sola entidad; "Consolidado" en el membrete del auditor hacía preguntar cada año (2018-2020; una vez se cargó al revés). Ajuste del club: individual.
+- Medido: ningún documento de los lotes 07-10 tenía ajuste de perímetro (sin cambios hasta agregar uno); Goiás no recibe el de Novorizontino.
+
 ## Versión 411 — Etapa 2, escalón 1b: compuerta del rearmado por página (2026-10-02)
 
 - `texto-propio-a-md.mjs` (`rearmar`): una página rearmada con el texto propio se usa solo si conserva al menos la mitad de las filas de tabla (etiqueta + número) de la anterior; si no, queda la anterior con una marca "Página NO rearmada" (el escalón no se repite). `lote.mjs` dice qué páginas rechazó.
