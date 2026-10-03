@@ -61,3 +61,20 @@ Región: Oceanía (Australia, Nueva Zelanda, Fiyi y el Pacífico). No hay archiv
 ## BLOQUE REGIÓN 7 — worktree `sourcing-europa-del-este`
 
 Región: Europa del este y Balcanes (todo lo que NO sea ya Rusia, Ucrania, República Checa, Croacia, Alemania, Austria, Suiza). Archivos de país: `paises/Rusia.md`, `Ucrania.md`, `Republica-Checa.md`, `Croacia.md` (las cuatro ya tienen carpeta; completalas a 5 ejercicios por club antes de abrir países nuevos, y mirá sus índices para saber cuáles ya están completos). Países con carpeta: Rusia (16/16), Ucrania (11/16), República Checa (16/16), Croacia (9/10). Países sin carpeta para barrer, en este orden de valor: Polonia (Ekstraklasa: registro KRS gratuito y abierto, Ministerstwo Sprawiedliwości, Legia/Lech/Raków/Jagiellonia), Rumanía (Ministerul Finanțelor: bilanțuri públicos gratuitos; FCSB, CFR Cluj, Universitatea Craiova, Rapid), Hungría (e-beszámoló, registro gratuito de balances: Ferencváros, Fehérvár, Puskás), Serbia (APR: registro de balances gratuito y abierto; Estrella Roja, Partizan), Bulgaria (Registro Mercantil: CSKA Sofía, Levski, Ludogorets, Lokomotiv Plovdiv), Eslovaquia (Slovan Bratislava, Spartak Trnava: registro de cuentas gratuito), Eslovenia (AJPES: Maribor, Olimpija), Bosnia, Montenegro, Macedonia del Norte, Albania, Kosovo, Bielorrusia, Moldavia, Georgia, Armenia, Azerbaiyán, Kazajistán, Lituania, Letonia y Estonia. Canales a probar primero (la mayoría de los registros de esta zona son abiertos y gratuitos: es la región de mayor valor): KRS/e-KRS (Polonia), Registrul Comerțului/ANAF (Rumanía), e-beszámoló (Hungría), APR (Serbia), AJPES (Eslovenia), el Registro de Empresas de cada país báltico, y la obligación de licencia UEFA que lleva a clubes a publicar el bilancio. Idioma: cirílico (Serbia, Bulgaria, Bielorrusia): verificá mojibake con `pdffonts` y OCR con el idioma correcto (`tesseract -l srp/bul/rus`). Cada hallazgo de canal país-nivel va como propuesta de `paises/<País>.md` para mi ok.
+
+---
+
+## Secuencia para juntar (mergear) las ramas al final
+
+Cada worktree vive en su rama `worktree-<nombre>`. Los PDFs no entran (no se trackean); lo que se junta son notas `.md`, índices y los 3 archivos compartidos. Se junta de a una, nunca todas juntas, y sin push hasta tu ok.
+
+1. **Antes de empezar**: que cada sesión haya commiteado todo y corrido `node tools/audit.js` (0 P0/P1). Anotá cuáles terminaron.
+2. **Orden**: primero la rama que ya está lista (`worktree-sourcing-espana-francia`), después las demás de la que menos pisa a la que más: Oceanía, África, Centroamérica, Asia, Sudamérica, Norteamérica, Europa del este (la última, porque suele traer más países nuevos y es la que más toca el índice).
+3. **Cada merge**, desde el checkout principal en `main`:
+   - `git merge --no-ff worktree-<nombre>` y, si hay conflicto, solo puede ser en `fuentes/README.md`, `Admin/CHANGELOG.md` y `Admin/TODO.md` (los países y clubes son archivos propios de cada región).
+   - `fuentes/README.md`: aceptá cualquiera de los dos lados y re-corré `node tools/generate-fuentes-index.js`; regenera las líneas y los totales solo.
+   - `Admin/CHANGELOG.md`: conservá las dos entradas (cada una tiene su título "Sourcing <región>, <fecha>", sin número de versión).
+   - `Admin/TODO.md`: conservá los dos lados. **Ojo con los números**: cada sesión tomó "el siguiente al más alto" y van a chocar (todas arrancan en el 96). Renumerá los de la rama que entra con los siguientes libres y actualizá las referencias cruzadas a ese número en sus notas.
+4. **Después de cada merge**: `node tools/generate-fuentes-index.js --check` y `node tools/audit.js` (0 P0/P1). Si falla, arreglá antes de seguir con la siguiente rama.
+5. **Si una rama quedó vieja** respecto de `main`, antes de mergearla traé `main` a su worktree (en la app: `sync_with_base_branch`) para resolver ahí los conflictos, y mergeala limpia.
+6. **Al final**: un commit de cierre con los totales (`generate-fuentes-index.js` ya los actualiza), borrar los worktrees ya mergeados, y recién ahí pedirme permiso para el push.
