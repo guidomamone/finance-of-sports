@@ -202,6 +202,24 @@ const goiasbrRevenueLinesByYear = {
     { rawLabel:'Royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.196604, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.97
     { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.4238, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
   ],
+  // 2010: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Goias/demonstracoes-contabeis-2010-2009.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2010: [
+    { rawLabel:'Arrecadação de jogos', normalizedCategory:'matchday_competition', amountNative:5.236275, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Direitos de transmissão de TV', normalizedCategory:'broadcasting', amountNative:13.044375, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'(-) Dedução da receita', normalizedCategory:'other_income', amountNative:-2.348606, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.92
+    { rawLabel:'Negociação de atestado liberatório de atletas', normalizedCategory:'player_sales', amountNative:2.810396, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Mensalidade e matrículas de iniciação esportiva', normalizedCategory:'youth_football', amountNative:2.350298, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+    { rawLabel:'Mensalidade de sócio titular', normalizedCategory:'member_dues', amountNative:0.555774, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Publicidade e patrocínio', normalizedCategory:'sponsorship_commercial', amountNative:3.367874, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Parceria com patrocinadores e parceiros', normalizedCategory:'sponsorship_commercial', amountNative:0.96, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Premiação', normalizedCategory:'competition_bonus', amountNative:2.913373, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Participação em loteria esportiva', normalizedCategory:'other_income', amountNative:1.016236, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+    { rawLabel:'Patrocínio e parceria', normalizedCategory:'sponsorship_commercial', amountNative:0.192, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Treinamento de atletas', normalizedCategory:'other_sports', amountNative:0, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.145658, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.97
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.119332, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+  ],
 };
 const goiasbrExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-02)
@@ -386,6 +404,19 @@ const goiasbrExpenseLinesByYear = {
     { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.286807, disclosureLevel:'aggregated' }, // pág. 1, precedente
     { rawLabel:'Despesas gerais', normalizedCategory:'admin_general_expense', amountNative:-2.3427, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
   ],
+  2010: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Despesas com jogos', normalizedCategory:'match_organisation_expense', amountNative:-3.981832, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Pessoal', normalizedCategory:'wages_squad', amountNative:-23.218075, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Provisões, acordos e indenizações', normalizedCategory:'admin_general_expense', amountNative:3.355708, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Acordos judiciais e extrajudiciais', normalizedCategory:'admin_general_expense', amountNative:-0.452889, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Direito de imagem', normalizedCategory:'wages_squad', amountNative:-4.262228, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+    { rawLabel:'Serviços profissionais comissão técnica', normalizedCategory:'wages_squad', amountNative:-1.239625, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
+    { rawLabel:'Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.273126, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-1.243092, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Serviços de terceiros', normalizedCategory:'lump_football_operations_expense', amountNative:-1.659554, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.240843, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Despesas gerais', normalizedCategory:'admin_general_expense', amountNative:-1.177761, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+  ],
 };
 const goiasbrFiscalYearMeta = {
   2021: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -513,6 +544,25 @@ const goiasbrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:29.913572, officialTotalExpenses:47.005665, officialPAT:-19.328697,
   },
+  // 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2010. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2010-2009' es el ejercicio 2010 con 2009 de comparativo, no 2009.
+  2010: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2010-12-31',
+    sourceId:'goias-br-demonstracoes-contabeis-2010-2009',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-6.660002, tax:0,
+    extraRows: [
+      {label:'Receitas financeiras', value:0.010513},
+      {label:'Despesas financeiras', value:-6.670515},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Serviços de terceiros', lado:'expense', importe:1.659554, motivo:'Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:30.362985, officialTotalExpenses:34.393317, officialPAT:-10.690334,
+  },
 };
 const goiasbrPresupuestoOverlayByYear = {};
 
@@ -578,6 +628,12 @@ Object.assign(sources, {
     title:'Goiás Esporte Clube — demonstracoes-contabeis-2009-2008 (ejercicio 2009)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2009-2008.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'goias-br-demonstracoes-contabeis-2010-2009': {
+    id:'goias-br-demonstracoes-contabeis-2010-2009', clubId:'goias-br',
+    title:'Goiás Esporte Clube — demonstracoes-contabeis-2010-2009 (ejercicio 2010)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
