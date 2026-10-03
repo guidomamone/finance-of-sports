@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 428 — Cambio B: una nota con una sola fila con importe que da su renglón no marca reintento (2026-10-03)
+
+- `tools/verificar.mjs` (`desgloseTrivial`): si una nota no abre su renglón porque tiene una sola fila con importe (o todas en 0) y esa fila da exacto el renglón, deja una nota y no marca el documento para el reintento. Solo cambia el aviso; queda el renglón, con el mismo importe. Diseño aprobado por Guido.
+- Casos: AEL Larissa 2022 "Κύκλος εργασιών" (mercadería 0,00 + servicios 2.068.146,00); 2023 "Λοιπά έξοδα" en 0.
+- Medido sobre los lotes 07-11: lo cargado idéntico en todos; dejan de pedir reintento 7 documentos de AEL, Fortaleza 2019 y 2020 y Novorizontino 2020 (los tres con una sola fila, ya cargados).
+
 ## Versión 427 — Escalón 1 de las notas: una nota sin renglón que desglosa un grupo de renglones de gasto (2026-10-03)
 
 - `tools/verificar.mjs` (`notaDeGrupo`): si ninguna fila de una nota dice qué renglón abre, propone el único conjunto de 2+ renglones de gasto del estado (sin nota propia) que suma su total impreso; decide la compuerta de siempre (`cerrarNota`). La duda de extraer de esa nota se cierra con nota si la lectura que ganó la usó. Diseño aprobado por Guido.

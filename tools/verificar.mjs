@@ -205,13 +205,27 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     if (conNotas && !notas.some((n) => n.startsWith(`ajuste manual: el desglose de "${h.etiqueta}"`))) notas.push(`ajuste manual: el desglose de "${h.etiqueta}" se abre con una fila "${aj.etiquetaDiferencia || 'Diferencia en el documento'}" de ${aj.valor} (${aj.fecha}, ${aj.motivo})`);
     return { hojas: [...hojasNota.map((x) => ({ ...x, valorNota: Math.abs(x.M) })), { etiqueta: aj.etiquetaDiferencia || 'Diferencia en el documento', lado: h.lado, tipo: 'renglon', valorNota: dif, pagina: h.pagina, linea: aj.linea ?? h.linea, bloque: h.bloque, u: h.u, catAjuste: aj.categoria || null }] };
   };
+  // DESGLOSE TRIVIAL (Versión 429, cambio B, aprobado por Guido el 2026-10-03): una nota con UNA sola fila con importe (o ninguna) que da
+  // exacto su renglón no es un desglose que falló: cerrarNota() pide 2 hojas y la rechaza, queda el renglón (mismo importe) y antes se marcaba
+  // el documento para reintento (~US$ 0,30 para nada). Ahora deja una nota y no marca reintento. Solo toca el aviso: lo cargado no cambia.
+  // Casos: AEL Larissa 2022 "Κύκλος εργασιών" (venta de mercadería 0,00 + servicios 2.068.146,00 = total, .md L566-570); 2023 "Λοιπά
+  // έξοδα" 0 con su nota en 0.
+  const desgloseTrivial = (r, hijas) => {
+    const conImporte = hijas.filter((x) => x.tipo === 'renglon' && isFinite(x.M) && x.M);
+    if (conImporte.length > 1) return false;
+    const s = conImporte.reduce((a, x) => a + Math.abs(x.M), 0);
+    if (Math.abs(s - Math.abs(r.M || 0)) > 1e-9 + 0.5 * ((r.u || 0) + conImporte.reduce((a, x) => a + (x.u || 0), 0))) return false;
+    const n = `la nota de "${r.etiqueta}" tiene ${conImporte.length ? 'una sola fila con importe' : 'todas sus filas en 0'} y da el renglón: queda el renglón, sin reintento`;
+    if (!notas.includes(n)) notas.push(n);
+    return true;
+  };
   const abrirAnidadas = (hojas, campo, nivel) => {
     if (nivel > 3) return hojas;
     const usadas = new Set(hojas);
     return hojas.flatMap((h) => {
       const sub = filas.filter((x) => x.detalla_a && x !== h && !usadas.has(x) && x.detalla_a.trim() === String(h.etiqueta).trim());
       const c = sub.length >= 2 ? (cerrarNota(Math.abs(h[campo] || 0), sub, campo, h.u || 0) || cerrarConAjuste(h, sub, campo)) : null;
-      if (!c) { if (conNotas && sub.length >= 2 && campo === 'M') { if (!reintentos.some((x) => x.renglon === h.etiqueta)) notas.push(`el desglose de "${h.etiqueta}" (${sub.length} filas) no suma la fila: quedó la fila`); if (!reintentos.some((x) => x.renglon === h.etiqueta)) reintentos.push({ renglon: h.etiqueta, suma: r6(sub.filter((x) => x.tipo === 'renglon').reduce((a, x) => a + Math.abs(x.M || 0), 0)), objetivo: r6(Math.abs(h.M || 0)) }); } return [h]; }
+      if (!c) { if (conNotas && sub.length >= 2 && campo === 'M' && !desgloseTrivial(h, sub)) { if (!reintentos.some((x) => x.renglon === h.etiqueta)) notas.push(`el desglose de "${h.etiqueta}" (${sub.length} filas) no suma la fila: quedó la fila`); if (!reintentos.some((x) => x.renglon === h.etiqueta)) reintentos.push({ renglon: h.etiqueta, suma: r6(sub.filter((x) => x.tipo === 'renglon').reduce((a, x) => a + Math.abs(x.M || 0), 0)), objetivo: r6(Math.abs(h.M || 0)) }); } return [h]; }
       return abrirAnidadas(c.hojas.map((x) => ({ ...x, [campo]: x.valorNota * Math.sign(h[campo] || 1), origen: `${h.origen} > desglose de "${h.etiqueta}"` })), campo, nivel + 1);
     });
   };
@@ -303,7 +317,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       const obj = Math.abs(f[campo] || 0);
       const c = hijas.length >= 2 ? (cerrarNota(obj, hijas, campo, f.u || 0) || cerrarConAjuste(f, hijas, campo)) : null;
       if (c) out.push(...abrirAnidadas(c.hojas.map((h) => ({ ...h, [campo]: h.valorNota, origen: `nota que desglosa "${f.etiqueta}"` })), campo, 1));
-      else { out.push({ ...f, [campo]: firmado && f.tipo === 'renglon' ? (f[campo] || 0) * signoNormal : Math.abs(f[campo] || 0), origen: firmado && f.tipo === 'renglon' && (f[campo] || 0) * signoNormal < 0 ? 'estado (lectura 4: signo impreso, resta en su lado)' : 'estado' }); if (conNotas && hijas.length >= 2 && campo === 'M') { const sr = r6(hijas.filter((h) => h.tipo === 'renglon').reduce((a, h) => a + Math.abs(h.M || 0), 0)); if (!reintentos.some((x) => x.renglon === f.etiqueta)) notas.push(`la nota de "${f.etiqueta}" no suma el renglón (${sr} contra ${r6(obj)}, sumando sus renglones): quedó el renglón del estado`); if (!reintentos.some((x) => x.renglon === f.etiqueta)) reintentos.push({ renglon: f.etiqueta, suma: sr, objetivo: r6(obj) }); } }
+      else { out.push({ ...f, [campo]: firmado && f.tipo === 'renglon' ? (f[campo] || 0) * signoNormal : Math.abs(f[campo] || 0), origen: firmado && f.tipo === 'renglon' && (f[campo] || 0) * signoNormal < 0 ? 'estado (lectura 4: signo impreso, resta en su lado)' : 'estado' }); if (conNotas && hijas.length >= 2 && campo === 'M' && !desgloseTrivial(f, hijas)) { const sr = r6(hijas.filter((h) => h.tipo === 'renglon').reduce((a, h) => a + Math.abs(h.M || 0), 0)); if (!reintentos.some((x) => x.renglon === f.etiqueta)) notas.push(`la nota de "${f.etiqueta}" no suma el renglón (${sr} contra ${r6(obj)}, sumando sus renglones): quedó el renglón del estado`); if (!reintentos.some((x) => x.renglon === f.etiqueta)) reintentos.push({ renglon: f.etiqueta, suma: sr, objetivo: r6(obj) }); } }
     }
     return out;
   };
