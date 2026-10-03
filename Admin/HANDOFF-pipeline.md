@@ -22,18 +22,16 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**Cuatro clubes enteros en el sitio local, sin push (y AEL Larissa en curso):** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; Goiás (Brasil) 2008-2017
+**Cinco clubes en el sitio local, sin push (AEL Larissa con 7 de 10 años):** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; Goiás (Brasil) 2008-2017
 y 2021-2025; **Novorizontino (Brasil) 2010 y 2013-2025** (2011-2012 sin documento). Versiones de esta tanda: 407-426.
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
-1. **En curso: AEL Larissa (Grecia, `Admin/lote-11.txt`, 2016-2025, cierre 30-06).** Lote corrido (US$ 1,14): los 10 años verifican y la
-   cadena de años vecinos coincide. Perfil (sin socios ni otros deportes) y ligas en la caché (2016 y 2022-2025 SL2, 2017-2021 SL1).
-   Versión 427: escalón 1 de las notas (nota por naturaleza que abre el grupo costo de ventas + administración + comercialización); pasan
-   2020, 2022, 2024, 2025. Falta: categorizar las filas nuevas (correr el lote otra vez), 2019 (gana la lectura 5), 2021 (extraer no trajo
-   la nota 16), 2023 (la nota incluye intereses), 2016-2018 sin nota por naturaleza (no desglosado), alta del club (`aellarissa-gr`).
-   Defectos vistos: 7 reintentos falsos (nota de una sola fila no nula: `cerrarNota` pide 2 hojas; cambio B propuesto);
-   `lookup-club-league.js "AEL Larissa"` encuentra "Aris" (`proponerLiga` no, compara por palabras).
+1. **AEL Larissa (Grecia, `aellarissa-gr`, `Admin/lote-11.txt`) cargado: 2016-2018, 2020, 2022, 2024, 2025** (Versiones 427-429). Faltan:
+   2019 (gana la lectura 5, que no abre notas), 2021 (extraer no trajo la nota 16; re-extraer ~US$ 0,07) y 2023 (la nota de gastos
+   incluye los intereses); los tres con su duda en la cola. 2016-2018 por función (sin nota por naturaleza). Caja y deuda sin correr
+   (`caja-deuda.mjs --club aellarissa-gr`). Sin brandColor (P3). Defectos vistos: una duda de tema contestada ANTES del alta se pierde
+   (la clave pasa de la carpeta al clubId); `lookup-club-league.js "AEL Larissa"` encuentra "Aris" (`proponerLiga` no).
 2. Candidatos después: Ferroviária (Brasil, 12 años, 9 escaneos); Juventus (Italia, 22 años, consolidados largos). Noruegos (Molde,
    Fredrikstad, Aalesund, Brann): escaneos, esperan el escalón 2 de la etapa 2. Novorizontino: pendientes chicos de caja/deuda (opcionales).
 3. Opcional, sin urgencia: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs
