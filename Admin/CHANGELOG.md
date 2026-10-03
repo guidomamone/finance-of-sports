@@ -19,7 +19,7 @@ que dice `ESTADO.md` era verdad ese día.
 
 - Alta `aellarissa-gr` (Grecia, EUR, ejercicio desde el 07-01; nombre legal `Athlitiki Enosi Larissas AEL P.A.E.`, transliterado como Panathinaikos). Primer club de la Super League 2 (`data/rankings/gr-superleague2.js`).
 - Años del proceso nuevo (`lote-11.txt`), un commit por año; gasto por naturaleza en 2020, 2022, 2024 y 2025 (Versión 427), por función en 2016-2018. Categorías de las 7 etiquetas griegas aceptadas por Guido en la cola.
-- Sin cargar: 2019, 2021 y 2023 (dudas de la nota de gastos en la cola).
+- 2021 cargado después de re-extraer (la nota 16 no había venido). Sin cargar: 2019 y 2023 (dudas de la nota de gastos en la cola).
 
 ## Versión 428 — Cambio B: una nota con una sola fila con importe que da su renglón no marca reintento (2026-10-03)
 

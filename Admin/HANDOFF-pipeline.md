@@ -22,14 +22,14 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**Cinco clubes en el sitio local, sin push (AEL Larissa con 7 de 10 años):** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; Goiás (Brasil) 2008-2017
+**Cinco clubes en el sitio local, sin push (AEL Larissa con 8 de 10 años):** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; Goiás (Brasil) 2008-2017
 y 2021-2025; **Novorizontino (Brasil) 2010 y 2013-2025** (2011-2012 sin documento). Versiones de esta tanda: 407-426.
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
-1. **AEL Larissa (Grecia, `aellarissa-gr`, `Admin/lote-11.txt`) cargado: 2016-2018, 2020, 2022, 2024, 2025** (Versiones 427-429). Faltan:
-   2019 (gana la lectura 5, que no abre notas), 2021 (extraer no trajo la nota 16; re-extraer ~US$ 0,07) y 2023 (la nota de gastos
-   incluye los intereses); los tres con su duda en la cola. 2016-2018 por función (sin nota por naturaleza). Caja y deuda sin correr
+1. **AEL Larissa (Grecia, `aellarissa-gr`, `Admin/lote-11.txt`) cargado: 2016-2018, 2020-2022, 2024, 2025** (Versiones 427-429). Faltan:
+   2019 (gana la lectura 5, que no abre notas) y 2023 (la nota de gastos
+   incluye los intereses); los dos con su duda en la cola. 2016-2018 por función (sin nota por naturaleza). Caja y deuda sin correr
    (`caja-deuda.mjs --club aellarissa-gr`). Sin brandColor (P3). Defectos vistos: una duda de tema contestada ANTES del alta se pierde
    (la clave pasa de la carpeta al clubId); `lookup-club-league.js "AEL Larissa"` encuentra "Aris" (`proponerLiga` no).
 2. Candidatos después: Ferroviária (Brasil, 12 años, 9 escaneos); Juventus (Italia, 22 años, consolidados largos). Noruegos (Molde,
