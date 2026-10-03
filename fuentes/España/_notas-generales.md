@@ -106,3 +106,29 @@ bloqueo nuevo con su solución) — no hace falta una entrada por cada club indi
 - **Pendiente de esta sesión por club** (para llegar a 5 ejercicios): Elche, Rayo, Mallorca,
   Villarreal (4 c/u); Oviedo, Espanyol (3); Levante (3 + memoria); Osasuna (3 financieros); Sevilla
   (4 + borrador rechazado, sin barrer); Real Sociedad (0, gateado a accionistas).
+
+## Otros deportes de España (barrido 2026-10-03, sin PDFs de clubes todavía)
+
+Resultado: **a diferencia de Reino Unido (Companies House), en España no apareció ningún canal gratuito
+y común a un deporte distinto del fútbol.** Lo probado:
+
+- **Baloncesto (ACB)**: el portal de transparencia (`acb.com/articulo/ver/426262-portal-de-transparencia-acb.html`)
+  publica solo presupuestos y cuentas de la ACB como entidad (y de ACEBSA), NO de los clubes. Los clubes
+  (SAD: Valencia Basket, Saski Baskonia, Baloncesto Málaga/Unicaja, Joventut Badalona, etc.) depositan en
+  el Registro Mercantil (de pago); sus webs no publican cuentas: `valenciabasket.com/transparencia` y
+  `unicajabaloncesto.com/transparencia` dan 404, `baskonia.com/transparencia` y `penya.com/es/club/transparencia`
+  (Joventut) existen pero sin cuentas (Joventut solo retribuciones de órganos de dirección y subvenciones;
+  la nota de prensa de 2024 dice que el balance al 30-6-2024 fue verificado por Uniaudit Oliver Camps).
+  Wayback de `valenciabasket.com` y `unicajabaloncesto.com`: 0 PDFs financieros; `baskonia.com`: 1 (un
+  suplemento de 2013). Agregados de prensa (2Playbook, Solobasket) dan ingresos/presupuestos por club como
+  LEAD sin verificar.
+- **Balonmano (ASOBAL)**: `asobal.es/transparencia/` publica cuentas auditadas 2021-22 a 2024-25 de la
+  Liga como entidad, no de los clubes.
+- **Fútbol sala (LNFS), vóley (Superliga), rugby (División de Honor)**: sin portal con cuentas de clubes;
+  la RFE de Rugby publica sus cuentas federativas (`ferugby.es/wp-content/uploads/2024/12/RFERUGBY-OpinionCCAA-2023_Firmadas.pdf`),
+  no las de los clubes (VRAC, Ordizia, etc., asociaciones sin obligación de publicar).
+- **Real Madrid y FC Barcelona**: baloncesto, balonmano, fútbol sala y hockey ya están DENTRO de sus
+  cuentas/informes (club polideportivo), no hay documento separado por sección.
+- **Camino no agotado** (no se hizo por costo/valor): barrido Wayback por dominio de cada club ACB cuando
+  archive.org esté estable, y Registro Mercantil (gestión de Guido, de pago) para Valencia Basket,
+  Baskonia, Unicaja y Joventut, que son los 4 con SAD y mayor presupuesto.
