@@ -7,6 +7,7 @@
 //
 // --want N  : baja los ejercicios más recientes que falten hasta que la carpeta tenga N (por año de cierre).
 // --all     : baja todos los que falten (ignora --want).
+// --years Y1,Y2 : baja solo los ejercicios que cierran en esos años (sirve con --include-small para probar si traen P&L).
 // Lee la carpeta Clubes/Inglaterra/<club>/ para saber qué años ya hay (por el nombre del archivo).
 import fs from 'node:fs';
 import path from 'node:path';
@@ -89,7 +90,9 @@ for (const f of fs.readdirSync(dir)) {
   else if (y) have.add(+y[1]);
 }
 let todo = series.filter(s => !have.has(+s.date.slice(0, 4)));
-if (!all) todo = todo.slice(0, Math.max(0, want - have.size));
+const only = flag('--years');   // ej. --years 2018,2019: baja solo esos años de cierre (para probar ejercicios viejos de sociedades chicas)
+if (only) todo = series.filter(s => only.split(',').includes(s.date.slice(0, 4)) && !have.has(+s.date.slice(0, 4)));
+else if (!all) todo = todo.slice(0, Math.max(0, want - have.size));
 console.log(`${club}: ya hay ${have.size} (${[...have].sort().join(',')}); disponibles ${series.length}; a bajar ${todo.length}`);
 for (const s of todo) {
   const y = +s.date.slice(0, 4), mo = s.date.slice(5, 7);
