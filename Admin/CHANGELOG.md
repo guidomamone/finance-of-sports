@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 427 — Escalón 1 de las notas: una nota sin renglón que desglosa un grupo de renglones de gasto (2026-10-03)
+
+- `tools/verificar.mjs` (`notaDeGrupo`): si ninguna fila de una nota dice qué renglón abre, propone el único conjunto de 2+ renglones de gasto del estado (sin nota propia) que suma su total impreso; decide la compuerta de siempre (`cerrarNota`). La duda de extraer de esa nota se cierra con nota si la lectura que ganó la usó. Diseño aprobado por Guido.
+- Caso: AEL Larissa, gasto por función (costo de ventas + administración + comercialización) abierto por naturaleza por la nota "Έξοδα". Pasan 2020, 2022, 2024 y 2025. No pasan, a propósito: 2019 (gana la lectura 5, que no abre notas), 2021 (extraer no trajo las filas de la nota) y 2023 (la nota suma también los intereses).
+- Medido con `verificar.mjs` sobre los lotes 07-11: UC, Fortaleza, Goiás y Novorizontino idénticos (estado, totales, líneas, cola).
+
 ## Versión 426 — Ligas estaduales: Paulista A1, A2 y A3 (2026-10-02)
 
 - `data/leagues.js`: `br-paulistaA1`, `br-paulistaA2`, `br-paulistaA3`, con `scope:'estadual'` y sin `tier` (el Paulista no es un escalón de la pirámide nacional); el orden de las ligas de un país (`leaguesOfCountry`, `js/liga.js`) pone al final las que no tienen tier. Decisión de Guido.

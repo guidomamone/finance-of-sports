@@ -165,6 +165,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // REINTENTOS (Versión 336): desgloses (notas o anidados) con 2+ filas que no suman. No frenan (queda el renglón, que es correcto), pero
   // marcan el documento para el camino de error: lote.mjs --reintentar vuelve a localizar con el índice ampliado y a extraer con esta lista.
   const reintentos = [];
+  const gruposAbiertos = new Set(); // bloques de nota abiertos por el escalón 1 de las notas (un grupo de renglones; ver notaDeGrupo)
   const pagDe = (bloque) => U.bloques?.[bloque]?.pagina ?? null;
   const vigentes = []; // claves que levanta esta corrida (para cerrar los casos viejos que ya no aparecen: cola.mjs cerrarObsoletos)
   const caso = (motivo, detalle, que, extra = {}) => {
@@ -224,13 +225,62 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // normal de su lado (un renglón negativo dentro de los ingresos resta: "(-) Dedução da receita (1.290.613)"), y los subtotales se
   // reconocen por la suma con signo. Caso: Goiás 2008, los renglones de "Futebol profissional e de base" con la deducción restando dan
   // 19.389.721 (el subtotal impreso); en valor absoluto daban 21.970.947, el subtotal no se reconocía y se contaba además de sus renglones.
+  // ESCALÓN 1 DE LAS NOTAS (Versión 427, diseño aprobado por Guido el 2026-10-03): una nota que no dice qué renglón abre (ninguna fila con
+  // detalla_a) puede desglosar un GRUPO de renglones del estado. Caso real, AEL Larissa (Grecia) 2019-2025: el estado presenta el gasto por
+  // función (costo de ventas, administración, comercialización) y la nota "Έξοδα" lo abre por naturaleza (personal, terceros, amortizaciones)
+  // con un total igual a la suma de los TRES renglones (2022: 1.221.827,55 + 505.583,81 + 379.187,86 = 2.106.599,22, .md L236-245 y
+  // L584-590). Sin esto la nota quedaba afuera y los salarios en 0.
+  //   ESCALÓN 0  la nota dice su renglón (detalla_a) ── propone ese renglón (lineasDeLado, abajo)
+  //   ESCALÓN 1  la nota no dice ninguno ── propone el ÚNICO conjunto de 2+ renglones de GASTO del estado (sin nota propia) cuya suma da el
+  //              total impreso de la nota; si hay dos conjuntos posibles o ninguno, no propone nada
+  //   COMPUERTA  la misma de siempre, cerrarNota(): las filas de la nota tienen que sumar el grupo ── pasa → la nota reemplaza el grupo
+  //   nada → quedan los renglones del estado (como antes) y la duda de extraer va a la cola
+  // Solo gasto y solo renglones del estado sin nota propia. AEL 2023 no pasa a propósito: su nota suma los tres renglones MÁS los intereses
+  // (lado financiero), así que no hay conjunto de gasto que dé el total.
+  const notaDeGrupo = (delLado, campo) => {
+    const bloquesEstado = new Set(F.ubicacion?.estado || []);
+    const conNotaPropia = (f) => filas.some((h) => h.detalla_a && h.detalla_a.trim() === String(f.etiqueta).trim());
+    const cands = delLado.filter((f) => f.lado === 'gasto' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] && !conNotaPropia(f));
+    if (cands.length < 2 || cands.length > 14) return null;
+    const porBloque = new Map();
+    for (const h of filas) { if (bloquesEstado.has(h.bloque)) continue; if (!porBloque.has(h.bloque)) porBloque.set(h.bloque, []); porBloque.get(h.bloque).push(h); }
+    for (const [bloque, rows] of porBloque) {
+      if (rows.some((h) => h.detalla_a) || !rows.every((h) => h.lado === 'gasto')) continue;
+      if (rows.filter((h) => h.tipo === 'renglon').length < 2) continue;
+      const tot = [...rows].reverse().find((h) => h.tipo !== 'renglon' && isFinite(h[campo]) && h[campo]);
+      if (!tot) continue;
+      const T = Math.abs(tot[campo]);
+      const conjuntos = [];
+      for (let mask = 1; mask < (1 << cands.length) && conjuntos.length < 2; mask++) {
+        const sel = cands.filter((_, i) => mask & (1 << i));
+        if (sel.length < 2) continue;
+        const s = sel.reduce((a, f) => a + Math.abs(f[campo]), 0);
+        if (Math.abs(s - T) <= 1e-9 + 0.5 * (sel.reduce((a, f) => a + (f.u || 0), 0) + (tot.u || 0))) conjuntos.push(sel);
+      }
+      if (conjuntos.length !== 1) continue;
+      const grupo = conjuntos[0];
+      const c = cerrarNota(grupo.reduce((a, f) => a + Math.abs(f[campo]), 0), rows, campo, grupo.reduce((a, f) => a + (f.u || 0), 0));
+      if (c) return { bloque, renglones: grupo, hojas: c.hojas };
+    }
+    return null;
+  };
   const lineasDeLado = (lado, campo = 'M', conOtros = false, firmado = false) => {
     const out = [];
     const delLado = estado.filter((f) => f.lado === lado || (conOtros && f.lado === 'otro' && f.tipo === 'renglon'));
+    const grupo = lado === 'gasto' ? notaDeGrupo(delLado, campo) : null;
+    if (grupo && conNotas && campo === 'M' && !gruposAbiertos.has(grupo.bloque)) {
+      gruposAbiertos.add(grupo.bloque);
+      notas.push(`escalón 1 de las notas: la nota ${grupo.bloque} (sin renglón) suma el grupo "${grupo.renglones.map((r) => r.etiqueta).join('" + "')}" (${r6(grupo.renglones.reduce((a, r) => a + Math.abs(r.M), 0))}); se usa si la lectura que gana abre notas`);
+    }
     const rengs = delLado.filter((f) => f.lado === lado && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo]);
     const signoNormal = rengs.filter((f) => f[campo] < 0).length > rengs.length / 2 ? -1 : 1;
     for (const [k, f] of delLado.entries()) {
       if (f.lado === 'otro') continue; // (conOtros) solo cuenta como componente; lo ubica la lectura 3
+      // escalón 1 de las notas: el grupo entero se reemplaza por las filas de la nota en el lugar de su primer renglón
+      if (grupo && grupo.renglones.includes(f)) {
+        if (f === grupo.renglones[0]) out.push(...abrirAnidadas(grupo.hojas.map((h) => ({ ...h, [campo]: h.valorNota, origen: `nota que desglosa "${grupo.renglones.map((r) => r.etiqueta).join('" + "')}" (escalón 1: grupo de renglones)` })), campo, 1));
+        continue;
+      }
       // un total/subtotal cuenta como línea solo si NO es la suma de renglones de arriba del mismo lado (Forest: "Turnover" total + venta de jugadores)
       // (y tampoco la suma de los renglones que tiene ABAJO: el estilo "Ingresos 500" y debajo sus componentes)
       if (f.tipo !== 'renglon') {
@@ -575,6 +625,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       // como obsoletas porque esta corrida ya no las levanta).
       if (ajusteDe(pdf, 'sin-dudas')) { notas.push(`duda de ${origen} cerrada por ajuste manual (sin-dudas): ${d.pregunta || d.texto}`); continue; }
       if (!d.afecta_carga) { notas.push(`duda de ${origen} que no afecta la carga: ${d.texto}`); continue; }
+      // la nota de la duda la abrió el escalón 1 de las notas (grupo de renglones, cerrarNota la confirmó): se cierra con nota (Versión 427)
+      // (solo si la lectura que ganó usó esa nota: AEL 2019 cerró con la lectura 5, que lee las hojas del estado y no abre notas)
+      if (gas.some((f) => (d.bloques || []).includes(f.bloque) && String(f.origen || '').includes('escalón 1: grupo'))) { notas.push(`duda de ${origen} resuelta por el escalón 1 de las notas (la nota suma el grupo): ${d.pregunta || d.texto}`); continue; }
       const b = (d.bloques || []).map((id) => U.bloques?.[id]).find(Boolean);
       const ls = (d.texto.match(/\bL(\d+)\b/g) || []).map((x) => Number(x.slice(1)));
       const lineas = ls.length ? [Math.min(...ls), Math.max(...ls)] : b ? b.lineas : null;
