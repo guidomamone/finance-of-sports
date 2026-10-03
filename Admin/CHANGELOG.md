@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Sourcing Oceanía, 2026-10-03
+
+- Primer barrido de la región (Australia y Nueva Zelanda), sin transcribir ni cargar nada: ~280 PDFs en `Clubes/Australia/` y `Clubes/Nueva Zelanda/` (no trackeados).
+- AFL: los 18 clubes con 12-15 ejercicios cada uno (2011-2025). Collingwood, Essendon, Hawthorn, Brisbane, St Kilda, Melbourne, Geelong, Carlton, Adelaide, Fremantle, North Melbourne, Richmond (solo informe conciso) y Western Bulldogs, desde el sitio oficial o Wayback; Sydney, West Coast, Port Adelaide, Gold Coast y GWS solo vía el espejo no oficial footyindustry.com (copias de ASIC Form 388, muchas escaneadas).
+- NRL: 10 de 17 clubes con documentos (Penrith, Bulldogs, Souths [solo el Member Co], Parramatta, Roosters, Cronulla, Broncos, Storm, Wests Tigers, Cowboys, Raiders escaneado); sin nada público: Manly, Knights, Titans, Dolphins, Dragons (Pty), Warriors.
+- NZ: NZ Rugby (9) y NZ Cricket (7); las franquicias de Super Rugby, Phoenix y Auckland FC no tienen estados públicos (GP Ltd + LP).
+- Rugby Australia (11), Football Australia (10), Cricket Australia (8), Cricket Victoria (9), WACA (6). A-League y NBL: Pty Ltd privadas, sin publicación.
+- Notas por club en `fuentes/Australia/` y `fuentes/Nueva Zelanda/`, índices `fuentes/_indice/Australia.md` y `Nueva Zelanda.md` (con 11 y 6 líneas reescritas para el clasificador de `generate-fuentes-index.js`, que no entendía "reports").
+- Pendiente de proponer a Guido: `paises/Australia.md` y `paises/Nueva-Zelanda.md` (no se editó ningún skill).
+
 ## Versión 279 — to-do 67 cerrado: confirmado en producción
 
 - Guido confirmó en Chrome (sin bloqueador de trackers) que los 3 eventos del funnel del selector

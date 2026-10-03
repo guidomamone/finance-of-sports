@@ -85,8 +85,8 @@ la línea de ese país acá solo si cambió alguno de sus números.
 
 ## Índice de países
 
-Un archivo por país en `fuentes/_indice/<País>.md`, con una línea por club. Hoy: **44 países,
-587 clubes trackeados, 371 con documento encontrado.**
+Un archivo por país en `fuentes/_indice/<País>.md`, con una línea por club. Hoy: **46 países,
+639 clubes trackeados, 412 con documento encontrado.**
 
 "Con documento" = existe al menos un documento financiero identificado y accesible con cifras de
 ese club — propio, o un agregado de liga con desglose club por club, como la DNCG francesa —
@@ -96,6 +96,7 @@ aunque todavía no esté cargado al sitio. No cuenta un documento confirmado per
 - [Alemania](_indice/Alemania.md) — 18 clubes, 11 con documento — Chequeo más antiguo: 2026-09-17
 - [Arabia Saudita](<_indice/Arabia Saudita.md>) — sin clubes trackeados individualmente, ver el detalle
 - [Argentina](_indice/Argentina.md) — 66 clubes, 19 con documento — Chequeo más antiguo: 2026-09-12
+- [Australia](_indice/Australia.md) — 46 clubes, 39 con documento — Chequeo más antiguo: 2026-10-03
 - [Austria](_indice/Austria.md) — 12 clubes, 1 con documento — Chequeo más antiguo: 2026-09-17
 - [Bélgica](_indice/Bélgica.md) — 16 clubes, 16 con documento — Chequeo más antiguo: 2026-09-17
 - [Bolivia](_indice/Bolivia.md) — 3 clubes, 0 con documento — Chequeo más antiguo: 2026-09-12
@@ -124,6 +125,7 @@ aunque todavía no esté cargado al sitio. No cuenta un documento confirmado per
 - [México](_indice/México.md) — 18 clubes, 4 con documento — Chequeo más antiguo: 2026-09-13
 - [Nigeria](_indice/Nigeria.md) — sin clubes trackeados individualmente, ver el detalle
 - [Noruega](_indice/Noruega.md) — 16 clubes, 16 con documento — Chequeo más antiguo: 2026-09-17
+- [Nueva Zelanda](<_indice/Nueva Zelanda.md>) — 6 clubes, 2 con documento — Chequeo más antiguo: 2026-10-03
 - [Países Bajos](<_indice/Países Bajos.md>) — 18 clubes, 18 con documento — Chequeo más antiguo: 2026-09-17
 - [Panamá](_indice/Panamá.md) — 1 club, 0 con documento — Chequeo más antiguo: 2026-09-13
 - [Paraguay](_indice/Paraguay.md) — 9 clubes, 0 con documento — Chequeo más antiguo: 2026-09-12
