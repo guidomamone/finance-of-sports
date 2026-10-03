@@ -22,16 +22,17 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**Tres clubes enteros en el sitio local, sin push:** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; Goiás (Brasil) 2008-2017
-y 2021-2025. Auditoría del proceso hecha (`Admin/auditoria-pipeline-2026-10-02.md`; Versiones 395-407).
+**Cuatro clubes enteros en el sitio local, sin push:** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; Goiás (Brasil) 2008-2017
+y 2021-2025; **Novorizontino (Brasil) 2010 y 2013-2025** (2011-2012 sin documento). Versiones de esta tanda: 407-422.
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
-1. **Novorizontino** (Brasil, `novorizontino-br`): **cargados 2010 y 2013-2025** (2011-2012 sin documento). Pendiente: caja y deuda
-   (`caja-deuda.mjs`: Versiones 418-421; 2022 por ajuste `caja` (146.924, la reclasificada por el 2023); deuda: solo 2015 (préstamo de I-9 Sports); la IA propone la caja como deuda en 2021-2025 (frenado, Versión 420: revisar el prompt);
-   caja cargada 2015-2025; próximo: diccionario de deuda sin el código de cuenta al principio + "mutuo*" (aprobado de a uno));
-   ligas 2013-2017 en null (sin liga nacional, solo el Paulista: decidir si `liga-no-catalogada`). Falsos positivos vistos: el
-   inventario marca un número de firma digital como cifra (2023); alta-club pregunta perímetro en un club nuevo por el membrete del auditor.
+1. **Cerrar Novorizontino (opcional):**
+   - Deuda: cargada solo 2015 (préstamo de I-9 Sports, 10,24 M). 2013-2017: el escalón 1 suma el préstamo en los 3 niveles del balancete
+     (2.2.01 → 2.2.01.01 → cuenta) y la compuerta lo frena: falta "solo la hoja" en caja-deuda, como la lectura 5 de verificar.
+     2018-2025: la IA proponía la caja como deuda (frenado por la Versión 420); revisar el prompt o el escalón 1 con "Empréstimos".
+   - Caja: cargada 2015-2025 (2022 por ajuste `caja`). 2010, 2013, 2014 sin vecino para comparar.
+   - Ligas 2013-2017 en null (solo el Paulista): decidir si van como `liga-no-catalogada`.
 2. Candidatos después: AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos); Juventus (Italia, 22 años,
    consolidados largos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el escalón 2 de la etapa 2.
 3. Opcional, sin urgencia: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs
