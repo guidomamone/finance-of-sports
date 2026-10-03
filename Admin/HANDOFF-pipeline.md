@@ -295,7 +295,8 @@ Mitigaciones:
  ESCALÓN 2  precedente exacto (misma etiqueta en el club, una sola categoría)
  ESCALÓN 3  precedente por familia de palabras
  ESCALÓN 4  Jev con confianza >= 0,90
- ESCALÓN 5  Claude con confianza >= 0,80
+ ESCALÓN 5a ¿Claude ya respondió esto? (caché: carpeta + lado + etiqueta + nota, Versión 404)
+ ESCALÓN 5b Claude por API con confianza >= 0,80
  ESCALÓN 6  materialidad: las dudas de un lado suman ≤ 1% de ese lado → las de confianza >= 0,60 se cargan con aviso (Versión 386)
  COMPUERTA DEL LADO en todos los escalones (Versiones 374 y 377): la categoría tiene que ser del lado de la fila en el documento; si no,
             baja de escalón; la pregunta de la cola lleva la clave "etiqueta|lado"

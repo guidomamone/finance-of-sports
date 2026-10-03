@@ -37,10 +37,14 @@
 import { readFileSync, appendFileSync, existsSync, mkdirSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { normalizar } from './vocabulario.mjs';
+import { padreDe } from './memoria-categorias.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const DIR = resolve(ROOT, 'Generados', '_cache');
-const clave = (club, lado, label) => `${club}|${lado || ''}|${normalizar(label)}`;
+// (Versión 403, cambio D de la auditoría del pipeline) Con `nota` (el renglón que la fila desglosa, o 'estado'), la clave la incluye: la misma
+// etiqueta en otra nota es OTRA pregunta. Caso: Goiás "Despesa com pessoal": la respuesta guardada para la nota administrativa
+// ("gastos generales") se reusaba para la fila de la nota de fútbol de 2024 (44.603.582). Sin `nota` (Jev, que no ve la nota), como antes.
+const clave = (club, lado, label, nota) => `${club}|${lado || ''}|${normalizar(label)}${nota !== undefined ? `|nota:${nota == null ? '?' : normalizar(nota)}` : ''}`;
 
 export function abrirCache(motor) {
   const archivo = resolve(DIR, `${motor}.jsonl`);
@@ -51,9 +55,9 @@ export function abrirCache(motor) {
   }
   let nuevas = 0;
   return {
-    get: (club, lado, label) => mapa.get(clave(club, lado, label)) || null,
-    set(club, lado, label, v) {
-      const k = clave(club, lado, label);
+    get: (club, lado, label, nota) => mapa.get(clave(club, lado, label, nota)) || null,
+    set(club, lado, label, v, nota) {
+      const k = clave(club, lado, label, nota);
       mapa.set(k, v); nuevas++;
       mkdirSync(DIR, { recursive: true });
       appendFileSync(archivo, JSON.stringify({ ts: new Date().toISOString(), k, v }) + '\n');
@@ -71,7 +75,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       if (e.name.endsWith('.jev.json')) { const j = leer(p); const rj = leer(p.replace(/\.jev\.json$/, '.rubros.json')); if (!j || !rj?.club) continue;
         for (const r of j.rubros || []) if (!r.error && r.choice && !r.desdeCache) { jev.set(rj.club, r.lado, r.label, { choice: r.choice, confidence: r.confidence ?? null }); nj++; } }
       if (e.name.endsWith('.categorias.json')) { const c = leer(p); if (!c?.club || c.error) continue;
-        for (const r of c.rubros || []) if (r.escalon === 2 && !r.desdeCache && r.categoria) { claude.set(c.club, r.lado, r.label, { categoria: r.categoria, confianza: r.confianza ?? null, motivo: r.motivo || null, modelo: c.modelo || null }); nc++; } } } };
+        const carpeta = (String(c.md || '').match(/Clubes\/([^/]+\/[^/]+)\//) || [])[1] || c.club; // (Versión 403) clave de Claude: carpeta + nota
+        for (const r of c.rubros || []) if (r.escalon === 2 && !r.desdeCache && r.categoria) { claude.set(carpeta, r.lado, r.label, { categoria: r.categoria, confianza: r.confianza ?? null, motivo: r.motivo || null, modelo: c.modelo || null }, padreDe(r.section)); nc++; } } } };
     if (existsSync(resolve(ROOT, 'Generados'))) walk(resolve(ROOT, 'Generados'));
     console.log(`Sembrado: ${nj} respuestas de Jev y ${nc} de Claude, de lo que ya estaba en Generados/.`);
   }

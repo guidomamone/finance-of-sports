@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 404 — Etapa 7: la caché de Claude es un escalón con la nota en la clave (2026-10-03)
+
+- `respuestas-cache.mjs` / `categorizar-claude.mjs`: escalón 5a "¿Claude ya respondió esto?" con clave carpeta del club + lado + etiqueta + nota (antes: id del club + lado + etiqueta). Si no está, escalón 5b, preguntar por API. `--sembrar` rearma la caché de Claude con la clave nueva desde los `.categorias.json` (solo las respuestas pagadas, no las que salieron de la caché vieja). Jev sigue igual (no ve la nota).
+- Caso: Goiás "Despesa com pessoal": la respuesta para la nota administrativa ("gastos generales", guardada como 'goias-br') se reusaba en la nota de fútbol de 2024 (44.603.582); la de fútbol estaba guardada como 'goias' (id antes del alta).
+- Medido (filas que hoy resolvió Claude): UC 19 (4 en la caché nueva, 15 a volver a preguntar si se recategoriza), Fortaleza 196 (99 / 97), Goiás 94 (86 / 8); 2 dan otra categoría, las dos de Goiás 2021 ("(-) Direito de Arena" y "(-) INSS Patrocínio", cargadas como otros ingresos; la caché nueva da televisión y patrocinio, el criterio de 2022-2024).
+
 ## Versión 403 — Etapa 7: el precedente y las respuestas de la cola miran en qué nota está la fila (2026-10-03)
 
 - `padres-filas.mjs` (nuevo, gratis): en qué nota está cada fila ya verificada (lo lee del `.verificacion.json`); `sinMarca()` saca la marca de nota del final ("(a)", "(1)", "(nota 17)"); `mismoPadre()` compara notas por palabras de contenido (sin "gastos", "despesas", "total"...), porque cada año nombra distinto la misma nota.

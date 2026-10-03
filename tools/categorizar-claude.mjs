@@ -522,6 +522,7 @@ async function listos(opt) {
   const cacheClaude = abrirCache('claude'); let nDesdeCache = 0;
   for (const e of docs) {
     const rj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.rubros.json')), 'utf8'));
+    const carpetaClub = (String(e.md).match(/Clubes\/([^/]+\/[^/]+)\//) || [])[1] || rj.club;
     const jj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.jev.json')), 'utf8'));
     const jevBy = new Map(jj.rubros.map((r) => [norm(r.label), r]));
     const seen = new Set(); const rubros = [];
@@ -538,7 +539,9 @@ async function listos(opt) {
       const conCtx = precedenteFamilia([...prod, ...aprendidasFirmes], rj.club, r.lado || null, r.label, { ...ey, padre: padreFila });
       const prec = conCtx?.via === 'exacto-con-contexto' ? conCtx : (precProd || precedenteFamilia(aprendidasFirmes, rj.club, r.lado || null, r.label, { ...ey, padre: padreFila }));
       const base = { label: r.label, lado: r.lado || null, section: r.section, glosa: r.glosa, page: r.page };
-      const guardada = opt.sinCache ? null : cacheClaude.get(rj.club, r.lado, r.label);
+      // ESCALÓN 5a (Versión 403, cambio D): "¿Claude ya respondió esto?" con clave carpeta del club + lado + etiqueta + NOTA. La carpeta y no
+      // el id del club: Goiás tenía 'goias' (antes del alta) y 'goias-br' (después) con respuestas distintas para la misma etiqueta.
+      const guardada = opt.sinCache ? null : cacheClaude.get(carpetaClub, r.lado, r.label, padreFila);
       if (prec) rubros.push({ ...base, pendiente: false, ya: prec.cat, escalon: 0, precedenteDe: `${precProd ? 'sitio' : 'memoria-claude'}:${prec.via}` });
       else if (j && j.confidence >= opt.umbral) rubros.push({ ...base, pendiente: false, ya: j.choice, escalon: 1, jevConf: j.confidence });
       // Ya preguntado a Claude antes para este club y lado (tools/respuestas-cache.mjs): misma respuesta, sin pagar. Queda como escalón 2.
@@ -550,7 +553,7 @@ async function listos(opt) {
     cost += r.costUsd || 0;
     const byIdx = new Map((r.resultados || []).map((x) => [x.idx, x]));
     const out = rubros.map((x, i) => (x.pendiente ? { ...x, escalon: 2, categoria: byIdx.get(i)?.categoria ?? null, confianza: byIdx.get(i)?.confianza ?? null, motivo: byIdx.get(i)?.motivo ?? r.error ?? null } : { ...x, categoria: x.ya, confianza: x.escalon === 0 ? 1 : x.escalon === 2 ? x.confCache : x.jevConf }));
-    if (!r.error) for (const x of out) if (x.escalon === 2 && !x.desdeCache && x.categoria) cacheClaude.set(rj.club, x.lado, x.label, { categoria: x.categoria, confianza: x.confianza ?? null, motivo: x.motivo || null, modelo: opt.modelo });
+    if (!r.error) for (const x of out) if (x.escalon === 2 && !x.desdeCache && x.categoria) cacheClaude.set(carpetaClub, x.lado, x.label, { categoria: x.categoria, confianza: x.confianza ?? null, motivo: x.motivo || null, modelo: opt.modelo }, padreDe(x.section));
     writeFileSync(resolve(root, derivado(e.md, '.categorias.json')), JSON.stringify({ md: e.md, club: rj.club, year: rj.year, generatedAt: new Date().toISOString(), rubrosHuella: huellaRubros(rj), jevHuella: huellaJev(jj), modelo: opt.modelo, costUsd: r.costUsd, error: r.error, rubros: out }, null, 1));
     // Lo que Claude resolvió con confianza >= 0,80 queda en la memoria para la próxima vez (pedido de Guido).
     const aprendidos = r.error ? 0 : registrarAprendidas({ club: rj.club, year: rj.year, md: e.md, modelo: opt.modelo, rubros: out });
