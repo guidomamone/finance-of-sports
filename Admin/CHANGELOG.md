@@ -21,6 +21,7 @@ que dice `ESTADO.md` era verdad ese día.
 - Casos: Novorizontino 2022 (el detector de período tomó la fecha de la firma, 28/04/2023; localizar lo dejó "sin estado") y 2010 (estado de resultados en una tabla con pocas filas numéricas: el alta preguntaba si era un dictamen).
 - Medido: ningún documento de los lotes 07-10 tenía estos ajustes (sin cambios hasta agregar uno).
 - `inventario-transcripciones.mjs`: el ajuste `cierre` fija el `periodo` del registro, de donde lo toman localizar, verificar (año y año vecino) y cargar. Medido sobre el registro entero: 3.358 documentos, solo cambia Novorizontino 2022 (28/04/2023 → 31/12/2022).
+- `cargar.mjs`: con ajuste `cierre` no recalcula el período desde el .md (lo pisaba con la fecha de la firma).
 
 ## Versión 412 — Ajuste manual `perimetro`, por documento o por club (2026-10-02)
 
