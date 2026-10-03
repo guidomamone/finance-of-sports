@@ -189,6 +189,25 @@ const juventusitRevenueLinesByYear = {
     { rawLabel:'Players\' and coach image rights', normalizedCategory:'sponsorship_commercial', amountNative:2.396, disclosureLevel:'aggregated' }, // pág. 87, precedente
     { rawLabel:'Sundry income', normalizedCategory:'other_income', amountNative:0.478, disclosureLevel:'aggregated' }, // pág. 87, Jev 0.98
   ],
+  // 2004: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Juventus/Juventus-annual-financial-report-2003-04.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2004: [
+    { rawLabel:'1) REVENUES FROM SALES AND SERVICES', normalizedCategory:'matchday_competition', amountNative:17.612596, disclosureLevel:'aggregated' }, // pág. 74, precedente
+    { rawLabel:'a) Income from temporary transfer of players', normalizedCategory:'player_sales', amountNative:0.91, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.98
+    { rawLabel:'e) Other revenues and income', normalizedCategory:'other_income', amountNative:33.125764, disclosureLevel:'aggregated' }, // pág. 74, precedente
+    { rawLabel:'a) capital gains on disposals', normalizedCategory:'player_sales', amountNative:5.043852, disclosureLevel:'aggregated' }, // pág. 75, precedente
+    { rawLabel:'b) use of reserve ex art. 26 of the Company By-Laws', normalizedCategory:'other_income', amountNative:0.215006, disclosureLevel:'aggregated' }, // pág. 75, Jev 0.99
+    { rawLabel:'d) others', normalizedCategory:'other_income', amountNative:0.103318, disclosureLevel:'aggregated' }, // pág. 75, precedente
+    { rawLabel:'Official and technical sponsors', normalizedCategory:'sponsorship_commercial', amountNative:32.578, disclosureLevel:'aggregated' }, // pág. 95, Jev 1
+    { rawLabel:'Other sponsorships and other commercial contracts', normalizedCategory:'sponsorship_commercial', amountNative:17.782, disclosureLevel:'aggregated' }, // pág. 95, Jev 0.99
+    { rawLabel:'Television revenues', normalizedCategory:'broadcasting', amountNative:84.968975, disclosureLevel:'aggregated' }, // pág. 95, Jev 1
+    { rawLabel:'TV revenues percentage from visiting team', normalizedCategory:'broadcasting', amountNative:3.53, disclosureLevel:'aggregated' }, // pág. 95, Jev 0.99
+    { rawLabel:'Telephonic rights', normalizedCategory:'broadcasting', amountNative:6.72, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Revenues from U.E.F.A. Champions League', normalizedCategory:'competition_bonus', amountNative:14.927, disclosureLevel:'aggregated' }, // pág. 95, Jev 0.96
+    { rawLabel:'Advertising', normalizedCategory:'sponsorship_commercial', amountNative:1.052, disclosureLevel:'aggregated' }, // pág. 95, Jev 1
+    { rawLabel:'Players\' and coach image rights', normalizedCategory:'sponsorship_commercial', amountNative:2.353, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Sundry income', normalizedCategory:'other_income', amountNative:0.392, disclosureLevel:'aggregated' }, // pág. 95, Jev 0.98
+  ],
 };
 const juventusitExpenseLinesByYear = {
   2012: [ // tools/cargar.mjs (2026-10-03)
@@ -374,6 +393,24 @@ const juventusitExpenseLinesByYear = {
     { rawLabel:'c) of securities entered under current assets other than shareholdings', normalizedCategory:'other_expenses', amountNative:-0.196702, disclosureLevel:'aggregated' }, // pág. 68, Jev 0.94
     { rawLabel:'a) capital losses on disposals', normalizedCategory:'exceptional_items', amountNative:-2.447425, disclosureLevel:'aggregated' }, // pág. 68, precedente
     { rawLabel:'c) other extraordinary expenses', normalizedCategory:'exceptional_items', amountNative:-1.469301, disclosureLevel:'aggregated' }, // pág. 68, precedente
+  ],
+  2004: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'6) RAW MATERIALS, SUPPLIES, CONSUMABLES AND GOODS', normalizedCategory:'admin_general_expense', amountNative:-2.889909, disclosureLevel:'aggregated' }, // pág. 74, Claude 0.8
+    { rawLabel:'7) SERVICES', normalizedCategory:'admin_general_expense', amountNative:-24.243997, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.99
+    { rawLabel:'8) LEASES AND RENTALS', normalizedCategory:'admin_general_expense', amountNative:-3.889311, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.99
+    { rawLabel:'a) Salaries and wages', normalizedCategory:'wages_squad', amountNative:-113.70405, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.98
+    { rawLabel:'b) Social security contributions', normalizedCategory:'wages_squad', amountNative:-2.817063, disclosureLevel:'aggregated' }, // pág. 74, precedente
+    { rawLabel:'c) Employees\' severance indemnity', normalizedCategory:'admin_general_expense', amountNative:-0.473703, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.9
+    { rawLabel:'e) Other costs', normalizedCategory:'other_expenses', amountNative:-0.089351, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.99
+    { rawLabel:'a) Amortisation of intangible fixed assets', normalizedCategory:'player_amortisation', amountNative:-64.274145, disclosureLevel:'aggregated' }, // pág. 74, precedente
+    { rawLabel:'b) Depreciation of tangible fixed assets', normalizedCategory:'depreciation', amountNative:-0.92213, disclosureLevel:'aggregated' }, // pág. 74, Jev 1
+    { rawLabel:'d) Write-downs of receivables entered under current assets and cash at bank and in hand', normalizedCategory:'other_amortisation', amountNative:-0.51726, disclosureLevel:'aggregated' }, // pág. 74, precedente
+    { rawLabel:'a) Match organisation expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.172906, disclosureLevel:'aggregated' }, // pág. 74, Jev 1
+    { rawLabel:'b) Official match expenses', normalizedCategory:'match_organisation_expense', amountNative:-0.110419, disclosureLevel:'aggregated' }, // pág. 74, Jev 1
+    { rawLabel:'c) Match registration fees', normalizedCategory:'match_organisation_expense', amountNative:-0.001182, disclosureLevel:'aggregated' }, // pág. 74, Jev 1
+    { rawLabel:'d) Others', normalizedCategory:'other_expenses', amountNative:-20.402008, disclosureLevel:'aggregated' }, // pág. 74, Jev 0.99
+    { rawLabel:'a) capital losses on disposals', normalizedCategory:'exceptional_items', amountNative:-1.314812, disclosureLevel:'aggregated' }, // pág. 75, precedente
+    { rawLabel:'c) others', normalizedCategory:'other_expenses', amountNative:-3.121282, disclosureLevel:'aggregated' }, // pág. 75, Jev 0.99
   ],
 };
 const juventusitFiscalYearMeta = {
@@ -638,6 +675,40 @@ const juventusitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:271.167364, officialTotalExpenses:262.303779, officialPAT:2.15006,
   },
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -3,026,244. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 5,043,852. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 215,006. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 103,318. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1,314,812. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3,121,282. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 32578000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3396)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 17782000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3397)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 84968975. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3398) (incluye -25 € de redondeo de la nota en miles)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 3530000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3399)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 6720000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3400)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 14927000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3401)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 1052000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3402)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 2353000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3403)
+  // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 392000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 3404)
+  2004: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2004-06-30',
+    sourceId:'juventus-it-annual-financial-report-2003-04',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-2.3404, tax:1.511262,
+    extraRows: [
+      {label:'c) from securities entered under current assets other than equity investments', value:0.034475},
+      {label:'- from subsidiary companies', value:0.070998},
+      {label:'- from parent companies', value:0.191687},
+      {label:'- from others', value:0.388684},
+      {label:'d) from others', value:-3.026244},
+      {label:'a) current taxes', value:-5.727157},
+      {label:'b) deferred taxes', value:7.238419},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:221.313511, officialTotalExpenses:237.628716, officialPAT:-18.459155,
+  },
 };
 const juventusitPresupuestoOverlayByYear = {};
 
@@ -745,6 +816,12 @@ Object.assign(sources, {
     title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2002-03 (ejercicio 2003)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'juventus-it-annual-financial-report-2003-04': {
+    id:'juventus-it-annual-financial-report-2003-04', clubId:'juventus-it',
+    title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2003-04 (ejercicio 2004)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
