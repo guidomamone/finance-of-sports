@@ -353,6 +353,7 @@ const FX_CLOSE = {
   'EUR@2004-06-30': { fx: 0.822707, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2004-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
   'EUR@2005-06-30': { fx: 0.826993, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2005-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
   'EUR@2006-06-30': { fx: 0.786596, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2006-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  'EUR@2008-06-30': { fx: 0.634357, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2008-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay

@@ -79,3 +79,5 @@ de bilancio en sí, no la documentación de auditoría suelta.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2005 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2004-05.pdf` (sourceId `juventus-it-annual-financial-report-2004-05`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2006 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf` (sourceId `juventus-it-annual-financial-report-2005-06`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2008 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.pdf` (sourceId `juventus-it-annual-financial-report-2007-08`).
