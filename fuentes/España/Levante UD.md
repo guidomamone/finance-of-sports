@@ -31,3 +31,15 @@
 Del CMS (`statics-maker.llt-services.com/lev/documents/`) se bajaron las cuentas individuales **2022-23** (87 págs., 2024/02/26; hay una segunda copia de 94 págs. subida 2024/03/14, guardada como `-copia-2`, mismo ejercicio), **2023-24** individuales (101 págs.) y consolidadas (124 págs.), **2024-25** individuales (113 págs.; la consolidada ya estaba) y la **Memoria anual 2021-22** (170 págs., sin confirmar si trae las cuentas adentro). → **3 ejercicios con cuentas + 1 memoria**. Contexto: el CMS de octubre 2025 trae el plan de reestructuración del club (informe de viabilidad, deuda con Bridge/Fasanara, valoración DYO) — material relevante para la duda de deuda, no bajado.
 
 PDFs guardados en `Clubes/España/Levante UD/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.
+
+### Documentos de reestructuración 2025 (bajados 2026-10-03)
+
+Del mismo CMS (`statics-maker.llt-services.com/lev/documents/2025/10/09/...`, host oficial del club) se
+bajaron 14 PDFs a `Clubes/España/Levante UD/reestructuracion-2025/`: plan de reestructuración
+(70 págs., 9-oct-2025), plan de viabilidad ES/EN (19 págs.), valoración del club DYO Sports Finance
+(julio 2025, 14 págs.) e informe de valoración DYO (9 págs.), informe de valoración de bienes en
+garantía (18 págs.), credit facilities agreement (151 págs., Levante UD Nuevos Desarrollos / Bridge
+Securitisation), términos propuestos EDR y Fasanara (ES/EN), relaciones de acreedores afectados y no
+afectados, clasificación de acreedores y créditos litigiosos. Son documentos de deuda, no estados
+contables: sirven para la duda de deuda/`grossDebt`, no como ejercicio. No se bajaron las pólizas
+notariales, la hipoteca (133 págs.), las tasaciones ni las adhesiones al acuerdo de deuda.

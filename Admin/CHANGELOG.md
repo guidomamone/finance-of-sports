@@ -24,6 +24,8 @@ que dice `ESTADO.md` era verdad ese día.
   LaLiga (`statics-maker.llt-services.com/<código>/*`) y los CDN propios en Wayback y leer la
   carátula de cada PDF. Aviso de falsos "0 resultados" cuando archive.org está offline.
 - Francia: `sta.lfp.fr` pasó a `www.sta.lfp.fr`; DNCG sigue sin 2023/24. Sin PDFs nuevos.
+- Mismo día, archive.org de vuelta: Sevilla 8 ejercicios (+4 históricos 2014-2020 del archivo legado),
+  Mallorca 5 (+2013-14); Levante: 14 PDFs de reestructuración 2025 (deuda/viabilidad/valoración).
 - Línea `**Ángulos**` agregada a las 13 fichas de club tocadas; `fuentes/_indice/España.md`
   actualizado. Pendientes reales en `Admin/TODO.md` punto 95.
 
