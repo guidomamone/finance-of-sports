@@ -34,4 +34,22 @@ todo el proyecto: 23 ejercicios sin huecos. 100% PDF con capa de texto nativa, c
 - [Pisa](<../Italia/Pisa.md>) — sin PDF, confirmado: no publica nada, solo Registro Imprese pago — Último chequeo: 2026-10-03
 - [Lecce](<../Italia/Lecce.md>) — sin PDF, confirmado: no publica nada, prensa confirma depósito — Último chequeo: 2026-10-03
 - [Cagliari](<../Italia/Cagliari.md>) — sin PDF descargable: bilancio 2018 en Issuu y 2021 en Drive de solo lectura, candidato a mail — Último chequeo: 2026-10-03
+- [Monza](<../Italia/Monza.md>) — 3 ejercicios (2022, 2023, 2024; cierre 31 de diciembre) — Último chequeo: 2026-10-03
+- [Sampdoria](<../Italia/Sampdoria.md>) — 3 ejercicios (31/12/2018, 2019, 2021); faltan 2020 y 2022-2025 — Último chequeo: 2026-10-03
+- [Palermo](<../Italia/Palermo.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Venezia](<../Italia/Venezia.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Empoli](<../Italia/Empoli.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Spezia](<../Italia/Spezia.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Bari](<../Italia/Bari.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Frosinone](<../Italia/Frosinone.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Catanzaro](<../Italia/Catanzaro.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Padova](<../Italia/Padova.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Modena](<../Italia/Modena.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Reggiana](<../Italia/Reggiana.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Südtirol](<../Italia/Südtirol.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Cesena](<../Italia/Cesena.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Mantova](<../Italia/Mantova.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Pescara](<../Italia/Pescara.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Carrarese](<../Italia/Carrarese.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
+- [Avellino](<../Italia/Avellino.md>) — sin PDF, serie B: no publica, solo Registro Imprese pago — Último chequeo: 2026-10-03
 - [Notas generales de Italia](<../Italia/_notas-generales.md>)

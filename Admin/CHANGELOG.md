@@ -17,11 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ## Sourcing Italia, 2026-10-03 (fútbol; sin número de versión, para no chocar con otras sesiones)
 
-- Fútbol: **+24 ejercicios en disco** (PDFs en `Clubes/Italia/`, no trackeados). Lazio +8 (2006/07-2013/14, CMS viejo de `sslazio.it` vía Wayback), Torino +8 (dic 2018-2025: la sección `torinofc.it/relazioni_e_bilanci` SÍ existía, la nota del 2026-09-17 era incorrecta), Hellas Verona +4 (2020, 2021, 2022, 2025, de dos CDN viejos), Bologna +4 (consolidados 2018/19-2021/22), Cremonese +1 (30/06/2022). Ya tienen 5 o más: Lazio, Torino, Verona, Bologna (+ los que ya tenían).
-- Pisa y Lecce: confirmado que no publican nada (solo Registro Imprese, pago). Cagliari: bilancio 2018 en Issuu y 2021 en Drive de solo lectura (candidato a mail). Fiorentina: 4-5 ejercicios más en Issuu oficial sin descarga. Udinese: 2022/23 y 2023/24 solo truncados en Wayback.
-- Fichas de los 10 clubes con la línea `Ángulos`. `fuentes/_indice/Italia.md` actualizado y `node tools/generate-fuentes-index.js` corrido.
+- Fútbol: **+45 ejercicios en disco** (PDFs en `Clubes/Italia/`, no trackeados). Lazio +18 (serie completa 2006/07-2024/25: CMS viejo vía Wayback y la API del widget de documentos del sitio), Torino +8 (dic 2018-2025: la sección `torinofc.it/relazioni_e_bilanci` SÍ existía, la nota del 2026-09-17 era incorrecta), Hellas Verona +4, Bologna +4, Cremonese +2, Fiorentina +3 (reconstruidos desde las imágenes del lector público de Issuu, sin capa de texto), Monza +3 (2022-2024), Sampdoria +3 (2018, 2019, 2021). Ya tienen 5 o más: Lazio, Torino, Verona, Bologna, Fiorentina.
+- Serie B: de 18 clubes barridos solo Monza y Sampdoria publican; los otros 16 no tienen ningún documento público (solo Registro Imprese, pago). Se recomienda no repetir el barrido en Serie C. Pisa y Lecce (Serie A) confirmados sin documento. Cagliari: 2018 en Issuu y 2021 en Drive de solo lectura (mail). Udinese 2022/23-2023/24 solo truncados en Wayback. Genoa, Como y Cremonese: el sitio no publica años anteriores a 2022/2023/2023.
+- 28 fichas con la línea `Ángulos` (10 de Serie A + 18 nuevas de Serie B) y `fuentes/_indice/Italia.md` y `_notas-generales.md` actualizados; `node tools/generate-fuentes-index.js` corrido.
 - Rugby, vóley y básquet: no se empezaron en esta tanda.
-- Nota de tooling: `archive.org` empezó a rechazar conexiones (rate limit) tras ~60 consultas CDX seguidas; la página `España.md` del skill que citaba el prompt no existe en el repo.
+- Nota de tooling: `archive.org` rechaza conexiones (rate limit) tras ~60 consultas CDX seguidas; el CDX da 504 en prefijos grandes (partir por carpeta de año). La página `España.md` que citaba el prompt no existe en el repo.
 
 ## Versión 433 — Cambio E: el lote pasa por las voces (resolver-inventario) antes de rearmar una transcripción "revisar" (2026-10-03)
 

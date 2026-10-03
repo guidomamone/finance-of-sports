@@ -51,6 +51,10 @@ esta sesión (Atalanta, AS Roma) citan esa obligación explícitamente en su pro
 - **Sassuolo y Torino cierran a fin de año calendario (31 de diciembre)**, no a 30 de junio como la
   mayoría — no es un error, es la convención de esos dos clubes en particular.
 
+## Serie B (2026-10-03): casi ninguno publica
+
+Se barrieron 18 clubes de Serie B 2025/26 (sitio oficial, Wayback CDX de dominio, Firecrawl map y búsqueda web). **Solo Monza (3 ejercicios) y Sampdoria (3) publican bilanci en su web**; los otros 16 (Palermo, Venezia, Empoli, Spezia, Bari, Frosinone, Catanzaro, Padova, Modena, Reggiana, Südtirol, Cesena, Mantova, Pescara, Carrarese, Avellino) no tienen ningún documento financiero público: lo que existe son cifras en prensa y blogs (Luca Marotta, forums de hinchas: leads secundarios, no fuentes) y agregadores de registro. Hipótesis (no verificada contra el Manuale): la obligación de publicar de la licencia UEFA alcanza a los clubes que compiten en UEFA (Serie A), y los de B y C solo depositan en el Registro Imprese, que es de pago. **No conviene repetir este barrido en Serie C** salvo clubes con señal concreta (club cotizante, gran dueño que publica); el costo por club es alto y el rendimiento esperado, casi cero.
+
 ## Cómo mantener esta nota
 
 Actualizar si algún club en cero (Torino/Pisa/Lecce/Cagliari) destraba su situación, si se completa el
