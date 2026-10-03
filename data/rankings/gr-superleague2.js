@@ -3,8 +3,9 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Super League 2 (GR) — 1 ejercicio(s) con ranking:
+// Super League 2 (GR) — 2 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -18,6 +19,14 @@ window.RANKINGS["gr-superleague2"] = {
       { id:"aellarissa-gr", revenue:3.966, reportType:"official_balance_sheet",
         sourceId:"aellarissa-gr-ael-notes-elp-2025-06-30-a",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.696],["Otros ingresos",1.27]] },
+    ],
+  },
+  2024: {
+    leagueSize: null,
+    clubs: [
+      { id:"aellarissa-gr", revenue:1.299, reportType:"official_balance_sheet",
+        sourceId:"aellarissa-gr-ael-fs-elp-2024-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.449],["Otros ingresos",0.85]] },
     ],
   },
 };

@@ -40,6 +40,14 @@ const aellarissagrRevenueLinesByYear = {
     { rawLabel:'Επιχορηγήσεις και διάφορα έσοδα πωλήσεων', normalizedCategory:'other_income', amountNative:0.247736, disclosureLevel:'aggregated' }, // pág. 18, Jev 0.95
     { rawLabel:'Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0.02105, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.99
   ],
+  // 2024: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Grecia/AEL Larissa/AEL_FS_ELP_2024-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Grecia/AEL Larissa/AEL_FS_ELP_2024-06-30.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2024: [
+    { rawLabel:'Κύκλος εργασιών (καθαρός)', normalizedCategory:'lump_football_operations', amountNative:0.418981, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'Επιχορηγήσεις & διάφορα έσοδα πωλήσεων', normalizedCategory:'other_income', amountNative:0.15142, disclosureLevel:'aggregated' }, // pág. 19, Jev 0.92
+    { rawLabel:'Έσοδα παρεπόμενων ασχολιών', normalizedCategory:'other_income', amountNative:0.642079, disclosureLevel:'aggregated' }, // pág. 19, Jev 0.94
+    { rawLabel:'(+) Λοιπά έσοδα και κέρδη', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.99
+  ],
 };
 const aellarissagrExpenseLinesByYear = {
   2025: [ // tools/cargar.mjs (2026-10-03)
@@ -50,6 +58,15 @@ const aellarissagrExpenseLinesByYear = {
     { rawLabel:'Αποσβέσεις', normalizedCategory:'depreciation', amountNative:-0.042048, disclosureLevel:'aggregated' }, // pág. 18, precedente
     { rawLabel:'Φόροι-Τέλη', normalizedCategory:'admin_general_expense', amountNative:-0.005684, disclosureLevel:'aggregated' }, // pág. 18, Jev 0.98
     { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.216105, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.95
+  ],
+  2024: [ // tools/cargar.mjs (2026-10-03)
+    { rawLabel:'Αμοιβές και έξοδα προσωπικού', normalizedCategory:'wages_squad', amountNative:-1.351228, disclosureLevel:'aggregated' }, // pág. 19, precedente
+    { rawLabel:'Αμοιβές και έξοδα τρίτων', normalizedCategory:'admin_general_expense', amountNative:-0.232478, disclosureLevel:'aggregated' }, // pág. 19, precedente
+    { rawLabel:'Παροχές τρίτων', normalizedCategory:'admin_general_expense', amountNative:-0.054934, disclosureLevel:'aggregated' }, // pág. 19, precedente
+    { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-0.271693, disclosureLevel:'aggregated' }, // pág. 19, Jev 0.93
+    { rawLabel:'Αποσβέσεις', normalizedCategory:'depreciation', amountNative:-0.021413, disclosureLevel:'aggregated' }, // pág. 19, precedente
+    { rawLabel:'Φόροι-τέλη', normalizedCategory:'admin_general_expense', amountNative:-0.004934, disclosureLevel:'aggregated' }, // pág. 19, Jev 0.98
+    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-1.632104, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.96
   ],
 };
 const aellarissagrFiscalYearMeta = {
@@ -71,6 +88,24 @@ const aellarissagrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:3.384045, officialTotalExpenses:2.718314, officialPAT:0.649637,
+  },
+  2024: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'aellarissa-gr-ael-fs-elp-2024-06-30',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.007041, tax:0,
+    extraRows: [
+      {label:'(+) Πιστωτικοί τόκοι και συναφή έσοδα', value:0.000002},
+      {label:'(-) Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.007043},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.418981, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.21248, officialTotalExpenses:3.568785, officialPAT:-2.363346,
   },
 };
 const aellarissagrPresupuestoOverlayByYear = {};
@@ -95,6 +130,12 @@ Object.assign(sources, {
     title:'Athlitiki Enosi Larissas AEL P.A.E. — AEL_notes_ELP_2025-06-30_a (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2025-06-30_a.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'aellarissa-gr-ael-fs-elp-2024-06-30': {
+    id:'aellarissa-gr-ael-fs-elp-2024-06-30', clubId:'aellarissa-gr',
+    title:'Athlitiki Enosi Larissas AEL P.A.E. — AEL_FS_ELP_2024-06-30 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_FS_ELP_2024-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
