@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 421 — Caja y deuda: una sola referencia a nota por fila (2026-10-02)
+
+- `caja-deuda.mjs` (lectura de filas): se saca UNA referencia a nota al principio de las cifras, no en bucle; el importe siguiente también puede ser un entero chico (en miles).
+- Caso: Novorizontino 2020 "Caixa e equivalentes de caixa | 4 | 85 | 695 |": sacaba el 4 y el 85 y leía 695 (2019); 2019 fallaba contra esa lectura. Ahora 2019 = 0,695 y 2020 = 0,085, con la compuerta del año anterior.
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos.
+
 ## Versión 420 — Caja y deuda: la compuerta exige la familia de la fila (2026-10-02)
 
 - `caja-deuda.mjs` (`compuerta`): deuda nunca con una fila de caja (CAJA_RE) y caja nunca con una fila de deuda financiera (DEUDA_FINANCIERA_RE). Es el filtro que los escalones 0 y 1 ya usaban al buscar; ahora también frena la propuesta de la IA (escalón 2). La comparación con el vecino no lo atrapaba: el mismo error en los dos años coincide.

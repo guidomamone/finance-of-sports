@@ -96,7 +96,9 @@ export function filasDelMd(md) {
     let nums = crudos.map(parseNumber).filter((n) => n !== null);
     // Referencia a nota: un entero chico (1-2 dígitos, sin separador) al principio, seguido de más cifras.
     // (Versión 383: un 0 no es un número de nota. Fortaleza 2023 "Caja | 0 | 2.152" se leía 2.152, la columna del año anterior.)
-    while (nums.length > 1 && Number.isInteger(nums[0]) && Math.abs(nums[0]) >= 1 && Math.abs(nums[0]) < 100 && !/[.,]/.test(String(crudos[0]))) { nums = nums.slice(1); crudos = crudos.slice(1); }
+    // (Versión 421) UNA sola referencia a nota, no en bucle: el importe de al lado también puede ser un entero chico (miles). Caso:
+    // Novorizontino 2020 "Caixa e equivalentes de caixa | 4 | 85 | 695 |" sacaba el 4 (nota) y el 85 (la caja, en miles) y leía 695 (2019).
+    if (nums.length > 1 && Number.isInteger(nums[0]) && Math.abs(nums[0]) >= 1 && Math.abs(nums[0]) < 100 && !/[.,]/.test(String(crudos[0]))) { nums = nums.slice(1); crudos = crudos.slice(1); }
     if (!nums.length) continue;
     nums = nums.map(Math.abs); // LEER UNA FILA: valor absoluto (ver cabecera)
     filas.push({ linea: i + 1, pagina, etiqueta, norm: normalizar(etiqueta), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums });
