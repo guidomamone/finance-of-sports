@@ -22,22 +22,24 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**Tres clubes enteros en el sitio local, sin push (2026-10-03):** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; **Goiás
-(Brasil) 2008-2017 y 2021-2025 (15 años, con liga en todos)**. Auditoría del proceso hecha (`Admin/auditoria-pipeline-2026-10-02.md`);
-lo importante quedó resuelto en las Versiones 395-406 (texto propio del PDF, lecturas 3-4, categorías por nota, caché de Claude con la
-nota, avisos de "categorías en 0" por lado, el lote no reprocesa años cargados).
+**Tres clubes enteros en el sitio local, sin push:** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; Goiás (Brasil) 2008-2017
+y 2021-2025. Auditoría del proceso hecha (`Admin/auditoria-pipeline-2026-10-02.md`; Versiones 395-407).
 
-Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + el club en curso):
+Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
-1. **Próximo club: Novorizontino** (Brasil, 12 años, digitales). Armar `Admin/lote-10.txt` y empezar por el ensayo.
+1. **En curso: Novorizontino** (Brasil), `Admin/lote-10.txt`, 13 documentos: 2010, 2013-2021, 2023-2025. 2018-2025 digitales; 2010 digital;
+   2013-2017 escaneos (transcriptos por Gemini). Guido corrió `--ejecutar` (2026-10-02, ~US$ 1,60). Después: `--ejecutar --reintentar` para
+   2025 y 2023 (el inventario marcó cifras con un dígito distinto: en 2025 son reales, en el estado de resultados; en 2023 es un falso positivo,
+   un número de firma digital en L148), ~US$ 0,24. 2022 está comentado en la lista: Mistral lo transcribió (US$ 0,13) y el .md se perdió;
+   re-transcribir cuando el resto esté cargado.
 2. Candidatos después: AEL Larissa (Grecia, 10 años, 1 escaneo); Ferroviária (Brasil, 12 años, 9 escaneos); Juventus (Italia, 22 años,
    consolidados largos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el escalón 2 de la etapa 2.
 3. Opcional, sin urgencia: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs
    --lista Admin/lote-08b.txt --ejecutar --reintentar` (~US$ 0,30) y recargar con `cargar.mjs --reemplazar` si las notas 21-22 suman.
 4. Pendientes de la auditoría, no urgentes: escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final
    que repite el documento siguiente; costos financieros mal rotulados); marcar "no desglosado" distinto de `cero-real` y que la página lo
-   muestre (`fiscalYearMeta.sinDesglose`, ya lo usan 8 años); cerrar casos obsoletos de la cola; chequeo de coherencia entre años
-   (prototipado, no construido: retomar si vuelven errores de categoría).
+   muestre (`fiscalYearMeta.sinDesglose`); cerrar casos obsoletos de la cola automáticamente; falso positivo del inventario con números que
+   no son cifras contables (firmas digitales); chequeo de coherencia entre años (prototipado, no construido).
 
 Publicación: `inventario-transcripciones` está mergeada entera en `main` (2026-10-02); falta el push, que lo hace Guido (`git push origin main`).
 
