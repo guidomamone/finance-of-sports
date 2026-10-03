@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 431 — Cambio C: en la lectura 2, el total impreso puede ser el total de una nota abierta por el escalón 1 (2026-10-03)
+
+- `tools/verificar.mjs` (`ajuste` de totales, desde la lectura 2): si el total impreso de un lado es el de una nota que abrió el escalón 1 de las notas (grupo de renglones), sus filas lo cierran y el resto del lado queda afuera, como ya pasaba con un renglón (Forest). La compuerta sigue siendo el resultado impreso. Diseño aprobado por Guido.
+- Caso: AEL Larissa 2019, extraer tomó como total de gastos el de la nota 15 (3.534.818,85, sin los 21.600 de otros gastos); ahora cierra con la lectura 2 y el gasto queda por naturaleza (antes ganaba la lectura 5, por función).
+- Medido con `verificar.mjs` sobre los lotes 07-11: todo idéntico salvo AEL 2019.
+
 ## Versión 430 — B2, lectura de filas de caja y deuda: una celda "Γ.9" es referencia a nota, no importe (2026-10-03)
 
 - `tools/caja-deuda.mjs` (`esRefNota`): una celda con 1-2 letras y un número ("Γ.9", "C.7") se descarta antes de tomar las cifras. Diseño aprobado por Guido.

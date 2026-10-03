@@ -508,6 +508,20 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         const deEsa = arr.filter((f) => f.etiqueta === filaTotal.etiqueta || String(f.origen || '').startsWith(`nota que desglosa "${filaTotal.etiqueta}"`));
         if (deEsa.length && cerca(suma(deEsa), total)) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `"${filaTotal.etiqueta}" ${r6(total)} cierra; además se suman ${arr.length - deEsa.length} línea(s) fuera de ese total (${r6(sm - total)})` }); return arr; }
       }
+      // (Versión 431, cambio C, aprobado por Guido el 2026-10-03; desde la lectura 2) el total impreso puede ser el TOTAL DE UNA NOTA que
+      // abrió el escalón 1 de las notas (grupo de renglones): las filas de esa nota suman el total y el resto del lado queda afuera, como el
+      // renglón de arriba. La compuerta sigue siendo el resultado impreso. Caso: AEL Larissa 2019, extraer tomó como "total de gastos" el
+      // total de la nota 15 (3.534.818,85, .md L432 = costo de ventas + administración + comercialización); "Λοιπά έξοδα" (21.600, L83) va
+      // afuera. Antes no cerraba ninguna lectura que abre notas y ganaba la lectura 5 (gasto por función).
+      if (nivel >= 2) {
+        const porBloque = new Map();
+        for (const f of arr) if (String(f.origen || '').includes('escalón 1: grupo')) { if (!porBloque.has(f.bloque)) porBloque.set(f.bloque, []); porBloque.get(f.bloque).push(f); }
+        for (const [b, filasNota] of porBloque) {
+          const lin = U.bloques?.[b]?.lineas;
+          if (lineaTotal != null && lin && (lineaTotal < lin[0] || lineaTotal > lin[1])) continue; // el total impreso tiene que ser de esa nota
+          if (cerca(suma(filasNota), total)) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `el total de la nota ${b} (${r6(total)}) cierra con sus filas; además se suman ${arr.length - filasNota.length} línea(s) fuera de esa nota (${r6(sm - total)})` }); return arr; }
+        }
+      }
       if (Math.abs(sm - total) <= tolRed) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `${r6(sm)} contra ${r6(total)}: fila "Diferencia de redondeo" de ${r6(total - sm)}` }); return [...arr, { etiqueta: 'Diferencia de redondeo', lado: nombre === 'ingresos' ? 'ingreso' : 'gasto', M: total - sm, origen: 'redondeo' }]; }
       // (Versión 409, solo en la lectura 4) el total impreso puede ser el BRUTO: los renglones con el signo normal del lado suman el total y
       // los negativos (deducciones) restan aparte. La compuerta sigue siendo el resultado impreso (sin él la lectura no cierra). Caso:
