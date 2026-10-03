@@ -612,7 +612,7 @@ window.LIGA_VIEW = (function(){
     return Object.keys(window.LEAGUES || {})
       .filter(function(lid){ return window.LEAGUES[lid].country === cid; })
       .sort(function(a, b){
-        return (ligaDe(a).tier - ligaDe(b).tier)
+        return ((ligaDe(a).tier ?? 99) - (ligaDe(b).tier ?? 99)) // sin tier (estaduales, Versión 426) al final
           || ligaDe(a).name.localeCompare(ligaDe(b).name, 'es', {sensitivity:'base'});
       });
   }

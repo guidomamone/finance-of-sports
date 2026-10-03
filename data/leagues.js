@@ -165,6 +165,12 @@ const LEAGUES = {
   'br-serieC':         { name:'Brasileirão Série C',   full:'Campeonato Brasileiro Série C',       country:'BR', sport:'futbol', tier:3 },
   // 4ª división (Versión 410, decisión de Guido 2026-10-02, onboarding de Novorizontino 2019-2020): mismo criterio, el id nombra el escalón.
   'br-serieD':         { name:'Brasileirão Série D',   full:'Campeonato Brasileiro Série D',       country:'BR', sport:'futbol', tier:4 },
+  // Ligas ESTADUALES (Versión 426, decisión de Guido 2026-10-02, onboarding de Novorizontino 2013-2017, años sin liga nacional): el
+  // Paulista no es un escalón de la pirámide nacional (su A1 la juegan clubes de la Série A a la D), por eso NO llevan `tier` (el selector
+  // no dice "Nª división") y van al final de la lista del país. `scope:'estadual'` las distingue.
+  'br-paulistaA1':     { name:'Paulista Série A1',     full:'Campeonato Paulista Série A1',        country:'BR', sport:'futbol', tier:null, scope:'estadual' },
+  'br-paulistaA2':     { name:'Paulista Série A2',     full:'Campeonato Paulista Série A2',        country:'BR', sport:'futbol', tier:null, scope:'estadual' },
+  'br-paulistaA3':     { name:'Paulista Série A3',     full:'Campeonato Paulista Série A3',        country:'BR', sport:'futbol', tier:null, scope:'estadual' },
   // Chile (onboarding Colo-Colo/U. de Chile/U. Católica, 2026-09-25): temporada calendario (cierra
   // 31/12), sin la ambigüedad de un ejercicio partido en 2 torneos, mismo criterio que Brasil/Japón.
   'cl-primera':        { name:'Primera División',      full:'Primera División de Chile',           country:'CL', sport:'futbol', tier:1 },
@@ -254,7 +260,7 @@ function tierLabel(tier){
 function leaguesOfCountry(countryId){
   return Object.keys(LEAGUES)
     .filter(id => LEAGUES[id].country === countryId)
-    .sort((a, b) => (LEAGUES[a].tier - LEAGUES[b].tier) || LEAGUES[a].name.localeCompare(LEAGUES[b].name, 'es', {sensitivity:'base'}));
+    .sort((a, b) => ((LEAGUES[a].tier ?? 99) - (LEAGUES[b].tier ?? 99)) || LEAGUES[a].name.localeCompare(LEAGUES[b].name, 'es', {sensitivity:'base'})); // sin tier (estaduales) al final
 }
 
 // Los países de una región, alfabético.

@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 426 — Ligas estaduales: Paulista A1, A2 y A3 (2026-10-02)
+
+- `data/leagues.js`: `br-paulistaA1`, `br-paulistaA2`, `br-paulistaA3`, con `scope:'estadual'` y sin `tier` (el Paulista no es un escalón de la pirámide nacional); el orden de las ligas de un país (`leaguesOfCountry`, `js/liga.js`) pone al final las que no tienen tier. Decisión de Guido.
+- Planteles cacheados (pt.wikipedia, sección "Participantes"; A1 de en.wikipedia) y Novorizontino 2013-2017 recargados con `--reemplazar` (mismos números): 2013-2014 A3, 2015 A2, 2016-2017 A1. 2010 sigue null (solo juveniles).
+- Verificado en el sitio local: orden de ligas de Brasil, sin "Nª división" para las estaduales, `leagueAt` por año; sin errores de consola propios.
+
 ## Versión 425 — Ajuste manual `deuda-incluye`, por club: términos de deuda propios del club para el diccionario (2026-10-02)
 
 - `ajustes.mjs`: `deuda-incluye` (términos separados por ';'), para un documento o todo el club (`ajusteClubODoc`, mismo mecanismo que `perimetro`). `caja-deuda.mjs`: el escalón 1 (diccionario) suma esos términos para ese club; la compuerta sigue decidiendo.
