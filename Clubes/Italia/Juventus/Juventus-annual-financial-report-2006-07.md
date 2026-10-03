@@ -4467,27 +4467,32 @@ Report of the board of statutory auditors
 
 --- pág. 134 ---
 
+Reports and Financial Statements at 30 June 2007
+
+132
+
+Report of the Independent Auditors
+
 # Report of the Independent Auditors
 
-![img-79.jpeg](img-79.jpeg)
+PRICEWATERHOUSECOOPERS
 
 PricewaterhouseCoopers SpA
 
-## AUDITORS' REPORT IN ACCORDANCE WITH ARTICLE 156 OF THE LEGISLATIVE DECREE N° 58 DATED 24 FEBRUARY 1998
+**AUDITORS' REPORT IN ACCORDANCE WITH ARTICLE 156 OF THE LEGISLATIVE DECREE N° 58 DATED 24 FEBRUARY 1998**
 
 To the shareholders of
 Juventus Football Club SpA
 
 1. We have audited the financial statements of Juventus Football Club SpA, which comprise the balance sheet as of 30 June 2007, the income statement, the statement of changes in shareholders' equity and the statement of cash flow for the year then ended and the related illustrative notes. These financial statements are the responsibility of Juventus Football Club SpA's directors. Our responsibility is to express an opinion on these financial statements based on our audit. The aforementioned financial statements have been prepared for the first time in accordance with the International Financial Reporting Standards as adopted by the European Union.
+
 2. We conducted our audit in accordance with the auditing standards and criteria recommended by CONSOB. In accordance with those standards and criteria, the audit has been planned and performed to obtain the necessary assurance about whether the financial statements are free of material misstatement and, taken as a whole, are reliable. An audit includes examining, on a sample basis, evidence supporting the amounts and disclosures in the financial statements, as well as assessing the appropriateness of the accounting principles used and the reasonableness of the estimates made by the directors. We believe that our audit provides a reasonable basis for our opinion.
 
-The financial statements present the prior year corresponding figures prepared in accordance with the same accounting principles. Furthermore, the Appendix "Effects deriving from the first time adoption of the International Financial Reporting Standards (IFRS)" explains the effects of the transition to IFRS as adopted by the European Union and includes the information related to the reconciliation schedules required by IFRS 1, which have been approved by the Board of Directors and published in appendix to the quarterly report as of 30 September 2006, that we have audited, reference is made to our report dated 27 March 2007.
+   The financial statements present the prior year corresponding figures prepared in accordance with the same accounting principles. Furthermore, the Appendix "Effects deriving from the first time adoption of the International Financial Reporting Standards (IFRS)" explains the effects of the transition to IFRS as adopted by the European Union and includes the information related to the reconciliation schedules required by IFRS 1, which have been approved by the Board of Directors and published in appendix to the quarterly report as of 30 September 2006, that we have audited, reference is made to our report dated 27 March 2007.
 
-Sede legale e amministrativa: Milano 20149 Via Monte Rosa 91 Tel. 0277851 Fax 027785240 Cap. Soc. 3.754.400,00 Euro i.v., C.F. e P.IVA e Reg. Imp. Milano 12979880155 Iscritta al n. 43 dell'Albo Consob - Altri Uffici: Bari 70125 Viale della Repubblica 110 Tel. 0805429863 - Bologna 40122 Via delle Lame 111 Tel. 051526611 - Brescia 25124 Via Cefalonia 70 Tel. 0302219811 - Firenze 50129 Viale Milton 65 Tel. 0554627100 - Genova 16121 Piazza Dante 7 Tel. 01029041 - Napoli 80121 Piazza dei Martiri 30 Tel. 08136181 - Padova 35137 Largo Europa 16 Tel. 0498782677 - Palermo 90141 Via Marchese Ugo 60 Tel. 091349737 - Parma 43100 Viale Tanara 20/A Tel. 0521242848 - Roma 00154 Largo Fochetti 29 Tel. 06570251 - Torino 10129 Corso Montevecchio 37 Tel. 011556771 - Trento 38100 Via Grazioli 73 Tel. 0461237004 - Treviso 31100 Viale Felissent 90 Tel. 0422696911 - Trieste 34125 Via Cesare Battisti 18 Tel. 0403480781 - Udine 33100 Via Poscolle 43 Tel. 043225789 - Verona 37122 Corso Porta Nuova 125 Tel. 0458002561
+Sede legale e amministrativa: Milano 20149 Via Monte Rosa 91 Tel. 0277851 Fax 027785240 Cap. Soc. 3.754.400,00 Euro i.v., C.F. e P. IVA e Reg. Imp. Milano 12979880155 Iscritta al n. 43 dell'Albo Consob – Altri Uffici: Bari 70125 Viale della Repubblica 110 Tel. 0805429863 – Bologna 40122 Via delle Lame 111 Tel. 051526611 – Brescia 25124 Via Cefalonia 70 Tel. 0302219811 – Firenze 50129 Viale Milton 65 Tel. 0554627100 – Genova 16121 Piazza Dante 7 Tel. 01029041 – Napoli 80121 Piazza dei Martiri 30 Tel. 08136181 – Padova 35137 Largo Europa 16 Tel. 0498762677 – Palermo 90141 Via Marchese Ugo 60 Tel. 091349737 – Parma 43100 Viale Tanara 20/A Tel. 0521242848 – Roma 00154 Largo Fochetti 29 Tel. 06570251 – Torino 10129 Corso Montevecchio 37 Tel. 011556771 – Trento 38100 Via Grazioli 73 Tel. 0461237004 – Treviso 31100 Viale Felissent 90 Tel. 0422696911 – Trieste 34125 Via Cesare Battisti 18 Tel. 0403480781 – Udine 33100 Via Poscolle 43 Tel. 043225789 – Verona 37122 Corso Porta Nuova 125 Tel. 0458002561
 
 Reports and Financial Statements at 30 June 2007
-
-132
 
 --- pág. 135 ---
 

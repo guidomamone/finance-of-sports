@@ -4312,22 +4312,22 @@ The Statutory Auditors
 
 # Report of the Independent Auditors
 
-![img-72.jpeg](img-72.jpeg)
+PRICEWATERHOUSECOOPERS
 
 PricewaterhouseCoopers SpA
 
-# AUDITORS' REPORT IN ACCORDANCE WITH ARTICLE 156 OF LAW
-DECREE N° 58 DATED 24 FEBRUARY 1998
+**AUDITORS' REPORT IN ACCORDANCE WITH ARTICLE 156 OF LAW DECREE N° 58 DATED 24 FEBRUARY 1998**
 
 To the Shareholders of
 JUVENTUS FOOTBALL CLUB SpA
 
-1 We have audited the financial statements of JUVENTUS FOOTBALL CLUB SpA as of June 30, 2006. These financial statements are the responsibility of JUVENTUS FOOTBALL CLUB SpA's directors. Our responsibility is to express an opinion on these financial statements based on our audit.
-2 We conducted our audit in accordance with the auditing standards and criteria recommended by CONSOB. Those standards and criteria require that we plan and perform the audit to obtain the necessary assurance about whether the financial statements are free of material misstatement and, taken as a whole, are presented fairly. An audit includes examining, on a test basis, evidence supporting the amounts and disclosures in the financial statements. An audit also includes assessing the accounting principles used and significant estimates made by the directors. We believe that our audit provides a reasonable basis for our opinion.
+1. We have audited the financial statements of JUVENTUS FOOTBALL CLUB SpA as of June 30, 2006. These financial statements are the responsibility of JUVENTUS FOOTBALL CLUB SpA's directors. Our responsibility is to express an opinion on these financial statements based on our audit.
 
-For the opinion on the financial statements of the prior period, which are presented for comparative purposes as required by law, reference is made to our report dated October 7, 2005.
+2. We conducted our audit in accordance with the auditing standards and criteria recommended by CONSOB. Those standards and criteria require that we plan and perform the audit to obtain the necessary assurance about whether the financial statements are free of material misstatement and, taken as a whole, are presented fairly. An audit includes examining, on a test basis, evidence supporting the amounts and disclosures in the financial statements. An audit also includes assessing the accounting principles used and significant estimates made by the directors. We believe that our audit provides a reasonable basis for our opinion.
 
-3 In our opinion, the financial statements of JUVENTUS FOOTBALL CLUB SpA as of June 30, 2006 comply with the laws governing the criteria for their preparation; accordingly, they give a true and fair view of the financial position and of the results of operations of the company.
+   For the opinion on the financial statements of the prior period, which are presented for comparative purposes as required by law, reference is made to our report dated October 7, 2005.
+
+3. In our opinion, the financial statements of JUVENTUS FOOTBALL CLUB SpA as of June 30, 2006 comply with the laws governing the criteria for their preparation; accordingly, they give a true and fair view of the financial position and of the results of operations of the company.
 
 Turin, October 11, 2006
 
@@ -4336,12 +4336,11 @@ PricewaterhouseCoopers SpA
 Signed by
 
 Massimo Aruga
-
 (Partner)
 
-The financial statements have been translated from those issued in Italy, from the Italian into English language solely for the convenience of international readers.
+*The financial statements have been translated from those issued in Italy, from the Italian into English language solely for the convenience of international readers.*
 
-Sede legale e amministrativa: Milano 20149 Via Monte Rosa 91 Tel. 0277851 Fax 027785240 Cap. Soc. 3.754.400,00 Euro i.v., C.F. e P.IVA e Reg. Imp. Milano 12979880155 Iscritta al n. 43 dell'Albo Consoli - Altri Uffici: Bari 70125 Viale della Repubblica 110 Tel. 0805429863 - Bologna 40122 Via delle Lame 111 Tel. 051526611 - Brescia 25124 Via Cefalonia 70 Tel. 0302219811 - Firenze 50129 Viale Milton 65 Tel. 0554627100 - Genova 16121 Piazza Dante 7 Tel. 01029641 - Napoli 80121 Piazza dei Martiri 30 Tel. 0817644441 - Padova 30137 Largo Europa 16 Tel. 0498762677 - Palermo 90141 Via Marchele Ugo 60 Tel. 091349737 - Parma 43100 Viale Tanara 20/A Tel. 0521242948 - Roma 00154 Largo Fochetti 29 Tel. 0857023 - Torino 10179 Corso Montevecchio 37 Tel. 011556771 - Trento 38100 Via Gracoli 73 Tel. 0461237004 - Treviso 31100 Viale Felisseri 90 Tel. 0422698911 - Trieste 34125 Via Cesare Battisti 18 Tel. 0403480781 - Udine 33100 Via Poscolle 43 Tel. 043225789 - Verona 37122 Corso Porta Nuova 125 Tel. 0458002561
+Sede legale e amministrativa: Milano 20149 Via Monte Rosa 91 Tel. 0277851 Fax 027785240 Cap. Soc. 3.754.400,00 Euro i.v., C.F. e P.IVA e Reg. Imp. Milano 12979880155 Iscritta al n. 43 dell'Albo Consob – Altri Uffici: **Bari** 70125 Viale della Repubblica 110 Tel. 0805429863 – **Bologna** 40122 Via delle Lame 111 Tel. 051526611 – **Brescia** 25124 Via Cefalonia 70 Tel. 0302219811 – **Firenze** 50129 Viale Milton 65 Tel. 0554627100 – **Genova** 16121 Piazza Dante 7 Tel. 01029041 – **Napoli** 80121 Piazza dei Martiri 30 Tel. 0817644441 – **Padova** 35137 Largo Europa 16 Tel. 0498762677 – **Palermo** 90141 Via Marchese Ugo 60 Tel. 091349737 – **Parma** 43100 Viale Tanara 20/A Tel. 0521242848 – **Roma** 00154 Largo Fochetti 29 Tel. 06570251 – **Torino** 10129 Corso Montevecchio 37 Tel. 011556771 – **Trento** 38100 Via Grazioli 73 Tel. 0461237004 – **Treviso** 31100 Viale Felissent 90 Tel. 0422696911 – **Trieste** 34125 Via Cesare Battisti 18 Tel. 0403480781 – **Udine** 33100 Via Poscolle 43 Tel. 043225789 – **Verona** 37122 Corso Porta Nuova 125 Tel. 0458002561
 
 Report of the Independent Auditors
 

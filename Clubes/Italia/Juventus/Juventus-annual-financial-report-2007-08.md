@@ -3650,27 +3650,33 @@ Report of the Board of Statutory Auditors
 
 --- pág. 105 ---
 
-Deloitte.
+Report of the Independent Auditors
+
+103
+
+JUVENTUS Football Club
+
+**Deloitte.**
 
 Deloitte & Touche S.p.A.
-Gallon & Son House, 54
-10121 Tohio
-Haiti
+Galleria San Federico, 54
+10121 Torino
+Italia
 
-Tel: +30 511 55971
-Fax: +30 511 541735
-www.deloitte.fr
+Tel: +39 011 55971
+Fax: +39 011 544755
+www.deloitte.it
 
-# AUDITORS' REPORT PURSUANT TO ART. 156
-OF LEGISLATIVE DECREE No. 58 OF FEBRUARY 24, 1998
+**AUDITORS' REPORT PURSUANT TO ART. 156 OF LEGISLATIVE DECREE No. 58 OF FEBRUARY 24, 1998**
 
 To the Shareholders of
 JUVENTUS FOOTBALL CLUB S.p.A.
 
 1. We have audited the financial statements of Juventus Football Club S.p.A., which comprise the balance sheet as of June 30, 2008, and the income statement, statement of changes in shareholders' equity and cash flow statement for the year then ended, and the related explanatory notes. The preparation of these financial statements in accordance with International Financial Reporting Standards as adopted by the European Union and with the requirements of national regulations issued pursuant to art. 9 of Italian Legislative Decree n° 38/2005, is the responsibility of the Directors of Juventus Football Club S.p.A.. Our responsibility is to express an opinion on these financial statements based on our audit.
+
 2. We conducted our audit in accordance with the Auditing Standards recommended by CONSOB, the Italian Commission for listed Companies and the Stock Exchange. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement. An audit includes examining, on a test basis, evidence supporting the amounts and disclosures in the financial statements. An audit also includes assessing the accounting principles used and significant estimates made by the Directors. We believe that our audit provides a reasonable basis for our opinion.
 
-For the opinion on the prior year's financial statements, the balances of which are presented for comparative purposes, reference should be made to the auditors' report issued by other auditors on October 10, 2007.
+   For the opinion on the prior year's financial statements, the balances of which are presented for comparative purposes, reference should be made to the auditors' report issued by other auditors on October 10, 2007.
 
 3. In our opinion, the financial statements present fairly the financial position of Juventus Football Club S.p.A. as of June 30, 2008, and the results of its operations and its cash flows for the year then ended in accordance with International Financial Reporting Standards as adopted by the European Union and the requirements of national regulations issued pursuant to art. 9 of Italian Legislative Decree n° 38/2005.
 
@@ -3685,24 +3691,19 @@ Partner
 Turin, Italy
 October 10, 2008
 
-This report has been translated into the English language solely for the convenience of international readers.
+*This report has been translated into the English language solely for the convenience of international readers.*
 
-Deloitte and Touche S.p.A. - 1000 Brussels - 1000 Brussels - 1000 Brussels - 1000 Brussels - 1000 Brussels - 1000 Brussels - 1000 Brussels - 1000 Brussels - 1000 Brussels - 1000 Brussels - 1000 Brussels - 1000 Brussels - 1000 Brussels - 1000 Brussels
+Ancona Bari Bergamo Bologna Brescia Cagliari Firenze Genova Milano Napoli Padova Parma Roma Torino Treviso Udine Verona [parcialmente ilegible]
 
 Member of
-Deloitte Touche Tohio
+Deloitte Touche Tohmatsu
 
-Deloitte Touche Tohio, 1000 Brussels
-Deloitte Touche Tohio, 1000 Brussels
-Deloitte Touche Tohio, 1000 Brussels
-Deloitte Touche Tohio, 1000 Brussels
-Deloitte Touche Tohio, 1000 Brussels
+Sede Legale: Via Tortona, 25 - 20144 Milano - Capitale Sociale: Euro 10.328.220,00 i.v. [parcialmente ilegible]
+Partita IVA/Codice Fiscale/Registro delle Imprese Milano n. [ilegible] - R.E.A. Milano n. [ilegible]
 
 JUVENTUS Football Club
 
 Report of the Independent Auditors
-
-103
 
 --- pág. 106 ---
 
