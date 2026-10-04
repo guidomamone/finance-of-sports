@@ -22,20 +22,37 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**Cinco clubes enteros en el sitio local, sin push (el quinto, AEL Larissa 2016-2025):** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; Goiás (Brasil) 2008-2017
-y 2021-2025; **Novorizontino (Brasil) 2010 y 2013-2025** (2011-2012 sin documento). Versiones de esta tanda: 407-426.
+**Seis clubes en el sitio local, sin push:** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; Goiás (Brasil) 2008-2017 y
+2021-2025; Novorizontino (Brasil) 2010 y 2013-2025; AEL Larissa (Grecia) 2016-2025; **Juventus (Italia) 2003-2021 y 2023-2025** (en curso).
+Versiones de esta tanda: 407-439.
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
-1. **Próximo: elegir el club siguiente** (punto 2). AEL Larissa (Grecia, `aellarissa-gr`, lotes 11-11d) está entero: 2016-2025, caja
-   2016-2025, deuda 2020-2025 (2016-2019 sin préstamos en el balance). 2016-2018 y 2023 por función (2023 con ajuste `sin-dudas`: su nota
-   de gastos incluye los intereses). Versiones 427-431: escalón 1 de las notas (grupo de renglones), B (nota de una fila no marca
-   reintento), B2 (celda "Γ.9" = referencia a nota en caja y deuda), C (total impreso = total de una nota del escalón 1). Sin brandColor
-   (P3). Defectos vistos: una duda de tema contestada ANTES del alta se pierde (la clave pasa de la carpeta al clubId);
-   `lookup-club-league.js "AEL Larissa"` encuentra "Aris" (`proponerLiga` no); extraer a veces deja afuera la nota por naturaleza (2021,
-   resuelto re-extrayendo).
-2. Candidatos después: Ferroviária (Brasil, 12 años, 9 escaneos); Juventus (Italia, 22 años, consolidados largos). Noruegos (Molde,
-   Fredrikstad, Aalesund, Brann): escaneos, esperan el escalón 2 de la etapa 2. Novorizontino: pendientes chicos de caja/deuda (opcionales).
+1. **En curso: Juventus (`juventus-it`, estados SEPARADOS: ajuste `perimetro` individual del club; lotes 12-13h).** Se trabaja con una
+   tabla año → etapa → por qué → solución, avanzando juntos los años de la etapa más baja (pedido de Guido). Falta:
+   - **2022 (2021-22):** el .md cambió al rearmar la pág. 100 (escalón 1b, en un `--reintentar` de más) y el inventario lo volvió a
+     "sin-verificar": sin `listo-para-jev` no se categoriza ni carga. La etapa 4 confirmó los 178 números del estado (b100, pág. 136) y dejó
+     148 sin confirmar en NOTAS que no se usan (págs. 172-182; cierra con la lectura 6, que no abre notas). Siguiente paso: resolver
+     (~US$ 1) + lote solo de 2022. **A TRATAR (diseño pendiente):** (a) que `avisarRegistro` (verificar.mjs) exija confirmados solo los
+     bloques que la lectura ganadora usa; (b) el rearmado no debería dispararse por la marca de una corrida con otro perímetro (2022 la
+     arrastró del consolidado); (c) un `--reintentar` sobre una lista mezclada rehace documentos que no lo necesitan (lotes con solo los que
+     lo piden).
+   - **Caja y deuda:** 8 ajustes `caja` hechos (2003-2008, 2019, 2021; el resto sale por precedente). Deuda por escalón 2 (IA, ~US$ 0,70)
+     porque desde 2007 viene en dos filas con la misma etiqueta (corriente y no corriente) y el escalón 1 no suma familias repetidas.
+     Deuda 2003-2004 sin dato (no hay deuda financiera); derivados de cobertura afuera. Correr `caja-deuda.mjs --club juventus-it
+     --ejecutar --escribir` con los 24 años cargados.
+   - Nota visible para el sitio (no hecha): quiebre de serie 2006 (formato italiano, con extraordinarios) → 2007 (IFRS).
+   Cambios de esta tanda: E (el lote pasa por las voces, `resolver-inventario`, antes de rearmar; V433), F (lectura 6; V434), G (ajuste `fila`
+   en lecturas 5-6, valor 0 = sacar; V435, 437), H (el perímetro del ajuste llega a localizar; V436), `carpetas-clubes --json` sin corte en
+   64 KB (V438), diccionario de deuda en inglés reactivado (V439). Ajustes manuales: signos del formato italiano viejo 2003-2006, nota de
+   sponsors abierta 2003-2006, filas "per share" sacadas (2019, 2021, 2023, 2024).
+   Defectos vistos, sin arreglar: el ensayo estima extraer con un costo fijo (US$ 0,07) y en documentos largos cuesta ~US$ 0,35;
+   `compararVecino` no cuenta las filas que entran por ajuste manual (falso "año vecino distinto", Juventus 2005); el escalón 1a del lote
+   solo mira "revisar", no "sin-verificar"; "4) Due to banks" no matchea el diccionario por el número adelante; escalón 3 de caja/deuda
+   (media móvil, diseño aprobado) en pausa hasta que un caso lo necesite.
+2. Candidatos después: Ferroviária (Brasil, 12 años, 9 escaneos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el
+   escalón 2 de la etapa 2. Guido quiere probar varios clubes a la vez con el mismo esquema de tabla y etapas (mejor si son del mismo país
+   o formato).
 3. Opcional, sin urgencia: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs
    --lista Admin/lote-08b.txt --ejecutar --reintentar` (~US$ 0,30) y recargar con `cargar.mjs --reemplazar` si las notas 21-22 suman.
 4. Defectos vistos con Novorizontino, sin arreglar: el RESULTADO final de `lote.mjs` muestra propuestas de carga viejas ("el club no
