@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 457 — La compuerta del registro exige solo los bloques que se cargan (2026-10-04)
+
+- `verificar.mjs` (`avisarRegistro`): los números sin confirmar que frenan son solo los de los bloques que usa la lectura que cerró (los de las filas que se cargan, por su línea en el `.filas.json`); sin `.filas.json`, como antes (todos).
+- Medido en los 87 documentos de `prueba-completa`: 42 números sin confirmar, 11 dentro de los bloques que se cargan (Novorizontino 2014-b y 2016, UC 2015: siguen exigidos), 31 fuera; los 30 de Juventus 2021-22 están todos fuera (los 29 ajustes `confirmado` que lo destrabaron no hacían falta; se dejan). Simulado con copia de seguridad: sin esos 29 ajustes, el código viejo frena y el nuevo pasa. Lo cargado no cambia (la compuerta no actúa en años cargados).
+
 ## Versión 456 — Escala de caja y deuda: probado y NO adoptado; `--medir --escalas` (2026-10-04)
 
 - `caja-deuda.mjs --medir --escalas`: lista la escala que eligió `factorPorIngresos` en cada año (solo para medir; no cambia resultados).

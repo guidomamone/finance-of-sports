@@ -37,8 +37,7 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
      "Tangible assets in progress", dos activos) y caja 2005. No afectan lo cargado (`caja-deuda.mjs` nunca pisa un valor cargado).
    - Escalón 3 (media móvil) aprobado y en pausa. Ideas a medir con un club real: precedente que sume lo cargado en DOS años (Bahia 2025
      aprendió una suma casual); el número del año en un escaneo necesita una segunda lectura (Gemini), como la etapa 4.
-2. **Juventus 2022, a tratar:** que `avisarRegistro` exija confirmados solo los bloques que usa la lectura ganadora (se destrabó con 29
-   ajustes `confirmado`); el rearmado no debería dispararse por la marca de una corrida con otro perímetro.
+2. **Juventus 2022, a tratar:** el rearmado (etapa 2, escalón 1b) no debería dispararse por la marca de una corrida con otro perímetro.
 3. **Defectos chicos:** `compararVecino` no cuenta las filas de ajuste manual; el escalón 1a del lote solo mira "revisar" y no
    "sin-verificar"; el RESULTADO final de `lote.mjs` muestra propuestas de carga viejas ("el club no existe" en años ya cargados);
    `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
