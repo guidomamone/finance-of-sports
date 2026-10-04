@@ -3275,6 +3275,8 @@ Financial report at 30 June 2022 – Consolidated Financial Statements at 30 Jun
 
 --- pág. 92 ---
 
+> Página NO rearmada (compuerta del rearmado, método columnas): el TEXTO PROPIO del PDF perdía filas de tabla (11 → 0); queda la transcripción anterior.
+
 ### 37. Other revenues and income
 
 These amounted to € 32,814 thousand (€ 23,260 thousand in the previous financial year), as detailed:
@@ -3316,6 +3318,8 @@ Financial report at 30 June 2022 – Consolidated Financial Statements at 30 Jun
 92
 
 --- pág. 93 ---
+
+> Página NO rearmada (compuerta del rearmado, método columnas): el TEXTO PROPIO del PDF perdía filas de tabla (25 → 0); queda la transcripción anterior.
 
 #### 40. External services
 
@@ -3627,54 +3631,56 @@ Financial report at 30 June 2022 – Consolidated Financial Statements at 30 Jun
 
 --- pág. 100 ---
 
-## 48. Financial income
+> Página rearmada con el TEXTO PROPIO del PDF (tools/texto-propio-a-md.mjs, etapa 2 escalón 1, método columnas): la transcripción de Mistral no coincidía con él.
 
+<!-- columna 1 de 1 -->
+48. Financial income
 Details are as follows:
+2021/2022 2020/2021
+Change
+Amounts in thousands of Euro financial year financial year
 
-|  *Amounts in thousands of Euro* | 2021/2022 financial year | 2020/2021 financial year | Change  |
+|   |   |   |   |
 | --- | --- | --- | --- |
-|  Financial income from discounting | 2,775 | 4,300 | (1,525)  |
-|  Interest income | 136 | 790 | (654)  |
-|  Other | 384 | 331 | 53  |
-|  **Financial income** | **3,295** | **5,421** | **(2,126)**  |
+| Financial income from discounting | 2,775 | 4,300 | (1,525) |
+| Interest income | 136 | 790 | (654) |
+| Other | 384 | 331 | 53 |
+| Financial income | 3,295 | 5,421 | (2,126) |
 
-## 49. Financial expenses
-
+49. Financial expenses
 Details are as follows:
+2021/2022 2020/2021
+Change
+Amounts in thousands of Euro financial year financial year
 
-|  *Amounts in thousands of Euro* | 2021/2022 financial year | 2020/2021 financial year | Change  |
+|   |   |   |   |
 | --- | --- | --- | --- |
-|  Interest expense on corporate bond | 6,104 | 6,104 | -  |
-|  Financial expenses from discounting | 4,934 | 5,010 | (76)  |
-|  Interest expense and charges | 4,143 | 4,952 | (809)  |
-|  Write-down of financial receivables | 3,317 | - | 3,317  |
-|  Financial expenses from IFRS 16 right of use | 464 | 331 | 133  |
-|  Other | 204 | 221 | (17)  |
-|  **Financial expenses** | **19,166** | **16,618** | **2,548**  |
+| Interest expense on corporate bond | 6,104 | 6,104 | - |
+| Financial expenses from discounting | 4,934 | 5,010 | (76) |
+| Interest expense and charges | 4,143 | 4,952 | (809) |
+| Write-down of financial receivables | 3,317 | - | 3,317 |
 
-The decrease in interest expense originated from a lower average use of credit lines following the share capital increase.
+|   |   |   |   |
+| --- | --- | --- | --- |
+| Financial expenses from IFRS 16 right of use | 464 | 331 | 133 |
+| Other | 204 | 221 | (17) |
+| Financial expenses | 19,166 | 16,618 | 2,548 |
 
-The write-down of financial receivables relates to the loan - plus interest accrued at 30 June 2022 - disbursed to the investee Plan B S.r.l. Società benefit in liquidation, granted in order to support the company in the start-up phase of the business plan.
+The decrease in interest expense originated from a lower average use of credit lines following the
+share capital increase.
 
-## 50. Income taxes
+|   |   |
+| --- | --- |
+| The write-down of financial receivables relates to the loan - plus interest accrued at 30 June 2022 | - |
 
+disbursed to the investee Plan B S.r.l. Società benefit in liquidation, granted in order to support the
+company in the start-up phase of the business plan.
+50. Income taxes
 Details of income taxes recorded in the income statement are given below:
 
-|  *Amounts in thousands of Euro* | 2021/2022 financial year | 2020/2021 financial year  |
-| --- | --- | --- |
-|  Current corporate income tax | - | -  |
-|  Current regional business tax | 2,565 | 2,943  |
-|  Taxes on profits of HK Branch | 23 | 24  |
-|  **Total current taxes** | **2,588** | **2,967**  |
-|  Deferred corporate income tax | (798) | (952)  |
-|  Deferred regional business tax | 64 | 65  |
-|  **Total deferred taxes** | **(734)** | **(887)**  |
-|  **Total taxes of previous years** | **(34)** | **5**  |
-|  **Income taxes** | **1,820** | **2,085**  |
-
-Financial report at 30 June 2022 – Consolidated Financial Statements at 30 June 2022
-
-100
+|   |   |
+| --- | --- |
+| Financial report at 30 June 2022 – Consolidated Financial Statements at 30 June 2022 | 100 |
 
 --- pág. 101 ---
 
