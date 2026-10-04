@@ -103,6 +103,7 @@ const { precedenteFamilia } = await import('./categorizar-claude.mjs');
 const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
 const { agregarCaso, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub } = await import('./cola.mjs');
+const agregarCasoCola = agregarCaso; // (Versión 462) proponer() usa su propio agregarCaso (puede no escribir)
 const { perfilDe, guardarPerfil } = await import('./perfil-clubes.mjs');
 const { ajusteDe, ajustesDe, ajustePerimetroDe } = await import('./ajustes.mjs');
 const { cierrePorVecinos } = await import('./cierre-vecinos.mjs');
@@ -218,7 +219,26 @@ export function perimetroCercano(her, year) {
 // ============================================================================
 // LA PROPUESTA
 // ============================================================================
-export async function proponer(pdfArg, { sitio, registro } = {}) {
+// ESCALERA DE "NO ES RUBRO" (Versión 462, aprobado por Guido el 2026-10-04): una fila VERIFICADA con lado que la IA (escalón 2) marcó "no es
+// rubro" se EXCLUYE primero (escalón 0, como siempre); si la carga no cierra (tie-out), se prueba INCLUIRLA (escalón 1: va a la cola para su
+// categoría) y gana solo si con ella la carga cierra. La compuerta es la de siempre (el tie-out). Caso: Fortaleza 2017 (notas como estado),
+// Claude dio "no es rubro" con 0,85 a "Total Ingresos actividades ordinarias" 5.319,891 (pág. 14, L543): sin ella los ingresos sumaban 0,006.
+const frenaTieOut = (P) => (P.frena || []).some((f) => String(f.etapa).startsWith('tie-out'));
+const noRubroVerificadas = (P) => (P.filas || []).filter((f) => f.destino === 'excluida' && f.cat === 'no_es_rubro' && f.escalon === 2 && String(f.origen || '').startsWith('verificacion') && f.ladoDoc);
+export async function proponerConEscalera(pdfArg, opts = {}) {
+  const P0 = await proponer(pdfArg, opts);
+  if (!DESDE_VERIFICACION || !frenaTieOut(P0) || !noRubroVerificadas(P0).length) return P0;
+  const P1 = await proponer(pdfArg, { ...opts, incluirNoRubro: true, escribirCola: false });
+  const nombres = noRubroVerificadas(P0).map((f) => `"${f.label}"`).join(', ');
+  if (frenaTieOut(P1)) { P0.avisos.push(`escalón 1 de "no es rubro" probado (incluir ${nombres}): tampoco cierra; queda excluida`); return P0; }
+  for (const c of P1.casosPendientes || []) agregarCaso(c);
+  P1.avisos.push(`escalón 1 de "no es rubro": excluir ${nombres} no cerraba; incluida, la carga cierra (su categoría va a la cola)`);
+  return P1;
+}
+export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false, escribirCola = true } = {}) {
+  // (Versión 462) escribirCola false: el intento del escalón 1 no escribe casos en la cola; los deja en P.casosPendientes (se escriben si gana).
+  const casosPendientes = [];
+  const agregarCaso = (c) => (escribirCola ? agregarCasoCola(c) : casosPendientes.push(c));
   sitio ??= cargarSitio(); registro ??= leerRegistro();
   const pdf = relative(ROOT, resolve(ROOT, pdfArg));
   const P = { pdf, generado: new Date().toISOString(), frena: [], avisos: [], ejercicio: null };
@@ -357,7 +377,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
   const catDe = (label, lado, verificada = false, padre = null) => {
     const k = norm(label);
     let c = (lado && porEtiqueta.get(`${k}|${lado}`)) || porEtiqueta.get(k);
-    const noRubroDudoso = verificada && lado && c?.categoria === 'no_es_rubro' && (c.escalon === 2 && (c.confianza ?? 0) < UMBRAL_CLAUDE);
+    const noRubroDudoso = verificada && lado && c?.categoria === 'no_es_rubro' && (c.escalon === 2 && (incluirNoRubro || (c.confianza ?? 0) < UMBRAL_CLAUDE));
     const rechazada = c && (delOtroLado(c.categoria, lado) || noRubroDudoso) ? c.categoria : null;
     if (c && !rechazada) return { cat: c.categoria || null, conf: c.confianza ?? null, escalon: c.escalon, fuenteCat: 'categorias.json', enLista: true };
     const p = precedenteFamilia(lineasClub, clubId, lado || null, label, { padre }); // (Versión 403) con la nota de la fila: cambios A y B
@@ -701,6 +721,7 @@ export async function proponer(pdfArg, { sitio, registro } = {}) {
     fiscalYearMeta: { ...m, sourceId, reportType: campo('reportType').valor || 'official_balance_sheet', gestionId: null, profitOnPlayerSales: 0, assetSales: 0, netInterest: meta.netInterest, tax: meta.tax, ...(extraRows ? { extraRows } : {}), ...(sinDesglose.length ? { sinDesglose } : {}), grossDebt: null, cash: null, officialTotalRevenue: T.officialTotalRevenue, officialTotalExpenses: T.officialTotalExpenses, officialPAT: T.officialPAT },
     source: sourceId ? { id: sourceId, clubId, title: `${club.name || club.displayName} — ${basename(pdf, '.pdf')} (ejercicio ${year})`, type: campo('reportType').valor || 'official_balance_sheet', reliability: 'primary', note: `Cargado por tools/cargar.mjs (${HOY}) desde la transcripción ${e.md}; categorías del pipeline (${cj.modelo || 'Jev/Claude'}). Perímetro: ${perimetro || '?'}.` } : null,
   };
+  Object.defineProperty(P, 'casosPendientes', { value: casosPendientes, enumerable: false }); // (Versión 462) no va al .carga.json
   P.resumen = { carga: P.frena.length === 0, motivos: P.frena.length, lineasIngreso: rev.length, lineasGasto: exp.length, metaFilas: metaFilas.length, excluidas: filas.filter((f) => f.destino === 'excluida').length };
   return P;
 }
@@ -904,7 +925,7 @@ async function main() {
   const salidas = [];
   for (const d of docs) {
     let P;
-    try { P = await proponer(d, { sitio, registro }); } catch (err) { P = { pdf: d, frena: [{ etapa: 'error', motivo: err.stack?.split('\n').slice(0, 3).join(' | ') }], avisos: [] }; }
+    try { P = await proponerConEscalera(d, { sitio, registro }); } catch (err) { P = { pdf: d, frena: [{ etapa: 'error', motivo: err.stack?.split('\n').slice(0, 3).join(' | ') }], avisos: [] }; }
     if (prod) P.comparacion = comparar(P, prod);
     salidas.push(P);
     if (SALIDA) appendFileSync(resolve(ROOT, SALIDA), JSON.stringify(P) + '\n');
