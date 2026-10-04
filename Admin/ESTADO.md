@@ -47,6 +47,13 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 
 ## Estado actual
 
+### Pipeline PDF -> club cargado, proceso nuevo (2026-10-04, en `main`, sin push)
+
+- Seis clubes cargados enteros por el proceso nuevo (`tools/lote.mjs` + `cargar.mjs` + `caja-deuda.mjs`): UC, Fortaleza CEIF, Goiás,
+  Novorizontino, AEL Larissa (2016-2025) y Juventus (2003-2025, estados separados; caja y deuda en parte cargadas a mano). El estado y lo
+  pendiente del pipeline viven en `Admin/HANDOFF-pipeline.md` ("Dónde estamos"); la prioridad siguiente es el punto 1b (no pasar lo mismo
+  por las APIs varias veces).
+
 ### Inventario de transcripciones y pipeline PDF -> Jev (2026-09-30, rama `inventario-transcripciones`, sin push)
 
 - Hay un comando único, `node tools/pipeline.mjs --ejecutar --limit 50 --concurrencia 4`, que lleva cada PDF de `Clubes/` (no cargado en el sitio) desde la

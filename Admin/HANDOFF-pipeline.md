@@ -500,6 +500,8 @@ Pendientes, a decidir con casos reales:
 
 ## Cómo arranca la próxima sesión
 
+(2026-10-04) Juventus quedó entero; lo siguiente es el punto 1b de "Dónde estamos" (diseño, con el ok de Guido) o el club siguiente.
+
 1. `git status` y `git log --oneline -5` en `main`.
 2. `node tools/estado.mjs`.
 3. Leer este HANDOFF (nada más hace falta para el pipeline).
