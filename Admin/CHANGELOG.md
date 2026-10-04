@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 462 — Escalera de "no es rubro" en la carga (2026-10-04)
+
+- `cargar.mjs` (`proponerConEscalera`): una fila verificada con lado que la IA marcó "no es rubro" se excluye (escalón 0, como siempre); si la carga no cierra por tie-out, se prueba incluirla (escalón 1, su categoría va a la cola) y gana solo si cierra. El intento del escalón 1 no escribe en la cola salvo que gane.
+- Medido sobre las propuestas de los 87 documentos de `prueba-completa` (código viejo contra nuevo, con `Generados/` y `Admin/` restaurados): solo cambia Fortaleza 2017 (sin los 3 frenos por tie-out; +1 caso en la cola: "Total Ingresos actividades ordinarias" 5.319,891, que Claude dio "no es rubro" con 0,85). Descartado antes, por manta corta: incluir siempre las filas verificadas, sin probar primero excluirlas.
+
 ## Versión 461 — Propuesta de carga al día por documento; RESULTADO del lote sin propuestas viejas (2026-10-04)
 
 - `lote.mjs`: una propuesta de carga es vieja solo si hay un ajuste manual del mismo documento o de su club con fecha igual o posterior (antes: cualquier ajuste del archivo; el de Novorizontino frenaba el reintento de Fortaleza 2017). Y en el RESULTADO final, un año que ya está en el sitio va a "Ya en el sitio" aunque su propuesta sea vieja.

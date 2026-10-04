@@ -24,14 +24,11 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con los lotes de prueba de abajo):
 
-1. **PRIORIDAD: `cargar.mjs` descarta las filas "Total…" que la verificación usó como renglón** (modo "las notas hacen de estado").
-   Caso: Fortaleza 2017, reintentado el 2026-10-04 con las notas como estado (V460): la verificación queda ok (ingresos 5.319,897,
-   confirmados por el documento 2018; gastos desglosados con los sueldos aparte), pero la propuesta de carga pierde "Total Ingresos
-   actividades ordinarias" 5.319,891 (pág. 14 del visor, L543) y suma ingresos 0,006 ("Aprovechamientos" 0,001 + "Ajuste al Peso" 0,005);
-   gastos 3.628,133 contra 3.677,627 verificados. Afecta a las 8 localizaciones de Fortaleza armadas con notas como estado (y a cualquier
-   club nuevo así). A diseñar y medir en esos 8 + `prueba-completa`. Después: contestar las 16 categorías de Fortaleza 2017 en la cola
-   (`node tools/cola.mjs`; conviene después del arreglo, el contexto de las filas puede cambiar) y recargar con `cargar.mjs --reemplazar`.
-   Pendiente también ahí: `node tools/diagnostico-desglose.mjs` (gratis) para un desglose que sigue sin sumar; Televisión y Estadio en 0.
+1. **Fortaleza 2017** (reintentado con las notas como estado, V460; la carga cierra con la escalera de "no es rubro", V462): para recargarlo
+   falta contestar sus 17 casos de categoría en la cola (`node tools/cola.mjs`; entre ellos "Total Ingresos actividades ordinarias"
+   5.319,891, el renglón de ingresos) y después `node tools/cargar.mjs "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf"
+   --desde-verificacion --reemplazar` (ensayo) y con `--escribir`. Pendiente también: `node tools/diagnostico-desglose.mjs` (gratis) para
+   un desglose que sigue sin sumar; Televisión y Estadio en 0.
 2. **Defectos chicos** (agrupados: B textos, C, D): `compararVecino` no cuenta las filas de ajuste manual (D); el escalón 1a del lote
    solo mira "revisar" y no "sin-verificar" (C); `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
    meta dice "grossDebt/cash: no se leen por script todavía" (ahora los completa `caja-deuda.mjs`).
@@ -338,6 +335,8 @@ Mitigaciones:
  ESCALÓN 5a ¿Claude ya respondió esto? (caché: carpeta + lado + etiqueta + nota, Versión 404)
  ESCALÓN 5b Claude por API con confianza >= 0,80
  ESCALÓN 6  materialidad: las dudas de un lado suman ≤ 1% de ese lado → las de confianza >= 0,60 se cargan con aviso (Versión 386)
+ "NO ES RUBRO" de la IA en una fila verificada con lado: se excluye; si la carga no cierra, se prueba incluirla (a la cola);
+            gana la que cierra (Versión 462)
  COMPUERTA DEL LADO en todos los escalones (Versiones 374 y 377): la categoría tiene que ser del lado de la fila en el documento; si no,
             baja de escalón; la pregunta de la cola lleva la clave "etiqueta|lado"
  nada → cola (pregunta de sí o no)
