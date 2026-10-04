@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 450 — Listas de prueba fijas y deuda de Novorizontino 2015 (2026-10-04)
+
+- `Admin/prueba-rapida.txt` (16), `prueba-mediana.txt` (34) y `prueba-completa.txt` (87): el pool para medir cualquier cambio de script, sin repetidos (los lotes 07-13 tenían 131 renglones para 87 documentos).
+- Ajuste `deuda-incluye` de Novorizontino 2015 ("instituicoes financeiras", más los términos del club): la deuda cargada 10,240466 = empréstimos 10.162.885,71 + instituições financeiras 77.580,50; `caja-deuda.mjs --medir` daba distinto (10,162886) y ahora da 5 de 5 iguales.
+
 ## Versión 449 — Gasto por documento al final del lote (2026-10-04)
 
 - `tools/gasto-doc.mjs` (nuevo, gratis): lo gastado en una corrida por documento y por tarea (Claude, Mistral, resolver y validar), con "N.ª vez" si esa tarea ya se había pagado antes para el mismo PDF. Suelto: `--lista <l> --desde <ISO> [--hasta <ISO>]`. No cuenta la línea que `verificar.mjs` copia de la validación anterior (repetía su `costoUsd`).

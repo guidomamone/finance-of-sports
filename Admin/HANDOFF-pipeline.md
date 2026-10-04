@@ -56,12 +56,13 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
 
 ### Lotes de prueba (medir CUALQUIER cambio de script antes y después)
 
-Lo cargado tiene que dar idéntico. Pool fijo: `Admin/lote-07*.txt` (UC), `lote-08*` (Fortaleza CEIF), `lote-09*` y `lote-10*` (Goiás,
-Novorizontino), `lote-11*` y `lote-12*` (AEL Larissa), `lote-13*` (Juventus): 26 listas, gratis (ensayo).
+Lo cargado tiene que dar idéntico. Tres listas fijas, sin repetidos (Versión 450): `Admin/prueba-rapida.txt` (16, los casos que ya
+rompieron algo una vez), `Admin/prueba-mediana.txt` (34: la rápida + 3 años por club) y `Admin/prueba-completa.txt` (87, todos los
+documentos de los 6 clubes). Los `lote-07` a `lote-13` quedan como registro de las corridas reales (el CHANGELOG los nombra).
 
 ```bash
-mkdir -p /tmp/medir/antes; for l in Admin/lote-0[78]*.txt Admin/lote-09*.txt Admin/lote-1[0-3]*.txt; do node tools/lote.mjs --lista $l > /tmp/medir/antes/$(basename $l).out 2>&1; done
-# ... el cambio ... y lo mismo a /tmp/medir/despues; después: diff -r /tmp/medir/antes /tmp/medir/despues
+node tools/lote.mjs --lista Admin/prueba-completa.txt > /tmp/medir-antes.txt 2>&1     # antes del cambio
+node tools/lote.mjs --lista Admin/prueba-completa.txt > /tmp/medir-despues.txt 2>&1   # después; diff entre los dos
 ```
 
 Además, según lo que toque: lo mismo con `--reintentar` (camino de error); `node tools/caja-deuda.mjs --medir --club <id>` (caja y deuda);
