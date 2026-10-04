@@ -52,9 +52,23 @@ const LISTA = flag('--lista'); const EJECUTAR = ARGS.includes('--ejecutar'); con
 // última verificación marcó desgloses que no suman (verificacion.reintentar) vuelven a localizar con el índice ampliado (filas que terminan
 // en "-") y a extraer con la lista de lo que no sumó. Una sola vez por documento (después queda `reintentado`). El resto del lote no se toca.
 const REINTENTAR = ARGS.includes('--reintentar');
+// --detalle (Versión 442, punto 1b.ii del HANDOFF, aprobado por Guido el 2026-10-04): QUIÉN ENTRA al escalón 1 de la etapa 3 (el reintento).
+// Un desglose que no suma en un documento cuya etapa 6 CERRÓ (verificación "ok") no bloquea la carga: el año se carga igual, con el renglón
+// sin abrir. Ese reintento es DETALLE OPCIONAL y solo entra con --reintentar --detalle. Sin --detalle entran los que destraban la carga:
+// categoría en 0, o desglose que no suma con la etapa 6 sin cerrar. Caso: un --reintentar del 2026-10-04 sobre Juventus 2022-2024 volvió a
+// localizar y extraer 2022-23 y 2023-24, que verificaban ok (US$ 0,79 de más). Sirve igual para UC 2013 (el caso del índice ampliado),
+// cuya etapa 6 no cerraba.
+const DETALLE = ARGS.includes('--detalle');
 const leerDerivado = (e, suf) => { try { const p = resolve(ROOT, derivado(e.md, suf, { crear: false })); return existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null; } catch { return null; } };
 // Lo que hay que reintentar: desgloses que no suman (verificar.mjs) y categorías en 0 que deberían tener número (cargar.mjs, Versión 340).
-const verifDe = (e) => { const v = leerDerivado(e, '.verificacion.json') || {}; const c = leerDerivado(e, '.carga.json') || {}; const r = [...(v.reintentar || []), ...(c.reintentar || [])]; return { ...v, reintentar: r.length ? r : null }; };
+// (Versión 442) `detalle`: los desgloses que no suman de un documento cuya etapa 6 cerró (opcionales, ver --detalle); `reintentar`: lo que
+// destraba la carga, más el detalle si se pidió --detalle.
+const verifDe = (e, { detalle = DETALLE } = {}) => {
+  const v = leerDerivado(e, '.verificacion.json') || {}; const c = leerDerivado(e, '.carga.json') || {};
+  const desgl = v.reintentar || []; const opcional = v.estado === 'ok' ? desgl : [];
+  const r = [...(v.estado === 'ok' && !detalle ? [] : desgl), ...(c.reintentar || [])];
+  return { ...v, reintentar: r.length ? r : null, detalle: opcional.length ? opcional : null };
+};
 if (!LISTA) { console.error('Uso: node tools/lote.mjs --lista <archivo> [--ejecutar] [--rehacer]'); process.exit(1); }
 // TESTIGOS (Versión 334, ok de Guido): una línea "testigo <pdf>" es un documento que entra SOLO para verificar a otro (su columna "año
 // anterior" contra el año actual del otro: chequeo de año vecino de verificar.mjs). Pasa por localizar, validar y extraer, y nada más: no se
@@ -75,6 +89,7 @@ const node = (tool, argv, { silencioso = false } = {}) => {
   return r;
 };
 
+const sitio = loadSite(); // (Versión 442) antes del loop: "año ya cargado" mira también el sitio
 let usd = 0; const estado = {}; const aRetranscribir = []; const aTextoPropio = []; const aFijar = [];
 // Páginas interiores (sin las 2 primeras ni la última) con menos de 200 caracteres de texto propio: son imágenes.
 const paginasEnImagen = (pdf) => {
@@ -115,8 +130,12 @@ for (const pdf of docs) {
   // vieja: Goiás 2025 y 2017 se reprocesaron por una propuesta anterior a sus ajustes cero-real, US$ 0,45). Caso que sí: Fortaleza 2017,
   // sueldos en 0 (Admin/lote-08b.txt).
   const cargaFresca = (() => { try { const pc = resolve(ROOT, derivado(e.md, '.carga.json', { crear: false })); const pa = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl'); return existsSync(pc) && (!existsSync(pa) || statSync(pc).mtimeMs >= statSync(pa).mtimeMs); } catch { return false; } })();
-  const reintento = !REINTENTAR ? null : e.cargado ? ((cargaFresca && (leerDerivado(e, '.carga.json')?.reintentar || []).filter((x) => x.categoria)) || []).length ? leerDerivado(e, '.carga.json').reintentar.filter((x) => x.categoria) : null : verifDe(e)?.reintentar || null;
-  if (REINTENTAR && e.cargado && !reintento) { estado[pdf] = 'ya cargado, sin categorías en 0 que reintentar'; console.log(`  ${pdf}: ya cargado (no se reintenta por desgloses)`); continue; }
+  // AÑO YA CARGADO SEGÚN EL SITIO (Versión 442): el registro se queda viejo si no se regenera después de cargar (Juventus 2021-22: en
+  // data/juventus-it-data.js y `cargado: false` en el registro; un --reintentar lo volvía a pagar). Se mira también el sitio, por el clubId y
+  // el año de la última propuesta de carga del documento.
+  const cargado = e.cargado || (() => { const c = leerDerivado(e, '.carga.json'); return !!(c?.clubId && c?.year && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[c.year]); })();
+  const reintento = !REINTENTAR ? null : cargado ? ((cargaFresca && (leerDerivado(e, '.carga.json')?.reintentar || []).filter((x) => x.categoria)) || []).length ? leerDerivado(e, '.carga.json').reintentar.filter((x) => x.categoria) : null : verifDe(e)?.reintentar || null;
+  if (REINTENTAR && cargado && !reintento) { estado[pdf] = 'ya cargado, sin categorías en 0 que reintentar'; console.log(`  ${pdf}: ya cargado (no se reintenta por desgloses)`); continue; }
   const sinEstadoAntes = !!leerDerivado(e, '.ubicacion.json')?.sin_estado; // candidato al escalón 1 de la etapa 2 (re-transcribir)
   // ETAPA 3, ESCALÓN 2 (Versión 360, aprobado por Guido): "las notas hacen de estado". Solo con --reintentar, una vez por documento, si la
   // localización anterior no encontró estado (sin_estado, o la lista del estado vacía) pero sí notas de ingresos Y de gastos, y la transcripción
@@ -165,7 +184,7 @@ for (const pdf of docs) {
     estado[pdf] = 'extraído (texto propio del PDF)'; console.log(`  ${pdf}: estado ${L4.datos.estado.join(',')} · ${V4.datos?.modo || '?'} · ${X4.datos.filas.length} filas · US$ ${usd.toFixed(2)} acumulado`);
     continue;
   }
-  if (REINTENTAR && !reintento && !sinEstadoAntes) { estado[pdf] = 'sin reintento pendiente'; console.log(`  ${pdf}: sin desgloses que reintentar`); continue; }
+  if (REINTENTAR && !reintento && !sinEstadoAntes) { const op = !DETALLE && verifDe(e).detalle; estado[pdf] = op ? 'cierra; detalle opcional (--detalle)' : 'sin reintento pendiente'; console.log(`  ${pdf}: ${op ? `cierra; desgloses que no suman como detalle opcional (--detalle): ${op.map((x) => `"${x.renglon}"`).join(', ')}` : 'sin desgloses que reintentar'}`); continue; }
   // ETAPA 3, COMPUERTA ANTES DE PAGAR (Versión 441, punto 1b.i del HANDOFF, aprobado por Guido el 2026-10-04): si el documento todavía no
   // se localizó y le falta fijar el CIERRE o el PERÍMETRO (trae consolidado e individual y no hay ajuste ni año cargado de dónde heredarlo),
   // no se localiza: se imprime el ajuste que falta y el resto del lote sigue. Caso: Juventus, lote 13, localizó 2020-21 a 2024-25 con el
@@ -226,7 +245,6 @@ if (!EJECUTAR) imprimirAFijar();
 if (!EJECUTAR) { console.log(`\nENSAYO: ~US$ ${usd.toFixed(2)} para localizar y extraer ${docs.length} documento(s), más ~US$ 0,03 c/u de categorización y la validación de páginas escaneadas (~US$ 0,003 por página). Agregá --ejecutar.`); process.exit(0); }
 
 console.log('\n=== Etapa 6: verificar (gratis) ===');
-const sitio = loadSite();
 // startsWith (Versión 347): el escalón 1 de la etapa 2 deja 'extraído (re-transcripto con Mistral)'; con la igualdad exacta ese documento no
 // pasaba a verificar en la misma corrida (UC 2015, lote 06: re-transcripto y extraído, y la etapa 6 lo salteaba).
 // verificarLista (Versión 362): repite la pasada si un documento tomó la escala del año vecino (la cadena de escala depende del orden).
@@ -266,12 +284,25 @@ if (aRetranscribir.length) {
   for (const x of aRetranscribir) console.log(`  ${x.pdf.split('/').slice(2).join('/')}: páginas ${x.paginas.join(', ')}`);
   console.log(`  Re-transcribir con Mistral y volver a localizar (~US$ 0,004 por página + localizar y extraer): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar`);
 }
-// Camino de error: qué documentos quedaron con desgloses que no suman y todavía no se reintentaron.
-const aReintentar = docs.filter((d) => { const e = registro.find((x) => x.pdf === d); return e?.md && verifDe(e)?.reintentar; });
+// Camino de error: qué documentos quedaron para reintentar (Versión 442: en dos bloques, lo que destraba la carga y el detalle opcional).
+const yaEnSitio = (e) => e.cargado || (() => { const c = leerDerivado(e, '.carga.json'); return !!(c?.clubId && c?.year && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[c.year]); })();
+const motivos = (xs) => xs.map((x) => (x.categoria ? `"${x.categoria}" en 0` : `"${x.renglon}" ${x.suma} contra ${x.objetivo}`)).join('; ');
+const aReintentar = []; const aDetalle = [];
+for (const d of docs) {
+  const e = registro.find((x) => x.pdf === d); if (!e?.md) continue;
+  const v = verifDe(e, { detalle: false }); const enSitio = yaEnSitio(e);
+  const destraba = enSitio ? (v.reintentar || []).filter((x) => x.categoria) : v.reintentar || [];
+  if (destraba.length) aReintentar.push({ d, m: destraba }); else if (!enSitio && v.detalle) aDetalle.push({ d, m: v.detalle });
+}
 if (aReintentar.length) {
-  console.log(`\nREINTENTOS PENDIENTES (camino de error, una vez por documento: desgloses que no suman o categorías en 0 que deberían tener número):`);
-  for (const d of aReintentar) console.log(`  ${d.split('/').slice(2).join('/')}: ${verifDe(registro.find((x) => x.pdf === d)).reintentar.map((x) => (x.categoria ? `"${x.categoria}" en 0` : `"${x.renglon}" ${x.suma} contra ${x.objetivo}`)).join('; ')}`);
-  console.log(`  Reintento con índice ampliado (~US$ 0,30 por documento): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar`);
+  console.log(`\nREINTENTOS QUE DESTRABAN LA CARGA (camino de error, una vez por documento: categorías en 0, o desgloses que no suman con la etapa 6 sin cerrar):`);
+  for (const x of aReintentar) console.log(`  ${x.d.split('/').slice(2).join('/')}: ${motivos(x.m)}`);
+  console.log(`  Reintento con índice ampliado (~US$ 0,50 por documento): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar`);
+}
+if (aDetalle.length) {
+  console.log(`\nDETALLE OPCIONAL (el año se carga igual, con el renglón sin abrir; desgloses que no suman con la etapa 6 cerrada):`);
+  for (const x of aDetalle) console.log(`  ${x.d.split('/').slice(2).join('/')}: ${motivos(x.m)}`);
+  console.log(`  Solo si hace falta el detalle (~US$ 0,50 por documento): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar --detalle`);
 }
 imprimirAFijar();
 console.log(`\nGastado: US$ ${usd.toFixed(2)} (más la categorización: node tools/gasto.mjs). Cola humana de este lote: ${cola.length} caso(s) -> node tools/cola.mjs`);
