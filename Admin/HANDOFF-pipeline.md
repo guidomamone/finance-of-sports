@@ -26,9 +26,8 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
 
 1. **No pagar dos veces lo mismo en las APIs** (pedido de Guido, 2026-10-04). Hecho: compuerta antes de localizar (V441), `--reintentar`
    solo lo que destraba la carga y `--detalle` (V442), validación por página (V443). Falta:
-   - (iv) EN CURSO (ok de Guido): el caché de localizar, extraer y validar no sabe si el .md cambió (hoy: "existe el archivo"). Medido:
-     Juventus 2021-22 tiene 148 de 149 filas de `.filas.json` fuera de su línea (corridas -5, -9 y -12 por el rearmado y el resolver; ej.
-     "Ticket sales" 32,293,161 citada en L4855, hoy en L4850); Novorizontino 2025 (.md más nuevo que sus cachés) tiene las 60 en su lugar.
+   Hecho también: el caché de localizar, validar y extraer sabe si el .md cambió (V445, `cache-al-dia.mjs`); los `.json` de `Generados/`
+   se trackean como respaldo (V444; no se publican).
    - (v) el ensayo estima extraer con US$ 0,07 fijo (sin localizar) o con 4.000 tokens de salida; lo real en Juventus fue US$ 0,18-0,34
      (8.000-15.000 tokens de salida). Estimar por el tamaño de los bloques elegidos o por la mediana del club.
    - (vi) en el resumen final del lote, lo gastado en cada documento y por qué.
@@ -500,7 +499,8 @@ Pendientes, a decidir con casos reales:
 
 ## Trampas
 
-- `git status` se ensucia solo mientras Guido corre lotes (logs en `Admin/`, `.md` en `Clubes/`): revisar antes de commitear.
+- `git status` se ensucia solo mientras Guido corre lotes (logs en `Admin/`, `.md` en `Clubes/`, y desde V444 los `.json` de `Generados/`):
+  revisar antes de commitear; los de `Generados/` van con los logs.
 - `estado.mjs` mientras corre un lote muestra una foto a mitad de camino.
 - Los "Syntax Error" en la terminal son de poppler leyendo PDFs dañados: no son errores del pipeline.
 - Para esperar un proceso en segundo plano, usar su PID, no `pgrep -f` (se encuentra a sí mismo y no termina nunca).

@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 445 — El caché de localizar, validar y extraer sabe si el .md cambió (2026-10-04)
+
+- `tools/cache-al-dia.mjs` (nuevo, gratis): escalón 0, la huella del .md con la que se hizo el caché (`mdSha1`, que ahora guardan `localizar.mjs`, `validar-bloques.mjs` y `extraer.mjs`); escalón 1, cada fila del `.filas.json` sigue en su línea (etiqueta o importe en la línea citada, importe ahí o en las 3 siguientes por etiquetas partidas en dos renglones).
+- `lote.mjs`: si el caché es viejo, un año sin cargar rehace localizar, validar y extraer (el ensayo lo cobra); un año cargado solo avisa.
+- Medido: de 120 documentos de los 6 clubes, 1 viejo (Juventus 2021-22, 148 de 149 filas corridas, cargado: solo aviso). UC 2010 y 2011 eran falsos positivos de la primera versión (etiquetas en dos renglones) y quedaron al día. Ensayo de los lotes 07 a 13: solo el aviso de Juventus 2021-22; con `--reintentar`, idéntico. Simulado: UC 2009 con el .md corrido 5 líneas → viejo.
+
+## Versión 444 — Respaldo del caché del pipeline en git (2026-10-04)
+
+- `.gitignore`: los `.json` de `Generados/` se trackean (3413 archivos, ~91 MB); las transcripciones viejas de `Generados/` siguen locales. `netlify.toml` borra `Generados/` del artefacto de deploy.
+
 ## Versión 443 — Validación por página: lo que no cambió no se vuelve a pagar (2026-10-04)
 
 - `tools/huella-paginas.mjs` (nuevo): huella (sha1) de cada página del .md; `splitPages` se mudó ahí desde `resolver-inventario.mjs`.
