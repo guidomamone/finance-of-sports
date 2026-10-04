@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 465 — Comentario de la meta: caja y deuda las completa caja-deuda.mjs (2026-10-04)
+
+- `cargar.mjs`: el comentario que escribe en el `fiscalYearMeta` de cada año nuevo dice "grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía)" en vez de "no se leen por script todavía". Los años ya cargados conservan el texto viejo.
+- Medido: ensayo de `prueba-completa` y propuestas de `cargar.mjs --desde-verificacion` de los 87 documentos, idénticos antes y después.
+
 ## Versión 464 — Fortaleza CEIF 2017 recargado con los gastos desglosados (2026-10-04)
 
 - Reintento con las notas como estado (V460) + 4 ajustes `fila` con las partes de la nota de ingresos (L538-541) en lugar de su total + cola contestada (17 casos; Aportes a Icbf y Sena a `wages_squad`, decisión de Guido) + `cargar.mjs --reemplazar --escribir`.
