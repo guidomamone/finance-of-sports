@@ -1,17 +1,26 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
- "generado": "2026-10-03T01:23:51.331Z",
+ "generado": "2026-10-04T21:50:10.961Z",
  "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "fortalezaceif-co ya tiene el ejercicio 2017 cargado"
+  },
   {
    "etapa": "reintento",
    "motivo": "categorías en 0 que deberían tener número: Salarios del plantel. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['fortalezaceif-co-estados-financieros-2017'] ya existe"
   }
  ],
  "avisos": [
-  "--reemplazar: rehace un ejercicio ya cargado",
-  "fortalezaceif-co 2017 ya cargado: se reemplaza",
-  "gastos: ningún total impreso igual a la suma de las líneas (-3628.13); queda la suma, verificada por el resultado del ejercicio",
-  "sources['fortalezaceif-co-estados-financieros-2017'] ya existe: se conserva"
+  "gastos: ningún total impreso igual a la suma de las líneas (-3628.13); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "fortalezaceif-co",
@@ -161,11 +170,11 @@
    "title": "FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2017 (ejercicio 2017)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-04) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
- "reemplaza": true,
+ "reemplaza": false,
  "periodo": {
   "tipo": "anual",
   "meses": 12,
@@ -470,7 +479,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 1,
+  "motivos": 4,
   "lineasIngreso": 6,
   "lineasGasto": 5,
   "metaFilas": 2,
