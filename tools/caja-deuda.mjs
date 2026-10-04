@@ -32,7 +32,7 @@
 // de efectivo. La columna es la PRIMERA cifra de la fila que no sea una referencia a nota (un entero de 1-2 dígitos al principio).
 //
 // USO:
-//   node tools/caja-deuda.mjs --medir [--club <clubId>] [--detalle]                           MEDICIÓN sobre los años ya cargados (ver abajo)
+//   node tools/caja-deuda.mjs --medir [--club <clubId>] [--detalle] [--escalas]                         MEDICIÓN sobre los años ya cargados (ver abajo)
 //   node tools/caja-deuda.mjs --medir --ia [--ejecutar]                                       ...con el escalón 2 (sin --ejecutar: ensayo; con: API)
 //   node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]                       COMPLETAR un club ya publicado (ver abajo)
 //
@@ -362,7 +362,7 @@ const mdDeFuente = (S, sourceId) => { const m = JSON.stringify(S[sourceId] || {}
 
 // Factor del estado de resultados de un documento contra lo cargado (para el escalón 1 en la medición): la escala con la que más rubros de
 // ingresos cargados aparecen tal cual entre las cifras del documento.
-function factorPorIngresos(filas, lineas) {
+export function factorPorIngresos(filas, lineas, md = null) { // `md` sin uso (lo pasan los llamados; Versión 456, probado y no adoptado)
   let mejor = null;
   for (const fac of FACTORES) {
     const n = (lineas || []).filter((l) => l.amountNative && filas.some((f) => f.cifras.some((c) => Math.abs(Math.abs(c) * fac - Math.abs(l.amountNative)) <= TOL(l.amountNative)))).length;
@@ -420,12 +420,12 @@ export function criterioDeudaDe(familias) {
 // y las filas del documento siguiente. `conocidos[cual][anio]` = el valor cargado (o completado en esta corrida).
 function contexto({ d, anios, a, cual, filasDe, conocidos }) {
   const filas = filasDe(a.md);
-  const factor = factorPorIngresos(filas, d.revenueLinesByYear?.[a.anio]);
+  const factor = factorPorIngresos(filas, d.revenueLinesByYear?.[a.anio], a.md);
   const precedentes = Object.entries(conocidos[cual]).filter(([y]) => y !== a.anio).sort(([x], [y]) => Math.abs(x - a.anio) - Math.abs(y - a.anio)).slice(0, 3)
-    .map(([y, v]) => { const o = anios.find((z) => z.anio === y && z.md); return o ? { anio: y, valor: v, filas: filasDe(o.md), factor: factorPorIngresos(filasDe(o.md), d.revenueLinesByYear?.[y]) } : null; }).filter(Boolean);
+    .map(([y, v]) => { const o = anios.find((z) => z.anio === y && z.md); return o ? { anio: y, valor: v, filas: filasDe(o.md), factor: factorPorIngresos(filasDe(o.md), d.revenueLinesByYear?.[y], o.md) } : null; }).filter(Boolean);
   const sig = anios.find((o) => Number(o.anio) === Number(a.anio) + 1 && o.md);
   return { filas, factor, precedentes, anterior: conocidos[cual][String(Number(a.anio) - 1)] ?? null, siguiente: sig ? filasDe(sig.md) : null,
-    factorSiguiente: sig ? factorPorIngresos(filasDe(sig.md), d.revenueLinesByYear?.[sig.anio]) : null,
+    factorSiguiente: sig ? factorPorIngresos(filasDe(sig.md), d.revenueLinesByYear?.[sig.anio], sig.md) : null,
     extraDeuda: String(ajusteClubODoc(a.md.replace(/\.md$/i, '.pdf'), 'deuda-incluye')?.valor || '').split(';').map((t) => t.trim()).filter(Boolean) };
 }
 const aniosDe = (d, S) => Object.entries(d.fiscalYearMeta || {}).map(([y, m]) => ({ anio: y, m, md: mdDeFuente(S, m.sourceId) })).sort((a, b) => Number(a.anio) - Number(b.anio));
@@ -449,12 +449,14 @@ async function iaDe(md, filas, club) {
   return porIA({ md, mdText: readFileSync(resolve(ROOT, md), 'utf8'), filas, criterioDeuda: criterioDeudaDe(club?.familias || []), ejecutar: iaDe.ejecutar });
 }
 
-async function medir({ club = null, detalle = false, ia = false, ejecutar = false } = {}) {
+async function medir({ club = null, detalle = false, ia = false, ejecutar = false, escalas = false } = {}) {
   const { G, S } = sitio(); iaDe.ejecutar = ejecutar;
   const casos = [];
   for (const [clubId, d] of Object.entries(G)) {
     if (club && clubId !== club) continue;
     const anios = aniosDe(d, S).filter((x) => x.md); const filasDe = filasCache();
+    // (Versión 456) --escalas: la escala que eligió factorPorIngresos para cada año (para medir cambios de la escala).
+    if (escalas) for (const a of anios) console.log(`  escala ${clubId} ${a.anio}: ${factorPorIngresos(filasDe(a.md), d.revenueLinesByYear?.[a.anio], a.md)}`);
     // Cada año se lee como nuevo: los conocidos son lo cargado en el sitio, SIN el propio año (no se aprende la respuesta).
     for (const a of anios) for (const cual of ['grossDebt', 'cash']) {
       const real = a.m[cual]; if (real == null) continue;
@@ -556,7 +558,7 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
-  if (A.includes('--medir')) { await medir({ club: flag('--club'), detalle: A.includes('--detalle'), ia: A.includes('--ia'), ejecutar: A.includes('--ejecutar') }); process.exit(0); }
+  if (A.includes('--medir')) { await medir({ club: flag('--club'), detalle: A.includes('--detalle'), ia: A.includes('--ia'), escalas: A.includes('--escalas'), ejecutar: A.includes('--ejecutar') }); process.exit(0); }
   if (flag('--club')) { const r = await completarClub(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir') }); process.exit(r.error ? 1 : 0); }
   console.error('Uso: node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]  |  --medir [--club x] [--ia [--ejecutar]] [--detalle]'); process.exit(1);
 }
