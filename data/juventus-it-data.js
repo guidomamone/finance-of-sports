@@ -615,7 +615,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-3.788628},
       {label:'Deferred taxes', value:1.052707},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 83
+    grossDebt:null, cash:0.65365,
     officialTotalRevenue:213.786231, officialTotalExpenses:254.974604, officialPAT:-48.65455,
   },
   2013: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -631,7 +632,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-5.924068},
       {label:'Deferred taxes', value:0.928417},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 76
+    grossDebt:null, cash:1.777036,
     officialTotalRevenue:283.801473, officialTotalExpenses:287.607479, officialPAT:-15.910649,
   },
   2014: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -647,7 +649,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-7.20472},
       {label:'Deferred taxes', value:0.383825},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 74
+    grossDebt:null, cash:1.586969,
     officialTotalRevenue:315.783101, officialTotalExpenses:306.937083, officialPAT:-6.67443,
   },
   2015: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -663,7 +666,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-7.992976},
       {label:'Deferred taxes', value:-0.516666},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 66
+    grossDebt:null, cash:3.126754,
     officialTotalRevenue:349.943885, officialTotalExpenses:330.640378, officialPAT:2.298263,
   },
   2016: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -679,7 +683,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-8.431039},
       {label:'Deferred taxes', value:0.885383},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 61
+    grossDebt:null, cash:28.618353,
     officialTotalRevenue:398.539542, officialTotalExpenses:378.986298, officialPAT:4.062312,
   },
   2017: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -695,7 +700,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-11.363921},
       {label:'Deferred taxes', value:-4.482874},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 65
+    grossDebt:null, cash:139.996455,
     officialTotalRevenue:563.061054, officialTotalExpenses:496.950256, officialPAT:42.567924,
   },
   2018: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -711,7 +717,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-8.820346},
       {label:'Deferred taxes', value:-0.385923},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 42
+    grossDebt:null, cash:15.335208,
     officialTotalRevenue:504.66989, officialTotalExpenses:506.990021, officialPAT:-19.228819,
   },
   2020: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -727,7 +734,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-7.971802},
       {label:'Deferred and prepaid taxes', value:-0.05321},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 2 (compuerta: año anterior): "Cash and cash equivalents" pág. 46
+    grossDebt:null, cash:5.917079,
     officialTotalRevenue:573.424091, officialTotalExpenses:641.591985, officialPAT:-89.682106,
   },
   // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe; '(0,157)' se leía como 157 €
@@ -744,7 +752,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-2.967812},
       {label:'Deferred and prepaid taxes', value:0.628027},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
+    grossDebt:null, cash:10.077958,
     officialTotalRevenue:479.00354, officialTotalExpenses:675.037044, officialPAT:-209.51375,
   },
   2007: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -760,7 +769,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-3.848013},
       {label:'Deferred and prepaid taxes', value:-1.265964},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
+    grossDebt:null, cash:40.460847,
     officialTotalRevenue:186.685844, officialTotalExpenses:180.216176, officialPAT:-0.927569,
   },
   2009: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -776,7 +786,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-5.517771},
       {label:'Deferred taxes', value:-1.306834},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 73
+    grossDebt:null, cash:42.063414,
     officialTotalRevenue:240.43414, officialTotalExpenses:226.555982, officialPAT:6.582489,
   },
   2010: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -792,7 +803,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-5.544717},
       {label:'Deferred taxes', value:-7.499068},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 60
+    grossDebt:null, cash:37.253757,
     officialTotalRevenue:243.299797, officialTotalExpenses:238.080091, officialPAT:-10.967944,
   },
   // 2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe del estado; '(0,040)' se leía como 40 €
@@ -809,7 +821,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-11.738088},
       {label:'Deferred taxes', value:-1.259871},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
+    grossDebt:null, cash:9.744722,
     officialTotalRevenue:621.456394, officialTotalExpenses:637.286582, officialPAT:-39.895794,
   },
   // 2003: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -670,013. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)
@@ -844,7 +857,8 @@ const juventusitFiscalYearMeta = {
       {label:'d) from others', value:-0.670013},
       {label:'22) INCOME TAXES', value:-7.392658},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
+    grossDebt:null, cash:67.198129,
     officialTotalRevenue:271.167364, officialTotalExpenses:262.303779, officialPAT:2.15006,
   },
   // 2004: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -3,026,244. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
@@ -878,7 +892,8 @@ const juventusitFiscalYearMeta = {
       {label:'a) current taxes', value:-5.727157},
       {label:'b) deferred taxes', value:7.238419},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
+    grossDebt:null, cash:51.101966,
     officialTotalRevenue:221.313511, officialTotalExpenses:237.628716, officialPAT:-18.459155,
   },
   // 2005: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -148,861. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
@@ -913,7 +928,8 @@ const juventusitFiscalYearMeta = {
       {label:'b) Deferred taxes', value:3.769198},
       {label:'c) Prepaid taxes', value:-6.604863},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): grossDebt escalón 2 (compuerta: documento siguiente): "4) Due to banks" pág. 70; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
+    grossDebt:24.973807, cash:6.53872,
     officialTotalRevenue:259.082991, officialTotalExpenses:250.119821, officialPAT:-3.015954,
   },
   // 2006: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = -270,216. Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)
@@ -945,7 +961,8 @@ const juventusitFiscalYearMeta = {
       {label:'b) Deferred taxes', value:12.172514},
       {label:'c) Prepaid taxes', value:-10.099504},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): grossDebt escalón 2 (compuerta: año anterior): "4) Due to banks" pág. 79; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
+    grossDebt:14.927923, cash:0.202266,
     officialTotalRevenue:262.043887, officialTotalExpenses:289.000039, officialPAT:-36.48023,
   },
   2008: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -961,7 +978,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-4.339172},
       {label:'Deferred taxes', value:-7.032003},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
+    grossDebt:null, cash:28.104289,
     officialTotalRevenue:203.731662, officialTotalExpenses:214.019768, officialPAT:-20.787469,
   },
   2011: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -977,7 +995,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-2.766491},
       {label:'Deferred taxes', value:1.11905},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: año anterior): "Cash and cash equivalents" pág. 68
+    grossDebt:null, cash:0.760587,
     officialTotalRevenue:172.06645, officialTotalExpenses:264.221242, officialPAT:-95.414019,
   },
   2025: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -1010,7 +1029,8 @@ const juventusitFiscalYearMeta = {
       {label:'Current taxes', value:-6.583716},
       {label:'Deferred and prepaid taxes', value:0.215795},
     ],
-    grossDebt:null, cash:null,
+    // caja 2023: corregida a mano el 2026-10-04 (Guido): "Cash and cash equivalents" 48,389,386 del balance SEPARADO (.md L4800); caja-deuda.mjs había tomado el consolidado (pág. 53, L1504, 48,676,632). 2003-2006: caja y deuda divididas por 1.000 (caja-deuda leyó esos documentos en miles por las filas de la nota de sponsors abiertas a mano).
+    grossDebt:null, cash:48.389386,
     officialTotalRevenue:503.680824, officialTotalExpenses:602.689924, officialPAT:-123.294245,
   },
   // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe
