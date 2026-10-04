@@ -27,9 +27,8 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
 1. **No pagar dos veces lo mismo en las APIs** (pedido de Guido, 2026-10-04). Hecho: compuerta antes de localizar (V441), `--reintentar`
    solo lo que destraba la carga y `--detalle` (V442), validación por página (V443). Falta:
    Hecho también: el caché de localizar, validar y extraer sabe si el .md cambió (V445, `cache-al-dia.mjs`); los `.json` de `Generados/`
-   se trackean como respaldo (V444; no se publican).
-   - (v) el ensayo estima extraer con US$ 0,07 fijo (sin localizar) o con 4.000 tokens de salida; lo real en Juventus fue US$ 0,18-0,34
-     (8.000-15.000 tokens de salida). Estimar por el tamaño de los bloques elegidos o por la mediana del club.
+   se trackean como respaldo (V444; no se publican); el ensayo estima extraer con salida = 2 x entrada, o la mediana del club / techo
+   US$ 0,32 si todavía no se localizó (V446).
    - (vi) en el resumen final del lote, lo gastado en cada documento y por qué.
    - Las validaciones viejas no tienen huella por página: el ahorro de V443 empieza después de la próxima corrida del resolver de cada
      documento (decisión de Guido, 2026-10-04: no sembrar huellas en el historial).
@@ -44,11 +43,9 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
    "sin-verificar"; el RESULTADO final de `lote.mjs` muestra propuestas de carga viejas ("el club no existe" en años ya cargados).
 5. **Auditoría de los 6 clubes cargados** (subagente Sonnet): categorías dudosas o datos raros. Y la nota visible del quiebre de serie de
    Juventus 2006 (formato italiano, con extraordinarios) → 2007 (IFRS).
-6. Candidatos después: Ferroviária (Brasil, 12 años, 9 escaneos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el
-   escalón 2 de la etapa 2; antes de localizar piden elegir entidad (dos por año) y perímetro (la compuerta de V441 lo avisa).
-7. Opcional: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs --lista
+6. Opcional: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs --lista
    Admin/lote-08b.txt --ejecutar --reintentar` (~US$ 0,30) y recargar con `cargar.mjs --reemplazar` si las notas 21-22 suman.
-8. Pendientes de la auditoría, no urgentes: escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final
+7. Pendientes de la auditoría, no urgentes: escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final
    que repite el documento siguiente; costos financieros mal rotulados); marcar "no desglosado" distinto de `cero-real` y que la página lo
    muestre (`fiscalYearMeta.sinDesglose`); cerrar casos obsoletos de la cola automáticamente; falso positivo del inventario con números que
    no son cifras contables (firmas digitales); chequeo de coherencia entre años (prototipado, no construido).

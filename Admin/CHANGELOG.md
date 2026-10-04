@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 446 — El ensayo estima extraer por el tamaño real (2026-10-04)
+
+- `extraer.mjs`: en el ensayo, salida = 2 x entrada (antes 4.000 tokens fijos). Contra las 155 extracciones reales (US$ 24,03): antes US$ 14,76 y 68 llamadas subestimadas más de 30%; ahora US$ 25,96 y 5.
+- `extraer.mjs` `estimarExtraerSinBloques()`: sin localizar todavía, la mediana de lo que costó extraer en ese club; sin historia, rango US$ 0,12-0,32 y el total usa 0,32. `lote.mjs` la usa en vez de los US$ 0,07 fijos (también en las notas como estado y en el rearmado).
+- Medido: lotes 07 a 13 idénticos (todo extraído); Ferroviária sin historia: US$ 0,12-0,32 por documento; Juventus: US$ 0,28 (mediana de 29).
+
 ## Versión 445 — El caché de localizar, validar y extraer sabe si el .md cambió (2026-10-04)
 
 - `tools/cache-al-dia.mjs` (nuevo, gratis): escalón 0, la huella del .md con la que se hizo el caché (`mdSha1`, que ahora guardan `localizar.mjs`, `validar-bloques.mjs` y `extraer.mjs`); escalón 1, cada fila del `.filas.json` sigue en su línea (etiqueta o importe en la línea citada, importe ahí o en las 3 siguientes por etiquetas partidas en dos renglones).
