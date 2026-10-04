@@ -36,9 +36,11 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
    - `estado.mjs --logica` (lo propio de cada grupo de países) sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`).
    - Las validaciones viejas no tienen huella por página: el ahorro de V443 empieza después de la próxima corrida del resolver de cada
      documento (decisión de Guido, 2026-10-04: no sembrar huellas en el historial).
-2. **Caja y deuda** (defectos vistos con Juventus; deuda 2007-2025 y caja 2022, 2024, 2025 hoy cargadas a mano): el escalón 1 tiene que
-   sumar corriente + no corriente de la misma etiqueta (desde 2007, "Loans and other financial liabilities" en dos filas); `caja-deuda.mjs`
-   tiene que respetar el ajuste `perimetro` (lee el primer balance del .md, el consolidado); la escala (`factorPorIngresos`) no puede
+2. **Caja y deuda** (defectos vistos con Juventus; deuda 2007-2025 y caja 2022, 2024, 2025 hoy cargadas a mano). Hecho: corriente + no
+   corriente de la misma etiqueta (V451; Juventus 2010 y 2017 ya salen solos). Falta, en orden: la página del balance de Juventus no cuenta
+   como balance porque "Cash flow hedge reserve" la confunde con el flujo de efectivo (`FLUJO_O_PATRIMONIO_RE`, ej. 2011-12 pág. 84 del
+   .md, L1489; es lo que deja sin dato a la mayoría de los años); el escalón 0 aprendió de 2012 familias de ACTIVO como deuda ("Land and
+   buildings + Non-current financial assets + Tangible assets in progress", 2013 y 2018 distintos); `caja-deuda.mjs` tiene que respetar el ajuste `perimetro` (lee el primer balance del .md, el consolidado); la escala (`factorPorIngresos`) no puede
    confundirse con filas de ajuste manual (2003-2006 salió en miles); "4) Due to banks" no matchea por el número adelante. Escalón 3
    (media móvil) aprobado y en pausa.
 3. **Juventus 2022, a tratar:** que `avisarRegistro` exija confirmados solo los bloques que usa la lectura ganadora (se destrabó con 29

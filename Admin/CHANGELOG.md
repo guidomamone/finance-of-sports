@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 451 — Caja y deuda: deuda corriente + no corriente de la misma etiqueta (2026-10-04)
+
+- `caja-deuda.mjs`, escalón 1 de deuda: una familia con EXACTAMENTE dos filas, una a cada lado del total del pasivo no corriente del mismo balance (a menos de 40 líneas), se propone sumada; en el documento siguiente la compuerta busca el mismo par (`enOtroDoc`). Más de dos filas (consolidado + separado) sigue sin decidir.
+- Medido con `--medir`: UC, Fortaleza CEIF, Goiás, Novorizontino y AEL Larissa idénticos; Juventus deuda de 0 a 2 iguales (2010 y 2017), sin distintos nuevos.
+- Encontrado: en la mayoría de los años de Juventus la página del balance no cuenta como balance porque la fila "Cash flow hedge reserve" la hace pasar por el flujo de efectivo (`FLUJO_O_PATRIMONIO_RE`); queda como el próximo defecto de caja y deuda.
+
 ## Versión 450 — Listas de prueba fijas y deuda de Novorizontino 2015 (2026-10-04)
 
 - `Admin/prueba-rapida.txt` (16), `prueba-mediana.txt` (34) y `prueba-completa.txt` (87): el pool para medir cualquier cambio de script, sin repetidos (los lotes 07-13 tenían 131 renglones para 87 documentos).
