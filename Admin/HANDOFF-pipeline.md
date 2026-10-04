@@ -24,19 +24,12 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con los lotes de prueba de abajo):
 
-1. **Caja y deuda** (ver "Caja y deuda" más abajo; hoy `--medir` da Juventus caja 17 de 23 y deuda 12 de 21 iguales, los otros 5 clubes
-   todo igual o sin dato). En orden:
-   - (a) la escala: hoy es UNA por documento, sacada del estado de resultados (`factorPorIngresos`), pero hay documentos con dos escalas
-     (Novorizontino `balanco-2016.md`: resumen "em milhares" L6 y balancete en reais L329, el que lee caja-deuda; Juventus 2002-03:
-     posición financiera resumida en €000 y estado en euros). Por eso Juventus 2003-2006 sale en miles. A diseñar: la escala de las FILAS
-     que propone cada escalón (la de su tabla, o la que hace coincidir la fila con el año anterior cargado), no la del documento. Para
-     medir: `caja-deuda.mjs --medir --escalas`.
-   - (b) "4) Due to banks": el diccionario no la reconoce por la numeración adelante. Probado: sacar la numeración la lee bien (Juventus
-     2005-06 L1967; 2004-05 L1715), pero sin (a) entra en miles y 2005 pasa de sin dato a distinto. Va después de (a).
-   - (c) quedan distintos en `--medir` por sumas casuales del precedente (escalón 0): deuda 2018 ("Players' registration rights" +
-     "Tangible assets in progress", dos activos) y caja 2005. No afectan lo cargado (`caja-deuda.mjs` nunca pisa un valor cargado).
-   - Escalón 3 (media móvil) aprobado y en pausa. Ideas a medir con un club real: precedente que sume lo cargado en DOS años (Bahia 2025
-     aprendió una suma casual); el número del año en un escaneo necesita una segunda lectura (Gemini), como la etapa 4.
+1. **Caja y deuda** (ver "Caja y deuda" más abajo). Hoy `--medir` en todos los clubes: 146 iguales, 10 distintos, 363 sin dato; Juventus
+   caja 17 de 23 y deuda 14 de 21. Quedan, sin arreglo limpio medido (no insistir sin un caso nuevo): Juventus caja 2004 (51,104 contra
+   51,101966: el resumen en €000 contra el estado en euros) y 2005 (lee "Bank and post-office deposits" del cuadro de posición financiera
+   neta, L1523); deuda 2018 (suma casual del precedente: dos activos); deuda 2007-2009 y caja 2006-2007 sin propuesta. Escalón 3 (media
+   móvil) aprobado y en pausa. Ideas a medir con un club real: precedente que sume lo cargado en DOS años; el número del año en un
+   escaneo necesita una segunda lectura (Gemini).
 2. **Defectos chicos:** `compararVecino` no cuenta las filas de ajuste manual; el escalón 1a del lote solo mira "revisar" y no
    "sin-verificar"; el RESULTADO final de `lote.mjs` muestra propuestas de carga viejas ("el club no existe" en años ya cargados);
    `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
@@ -82,12 +75,15 @@ Comando aparte, con el club ya publicado: completa `cash` y `grossDebt` de cada 
 cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [--detalle]` (gratis). Escribir: `--escribir`.
 
 ```
- LECTURA DE FILAS  una sola referencia a nota; activo y pasivo en la misma fila = dos filas; sin código de cuenta para el diccionario
+ LECTURA DE FILAS  una sola referencia a nota; activo y pasivo en la misma fila = dos filas; sin código de cuenta ni numeración
+                   ("4)", "a)") para el diccionario
  PÁGINAS DEL BALANCE  título o total del balance, y no el flujo de efectivo ni los cambios en el patrimonio (una FILA con esas palabras
                       no cuenta si la página tiene el título del balance como encabezado)
  PERÍMETRO  cada página del balance es consolidado o individual por su encabezado; con ajuste `perimetro` solo cuenta ese (si el .md
             trae los dos, solo las páginas marcadas)
- ESCALA     una por documento (la del estado de resultados contra lo cargado); la del vecino, con SU escala
+ ESCALA     una por documento (la del estado de resultados contra lo cargado); la del vecino, con SU escala; en la compuerta, si
+            el valor no es plausible (1/100 a 100 veces el año cargado más cercano) o no pasa, se prueban las otras escalas y se
+            acepta si UNA sola da ok y plausible
  ESCALÓN 0  ajuste manual `caja` del año · precedente del club (las familias que suman lo cargado en el año más cercano)
  ESCALÓN 1  diccionario (vocabulario.mjs) + términos del club o del documento (ajuste `deuda-incluye`); jerarquía de balancete: padre e
             hija no se suman; cuenta D no es deuda. Además propone: deuda corriente + no corriente de la misma etiqueta (exactamente

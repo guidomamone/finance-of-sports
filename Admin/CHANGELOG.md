@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 459 — Caja y deuda: la escala en la compuerta, con plausibilidad; "4) Due to banks" (2026-10-04)
+
+- `caja-deuda.mjs`: la etiqueta para el diccionario pierde una numeración de lista al principio ("4)", "a)", "IV.").
+- `compuerta`: escalón 0, la escala del documento si la compuerta pasa y el valor es plausible (entre 1/100 y 100 veces el año cargado más cercano del mismo dato); escalón 1, las otras escalas sobre las filas de la propuesta (y en el documento siguiente), aceptada si UNA sola da ok y plausible.
+- Medido con `--medir` en TODOS los clubes (519 años de caja y deuda): de 141 a 146 iguales, 0 empeoran, distintos 10 → 10. Pasan a igual: Juventus deuda 2005 (24,973807) y 2006 (14,927923), Fluminense 2025 caja y deuda, Mönchengladbach 2024 caja. Diseño medido antes en una copia por un subagente; descartada la "escala de la tabla" (los encabezados mienten: Fortaleza dice "pesos colombianos" con cifras en miles; perdía 4 años).
+
 ## Versión 458 — El rearmado solo usa números sin confirmar de bloques elegidos hoy (2026-10-04)
 
 - `texto-propio-a-md.mjs` (`paginasARearmar`, etapa 2 escalón 1b): los números sin confirmar de la `.validacion.json` cuentan solo si su bloque sigue elegido en el `.ubicacion.json` vigente. Caso: Juventus 2021-22, una validación hecha con el consolidado (b54, b55, b67-b71, págs. 92, 93 y 100) disparó el rearmado después de pasar a individual.
