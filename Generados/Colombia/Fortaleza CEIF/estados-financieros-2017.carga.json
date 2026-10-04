@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
- "generado": "2026-10-04T21:59:28.089Z",
+ "generado": "2026-10-04T22:10:38.868Z",
  "frena": [
   {
    "etapa": "registro",
@@ -12,19 +12,7 @@
   },
   {
    "etapa": "categoria-en-cola",
-   "motivo": "16 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Gastos Deportivos y D\" -> match_organisation_expense 0.6; \"Aportes Admin de Ries\" -> wages_squad 0.6; \"Aporte a Salud\" -> wages_squad 0.65; \"Aportes a Cajas de Co\" -> wages_squad 0.65; \"Ligas de Futbol\" -> admin_general_expense 0.6"
-  },
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 0.006 + gastos -3677.627 + netInterest -3.581 + tax -291.595 = -3972.797 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 1347.094)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ingresos: las filas suman 0.006 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -3628.133 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
+   "motivo": "17 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Total Ingresos actividades ordinarias\" -> other_income 0; \"Gastos Deportivos y D\" -> match_organisation_expense 0.6; \"Aportes Admin de Ries\" -> wages_squad 0.6; \"Aporte a Salud\" -> wages_squad 0.65; \"Aportes a Cajas de Co\" -> wages_squad 0.65"
   },
   {
    "etapa": "fuente",
@@ -32,7 +20,9 @@
   }
  ],
  "avisos": [
-  "categorías en 0 aun después del reintento (se carga así): Televisión, Estadio"
+  "categorías en 0 aun después del reintento (se carga así): Televisión, Estadio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-3628.133); queda la suma, verificada por el resultado del ejercicio",
+  "escalón 1 de \"no es rubro\": excluir \"Total Ingresos actividades ordinarias\" no cerraba; incluida, la carga cierra (su categoría va a la cola)"
  ],
  "ejercicio": {
   "clubId": "fortalezaceif-co",
@@ -40,6 +30,15 @@
   "cierre": "2017-12-31",
   "perimetro": "individual",
   "revenueLines": [
+   {
+    "rawLabel": "Total Ingresos actividades ordinarias",
+    "normalizedCategory": "other_income",
+    "amountNative": 5319.891,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 2,
+    "_conf": 0
+   },
    {
     "rawLabel": "Aprovechamientos",
     "normalizedCategory": "other_income",
@@ -1142,11 +1141,21 @@
    "assetSales": 0,
    "netInterest": -3.581,
    "tax": -291.595,
+   "extraRows": [
+    {
+     "label": "Costos financieros",
+     "value": -3.581
+    },
+    {
+     "label": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+     "value": -291.595
+    }
+   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalRevenue": 5319.897,
+   "officialTotalExpenses": 3628.133,
+   "officialPAT": 1347.094
   },
   "source": {
    "id": "fortalezaceif-co-estados-financieros-2017",
@@ -1232,12 +1241,15 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 5319.891,
-   "cat": "no_es_rubro",
-   "conf": 0.85,
+   "cat": "other_income",
+   "conf": 0,
    "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "categorias.json decía no_es_rubro con 0.85 (fila verificada: no se excluye sola): se propone la genérica de su lado",
    "enLista": true,
-   "destino": "excluida"
+   "ladoRechazado": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 5319.891
   },
   {
    "label": "Aprovechamientos",
@@ -3126,15 +3138,30 @@
    "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 0.006,
+  "revSum": 5319.897,
   "expSum": -3628.133,
-  "officialTotalRevenue": null,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
-  "verificacion": {}
+  "officialTotalRevenue": 5319.897,
+  "officialTotalExpenses": 3628.133,
+  "officialPAT": 1347.094,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 1347.094,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 5319.897
+  }
  },
  "liga": {
   "valor": "co-primeraB",
@@ -3143,10 +3170,10 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 7,
-  "lineasIngreso": 2,
+  "motivos": 4,
+  "lineasIngreso": 3,
   "lineasGasto": 119,
   "metaFilas": 2,
-  "excluidas": 1
+  "excluidas": 0
  }
 }
