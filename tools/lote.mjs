@@ -43,6 +43,7 @@ const { ajusteDe, ajustePerimetroDe } = await import('./ajustes.mjs');
 const { loadSite } = await import('./proponer-carga.mjs');
 const { faltaAntesDeLocalizar } = await import('./antes-de-localizar.mjs');
 const { cacheAlDia } = await import('./cache-al-dia.mjs');
+const { gastoPorDocumento, lineasGasto } = await import('./gasto-doc.mjs');
 process.argv = argvAntes;
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -90,6 +91,9 @@ const node = (tool, argv, { silencioso = false } = {}) => {
   return r;
 };
 
+const INICIO = new Date().toISOString(); // (Versión 449) desde cuándo cuenta el gasto por documento
+const gastoValidar = {}; // (Versión 449) lo que costó validar escaneos (Gemini con rutas temporales: no queda en ningún log con el PDF)
+const anotarValidar = (pdf, V) => { const c = V?.costo || 0; if (c) gastoValidar[pdf] = { validar: (gastoValidar[pdf]?.validar || 0) + c }; return c; };
 const sitio = loadSite(); // (Versión 442) antes del loop: "año ya cargado" mira también el sitio
 let usd = 0; const estado = {}; const aRetranscribir = []; const aTextoPropio = []; const aFijar = [];
 // Páginas interiores (sin las 2 primeras ni la última) con menos de 200 caracteres de texto propio: son imágenes.
@@ -161,7 +165,7 @@ for (const pdf of docs) {
     if (L3.error) { estado[pdf] = `localizar (notas como estado): ${L3.error}`; continue; }
     usd += L3.costo || 0;
     if (L3.datos.sin_estado) { estado[pdf] = 'sin estado de resultados ni notas con resultado impreso (queda como fuente)'; console.log(`  ${pdf}: ${estado[pdf]}`); continue; }
-    const V3 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += V3.costo || V3.usd || 0;
+    const V3 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += anotarValidar(pdf, V3) || V3.usd || 0;
     const X3 = await extraer(pdf, { registro, ejecutar: true, rehacer: true }); usd += X3.costo || 0;
     if (X3.error) { estado[pdf] = `extraer: ${X3.error}`; continue; }
     estado[pdf] = 'extraído (las notas hacen de estado)'; console.log(`  ${pdf}: las notas hacen de estado · ${X3.datos.filas.length} filas · US$ ${usd.toFixed(2)} acumulado`);
@@ -179,7 +183,7 @@ for (const pdf of docs) {
     console.log(`  ${pdf}: págs. ${RA.paginas.join(', ') || 'ninguna'} rearmadas con el texto propio del PDF (etapa 2, escalón 1, método ${TP.metodo})${RA.rechazadas.length ? `; págs. ${RA.rechazadas.join(', ')} NO (la compuerta del rearmado: perdían filas de tabla, queda la transcripción anterior)` : ''}`);
     const L4 = await localizar(pdf, { registro, perimetroClub, ejecutar: true, rehacer: true }); usd += L4.costo || 0;
     if (L4.error || L4.datos?.sin_estado) { estado[pdf] = L4.error ? `localizar: ${L4.error}` : 'sin estado de resultados aun con el texto propio (queda como fuente)'; continue; }
-    const V4 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += V4.costo || V4.usd || 0;
+    const V4 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += anotarValidar(pdf, V4) || V4.usd || 0;
     const X4 = await extraer(pdf, { registro, ejecutar: true, rehacer: true }); usd += X4.costo || 0;
     if (X4.error) { estado[pdf] = `extraer: ${X4.error}`; continue; }
     estado[pdf] = 'extraído (texto propio del PDF)'; console.log(`  ${pdf}: estado ${L4.datos.estado.join(',')} · ${V4.datos?.modo || '?'} · ${X4.datos.filas.length} filas · US$ ${usd.toFixed(2)} acumulado`);
@@ -221,7 +225,7 @@ for (const pdf of docs) {
       node('tools/inventario-transcripciones.mjs', [], { silencioso: true }); registro = leerRegistro();
       const L2 = await localizar(pdf, { registro, perimetroClub, ejecutar: true, rehacer: true }); usd += L2.costo || 0;
       if (L2.error || L2.datos?.sin_estado) { estado[pdf] = 'sin estado de resultados aun re-transcripto (queda como fuente)'; continue; }
-      const V2 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += V2.costo || 0;
+      const V2 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += anotarValidar(pdf, V2);
       const X2 = await extraer(pdf, { registro, ejecutar: true, rehacer: true }); usd += X2.costo || 0;
       if (X2.error) { estado[pdf] = `extraer: ${X2.error}`; continue; }
       estado[pdf] = 'extraído (re-transcripto con Mistral)'; console.log(`  ${pdf}: re-transcripto y extraído · ${X2.datos.filas.length} filas`);
@@ -234,7 +238,7 @@ for (const pdf of docs) {
   }
   // En el ensayo, validar y extraer TAMBIÉN van en ensayo (hasta la Versión 326 iban con ejecutar: true fijo: con localizar ya hecho, el
   // ensayo llamaba a extraer de verdad y gastaba). validar en un PDF digital es gratis y corre igual; en un escaneo estima.
-  const V = await validar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo }); usd += V.costo || V.usd || 0;
+  const V = await validar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo }); usd += (EJECUTAR ? anotarValidar(pdf, V) : V.costo) || V.usd || 0;
   const X = await extraer(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo, reintento });
   if (X.ensayo) { usd += X.usd; console.log(`  ${pdf}: localizar ya hecho · extraer ~US$ ${X.usd.toFixed(3)} (estimado)`); continue; }
   usd += X.costo || 0;
@@ -312,6 +316,10 @@ if (aDetalle.length) {
   console.log(`  Solo si hace falta el detalle (~US$ 0,50 por documento): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar --detalle`);
 }
 imprimirAFijar();
+// GASTO POR DOCUMENTO (Versión 449, punto 1.vi del HANDOFF, aprobado por Guido el 2026-10-04): lo gastado en esta corrida en cada documento,
+// por tarea, y "N.ª vez" si esa tarea ya se había pagado antes para el mismo PDF (tools/gasto-doc.mjs; solo información, no frena).
+const GD = gastoPorDocumento(docs, { desde: INICIO, registro, extra: gastoValidar });
+if (GD.length) { console.log('\nGASTO POR DOCUMENTO (esta corrida; "N.ª vez" = esa tarea ya se había pagado antes para el mismo PDF):'); for (const l of lineasGasto(GD)) console.log(l); }
 console.log(`\nGastado: US$ ${usd.toFixed(2)} (más la categorización: node tools/gasto.mjs). Cola humana de este lote: ${cola.length} caso(s) -> node tools/cola.mjs`);
 
 // RESULTADO (Versión 351, pedido de Guido: "que al final de la corrida diga 'Frenados X' 'Listo para cargar Y'"). Lee la última propuesta de
