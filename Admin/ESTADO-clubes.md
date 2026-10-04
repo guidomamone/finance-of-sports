@@ -204,7 +204,7 @@ HR (8)
   Varaždin       1 ejercicio (2025), balance, EUR
 
 IT (1)
-  Juventus  23 ejercicios (2002/2003 a 2024/2025), balance, EUR, sin deuda/caja
+  Juventus  23 ejercicios (2002/2003 a 2024/2025), balance, EUR
 
 JAPÓN (10)
   Cerezo Osaka         1 ejercicio (2025), balance, JPY, sin deuda/caja
