@@ -38,8 +38,7 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
      documento (decisión de Guido, 2026-10-04: no sembrar huellas en el historial).
 2. **Caja y deuda** (defectos vistos con Juventus; deuda 2007-2025 y caja 2022, 2024, 2025 hoy cargadas a mano). Hecho: corriente + no
    corriente de la misma etiqueta (V451) y la página del balance con "Cash flow hedge reserve" (V452): deuda de Juventus 9 de 21 iguales
-   solas. Falta, en orden: el escalón 0 aprendió de 2012 familias de ACTIVO como deuda ("Land and
-   buildings + Non-current financial assets + Tangible assets in progress", 2013 y 2018 distintos); `caja-deuda.mjs` tiene que respetar el ajuste `perimetro` (lee el primer balance del .md, el consolidado); la escala (`factorPorIngresos`) no puede
+   solas. Falta, en orden: `caja-deuda.mjs` tiene que respetar el ajuste `perimetro` (lee el primer balance del .md, el consolidado); la escala (`factorPorIngresos`) no puede
    confundirse con filas de ajuste manual (2003-2006 salió en miles); "4) Due to banks" no matchea por el número adelante. Escalón 3
    (media móvil) aprobado y en pausa.
 3. **Juventus 2022, a tratar:** que `avisarRegistro` exija confirmados solo los bloques que usa la lectura ganadora (se destrabó con 29
@@ -90,6 +89,8 @@ total de la nota del vecino), y el total de la nota de deuda si no hay otra fila
 
 Pendientes:
 
+- Caja y deuda, probado y no adoptado (V453): filtrar lo que aprende el precedente de deuda (solo pasivo: 2020 pasa a distinto; solo
+  diccionario: AEL Larissa pierde 6). Juventus 2018 sigue distinto en `--medir` (suma casual de dos activos); no afecta lo cargado.
 - Caja y deuda, probado y no adoptado (manta corta, Versión 357+): compuerta con "vecino independiente" (perdía el escalón 0) y lectura en el
   texto del PDF (no sirve en escaneos). Ideas pendientes, a medir solo con un club real: precedente que sume lo cargado en DOS años (Bahia
   2025 aprendió una suma casual); el número del año en un escaneo necesita una segunda lectura (Gemini), como la etapa 4.

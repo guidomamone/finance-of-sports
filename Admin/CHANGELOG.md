@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 453 — Probado y NO adoptado: filtrar lo que aprende el precedente de deuda (2026-10-04)
+
+- Objetivo: que el escalón 0 de `caja-deuda.mjs` no aprenda sumas casuales (Juventus 2017: "Players' registration rights, net + Tangible assets in progress", dos ACTIVOS; 2018 da 332,3 M contra 329,2 M cargado).
+- Probado 1, solo filas del pasivo (después del total del activo): 2018 pasa a igual pero 2020 (igual) pasa a distinto ("Deferred tax liabilities + Loans + Retained earnings", otra suma casual). Manta corta: descartado.
+- Probado 2, solo filas que el diccionario reconoce como deuda: Juventus 10 iguales y 0 distintos, pero AEL Larissa pierde sus 6 iguales (etiquetas en griego fuera del diccionario). Descartado.
+- Sin cambios en el código. Sin riesgo para lo cargado: `caja-deuda.mjs` nunca pisa un valor ya cargado; el distinto de 2018 solo aparece en `--medir`.
+
 ## Versión 452 — Caja y deuda: una fila con "cash flow" no saca la página del balance (2026-10-04)
 
 - `caja-deuda.mjs`, páginas del balance: si la página tiene el título del balance como ENCABEZADO corto (renglón con # o en negrita sola, hasta 70 caracteres), la exclusión del flujo de efectivo / cambios en el patrimonio mira solo el texto fuera de las tablas. Caso: Juventus 2011-12 pág. 84, "Cash flow hedge reserve" en el patrimonio.
