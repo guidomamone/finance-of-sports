@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 448 — El tablero (estado.mjs) con las etapas del proceso nuevo (2026-10-04)
+
+- `tools/etapa-doc.mjs` (nuevo): en qué etapa y escalón del proceso nuevo está cada documento (registro + lo que dejaron las etapas 3-8 en `Generados/`). Lo usan el inventario (V447, movido acá) y el tablero.
+- `estado.mjs`: secciones 1-9 del HANDOFF (antes, las del proceso viejo: "4. Preparar lista de rubros"); tools por etapa al día; costo de localizar + extraer con el estimador de V446; motivos de la etapa 8 frenada; descartados aparte; el proceso viejo solo como una línea de referencia.
+- Medido: 6825 PDFs en los dos, mismas cuentas que el inventario (603 escaneos sin validar = 602 + 1 descartado). Hoy: 663 en la etapa 3 (~US$ 228 hasta la propuesta de carga), 517 en el sitio.
+
 ## Versión 447 — El inventario dice en qué etapa y escalón está cada estado (2026-10-04)
 
 - `inventario-transcripciones.mjs`: el resumen "Por estado" agrega la etapa y el escalón del proceso nuevo; los "listo" se abren según lo que dejaron las etapas 3-8 en `Generados/` (localizar, extraer, verificar, propuesta de carga); los descartados como fuente se cuentan aparte. "Por motor" sin la lista de páginas (de ~120 renglones a ~20).
