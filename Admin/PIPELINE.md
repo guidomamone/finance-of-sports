@@ -39,7 +39,7 @@ Riesgos:
 
 Mitigaciones:
 - i) las fuentes no oficiales se guardan sin publicar; el año se lee del contenido (`periodo.mjs`), no del nombre;
-- ii) falta: detectar duplicados por huella del archivo.
+- ii) falta: detectar duplicados por huella del archivo (to-do 140c).
 
 ### 2 Transcribir
 
@@ -63,7 +63,7 @@ Mitigaciones:
             la anterior (Novorizontino 2025: estado de resultados girado 90°)
             Solo cuentan los números sin confirmar de bloques ELEGIDOS HOY (Versión 458): una validación hecha con otra localización
             (otro perímetro) no dispara el rearmado
- ESCALÓN 2  (falta) escaneo entero → Gemini o Claude sobre las páginas candidatas
+ ESCALÓN 2  (falta, to-do 140b) escaneo entero → Gemini o Claude sobre las páginas candidatas
  nada → queda como fuente (memoria, dictamen, balance solo)
 ```
 
@@ -205,7 +205,7 @@ Riesgos:
 - ii) un club sin año vecino para comparar.
 
 Mitigaciones:
-- i) segundo chequeo (año vecino; falta: un número citado en el texto del documento);
+- i) segundo chequeo (año vecino; falta: un número citado en el texto del documento, to-do 140f);
 - ii) va a la cola.
 
 ### 7 Categorizar
@@ -246,7 +246,7 @@ Mitigaciones:
 - a) `cargar.mjs --desde-verificacion`: carga solo lo que la etapa 6 dejó en "ok". Tipo de cambio, liga y fuente con página.
 - b) Club nuevo: `alta-club.mjs`, en el mismo commit que su primer año.
 - c) Después corre `audit.js`; si da un error grave, revierte solo.
-- d) **Escaleras chicas** (ya funcionan así; falta registrar en qué escalón salió cada dato):
+- d) **Escaleras chicas** (ya funcionan así; falta registrar en qué escalón salió cada dato, to-do 140h):
 
 ```
  TIPO DE CAMBIO   ajuste ─► declarado (compuerta: su frase no trae otra fecha que el cierre) ─► en tabla (fecha más nueva) ─► serie oficial ─► cola
@@ -349,7 +349,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 - Qué entra: números no confirmados que no cierran, totales o resultado que no cierran, año vecino distinto, primer año sin vecino, dudas de
   localizar y de extraer que afectan la carga, y filas con categoría menor a 0,80 (etapa 8).
 - Una respuesta de categoría queda como precedente del club para los años siguientes (`Admin/categorias-aprendidas.jsonl`).
-- Falta: que otras respuestas (convenciones de un grupo de países) se vuelvan regla.
+- Falta: que otras respuestas (convenciones de un grupo de países) se vuelvan regla (to-do 141c).
 
 ---
 

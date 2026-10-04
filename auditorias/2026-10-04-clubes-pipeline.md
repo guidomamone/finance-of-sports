@@ -48,6 +48,16 @@ Ordenados por impacto en lo que ve un visitante. "M" = millones de la moneda del
     2021 cada deducción va a su línea. Documentar o ajuste `fila`.
 12. **Fortaleza: "Auxilio de arbitraje / transporte / hotelero" cambian de categoría entre años** (`competition_bonus` / `other_income`;
     ~0,3-0,4 M COP por año). Impacto chico. Cosmético: etiquetas que son frases del documento en 2022-2024.
+13. **Fortaleza: "Aporte SENA" y "Sena" de otros años están en `admin_general_expense`** (2017 quedó en `wages_squad`, como Pensiones,
+    Salud y Cajas); unificar si se recargan esos años. (Venía del HANDOFF; pasó acá en la Versión 470.)
+
+## Otros clubes ya publicados (fuera de los 6)
+
+Datos ya publicados con categorías dudosas, anotados en el HANDOFF y pasados acá en la Versión 470. Sin verificar todavía contra el .md.
+
+- Almagro tiene "Sede Social - Medrano 522" como cuotas sociales.
+- Grêmio, "Receitas Patrimoniais" como cuotas sociales.
+- Vitória, Bahia y América Mineiro tienen socios en sus documentos y no en el sitio.
 
 ## Caja y deuda (`tools/caja-deuda.mjs`), lo que queda
 

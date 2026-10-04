@@ -15,7 +15,7 @@
 // 5 extraer, 6 verificar, 7 categorizar, 8 cargar) es CONOCIMIENTO MEDIDO, cada punto con el documento real donde se vio. Regla al editarla: no escribir nada que no se haya visto
 // en un documento (pedido de Guido: "hacés todo muy teórico"); lo que no se sabe todavía se deja como "nada propio conocido". Por ahora es
 // documentación que muestra `node tools/estado.mjs --logica`; las tools de cada etapa todavía tienen reglas generales. La idea (pendiente,
-// HANDOFF) es que estas diferencias pasen a ser configuración que las tools lean, grupo por grupo.
+// to-do 140k de Admin/TODO.md) es que estas diferencias pasen a ser configuración que las tools lean, grupo por grupo.
 // LOS PUNTOS DE HOY se vieron con el PROCESO VIEJO (2026-09-30), que tenía otras etapas: 3 validar, 4 preparar (qué filas, qué escala),
 // 5 categorizar, 6 cargar. La Versión 466 los pasó a las etapas nuevas sin reescribirlos: preparar → 3 localizar (todos son sobre qué
 // tablas, escala o perímetro se eligen), validar → 4, categorizar → 7, cargar → 8. Por eso varios hablan de "la selección" (la etapa vieja).

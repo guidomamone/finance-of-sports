@@ -22,7 +22,7 @@
 //   preguntar-club   no se puede saber del documento: pasa a Admin/dudas-por-club.md para escribirle al club (outreach)
 // Las tools que mandaron el caso leen la respuesta con `respuestaDe(clave)` y la aplican la próxima vez que corren (verificar.mjs ya lo
 // hace). QUE UNA RESPUESTA SE VUELVA REGLA (una convención de un grupo de países en tools/grupos-pais.mjs, una categoría como precedente del
-// club) es el paso siguiente: hoy queda escrita acá y una sesión la pasa a regla (pendiente, HANDOFF).
+// club) es el paso siguiente: hoy queda escrita acá y una sesión la pasa a regla (pendiente: to-do 141c de Admin/TODO.md).
 //
 // USO:
 //   node tools/cola.mjs                                  los casos pendientes, agrupados por documento, con qué abrir y qué mirar

@@ -23,29 +23,9 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con los lotes de prueba de abajo):
-
-1. **Defecto D, CONOCIDO Y SIN DAÑO HOY** (no perseguir sin un caso nuevo): `compararVecino` (verificar.mjs) compara con el año vecino
-   las filas extraídas ANTES de los ajustes `fila`; Juventus 2005 y 2006 dan "NO" en el chequeo de año vecino (2005: 229,9 contra 259,1;
-   puede ser esto o la reexpresión italiano → IFRS) pero verifican ok y están cargados. Retomar si un club nuevo con ajustes `fila` de
-   ingresos frena por eso. (Los defectos B, textos, quedaron en las Versiones 465-466.)
-2. **Temas de auditoría, incluidos los pendientes de caja y deuda:** fuera de este HANDOFF, en el to-do 138 de `Admin/TODO.md`
-   (archivos en `auditorias/`).
-3. No urgentes:
-   - escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final que repite el documento siguiente;
-     costos financieros mal rotulados);
-   - marcar "no desglosado" distinto de `cero-real`, y que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (ya lo usan
-     8 años cargados);
-   - cerrar casos obsoletos de la cola automáticamente (hoy hay 11 de Juventus 2003, 2004 y 2016, años ya cargados);
-   - falso positivo del inventario con números que no son cifras contables (firmas digitales);
-   - chequeo de coherencia entre años (prototipado, no construido);
-   - etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente);
-   - etapas 4 y 8: registrar en qué escalón salió cada dato;
-   - Fortaleza: "Aporte SENA" y "Sena" de otros años están en `admin_general_expense` (2017 quedó en `wages_squad`, como Pensiones,
-     Salud y Cajas); unificar si se recargan esos años;
-   - perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes);
-   - datos ya publicados con categorías dudosas: Almagro tiene "Sede Social - Medrano 522" como cuotas sociales; Grêmio, "Receitas
-     Patrimoniais" como cuotas sociales; Vitória, Bahia y América Mineiro tienen socios en sus documentos y no en el sitio.
+Los pendientes del pipeline están en `Admin/TODO.md`, to-dos 138 a 142 (Versión 470): 138 auditoría (incluye caja y deuda), 139 defecto D,
+140 escalones y chequeos que faltan, 141 la cola humana, 142 decisiones pendientes de Guido. De a un cambio, con el ok de Guido; siempre
+escalera; medir con los lotes de prueba de abajo.
 
 ### Lotes de prueba (medir CUALQUIER cambio de script antes y después)
 
@@ -106,12 +86,7 @@ Publicación: falta el push, que lo hace Guido (`git push origin main`).
 
 Tomadas por Guido: ahora en `Admin/PIPELINE.md` ("Decisiones tomadas por Guido").
 
-Pendientes, a decidir con casos reales:
-
-- ¿El primer año automático de cada club pasa siempre por la cola?
-- ¿Dónde ver la cola? Hoy es un archivo que se lee con `cola.mjs`.
-- Perímetro: se hereda del año cargado más cercano; si no se puede, pregunta en la cola.
-- Retirar el proceso viejo de las etapas 3 a 5 (~10 tools): cuando el proceso nuevo haya cargado bien algunos documentos.
+Pendientes, a decidir con casos reales: ahora en `Admin/TODO.md`, to-do 142 (y 141d, dónde ver la cola).
 
 ---
 
@@ -119,8 +94,7 @@ Pendientes, a decidir con casos reales:
 
 Los descartes medidos están en `Admin/HALLAZGOS-pipeline.md`.
 
-- **No construido todavía:** duplicados de PDF por huella; número citado en el texto como segundo chequeo; que una respuesta de la cola se vuelva
-  regla; ordenar la cola por impacto; reabrir solo el sourcing de un PDF roto.
+Lo no construido todavía está en `Admin/TODO.md`, to-dos 140 y 141.
 
 ---
 
@@ -139,12 +113,12 @@ Los descartes medidos están en `Admin/HALLAZGOS-pipeline.md`.
 
 ## Cómo arranca la próxima sesión
 
-(2026-10-04, Versiones 441-468) "Dónde estamos" ya no tiene un arreglo en curso: elegir con Guido entre el to-do 138 (auditoría) y
-los no urgentes. Medir cualquier cambio con `Admin/prueba-completa.txt` (y `caja-deuda.mjs --medir` en
+(2026-10-04, Versiones 441-470) No hay un arreglo en curso: elegir con Guido entre los to-dos 138 a 142 de `Admin/TODO.md`.
+Medir cualquier cambio con `Admin/prueba-completa.txt` (y `caja-deuda.mjs --medir` en
 TODOS los clubes si toca caja y deuda).
 
 1. `git status` y `git log --oneline -5` en `main`.
 2. `node tools/estado.mjs`.
 3. Leer este HANDOFF (nada más hace falta para el pipeline).
 4. `node tools/cola.mjs` para ver qué está esperando a Guido.
-5. Seguir por el plan de la sección "Dónde estamos" (está en orden).
+5. Seguir por los to-dos 138 a 142 de `Admin/TODO.md` (están en orden).

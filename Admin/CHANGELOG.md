@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 470 — Los pendientes del pipeline, del HANDOFF al TODO (2026-10-04)
+
+- `Admin/TODO.md`: to-dos nuevos 139 (defecto D), 140 (escalones y chequeos que le faltan al proceso, a-k), 141 (la cola humana, a-d) y 142 (decisiones pendientes de Guido, a-c), justo después del 138. Salen de "Dónde estamos", "Pendientes, a decidir con casos reales" y "No construido todavía" del HANDOFF, y de un pendiente que solo estaba en `tools/grupos-pais.mjs` (140k).
+- `auditorias/2026-10-04-clubes-pipeline.md`: hallazgo 13 (Fortaleza, SENA) y sección "Otros clubes ya publicados" (Almagro, Grêmio, Vitória, Bahia, América Mineiro), que estaban en el HANDOFF.
+- HANDOFF: "Dónde estamos", los pendientes y "Cómo arranca" apuntan a los to-dos 138-142.
+- `Admin/PIPELINE.md`: cada "falta" lleva su to-do. `cola.mjs`, `estado.mjs` y `grupos-pais.mjs`: los comentarios de pendientes apuntan al to-do en vez del HANDOFF.
+
 ## Versión 469 — El proceso del pipeline y sus hallazgos, del HANDOFF a archivos propios (2026-10-04)
 
 - `Admin/PIPELINE.md` (nuevo): "El proceso nuevo", "Caja y deuda" y las decisiones tomadas por Guido, movidos del HANDOFF sin cambiar el texto. Se actualiza en la misma sesión en que cambia una tool, sin pedir ok para el texto (decisión de Guido).

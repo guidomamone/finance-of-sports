@@ -100,6 +100,42 @@ perdieron sino que se descartaron:
     (los 6 clubes del pipeline nuevo: 12 hallazgos, los pendientes de caja y deuda, y la nota visible del quiebre de serie de
     Juventus 2006 → 2007).
 
+139. DEFECTO D DEL PIPELINE, CONOCIDO Y SIN DAÑO HOY (no perseguir sin un caso nuevo; venía del HANDOFF, Versión 470).
+    `compararVecino` (verificar.mjs) compara con el año vecino las filas extraídas ANTES de los ajustes `fila`; Juventus 2005 y 2006 dan
+    "NO" en el chequeo de año vecino (2005: 229,9 contra 259,1; puede ser esto o la reexpresión italiano → IFRS) pero verifican ok y están
+    cargados. Retomar si un club nuevo con ajustes `fila` de ingresos frena por eso. (Los defectos B, textos, quedaron en las Versiones
+    465-466.)
+
+140. ESCALONES Y CHEQUEOS QUE LE FALTAN AL PROCESO DEL PIPELINE (no urgentes; venían del HANDOFF, Versión 470; las etapas están en
+    `Admin/PIPELINE.md`). Cada uno, de a uno: diseño con su escalera, ok de Guido, y medir con los lotes de prueba.
+    (a) Escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final que repite el documento siguiente;
+        costos financieros mal rotulados).
+    (b) Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente).
+    (c) Etapa 1: duplicados de PDF por huella (el mismo documento bajado dos veces con nombres distintos).
+    (d) Etapa 1: reabrir solo el sourcing de un PDF roto.
+    (e) Falso positivo del inventario con números que no son cifras contables (firmas digitales).
+    (f) Etapa 6: número citado en el texto del documento como segundo chequeo.
+    (g) Chequeo de coherencia entre años (prototipado, no construido).
+    (h) Etapas 4 y 8: registrar en qué escalón salió cada dato.
+    (i) Marcar "no desglosado" distinto de `cero-real`, y que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (ya lo
+        usan 8 años cargados).
+    (j) Perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes).
+    (k) Que las diferencias por grupo de países (`logica` de `tools/grupos-pais.mjs`, lo que muestra `node tools/estado.mjs --logica`)
+        pasen a ser configuración que las tools lean, grupo por grupo.
+
+141. LA COLA HUMANA DEL PIPELINE (`tools/cola.mjs`; venía del HANDOFF, Versión 470).
+    (a) Cerrar casos obsoletos de la cola automáticamente (hoy hay 11 de Juventus 2003, 2004 y 2016, años ya cargados).
+    (b) Ordenar la cola por impacto.
+    (c) Que una respuesta de la cola se vuelva regla (una convención de un grupo de países en `tools/grupos-pais.mjs`). Las respuestas de
+        categoría ya quedan como precedente del club (`Admin/categorias-aprendidas.jsonl`); las demás no.
+    (d) ¿Dónde ver la cola? Hoy es un archivo que se lee con `cola.mjs`. Decisión de Guido, a tomar con casos reales.
+
+142. DECISIONES PENDIENTES DE GUIDO SOBRE EL PIPELINE, a tomar con casos reales (venían del HANDOFF, Versión 470).
+    (a) ¿El primer año automático de cada club pasa siempre por la cola?
+    (b) Perímetro: se hereda del año cargado más cercano; si no se puede, pregunta en la cola.
+    (c) Retirar el proceso viejo de las etapas 3 a 5 (~10 tools): cuando el proceso nuevo haya cargado bien algunos documentos.
+        Relacionado: to-do 108, que todavía describe el proceso viejo (`pipeline.mjs`).
+
 109. ORDENAR LAS CARPETAS DEL PROYECTO (pedido de Guido, 2026-09-30: "hay muchos files dando vueltas que ya no tienen razón de ser"). No hay apuro, pero cada lote
     de pipeline suma archivos. Lo que ya se ve como desorden, para que la sesión que lo encare no arranque de cero:
     - Los archivos generados ya salieron de `Clubes/` (Versión 317, `Generados/`, `tools/rutas.mjs`).
