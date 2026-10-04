@@ -1,0 +1,23 @@
+# Australia — notas generales
+
+Barrido 1 (Sonnet, 3 agentes) — 2026-10-03. Primer barrido de la región Oceanía: AFL (18 clubes), NRL (16, ver `_notas-NRL.md`), federaciones y franquicias de rugby union, A-League, NBL y cricket. Metodología completa para sumar a `paises/Australia.md` en el reporte a Guido (el skill no se edita sin su ok).
+
+## La pregunta de la figura jurídica
+
+- **Clubes AFL = "company limited by guarantee" (Football Club Limited)**: 12 de 18 publican su Annual Report con Financial Report auditado en el sitio propio (Collingwood, Essendon, Hawthorn, Geelong, Melbourne, Brisbane, St Kilda, Richmond [solo "concise"], Carlton, Adelaide, Fremantle, North Melbourne, Western Bulldogs; series 2011-2025). Los 5 que no publican (Sydney, West Coast, Port Adelaide, Gold Coast, GWS) tienen copias de ASIC en un espejo de terceros (ver abajo).
+- **Clubes NRL = licensed clubs (leagues clubs, limited by guarantee) o Pty/Ltd privadas**. Publican los que son controlados por un leagues club con socios (Penrith, Cronulla, Bulldogs, Roosters, Parramatta, Cowboys, Wests Tigers, Broncos, Souths [solo el Member Co]). No publican las Pty privadas (Manly, Titans, Dolphins, Dragons Pty, Warriors, Storm, Raiders).
+- **A-League y NBL = Pty Ltd privadas**: sin publicación. Football Australia, Rugby Australia, Cricket Australia y las asociaciones estatales de cricket (Victoria, NSW, WACA) publican informe anual con estados.
+- **ASIC** (Form 388, cobra por documento): según resúmenes de búsqueda, A$20 por documento de menos de 10 páginas y A$50 si tiene 10 o más (A$43/A$73 certificado). NO verificado en el portal. Parar acá = gestión de Guido. **ACNC** no es scriptable con curl.
+
+## Método que funcionó
+
+1. **AFL**: los PDFs viven en `resources.<dominio>/aflc-<slug>/document/AAAA/MM/DD/<uuid>/archivo.pdf` (CMS nuevo) y `s.afl.com.au/staticfile/AFL%20Tenant/<Club>/...` (CMS viejo, 2011-2019, sigue sirviendo en vivo). La página de reports cambia de ruta por club. El CDX de Wayback sobre el SUBDOMINIO `resources.<club>` lista todos los PDFs aunque el CDX del dominio completo dé 504 (Adelaide, Port Adelaide).
+2. **Espejo `footyindustry.com/docs/<Club> AAAA Annual Report.pdf`** (SportsIndustryAU): cubre los 17 clubes AFL ~2005-2024 y varios NRL. **NO es fuente oficial** (copias de ASIC Form 388, muchas escaneadas): se guarda, no se trackea (CLAUDE.md), y cualquier carga necesita verificar contra el original. El CDX de Wayback no lista todo: probar nombres directos en vivo (`docs/` y `2025 docs/`).
+3. **Entidad ≠ nombre del club**: West Coast = Indian Pacific Limited (ACN 009 178 894); Gold Coast = GCFC Limited (ACN 144 555 822); Western Bulldogs = Footscray Football Club Limited (ABN 68 005 226 595); Brisbane Lions = Brisbane Bears-Fitzroy Football Club Limited; GWS = Western Sydney Football Club (Ltd). En NRL, el report del "club" suele ser del leagues club o del grupo (ver `_notas-NRL.md`): verificar carátula.
+4. **Clearinghouse de Sport Australia**: página estática por deporte con links directos a PDF de federaciones nacionales (rugby_union/annual_reports, football/financial-reports, cricket/annual-reports). Los links son SAS de Azure que vencen en ~8 h: releer y bajar enseguida. Solo federaciones, no clubes.
+5. **Rugby (`*.rugby`)**: sitios detrás de Vercel Security Checkpoint (429/403, no se evadió). Los PDFs sí se bajan de `d26phqdbpt0w91.cloudfront.net/NonVideo/<GUID>.pdf` (GUID por búsqueda web o Wayback). Idea pendiente: clasificar por carátula los ~1.758 PDFs de ese CloudFront.
+6. **Gotchas**: un link del sitio puede servir el PDF equivocado (Brumbies "2018" = "2019", idéntico byte a byte; Hawthorn `2016-0328 ...pdf` es FY2017; el espejo trae un "2018" de Carlton que es FY2016). Wayback CDX throttlea (pausar 20-45 s; usar filtro server-side); capturas truncadas a 1.048.576 / 2.097.152 / 5.242.880 bytes (Western Bulldogs 2013 pesa exactamente 2.097.152: re-chequear). Muchas copias ASIC son carátula con texto + estados como imagen: tratarlas como escaneo.
+
+## Pendientes de gestión (resumen; el detalle está en cada club)
+
+Vercel (Brumbies/Waratahs/Reds/Force/RA 2022-25), Issuu (Cricket Australia FY24-25; Parramatta Leagues 2021-24), ASIC por documento (Sydney/West Coast/Port/Gold Coast/GWS FY2025 y los NRL privados), candidatos a mail (Carlton 2018/2020, Fremantle 2021, Adelaide 2010/2012, Knights, Cowboys completo, A-League, NBL).

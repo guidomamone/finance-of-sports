@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Sourcing Oceanía, 2026-10-03
+
+- Primer barrido de la región (Australia y Nueva Zelanda), sin transcribir ni cargar nada: ~280 PDFs en `Clubes/Australia/` y `Clubes/Nueva Zelanda/` (no trackeados).
+- AFL: los 18 clubes con 12-15 ejercicios cada uno (2011-2025). Collingwood, Essendon, Hawthorn, Brisbane, St Kilda, Melbourne, Geelong, Carlton, Adelaide, Fremantle, North Melbourne, Richmond (solo informe conciso) y Western Bulldogs, desde el sitio oficial o Wayback; Sydney, West Coast, Port Adelaide, Gold Coast y GWS solo vía el espejo no oficial footyindustry.com (copias de ASIC Form 388, muchas escaneadas).
+- NRL: 10 de 17 clubes con documentos (Penrith, Bulldogs, Souths [solo el Member Co], Parramatta, Roosters, Cronulla, Broncos, Storm, Wests Tigers, Cowboys, Raiders escaneado); sin nada público: Manly, Knights, Titans, Dolphins, Dragons (Pty), Warriors.
+- NZ: NZ Rugby (9) y NZ Cricket (7); las franquicias de Super Rugby, Phoenix y Auckland FC no tienen estados públicos (GP Ltd + LP).
+- Rugby Australia (11), Football Australia (10), Cricket Australia (8), Cricket Victoria (9), WACA (6). A-League y NBL: Pty Ltd privadas, sin publicación.
+- Notas por club en `fuentes/Australia/` y `fuentes/Nueva Zelanda/`, índices `fuentes/_indice/Australia.md` y `Nueva Zelanda.md` (con 11 y 6 líneas reescritas para el clasificador de `generate-fuentes-index.js`, que no entendía "reports").
+- Pendiente de proponer a Guido: `paises/Australia.md` y `paises/Nueva-Zelanda.md` (no se editó ningún skill).
+
 ## Sourcing España/Francia, 2026-10-03
 
 - España: ~40 PDFs de cuentas anuales/informes de auditoría nuevos en `Clubes/España/<Club>/` (no
@@ -28,6 +38,7 @@ que dice `ESTADO.md` era verdad ese día.
   Mallorca 5 (+2013-14); Levante: 14 PDFs de reestructuración 2025 (deuda/viabilidad/valoración).
 - Línea `**Ángulos**` agregada a las 13 fichas de club tocadas; `fuentes/_indice/España.md`
   actualizado. Pendientes reales en `Admin/TODO.md` punto 113.
+
 ## Versión 439 — El diccionario de deuda en inglés vuelve a funcionar (+3 términos) (2026-10-03)
 
 - `tools/vocabulario.mjs`: la lista `en` de DEUDA_FINANCIERA había quedado dentro de un comentario desde la Versión 422 (ningún balance en inglés encontraba su deuda por diccionario). Va en su propia línea y suma 'due to banks', 'loans and other financial*', 'bonds and other financial liabilities' (formato italiano en inglés, Juventus). Aprobado por Guido.
