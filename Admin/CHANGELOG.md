@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 460 — Reintento en el mismo modo, sin pisar lo que sirve, una vez (2026-10-04)
+
+- `lote.mjs --reintentar`: (1) si la localización vigente es "las notas hacen de estado", el reintento relocaliza en ese modo (con el índice ampliado y lo que faltó); (2) un reintento que da "sin estado" no pisa una localización con estado (el intento queda en `.ubicacion-reintento.json`); (3) el reintento por "categoría en 0" queda marcado en `.reintento-categorias.json` y no se vuelve a ofrecer.
+- Caso: Fortaleza 2017 (solo notas) se reintentó en modo normal, dio "sin estado" y pisó la localización buena (restaurada desde git); el lote lo volvía a ofrecer.
+- Medido: ensayo de `prueba-completa` sin `--reintentar` idéntico; con `--reintentar`, solo Fortaleza 2017 pasa a "reintento con las notas como estado". Afecta como mucho a 8 localizaciones (Fortaleza con notas como estado) y 3 propuestas con categoría en 0. Simulada la marca: Fortaleza 2017 deja de ofrecerse. La pieza (2) se comprueba en la próxima corrida real.
+
 ## Versión 459 — Caja y deuda: la escala en la compuerta, con plausibilidad; "4) Due to banks" (2026-10-04)
 
 - `caja-deuda.mjs`: la etiqueta para el diccionario pierde una numeración de lista al principio ("4)", "a)", "IV.").

@@ -398,7 +398,9 @@ Qué pasa después:
   año se carga igual con el renglón sin abrir). Un año ya cargado (registro o sitio) solo se reintenta por categoría en 0.
 - El reintento vuelve a localizar con un índice más permisivo (cuenta las filas que terminan en "-") y con la lista de lo que faltó, y
   extrae con esa misma lista (y la regla de usar la columna de totales de un cuadro por segmento para un renglón del estado).
-- Una sola vez por documento. Si sigue faltando, se carga con aviso.
+- Una sola vez por documento (también por "categoría en 0": queda la marca `.reintento-categorias.json`). Si sigue faltando, se carga con aviso.
+- Va en el MISMO modo que la localización vigente (si es "las notas hacen de estado", en ese modo), y un resultado "sin estado" no pisa una
+  localización que tenía estado.
 
 ### Troubleshooting: un desglose que sigue sin sumar después del reintento
 
