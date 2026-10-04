@@ -275,6 +275,17 @@ const juventusitRevenueLinesByYear = {
     { rawLabel:'Other revenue and income', normalizedCategory:'other_income', amountNative:35.844221, disclosureLevel:'aggregated' }, // pág. 142, precedente
     { rawLabel:'Share of results of associates and joint ventures', normalizedCategory:'other_income', amountNative:0.157487, disclosureLevel:'aggregated' }, // pág. 142, Jev 1
   ],
+  // 2024: cargado por tools/cargar.mjs (2026-10-04) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Juventus/Juventus-annual-financial-report-2023-24.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2024: [
+    { rawLabel:'Ticket sales', normalizedCategory:'matchday_competition', amountNative:57.747868, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'Audiovisual rights and media revenues', normalizedCategory:'broadcasting', amountNative:99.727971, disclosureLevel:'aggregated' }, // pág. 123, Jev 1
+    { rawLabel:'Revenues from sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:132.558275, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'Revenues from sales of products and licences', normalizedCategory:'sponsorship_commercial', amountNative:27.950406, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'Revenues from players\' registration rights', normalizedCategory:'player_sales', amountNative:34.170085, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'Other revenues and income', normalizedCategory:'other_income', amountNative:37.926468, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'Share of results of associates and joint ventures', normalizedCategory:'other_income', amountNative:0.460977, disclosureLevel:'aggregated' }, // pág. 123, Jev 1
+  ],
 };
 const juventusitExpenseLinesByYear = {
   2012: [ // tools/cargar.mjs (2026-10-03)
@@ -553,6 +564,18 @@ const juventusitExpenseLinesByYear = {
     { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-159.134997, disclosureLevel:'aggregated' }, // pág. 142, precedente
     { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-12.380303, disclosureLevel:'aggregated' }, // pág. 142, precedente
     { rawLabel:'Provisions, write-downs and release of funds', normalizedCategory:'other_amortisation', amountNative:-5.691459, disclosureLevel:'aggregated' }, // pág. 142, precedente
+  ],
+  2024: [ // tools/cargar.mjs (2026-10-04)
+    { rawLabel:'Purchases of materials, supplies and other consumables', normalizedCategory:'admin_general_expense', amountNative:-4.291393, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'Purchases of products for sale', normalizedCategory:'other_expenses', amountNative:-13.722398, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'External services', normalizedCategory:'admin_general_expense', amountNative:-81.487658, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'Players\' wages and technical staff costs', normalizedCategory:'wages_squad', amountNative:-239.03938, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'Other personnel', normalizedCategory:'admin_general_expense', amountNative:-23.445034, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'Expenses from players\' registration rights', normalizedCategory:'other_expenses', amountNative:-22.214748, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'Other expenses', normalizedCategory:'other_expenses', amountNative:-13.705941, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'Amortisation and write-downs of players\' registration rights', normalizedCategory:'player_amortisation', amountNative:-139.140296, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'Depreciation/amortisation of other tangible and intangible assets', normalizedCategory:'other_amortisation', amountNative:-11.140365, disclosureLevel:'aggregated' }, // pág. 123, precedente
+    { rawLabel:'Provisions and other write-downs/reverses and releases of funds', normalizedCategory:'other_amortisation', amountNative:-17.465991, disclosureLevel:'aggregated' }, // pág. 123, Jev 1
   ],
 };
 const juventusitFiscalYearMeta = {
@@ -967,6 +990,23 @@ const juventusitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:503.680824, officialTotalExpenses:602.689924, officialPAT:-123.294245,
   },
+  // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 0. Guido 2026-10-03: indicador por acción, no un importe
+  2024: { // tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'juventus-it-annual-financial-report-2023-24',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-20.81279, tax:-3.249101,
+    extraRows: [
+      {label:'Financial income', value:3.784666},
+      {label:'Financial expenses', value:-24.597456},
+      {label:'Current taxes', value:-3.117744},
+      {label:'Deferred tax assets and liabilities', value:-0.131357},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:390.54205, officialTotalExpenses:565.653204, officialPAT:-199.173045,
+  },
 };
 const juventusitPresupuestoOverlayByYear = {};
 
@@ -1110,6 +1150,12 @@ Object.assign(sources, {
     title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-04) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'juventus-it-annual-financial-report-2023-24': {
+    id:'juventus-it-annual-financial-report-2023-24', clubId:'juventus-it',
+    title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2023-24 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-04) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
