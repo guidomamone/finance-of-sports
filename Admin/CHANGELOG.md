@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 443 — Validación por página: lo que no cambió no se vuelve a pagar (2026-10-04)
+
+- `tools/huella-paginas.mjs` (nuevo): huella (sha1) de cada página del .md; `splitPages` se mudó ahí desde `resolver-inventario.mjs`.
+- `resolver-inventario.mjs`: guarda `paginasSha` en su línea de `transcripciones-verificaciones.jsonl`; una página con la misma huella que en la última validación "listo" no vuelve a Claude ni a Gemini (conserva su resolución). El ensayo también las descuenta.
+- `inventario-transcripciones.mjs`: si el .md cambió pero ninguna página validada cambió, conserva el estado; si cambiaron, "sin-verificar" dice cuáles.
+- Medido: ninguna validación tenía huellas (todo idéntico; ensayo de los lotes 07 a 13 idéntico). Simulado (y restaurado): Juventus 2021-22 con la pág. 233 cambiada, ensayo del resolver US$ 1,00 (50 págs.) → US$ 0,02 (1 pág.); Ferroviária 2018 con la pág. 5 cambiada → "sin-verificar ... 5"; 2022 sin páginas cambiadas → sigue "listo".
+- `.gitignore`: `.doc` y `.rtf` fuente (Kazajistán, Eslovaquia) y `Admin/.lote-lista-actual.txt`.
+- HANDOFF: "Dónde estamos" sin lo resuelto y con los lotes de prueba para medir cualquier cambio de script.
+
 ## Versión 442 — --reintentar solo sobre lo que destraba la carga; --detalle para lo opcional (2026-10-04)
 
 - `lote.mjs`: un desglose que no suma en un documento cuya etapa 6 cerró (verificación ok) ya no entra al reintento (etapa 3, escalón 1) con `--reintentar`; entra solo con `--reintentar --detalle`. Entran siempre: categoría en 0 y desglose que no suma con la etapa 6 sin cerrar.

@@ -22,51 +22,52 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ## Dónde estamos
 
-**Seis clubes en el sitio local, sin push:** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; Goiás (Brasil) 2008-2017 y
-2021-2025; Novorizontino (Brasil) 2010 y 2013-2025; AEL Larissa (Grecia) 2016-2025; **Juventus (Italia) 2003-2025**.
-Versiones de esta tanda: 407-440.
+Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con los lotes de prueba de abajo):
 
-Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
-
-1. **Juventus (`juventus-it`) cargado 2003-2025** (estado separado; Versiones 433-440). Pendiente:
-   - **Deuda 2007-2025 cargada A MANO** (y caja 2022, 2024, 2025), del balance separado. El problema de fondo sigue: la IA (escalón 2) propone valores razonables (2007 18,7 M = "Loans and other financial liabilities"
-     corriente + no corriente) pero la compuerta no confirma: la columna "año anterior" del documento siguiente dice otra cosa (reexpresiones
-     IFRS, o la IA del año vecino eligió otras filas). Y desde 2007 la deuda viene en dos filas con la misma etiqueta, que el escalón 1 no
-     suma (familia repetida). A diseñar: escalón 1 que sume corriente + no corriente de la misma familia.
-   - **`caja-deuda.mjs` no respeta el ajuste `perimetro`:** lee el primer balance del .md (el consolidado).
-     2023 se corrigió a mano. A diseñar: que caja-deuda reciba el perímetro (como el cambio H para localizar).
-   - **Escala de caja-deuda equivocada cuando hay filas de ajuste manual:** `factorPorIngresos` compara los rubros cargados con las cifras
-     del .md; en 2003-2006 las filas de la nota de sponsors (en miles) ganaron y la escala salió miles (valores x1000, corregidos a mano).
-   - **2022 (.md cambiado), A TRATAR:** (a) que `avisarRegistro` exija confirmados solo los bloques que usa la lectura ganadora (en 2022
-     frenaban notas no usadas: se destrabó con 29 ajustes `confirmado`); (b) el rearmado no debería dispararse por la marca de una corrida
-     con otro perímetro; (c) `--reintentar` sobre una lista mezclada rehace lo que no hace falta; (d) el caché de localizar/extraer no se
-     invalida si el .md cambió (el resolver corrió 4 líneas el estado de 2022).
-   - Nota visible para el sitio (no hecha): quiebre de serie 2006 (formato italiano, con extraordinarios) → 2007 (IFRS).
-   Cambios de esta tanda: E (voces antes de rearmar; V433), F (lectura 6; V434), G (ajuste `fila` en lecturas 5-6; V435, 437), H (perímetro
-   a localizar; V436), `carpetas-clubes --json` sin corte (V438), diccionario de deuda en inglés reactivado (V439). Defectos vistos: el
-   ensayo estima extraer con un costo fijo; `compararVecino` no cuenta filas de ajuste; el escalón 1a solo mira "revisar"; "4) Due to banks"
-   no matchea por el número adelante; escalón 3 de caja/deuda (media móvil) aprobado y en pausa.
-1b. **PRIORIDAD (pedido de Guido, 2026-10-04): una dinámica que no haga pasar lo mismo por las APIs varias veces.** Con Juventus se pagó
-   de más varias veces: el lote 13 localizó 2022-2025 antes de que el perímetro llegara a localizar (cambio H) y hubo que relocalizar; un
-   `--reintentar` sobre una lista mezclada rehízo 2023-2025 sin necesidad; rearmar una página invalidó la validación del .md entero y hubo
-   que pagar el resolver otra vez (2022, ~US$ 1); el ensayo subestima extraer ~5 veces en documentos largos (sorpresas de costo). A diseñar,
-   en este orden: (i) HECHO (V441): compuerta antes de localizar (`antes-de-localizar.mjs`), frena sin pagar si falta perímetro o cierre;
-   (ii) HECHO (V442): `--reintentar` solo lo que destraba la carga; el desglose que no suma con la etapa 6 cerrada, con `--detalle`; (iii) cambiar una página del .md no invalida las
-   páginas validadas que no cambiaron (validación por página, no por archivo); (iv) el ensayo estima extraer por el tamaño real de los
-   bloques elegidos; (v) en el resumen final, lo gastado en cada documento y por qué (para ver repeticiones).
-2. Candidatos después: Ferroviária (Brasil, 12 años, 9 escaneos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el
-   escalón 2 de la etapa 2. Guido quiere probar varios clubes a la vez con el mismo esquema de tabla y etapas (mejor si son del mismo país
-   o formato).
-3. Opcional, sin urgencia: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs
-   --lista Admin/lote-08b.txt --ejecutar --reintentar` (~US$ 0,30) y recargar con `cargar.mjs --reemplazar` si las notas 21-22 suman.
-4. Defectos vistos con Novorizontino, sin arreglar: el RESULTADO final de `lote.mjs` muestra propuestas de carga viejas ("el club no
-   existe" en años ya cargados); el caché de localizar/extraer no se invalida si el .md cambió (hace falta `--rehacer`).
-5. Pendientes de la auditoría, no urgentes: escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final
+1. **No pagar dos veces lo mismo en las APIs** (pedido de Guido, 2026-10-04). Hecho: compuerta antes de localizar (V441), `--reintentar`
+   solo lo que destraba la carga y `--detalle` (V442), validación por página (V443). Falta:
+   - (iv) el caché de localizar, extraer y validar no sabe si el .md cambió (hoy: "existe el archivo"). Casos: Juventus 2021-22 (.md
+     13:54, localizar/extraer 13:36-13:37; el resolver corrió 4 líneas) y Novorizontino 2025 (.md 22:55, cachés 22:46-22:47). Guardar
+     la huella del .md en `.ubicacion/.filas/.validacion.json` (patrón de `huellas.mjs`).
+   - (v) el ensayo estima extraer con US$ 0,07 fijo (sin localizar) o con 4.000 tokens de salida; lo real en Juventus fue US$ 0,18-0,34
+     (8.000-15.000 tokens de salida). Estimar por el tamaño de los bloques elegidos o por la mediana del club.
+   - (vi) en el resumen final del lote, lo gastado en cada documento y por qué.
+   - Las validaciones viejas no tienen huella por página: el ahorro de V443 empieza después de la próxima corrida del resolver de cada documento.
+2. **Caja y deuda** (defectos vistos con Juventus; deuda 2007-2025 y caja 2022, 2024, 2025 hoy cargadas a mano): el escalón 1 tiene que
+   sumar corriente + no corriente de la misma etiqueta (desde 2007, "Loans and other financial liabilities" en dos filas); `caja-deuda.mjs`
+   tiene que respetar el ajuste `perimetro` (lee el primer balance del .md, el consolidado); la escala (`factorPorIngresos`) no puede
+   confundirse con filas de ajuste manual (2003-2006 salió en miles); "4) Due to banks" no matchea por el número adelante. Escalón 3
+   (media móvil) aprobado y en pausa.
+3. **Juventus 2022, a tratar:** que `avisarRegistro` exija confirmados solo los bloques que usa la lectura ganadora (se destrabó con 29
+   ajustes `confirmado`); el rearmado no debería dispararse por la marca de una corrida con otro perímetro.
+4. **Defectos chicos:** `compararVecino` no cuenta las filas de ajuste manual; el escalón 1a del lote solo mira "revisar" y no
+   "sin-verificar"; el RESULTADO final de `lote.mjs` muestra propuestas de carga viejas ("el club no existe" en años ya cargados).
+5. **Auditoría de los 6 clubes cargados** (subagente Sonnet): categorías dudosas o datos raros. Y la nota visible del quiebre de serie de
+   Juventus 2006 (formato italiano, con extraordinarios) → 2007 (IFRS).
+6. Candidatos después: Ferroviária (Brasil, 12 años, 9 escaneos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el
+   escalón 2 de la etapa 2; antes de localizar piden elegir entidad (dos por año) y perímetro (la compuerta de V441 lo avisa).
+7. Opcional: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs --lista
+   Admin/lote-08b.txt --ejecutar --reintentar` (~US$ 0,30) y recargar con `cargar.mjs --reemplazar` si las notas 21-22 suman.
+8. Pendientes de la auditoría, no urgentes: escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final
    que repite el documento siguiente; costos financieros mal rotulados); marcar "no desglosado" distinto de `cero-real` y que la página lo
    muestre (`fiscalYearMeta.sinDesglose`); cerrar casos obsoletos de la cola automáticamente; falso positivo del inventario con números que
    no son cifras contables (firmas digitales); chequeo de coherencia entre años (prototipado, no construido).
 
-Publicación: `inventario-transcripciones` está mergeada entera en `main` (2026-10-02); falta el push, que lo hace Guido (`git push origin main`).
+### Lotes de prueba (medir CUALQUIER cambio de script antes y después)
+
+Lo cargado tiene que dar idéntico. Pool fijo: `Admin/lote-07*.txt` (UC), `lote-08*` (Fortaleza CEIF), `lote-09*` y `lote-10*` (Goiás,
+Novorizontino), `lote-11*` y `lote-12*` (AEL Larissa), `lote-13*` (Juventus): 26 listas, gratis (ensayo).
+
+```bash
+mkdir -p /tmp/medir/antes; for l in Admin/lote-0[78]*.txt Admin/lote-09*.txt Admin/lote-1[0-3]*.txt; do node tools/lote.mjs --lista $l > /tmp/medir/antes/$(basename $l).out 2>&1; done
+# ... el cambio ... y lo mismo a /tmp/medir/despues; después: diff -r /tmp/medir/antes /tmp/medir/despues
+```
+
+Además, según lo que toque: lo mismo con `--reintentar` (camino de error); `node tools/caja-deuda.mjs --medir --club <id>` (caja y deuda);
+`node tools/antes-de-localizar.mjs --lista <lista>` (compuerta de la etapa 3). Lo que no se puede ejercitar con lo cargado se simula en el
+scratchpad con copia de seguridad de `Admin/` y se restaura (V443: una validación previa falsa con huellas por página).
+
+Publicación: falta el push, que lo hace Guido (`git push origin main`).
 
 Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; nunca frena; `--medir --club <id>` para medir):
 
@@ -105,9 +106,8 @@ Pendientes:
 
 - **Antes de cambiar una tool, mostrar el diseño en pocas líneas y esperar el ok.** No escribir código antes.
 - **Un cambio por vez.** No mezclar varios arreglos en una tanda.
-- **Nada de "manta corta":** cada arreglo se mide antes de entrar; si rompe otros, no entra. Por ahora se mide en **Universidad Católica**
-  (`Admin/lote-07.txt`, tiene que dar idéntico) y en **Fortaleza CEIF** (`Admin/lote-08.txt`), más el club en curso. Más adelante: un pool
-  fijo de años/clubes de prueba (distintos países, formatos y escaneos) para medir siempre contra el mismo conjunto.
+- **Nada de "manta corta":** cada arreglo se mide antes de entrar; si rompe otros, no entra. Se mide con los **lotes de prueba**
+  ("Dónde estamos").
   "Idéntico" es lo que se CARGA. En un escalón que decide (como el precedente de la etapa 7) vale que decida MENOS veces si nunca se equivoca
   más: lo que deja de decidir baja de escalón y pide una segunda mirada (Jev/Claude o la cola). Caso (Versión 403, aprobado por Guido): el
   precedente con la nota deja sin decidir "Otros gastos" de UC 2014 y 2016 (no se equivocan, piden otra mirada); errores de precedente: 0 → 0.
@@ -172,6 +172,7 @@ Mitigaciones:
             → re-transcribir con Mistral y volver a localizar (con --reintentar) ── ¿lo encuentra? sí → sigue
  ESCALÓN 1a (Versión 433) el inventario dice "revisar" → resolver-inventario.mjs (las VOCES): Claude solo en las páginas con cifras que
             no coinciden con el texto del PDF; ignora las dudas en prosa ── compuerta: el inventario queda "listo" → sigue
+            (Versión 443) por página: una página con la misma huella que en la última validación "listo" se reusa, no se paga otra vez
  ESCALÓN 1b (Versión 395, camino de error) PDF digital, la etapa 4 dice que el .md no coincide con el texto propio y la verificación no
             quedó ok → texto-propio-a-md.mjs rearma esas páginas (gratis) y se vuelve a localizar ── compuerta: etapas 4 y 6
             rearmado, con su escalera (Versión 397): método "columnas" ─► si la etapa 6 sigue sin cerrar, método "regiones" (una vez cada uno)
@@ -510,7 +511,7 @@ Pendientes, a decidir con casos reales:
 
 ## Cómo arranca la próxima sesión
 
-(2026-10-04) Juventus quedó entero; lo siguiente es el punto 1b de "Dónde estamos" (diseño, con el ok de Guido) o el club siguiente.
+(2026-10-04) Sesión de arreglos (sin sumar clubes): seguir por el punto 1 de "Dónde estamos" (iv, v, vi) y después 2-5.
 
 1. `git status` y `git log --oneline -5` en `main`.
 2. `node tools/estado.mjs`.
