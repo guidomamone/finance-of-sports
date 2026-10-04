@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Sourcing España/Francia, 2026-10-03
+
+- España: ~40 PDFs de cuentas anuales/informes de auditoría nuevos en `Clubes/España/<Club>/` (no
+  trackeados). Girona 7 y Getafe 7 ejercicios, Valencia 6, Celta 6, Athletic 5 (ya llegaron a 5);
+  Elche, Rayo, Mallorca y Villarreal 4; Oviedo, Espanyol y Osasuna 3; Levante 3 + memoria.
+- Técnica nueva documentada en `fuentes/España/_notas-generales.md`: listar el prefijo del CMS de
+  LaLiga (`statics-maker.llt-services.com/<código>/*`) y los CDN propios en Wayback y leer la
+  carátula de cada PDF. Aviso de falsos "0 resultados" cuando archive.org está offline.
+- Francia: `sta.lfp.fr` pasó a `www.sta.lfp.fr`; DNCG sigue sin 2023/24. Sin PDFs nuevos.
+- Mismo día, archive.org de vuelta: Sevilla 8 ejercicios (+4 históricos 2014-2020 del archivo legado),
+  Mallorca 5 (+2013-14); Levante: 14 PDFs de reestructuración 2025 (deuda/viabilidad/valoración).
+- Línea `**Ángulos**` agregada a las 13 fichas de club tocadas; `fuentes/_indice/España.md`
+  actualizado. Pendientes reales en `Admin/TODO.md` punto 113.
 ## Versión 439 — El diccionario de deuda en inglés vuelve a funcionar (+3 términos) (2026-10-03)
 
 - `tools/vocabulario.mjs`: la lista `en` de DEUDA_FINANCIERA había quedado dentro de un comentario desde la Versión 422 (ningún balance en inglés encontraba su deuda por diccionario). Va en su propia línea y suma 'due to banks', 'loans and other financial*', 'bonds and other financial liabilities' (formato italiano en inglés, Juventus). Aprobado por Guido.

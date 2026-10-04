@@ -82,3 +82,53 @@ forma voluntaria/parcial aunque no reciban subvención pública que los obligue.
 Actualizar cuando un ángulo nuevo de nivel-país se confirme (un CMS compartido nuevo, un patrón de
 bloqueo nuevo con su solución) — no hace falta una entrada por cada club individual, eso vive en
 `fuentes/España/<Club>.md`.
+
+## Sesión 2026-10-03 (sourcing España, objetivo "5 ejercicios por club")
+
+- **Técnica que rindió 40+ ejercicios en una tarde: listar el PREFIJO del CMS de LaLiga en Wayback y
+  clasificar cada PDF por OCR/texto de la carátula.** `https://web.archive.org/cdx/search/cdx?url=
+  statics-maker.llt-services.com/<código>/*&collapse=urlkey&fl=original,mimetype,timestamp` (sin
+  `filter=mimetype:...`, que con el `:` sin codificar devuelve vacío) lista TODO lo que el club subió
+  al CMS, incluidos los ejercicios viejos que la página de transparencia ya no linkea (Girona 126
+  PDFs, Getafe 101, Levante 81, Oviedo 65, Mallorca 34, Rayo 20, Elche 11). Los PDFs siguen vivos en
+  el host (curl directo, 200); Wayback solo sirve de índice. La fecha de la URL es la de subida, no
+  la del ejercicio: leer la carátula (muchos son escaneos → `pdftoppm`+`tesseract -l spa`).
+  Códigos confirmados: `gir`, `mll`, `ray`, `get`, `elc`, `lev`, `ovi`. Espanyol y Sevilla NO usan
+  este CMS (Espanyol: `rcdespanyol.com/assets/docs/transparencia/`; Sevilla: `mediaverse.sevillafc.hiway.media`).
+- **Mismo patrón en CDNs propios**: listar `<host>/public/Attachment/*` (Valencia, Osasuna),
+  `rccelta.es/app/uploads/*` (Celta), `cdn.athletic-club.eus/*` (Athletic) o los subdominios legados
+  (`seguro.valenciacf.com/bd/archivos/` — resolvió el pendiente de Valencia: 2018-19, 2019-20, 2021-22).
+- **Cuidado con falsos "0 resultados": el 2026-10-03 archive.org estuvo "Temporarily Offline"
+  (devuelve un HTML con status 200)** y los listados de ese momento (`sevillafc.es` dominio completo,
+  `rcdmallorca.es` dominio completo) dieron 0 sin ser evidencia de nada — Sevilla y el dominio viejo
+  de Mallorca quedan SIN barrer a fondo. Validar siempre que la respuesta del CDX no empiece con
+  `<html`.
+- **Pendiente de esta sesión por club** (para llegar a 5 ejercicios): Elche, Rayo, Mallorca,
+  Villarreal (4 c/u); Oviedo, Espanyol (3); Levante (3 + memoria); Osasuna (3 financieros); Sevilla
+  (4 + borrador rechazado, sin barrer); Real Sociedad (0, gateado a accionistas).
+
+## Otros deportes de España (barrido 2026-10-03, sin PDFs de clubes todavía)
+
+Resultado: **a diferencia de Reino Unido (Companies House), en España no apareció ningún canal gratuito
+y común a un deporte distinto del fútbol.** Lo probado:
+
+- **Baloncesto (ACB)**: el portal de transparencia (`acb.com/articulo/ver/426262-portal-de-transparencia-acb.html`)
+  publica solo presupuestos y cuentas de la ACB como entidad (y de ACEBSA), NO de los clubes. Los clubes
+  (SAD: Valencia Basket, Saski Baskonia, Baloncesto Málaga/Unicaja, Joventut Badalona, etc.) depositan en
+  el Registro Mercantil (de pago); sus webs no publican cuentas: `valenciabasket.com/transparencia` y
+  `unicajabaloncesto.com/transparencia` dan 404, `baskonia.com/transparencia` y `penya.com/es/club/transparencia`
+  (Joventut) existen pero sin cuentas (Joventut solo retribuciones de órganos de dirección y subvenciones;
+  la nota de prensa de 2024 dice que el balance al 30-6-2024 fue verificado por Uniaudit Oliver Camps).
+  Wayback de `valenciabasket.com` y `unicajabaloncesto.com`: 0 PDFs financieros; `baskonia.com`: 1 (un
+  suplemento de 2013). Agregados de prensa (2Playbook, Solobasket) dan ingresos/presupuestos por club como
+  LEAD sin verificar.
+- **Balonmano (ASOBAL)**: `asobal.es/transparencia/` publica cuentas auditadas 2021-22 a 2024-25 de la
+  Liga como entidad, no de los clubes.
+- **Fútbol sala (LNFS), vóley (Superliga), rugby (División de Honor)**: sin portal con cuentas de clubes;
+  la RFE de Rugby publica sus cuentas federativas (`ferugby.es/wp-content/uploads/2024/12/RFERUGBY-OpinionCCAA-2023_Firmadas.pdf`),
+  no las de los clubes (VRAC, Ordizia, etc., asociaciones sin obligación de publicar).
+- **Real Madrid y FC Barcelona**: baloncesto, balonmano, fútbol sala y hockey ya están DENTRO de sus
+  cuentas/informes (club polideportivo), no hay documento separado por sección.
+- **Camino no agotado** (no se hizo por costo/valor): barrido Wayback por dominio de cada club ACB cuando
+  archive.org esté estable, y Registro Mercantil (gestión de Guido, de pago) para Valencia Basket,
+  Baskonia, Unicaja y Joventut, que son los 4 con SAD y mayor presupuesto.

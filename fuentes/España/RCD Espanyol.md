@@ -1,5 +1,7 @@
 # Reial Club Deportiu Espanyol de Barcelona, S.A.D.
 
+**Ángulos**: sitio oficial: parcial — falta 2021-22 y 2022-23 · Wayback CDX: parcial — rcdespanyol.com/assets/docs/transparencia: 30 anexos revisados, 1 hallazgo (Memoria 20-21) · búsqueda web: no intentado · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit bueno (2026-09-16).** 2 ejercicios descargados a `Clubes/España/RCD Espanyol/`, encontrados
   navegando la página de transparencia con el browser:
   - `cuentas-anuales-2024-2025.pdf` (199 págs.) — link "Anexo Cuentas Anuales"/"Cuentas Anuales
@@ -33,3 +35,9 @@
   el otro color blanco, gana el azul por el criterio de desempate de
   `club-or-year-onboarding/SKILL.md` §3) + teamcolorcodes.com, verificado 2026-09-22.
 - Último chequeo: 2026-09-22.
+
+## Sourcing España/Francia (2026-10-03)
+
+Del listado de Wayback de `rcdespanyol.com/assets/docs/transparencia/` salió la **Memoria Integrada 2020-21** (Junta General del 9-dic-2021, "Comptes Anuals i Informe de Gestió"): `Memoria_21_mes_res_part1.pdf` (36 págs.) y `part2.pdf` (158 págs.), guardadas como `memoria-integrada-2020-2021-parte1/2-cuentas.pdf` (la parte 2 es la que debería traer los comptes anuals; sin verificar página por página). Los anexos 3-46 son documentación de transparencia no financiera; `ANEXO_21.pdf` es la verificación del EINF 2021/22 (no financiera). → **3 ejercicios** (20-21, 23-24, 24-25). Faltan 2021-22 y 2022-23.
+
+PDFs guardados en `Clubes/España/RCD Espanyol/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.

@@ -1,5 +1,7 @@
 # Sevilla Fútbol Club, S.A.D.
 
+**Ángulos**: sitio oficial: agotado (JGA 2025 en mediaverse.sevillafc.hiway.media + archivo legado sevillafc.es/sites/default/files) · Wayback CDX: agotado (dominio sevillafc.es, 4 CCAA históricas recuperadas) · búsqueda web: no intentado · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit moderado (2026-09-13).** 4 ejercicios anuales reales, del 2021-22 al 2024-25, descargados a
   `Clubes/España/Sevilla FC/`: `cuentas-anuales-2021-2022.pdf`, `cuentas-anuales-2022-2023.pdf`,
   `cuentas-anuales-2023-2024.pdf`, `cuentas-anuales-2024-2025.pdf` — todos bajados de la página de
@@ -35,3 +37,7 @@
   exacto, verificado 2026-09-21. La tabla de footylogos de LaLiga no incluye al Sevilla. Camiseta
   blanca con acento fuerte: que se represente con su rojo de marca es decisión de Guido de la
   Versión 178.
+
+## Sourcing España/Francia (2026-10-03)
+
+Con archive.org de vuelta se barrió `sevillafc.es` (dominio completo) y salieron 4 informes de auditoría + cuentas del archivo legado `sevillafc.es/sites/default/files/...`: **2014-15** (51 págs., `inline-files/CCAA_e_informe_de_auditoria_a_30_de_junio_del_2015.pdf`), **2015-16** (52 págs., `documents/30.06.2016_ccaa_sfc.pdf`), **2018-19** (59 págs., `inline-files/CCAA e informe de auditoría 2019.pdf`) y **2019-20** (58 págs., `.../2020.pdf`; la primera captura salió truncada a 1.048.576 bytes — gotcha de Wayback ya documentado en `club-sourcing` 0.1 — y se reemplazó por la captura de 2023-05-10). Carátulas verificadas. Con 2021-22 a 2024-25 → **8 ejercicios**. Huecos: 2016-17, 2017-18 y 2020-21. PDFs en `Clubes/España/Sevilla FC/`. Último chequeo: 2026-10-03.

@@ -1,5 +1,7 @@
 # Elche Club de Fútbol, S.A.D.
 
+**Ángulos**: sitio oficial: agotado (CMS LaLiga statics-maker, 11 PDFs) · Wayback CDX: agotado (prefijo del CMS) · búsqueda web: no intentado · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit bueno (2026-09-16).** 2 ejercicios descargados a `Clubes/España/Elche CF/`, ambos vía el CMS
   compartido `statics-maker.llt-services.com/elc/...` (ver `_notas-generales.md`):
   - `cuentas-anuales-presupuesto-gestion-2024-2025.pdf` (75 págs.) — link "Cuentas Anuales" bajo el
@@ -26,3 +28,9 @@
   exacto (2023/24) y con ruido de redondeo de ~3 EUR sobre decenas de millones (2024/25).
   Color de marca: `#05642C` (verde, identidad "Franjiverde") — flagcolorcodes.com, verificado 2026-09-22.
 - Último chequeo: 2026-09-22.
+
+## Sourcing España/Francia (2026-10-03)
+
+Del CMS (`statics-maker.llt-services.com/elc/documents/2023/03/15` y `2023/04/14`) se bajaron los informes de auditoría + cuentas de **2020-21** (69 págs.) y **2021-22** (71 págs.), y `2026/04/17/...312.pdf` (75 págs., informe de auditoría 2024-25 de Fides, carátula leída — duplica el ejercicio 2024-25 que ya estaba como "cuentas-anuales-presupuesto-gestion"). → **4 ejercicios distintos** (20-21, 21-22, 23-24, 24-25). Falta 2022-23 (el club bajó a Segunda en ese ejercicio) y 2019-20.
+
+PDFs guardados en `Clubes/España/Elche CF/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.

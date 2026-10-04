@@ -395,6 +395,7 @@ le tocaba). Abrí SOLO el archivo del país/región que estés buscando — no h
 - **Corea del Sur — DART funciona como un EDGAR/SEC coreano, para los clubes de chaebol** → [`paises/Corea-del-Sur.md`](paises/Corea-del-Sur.md)
 - **Croacia — sin registro central gratis, pero el mandato de licenciamiento de la liga alcanza** → [`paises/Croacia.md`](paises/Croacia.md)
 - **Dinamarca — mismo patrón que Bélgica, y una idea reutilizable** → [`paises/Dinamarca.md`](paises/Dinamarca.md)
+- **España — sin registro único; el atajo es listar el CMS de cada club en Wayback** → [`paises/España.md`](paises/España.md)
 - **Francia — sin registro mercantil abierto, pero la DNCG publica bilanes individuales por club** → [`paises/Francia.md`](paises/Francia.md)
 - **Grecia — 100% de la liga top cubierta con un solo canal** → [`paises/Grecia.md`](paises/Grecia.md)
 - **Italia — no es un registro mercantil, es la obligación de licencia UEFA** → [`paises/Italia.md`](paises/Italia.md)

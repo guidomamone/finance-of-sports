@@ -1,5 +1,7 @@
 # Real Club Deportivo Mallorca, S.A.D.
 
+**Ángulos**: sitio oficial: agotado (CMS LaLiga statics-maker, 34 PDFs) · Wayback CDX: agotado (dominio viejo rcdmallorca.es re-barrido con archive.org en línea: solo 2013-14) · búsqueda web: no intentado · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit bueno (2026-09-16).** 1 ejercicio real descargado a `Clubes/España/RCD Mallorca/`, encontrado
   navegando `rcdmallorca.es/en/ley-de-transparencia` con el browser (la página SÍ carga con contenido
   en el HTML, no es de las bloqueadas):
@@ -34,3 +36,11 @@
   la camiseta (negro es secundario, en pantalón/medias desde 1933), hex verificado en
   teamcolorcodes.com/rcd-mallorca-colors/ (PANTONE 2035 C), verificado 2026-09-25.
 - Pendiente sigue igual: ejercicios 2019-20 a 2023-24.
+
+## Sourcing España/Francia (2026-10-03)
+
+Del CMS (`statics-maker.llt-services.com/mll/documents/`) se bajaron los informes de auditoría (José Fco. Balle Cerdá) + cuentas de **2021-22** (63 págs., 2023/04/21), **2022-23** (70 págs., 2024/04/29) y **2023-24** (70 págs., 2025/04/08); el 2024-25 (75 págs., 2026/04/10) ya estaba. → **4 ejercicios**. Falta uno: 2020-21 o anterior. Pista: el dominio viejo `rcdmallorca.es` tuvo `informe_auditoria_cuentas_anuales_13-14.pdf` y `/rcdmallorca/wp-content/uploads/2015/07/informe-auditoria-cuentas-anuales-13-14.pdf` (ejercicio 2013-14, listado por Wayback) — reintentar el barrido cuando archive.org vuelva.
+
+PDFs guardados en `Clubes/España/RCD Mallorca/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.
+
+**Actualización (mismo día, archive.org de vuelta)**: se re-barrió `rcdmallorca.es` y se bajó `informe-auditoria-cuentas-anuales-2013-2014.pdf` (59 págs., captura Wayback 2015-05-31 de `www.rcdmallorca.es/documentos/informe_auditoria_cuentas_anuales_13-14.pdf`; carátula "Real Club Deportivo Mallorca, S.A.D."). Es el único ejercicio anterior archivado del dominio viejo → **5 ejercicios** (2013-14 + 2021-22 a 2024-25; no contiguos; falta 2014-15 a 2020-21).

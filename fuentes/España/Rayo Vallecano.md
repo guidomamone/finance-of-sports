@@ -1,5 +1,7 @@
 # Rayo Vallecano de Madrid, S.A.D.
 
+**Ángulos**: sitio oficial: agotado (CMS LaLiga statics-maker, 20 PDFs) · Wayback CDX: agotado (prefijo del CMS) · búsqueda web: no intentado · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit bueno (2026-09-16).** 1 ejercicio real descargado a `Clubes/España/Rayo Vallecano/`,
   encontrado por búsqueda puntual (WebSearch) del PDF directo en
   `statics-maker.llt-services.com/ray/...` (mismo CMS compartido de otros clubes, ver
@@ -35,3 +37,9 @@
   Madrid, verificado 2026-09-25.
 - Pendiente sigue igual: todos los ejercicios anteriores a 2024-25, y navegar la página de
   transparencia propia del club.
+
+## Sourcing España/Francia (2026-10-03)
+
+Del CMS (`statics-maker.llt-services.com/ray/documents/`) se bajaron los informes de auditoría + cuentas de **2021-22** (48 págs., 2023/07/26), **2022-23** (48 págs., 2024/02/21) y **2023-24** (48 págs., 2025/04/03); carátulas leídas por OCR. Con 2024-25 → **4 ejercicios**. Falta 2020-21 o anterior (el CMS arranca en 2023 y no tiene nada anterior a 2021-22). El archivo de 2023/05/11 (27 págs.) es un reglamento de seguridad, no financiero.
+
+PDFs guardados en `Clubes/España/Rayo Vallecano/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.

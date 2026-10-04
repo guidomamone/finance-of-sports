@@ -1,5 +1,7 @@
 # Athletic Club (Bilbao)
 
+**Ángulos**: sitio oficial: agotado (cdn.athletic-club.eus, 137 PDFs listados) · Wayback CDX: agotado · búsqueda web: no intentado · regulador/país: no aplica (club de socios) · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit moderado (2026-09-13).** 4 ejercicios anuales consecutivos, del 2021-22 al 2024-25,
   descargados a `Clubes/España/Athletic Club/`: `cuentas-anuales-2021-2022.pdf` a
   `cuentas-anuales-2024-2025.pdf` (documento "Cuentas Anuales" oficial, presentado en la Asamblea
@@ -28,3 +30,9 @@
 - Último chequeo: 2026-09-13.
 - Color de marca: `#EE2523` — tabla por liga de footylogos (LaLiga, "Athletic Club Bilbao"), 1er
   color, exacto, verificado 2026-09-21.
+
+## Sourcing España/Francia (2026-10-03)
+
+Se sumó el ejercicio 2020-21: `cdn.athletic-club.eus/imagenes/paginas_plantilla/cuentas20-21CAS.pdf` (34 págs., balance al 30.06.2021) y su informe de auditoría (`auditoria20-21CAS.pdf`). Con 2021-22 a 2024-25 que ya había → **5 ejercicios**. El CDN también tiene los informes de la Comisión de Control Económico y de la Defensoría del Socio (no bajados).
+
+PDFs guardados en `Clubes/España/Athletic Club/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.
