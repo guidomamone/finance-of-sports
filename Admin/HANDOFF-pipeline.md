@@ -31,8 +31,8 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
    US$ 0,32 si todavía no se localizó (V446).
    Y para ver dónde está cada documento: el inventario y el tablero (`estado.mjs`) dicen la etapa y el escalón del proceso nuevo, con
    la misma lógica (`etapa-doc.mjs`, V447-448).
+   Y al final de cada lote, el gasto por documento con "N.ª vez" si se repitió (`gasto-doc.mjs`, V449).
    Falta:
-   - (vi) en el resumen final del lote, lo gastado en cada documento y por qué.
    - `estado.mjs --logica` (lo propio de cada grupo de países) sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`).
    - Las validaciones viejas no tienen huella por página: el ahorro de V443 empieza después de la próxima corrida del resolver de cada
      documento (decisión de Guido, 2026-10-04: no sembrar huellas en el historial).

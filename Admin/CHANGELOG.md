@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 449 — Gasto por documento al final del lote (2026-10-04)
+
+- `tools/gasto-doc.mjs` (nuevo, gratis): lo gastado en una corrida por documento y por tarea (Claude, Mistral, resolver y validar), con "N.ª vez" si esa tarea ya se había pagado antes para el mismo PDF. Suelto: `--lista <l> --desde <ISO> [--hasta <ISO>]`. No cuenta la línea que `verificar.mjs` copia de la validación anterior (repetía su `costoUsd`).
+- `lote.mjs`: imprime el bloque "GASTO POR DOCUMENTO" antes del total; anota lo que costó validar escaneos (Gemini con rutas temporales).
+- Medido: ensayo de los lotes 07 a 13 idéntico (con y sin `--reintentar`). Simulado sobre la corrida real del 2026-10-04 17:30-18:00: Juventus 2022-23 US$ 0,64 (localizar 3.ª vez, extraer 3.ª vez), 2023-24 US$ 0,16 (localizar 3.ª vez), 2021-22 US$ 1,51 (resolver 2.ª vez); coincide con el registro crudo.
+
 ## Versión 448 — El tablero (estado.mjs) con las etapas del proceso nuevo (2026-10-04)
 
 - `tools/etapa-doc.mjs` (nuevo): en qué etapa y escalón del proceso nuevo está cada documento (registro + lo que dejaron las etapas 3-8 en `Generados/`). Lo usan el inventario (V447, movido acá) y el tablero.
