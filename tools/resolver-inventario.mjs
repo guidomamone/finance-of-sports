@@ -80,6 +80,8 @@ import { diagnosticar } from './reparar-pdf.mjs';
 import { paginasConNumeros } from './paginas-con-numeros.mjs';
 import { derivado, ubicar } from './rutas.mjs';
 import { chequearPaginas, quien, tablasDe, respaldoSumas, respaldoFilas } from './chequeos-gratis.mjs';
+// splitPages vive en huella-paginas.mjs (Versión 443): la huella por página usa el mismo corte.
+import { splitPages, huellasDePaginas, huellasDelTexto, ultimaConPaginas, compararPaginas } from './huella-paginas.mjs';
 
 // ---------------------------------------------------------------- utilidades
 const sleep = (s) => new Promise((r) => setTimeout(r, s * 1000));
@@ -100,13 +102,6 @@ function pdfPageTexts(pdf) {
 }
 
 // Parte un .md en {pre, pages:[{n, body}]} por sus marcas "--- pág. N ---", sin perder ni un carácter.
-function splitPages(text) {
-  const re = /^--- pág\. (\d+) ---[ \t]*\r?\n?/gm;
-  const marks = [...text.matchAll(re)];
-  if (!marks.length) return { pre: text, pages: [] };
-  const pages = marks.map((m, i) => ({ n: Number(m[1]), body: text.slice(m.index + m[0].length, i + 1 < marks.length ? marks[i + 1].index : text.length) }));
-  return { pre: text.slice(0, marks[0].index), pages };
-}
 const joinPages = (pre, pages) => pre + pages.map((p) => `--- pág. ${p.n} ---\n${p.body}`).join('');
 const numsOf = (t) => extractNumbers(t);
 const sameSet = (a, b) => a.size === b.size && [...a].every((x) => b.has(x));
@@ -489,6 +484,12 @@ async function resolveDoc(e0) {
     e = { ...e, motor: 'mistral' };
   }
   let canon = splitPages(readFileSync(mdAbs, 'utf8'));
+  // PÁGINAS QUE NO CAMBIARON (Versión 443, punto 1b.iii del HANDOFF): una página con la misma huella que en la última validación "listo"
+  // de este .md ya está validada: no se vuelve a mandar a Claude ni a Gemini, y su resolución se conserva. Se recalcula sobre el .md
+  // canónico ACTUAL (si arriba se rehace con Mistral, cambian todas y no se reusa nada). Caso: Juventus 2021-22, 17 páginas pagadas dos veces.
+  const previaPags = ultimaConPaginas(e.md, { releer: true });
+  const reusadas = () => new Set(previaPags ? compararPaginas(previaPags.paginasSha, huellasDePaginas(canon.pages)).iguales : []);
+  if (previaPags) for (const n of reusadas()) if (previaPags.resolucion?.[n]) resolucion[n] = previaPags.resolucion[n];
   const backup = () => {
     if (previo) return;
     previo = derivado(mdAbs, `.previo-${e.motor === 'legado' ? 'legado' : e.motor}.md`);
@@ -549,7 +550,8 @@ async function resolveDoc(e0) {
   const q = quien(e.pdf);
   const cascada = async () => {
     const r = await chequearPaginas({ pdfPath: pdfAbs, mdText: joinPages(canon.pre, canon.pages), club: q.clubId, year: q.year });
-    return { numericas: new Set(r.filter((x) => x.estado !== 'prosa').map((x) => x.pagina)), dudosas: new Set(r.filter((x) => x.estado === 'dudosa').map((x) => x.pagina)), validadas: r.filter((x) => x.estado === 'validada-gratis').length };
+    const reus = reusadas(); // (Versión 443) una página sin cambios desde la última validación "listo" no es dudosa
+    return { numericas: new Set(r.filter((x) => x.estado !== 'prosa').map((x) => x.pagina)), dudosas: new Set(r.filter((x) => x.estado === 'dudosa' && !reus.has(x.pagina)).map((x) => x.pagina)), validadas: r.filter((x) => x.estado === 'validada-gratis').length };
   };
   let cas = await cascada();
   let numericas = cas.numericas;
@@ -599,6 +601,8 @@ async function resolveDoc(e0) {
     if (dudasProsa.length) { log(`${dudasProsa.length} duda(s) en páginas de prosa, no se mandan a Claude: ${dudasProsa.join(', ')}`); doubts = doubts.filter((n) => numericas.has(n)); }
     // Y de las dudas en páginas con números, las que la cascada dejó respaldadas (por sumas o balance, aunque el texto del PDF difiera en
     // una cifra tolerada) tampoco se pagan.
+    const reus = reusadas(); const dudasReusadas = doubts.filter((n) => reus.has(n));
+    if (dudasReusadas.length) { log(`${dudasReusadas.length} duda(s) en páginas sin cambios desde la última validación (${previaPags.ts.slice(0, 10)}), no se mandan a Claude: ${dudasReusadas.join(', ')}`); doubts = doubts.filter((n) => !reus.has(n)); }
     const dudasValidadas = doubts.filter((n) => !cas.dudosas.has(n));
     if (dudasValidadas.length) { log(`${dudasValidadas.length} duda(s) respaldadas por los chequeos gratis, no se mandan a Claude: ${dudasValidadas.join(', ')}`); doubts = doubts.filter((n) => cas.dudosas.has(n)); }
     // Páginas SIN texto en el PDF pero con cifras en el .md (páginas-imagen dentro de un PDF con texto: caso Gent, 10 de 43):
@@ -753,8 +757,10 @@ function dryRunDoc(e) {
     const pt = pdfPageTexts(pdfAbs);
     const all = textLayerDoubts(pt, canon);
     if (all.length > 0.5 * pt.filter((t) => numsOf(t).size > 0).length) return { plan: 'escaneo: Gemini + Claude en págs. que difieran', nPages, cost: nNum * EST.gemini + nNum * 0.6 * 0.25 * EST.claude };
-    const d = all.filter((n) => numericas.has(n)).length;
-    return { plan: `texto: ${d} pág. dudosas (${all.length - d} en prosa, no se pagan)`, nPages, doubts: d, cost: d * EST.claude };
+    const prev = ultimaConPaginas(e.md); const reus = new Set(prev ? compararPaginas(prev.paginasSha, huellasDePaginas(canon.pages)).iguales : []);
+    const nr = all.filter((n) => numericas.has(n) && reus.has(n)).length; // (Versión 443) sin cambios desde la última validación: no se pagan
+    const d = all.filter((n) => numericas.has(n) && !reus.has(n)).length;
+    return { plan: `texto: ${d} pág. dudosas (${all.length - d - nr} en prosa${nr ? `, ${nr} sin cambios` : ''}, no se pagan)`, nPages, doubts: d, cost: d * EST.claude };
   }
   return { plan: `escaneo: Gemini + Claude en ${nNum} págs. con números`, nPages, cost: nNum * EST.gemini + nNum * 0.6 * 0.25 * EST.claude };
 }
@@ -808,6 +814,8 @@ async function worker() {
     }
     appendFileSync(verifPath, JSON.stringify({
       ts: new Date().toISOString(), md: e.md, mdSha1: existsSync(resolve(root, e.md)) ? sha1(resolve(root, e.md)) : null, status: res.status, method: res.method || 'resolver-inventario', detail: res.detail,
+      // (Versión 443) la huella de cada página del .md tal como quedó: la próxima validación reusa las que no cambien.
+      paginasSha: existsSync(resolve(root, e.md)) ? huellasDelTexto(readFileSync(resolve(root, e.md), 'utf8')) : null,
       proveniencia: res.prov, reserva: res.reserva, sinConsenso: res.sinConsenso, parches: res.parches || [], resolucion: res.resolucion || {}, formatoIntentado: Boolean(res.formatoIntentado), previo: res.previo || null, costoUsd: Number((res.cost || 0).toFixed(4)),
     }) + '\n');
     tally[res.status] = (tally[res.status] || 0) + 1;

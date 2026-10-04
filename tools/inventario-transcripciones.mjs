@@ -53,6 +53,7 @@ import { verifyNumbers } from './verify-numbers.mjs';
 import { derivado } from './rutas.mjs';
 import { periodoDe } from './periodo.mjs';
 import { ajusteDe } from './ajustes.mjs';
+import { ultimaConPaginas, huellasDelTexto, compararPaginas } from './huella-paginas.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -143,6 +144,16 @@ function currentState(entry, verif) {
   if (!entry.tieneMd && !entry.cargado) return { status: 'sin-md', method: null, detail: entry.costoUsd ? `PAGADO SIN .md: Mistral lo transcribió el ${entry.fecha} (US$ ${entry.costoUsd}) y el .md no está en disco; volver a transcribir lo paga de nuevo` : 'todavía no hay ninguna transcripción de este PDF' };
   if (entry.cargado) return { status: 'cargado', method: null, detail: 'el ejercicio ya está en el sitio' };
   if (verif && verif.mdSha1 === entry.mdSha1) return { status: verif.status, method: verif.method, detail: verif.detail };
+  // VALIDACIÓN POR PÁGINA (Versión 443, punto 1b.iii del HANDOFF): si el .md cambió pero la última validación "listo" guardó la huella de
+  // cada página, se mira QUÉ páginas cambiaron. Ninguna (cambió solo lo de antes de la primera marca, o espacios al final) -> el estado se
+  // conserva. Alguna -> "sin-verificar" con la lista: el resolver vuelve a validar solo esas (las demás se reusan). Antes, cualquier cambio
+  // dejaba el documento entero sin verificar (Juventus 2021-22: 3 páginas rearmadas, 17 pagadas otra vez).
+  const prev = entry.md ? ultimaConPaginas(entry.md) : null;
+  if (prev && entry.tieneMd) {
+    const { cambiadas } = compararPaginas(prev.paginasSha, huellasDelTexto(readFileSync(resolve(root, entry.md), 'utf8')));
+    if (!cambiadas.length) return { status: prev.status, method: prev.method, detail: `${prev.detail} (el .md cambió fuera de las páginas validadas)` };
+    return { status: 'sin-verificar', method: null, detail: `el .md cambió después de la última validación en ${cambiadas.length} página(s): ${cambiadas.slice(0, 12).join(', ')}${cambiadas.length > 12 ? '...' : ''} (las demás quedan validadas)` };
+  }
   return { status: 'sin-verificar', method: null, detail: verif ? 'el .md cambió después de la última validación' : '' };
 }
 
