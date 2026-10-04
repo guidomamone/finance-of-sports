@@ -42,6 +42,10 @@ Clubes/**/*.xhtml
 # este caso (13-49 KB), pero el criterio no depende del tamaño: es documento
 # fuente crudo, no la transcripción.
 Clubes/**/*.docx
+# Kazajistán (notas explicativas del registro estatal, .doc de Word 97) y Eslovaquia (anexos del registro
+# de estados financieros, .rtf), sourcing 2026-10-04: mismo criterio, documento fuente crudo.
+Clubes/**/*.doc
+Clubes/**/*.rtf
 Clubes/**/*.xml
 Clubes/**/*.json
 Clubes/**/*.zip
@@ -164,3 +168,6 @@ Admin/.paginas-cache.json
 # Archivos DERIVADOS de cada documento (lista de rubros, briefing, respuestas de Jev/Claude, otras voces, respaldos): tools/rutas.mjs.
 # Se regeneran o son caché de APIs ya pagadas; nunca se borran. Versión 317.
 Generados/
+
+# Lista temporal que tools/lote.mjs escribe para la etapa 7 en cada corrida.
+Admin/.lote-lista-actual.txt
