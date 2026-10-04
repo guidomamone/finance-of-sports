@@ -51,8 +51,10 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 
 - Seis clubes cargados enteros por el proceso nuevo (`tools/lote.mjs` + `cargar.mjs` + `caja-deuda.mjs`): UC, Fortaleza CEIF, Goiás,
   Novorizontino, AEL Larissa (2016-2025) y Juventus (2003-2025, estados separados; caja y deuda en parte cargadas a mano). El estado y lo
-  pendiente del pipeline viven en `Admin/HANDOFF-pipeline.md` ("Dónde estamos"); la prioridad siguiente es el punto 1b (no pasar lo mismo
-  por las APIs varias veces).
+  pendiente del pipeline viven en `Admin/HANDOFF-pipeline.md` ("Dónde estamos"). Desde el 2026-10-04 (Versiones 441-464): el pipeline no
+  paga dos veces lo mismo (compuerta de perímetro y cierre, validación por página, caché que sabe si el .md cambió, reintento acotado y en
+  el mismo modo, gasto por documento); caja y deuda leen el perímetro y la escala en la compuerta; Fortaleza 2017 recargado con los gastos
+  desglosados; el caché de `Generados/` (.json) se respalda en git; listas fijas de prueba en `Admin/prueba-*.txt`.
 
 ### Inventario de transcripciones y pipeline PDF -> Jev (2026-09-30, rama `inventario-transcripciones`, sin push)
 

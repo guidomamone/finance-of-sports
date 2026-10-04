@@ -24,8 +24,11 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con los lotes de prueba de abajo):
 
-1. **Defectos chicos** (agrupados: B textos, D): `compararVecino` no cuenta las filas de ajuste manual (D); `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
+1. **Defectos chicos.** B (textos, sin cambiar datos; medir que las propuestas de `prueba-completa` den idénticas salvo el texto): `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
    meta dice "grossDebt/cash: no se leen por script todavía" (ahora los completa `caja-deuda.mjs`).
+   D, CONOCIDO Y SIN DAÑO HOY (no perseguir sin un caso nuevo): `compararVecino` (verificar.mjs) compara con el año vecino las filas
+   extraídas ANTES de los ajustes `fila`; Juventus 2005 y 2006 dan "NO" en el chequeo de año vecino (2005: 229,9 contra 259,1; puede ser
+   esto o la reexpresión italiano → IFRS) pero verifican ok y están cargados. Retomar si un club nuevo con ajustes `fila` de ingresos frena por eso.
 2. **Auditoría de los 6 clubes cargados** (subagente Sonnet): categorías dudosas o datos raros. Y la nota visible del quiebre de serie de
    Juventus 2006 (formato italiano, con extraordinarios) → 2007 (IFRS).
 3. **Caja y deuda, lo que queda** (ver "Caja y deuda" más abajo). Hoy `--medir` en todos los clubes: 146 iguales, 10 distintos, 363 sin dato; Juventus
@@ -527,8 +530,9 @@ Pendientes, a decidir con casos reales:
 
 ## Cómo arranca la próxima sesión
 
-(2026-10-04) Sesión de arreglos (sin sumar clubes): seguir por el punto 1 de "Dónde estamos" (defectos chicos B y D) y después la
-auditoría de los 6 clubes.
+(2026-10-04, fin de la sesión de arreglos, Versiones 441-464) Seguir por "Dónde estamos": defectos chicos B (textos), después la
+auditoría de los 6 clubes con un subagente Sonnet. Medir cualquier cambio con `Admin/prueba-completa.txt` (y `caja-deuda.mjs --medir` en
+TODOS los clubes si toca caja y deuda).
 
 1. `git status` y `git log --oneline -5` en `main`.
 2. `node tools/estado.mjs`.

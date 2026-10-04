@@ -743,7 +743,3 @@ perdieron sino que se descartaron:
 
 136. **Texto propuesto para `paises/*.md` pendiente de aprobar** (no se editó ningún skill): Polonia, Rumania, Hungría, Eslovaquia, Eslovenia, Serbia, Bulgaria, Bosnia, Macedonia del Norte, Estonia, Letonia, Lituania, Georgia, Armenia, Azerbaiyán, Kazajistán, Bielorrusia y la actualización de Rusia (endpoints `details` y `XLS`), Croacia (Wayback, Slaven y Varaždin), Ucrania (Dynamo Kyiv, Shakhtar y Oleksandriya, corrigiendo el "dead-end"). Cada texto está al final de `fuentes/<País>/_notas-generales.md` (sección "Texto propuesto" o equivalente) y hay que mostrarlo antes de crear el archivo y su línea en el índice del `SKILL.md`. Regla general nueva a agregar a `club-sourcing` 0.1: Wayback por `https://`, una captura de 1.048.576 bytes exactos está truncada, y la licencia nacional de la federación (PZPN F.01, HNS, FSS, LFF, ...) suele ser el canal.
 
-137. **Pipeline: no pagar dos veces lo mismo en las APIs** (pedido de Guido, 2026-10-04). Diseño pendiente, en orden, en
-     `Admin/HANDOFF-pipeline.md` punto 1b: fijar perímetro/cierre antes del primer lote de un club; `--reintentar` solo sobre los documentos
-     que lo piden; validación por página (cambiar una página no invalida el .md entero) y caché de localizar/extraer que sepa si el .md
-     cambió; ensayo de extraer por tamaño real; gasto por documento en el resumen. Casos reales: Juventus 2022-2025.
