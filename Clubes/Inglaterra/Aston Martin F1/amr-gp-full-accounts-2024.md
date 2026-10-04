@@ -829,64 +829,36 @@ statement areas impacted by these.
 
 --- pág. 16 ---
 
-AMR GP Limited
+# AMR GP Limited
 
-Independent Auditor's Report to the Members of AMR GP Limited (continued)
+**Independent Auditor's Report to the Members of AMR GP Limited (continued)**
 
-Based on our risk assessment, we considered the areas most susceptible to fraud to be management
-override of controls and Revenue.
+Based on our risk assessment, we considered the areas most susceptible to fraud to be management override of controls and Revenue.
 
 Our procedures in respect of the above included:
 
-. Identifying and testing journal entries to supporting documentation, in particular any journal entries to
-revenue not in line with expectations and reviewing journal entries for journals inconsistent with the
-usual transactions of the Company.
+- Identifying and testing journal entries to supporting documentation, in particular any journal entries to revenue not in line with expectations and reviewing journal entries for journals inconsistent with the usual transactions of the Company.
+- Agreeing a sample of revenue to underlying contracts and/or other third-party documentation to ensure they are recorded at the correct time and to the correct amount.
+- Agreeing a sample of revenues to cash receipts.
+- Reviewing transactions pre and post year end to check that the associated revenue is reflected in the correct period.
+- Identifying and testing material manual journal entries to revenue
+- Assessing significant estimates made by management for bias or judgement that represented a risk of material misstatement due to fraud. In particular we have considered in respect of revenue recognition, including accrued and deferred revenue, and recoverability of trade and other receivable.
 
-. Agreeing a sample of revenue to underlying contracts and/or other third-party documentation to
-ensure they are recorded at the correct time and to the correct amount.
+We also communicated relevant identified laws and regulations and potential fraud risks to all engagement team members who were all deemed to have appropriate competence and capabilities and remained alert to any indications of fraud or non-compliance with laws and regulations throughout the audit.
 
-. Agreeing a sample of revenues to cash receipts.
+Our audit procedures were designed to respond to risks of material misstatement in the financial statements, recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not detecting one resulting from error, as fraud may involve deliberate concealment by, for example, forgery, misrepresentations or through collusion. There are inherent limitations in the audit procedures performed and the further removed non-compliance with laws and regulations is from the events and transactions reflected in the financial statements, the less likely we are to become aware of it.
 
-. Reviewing transactions pre and post year end to check that the associated revenue is reflected in
-the correct period.
+A further description of our responsibilities is available on the Financial Reporting Council's website at: https://www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditor's report.
 
-. Identifying and testing material manual journal entries to revenue
+**Use of our report**
 
-. Assessing significant estimates made by management for bias or judgement that represented a risk
-
-of material misstatement due to fraud. In particular we have considered in respect of revenue
-recognition, including accrued and deferred revenue, and recoverability of trade and other
-receivable.
-
-We also communicated relevant identified laws and regulations and potential fraud risks to all engagement team
-members who were all deemed to have appropriate competence and capabilities and remained alert to any
-indications of fraud or non-compliance with Jaws and regulations throughout the audit.
-
-Our audit procedures were designed to respond to risks of material misstatement in the financial statements,
-recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not
-detecting one resulting from error, as fraud may involve deliberate concealment by, for example, forgery,
-misrepresentations or through collusion. There are inherent limitations in the audit procedures performed and
-the further removed non-compliance with laws and regulations is from the events and transactions reflected in
-the financial statements, the less likely we are to become aware of it.
-
-A further description of our responsibilities is available on the Financial Reporting Council's website at:
-https://www. frc.org.uk/auditorsresponsibilities. This description forms part of our auditor's report.
-
-Use of our report
-
-This report is made solely to the Company’s members, as a body, in accordance with Chapter 3 of Part 16 of
-the Companies Act 2006. Our audit work has been undertaken so that we might state to the Company’s
-members those matters we are required to state to them in an auditor's report and for no other purpose. To the
-fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the Company
-and the Company’s members as a body, for our audit work, for this report, or for the opinions we have formed.
+This report is made solely to the Company's members, as a body, in accordance with Chapter 3 of Part 16 of the Companies Act 2006. Our audit work has been undertaken so that we might state to the Company's members those matters we are required to state to them in an auditor's report and for no other purpose. To the fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the Company and the Company's members as a body, for our audit work, for this report, or for the opinions we have formed.
 
 DocuSigned by:
+[firma manuscrita] Gareth M Jones
+AF9E71C5233D451...  10/04/2025
 
-Garde M Sours
-
-AF9E71052330451.... 10/04/2025
-
-Gareth M Jones FCA (Senior Statutory Auditor)
+**Gareth M Jones FCA** (Senior Statutory Auditor)
 For and on behalf of BDO LLP, Statutory Auditor
 London, UK
 
@@ -946,145 +918,51 @@ The notes on pages 17 to 38 form part of these financial statements.
 
 --- pág. 18 ---
 
-AMR GP Limited
+# AMR GP Limited
 Registered number: 11496673
 
-Statement of Financial Position
-As at 31 December 2024
+**Statement of Financial Position**
+**As at 31 December 2024**
 
-Fixed assets
-Intangible assets
-Tangible fixed assets
-Heritage assets
-Investments
+| | Note | 2024 £000 | 2024 £000 | 2023 £000 | 2023 £000 |
+|---|---|---|---|---|---|
+| **Fixed assets** | | | | | |
+| Intangible assets | 13 | | 5,129 | | 544 |
+| Tangible fixed assets | 14 | | 261,600 | | 191,001 |
+| Heritage assets | 15 | | 261 | | - |
+| Investments | 16 | | 355 | | - |
+| | | | 267,345 | | 191,545 |
+| **Current assets** | | | | | |
+| Stocks | 17 | 9,052 | | 9,896 | |
+| Debtors: amounts falling due within one year | 18 | 66,166 | | 52,547 | |
+| Cash at bank and in hand | 19 | 42,018 | | 78,773 | |
+| | | 117,236 | | 141,216 | |
+| **Current liabilities** | | | | | |
+| Creditors: amounts falling due within one year | 20 | (179,190) | | (170,583) | |
+| **Net current liabilities** | | | (61,954) | | (29,367) |
+| **Total assets less current liabilities** | | | 205,391 | | 162,178 |
+| **Non-current liabilities** | | | | | |
+| Creditors: amounts falling due after more than one year | 21 | | (313,049) | | (220,777) |
+| **Provisions for liabilities** | | | | | |
+| Other provisions | 25 | | (226) | | (3,492) |
+| **Net liabilities** | | | (107,884) | | (62,091) |
+| **Capital and reserves** | | | | | |
+| Called up share capital | 26 | | 279 | | 279 |
+| Share premium account | 27 | | 259,251 | | 259,251 |
+| Profit and loss account | 27 | | (367,414) | | (321,621) |
+| **Total equity** | | | (107,884) | | (62,091) |
 
-Current assets
+The financial statements were approved and authorised for issue by the board and were signed on its behalf by:
 
-Stocks
-
-Debtors: amounts falling due within one year
-Cash at bank and in hand
-
-Current liabilities
-Creditors: amounts falling due within one year
-Net current liabilities
-
-Total assets less current liabilities
-Non-current liabilities
-
-Creditors: amounts falling due after more than
-one year
-
-Provisions for liabilities
-Other provisions
-
-Net liabilities
-
-Capital and reserves
-Called up share capital
-Share premium account
-Profit and loss account
-
-Total equity
-
-The fi
-by:
-
+[firma manuscrita]
 R Yeowart
 Director
 
 Date: 31.03.2025
 
-Note
-
-13
-14
-18
-16
-
-17
-18
-19
-
-20
-
-21
-
-25
-
-26
-27
-27
-
-2024
-£000
-
-§,129
-261,600
-261
-
-355
-
-267,345
-
-9,052
-66,166
-42,018
-
-117,236
-
-(179,190)
-(61,954)
-
-205,391
-
-(313,049)
-(226)
-
-(107,884)
-
-279
-259,251
-(367,414)
-
-(107,884)
-
 The notes on pages 17 to 38 form part of these financial statements.
 
 15
-
-2023
-£000
-
-544
-191,001
-
-191,545
-
-9,896
-52,547
-18,773
-
-141,216
-
-(170,583)
-(29,367)
-
-162,178
-
-(220,777)
-(3,492)
-
-(62,091)
-
-279
-259,251
-(321,621)
-
-(62,091)
-
-ancial statements were approved and authorised for issue by the board and were signed on its behalf
-
 
 --- pág. 19 ---
 
@@ -1661,42 +1539,41 @@ development.
 
 --- pág. 29 ---
 
-AMR GP Limited
+# AMR GP Limited
 
-Notes to the Financial Statements
-For the Year Ended 31 December 2024
+**Notes to the Financial Statements**
+**For the Year Ended 31 December 2024**
 
-Auditor's remuneration
+**7. Auditor's remuneration**
 
-2024 2023
-£000 £000
-Fees payable to the Company's auditor
-Audit of the Company's annual financial statements 215 180
-Taxation services 60 50
-Tax consultancy and other advisory services 475 340
-Employees
+| Fees payable to the Company's auditor | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Audit of the Company's annual financial statements | 215 | 180 |
+| Taxation services | 60 | 50 |
+| Tax consultancy and other advisory services | 475 | 340 |
+
+**8. Employees**
+
 Staff costs were as follows:
-2024 2023
-£000 £000
-Wages and salaries ; 60,184 44,456
-Social security costs 7,123 5,615
-Costs of defined contribution scheme 2,533 1,881
-69,840 51,952
+
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Wages and salaries | 60,184 | 44,456 |
+| Social security costs | 7,123 | 5,615 |
+| Costs of defined contribution scheme | 2,533 | 1,881 |
+| | 69,840 | 51,952 |
 
 The average monthly number of employees, including the directors, during the year, was as follows:
 
-2024 2023
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Administration | 172 | 102 |
+| Design, production and technical | 673 | 549 |
+| | 845 | 651 |
 
-£000 £000
+**9. Directors' remuneration**
 
-Administration 172 102
-Design, production and technical 673 549
-845 651
-
-Directors’ remuneration
-
-The directors received no remuneration from the Company in the year ended 31 December 2024 (2023
-- ENil).
+The directors received no remuneration from the Company in the year ended 31 December 2024 (2023 - £Nil).
 
 26
 
@@ -1734,105 +1611,70 @@ refinancing exercise during the year.
 
 --- pág. 31 ---
 
-AMR GP Limited
+# AMR GP Limited
 
-Notes to the Financial Statements
-For the Year Ended 31 December 2024
+**Notes to the Financial Statements**
+**For the Year Ended 31 December 2024**
 
-12.
+**12. Taxation**
 
-Taxation
-2024 2023
-£000 £000
-Deferred tax 6,175 4,404
-Taxation on loss on ordinary activties ; 6,175 4,404
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Deferred tax | 6,175 | 4,404 |
+| **Taxation on loss on ordinary activties** | **6,175** | **4,404** |
 
-Factors affecting tax charge for the year
+**Factors affecting tax charge for the year**
 
-The tax assessed for the-year is higher than (2023 - higher than) the standard rate of corporation tax in
+The tax assessed for the year is higher than (2023 - higher than) the standard rate of corporation tax in the UK of 25% (2023 - 23.5%). The differences are explained below:
 
-the UK of 25% (2023 - 23.5%). The differences are explained below:
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Loss on ordinary activities before tax | (39,618) | (25,301) |
+| Loss on ordinary activities multiplied by standard rate of corporation tax in the UK of 25% (2023 - 23.5%) | (9,905) | (5,951) |
+| **Effects of:** | | |
+| Expenses not deductible for tax purposes, other than goodwill amortisation and impairment | 9,385 | 7,883 |
+| Capital allowances for year in excess of depreciation | 81 | 257 |
+| Non-taxable income | - | - |
+| Additional deduction for R&D expenditure | - | - |
+| Capital gains | 22 | - |
+| Other permanent differences | 5 | 17 |
+| Deferred tax not recognised | 5,106 | 1,101 |
+| Group relief surrendered | 1,481 | 1,097 |
+| **Total tax charge for the year** | **6,175** | **4,404** |
 
-2024 2023
-£000 £000
-Loss on ordinary activities before tax (39,618) (25,301)
-Loss on ordinary activities multiplied by standard rate of corporation tax
-in the UK of 25% (2023 - 23.5%) (9,905) (5,951)
-Effects of:
-Expenses not deductible for tax purposes, other than goodwill
-amortisation and impairment 9,385 7,883
-Capital allowances for year in excess of depreciation 81 257
-Non-taxable income - -
-Additional deduction for R&D expenditure - -
-Capital gains 22 -
-Other permanent differences 5 17
-Deferred tax not recognised 5,106 1,101
-Group relief surrendered 1,481 1,097
-Total tax charge for the year 6,175 4,404
-
-The company had trading losses carried forward of £87m at 31 December 2024 (2023 - £85m). The
-total deferred tax asset that has been recognised in 2024 is ENil (2023 - ENil). This balance is derived
-from a liability for fixed asset timing differences of £11.4m and a liability for capital gains of £0.1m,
-offset by the recognition of an asset in relation to losses of £0.9m and other short-term differences of
-
-£10.6m.
+The company had trading losses carried forward of £87m at 31 December 2024 (2023 - £85m). The total deferred tax asset that has been recognised in 2024 is £Nil (2023 - £Nil). This balance is derived from a liability for fixed asset timing differences of £11.4m and a liability for capital gains of £0.1m, offset by the recognition of an asset in relation to losses of £0.9m and other short-term differences of £10.6m.
 
 28
 
 --- pág. 32 ---
 
-AMR GP Limited
+# AMR GP Limited
 
-Notes to the Financial Statements
-For the Year Ended 31 December 2024
+**Notes to the Financial Statements**
+**For the Year Ended 31 December 2024**
 
-13.
+**13. Intangible assets**
 
-Intangible assets
-
-Cost
-At 1 January 2024
-
-Additions
-Disposals
-Transfers between classes
-
-At 31 December 2024
-
-Amortisation
-
-At 1 January 2024
-Charge for the year
-Disposals
-
-At 31 December 2024
-
-Net book value
-At 31 December 2024
-
-At 31 December 2023
-
-Assets
-under Intellectual Computer
-construction property Software Total
-£000 £000 £000 £000
-- 21,492 12,657 34,149
-§,089 - - 5,089
-- - (256) (256)
-(659) - 659 -
-4,430 21,492 13,060 38,982
-- 21,492 12,113 33,605
-- - 504 504
-- - (256) (256)
-- 21,492 12,361 33,853
-4,430 " 699 §,129
-- - §44 544
+| | Assets under construction £000 | Intellectual property £000 | Computer Software £000 | Total £000 |
+|---|---:|---:|---:|---:|
+| **Cost** | | | | |
+| At 1 January 2024 | - | 21,492 | 12,657 | 34,149 |
+| Additions | 5,089 | - | - | 5,089 |
+| Disposals | - | - | (256) | (256) |
+| Transfers between classes | (659) | - | 659 | - |
+| At 31 December 2024 | 4,430 | 21,492 | 13,060 | 38,982 |
+| **Amortisation** | | | | |
+| At 1 January 2024 | - | 21,492 | 12,113 | 33,605 |
+| Charge for the year | - | - | 504 | 504 |
+| Disposals | - | - | (256) | (256) |
+| At 31 December 2024 | - | 21,492 | 12,361 | 33,853 |
+| **Net book value** | | | | |
+| At 31 December 2024 | 4,430 | - | 699 | 5,129 |
+| At 31 December 2023 | - | - | 544 | 544 |
 
 The amortisation for the year has been charged to administrative expenses.
 
-Included within Assets under construction during the year was £0.5m (2023 - ENil) of internal
-
-development costs.
+Included within Assets under construction during the year was £0.5m (2023 - £Nil) of internal development costs.
 
 29
 
@@ -1940,114 +1782,80 @@ At 31 December 2024 261
 
 --- pág. 35 ---
 
-AMR GP Limited
+# AMR GP Limited
 
-Notes to the Financial Statements
-For the Year Ended 31 December 2024
+**Notes to the Financial Statements**
+**For the Year Ended 31 December 2024**
 
-16.
+**16. Fixed asset investments**
 
-17.
+| | Listed investments £000 |
+|---|---:|
+| **Cost or valuation** | |
+| At 1 January 2024 | - |
+| Changes in market value | 355 |
+| At 31 December 2024 | 355 |
 
-18.
+**17. Stocks**
 
-19.
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Raw materials | 3,047 | 3,164 |
+| Consumables and finished goods | 5,036 | 5,690 |
+| Work in progress | 969 | 1,042 |
+| | 9,052 | 9,896 |
 
-Fixed asset investments
+**18. Debtors: amounts falling due within one year**
 
-Listed
-investments
-£000
-Cost or valuation
-At 1 January 2024 -
-Changes in market value 355
-At 31 December 2024 355
-Stocks
-2024 2023
-£000 £000
-Raw materials 3,047 3,164
-Consumables and finished goods 5,036 5,690
-Work in progress 969 4,042
-9,052 9,896
-Debtors: amounts falling due within one year
-2024 2023
-; £000 £000
-Trade debtors 6,465 10,286
-Other debtors 38,460 25,085
-Prepayments and accrued income 21,241 17,176
-66,166 52,547
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Trade debtors | 6,465 | 10,286 |
+| Other debtors | 38,460 | 25,085 |
+| Prepayments and accrued income | 21,241 | 17,176 |
+| | 66,166 | 52,547 |
 
-Included within Other debtors are amounts outstanding from HMRC in relation to current and prior year
-R&D Tax credit claims (see Note 3).
+Included within Other debtors are amounts outstanding from HMRC in relation to current and prior year R&D Tax credit claims (see Note 3).
 
-Cash and cash equivalents
+**19. Cash and cash equivalents**
 
-2024 2023
-£000 £000
-Cash at bank and in hand 42,018 78,773
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Cash at bank and in hand | 42,018 | 78,773 |
 
 32
 
 --- pág. 36 ---
 
-AMR GP Limited
+# AMR GP Limited
 
-Notes to the Financial Statements
+**Notes to the Financial Statements**
+**For the Year Ended 31 December 2024**
 
-For the Year Ended 31 December 2024 —
+**20. Creditors: amounts falling due within one year**
 
-ie
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Trade creditors | 17,940 | 26,751 |
+| Amounts owed to group undertakings | 90,619 | 75,442 |
+| Other taxation and social security | 2,351 | 2,533 |
+| Obligations under finance lease and hire purchase contracts | 4,366 | - |
+| Other creditors | 571 | 467 |
+| Accruals and deferred income | 63,343 | 65,390 |
+| | 179,190 | 170,583 |
 
-20.
-
-21.
-
-Creditors: amounts falling due within one year
-
-Trade creditors
-
-Amounts owed to group undertakings
-
-Other taxation and social security
-
-Obligations under finance lease and hire purchase contracts
-Other creditors
-
-Accruals and deferred income
-
-2024 2023
-£000 £000
-17,940 26,751
-90,619 75,442
-2,351 2,533
-4,366 -
-571 467
-63,343 65,390
-179,190 170,583
-
-Obligations under finance lease and hire purchase contracts are secured on the assets to which they
-
-relate.
+Obligations under finance lease and hire purchase contracts are secured on the assets to which they relate.
 
 Amounts owed to group undertakings are interest free, unsecured and repayable on demand.
 
-Creditors: amounts falling due after more than one year
+**21. Creditors: amounts falling due after more than one year**
 
-Loans
-Obligations under finance lease and hire purchase contracts
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Loans | 311,923 | 220,777 |
+| Obligations under finance lease and hire purchase contracts | 1,126 | - |
+| | 313,049 | 220,777 |
 
-2024 2023
-£000 £000
-311,923 220,777
-1,126 -
-313,049 220,777
-
-During the year the company went through a refinancing exercise, resulting in the repayment of the
-previous loan which has been replaced with a 10 year agreement to borrow $400m at a fixed rate of
-10% interest. The facility has a fixed and floating charge over all current and future assets of AMR GP
-Limited (and associated group companies) including a share charge in favour of the lender by all of the
-
-group companies.
+During the year the company went through a refinancing exercise, resulting in the repayment of the previous loan which has been replaced with a 10 year agreement to borrow $400m at a fixed rate of 10% interest. The facility has a fixed and floating charge over all current and future assets of AMR GP Limited (and associated group companies) including a share charge in favour of the lender by all of the group companies.
 
 33
 
@@ -2153,116 +1961,72 @@ normal course of business for rental properties.
 
 --- pág. 39 ---
 
-AMR GP Limited
+# AMR GP Limited
 
-Notes to the Financial Statements
-For the Year Ended 31 December 2024
+**Notes to the Financial Statements**
+**For the Year Ended 31 December 2024**
 
-26.
+**26. Share capital**
 
-27.
+| Allotted, called up and fully paid | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| 249,307 (2023 - 249,307) Ordinary shares of £1.00 each | 249 | 249 |
+| 14,765 (2023 - 14,765) A Ordinary shares of £1.00 each | 15 | 15 |
+| 14,897 (2023 - 14,897) B Ordinary shares of £1.00 each | 15 | 15 |
+| | 279 | 279 |
 
-28.
+In the event the Company is wound up, or there is a significant asset sale, the shareholders receive pro rata the distributions. In the event that there is a full exit or winding up one shareholder has a liquidation preference, following which the other shareholders will receive their pro rata return.
 
-Share capital
+**27. Capital and reserves**
 
-Allotted, called up and fully paid
+**Share capital**
 
-249,307 (2023 - 249,307) Ordinary shares of £1.00 each
-14,765 (2023 - 14,765) A Ordinary shares of £1.00 each
-14,897 (2023 - 14,897) B Ordinary shares of £1.00 each
-
-2024 2023
-£000 £000
-249 249
-15 15
-15 15
-279 279
-
-In the event the Company is wound up, or there is a significant asset sale, the shareholders receive
-pro rata the distributions. In the event that there is a full exit or winding up one shareholder has a
-
-liquidation preference, following which the other shareholders will receive their pro rata return.
-
-Capital and reserves
-Share capital
 Share capital represents the nominal value of the shares issued.
 
-Share premium account
+**Share premium account**
 
-Share premium account represents amounts received on the issue of ordinary share capital in excess
+Share premium account represents amounts received on the issue of ordinary share capital in excess of the nominal value net of transaction costs.
 
-of the nominal value net of transaction costs.
-
-Profit and loss account
+**Profit and loss account**
 
 Profit and loss account represents retained earnings and accumulated losses of the Company.
 
-Pension commitments
+**28. Pension commitments**
 
-The Company operates a defined contributions pension scheme. The assets of the scheme are held
-separately from those of the Company in an independently administered fund. The pension cost
-charge represents contributions payable by the Company to the fund and amounted to £2,533,000
-(2023 - £1,150,000). Contributions totalling £550,000 (2023 - £436,000) were payable to the fund at
-
-the reporting date and are included in creditors.
+The Company operates a defined contributions pension scheme. The assets of the scheme are held separately from those of the Company in an independently administered fund. The pension cost charge represents contributions payable by the Company to the fund and amounted to £2,533,000 (2023 - £1,150,000). Contributions totalling £550,000 (2023 - £436,000) were payable to the fund at the reporting date and are included in creditors.
 
 36
 
 --- pág. 40 ---
 
-AMR GP Limited
+# AMR GP Limited
 
-Notes to the Financial Statements
-For the Year Ended 31 December 2024
+**Notes to the Financial Statements**
+**For the Year Ended 31 December 2024**
 
-29.
+**29. Commitments under operating leases**
 
-30.
+At 31 December 2024 the Company had future minimum lease payments due under non-cancellable operating leases for each of the following periods.
 
-Commitments under operating leases
+| | 2024 £000 | 2023 £000 |
+|---|---:|---:|
+| Not later than 1 year | 598 | 4,898 |
+| Later than 1 year and not later than 5 years | 412 | 631 |
+| | 1,010 | 5,529 |
 
-At 31 December 2024 the Company had future minimum lease payments due under non- -cancellable
-operating leases for each of the following periods.
+**30. Related party transactions**
 
-2024 2023
-£000 £000
-Not later than 1 year 598 4,898
-Later than 1 year and not later than 5 years 412 631
-1,010 5,529
+The Company has taken exemption under FRS 102 section 33.1A from disclosing transactions with group companies, on the grounds that each company party to the transactions is wholly owned within the Group.
 
-Related party transactions
+The Company has entered into contracts with Golden Eagle Racing Limited, a company through which Mr Lance Stroll, the son of a director, provides racing services. For the current year a net expense of US$12,300,000 (2023 - US$5,608,000) was incurred in respect of the provision of these services.
 
-The Company has taken exemption under FRS 102 section 33.1A from disclosing transactions with
-group companies, on the grounds that each company party to the transactions is wholly owned within
-the Group.
+In addition the Company recognised sponsorship income of US$500,000 (2023 - US$500,000) from Golden Eagle Racing Limited during the year.
 
-The Company has entered into contracts with Golden Eagle Racing Limited, a company through which
-Mr Lance Stroll, the son of a director, provides racing services. For the current year a net expense of
-US$12,300,000 (2023 - US$5,608,000) was incurred in respect of the provision of these services.
+At 31 December 2024, a net balance of US$Nil (2023 - US$1,224,000) was owed by the Company to Golden Eagle Racing Limited.
 
-In addition the Company recognised sponsorship income of US$500,000 (2023 - US$500,000) from
-Golden Eagle Racing Limited during the year.
+During the year, the Company incurred net travel and personnel costs of £60,000 (2023 - £Nil) in the normal course of business, with businesses which are related due to a director having significant influence. No amounts remained outstanding at the year end. These costs were accrued in 2023 and had no impact on the profit and loss account in the period.
 
-At 31 December 2024, a net balance of US$Nil (2023 - US$1,224,000) was owed by the Company to
-Golden Eagle Racing Limited.
-
-During the year, the Company incurred net travel and personnel costs of £60,000 (2023 - ENil) in the
-normal course of business, with businesses which are related due to a director having significant
-influence. No amounts remained outstanding at the year end. These costs were accrued in 2023 and
-had no impact on the profit and loss account in the period.
-
-During the year, the Company received net income amounting to £21,154,000 (2023 - £27,752,000) in
-
-‘the normal course of business from the Aston Martin Lagonda Global Holdings PLC (Aston Martin)
-
-Group, a Group that a director of the Company has significant influence over as Executive Chairman.
-At 31 December 2024 a net balance of £532,000 (2023 - £700,000) was due from (2023 - due to) AMR
-GP Limited.Under the terms of the sponsorship agreement Aston Martin is required to provide one fleet
-vehicle to each racing driver free of charge. This arrangement is expected to continue for the life of the
-contract and is not expected to materially affect the financial position and performance of the
-Company. One of the racing drivers is an immediate family member of one of the Company's key
-management personnel.
+During the year, the Company received net income amounting to £21,154,000 (2023 - £27,752,000) in the normal course of business from the Aston Martin Lagonda Global Holdings PLC (Aston Martin) Group, a Group that a director of the Company has significant influence over as Executive Chairman. At 31 December 2024 a net balance of £532,000 (2023 - £700,000) was due from (2023 - due to) AMR GP Limited.Under the terms of the sponsorship agreement Aston Martin is required to provide one fleet vehicle to each racing driver free of charge. This arrangement is expected to continue for the life of the contract and is not expected to materially affect the financial position and performance of the Company. One of the racing drivers is an immediate family member of one of the Company's key management personnel.
 
 37
 

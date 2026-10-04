@@ -307,458 +307,384 @@ Mer om lån og sikkerhetsstillelse
 
 Org.nr 970 976 787
 
-![img-0.jpeg](img-0.jpeg)
+[Imagen: fotografía de jugadores en círculo; texto visible "TAFJORD", "© Kristian Moe, @kjmfoto"]
 
-Transaksjon: 0922211555754036090
-
-Signert POL, HH, MEK, ATS, EG, EE, GH
+Transaksjon 09222115557540336090 — Signert POL, HH, MEK, ATS, EG, EE, GH
 
 --- pág. 8 ---
 
-# Resultatregnskap
+**Resultatregnskap**
 
-## Ålesund Fotball AS
+**Ålesund Fotball AS**
 
-|   | Note | 2024 | 2023  |
-| --- | --- | --- | --- |
-|  Salgsinntekter | 1,2 | 58 461 725 | 66 610 192  |
-|  Andre driftsinntekter |  | 3 667 334 | 339 659  |
-|  **Sum driftsinntekter** |  | **62 129 059** | **66 949 851**  |
-|  Varekostnad |  | 5 103 577 | 3 033 893  |
-|  Lønnskostnad | 3 | 7 538 609 | 7 344 889  |
-|  Avskrivning varige driftsmidler og immatrielle eiendeler | 7,8 | 4 478 254 | 3 409 332  |
-|  Annen driftskostnad | 4 | 49 163 715 | 56 268 910  |
-|  **Sum driftskostnad** |  | **66 284 155** | **70 057 024**  |
-|  **Driftsresultat** |  | **-4 155 096** | **-3 107 173**  |
-|  Inntekt på investering i datterselskap |  | 0 | 409 381  |
-|  Renteinntekt fra foretak i samme konsern |  | 450 000 | 450 000  |
-|  Annen renteinntekt |  | 171 575 | 4 706  |
-|  Annen finansinntekt |  | 5 185 079 | 96 840  |
-|  **Sum finansinntekter** |  | **5 806 654** | **960 927**  |
-|  Nedskrivning av andre finansielle omløpsmidler |  | 969 490 | 1 077 175  |
-|  Annen rentekostnad |  | 27 769 | 124 400  |
-|  **Sum finanskostnader** |  | **997 259** | **1 201 575**  |
-|  **Sum netto finansposter** |  | **4 809 395** | **-240 648**  |
-|  **Ordinært resultat før skattekostnad** |  | **654 299** | **-3 347 820**  |
-|  Skattekostnad på ordinært resultat |  | 199 261 | 0  |
-|  **Ordinært resultat** |  | **455 038** | **-3 347 820**  |
-|  **Årsresultat** | **5** | **455 038** | **-3 347 820**  |
-|  Overført til udekket tap | 6 | 455 038 | -3 347 820  |
-|  **Sum disponert** |  | **455 038** | **-3 347 820**  |
+| | Note | 2024 | 2023 |
+|---|---|---|---|
+| Salgsinntekter | 1,2 | 58 461 725 | 66 610 192 |
+| Andre driftsinntekter | | 3 667 334 | 339 659 |
+| **Sum driftsinntekter** | | **62 129 059** | **66 949 851** |
+| Varekostnad | | 5 103 577 | 3 033 893 |
+| Lønnskostnad | 3 | 7 538 609 | 7 344 889 |
+| Avskrivning varige driftsmidler og immatrielle eiendeler | 7,8 | 4 478 254 | 3 409 332 |
+| Annen driftskostnad | 4 | 49 163 715 | 56 268 910 |
+| **Sum driftskostnad** | | **66 284 155** | **70 057 024** |
+| **Driftsresultat** | | **-4 155 096** | **-3 107 173** |
+| Inntekt på investering i datterselskap | | 0 | 409 381 |
+| Renteinntekt fra foretak i samme konsern | | 450 000 | 450 000 |
+| Annen renteinntekt | | 171 575 | 4 706 |
+| Annen finansinntekt | | 5 185 079 | 96 840 |
+| **Sum finansinntekter** | | **5 806 654** | **960 927** |
+| Nedskrivning av andre finansielle omløpsmidler | | 969 490 | 1 077 175 |
+| Annen rentekostnad | | 27 769 | 124 400 |
+| **Sum finanskostnader** | | **997 259** | **1 201 575** |
+| **Sum netto finansposter** | | **4 809 395** | **-240 648** |
+| **Ordinært resultat før skattekostnad** | | **654 299** | **-3 347 820** |
+| Skattekostnad på ordinært resultat | | 199 261 | 0 |
+| **Ordinært resultat** | | **455 038** | **-3 347 820** |
+| **Årsresultat** | 5 | **455 038** | **-3 347 820** |
+| Overført til udekket tap | 6 | 455 038 | -3 347 820 |
+| **Sum disponert** | | **455 038** | **-3 347 820** |
 
-Ålesund Fotball AS
-
-Org.nr. 970976787
-
-Transaksjon: 0922211555754036090
-
-Signert POL, HH, MEK, ATS, EG, EE, GH
+Ålesund Fotball AS  Org.nr. 970976787
+Transaksjon 09222115557540336090 — Signert POL, HH, MEK, ATS, EG, EE, GH
 
 --- pág. 9 ---
 
-# Balanse
+**Balanse**
 
-## Ålesund Fotball AS
+**Ålesund Fotball AS**
 
-|   | Note | 2024 | 2023  |
-| --- | --- | --- | --- |
-|  **Eiendeler** |  |  |   |
-|  **Anleggsmidler** |  |  |   |
-|  Konsesjoner, patenter, lisenser o.l. | 7 | 5 531 741 | 3 387 324  |
-|  **Sum immaterielle eiendeler** |  | **5 531 741** | **3 387 324**  |
-|  Tomter, bygninger og annen fast eiendom | 8 | 225 102 | 6 617 050  |
-|  Maskiner og anlegg | 8 | 46 502 | 68 275  |
-|  Driftsløsøre, inventar, verktøy o.l. | 8 | 156 338 | 177 347  |
-|  **Sum varige driftsmidler** |  | **427 942** | **6 862 672**  |
-|  **Finansielle anleggsmidler** |  |  |   |
-|  Investeringer i datterselskap | 9 | 0 | 110 000  |
-|  Investeringer i aksjer og andeler | 10 | 0 | 1 429 347  |
-|  Obligasjoner og andre fordringer | 11 | 10 000 000 | 10 000 000  |
-|  **Sum finansielle anleggsmidler** |  | **10 000 000** | **11 539 347**  |
-|  **Sum anleggsmidler** |  | **15 959 683** | **21 789 343**  |
-|  **Omløpsmidler** |  |  |   |
-|  **Varer** | 12 | 80 652 | 138 439  |
-|  **Fordringer** |  |  |   |
-|  Kundefordringer | 11,13 | 5 678 441 | 685 569  |
-|  Andre fordringer |  | 8 593 521 | 4 507 573  |
-|  **Sum fordringer** |  | **14 271 962** | **5 193 142**  |
-|  **Bankinnskudd, kontanter o.l.** | 14 | 4 162 615 | 664 559  |
-|  **Sum omløpsmidler** |  | **18 515 229** | **5 996 140**  |
-|  **Sum eiendeler** |  | **34 474 912** | **27 785 483**  |
+| | Note | 2024 | 2023 |
+|---|---|---|---|
+| **Eiendeler** | | | |
+| **Anleggsmidler** | | | |
+| Konsesjoner,patenter,lisenser o.l. | 7 | 5 531 741 | 3 387 324 |
+| **Sum immaterielle eiendeler** | | **5 531 741** | **3 387 324** |
+| Tomter,bygninger og annen fast eiendom | 8 | 225 102 | 6 617 050 |
+| Maskiner og anlegg | 8 | 46 502 | 68 275 |
+| Driftsløsøre, inventar, verktøy o.l. | 8 | 156 338 | 177 347 |
+| **Sum varige driftsmidler** | | **427 942** | **6 862 672** |
+| **Finansielle anleggsmidler** | | | |
+| Investeringer i datterselskap | 9 | 0 | 110 000 |
+| Investeringer i aksjer og andeler | 10 | 0 | 1 429 347 |
+| Obligasjoner og andre fordringer | 11 | 10 000 000 | 10 000 000 |
+| **Sum finansielle anleggsmidler** | | **10 000 000** | **11 539 347** |
+| **Sum anleggsmidler** | | **15 959 683** | **21 789 343** |
+| **Omløpsmidler** | | | |
+| **Varer** | 12 | **80 652** | **138 439** |
+| **Fordringer** | | | |
+| Kundefordringer | 11,13 | 5 678 441 | 685 569 |
+| Andre fordringer | | 8 593 521 | 4 507 573 |
+| **Sum fordringer** | | **14 271 962** | **5 193 142** |
+| **Bankinnskudd,kontanter o.l.** | 14 | **4 162 615** | **664 559** |
+| **Sum omløpsmidler** | | **18 515 229** | **5 996 140** |
+| **Sum eiendeler** | | **34 474 912** | **27 785 483** |
 
-Ålesund Fotball AS
-
-Org.nr. 970976787
-
-Transaksjon: 0922211555754036090
-
-Signert POL, HH, MEK, ATS, EG, EE, GH
+Ålesund Fotball AS  Org.nr. 970976787
+Transaksjon 09222115557540336090 — Signert POL, HH, MEK, ATS, EG, EE, GH
 
 --- pág. 10 ---
 
-# Balanse
+**Balanse**
 
-## Ålesund Fotball AS
+**Ålesund Fotball AS**
 
-|   | Note | 2024 | 2023  |
-| --- | --- | --- | --- |
-|  **Egenkapital og gjeld** |  |  |   |
-|  **Egenkapital** |  |  |   |
-|  **Innskutt egenkapital** |  |  |   |
-|  Aksjekapital | 6 | 13 027 000 | 13 027 000  |
-|  **Sum innskutt egenkapital** |  | **13 027 000** | **13 027 000**  |
-|  Udekket tap | 6,15 | -7 234 353 | -7 770 645  |
-|  **Sum opptjent egenkapital** |  | **-7 234 353** | **-7 770 645**  |
-|  **Sum egenkapital** |  | **5 792 648** | **5 256 355**  |
-|  **Gjeld** |  |  |   |
-|  Gjeld til kredittinstitusjoner |  | 315 414 | 370 885  |
-|  Øvrig langsiktig gjeld |  | 2 355 568 | 3 572 992  |
-|  **Sum annen langsiktig gjeld** | **11** | **2 670 982** | **3 943 877**  |
-|  **Kortsiktig gjeld** |  |  |   |
-|  Gjeld til kredittinstitusjoner | 16 | 0 | 1 928 809  |
-|  Leverandørgjeld | 13 | 15 538 054 | 12 740 752  |
-|  Skyldige offentlige avgifter |  | 555 719 | 564 664  |
-|  Kortsiktig konserngjeld |  | 0 | 250 000  |
-|  Annen kortsiktig gjeld | 16 | 9 917 509 | 3 101 025  |
-|  **Sum kortsiktig gjeld** |  | **26 011 282** | **18 585 251**  |
-|  **Sum gjeld** |  | **28 682 264** | **22 529 128**  |
-|  **Sum egenkapital og gjeld** |  | **34 474 912** | **27 785 483**  |
+| | Note | 2024 | 2023 |
+|---|---|---|---|
+| **Egenkapital og gjeld** | | | |
+| **Egenkapital** | | | |
+| **Innskutt egenkapital** | | | |
+| Aksjekapital | 6 | 13 027 000 | 13 027 000 |
+| **Sum innskutt egenkapital** | | **13 027 000** | **13 027 000** |
+| Udekket tap | 6,15 | -7 234 353 | -7 770 645 |
+| **Sum opptjent egenkapital** | | **-7 234 353** | **-7 770 645** |
+| **Sum egenkapital** | | **5 792 648** | **5 256 355** |
+| **Gjeld** | | | |
+| Gjeld til kredittinstitusjoner | | 315 414 | 370 885 |
+| Øvrig langsiktig gjeld | | 2 355 568 | 3 572 992 |
+| **Sum annen langsiktig gjeld** | 11 | **2 670 982** | **3 943 877** |
+| **Kortsiktig gjeld** | | | |
+| Gjeld til kredittinstitusjoner | 16 | 0 | 1 928 809 |
+| Leverandørgjeld | 13 | 15 538 054 | 12 740 752 |
+| Skyldige offentlige avgifter | | 555 719 | 564 664 |
+| Kortsiktig konserngjeld | | 0 | 250 000 |
+| Annen kortsiktig gjeld | 16 | 9 917 509 | 3 101 025 |
+| **Sum kortsiktig gjeld** | | **26 011 282** | **18 585 251** |
+| **Sum gjeld** | | **28 682 264** | **22 529 128** |
+| **Sum egenkapital og gjeld** | | **34 474 912** | **27 785 483** |
 
-Ålesund Fotball AS
-
-Org.nr. 970976787
-
-Transaksjon: 0922211555754036090
-
-Signert POL, HH, MEK, ATS, EG, EE, GH
+Ålesund Fotball AS  Org.nr. 970976787
+Transaksjon 09222115557540336090 — Signert POL, HH, MEK, ATS, EG, EE, GH
 
 --- pág. 11 ---
 
-# Balanse
+**Balanse**
 
-## Ålesund Fotball AS
+**Ålesund Fotball AS**
 
-Note
-
-2024
-
-2023
+| | Note | 2024 | 2023 |
+|---|---|---|---|
 
 Ålesund, 27.02.2025
 Ålesund Fotball AS
 
-Gunnar Haagensen
-Styrets leder
+Gunnar Haagensen — Styrets leder
+Maria Elena Kvalen — Nestleder
+Peter Orry Larsen — Styremedlem
 
-Maria Elena Kvalen
-Nestleder
+Anne Seth — Styremedlem
+Egil Giørtz — Styremedlem
+Egil Eliassen — Styremedlem
 
-Peter Orry Larsen
-Styremedlem
+Henrik Hoff — Styremedlem
+Tarjei Gjendemsjø Omenås — Daglig leder
 
-Anne Seth
-Styremedlem
-
-Egil Giertz
-Styremedlem
-
-Egil Eliassen
-Styremedlem
-
-Henrik Hoff
-Styremedlem
-
-Tarjei Gjendemsje Omenås
-Daglig leder
-
-Ålesund Fotball AS
-
-Org.nr. 970976787
-
-Transaksjon 0922211555754036090
-
-Signert POL, HH, MEK, ATS, EG, EE, GH
+Ålesund Fotball AS  Org.nr. 970976787
+Transaksjon 09222115557540336090 — Signert POL, HH, MEK, ATS, EG, EE, GH
 
 --- pág. 12 ---
 
-# Ålesund Fotball AS
+**Ålesund Fotball AS**  — Noter til regnskapet for 2024
 
-Noter til regnskapet for 2024
-
-## Regnskapsprinsipper
+**Regnskapsprinsipper**
 
 Årsregnskapet er satt opp i samsvar med regnskapsloven og NRS 8 - god regnskapsskikk for små foretak.
 
-## Driftsinntekter
+**Driftsinntekter**
 
 Inntektsføring ved salg av varer skjer på leveringstidspunktet. Tjenester inntektsføres etterhvert som de leveres.
 
-## Skatt
-
+**Skatt**
 Skattekostnaden i resultatregnskapet omfatter både periodens betalbare skatt og endring i utsatt skatt. Utsatt skatt er beregnet med 22% på grunnlag av de midlertidige forskjeller som eksisterer mellom regnskapsmessige og skattemessige verdier, samt eventuelt ligningsmessig underskudd til fremføring ved utgangen av regnskapsåret. Skatteøkende og skattereduserende midlertidige forskjeller som reverserer eller kan reversere i samme periode er utlignet og nettoført.
 
-## Klassifisering og vurdering av anleggsmidler
+**Klassifisering og vurdering av anleggsmidler**
+Anleggsmidler omfatter eiendeler bestemt til varig eie og bruk. Anleggsmidler er vurdert til anskaffelsekost. Varige drifsmidler balanseføres og avskrives over driftsmidlets økonomiske levetid. Varige driftsmidler nedskrives til gjenvinnbart beløp ved verdifall som forventes ikke til å være forbigående. Gjenvinnbart beløp er det høyeste av netto salgsverdi og verdi i bruk. Verdi i bruk er nåverdi av fremtidige kontantstrømmer knyttet til eiendelen. Nedskrivningen reverseres når grunnlaget for nedskrivningene ikke lenger er til stede.
 
-Anleggsmidler omfatter eiendeler bestemt til varig eie og bruk. Anleggsmidler er vurdert til anskaffelsekost. Varige driftsmidler balanseføres og avskrives over driftsmidlets økonomiske levetid. Varige driftsmidler nedskrives til gjenvinnbart beløp ved verdifall som forventes ikke til å være forbigående. Gjenvinnbart beløp er det høyeste av netto salgsverdi og verdi i bruk. Verdi i bruk er nåverdi av fremtidige kontantstrømmer knyttet til eiendelen. Nedskrivingen reverseres når grunnlaget for nedskrivningene ikke lenger er til stede.
-
-## Immatrielle eiendeler
-
+**Immatrielle eiendeler**
 Utgifter til kjøp av spillere balanseføres og avskriver lineært over kontraktsperioden.
-
 Ved verdifall gjennomføres nedskrivinger.
 
-## Klassifisering og vurdering av omløpsmidler
+**Klassifisering og vurdering av omløpsmidler**
+Omløpsmidler og kortsiktig gjeld omfatter normalt poster som forfaller til betaling innen ett år etter balansedagen, samt poster som knytter seg til varekretsløpet. Omløpsmidler vudreres til laveste verdi av anskaffelsekost og virkelig verdi.
 
-Omløpsmidler og kortsiktig gjeld omfatter normalt poster som forfaller til betaling innen ett år etter balansedagen, samt poster som knytter seg til varekretsløpet. Omløpsmidler vurderes til laveste verdi av anskaffelsekost og virkelig verdi.
-
-## Fordringer
-
+**Fordringer**
 Kundefordringer og andre fordringer oppføres til pålydende etter fradrag for avsetning til forventet tap. Avsetning for tap gjøres på grunnlag av individuelle vurderinger av de enkelte fordringene.
 
-Transaksjon: 0922211555754036090
-
-Signert POL, HH, MEK, ATS, EG, EE, GH
+Transaksjon 09222115557540336090 — Signert POL, HH, MEK, ATS, EG, EE, GH
 
 --- pág. 13 ---
 
-# Ålesund Fotball AS
+**Ålesund Fotball AS**  — Noter til regnskapet for 2024
 
-Noter til regnskapet for 2024
+**Note 1 Driftsinntekter**
 
-## Note 1 Driftsinntekter
+| | 2024 | 2023 |
+|---|---|---|
+| Salgsinntekter | 58 461 725 | 66 610 192 |
+| **Sum** | **58 461 725** | **66 610 192** |
 
-|   | 2024 | 2023  |
-| --- | --- | --- |
-|  Salgsinntekter | 58 461 725 | 66 610 192  |
-|  **Sum** | **58 461 725** | **66 610 192**  |
-
-## Note 2 Gjennomført fusjon mellom Ålesund Fotball AS og AaFK Sponsorservice AS
+**Note 2 Gjennomført fusjon mellom Ålesund Fotball AS og AaFK Sponsorservice AS**
 
 I 2024 er det utført en fusjon mellom Ålesund Fotball AS og AaFK Sponsorservice AS.
 Ålesund Fotball AS har tatt over alle avtaleforpliktelser som AaFK Sponsorservice AS hadde før fusjonen.
 
-## Note 3 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.
+**Note 3 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.**
 
-|  Lønnskostnader | 2024 | 2023  |
-| --- | --- | --- |
-|  Lønninger | 5 873 140 | 5 967 797  |
-|  Arbeidsgiveravgift | 990 694 | 1 000 629  |
-|  Pensjonskostnader | 164 773 | 176 257  |
-|  Andre ytelser | 510 002 | 200 206  |
-|  **Sum** | **7 538 609** | **7 344 889**  |
-|  Sysselsatte årsverk i regnskapsåret har vært | 9 | 10  |
+| Lønnskostnader | 2024 | 2023 |
+|---|---|---|
+| Lønninger | 5 873 140 | 5 967 797 |
+| Arbeidsgiveravgift | 990 694 | 1 000 629 |
+| Pensjonskostnader | 164 773 | 176 257 |
+| Andre ytelser | 510 002 | 200 206 |
+| **Sum** | **7 538 609** | **7 344 889** |
 
-## Note 4 Samarbeidsavtale Ålesund Fotball AS og Aalesunds Fotballklubb
+| | 2024 | 2023 |
+|---|---|---|
+| Sysselsatte årsverk i regnskapsåret har vært | 9 | 10 |
 
-Ålesund Fotball AS har eksklusiv rett til kommersiell utnyttelse av det markedsmessige potensial som er knyttet til AaFK´s navn, logo og virksomhet. Bl. a. inngåelse av samarbeidsavtaler.
+**Note 4 Samarbeidsavtale Ålesund Fotball AS og Aalesunds Fotballklubb**
+
+Ålesund Fotball AS har eksklusiv rett til kommersiell utnyttelse av det markedsmessige potensial som er knyttet til AaFK `s navn, logo og virksomhet. Bl. a. inngåelse av samarbeidsavtaler.
 
 Som godtgjørelse for denne retten forplikter Ålesund Fotball AS seg til å dekke toppfotballsatsingen i AaFK (A-lag og juniorlag) iflg. fremlagte vedtatte årlige budsjett.
 Samarbeidsavtalen er i 2020 fornyet med ytterligere 10 nye år.
 
-|   | 2024 | 2023  |
-| --- | --- | --- |
-|  Overførsel iht. avtale | 27 470 125 | 32 108 643  |
+| | 2024 | 2023 |
+|---|---|---|
+| Overførsel iht. avtale | 27 470 125 | 32 108 643 |
 
-Transaksjon: 0922211555754036090
-
-Signert POL, HH, MEK, ATS, EG, EE, GH
+Transaksjon 09222115557540336090 — Signert POL, HH, MEK, ATS, EG, EE, GH
 
 --- pág. 14 ---
 
-# Ålesund Fotball AS
+**Ålesund Fotball AS**  — Noter til regnskapet for 2024
 
-Noter til regnskapet for 2024
+**Note 5 Skatt**
+**Beregning av utsatt skatt/utsatt skattefordel**
 
-## Note 5 Skatt
+| Midlertidige forskjeller | 2024 | 2023 |
+|---|---|---|
+| Anleggsmidler/Immaterielle eiendeler | -2 137 110 | -795 014 |
+| Kundefordringer | | 0 |
+| Varebeholdning | | 0 |
+| Fordringer | -62 293 | 0 |
+| Gevinst- og tapskonto | 470 744 | 59 392 |
+| Avsetninger for forpliktelser | -1 538 000 | -717 979 |
+| Konsernbidrag | | 0 |
+| Netto midlertidige forskjeller | -3 266 659 | -1 453 601 |
+| Aksjer og andre verdipapirer | 0 | -6 204 329 |
+| akkumulert fremførbart underskudd | -36 078 690 | -33 501 666 |
+| **Grunnlag for utsatt skatt** | **-39 345 349** | **-41 159 596** |
+| 22% utsatt skatt | -8 655 977 | -9 055 111 |
+| Herav ikke balanseført utsatt skattefordel | 8 655 977 | 9 055 111 |
+| **Utsatt skatt i balansen** | **0** | **0** |
 
-### Beregning av utsatt skatt/utsatt skattefordel
+**Grunnlag for skattekostnad, endring i utsatt skatt og betalbar skatt**
 
-|  Midlertidige forskjeller | 2024 | 2023  |
-| --- | --- | --- |
-|  Anleggsmidler/Immaterielle eiendeler | -2 137 110 | -795 014  |
-|  Kundefordringer |  | 0  |
-|  Varebeholdning |  | 0  |
-|  Fordringer | -62 293 | 0  |
-|  Gevinst- og tapskonto | 470 744 | 59 392  |
-|  Avsetninger for forpliktelser | -1 538 000 | -717 979  |
-|  Konsernbidrag |  | 0  |
-|  Netto midlertidige forskjeller | -3 266 659 | -1 453 601  |
-|  Aksjer og andre verdipapirer | 0 | -6 204 329  |
-|  akkumulert fremførbart underskudd | -36 078 690 | -33 501 666  |
-|  **Grunnlag for utsatt skatt** | **-39 345 349** | **-41 159 596**  |
-|  22% utsatt skatt | -8 655 977 | -9 055 111  |
-|  Herav ikke balanseført utsatt skattefordel | 8 655 977 | 9 055 111  |
-|  **Utsatt skatt i balansen** | **0** | **0**  |
+| Skattepliktig inntekt : | 2024 | 2023 |
+|---|---|---|
+| Resultat før skattekostnad | 455 038 | -3 347 820 |
+| Permanente forskjeller | -3 939 392 | 667 794 |
+| Mottatt konsernbidrag | 0 | 664 908 |
+| Endring i midlertidige forskjeller | 907 326 | 245 486 |
+| **Skattepliktig inntekt** | **-2 577 027** | **-1 769 632** |
 
-### Grunnlag for skattekostnad, endring i utsatt skatt og betalbar skatt
+| Betalbar skatt: | 2024 | 2023 |
+|---|---|---|
+| Betalbar skatt på årets resultat | 0 | 0 |
+| Betalbar skatt på mottatte konsernbidrag | 0 | 0 |
+| **Betalbar skatt i balansen** | **0** | **0** |
 
-|  Skattepliktig inntekt : | 2024 | 2023  |
-| --- | --- | --- |
-|  Resultat før skattekostnad | 455 038 | -3 347 820  |
-|  Permanente forskjeller | -3 939 392 | 667 794  |
-|  Mottatt konsernbidrag | 0 | 664 908  |
-|  Endring i midlertidige forskjeller | 907 326 | 245 486  |
-|  **Skattepliktig inntekt** | **-2 577 027** | **-1 769 632**  |
+| Årets Skattekostnad | 2024 | 2023 |
+|---|---|---|
+| Betalbar skatt på årets resultat | 0 | 0 |
+| For mye, lite avsatt tidligere år | 0 | 0 |
+| Sum betalbar skatt | 0 | 0 |
+| Endring i utsatt skattefordel | 0 | 0 |
+| **Årets Skattekostnad** | **0** | **0** |
 
-|  Betalbar skatt: | 2024 | 2023  |
-| --- | --- | --- |
-|  Betalbar skatt på årets resultat | 0 | 0  |
-|  Betalbar skatt på mottatte konsernbidrag | 0 | 0  |
-|  **Betalbar skatt i balansen** | **0** | **0**  |
-
-|  Årets Skattekostnad | 2024 | 2023  |
-| --- | --- | --- |
-|  Betalbar skatt på årets resultat | 0 | 0  |
-|  For mye, lite avsatt tidligere år | 0 | 0  |
-|  Sum betalbar skatt | 0 | 0  |
-|  Endring i utsatt skattefordel | 0 | 0  |
-|  **Årets Skattekostnad** | **0** | **0**  |
-
-Transaksjon: 0922211555754036090
-
-Signert POL, HH, MEK, ATS, EG, EE, GH
+Transaksjon 09222115557540336090 — Signert POL, HH, MEK, ATS, EG, EE, GH
 
 --- pág. 15 ---
 
-# Ålesund Fotball AS
+**Ålesund Fotball AS**  — Noter til regnskapet for 2024
 
-Noter til regnskapet for 2024
+**Note 6 Egenkapital, aksjekapital og aksjonærinformasjon**
 
-## Note 6 Egenkapital, aksjekapital og aksjonærinformasjon
-
-|  Årets endring i egenkapital | Aksjekapital | Overkurs- fond | Annen egenkapital | Udekket tap | Sum  |
-| --- | --- | --- | --- | --- | --- |
-|  Egenkapital 01.01. | 13 027 000 |  |  | -7 770 645 | 5 256 355  |
-|  Årets resultat |  |  |  | 455 038 | 455 038  |
-|  Egenkapital i AaFK Sponsorservice |  |  |  | 81 254 | 81 254  |
-|  **Egenkapital 31.12.** | **13 027 000** |  |  | **-7 234 353** | **5 792 648**  |
+| Årets endring i egenkapital | Aksjekapital | Overkurs-fond | Annen egenkapital | Udekket tap | Sum |
+|---|---|---|---|---|---|
+| Egenkapital 01.01. | 13 027 000 | | | -7 770 645 | 5 256 355 |
+| Årets resultat | | | | 455 038 | 455 038 |
+| Egenkapital i AaFK Sponsorservice | | | | 81 254 | 81 254 |
+| **Egenkapital 31.12.** | **13 027 000** | | | **-7 234 353** | **5 792 648** |
 
 Egenkapital 31 12 24 er 5.792.648
-
 Aksjekapitalen på kr. 13.027.000 består av 52 108 aksjer á kr. 250. Selskapet har en aksjeklasse.
-
 AaFK er største aksjonær med 77,14% av aksjene.
 
 Ålesund Fotball AS har forretningskontor i Sjømannsveien 14, 6008 Ålesund.
 
-## Note 7 Immaterielle eiendeler
+**Note 7 Immaterielle eiendeler**
 
-### Spillere
+| | Spillere |
+|---|---|
+| Anskaffelseskost 01.01. | 4 207 082 |
+| Tilgang | 5 710 882 |
+| Avgang | 0 |
+| Anskaffelseskost 31.12. | 9 917 964 |
+| Akkumulerte avskrivninger 31.12. | 4 386 223 |
+| Akkumulerte nedskrivninger 31.12. | 0 |
+| **Balanseført verdi 31.12.** | **5 531 741** |
+| Årets avskrivninger | 3 566 423 |
+| Årets nedskrivninger | 0 |
+| Forventet økonomisk levetid | 2-4 år |
+| Avskrivningsplan | Lineær |
 
-|  Anskaffelseskost 01.01. | 4 207 082  |
-| --- | --- |
-|  Tilgang | 5 710 882  |
-|  Avgang | 0  |
-|  Anskaffelseskost 31.12. | 9 917 964  |
-|  Akkumulerte avskrivninger 31.12. | 4 386 223  |
-|  Akkumulerte nedskrivninger 31.12. | 0  |
-|  **Balanseført verdi 31.12.** | **5 531 741**  |
-
-|  Årets avskrivninger | 3 566 423  |
-| --- | --- |
-|  Årets nedskrivninger | 0  |
-
-|  Forventet økonomisk levetid | 2-4 år  |
-| --- | --- |
-|  Avskrivningsplan | Lineær  |
-
-Transaksjon: 0922211555754036090
-
-Signert POL, HH, MEK, ATS, EG, EE, GH
+Transaksjon 09222115557540336090 — Signert POL, HH, MEK, ATS, EG, EE, GH
 
 --- pág. 16 ---
 
-# Ålesund Fotball AS
+**Ålesund Fotball AS**  — Noter til regnskapet for 2024
 
-Noter til regnskapet for 2024
+**Note 8 Varige driftsmidler**
 
-## Note 8 Varige driftsmidler
+| | Maskiner | Leiligheter | Innredning | Driftsløsøre | Sum |
+|---|---|---|---|---|---|
+| Anskaffelseskost 01.01. | 119 904 | 6 237 637 | 4 512 237 | 431 245 | **11 301 023** |
+| Tilgang | 23 393 | 0 | | 123 012 | **146 405** |
+| Avgang | | 6 237 637 | 0 | 0 | **6 237 637** |
+| Anskaffelseskost 31.12. | 143 297 | 0 | 4 512 237 | 554 257 | **5 209 791** |
+| Akkumulerte avskrivninger 31.12. | 96 795 | 0 | 4 287 135 | 397 919 | **4 781 849** |
+| **Balanseført verdi 31.12.** | **46 502** | **0** | **225 102** | **156 338** | **427 942** |
+| Årets avskrivninger | 45 166 | 0 | 722 644 | 144 021 | **911 831** |
+| Forventet økonomisk levetid | 3-5 år | | 5-10 år | 3-7 år | |
+| Avskrivningsplan | Lineær | | Lineær | Lineær | |
 
-|   | Maskiner | Leiligheter | Innredning | Driftsløsøre | Sum  |
-| --- | --- | --- | --- | --- | --- |
-|  Anskaffelseskost 01.01. | 119 904 | 6 237 637 | 4 512 237 | 431 245 | **11 301 023**  |
-|  Tilgang | 23 393 | 0 |  | 123 012 | **146 405**  |
-|  Avgang |  | 6 237 637 | 0 | 0 | **6 237 637**  |
-|  Anskaffelseskost 31.12. | 143 297 | 0 | 4 512 237 | 554 257 | **5 209 791**  |
-|  Akkumulerte avskrivninger 31.12. | 96 795 | 0 | 4 287 135 | 397 919 | **4 781 849**  |
-|  **Balanseført verdi 31.12.** | **46 502** | **0** | **225 102** | **156 338** | **427 942**  |
-|  Årets avskrivninger | 45 166 | 0 | 722 644 | 144 021 | **911 831**  |
-|  Forventet økonomisk levetid | 3-5 år |  | 5-10 år | 3-7 år |   |
-|  Avskrivningsplan | Lineær |  | Lineær | Lineær |   |
-
-## Note 9 Datterselskap
+**Note 9 Datterselskap**
 
 Det er gjennomført en fusjon med det heleide datterselskapet AaFK Sponsorservice AS. Datterselskapet har hatt rettighetene til fakturering av samarbeidsavtaker knyttet til toppfotballen. Fusjon har ikke hatt noen praktisk betydning for driften og har ikke berørt ansatte.
 
-|  Datterselskap | Balanseført verdi  |
-| --- | --- |
-|  AaFK Sponsorservice AS 01 01 | 110 000  |
-|  Fusjon, eliminering aksjekapital | -100 000  |
-|  Udekket tap | -10 000  |
-|  **Balanseført verdi 31.12.** | **0**  |
+| Datterselskap | Balanseført verdi |
+|---|---|
+| AaFK Sponsorservice AS 01 01 | 110 000 |
+| Fusjon, eliminering aksjekapital | -100 000 |
+| Udekket tap | -10 000 |
+| **Balanseført verdi 31.12.** | **0** |
 
-Transaksjon: 0922211555754036090
-
-Signert POL, HH, MEK, ATS, EG, EE, GH
+Transaksjon 09222115557540336090 — Signert POL, HH, MEK, ATS, EG, EE, GH
 
 --- pág. 17 ---
 
-# Ålesund Fotball AS
+**Ålesund Fotball AS**  — Noter til regnskapet for 2024
 
-Noter til regnskapet for 2024
-
-## Note 10 Investering i andeler TANGO
+**Note 10 Investering i andeler TANGO**
 
 Selskapet har de siste årene investert i spiller pooler kjent som Tango investeringer.
-
 De ulike investeringene har eierandeler i en rekke spillere tilknyttet AaFK.
-
 I desember 2024 solgte Ålesund Fotball AS sine andeler i Tango 2012 noe som regnskapsmessing ga en gevinst på 4.138.653. Gevinsten er bokført som annen finansinntekt
 
-## Note 11 Fordringer og gjeld
+**Note11 Fordringer og gjeld**
 
-### Kundefordringer
+**Kundefordringer**
 
-|   | 2024 | 2023  |
-| --- | --- | --- |
-|  Kundefordringer til pålydende | 5 740 734 | 685 569  |
-|  Avsetning til tap på kundefordringer | 62 293 | 0  |
-|  **Kundefordringer i balansen** | **5 678 441** | **685 569**  |
+| | 2024 | 2023 |
+|---|---|---|
+| Kundefordringer til pålydende | 5 740 734 | 685 569 |
+| Avsetning til tap på kundefordringer | 62 293 | 0 |
+| **Kundefordringer i balansen** | **5 678 441** | **685 569** |
 
-### Fordringer med forfall senere enn ett år
+**Fordringer med forfall senere enn ett år**
 
-|   | 2024 | 2023  |
-| --- | --- | --- |
-|  Fordring Ålesund Fotballstadion AS | 10 000 000 | 10 000 000  |
-|  **Sum** | **10 000 000** | **10 000 000**  |
+| | 2024 | 2023 |
+|---|---|---|
+| Fordring Ålesund Fotballstadion AS | 10 000 000 | 10 000 000 |
+| **Sum** | **10 000 000** | **10 000 000** |
 
-### Langsiktig gjeld
+**Langsiktig gjeld**
 
-|   | 2024 | 2023  |
-| --- | --- | --- |
-|  Gjeld til kredittinstitusjoner | 315 414 | 370 885  |
-|  Annen langsiktig gjeld (spesifiseres) | 2 355 568 | 3 572 992  |
-|  **Sum** | **2 670 982** | **3 943 877**  |
+| | 2024 | 2023 |
+|---|---|---|
+| Gjeld til kredittinstitusjoner | 315 414 | 370 885 |
+| Annen langsiktig gjeld (spesifiseres) | 2 355 568 | 3 572 992 |
+| **Sum** | **2 670 982** | **3 943 877** |
 
-|   | 2024 | 2023  |
-| --- | --- | --- |
-|  Benyttet kassekreditt | 0 | 1 928 809  |
-|  Langsiktig gjeld | 2 670 982 | 3 943 877  |
-|  **Gjeld sikret ved pant** | **2 670 982** | **5 872 686**  |
+| | 2024 | 2023 |
+|---|---|---|
+| Benyttet kassekreditt | 0 | 1 928 809 |
+| Langsiktig gjeld | 2 670 982 | 3 943 877 |
+| **Gjeld sikret ved pant** | **2 670 982** | **5 872 686** |
 
-### Balanseført verdi av pantsatte eiendeler
+**Balanseført verdi av pantsatte eiendeler**
 
-|  Varige driftsmidler | 225 102 | 6 617 050  |
-| --- | --- | --- |
-|  Maskiner og anlegg | 46 502 | 68 275  |
-|  Driftsløsøre | 156 338 | 177 347  |
-|  Varer | 80 652 | 138 439  |
-|  Kundefordringer | 5 678 441 | 685 569  |
-|  **Sum** | **6 187 035** | **7 686 680**  |
+| | 2024 | 2023 |
+|---|---|---|
+| Varige driftsmidler | 225 102 | 6 617 050 |
+| Maskiner og anlegg | 46 502 | 68 275 |
+| Driftsløsøre | 156 338 | 177 347 |
+| Varer | 80 652 | 138 439 |
+| Kundefordringer | 5 678 441 | 685 569 |
+| **Sum** | **6 187 035** | **7 686 680** |
 
-Transaksjon: 0922211555754036090
-
-Signert POL, HH, MEK, ATS, EG, EE, GH
+Transaksjon 09222115557540336090 — Signert POL, HH, MEK, ATS, EG, EE, GH
 
 --- pág. 18 ---
 
@@ -835,27 +761,25 @@ Signert POL, HH, MEK, ATS, EG, EE, GH
 
 --- pág. 20 ---
 
-# Ålesund Fotball AS
+**Ålesund Fotball AS**  — Noter til regnskapet for 2024
 
-Noter til regnskapet for 2024
+**Note 16 Annen kortsiktig gjeld**
 
-## Note 16 Annen kortsiktig gjeld
+| Gjeld til kredittinstitusjoner | 2024 | 2023 |
+|---|---|---|
+| Benyttet kassekreditt | | 1 928 809 |
 
-|  Gjeld til kredittinstitusjoner | 2024 | 2023  |
-| --- | --- | --- |
-|  Benyttet kassekreditt |  | 1 928 809  |
-|  Annen kortsiktig gjeld | 2024 | 2023  |
-|  Gjeld Tango | 3 404 296 | 0  |
-|  Feriepenger | 671 897 | 783 405  |
-|  Deltakeravg. Coop cup 23/24 | 116 000 | 79 200  |
-|  Forskudds betalte sesongkort | 1 534 359 | 782 562  |
-|  Forpliktelser overgang | 3 993 124 | 1 365 555  |
-|  Andre forpliktelser | 197 833 | 90 303  |
-|  **Sum** | **9 917 509** | **3 101 025**  |
+| Annen kortsiktig gjeld | 2024 | 2023 |
+|---|---|---|
+| Gjeld Tango | 3 404 296 | 0 |
+| Feriepenger | 671 897 | 783 405 |
+| Deltakeravg. Coop cup 23/24 | 116 000 | 79 200 |
+| Forskudds betalte sesongkort | 1 534 359 | 782 562 |
+| Forpliktelser overgang | 3 993 124 | 1 365 555 |
+| Andre forpliktelser | 197 833 | 90 303 |
+| **Sum** | **9 917 509** | **3 101 025** |
 
-Transaksjon: 0922211555754036090
-
-Signert POL, HH, MEK, ATS, EG, EE, GH
+Transaksjon 09222115557540336090 — Signert POL, HH, MEK, ATS, EG, EE, GH
 
 --- pág. 21 ---
 

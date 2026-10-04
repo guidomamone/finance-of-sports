@@ -112,14 +112,26 @@ const SCANNED_WARNING = `> **⚠️ ESCANEADO, TRANSCRIPTO CON MISTRAL OCR (ver 
 
 `;
 
+import { derivado, ubicar } from './rutas.mjs';
+import { diagnosticar, limpiar as limpiarCopia } from './reparar-pdf.mjs';
+
 async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, outSuffix = '', scannedFlag = false) {
   // outSuffix sirve para tests de comparación (ej. "-mistral-test"): escribe a un archivo aparte en
   // vez de al `.md` canónico, así se puede correr sobre un PDF que YA tiene transcripción (de otra
   // pata) sin pisarla, para comparar los dos resultados lado a lado.
-  const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + outSuffix + '.md');
+  // Versión 317: con --out-suffix (una segunda voz, un rehacer, un test) el .md es un DERIVADO y va a Generados/ (tools/rutas.mjs); sin
+  // sufijo es LA transcripción del documento y queda al lado del PDF, en Clubes/.
+  const mdPath = outSuffix ? derivado(pdfPath, outSuffix + '.md') : resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
   if (existsSync(mdPath)) return { skipped: true, pdf: pdfPath };
 
-  const pdfBytes = readFileSync(pdfPath);
+  // Antes de gastar una llamada: si el PDF está dañado se repara (qpdf) y si tiene una imagen gigante que Mistral rechaza (Thun, 128x105696 px)
+  // esas páginas se rasterizan en una copia. Si es irrecuperable (truncado, HTML) se devuelve un error claro en vez de un HTTP 400 críptico.
+  const diag = diagnosticar(pdfPath, { reparar: true });
+  if (diag.estado === 'truncado' || diag.estado === 'no-es-pdf') {
+    return { ok: false, pdf: pdfPath, error: `PDF-${diag.estado.toUpperCase()}: ${diag.motivo}${diag.fuente ? ` -- volver a bajarlo: ${diag.fuente}` : ''}` };
+  }
+  const pdfBytes = readFileSync(diag.usable || pdfPath);
+  limpiarCopia(diag.usable, pdfPath);
   const base64 = pdfBytes.toString('base64');
   const url = 'https://api.mistral.ai/v1/ocr';
   const body = {

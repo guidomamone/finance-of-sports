@@ -166,6 +166,12 @@ const clubs = {
   'unionmagdalena-co': { id:'unionmagdalena-co', name:'Unión Magdalena S.A.', displayName:'Unión Magdalena', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'millonarios-co': { id:'millonarios-co', name:'Azul y Blanco Millonarios FC S.A.', displayName:'Millonarios', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#293378' },
   'deportivopereira-co': { id:'deportivopereira-co', name:'Deportivo Pereira F.C. S.A.', displayName:'Deportivo Pereira', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0013' },
+  // Boyacá Chicó ("Los Ajedrezados"): camiseta a cuadros (patrón ajedrezado) azul marino y blanco
+  // según Wikipedia (infobox pattern_la1/pattern_b1) -- bicolor en partes iguales, mismo caso que
+  // Almagro (tricolor): sin un color que predomine con claridad, brandColor:null a propósito en
+  // vez de forzar uno de los dos (footylogos da #001356 azul marino como #1, pero es el orden del
+  // escudo, no confirma que domine sobre el blanco en la camiseta a cuadros).
+  'boyacachico-co': { id:'boyacachico-co', name:'Deportivo Boyacá Chicó Futbol Club S.A.', displayName:'Boyacá Chicó', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   // España (Versión 111): sexto país con datos reales. `reportingCurrency:'EUR'` ya soportado de
   // forma genérica por CURRENCY_META (data/currency-map.js) desde la Versión 103 — el toggle de
   // moneda y "Formato del club/simplificado" se muestran para CUALQUIER club (no gateados por
@@ -372,6 +378,27 @@ const clubs = {
   'istra-hr': { id:'istra-hr', name:'Nogometni klub Istra 1961 sportsko dioničko društvo', displayName:'Istra 1961', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#007B33' },
   'varazdin-hr': { id:'varazdin-hr', name:'Nogometni klub Varaždin sportsko dioničko društvo za obavljanje sportskih djelatnosti', displayName:'Varaždin', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'gorica-hr': { id:'gorica-hr', name:'Hrvatski Nogometni klub GORICA s.d.d.', displayName:'Gorica', country:'HR', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
+  // Panathinaikos, primer club griego cargado (2026-09-28, ronda de onboardings de prueba).
+  // Colores VERDE Y BLANCO confirmados (Wikipedia: "green established as the primary colour since
+  // 1910", apodo "Πράσινοι"/"los verdes"), pero sin un hex específico de la sección de FÚTBOL
+  // (footylogos no tiene Grecia cacheada todavía, y las fuentes de color encontradas mezclan con
+  // el club de básquet del mismo nombre) — brandColor:null a propósito en vez de adivinar un tono.
+  'panathinaikos-gr': { id:'panathinaikos-gr', name:'Panathinaikos Athlitikos Omilos P.A.E.', displayName:'Panathinaikos', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  // Fortaleza CEIF: alta por tools/alta-club.mjs (2026-10-02) desde Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf. brandColor de Guido
+  // (2026-10-02: azul #003366 y rojo #CC0000; el campo admite un color y va el azul).
+  'fortalezaceif-co': { id:'fortalezaceif-co', name:'FORTALEZA FUTBOL CLUB S.A.', displayName:'Fortaleza CEIF', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#003366' },
+  // Goias: alta por tools/alta-club.mjs (2026-10-02) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf. brandColor de Guido
+  // (2026-10-02: verde #006633; footylogos no tiene a Goiás).
+  'goias-br': { id:'goias-br', name:'Goiás Esporte Clube', displayName:'Goiás', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#006633' },
+  // Novorizontino: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf. brandColor AUSENTE a propósito
+  // (nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
+  'novorizontino-br': { id:'novorizontino-br', name:'Grêmio Novorizontino Sociedade Anônima do Futebol', displayName:'Novorizontino', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFDD00' }, // name: demonstracoes-financeiras-2023.md L70 (SAF desde 06/12/2023; antes associação 'Grêmio Novorizontino'). Color: aurinegro, amarillo primero (pt.wikipedia, himno 'Amarelo e negro'); hex como Amazonas,
+  // AEL Larissa: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2025-06-30_a.pdf. brandColor AUSENTE a propósito
+  // (nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
+  'aellarissa-gr': { id:'aellarissa-gr', name:'Athlitiki Enosi Larissas AEL P.A.E.', displayName:'AEL Larissa', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
+  // Juventus: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.pdf. brandColor AUSENTE a propósito
+  // (nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
+  'juventus-it': { id:'juventus-it', name:'Juventus Football Club S.p.A.', displayName:'Juventus', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
@@ -393,6 +420,20 @@ const sources = {
       url:'https://www.bocajuniors.com.ar/club/presupuesto',
       note:'PDF oficial (149 páginas, firmado por Comisión Directiva/Fiscalizadora, con dictamen de auditoría de Becher y Asociados S.R.L. sin salvedades, 10/09/2025), descargado del Google Drive linkeado en la página oficial del club. Cifras en moneda homogénea (reexpresadas a poder adquisitivo del 30/06/2025 según RT 6/17, Nota 2.2 del balance), no nominales del momento de cada operación. "Revenue" del sitio incluye ingresos por venta/rescisión de pases (Versión 102: igual que el propio balance los trata en su Total de Recursos, pág. 76, y que el resto de los clubes del motor genérico); "wages" es la suma real de "Remuneraciones y cargas sociales" de los 9 anexos que la desglosan por departamento (ver comentario de cabecera de data/boca-data.js).',
     },
+  'boca-balance-2021-22': {
+      id:'boca-balance-2021-22', clubId:'boca',
+      title:'Estados Contables auditados, Ejercicio Económico N°118, 1/7/2021 a 30/6/2022',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.bocajuniors.com.ar/rebrand/files/EECC_30525418835_2022.pdf',
+      note:'PDF oficial (101 páginas, escaneado, sin dictamen con salvedades — Becher y Asociados S.R.L., 15/09/2022), no linkeado desde la página vigente del club: encontrado vía Wayback CDX de dominio completo sobre bocajuniors.com.ar (to-do 73, Versión 247, snapshot 2023-01-01), colgando de un directorio /rebrand/files/ sin ningún nombre obvio en el sitio vivo de hoy. Transcripto con Mistral OCR (Clubes/Argentina/Boca/eecc-30525418835-2022.md) y verificado íntegramente contra los totales impresos del propio documento (ver comentario de cabecera de data/boca-data.js).',
+    },
+  'boca-balance-2022-23': {
+      id:'boca-balance-2022-23', clubId:'boca',
+      title:'Estados Contables auditados, Ejercicio Económico N°119, 1/7/2022 a 30/6/2023',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.bocajuniors.com.ar/rebrand/files/balance_01_07_22_al_30_06_23_firmado.pdf',
+      note:'PDF oficial (128 páginas, escaneado, firmado, sin dictamen con salvedades — Becher y Asociados S.R.L., 08/09/2023), mismo hallazgo que 2021-22 (Wayback CDX de dominio completo, to-do 73, snapshot 2023-11-11, directorio /rebrand/files/). Transcripto con Mistral OCR (Clubes/Argentina/Boca/balance-01-07-22-al-30-06-23-firmado.md) y verificado íntegramente contra los totales impresos del propio documento.',
+    },
 };
 
 // Gestion: un presidente/período por club. Se guarda por club para evitar que
@@ -401,14 +442,13 @@ const sources = {
 const gestionesByClub = {
   boca: {
       riquelme:  { nombre:'Riquelme (2023-actual)', firstYear:2025, lastYear:2027 },
-      ameal:     { nombre:'Ameal (2019-2023)',      firstYear:2021, lastYear:2023 },
+      ameal:     { nombre:'Ameal (2019-2023)',      firstYear:2022, lastYear:2023 },
       angelici:  { nombre:'Angelici (2015-2019)',   firstYear:2018, lastYear:2019 },
-      // Versión 138: `ameal` y `angelici` ya NO tienen ningún ejercicio de Finanzas detrás. Sus
-      // años eran los placeholder de Boca, que se borraron. Se quedan acá porque Mercado de Pases
-      // y Resultados Deportivos siguen agrupando por gestión y tienen filas de las dos, y porque
-      // `finanzasYears`/`finanzasGestiones` de data/boca-data.js ya las excluía del selector de
-      // Finanzas desde la Versión 81. El día que se cargue un balance real de esos años, sus
-      // firstYear/lastYear vuelven a apuntar a algo.
+      // Versión 138: `ameal` y `angelici` ya NO tenían ningún ejercicio de Finanzas detrás (eran los
+      // placeholder de Boca, que se borraron), pero se dejaron porque Mercado de Pases y Resultados
+      // Deportivos siguen agrupando por gestión. Con el to-do 73 (Ejercicios N°118 y N°119, 2022 y
+      // 2023) `ameal` vuelve a tener ejercicios reales de Finanzas, y `firstYear`/`lastYear` ya
+      // apuntan a ellos — `angelici` sigue sin ninguno cargado.
     },
 };
 

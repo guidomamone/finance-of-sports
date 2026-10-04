@@ -925,60 +925,45 @@ arqueras de todas las divisiones, y comprar elementos para facilitar la preparac
 
 --- pág. 18 ---
 
-"(9'S'3) OLNId SOTIVI NNF "DN YOd VAVLIIO ¿ANOYD 319V,, NOIDVLIDWAVI “ET- :TZOZ IYENIDDO+
+CAUNION
 
-"SONYANL S31N3393310
-N3 “SONY SO1 SOJDOL “NVI OLLVA *,V8JAVINIUA VOINIAN319, SODINT 30 SVOVNYOF “EZ A zz
+**GIMNASIA RITMICA Y TELAS**
 
-“SOLSINd ¿7 OYLVND A
-SOLSINd ¿1 SIYL SOT13 39 1N3 “SOIOOd SOIIVA OON3INILGO “SVIYODILVI SVSYIAIO NI SVISVNINID
-ZT YOd OOVINISIVAJY SÍ NOINN “VNOZ V1 VOOL 30 SVISVNINID OST 30 SYIN NVdIDILEVA
-OINSIN 130 “34 VLNVS 30 NOINN “V 8N19 130 OIOVISIOYINMAN 13 N3 OOVZITVIY "VNIINISVIAN
-A VNININW3IS VINVY ,,3, TIAIN (3LYON VNOZ) IVNOZ OAILVYI0OJA OINYOL “TT- “TZOZ JYINNITILAIS
+*<u>JULIO 2021</u>: - J.J.O.O. TOKIO. SE REALIZAN VISUALIZACIONES CON EL GRUPO DE COMPETENCIA Y SE DAN CLASES TEÓRICAS.
 
-"VISVNINIO 30 VNILNIOYV NOIDVY3I0OIINOI VI
-30 A VISVNINIO 30 VNISIIVINVS NOIDV43033 V1 30 SIIVALSIA SOLNINANVNIY LN NOIDVANOLLIVA
+*<u>AGOSTO 2021</u>: -<u>14 Y 28</u>: PARTICIPACIÓN ENTRENAMIENTO VIRTUAL CONJUNTO F.S.G.
 
-(yZ07 SVSINNOYA) "IN'V9 TNIANT OTIOYYVSIO OLIJAOYA NOINNIY Y3€ “ZT- *TZOZ OLSODV +
+*<u>SEPTIEMBRE 2021:</u> -<u>25</u>: PARTICIPACIÓN CLASE VIRTUAL CONJUNTA BALLET APLICADA A RITMICA – F.S.G
 
-"VIN31 13 34905 SVIIYO IL
-SISW19 NVO 35 A VIDNILIANO9 30 OdNI9 13 NO9 SINOIDVZMVASIA NVZNVIY 35 "'OMIOL *O0'0"Ff1
+*<u>NOVIEMBRE 2021:</u> -<u>18</u>: MUESTRA FINAL ANUAL DE ACROBACIAS EN TELAS. GIMNASIO DE DEPORTIVA.
 
-(yZ07 SVSINNOYA) "N'V9D TNIANT OTIOYYVSIO OLDJAOYA NOINN3Y VOZ “E0
+*<u>DICIEMBRE 2021</u>: -<u>18</u>: GALA ANUAL GIMNASIA RÍTMICA C.A.U., EN EL MICROESTADIO DEL CLUB A. UNION.
 
-"VISVNINIO 30 VNILNIOYV NOIDVYIJOIINOI VI 30 A VISVNINIO 30
-VNISI3VLNVS NO/9V33033 V1 30 SIVVALYIA SOLNINANVNIYLNI NI NOIDVdIDILIVA- *TZOZ OMNf y
+*<u>ENERO 2022:</u> -RECESO.
 
-SVI131 A VINANLIY VISVNINIO
+*<u>FEBRERO 2022</u>: PRE-TEMPORADA. GRUPO AVANZADO.
 
-31YVd .7 — VNIDYOID 'ONNVYLS “JOYA “D'S'y V1
-30 VINANLIS VISVNINWIO 30 VIINIZL VI WL3Y493S WI NO9 IVALYIA NOIDVLIDVAVIO *0T- :2207 OINNIx
+*<u>MAYO 2022:</u> -13: CAPACITACIÓN VIRTUAL CON LA SECRETARIA TÉCNICA DE GIMNASIA RITMICA DE LA F.S.G., PROF. STRANNO, GEORGINA
 
-VNI9YO39 “'ONNVEYLS “JOYA “D'S'4 VI
-30 VINALIS VISVNIAIO 30 VIINIZL VIYV13893S VI NO9 IVALIA NONDVLIDVAVI -ET- :2207 DAVIN +
+*<u>JUNIO 2022:</u> -10: CAPACITACIÓN VIRTUAL CON LA SECRETARIA TÉCNICA DE GIMNASIA RITMICA DE LA F.S.G., PROF. STRANNO, GEORGINA – 2° PARTE
 
-"“OOVZNVAV OdNY9 "VOVIOAINIL-I8A -2202 OYIYUAIA e
-"OSI938- :2202 OYINIx
+**GIMNASIA RITMICA Y TELAS**
 
-"NOINN
-"y gn19 130 OIOVISIOYIIAN 13 N3 “NVI VINALIS VISVNINIO IVANV VIVO *8T- “TZO0Z JYIININDIO,
+*<u>JULIO 2021</u>: -PARTICIPACIÓN EN ENTRENAMIENTOS VIRTUALES DE LA FEDERACIÓN SANTAFESINA DE GIMNASIA Y DE LA CONFEDERACIÓN ARGENTINA DE GIMNASIA.
 
-"VAILLUOd3O
-30 OISVNNID “SV13L NI SVIDW8OYIV 30 IVANV 1VNI3 VIISININ “8T- “TZOZ IVIINIIAON+
+<u>03:</u> 2DA REUNION PROYECTO DESARROLLO JUVENIL G.A.M. (PROMESAS 2024)
 
-953
-= VINNLIY Y VOVINAV 1311Y49 VINNINO9 IVNLYIA 3SV19 NOIDVAIDILUVA *SZ- “TZOZ IYININLATS
+J.J.O.O. TOKIO. SE REALIZAN VISUALIZACIONES CON EL GRUPO DE COMPETENCIA Y SE DAN CLASES TEÓRICAS SOBRE EL TEMA.
 
-"9'S'3OLNNINO9 IVALSIA OLNIINNVNIY4LN3 NOIDVAINDILIVA -87 A YT- -TZ02 OLSODV x
+*<u>AGOSTO 2021</u>: -<u>12:</u> 3ER REUNION PROYECTO DESARROLLO JUVENIL G.A.M. (PROMESAS 2024)
 
-"SVQ 3.1 SISW1D NVO
-3S A VION3ILIdWNWO9 30 ONY9 13 NO9 SINOMVZMNVASIA NVZINVIY 35 'OMOL*O'O'Ff - :TZOZ OMNIx
+PARTICIPACIÓN ENTRENAMIENTOS VIRTUALES DE LA FEDERACIÓN SANTAFESINA DE GIMNASIA Y DE LA CONFEDERACIÓN ARGENTINA DE GIMNASIA.
 
-SVILA VINALIS VISVNINIO
+*<u>SEPTIEMBRE 2021:</u> -<u>11:</u> TORNEO FEDERATIVO ZONAL (ZONA NORTE) NIVEL "E" RAMA FEMENINA Y MASCULINA. REALIZADO EN EL MICROESTADIO DEL CLUB A. UNION DE SANTA FE. DEL MISMO PARTICIPAN MÁS DE 250 GIMNASTAS DE TODA LA ZONA. UNIÓN ES REPRESENTADO POR 12 GIMNASTAS EN DIVERSAS CATEGORÍAS, OBTENIENDO VARIOS PODIOS, ENTRE ELLOS TRES 1° PUESTOS Y CUATRO 2° PUESTOS.
 
-NOINNVOI
+<u>22 Y 23:</u> JORNADAS DE JUEGOS "BIENVENIDA PRIMAVERA". PATIO C.A.U., TODOS LOS GRUPOS, EN DIFERENTES TURNOS.
 
-MA
+*<u>OCTUBRE 2021</u>: -<u>13:</u> CAPACITACIÓN "AGE GROUP". DICTADA POR LIC. JUAN CARLOS PINTO (F.S.G.).
 
 --- pág. 19 ---
 
@@ -1257,56 +1242,37 @@ demostrando una vez más que la fiesta siempre es rojiblanca.
 
 CAUNION
 
-y
 Enero 2022
-a Se realiza balance de las actividades de la Subcomisión y se plantean estrategias y cronograma
 
-de trabajo para tornar más eficiente el mismo en las distintas comisiones de trabajo y grupos de peñas.
+▯ Se realiza balance de las actividades de la Subcomisión y se plantean estrategias y cronograma de trabajo para tornar más eficiente el mismo en las distintas comisiones de trabajo y grupos de peñas.
+
 Febrero 2022
 
-a Tate Fest. Se proyecta para el mes la realización de una nueva edición de la fiesta, la cual se
-decide dar de baja debido a que las fechas seleccionadas no eran viables con la inversión a realizar,
-generando un riesgo en el balance de la misma.
+▯ Tate Fest. Se proyecta para el mes la realización de una nueva edición de la fiesta, la cual se decide dar de baja debido a que las fechas seleccionadas no eran viables con la inversión a realizar, generando un riesgo en el balance de la misma.
 
 Marzo 2022
 
-a Trabajo de diagramación del Aniversario 1152 de Unión. Se comienza con la elaboración de
-presupuesto para afinar de cara al evento, en conjunto con notas de solicitud de habilitación en el
-Club y municipalidad de la ciudad.
+▯ Trabajo de diagramación del Aniversario 115º de Unión. Se comienza con la elaboración de presupuesto para afinar de cara al evento, en conjunto con notas de solicitud de habilitación en el Club y municipalidad de la ciudad.
 
-Se comienza venta de remeras con el logo del aniversario con los fines de recaudar fondos para costear
-el evento.
+Se comienza venta de remeras con el logo del aniversario con los fines de recaudar fondos para costear el evento.
 
-a Clásico santafesino. Se concentra al hincha a despedir al plantel en Casasol de cara al partido
-clásico. Se concentraron alrededor de 5.000 hinchas, donde hubo cánticos de aliento a los jugadores,
-banderas y bombas de estruendo.
+▯ Clásico santafesino. Se concentra al hincha a despedir al plantel en Casasol de cara al partido clásico. Se concentraron alrededor de 5.000 hinchas, donde hubo cánticos de aliento a los jugadores, banderas y bombas de estruendo.
 
 Abril 2022
-ANIVERSARIO “115 AÑOS DEL DUEÑO DE LA CIUDAD”
+
+▯ ANIVERSARIO "115 AÑOS DEL DUEÑO DE LA CIUDAD"
+
 El evento Unionista del año, con una convocatoria de 80.000 TATENGUES.
 
-Evento organizado por la Subcomisión de Agrupaciones y Peñas Unidas con colaboración de la
-Comisión Directiva y los departamentos de marketing y prensa, para lo cual se gestionó el cerramiento
-del perímetro del club más los baños químicos para garantizar la seguridad y comodidad de los
-asistentes. Durante la noche contamos con 2 (dos) barras equipadas de bebida, una barra de comida
-en conjunto con venta de remera con el logo del aniversario. La disposición de las mismas fue
-estratégicamente planificada para cubrir el 100% de la demanda.
+Evento organizado por la Subcomisión de Agrupaciones y Peñas Unidas con colaboración de la Comisión Directiva y los departamentos de marketing y prensa, para lo cual se gestionó el cerramiento del perímetro del club más los baños químicos para garantizar la seguridad y comodidad de los asistentes. Durante la noche contamos con 2 (dos) barras equipadas de bebida, una barra de comida en conjunto con venta de remera con el logo del aniversario. La disposición de las mismas fue estratégicamente planificada para cubrir el 100% de la demanda.
 
-Se obtuvo nuevamente la conducción dirigida por Julio González y Gisela Vallone, y se contó con los
-shows en vivo del Flaco Ávila, Rompiendo Espejos y Coty Hernández. Las presentaciones en vivo
-tuvieron lugar en el privilegiado balcón de la edificación conocida como “La pajarera”. En esta
-oportunidad, se arrojaron únicamente fuegos de artificio lumínicos con el propósito concientizar a la
-población sobre las consecuencias del uso de la pirotecnia en personas con Trastorno del Espectro
-Autista (TEA).
+Se obtuvo nuevamente la conducción dirigida por Julio González y Gisela Vallone, y se contó con los shows en vivo del Flaco Ávila, Rompiendo Espejos y Coty Hernández. Las presentaciones en vivo tuvieron lugar en el privilegiado balcón de la edificación conocida como "La pajarera". En esta oportunidad, se arrojaron únicamente fuegos de artificio lumínicos con el propósito concientizar a la población sobre las consecuencias del uso de la pirotecnia en personas con Trastorno del Espectro Autista (TEA).
 
 Mayo 2022
 
-B 10” Cena Anual del Hincha. Se presenta nota en el Club solicitando autorización para la
-realización del evento en el Estadio 15 de Abril para las primeras semanas de Noviembre, la cual fue
-aprobada. Se realizan averiguaciones con servicio gastronómico y logístico.
+▯ 10° Cena Anual del Hincha. Se presenta nota en el Club solicitando autorización para la realización del evento en el Estadio 15 de Abril para las primeras semanas de Noviembre, la cual fue aprobada. Se realizan averiguaciones con servicio gastronómico y logístico.
 
-18 Previa Tatenga festejó un nuevo aniversario de la peña en la Casona del Complejo La
-Tatenguita, en la cual asistieron un centenar de personas.
+▯ Previa Tatenga festejó un nuevo aniversario de la peña en la Casona del Complejo La Tatenguita, en la cual asistieron un centenar de personas.
 
 --- pág. 25 ---
 
@@ -1545,30 +1511,27 @@ IMAGENES:
 
 --- pág. 35 ---
 
-ESTADOS CONTABLES
+**ESTADOS CONTABLES**
 
-Ejercicio Económico N* 116
+Ejercicio Económico Nº 116
 Iniciado el 01 de Julio de 2021 y finalizado el 30 de Junio de 2022
 Presentado en términos comparativos con el Ejercicio Económico anterior.
 
 DENOMINACIÓN DE LA SOCIEDAD: "CLUB ATLÉTICO UNIÓN"
 
-DOMICILIO LEGAL: Av. López y Planes N* 3513 - Santa Fe
+DOMICILIO LEGAL: Av. López y Planes Nº 3513 - Santa Fe
 
 ACTIVIDAD PRINCIPAL: Servicio de Esparcimiento Social y Deportivo
 
-PERSONERÍA:
-Otorgada el 07 de marzo de 1919 s/Expte n*5752
+INSCRIPCIÓN ANTE INSPECCIÓN GENERAL DE PERSONAS JURÍDICAS:
 
-INSCRIPCIÓN ANTE
-INSPECCIÓN GENERAL ESTATUTO:
+PERSONERÍA: Otorgada el 07 de marzo de 1919 s/Expte nº5752
 
-DE PERSONAS JURÍDICAS Última modificación inscripta
-el 22-04-2022 - Resolución n20577 1.G.P.J.
+ESTATUTO: Última modificación inscripta el 22-04-2022 - Resolución n°0577 I.G.P.J.
 
-FECHA DE VENCIMIENTO DEL ESTATUTO O CONTRATO SOCIAL:
-sin fecha de vencimiento.
+FECHA DE VENCIMIENTO DEL ESTATUTO O CONTRATO SOCIAL: sin fecha de vencimiento.
 
+[ilegible: texto tenue de la página siguiente visible por transparencia]
 
 --- pág. 36 ---
 
@@ -1639,424 +1602,149 @@ ndrés E. Monsalvo Sr. Luis y. Spahn
 
 --- pág. 37 ---
 
-CLUB ATLÉTICO UNIÓN
-
-Estado de Evolución del Patrimonio Neto Rectificativo
+**CLUB ATLÉTICO UNIÓN**
+**Estado de Evolución del Patrimonio Neto Rectificativo**
 Correspondiente al Ejercicio finalizado el 30 de Junio de 2022, comparativo con el Ejercicio Económico anterior, expresado a moneda de cierre.
 
-Totales
+| Conceptos | Aportes de los Asociados: Capital Suscripto | Aportes de los Asociados: Ajuste del Capital | Aportes de los Asociados: Total | Superávit/Déficit No Asignado | Totales al 30/06/2022 | Totales al 30/06/2021 |
+|---|---:|---:|---:|---:|---:|---:|
+| **Saldos al Inicio del Ejercicio** | 128.716,62 | 106.243.136,78 | 106.371.853,40 | 1.746.610.025,50 | 1.852.981.878,90 | 1.787.570.927,90 |
+| Ajuste de Resultados de Ejercicios Anteriores (Nota 2.8) | | | | | | |
+| **Saldos al Inicio del Ejercicio Modificados** | 128.716,62 | 106.243.136,78 | 106.371.853,40 | 1.746.610.025,50 | 1.852.981.878,90 | 1.787.570.927,90 |
+| **Variaciones del Ejercicio** | | | | | | |
+| Superávit / déficit del Ejercicio | | | | 190.408.914,37 | 190.408.914,37 | 65.410.951,01 |
+| **Saldos al Cierre del Ejercicio** | 128.716,62 | 106.243.136,78 | 106.371.853,40 | 1.937.018.939,87 | 2.043.390.793,27 | 1.852.981.878,90 |
 
-, j Superávit/Déficit No Totales
-Conceptos Capital Puede » al
-/06/2021
-Suscripto Cuad Asignado 30/06/2022 2
+Las Notas Complementarias nº 1 a 7 y los Cuadros Anexos I, II, III, IV y V forman parte de los Estados Contables.
 
-Saldos al Inicio del Ejercicio
-
-Ajuste de Resultados de Ejercicios Anteriores (Nota 2.8)
-
-Saldos al Inicio del Ejercicio Modificados
-
-Variaciones del Ejercicio
-
-128.716,62| 106.243.136,78| 106.371.853,40| 1.746.610.025 50
-
-128.716,62| 106.243.136,78| 106.371.853,40 1.746.610.025,50
-
-128.716,62| 106.243.136,78| 106.371.853,40 1.937.018.939,87
-
-Superávit / déficit del Ejercicio 190.408.914,37|| 65.410.951,01
-
-1.852.981.878,90
-
-Saldos al Cierre del Ejercicio 2.043.390.793,27
-
-Las Notas Complementarias n* 1 a 7 y los Cuadros Anexos 1, 11, 111, IV y V forman parte de los Estados Contables.
-
-Firmado al solo efecto de su
-identificación con mi informe
-del 4 de Marzo de 2024
+Firmado a solo efecto de su identificación con mi informe del 4 de Marzo de 2024
 
 Paula Peresin
 Contadora Pública
 Mat. 01-020509 - Ley 8738
 C.P.C.E. Pcia. De Santa Fe
 
-y”
-icepj Andrés E. Monsalvo E Luis y. Spahn
-
-Secretario Presidente
+Sr. Jorge A. Ciceri – Tesorero
+Sr. Andrés E. Monsalvo – Secretario
+Sr. Luis J. Spahn – Presidente
 
 --- pág. 38 ---
 
-CLUB ATLÉTICO UNIÓN |
-Estado de Flujo de Efectivo Rectificativo (Método Directo)
-
+**CLUB ATLÉTICO UNIÓN**
+**Estado de Flujo de Efectivo Rectificativo (Método Directo)**
 Correspondiente al Ejercicio finalizado el 30 de Junio de 2022, comparativo con el Ejercicio Económico anterior, expresado a moneda de cierre.
 
-Variaciones del Efectivo
-Efectivo al Inicio
-Efectivo al Cierre
-Aumento (Disminución) Neto del Efectivo
+| | 30/06/2022 | 30/06/2021 |
+|---|---:|---:|
+| **Variaciones del Efectivo** | | |
+| Efectivo al Inicio | 65.736.715,11 | 77.564.982,99 |
+| Efectivo al Cierre | 96.449.587,60 | 65.736.715,12 |
+| **Aumento (Disminución) Neto del Efectivo** | 30.712.872,49 | -11.828.267,88 |
+| **Actividades Operativas** | | |
+| Cobros de cuotas sociales y abonos de plateas | 227.746.627,96 | 178.616.728,59 |
+| Cobros de derechos de televisación | 509.891.458,07 | 653.222.017,15 |
+| Cobros por ventas de entradas y plateas | 94.817.361,57 | 0,00 |
+| Cobros por préstamos de jugadores y otros dchos s/jug. | 66.889.788,07 | 58.405.374,10 |
+| Cobros por participaciones en torneos | 97.904.054,17 | 157.392.597,59 |
+| Cobros de publicidades | 82.925.898,77 | 62.202.815,26 |
+| Cobros de alquileres | 10.257.843,29 | 6.809.032,54 |
+| Cobros subcomisiones | 114.934.084,61 | 83.599.239,26 |
+| Cobros de comisiones | 1.233.962,93 | 198.471,07 |
+| Cobros extraordinarios | 12.416.966,29 | 12.617.185,41 |
+| Subsidios | 27.653,22 | 16.490.780,04 |
+| Cobros IPEI | 293.406.842,80 | 251.966.580,29 |
+| Pagos a proveedores y gastos | -493.138.973,47 | -333.436.292,47 |
+| Pagos por gastos de partidos | -74.245.719,87 | -25.204.979,84 |
+| Pagos de sueldos y cargas sociales | -751.793.145,76 | -680.176.909,32 |
+| Pagos subcomisiones | -189.204.872,03 | -102.380.316,76 |
+| Pagos de gastos bancarios y comisiones por cobranzas | -24.541.573,84 | -17.786.267,70 |
+| Pagos extraordinarios | -69.943.513,68 | -37.080.768,75 |
+| Pagos IPEI | -259.498.996,69 | -249.278.903,79 |
+| RECPAM del efectivo y equivalentes | 106.951.504,88 | 34.892.996,14 |
+| **Flujo Neto de Efectivo Generado por (utilizado en) las actividades operativas** | -242.962.748,71 | 71.069.378,82 |
+| **Actividades de inversión** | | |
+| Cobros por ventas de bienes de uso | 0,00 | 0,00 |
+| Cobros por ventas de jugadores | 542.671.016,94 | 248.696.074,60 |
+| Pagos por compras de bienes de uso | -121.030.659,30 | -179.422.259,30 |
+| Pagos por compras de jugadores | -165.529.709,76 | -128.550.300,75 |
+| **Flujo Neto de Efectivo Generado por (utilizado en) las actividades de inversión** | 256.110.647,89 | -59.276.485,45 |
+| **Actividades de Financiación** | | |
+| Devoluciones a dirigentes y/o aoprtantes financieros | 17.564.973,31 | -23.621.161,16 |
+| **Flujo Neto de Efectivo Generado por (utilizado en) las actividades de Financiación** | 17.564.973,31 | -23.621.161,16 |
+| **Aumento (Disminución) Neto del Efectivo** | 30.712.872,49 | -11.828.267,79 |
 
-Actividades Operativas
-Cobros de cuotas sociales y abonos de plateas
+Las Notas Complementarias nº 1 a 7 y los Cuadros Anexos I, II, III, IV y V forman parte de los Estados Contables.
 
-Cobros de derechos de televisación
-
-Cobros por ventas de entradas y plateas
-
-Cobros por préstamos de jugadores y otros dchos s/jug.
-Cobros por participaciones en torneos
-
-Cobros de publicidades
-
-Cobros de alquileres
-
-Cobros subcomisiones
-
-Cobros de comisiones
-
-Cobros extraordinarios
-
-Subsidios
-
-Cobros IPE!
-
-Pagos a proveedores y gastos
-
-Pagos por gastos de partidos
-
-Pagos de sueldos y cargas sociales
-
-Pagos subcomisiones
-
-Pagos de gastos bancarios y comisiones por cobranzas
-Pagos extraordinarios
-
-Pagos IPE!
-
-RECPAM del efectivo y equivalentes
-
-Flujo Neto de Efectivo Generado por (utilizado en) las actividades operativas
-
-Actividades de inversión
-Cobros por ventas de bienes de uso
-Cobros por ventas de jugadores
-Pagos por compras de bienes de uso
-Pagos por compras de jugadores
-
-Flujo Neto de Efectivo Generado por (utilizado en) las actividades de inversión
-
-Actividades de Financiación
-Devoluciones a dirigentes y/o aoprtantes financieros
-
-Flujo Neto de Efectivo Generado por (utilizado en) las actividades de Financiación
-
-Aumento (Disminución) Neto del Efectivo
-
-30/06/2022 30/06/2021
-65.736.715,11|  77.564.982,99
-96.449.587,60|  65.736.715,12
-30.712.872,49|  -11.828.267,88
-
-227.746.627,96| 178.616.728,59
-509.891.458,07| 653.222.017,15
-94.817.361,57 0,00
-66.889.788,07|  58.405.374,10
-97.904.054,17| 157.392.597,59
-82.925.898,771  62.202.815,26
-10.257.843,29 6.809.032,54
-114.934.084,61|  83.599.239,26
-1.233.962,93 198.471,07
-12.416.966,29|  12.617.185,41
-27.653,22|  16.490.780,04
-293.406.842,80| 251.966.580,29
-
--493.138.973,47| -333.436.292,47
-
--74.245.719,87| — -25.204.979,84
-
--751.793.145,76| -680.176.909,32
-
--189.204.872,03| -102.380.316,76
-
--24.541.573,84
--69.943.513,68
--259.498.996,69
-106.951.504,88
-
--17.786.267,70'
--37.080.768,75
--249.278.903,79
-34.892.996,14
-
--242.962.748,71 71.069.378,82
-
-0,00 0,00
-542.671.016,94|  248.696.074,60|
--121.030.659,30| -179.422.259,30
-
--165.529.709,76
-
--128.550.300,75
-
-256.110.647,89
-
--59,276.485,45
-
-17.564.973,31
-
--23.621.161,16
-
-17.564.973,31
-
--23.621.161,10||
-
-30.712.872,49
-
--11.828.267,79||
-
-Las Notas Complementarias n* 1 a 7 y los Cuadros
-
-Firmado al solo efecto de su
-identificación con mi informe
-del 4 de Marzo de 2024
-
-paa
-
-Paúla Peresin
-Contadora Pública Secretario
-Mat. 01-020509 - Ley 8738 A
-
-C.P.C.E. Pcia. De Santa Fe
-
-xos 1, 1, 111, IV y V forman parte de los Estados Contables.
-
-cer r. Andrés E. Monsalvo r. Luis y. Spahn
-
-Presidente
-
---- pág. 39 ---
-
-Cuenta
-
-Terrenos
-
-Inmuebles Sede
-
-Inmuebles Estadio 15 de abril
-Inmuebles La Tatenguita
-Inmuebles Estadio Angel Malvicino
-Mejora sobre inmuebles de 3ros
-Torres de iluminacion
-Instalaciones
-
-Maquinas y herramientas
-Muebles y útiles
-
-Sistermas informaticos
-
-Firmado al solo efecto de su
-identificación con mi informe
-del 4 de Marzo de 2024
+Firmado a solo efecto de su identificación con mi informe del 4 de Marzo de 2024
 
 Paula Peresin
 Contadora Pública
 Mat. 01-020509 - Ley 8738
 C.P.C.E. Pcia. De Santa Fe
 
-Valor al inicio del
+Sr. Jorge A. Ciceri – Tesorero
+Sr. Andrés E. Monsalvo – Secretario
+Sr. Luis J. Spahn – Presidente
 
-Ejercicio
+--- pág. 39 ---
 
-342.461.419,32
-236.335.836,01
-435.568.101,58
-49.408.210,09
-157.450.354,77
-110.789.355,80
-49.553.277,89
-19.672.238,48
-25.929.153,89
-65.559.981,30
-3.596.342,98
-
-Aumento
-del
-Ejercicio
-
-92.883.000,00
-
-14.063.816,86
-6.822.508,45
-5.384.278,15
-1.798.519,00
-78.536,83
-
-1.496.324.272,12| 121.030.659,30/ 0,00]
-
-Valores de Incorporación
-
-Valor al cierre del
-
-Ejercicio
-
-342.461.419,32
-236.335.836,01
-528.451.101,58
-
-49.408.210,09
-
-CLUB ATLÉTICO UNIÓN
-
-Bienes de Uso (Rectificativo)
+**CLUB ATLÉTICO UNIÓN**
+**Bienes de Uso (Rectificativo)**
 Correspondiente al Ejercicio finalizado el 30 de Junio de 2022, comparativo con el Ejercicio Económico anterior, expresado a moneda de cierre.
 
-Acumuladas al
-inicio del Ejercicio
+Anexo I
 
-0,00
-196.160.980,13
-78.559.290,62
-18.198.690,72
-57.732.476,99
-24.615.685,21
-15.596.854,06
-16.487.845,69
-24.570.932,21
-59.073.299,22
-3.596.342,98
+| Cuenta | Valores de Incorporación: Valor al inicio del Ejercicio | Aumento del Ejercicio | Bajas del Ejercicio | Valor al cierre del Ejercicio | Depreciaciones: Acumuladas al inicio del Ejercicio | Bajas del Ejercicio | Amortización del Ejercicio | Acumuladas al cierre del Ejercicio | Valor Residual 30/06/2022 | Valor Residual 30/06/2021 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Terrenos | 342.461.419,32 | | | 342.461.419,32 | 0,00 | | 0,00 | 0,00 | 342.461.419,32 | 342.461.419,32 |
+| Inmuebles Sede | 236.335.836,01 | | | 236.335.836,01 | 196.160.980,13 | | 1.272.027,10 | 197.433.007,22 | 38.902.828,79 | 40.174.855,89 |
+| Inmuebles Estadio 15 de abril | 435.568.101,58 | 92.883.000,00 | | 528.451.101,58 | 78.559.290,62 | | 8.411.082,92 | 86.970.373,54 | 441.480.728,04 | 357.008.155,03 |
+| Inmuebles La Tatenguita | 49.408.210,09 | | | 49.408.210,09 | 18.198.690,72 | | 988.164,20 | 19.186.854,92 | 30.221.355,17 | 31.209.519,37 |
+| Inmuebles Estadio Angel Malvicino | 157.450.354,77 | | | 157.450.354,77 | 57.732.476,99 | | 3.149.007,10 | 60.881.484,09 | 96.568.870,68 | 99.717.877,77 |
+| Mejora sobre inmuebles de 3ros | 110.789.355,80 | 14.063.816,86 | | 124.853.172,66 | 24.615.685,21 | | 2.459.026,90 | 27.074.712,11 | 97.778.460,55 | 84.633.052,22 |
+| Torres de iluminacion | 49.553.277,89 | 6.822.508,45 | | 56.375.786,35 | 15.596.854,06 | | 4.244.552,98 | 19.841.407,04 | 36.534.379,31 | 33.956.423,84 |
+| Instalaciones | 19.672.238,48 | 5.384.278,15 | | 25.056.516,64 | 16.487.845,69 | | 591.652,85 | 17.079.498,54 | 7.977.018,10 | 3.076.445,72 |
+| Maquinas y herramientas | 25.929.153,89 | 1.798.519,00 | | 27.727.672,89 | 24.570.932,21 | | 1.489.182,92 | 26.060.115,13 | 1.667.557,77 | 1.347.589,12 |
+| Muebles y útiles | 65.559.981,30 | 78.536,83 | | 65.638.518,13 | 59.073.299,22 | | 1.025.981,04 | 60.099.280,26 | 5.539.237,87 | 6.254.597,14 |
+| Sistemas informaticos | 3.596.342,98 | | | 3.596.342,98 | 3.596.342,98 | | 0,00 | 3.596.342,98 | 0,00 | 0,00 |
+| **Totales** | 1.496.324.272,12 | 121.030.659,30 | 0,00 | 1.617.354.931,41 | 494.592.397,82 | 0,00 | 23.630.678,00 | 518.223.075,82 | 1.099.131.855,59 | 999.839.935,41 |
 
-Bajas
-del
-Ejercicio
+Firmado a solo efecto de su identificación con mi informe del 4 de Marzo de 2024
 
-Amortización
-del
-Ejercicio
-
-0,00
-1.272.027,10
-8.411.082,92
-
-988.164,20
-3.149.007,10
-2.459.026,90
-
-1.617.354.931,41] 494.592.397,82| 0,00| 23.630.678,00
-
-: Depreciaciones
-
-Acumuladas al
-cierre del Ejercicio
-
-518.223.075,82
-
-Sr. Andrés E. Monsalvo
-Secretario
-
-1.099.131.855,59
-
-Anexo |
-
-Valor Residual
-30/06/2022
-
-Sr. Luis y. Spahn
-Presidente
-
-Valor
-Residual
-30/06/2021
-
-999.839.935,41
-
---- pág. 40 ---
-
-Valor al inicio del
-Ejercicio
-
-Dchos económicos sobre los pases de
-futbolistas profesionales propios
-
-Dchos económicos sobre los pases de
-futbolistas profesionales adquiridos
-
-Costos de formación de jugadores propios
-
-Firmado al solo efecto de su
-
-identificación con mi informe
-
+Paula Peresin
+Contadora Pública
 Mat. 01-020509 - Ley 8738
 C.P.C.E. Pcia. De Santa Fe
 
-CLUB ATLÉTICO UNIÓN
+Sr. Jorge A. Ciceri – Tesorero
+Sr. Andrés E. Monsalvo – Secretario
+Sr. Luis J. Spahn – Presidente
 
-Activos Intangibles (Rectificativo)
+--- pág. 40 ---
+
+**CLUB ATLÉTICO UNIÓN**
+**Activos Intangibles (Rectificativo)**
 Correspondiente al Ejercicio finalizado el 30 de Junio de 2022, comparativo con el Ejercicio Económico anterior, expresado a moneda de cierre.
 
-Valores de Incorporación
-Aumento Bajas
+Anexo II
 
-del del
-Ejercicio Ejercicio
+| | Valores de Incorporación: Valor al inicio del Ejercicio | Aumento del Ejercicio | Bajas del Ejercicio | Valor al cierre del Ejercicio | Depreciaciones: Acumuladas al inicio del Ejercicio | Bajas del Ejercicio | Amortización del Ejercicio | Acumuladas al cierre del Ejercicio | Valor Residual 30/06/2022 | Valor Residual 30/06/2021 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Dchos económicos sobre los pases de futbolistas profesionales propios | 283.227.213,34 | 129.956.780,32 | 47.123.945,80 | 366.060.047,86 | 108.349.317,97 | 19.361.040,52 | 39.380.870,65 | 128.369.148,11 | 237.690.899,75 | 174.877.895,37 |
+| Dchos económicos sobre los pases de futbolistas profesionales adquiridos | 256.183.482,17 | 165.529.709,76 | 23.105.910,69 | 398.607.281,24 | 76.106.247,89 | 15.155.867,56 | 79.500.928,00 | 140.451.308,34 | 258.155.972,90 | 180.077.234,27 |
+| Costos de formación de jugadores propios | 480.378.113,73 | 134.061.046,26 | 129.956.780,32 | 484.482.379,67 | | | | | 484.482.379,67 | 480.378.113,74 |
+| **Total** | 1.019.788.809,24 | 429.547.536,34 | 200.186.636,81 | 1.249.149.708,77 | 184.455.565,86 | 34.516.908,08 | 118.881.798,66 | 268.820.456,44 | 980.329.252,33 | 835.333.243,37 |
 
-283.227.213,34| 129.956.780,32|  47.123.945,80
+Firmado a solo efecto de su identificación con mi informe del 4 de Marzo de 2024
 
-256.183.482,17| 165.529.709,76| 23.105.910,69
+Paula Peresin
+Contadora Pública
+Mat. 01-020509 - Ley 8738
+C.P.C.E. Pcia. De Santa Fe
 
-480.378.113,73| 134.061.046,26| 129.956.780,32
-
-1.019.788.809,24| 429.547.536,34| 200.186.636,81| 1.249.149.708,77 184.455.565,86 34.516.908,08| 118.881.798,66| 268.820.456,44 980.329.252,33|
-
-Valor al cierre del [| Acumuladas al inicio
-Ejercicio del Ejercicio del
-
-366.060.047,86 108.349.317,97
-
-76.106.247,89
-
-484.482.379,67
-
-Depreciaciones
-Amortización
-del
-Ejercicio
-
-Valor Residual
-30/06/2022
-
-Bajas
-Ejercicio
-
-Acumuladas al
-cierre del Ejercicio
-
-19.361.040,52| 39.380.870,65| 128.369.148,11 237.690.899,75|
-
-15.155.867,56] 79.500.928,00| 140.451.308,34; 258.155.972,90|
-
-484.482.379,67
-
-Andrés E. Monsalvo
-Secretario
-
-Sr/Luis y. Spahn
-Presidente
-
-Anexo ll
-
-alor Residual
-30/06/2021
-
-174.877.895,37|
-
-480.378.113,74
-
-835.333.243,37
-
+Sr. Jorge A. Ciceri – Tesorero
+Sr. Andrés E. Monsalvo – Secretario
+Sr. Luis J. Spahn – Presidente
 
 --- pág. 41 ---
 
@@ -2111,143 +1799,50 @@ SÉ Luis y. Spahn
 
 --- pág. 42 ---
 
-Detalle
-
-Sueldos y Jornales de Futbol
-
-Sueldos y Cargas Soc. de Administración
-Sueldos y Jornales de Maestranza
-
-Sueldos y Jornales p/ Reunión
-
-Gastos Administrativos
-
-Gastos del Estadio Cubierto
-
-Gastos del Estadio de Futbol
-
-Gastos de Futbol
-
-Gastos de partidos oficiales
-
-Gastos de Vigilancia
-
-Comisiones y gtos bancarios
-
-Amortizaciones ( Anexo | )
-
-Gastos de Mantenimiento
-
-Energía Eléctrico, Gas, Agua, Teléfonos.
-
-Gastos por Prestamos y Ventas de Jugadores
-Gastos del Complejo La Tatenguita
-Amortizaciones de Activos Intangibles ( Anexo ll )
-Seguros
-
-Departamento para la Actividad Educativa
-Egresos de Subcomisiones
-
-Gastos Generales
-
-IVA no computable
-
-Quebrantos por Incobrables y otras Contingencias
-Quebrantos por Libertad de Acción de Jugadores Prof.
-
-Firmado al solo efecto de su
-identificación con mi informe
-del 4 de Marzo de 2024
-
-Paula Peresin
-Pública
-Mat. 01-020509 - Ley 8738
-C.P.C.E. Pcia. De Santa Fe
-
-CLUB ATLÉTICO UNIÓN
-
-Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)
+**CLUB ATLÉTICO UNIÓN**
+**Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)**
 Correspondiente al Ejercicio finalizado el 30 de Junio de 2022, comparativo con el Ejercicio Económico anterior, expresado a moneda de cierre.
-
-427.827.997,84
-19.695.935,45
-164.082.465,83
-12.108.472,23
-72.916.605,12
-8.081.729,02
-83.677.843,47
-440.912.680,26
-38.168.470,56
-22.559.587,84
-37.391.983,67
-23.630.678,01
-40.408.645,08
-21.167.480,45
-108.522.944,02
-1.173.244,44
-118.881.798,66
-850.478,71
-259.498.996,69
-97.570.397,92
-6.307.862,73
-45.257.030,46
-16.800.000,00
-0,00
-
-19.695.935,45
-131.682.107,82
-
-72.916.605,12
-8.081.729,02
-
-40.408.645,08
-21.167.480,45
-
-45.257.030,46
-
-Total Gastos Generales de | Gastos de Partidos y
-Admin. y Función Estadio de Fútbol
-
-12.108.472,23
-
-83.677.843,47
-
-astos
-de
-Fútbol
-
-427.827.997,84
-
-440.912.680,26
-
-37.391.983,67
-
-108.522.944,02
-
-708.971,07
-
-r. Andrés E. Monsalvo
-
-Secretario
 
 Anexo IV
 
-astos
-de
-Subcomisiones
+| Detalle | Total | Gastos Generales de Admin. y Función | Gastos de Partidos y Estadio de Fútbol | Gastos de Fútbol | Gastos de Subcomisiones | Amortización de Bs. de Uso y Act. Intang | Otros Gastos |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Sueldos y Jornales de Fútbol | 427.827.997,84 | | | 427.827.997,84 | | | |
+| Sueldos y Cargas Soc. de Administración | 19.695.935,45 | 19.695.935,45 | | | | | |
+| Sueldos y Jornales de Maestranza | 164.082.465,83 | 131.682.107,82 | | | 32.400.358,01 | | |
+| Sueldos y Jornales p/ Reunión | 12.108.472,23 | | 12.108.472,23 | | | | |
+| Gastos Administrativos | 72.916.605,12 | 72.916.605,12 | | | | | |
+| Gastos del Estadio Cubierto | 8.081.729,02 | 8.081.729,02 | | | | | |
+| Gastos del Estadio de Fútbol | 83.677.843,47 | | 83.677.843,47 | | | | |
+| Gastos de Fútbol | 440.912.680,26 | | | 440.912.680,26 | | | |
+| Gastos de partidos oficiales | 38.168.470,56 | | 38.168.470,56 | | | | |
+| Gastos de Vigilancia | 22.559.587,84 | | 22.559.587,84 | | | | |
+| Comisiones y gtos bancarios | 37.391.983,67 | | | 37.391.983,67 | | | |
+| Amortizaciones ( Anexo I ) | 23.630.678,01 | | | | | 23.630.678,01 | |
+| Gastos de Mantenimiento | 40.408.645,08 | 40.408.645,08 | | | | | |
+| Energía Eléctrica, Gas, Agua, Telefonos. | 21.167.480,45 | 21.167.480,45 | | | | | |
+| Gastos por Prestamos y Ventas de Jugadores | 108.522.944,02 | | | 108.522.944,02 | | | |
+| Gastos del Complejo La Tatenguita | 1.173.244,44 | | | | 1.173.244,44 | | |
+| Amortizaciones de Activos Intangibles ( Anexo II ) | 118.881.798,66 | | | | | 118.881.798,66 | |
+| Seguros | 850.478,71 | 141.507,64 | | 708.971,07 | | | |
+| Departamento para la Actividad Educativa | 259.498.996,69 | | | | 259.498.996,69 | | |
+| Egresos de Subcomisiones | 97.570.397,92 | | | | 97.570.397,92 | | |
+| Gastos Generales | 6.307.862,73 | | | | | | 6.307.862,73 |
+| IVA no computable | 45.257.030,46 | 45.257.030,46 | | | | | |
+| Quebrantos por Incobrables y otras Contingencias | 16.800.000,00 | | | | | | 16.800.000,00 |
+| Quebrantos por Libertad de Acción de Jugadores Prof. | 0,00 | | | 0,00 | | | |
+| **Total al 30-06-2022** | 2.067.493.328,45 | 339.351.041,03 | 156.514.374,10 | 1.015.364.576,86 | 390.642.997,06 | 142.512.476,67 | 23.107.862,73 |
 
-Amortización de Bs.
-de Uso y Act. Intang.
+Firmado a solo efecto de su identificación con mi informe del 4 de Marzo de 2024
 
-32.400.358,01
+Paula Peresin
+Contadora Pública
+Mat. 01-020509 - Ley 8738
+C.P.C.E. Pcia. De Santa Fe
 
-23.630.678,01
-
-1.173.244,44
-118.881.798,66
-
-Srtuis y. Spahn
-Presidente
+Sr. Jorge A. Ciceri – Tesorero
+Sr. Andrés E. Monsalvo – Secretario
+Sr. Luis J. Spahn – Presidente
 
 --- pág. 43 ---
 
@@ -2285,72 +1880,46 @@ Presidente
 
 --- pág. 44 ---
 
+**CLUB ATLÉTICO UNIÓN**
+**Notas Complementarias a los Estados Contables Rectificativas**
 Correspondiente al Ejercicio finalizado el 30 de Junio de 2022, comparativo con el Ejercicio Económico anterior, expresado a moneda de cierre.
 
-CLUB ATLÉTICO UNIÓN
-
-Notas Complementarias a los Estados Contables Rectificativas
-
-NOTA N? 1:
-
-NORMAS CONTABLES UTILIZADAS
+**NOTA Nº 1:  NORMAS CONTABLES UTILIZADAS**
 
 Las normas contables más significativas aplicadas son las siguientes:
+
 Modelo de Presentación de los Estados Contables:
 
-a) NORMAS DE VALUACIÓN Y EXPOSICIÓN: La valuación y exposición se realizó de acuerdo a los criterios establecidos por
-las Resoluciones Técnicas vigentes de la Federación Argentina de Consejos Profesionales de Ciencias Económicas
-(FACPCE) y aprobadas por el Consejo Profesional de Ciencias Económicas de la provincia de Santa Fe (CPCE).
+**a) NORMAS DE VALUACIÓN Y EXPOSICIÓN:** La valuación y exposición se realizó de acuerdo a los criterios establecidos por las Resoluciones Técnicas vigentes de la Federación Argentina de Consejos Profesionales de Ciencias Económicas (FACPCE) y aprobadas por el Consejo Profesional de Ciencias Económicas de la provincia de Santa Fe (CPCE).
 
-En particular, las normas contables profesionales utilizadas en la preparación de estos Estados Contables han sido las
-siguientes:
+En particular, las normas contables profesionales utilizadas en la preparación de estos Estados Contables han sido las siguientes:
+Resolución Técnica Nº 17, norma contable general de la FACPCE en materia de reconocimiento y medición.
+Resoluciones Técnicas Nº 8 y Nº 11: Normas de exposición contable general y particular para este tipo de ente (sin fines de lucro).
 
-Resolución Técnica N* 17, norma contable general de la FACPCE en materia de reconocimiento y medición.
+**b) NORMAS DE REEXPRESIÓN:** Las normas contables profesionales argentinas establecen que los Estados Contables deben ser preparados reconociendo los cambios en el poder adquisitivo de la moneda conforme a las disposiciones establecidas en la RT Nº 6 y Nº 7, con las modificaciones introducidas por la RT Nº 39 y por la Interpretación Nº 8, normas emitidas por la Federación Argentina de Consejos Profesionales de Ciencias Económicas (FACPCE).
+Estas normas establecen que la aplicación del ajuste por inflación debe realizarse frente a la existencia de un contecto de alta inflación, el cual se caracteriza, entre otras consideraciones, cuando exista una tasa acumulada de inflación en tres años que alcance o sobrepase el 100%, considerando para ello el Indice de Precios al Por Mayor (I.P.I.M.) publicado por el Instituto Nacional de Estadisticas y Censos (I.N.D.E.C).
+Según lo dispuesto por la Resolución JG 539/2018 de la FACPCE y su aprobación por parte del Consejo Profesional de Ciencias Economicas de Santa Fe mediante la Resolución 02/2018, a partir del 1º de julio de 2018, existe un contexto inflacionario en la economía argentina en los términos establecidos por la sección 2.6 de la RT 41, y en consecuencia, debe aplicarse la RT Nº 6 para la preparación de los Estados Contables correspondientes a cierres de ejercicios o períodos ocurridos a partir de esa fecha, reconociendo en ellos los efectos de los cambios en el poder adquisitivo de la moneda.
+Es por lo antes expuesto que los Estados Contables han sido expresados en moneda de poder adquisitivo de la fecha a la cual corresponden, considerando la RT Nº 41 y RT Nº 6 definiendo que el ajuste por inflación debe aplicarse.
 
-Resoluciones Técnicas N? 8 y N* 11: Normas de exposición contable general y particular para este tipo de ente (sin fines de
+Las simplificaciones utilizadas de acuerdo a lo establecido por la Resolución de JG 539/18 (modificada por la R 553/19) son las que se indican a continuación:
 
-lucro).
+*Se optó por determinar y presentar los resultados financieros y por tenencia (incluido RECPAM) en una sola línea.*
+La no apertura de los resultados financieros y por tenencia (incluido RECPAM) genera la imposibilidad de determinar las magnitudes reales de los diferentes componentes de los resultados financieros y por tenencia, ni tampoco las magnitudes nominales ajustadas por inflación de los mismos y el efecto del RECPAM sobre dichos resultados. Esta limitación también impide la determinación de ciertos ratios financieros, tales como el rendimiento de los activos financieros, el costo de endeudamiento, efecto "palanca", etc.
 
-b) NORMAS DE REEXPRESIÓN: Las normas contables profesionales argentinas establecen que los Estados Contables
-deben ser preparados reconociendo los cambios en el poder adquisitivo de la moneda conforme a las dispocisiones
-establecidas en la RT N* 6 y N* 7, con las modificaciones introducidas por la RT N* 39 y por la Interpretación N* 8, normas
-emitidas por la Federación Argentina de Consejos Profesionales de Ciencias Económicas (FACPCE).
-Estas normas establecen que la aplicación del ajuste por inflación debe realizarse frente a la existencia de un contecto de alta
-inflación, el cual se caracteriza, entre otras consideraciones, cuando exista una tasa acumulada de inflación en tres años que
-alcance o sobrepase el 100%, considerando para ello el Indice de Precios al Por Mayor (L.P.1.M.) publicado por el Instituto
-Nacional de Estadisticas y Censos (I.N.D.E.C).
-Según lo dispuesto por la Resolución JG 539/2018 de la FACPCE y su aprobación por parte del Consejo Profesional de
-Ciencias Económicas de Santa Fe mediante la Resolución 02/2018, a partir del 1% de julio de 2018, existe un contexto
-inflacionario en la economía argentina en los términos establecidos por la sección 2.6 de la RT 41, y en consecuencia, debe”
-aplicarse la RT N* 6 para la preparación de los Estados Contables correspondientes a cierres de ejercicios o períodos
-ocurridos a partir de esa fecha, reconociendo en ellos los efectos de los cambios en el poder adquisitivo de la moneda.
-Es por lo antes expuesto que los Estados Contables han sido expresados en moneda de poder adquisitivo de la fecha a la
-cual corresponden, considerando la RT N* 41 y RT N? 6 definiendo que el ajuste por inflación debe aplicarse.
-
-Las simplificaciones utilizadas de acuerdo a lo establecido por la Resolución de JG 539/18 (modificada por la R 553/19) son
-las que se indican a continuación:
-
-Se optó por determinar y presentar los resultados financieros y por tenencia (incluido RECPAM) en una sola línea.
-La no apertura de los resultados financieros y por tenencia (incluído RECPAM) genera la imposibilidad de determinar las
-magnitudes reales de los diferentes componentes de los resultados financieros y por tenencia, ni tampoco las magnitudes
-nominales ajustadas por inflación de los mismos y el efecto del RECPAM sobre dichos resultados. Esta limitación también
-impide la determinación de ciertos ratios financieros, tales como el rendimiento de los activos financieros, el costo de
-endeudamiento, efecto "palanca", etc.
-
-Se optó por no informar en notas la composición de la causa del estado de flujo de efectivo identificada como "resultados
-financieros y por tenencia generados por el EyEE" requrida por la interpretación 2.
-
-Esto imposibilita determinados análisis sobre la base de este estado al no reflejar el impacto de la pérdida de poder
-adquisitivo del efectivo y sus equivalentes.
+*Se optó por no informar en notas la composición de la causa del estado de flujo de efectivo identificada como "resultados financieros y por tenencia generados por el EyEE" requerida por la interpretación 2.*
+Esto imposibilita determinados análisis sobre la base de este estado al no reflejar el impacto de la pérdida de poder adquisitivo del efectivo y sus equivalentes.
 
 Firmado al solo efecto de su identificación
+Con mi informe del 4 de Marzo de 2024
 
-eri 7 Sr. Andrés E. Monsalvo Sr. LuisJ. Spahn
-Secretario Presidente
-
+Paula Peresin
 Contadora Pública
 Mat. 01-020509 - Ley 8738
 C.P.C.E. Pcia. De Santa Fe
+
+Sr. Jorge A. Ciceri – Tesorero
+Sr. Andrés E. Monsalvo – Secretario
+Sr. Luis J. Spahn – Presidente
 
 --- pág. 45 ---
 
@@ -2837,24 +2406,40 @@ Asimismo, el pasivo devengado a favor de la Administración Nacional de la Segur
 
 --- pág. 51 ---
 
-Argentina en concepto de aportes personales ascendía a $ 5.511.875.32 y en concepto de
-contribuciones patronales a $174.235.041,00.-, no exigible a esa fecha ya que la obligación de
-pago corresponde a la Asociación del Fútbol Argentino, según lo dispuesto por el Dto 1212/03.
-b) He aplicado los procedimientos sobre prevención de lavado de activos de origen delictivo y
-financiación del terrorismo previstos en la Resolución N? 420/11 de la Federación Argentina de
-Consejos Profesionales de Ciencias Económicas.
-c) Según surge de los registros contables de la entidad, no existe deuda devengada al 30 de junio
+Argentina en concepto de aportes personales ascendía a $ 5.511.875.32 y en concepto de contribuciones patronales a $174.235.041,00.-, no exigible a esa fecha ya que la obligación de pago corresponde a la Asociación del Fútbol Argentino, según lo dispuesto por el Dto 1212/03.
 
-de 2022 a favor de la Administración Provincial de Impuestos en concepto de Impuesto a los
-Ingresos Brutos.
+b) He aplicado los procedimientos sobre prevención de lavado de activos de origen delictivo y financiación del terrorismo previstos en la Resolución N° 420/11 de la Federación Argentina de Consejos Profesionales de Ciencias Económicas.
+
+c) Según surge de los registros contables de la entidad, no existe deuda devengada al 30 de junio de 2022 a favor de la Administración Provincial de Impuestos en concepto de Impuesto a los Ingresos Brutos.
 
 Santa Fe, 4 de marzo de 2024.
 
-Paula Peresin
-CONTADURA PÚBLICA NACIONAL
-Mat. N* 01-020509 - Ley 8738
-C.P.C.E. - SANTA FE +
+[firma manuscrita]
 
+**Paula Peresin**
+CONTADURA PÚBLICA NACIONAL
+Mat. N° 01-020509 – Ley 8738
+C.P.C.E. – SANTA FE
+
+[Sello CPCE:]
+
+CPCE
+483543
+
+El Consejo Profesional de Ciencias Económicas de la Provincia de Santa Fe CERTIFICA que la firma profesional que antecede concuerda con la de nuestro registro y corresponde a [PERESIN PAULA GISELA] inscripto/a en la matrícula de [C.P. 20509] y que se han cumplido las disposiciones de las Leyes Nº 6.854, Nº 8.738 y Nº 12.135.
+
+Legalización Nro: 427563
+Fecha actuación profesional: 04/03/2024
+Período del encargo: 06/2022
+Tipo de encargo profesional: 12.1.11 BALANCE RECTIFICATIVO - MISMO PROFESIONAL
+CUIT comitente: 30533731917
+Nombre comitente: CLUB ATLETICO UNION
+
+SANTA FE, 22/03/2024
+C.P.C.E. Santa Fe Leyes Nº 8.738 y Nº 12.135
+
+FIRMA AUTORIZADA
+[firma manuscrita]
 Dr. LUCAS H. BASAILL
 CONTADOR PÚBLICO NACIONAL
 GERENTE DE LEGALIZACIONES Y MATRÍCULAS

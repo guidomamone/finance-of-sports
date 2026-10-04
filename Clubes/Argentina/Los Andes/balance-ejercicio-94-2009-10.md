@@ -32,536 +32,321 @@ A A
 
 --- pág. 2 ---
 
-CLUB ATLETICO LOS ANDES
+DENOMINACION DE LA ENTIDAD:
+**CLUB ATLETICO LOS ANDES**
 
-30/06/2009
+ESTADO DE SITUACION PATRIMONIAL AL: 30 DE JUNIO DE 2010
 
-30/06/2010
+En moneda histórica
 
-ACTIVOS PASIVOS
+| ACTIVOS | 30/06/2010 | 30/06/2009 | PASIVOS | 30/06/2010 | 30/06/2009 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **ACTIVO CORRIENTE** | | | **PASIVO CORRIENTE** | | |
+| Caja y Bancos | | | Deudas | | |
+| Caja | 128.713,61 | 226.523,40 | Operativas (Nota 3) | 2.738.313,60 | 2.407.808,99 |
+| Bancos | 151.495,59 | 202.917,19 | Soc. y Previsionales (Nota 4) | 266.471,45 | 333.683,51 |
+| | 280.209,20 | 429.440,59 | | 3.004.785,05 | 2.741.492,50 |
+| Creditos | | | **Otras Deudas** | | |
+| Cuotas Sociales | 69.806,00 | 21.676,00 | Provisión p/ds. Concursales(nota 5) | 166.000,00 | 166.000,00 |
+| IVA - Saldo a favor | 41.466,88 | 22.381,73 | | | |
+| Ds.por Transf. de Jugadores | 774.150,00 | 1.557.709,13 | **TOTAL PASIVO CORRIENTE** | 3.170.785,05 | 2.907.492,50 |
+| | 885.422,88 | 1.601.766,86 | | | |
+| **TOTAL ACTIVO CORRIENTE** | 1.165.632,08 | 2.031.207,45 | **PASIVO NO CORRIENTE** | | |
+| **ACTIVO NO CORRIENTE** | | | Deudas | | |
+| | | | Operativas (Nota 6) | 1.977.578,49 | 1.477.589,80 |
+| Otros Créditos Faltante de Caja | 864.055,28 | 864.055,28 | Otras Deudas (Nota 7) | 3.471.278,80 | 4.359.571,01 |
+| Prev.p/faltante de caja (nota 2) | -864.055,28 | -864.055,28 | | 5.448.857,29 | 5.837.160,81 |
+| | 0,00 | 0,00 | Provisiones | | |
+| | | | P/Juicios (Nota 8) | 2.017.278,40 | 1.486.204,72 |
+| Bienes de Uso S/anexo II | 13.207.470,24 | 13.448.301,64 | **TOTAL PASIVO NO CORRIENTE** | 7.466.135,69 | 7.323.365,53 |
+| | | | **TOTAL PASIVO** | 10.636.920,74 | 10.230.858,03 |
+| Bienes Intangib Plantel Profesional | 3.607.500,00 | 2.276.842,50 | | | |
+| Plantel Futbol Amateur | 600.000,00 | 600.000,00 | **PATRIMONIO NETO** | | |
+| | 4.207.500,00 | 2.876.842,50 | S/estado de evolucion | 7.943.681,58 | 8.125.493,56 |
+| **TOTAL ACTIVO NO CORRIENTE** | 17.414.970,24 | 16.325.144,14 | | | |
+| **TOTAL ACTIVO** | 18.580.602,32 | 18.356.351,59 | **TOTAL PASIVO + PATRIMONIO NETO** | 18.580.602,32 | 18.356.351,59 |
 
-PASIVO CORRIENTE
+DICTAMEN PROFESIONAL POR SEPARADO
 
-ACTIVO CORRIENTE
+0,00
 
-Caja y Bancos E
-Caja : 128.713,61 226.523,40 rai (Nota 3) 2.738.313,60 2.407.808,99
-A AA AAA AA 4.405,59 ¿0:20 9 Soo Soc; y Previsionales (Nota 4)-— RATAS
-
-3.004.785,05 2.741,492,50
-
-280.209,20
-Creditos ,
-Cuotas Sociales ] 69.806,00 21.676,00| Provisión p/ds. Concursales(nota 5) 166.000,00
-IVA - Saldo ajfavor 41.466,88 ]
-Ds.por Transf. de jugadores 774.150,00
-
-TOTAL RASIVO CORRIENTE 3.170.785,05 2.907.492 50
-
-885.422,88 *-
-
-1.165.632,08
-
-PASIVO NO CORRIENTE
-
-TOTAL ACTIVO CORRIENTE
-
-Deudas Operativas (Nota 6) 1.977.578,49 1.477.589,80
-
-ACTIVO NO CORRIENTE
-> : Otras Deudas (Nota 7) 3.471.278,80 4:359.571,01
-Otros Créditos Faltante de Caja 864.055,28 ; 5.448.857,29 5.837.160,81
-
-Prev.p/faltante de caja (nota 2) -864,055,28
-
-0,00 Provisiones
-
-Pfjuicios (Nota 8)  2.017.278,40
-
-TOTAL PASIVO NO CORRIENTE 7.466.135,69 7.323.365,53
-
-Bienes de Uso S/anexo ll 13.207,470,24 13,448.301,64
-
-TOTAL PASIVO — 10.636.920,74  10.230.858,09|
-
-Bienes Intangib Plantel Profesional : «  3,607.500,00- .
-Plantel Futbol Amateur 600.000,00
-
-PATRIMONIO NETO ]
-S/estado de evolucion . 7.943.681,58 a z 8.125,493,56/.
-
-4.207.500,00
-
-1 | cdo mranasTozA
-TOTAL ACTIVO NO CORRIENTE |,
-"5.580, 0.5023 :
-
-5 18.580.602,32
-
-TOTAL ACTIVO
-
-SIONALPOR SEPARADO - + FE el e 2 Pl
-e -BREUYTOSCAR H. E < FUNDADO, 2] : 1 WIC NTE RUDD
-Dr. CLAUDIOBUSTAVO VEGA , ESQRERO - En Mis e ty PRESID NE
-
-Contador Público (UMS Ay
+[Firma y sello: Dr. CLAUDIO GUSTAVO VEGA, Contador Público (U.M.S.A.), C.P.C.E.P.B.A. Tº 92 Fº 194]  
+[Firma y sello: ERGUY OSCAR H., TESORERO]  
+[Sello: CLUB ATLETICO LOS ANDES, FUNDADO 1 DE ENERO 1917]  
+[Firma y sello: VICENTE RUDI, PRESIDENTE]
 
 --- pág. 3 ---
 
 
 --- pág. 4 ---
 
-ATLETICO LOS ANDES
+DENOMINACION DE LA ENTIDAD: En moneda histórica
 
-[_ 30/06/2010 |]
+**CLUB ATLETICO LOS ANDES**
 
-INGRESOS: |
-Cuotas Sociales 377.941,20
-Futbol : : 149.973,60
-Ingresos por TV Ñ 1.440.500,00
-Derechos de formacion |. 0,00
-Recupero gastos 11.314,19
-Canon Miniphone 0,00
-Otros Ingresos ¡ 1.800,00
-Tenis (concesión) 66.150,72
-Alquileres | 0,00
-.. Transferencia de Jug. 968.470,20.....
-Canon Conc. Estadio 36.366,64
-Cañon Bingo del Oeste 421.015,39
-Revaluación Pl. Profesional 1.330.657,50
-Rec. Por rifas y eventos :' 0,00
-Sponsor Planteles Fútbol | 547.435,00
-Sub-Total 5.351.624,44
-Mi j :
-menos: po
-EGRESOS
-Gastos (s/ anexo VII) 4.191.134,29
-Súb-total 1.160,490,15
-menos: |
-Gastos administrativos (slanexo VII) 1.449.171,67
-Sub-total . -288.681,52
-menos: : | |
-Resultado Colegio 106.869,54
-Resultado Basquet | 0,00
-Resultado Villa Albertina | : 0,00 -
-más: E |
-Resultados Extraordinarios concurso 0,00
-SUB-TOTAL RESULTADO DEL EJERCICIO -181.811,98
-menos: |
-Juicios post-concursales | | 0,00
-RESULTADO NETO DEL EJERCICIO -181.811,98
+ESTADO DE RECURSOS Y GASTOS
 
-| 30/06/2009 |
+CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010
 
-E Le
+| | 30/06/2010 | 30/06/2009 |
+|---|---|---|
+| **INGRESOS:** | | |
+| Cuotas Sociales | 377.941,20 | 339.527,22 |
+| Futbol | 149.973,60 | 236.285,00 |
+| Ingresos por TV | 1.440.500,00 | 605.000,00 |
+| Derechos de formacion | 0,00 | 300.000,00 |
+| Recupero gastos | 11.314,19 | 4.974,00 |
+| Canon Miniphone | 0,00 | 21.776,00 |
+| Otros Ingresos | 1.800,00 | 1.900,00 |
+| Tenis (concesión) | 66.150,72 | 58.417,68 |
+| Alquileres | 0,00 | 2.000,00 |
+| Transferencia de Jug. | 968.470,20 | 2.334.236,64 |
+| Canon Conc. Estadio | 36.366,64 | 36.000,00 |
+| Cañon Bingo del Oeste | 421.015,39 | 463.071,36 |
+| Revaluación Pl.Profesional | 1.330.657,50 | 120.592,50 |
+| Rec. Por rifas y eventos | 0,00 | 1.467,00 |
+| Sponsor Planteles Fútbol | 547.435,00 | 1.087.592,58 |
+| Sub-Total | 5.351.624,44 | 5.612.839,98 |
+| menos: **EGRESOS** | | |
+| Gastos (s/ anexo VII) | 4.191.134,29 | 3.966.776,92 |
+| Sub-total | 1.160.490,15 | 1.646.063,06 |
+| menos: | | |
+| Gastos administrativos (s/anexo VII) | 1.449.171,67 | 1.490.964,35 |
+| Sub-total | -288.681,52 | 155.098,71 |
+| menos: | | |
+| Resultado Colegio | 106.869,54 | 31.113,60 |
+| Resultado Basquet | 0,00 | |
+| Resultado Villa Albertina | 0,00 | |
+| más: | | |
+| Resultados Extraordinarios concurso | 0,00 | 0,00 |
+| **SUB-TOTAL RESULTADO DEL EJERCICIO** | -181.811,98 | 186.212,31 |
+| menos: | | |
+| Juicios post-concursales | 0,00 | 0,00 |
+| **RESULTADO NETO DEL EJERCICIO** | -181.811,98 | 186.212,31 |
 
-339.527,22
-236.285,00
+DICTAMEN PROFESIONAL POR SEPARADO
 
---+:605.000,00-|- -
+Dr. CLAUDIO GUSTAVO VEGA
+Contador Público (U.M.S.A.)
+C.P.C.E.P.B.A. Tº 92 Fº 194
 
-**300.000,00
-4.974,00
+ERGUY OSCAR H.
+TESORERO
 
-de -1,900,00
-"58.417,68
-2.000,00
+[sello: CLUB ATLETICO LOS ANDES – FUNDADO 1 DE ENERO 1917]
 
-¿c+=—2/094.200,64,
-
-36.000,00
-..463.071,36
-,120.592,50
-
-NE 41.467,00”
-1.087.592.58
-
--.51612.839,98-|.
-
-1:646.063,06
-
-1.490.964,35
-
-31.113,60
-
-: 186.212,31
-
-186, E SA
-
-21.776,00 |
-
-0,00 |
-
-"0,00.
-
-Dr, CLAUDIO GUSTAVO VEGA Ñ
-Contador Público (U.M S.A.) la
-C.P.C.EPBA, To 92 Fe 194
-
-_ERG Ss Ho
-
-TE
+VICENTE RUDI
+PRESIDENTE
 
 --- pág. 5 ---
 
-- RUBRO COMIENZO | ALTAS
-DEL EJERC.
+DENOMINACION DE LA ENTIDAD:
+**CLUB ATLETICO LOS ANDES**
 
-Remodelacion Estadio
-Mejoras en Inm. de 3ros.
+Anexo II
 
-Nueva Tribuna Sur
-
-M.Utiles e Instalaciones
-
-Oficinas Administrativas
-Art. Deportivos
-Maquinarias y Equipos
-
-Torres de Iluminacion
-
-Dr. CLAÍTO GUSTAVO VEGA
-Contádor Público (UMS AS
-
-EN PROFESIONAL POR SEPARADO
-
-CLUB. ATLETICO LOS ANDES
-
-- BIENES DE USO
+BIENES DE USO
 EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010
+En moneda histórica
 
-BAJAS
+| RUBRO | VALOR AL COMIENZO DEL EJERC. | ALTAS | BAJAS | VALOR AL CIERRE DEL EJERCICIO | AMORTIZACIONES ACUM. AL COMIENZO | AMORTIZACIONES BAJAS | AMORTIZACIONES DEL EJERCICIO % | AMORTIZACIONES DEL EJERCICIO MONTO | AMORTIZACIONES ACUM. AL CIERRE | NETO |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Terrenos | 3.258.574,40 | | | 3.258.574,40 | | | 0 | | | 3.258.574,40 |
+| Edificios | 9.775.723,20 | | | 9.775.723,20 | 1.076.586,58 | | 2 | 195.514,46 | 1.272.101,04 | 8.503.622,16 |
+| Remodelacion Estadio | 1.340.676,80 | | | 1.340.676,80 | 623.721,21 | | 5 | 67.033,84 | 690.755,05 | 649.921,75 |
+| Mejoras en Inm. de 3ros. | 537.650,26 | | | 537.650,26 | 84.261,57 | | 2 | 10.753,01 | 95.014,58 | 442.635,68 |
+| Nueva Tribuna Sur | 242.694,95 | | | 242.694,95 | 4.853,90 | | 2 | 4.853,90 | 9.707,80 | 232.987,15 |
+| M.Utiles e Instalaciones | 128.881,12 | 46.259,26 | | 175.140,38 | 115.185,90 | | 10 | 6.018,27 | 121.204,17 | 53.936,21 |
+| Oficinas Administrativas | 67.200,00 | | | 67.200,00 | 8.064,00 | | 2 | 1.344,00 | 9.408,00 | 57.792,00 |
+| Art. Deportivos | 344.450,00 | | | 344.450,00 | 344.450,00 | | 50 | | 344.450,00 | 0,00 |
+| Maquinarias y Equipos | 20.522,97 | | | 20.522,97 | 20.522,97 | | 10 | 0,00 | 20.522,97 | 0,00 |
+| Torres de Iluminacion | 247.017,64 | | | 247.017,64 | 247.017,64 | | 10 | 0,00 | 247.017,64 | 0,00 |
+| Plateas | 31.463,51 | | | 31.463,51 | 21.889,45 | | 5 | 1.573,18 | 23.462,63 | 8.000,88 |
+| Rodados | 4.514,90 | | | 4.514,90 | 4.514,90 | | 20 | 0,00 | 4.514,90 | 0,00 |
+| **TOTALES** | **15.999.369,75** | **46.259,26** | **0,00** | **16.045.629,01** | **2.551.068,12** | **0,00** | | **287.090,65** | **2.838.158,77** | **13.207.470,24** |
 
-AMORTIZACIONES
+DICTAMEN PROFESIONAL POR SEPARADO
 
-VALOR AL
-
-3.258.574,40
-
-- 9:775.723,20
-
- 195.514,46
-
-1.340.676,80 67.033,84
-
-10.753,01
-
-537.650,26
-
-242.694,95|: 4.853,90
-
-175.140,38 6.018,27
-
-128.881,12
-
-67.200,00
-0,00
-
-1.573,18
-
-0,00
-: 287.090,65
-
-1
-4
-
-46.259,26 ; 0,00 16.045.629,01|/2. 1.
-
-15.999.369,75
-
-o AN
-e TBSDRERO E Ct
-
-VALOR AL
-CIERRE DEL [ ACUM. AL T, ps] DEL EJERCICIO | ACUM. AL
-EJERCICIO | COMIENZO MONTO | CIERRE
-
-1.272.101,04|
-
-690.755,05
-
-“95.014,58
-9.707,80
-
-121.204,17
-
-VICENTE -RÚDI
-+ PRESIDENT
+[Firma y sello: Dr. CLAUDIO GUSTAVO VEGA, Contador Público (U.M.S.A.), C.P.C.E.P.B.A. Tº 92 Fº 194]  
+[Firma y sello: ERGUY OSCAR H., TESORERO]  
+[Sello: CLUB ATLETICO LOS ANDES, FUNDADO 1 DE ENERO 1917]  
+[Firma y sello: VICENTE RUDI, PRESIDENTE]
 
 --- pág. 6 ---
 
-DE JUNIO DE 2010
+DENOMINACION DE LA ENTIDAD  
+**CLUB ATLETICO LOS ANDES**
 
-OTROS
-DE DPTOS.
-170.932,3
- 596:509.04| 5049550] 335.953,89| 6545145]  105.889,61| —38.718,5
-| 15643800) | 11254800| 39.640,00| 4.250,00]
-A E. A a
-SICARIO: AN O E NS
-EAU EI NO E 0
+ANEXO VII
 
-GASTOS
+EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010
 
-RUBRO OTROS
+En moneda histórica
 
-4
+| RUBRO | TOTAL | ESTADIO | FUTBOL | GASTOS DE ADMINISTR. | OTROS DPTOS. SOCIALES | OTROS |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Sueldos y Jornales | 2.619.328,32 | 220.815,64 | 1.475.205,71 | 287.403,19 | 464.971,43 | 170.932,35 |
+| Cargas Sociales | 596.509,04 | 50.495,59 | 335.953,89 | 65.451,45 | 105.889,61 | 38.718,50 |
+| Honorarios | 156.438,00 | | 112.548,00 | 39.640,00 | 4.250,00 | |
+| Seguridad Deportiva (Polad) | 64.270,00 | | 64.270,00 | | | |
+| Conserv. y Mantenimiento | 367.492,89 | 346.309,98 | | 21.182,91 | | |
+| Contingencias Concurso | 510.746,60 | | | 510.746,60 | | |
+| Gts. y Com. Bancarios | 43.019,85 | | | 43.019,85 | | |
+| Gastos financieros | 59.064,37 | | | 59.064,37 | | |
+| Gts. Funcionamiento Adm. | 155.988,67 | 1.743,90 | | 96.609,00 | 57.635,77 | |
+| Egresos Varios | 86.285,26 | | 4.777,36 | 6.809,83 | 68.998,07 | 5.700,00 |
+| Gastos Otros Dptos. | 87.875,84 | 11.570,25 | | | 43.324,94 | 32.980,65 |
+| Servicios Públicos | 32.153,82 | | | 32.153,82 | | |
+| Gts. Plantel Profesional | 518.149,65 | | 518.149,65 | | | |
+| Egresos por encuentros A.F.A. | 55.893,00 | 55.893,00 | | | | |
+| Amortización del ejercicio | 287.090,65 | | | 287.090,65 | | |
+| **TOTALES** | **5.640.305,96** | **686.828,36** | **2.510.904,61** | **1.449.171,67** | **745.069,82** | **248.331,50** |
 
-[Sueldos y Jomales
+DICTAMEN PROFESIONAL POR SEPARADO
 
-O
-
-Honorarios Z
-Seguridad Deportiva (Polad)
-Conserv. y Mantenimiento
-Contingencias Concurso
-Gts. Y Com. Bancarios
-Gastos financieros
-
-Gts. Funcionamiento Adm.
-Egresos Varios
-
-E
-Y
-o
-—h
-Ko]
-00
-]
-De
-e
-o
-sm.
-“o
-00
-O
-
-dh
-a
-al
-(de)
-[es]
-so
-O»
-E
-=y
-IN
-o
-lo)
-[e]
-o
-O)
-O
-so
-o
-Oo
-a
-N
-[e]
-O)
-a
-|
-|
-
-o
-
-z 80.285.081. | CAR 6.809,83 68.998,07| 5.700,0
-
-'-..392.980,6
-
-00
-IN
-:
-y
-a
-co
-Eh
-—
-al
-Y
-S
-d
-a
-E
-rn
-80
-NS
->
-e)
-E
-[
-
-Gts. Plantel Profesional
-
-Egresos por encuentros A.F.A; Ec aOS. | ;
-Amortización del ejercicio 5 A O EE
-FETALES. 1 A _686.828,36| 2.510.904,61|. 1.449.171,67| :745.069,82|
-
-A A A A A AS In s E >= tr =n e ae s
-e
-
-Dr. CLAUDIO QUSTAVÓ VEGA : o E Y/ SA
-Contador Público (U.M.SAj e VICENTE RUD
-AS PRESIDENTE
-
-C.P.CE.PRA: To 92 fo 194 A $ Es : ta
+[Firma y sello: Dr. CLAUDIO GUSTAVO VEGA, Contador Público (U.M.S.A.), C.P.C.E.P.B.A. Tº 92 Fº 194]  
+[Firma y sello: ERGUY OSCAR H., TESORERO]  
+[Sello: CLUB ATLETICO LOS ANDES, FUNDADO 1 DE ENERO 1917]  
+[Firma y sello: VICENTE RUDI, PRESIDENTE]
 
 --- pág. 7 ---
 
-CLUB ATLETICO LOS ANDES
+DENOMINACION DE LA ENTIDAD
+**CLUB ATLETICO LOS ANDES**
 
-a oa SALDO AL SALDO AL -
-RUENTAS AUMENTOS DISMINUCIONES 30-06-09 30-06-08
+ANEXO 6
 
-Deducidas del Activo
-Faltante de Caja
+PREVISIONES
+EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010
 
-Totales | y OB OOD2O1 es 0000)... - “ESÉ0:001. -864.055,28 864.055,28
+En moneda histórica
 
-| TI 4 SST: ES 7 SS
-[TOTAL PREVISIONES -864.055,28 == 0.001 — —0,00| 864.055,28 864.055,28|
+| CUENTAS | Saldo al inicio del ejercicio | AUMENTOS | DISMINUCIONES | SALDO AL 30-06-09 | SALDO AL 30-06-08 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Deducidas del Activo** | | | | | |
+| Faltante de Caja | 864.055,28 | 0,00 | 0,00 | 864.055,28 | 864.055,28 |
+| **Totales** | 864.055,28 | 0,00 | 0,00 | 864.055,28 | 864.055,28 |
+| **TOTAL PREVISIONES** | 864.055,28 | 0,00 | 0,00 | 864.055,28 | 864.055,28 |
 
--864.055,28
+DICTAMEN PROFESIONAL POR SEPARADO
 
-DICTAMEN o JESIONAL LPORS SEPARADO a] Je 31. N a | a
-z E sd a - ed |
-: Dr. CLAUDIO A (Es FUNDADO Dd E a
-| Po 1DE ENERO »-4 ¡ MICENTE
-
-Fe Contador Público (U.M.S.A : A
-CPLEPBA To 92 pa 0 -€ PRESIDENTE
-
-4%
-Mero
-
+[Firma y sello: Dr. CLAUDIO GUSTAVO VEGA, Contador Público (U.M.S.A.), C.P.C.E.P.B.A. Tº 92 Fº 194]  
+[Firma y sello: ERGUY OSCAR H., TESORERO]  
+[Sello: CLUB ATLETICO LOS ANDES, FUNDADO 1 DE ENERO 1917]  
+[Firma y sello: VICENTE RUDI, PRESIDENTE]
 
 --- pág. 8 ---
 
-SALDO AL SALDO AL
-30-06-10 30-06-09
+DENOMINACION DE LA ENTIDAD
+**CLUB ATLETICO LOS ANDES**
 
-AUMENTOS [DISMINUCIONES
+ANEXO 7
 
-Incluidas en el Pasivo :
-JDeudas concursales 0,00
-- JP/contingencias concursales
+PROVISIONES
+EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010
 
- JP/Juicios Post-concursales
+En moneda histórica
 
-166.000,00 166.000,00
+| CUENTAS | Saldo al inicio del ejercicio | AUMENTOS | DISMINUCIONES | SALDO AL 30-06-10 | SALDO AL 30-06-09 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Incluidas en el Pasivo** | | | | | |
+| Deudas concursales | 166.000,00 | 0,00 | 0,00 | 166.000,00 | 166.000,00 |
+| P/contingencias concursales | 1.230.534,85 | 0,00 | 600.756,45 | 629.778,40 | 1.230.534,85 |
+| P/Juicios Post-concursales | 255.669,87 | 1.132.230,13 | 0,00 | 1.387.900,00 | 255.669,87 |
+| **TOTAL PROVISIONES** | 1.652.204,72 | 1.132.230,13 | 600.756,45 | 2.183.678,40 | 1.652.204,72 |
 
-1.230.534,85
+DICTAMEN PROFESIONAL POR SEPARADO
 
-2183.678,401
-
-[TOTAL PROVISIONES -
-
-Contador úblico (UMSA). ; . : tm VICENTE RUDI *
-
-- PRESIDENTE
-
-CPCEPRA 192 P> 108 ;
-
-e ..
-
-A 1
-. : A AR
-L 3
-v
-z
-ñ
-
-A
+[Firma y sello: Dr. CLAUDIO GUSTAVO VEGA, Contador Público (U.M.S.A.), C.P.C.E.P.B.A. Tº 92 Fº 194]  
+[Firma y sello: ERGUY OSCAR H., TESORERO]  
+[Sello: CLUB ATLETICO LOS ANDES, FUNDADO 1 DE ENERO 1917]  
+[Firma y sello: VICENTE RUDI, PRESIDENTE]
 
 --- pág. 9 ---
 
-NOTA 1:
+DENOMINACION DE LA ENTIDAD:  
+**CLUB ATLETICO LOS ANDES**
 
-NOTA 2: Se mantiene la previsión por el faltante de caja ocurrido en el ejercicio
-Juzgado Concursal. | E
+Correspondiente al ejercicio finalizado el 30 de Junio de 2010  
+Notas a los Estados Contables  
+En moneda histórica
 
-NOTA 3: j
-Concurso Verificado (Cte.) li 56.368,35 a
-A.F.A. Cta, Cte- ||- 2:663.678,61::
-Honorarios a pagar ja 5.550,00
+NOTA 1: A traves del decreto 1212/2003 que establece la percepción y retención para el ingreso de los aportes personales y contribuciones patronales con destino a los regimenes de las Leyes Nº 19032; 23660; 23661; 24013; 24241 y 24714, por lo tanto, aquellas deudas relacionadas con los organismos de previsión social quedan resumidas en el presente decreto, en consecuencia y en virtud de no representar una utilidad genuina se exponen en el Estado Patrimonial en moneda homogenea y como Pasivo No Cte, sirviendo esta de referencia y ajustandose s/informe de AFA.
+
+NOTA 2: Se mantiene la previsión por el faltante de caja ocurrido en el ejercicio Julio 2002 a Junio 2003, cuya resolución quedará a consideración del Juzgado Concursal.
+
+NOTA 3: **Deudas Operativas**
+Concurso Verificado (Cte.) | 56.368,35
+A.F.A. Cta. Cte- | 2.663.678,61
+Honorarios a pagar | 5.550,00
 Canon Cob.p/adel. Conc.Ten. | 11.666,64
-Préstamos C.D. | 1.050,00. 2.738.313,60 : e ia O
-NOTA 4 : Dei : . cl
-Rem. a pagar :  234.528,00 ...
-A.R.T. a pagar Ñ 11.512,20 ; ii Leo
-UTEDYC ¡ho 3.149,58: -- —--=— o
-O:S. a pagar | 10.054,15: : a db SS li al
-Ds. laborales por juicios | 5.000,00 y
-O.S.T.E.C.F. a pagar | 1.822,50 i ¡
-A.T.F.A. a pagar E 405,02 266.471,45 a NE!
-NOTA 5:
+Préstamos C.D. | 1.050,00 | 2.738.313,60
+
+NOTA 4: **Deudas Sociales y Previsionales**
+Rem. a pagar | 234.528,00
+A.R.T. a pagar | 11.512,20
+UTEDYC | 3.149,58
+O.S. a pagar | 10.054,15
+Ds. laborales por juicios | 5.000,00
+O.S.T.E.C.F. a pagar | 1.822,50
+A.T.F.A. a pagar | 405,02 | 266.471,45
+
+NOTA 5: **Provisión p/deudas concursales**
 Tasa de justicia | 154.000,00
-Aportes judiciales concurso | 12.000,00 166.000,00 poo
-NOTA 6:
-Dcto. 1212/03 , hi 1.977.578,49 1.977.578,49
-NOTA 7: nte) | LE : : > E E ES El
-“Concurso Verificado (No Cte) | 543.176,64'  : silo Ñ
-Conc. Verificado AFA (No Cte) ! 594.928,00
-Conc. Verificado Deto. 1212 ' 2.306.924,06
-Canon Cob.p/adel. Tenis pe 26.250,10. 3.471.278,80 a - ee o
-NOTA 8: pl ! E
-Prov. p/contingencias Concur. | 629.778,40 z
-. Prov. p/juicios Post-Conc. l, 1.387.500,00. 2.017.278,40
+Aportes judiciales concurso | 12.000,00 | 166.000,00
 
-DICTAMEN PRO); POR SEPARADO
+NOTA 6: **Deudas Operativas (Pasivo No Corriente)**
+Dcto.1212/03 | 1.977.578,49 | 1.977.578,49
 
-Dr. CLAUDIO/GUSTAVO VEGA l es
-Contador lico (U.M.S.A,) pS , EA
-C.P.CEP.BA, To 92 po 194: PE
-e ADO Y
-E ¡DE ENERO 24
-2) 1917 o
-2 Sy
+NOTA 7: **Otras Deudas (No Corriente)**
+Concurso Verificado (No Cte) | 543.176,64
+Conc. Verificado AFA (No Cte) | 594.928,00
+Conc. Verificado Dcto. 1212 | 2.306.924,06
+Canon Cob.p/adel. Tenis | 26.250,10 | 3.471.278,80
 
-mis
-sde
+NOTA 8: **Provisiones**
+Prov. p/contingencias Concur. | 629.778,40
+Prov. p/juicios Post-Conc. | 1.387.500,00 | 2.017.278,40
 
-«PRESIDENTA
+DICTAMEN PROFESIONAL POR SEPARADO
 
-| dde TESORE
-
+[Firma y sello: Dr. CLAUDIO GUSTAVO VEGA, Contador Público (U.M.S.A.), C.P.C.E.P.B.A. Tº 92 Fº 194]  
+[Firma y sello: ERGUY OSCAR H., TESORERO]  
+[Sello: CLUB ATLETICO LOS ANDES, FUNDADO 1 DE ENERO 1917]  
+[Firma y sello: VICENTE RUDI, PRESIDENTE]
 
 --- pág. 10 ---
 
-CLUB ATLETICO
+DENOMINACION DE LA ENTIDAD:  
+**CLUB ATLETICO LOS ANDES**
 
-Por el ejercicio
+ESTADO DE FLUJO DE EFECTIVO  
+Por el ejercicio finalizado el 30 de Junio de 2010
 
-Variaciones del efectivo
+| | 30/06/2010 | 30/06/2009 |
+| :--- | :--- | :--- |
+| **Variaciones del efectivo** | | |
+| Saldo caja al inicio | 226.523,40 | 44.824,52 |
+| Efectivo al cierre de ejercicio | 128.713,61 | 226.523,40 |
+| (Disminución) o aumento neto de efectivo | -97.809,79 | 181.698,88 |
+| **CAUSAS DE LAS VARIACIONES DEL EFECTIVO** | | |
+| Cobros por cuotas sociales | 377.941,20 | 339.527,22 |
+| Pagos de actividad futbol | -574.042,65 | -1.007.692,82 |
+| Pagos al personal y cargas sociales | -3.215.837,36 | -2.501.244,29 |
+| Pagos de funcionamiento | -335.082,70 | -200.412,91 |
+| Cobros por act.sociales y deportivas | 1.656.624,32 | 903.169,68 |
+| Pagos de Honorarios | -156.438,00 | -93.888,93 |
+| Pagos por gastos de act. Sociales | | |
+| **Flujo neto de efectivo utilizado antes de las operaciones extraordinarias** | **-2.246.835,19** | **-2.560.542,05** |
+| **Flujo neto de efectivo generado por las actividades extraordinarias** | **2.344.644,98** | **2.378.843,17** |
+| **Flujo neto de efectivo utilizado en las actividades operativas** | **97.809,79** | **-181.698,88** |
 
-Saldo caja al inicio
+DICTAMEN PROFESIONAL POR SEPARADO
 
-iS
-
-[ 30/06/2010 ] | 30/06/2009 E
-
-Dr. CLAUDIO BUSTAVO VEGA
-Contador Público (U.M.S,A.)
-CP.CEPB,A To 92 Fo 194 $
-
-| -ERGUY OSCAR H:
-
-TESORERO -
-
-226.523,40 - 44.824,52
-Efectivo al cierre de ejercicio | 128.71 3,61 : 226.523,40
-(Disminución) o aumento neto de efectivo . -97.809,79 181.698,88. . naa
-Cobros por guotas sociales 377.941,20 339.527,22
-Pagos de actividad futbol -574.042,65 -1.007.692,82
-Pagos al personal y cargas sociales -3.215.837,36 -2.501,244,29
-Pagos de funcionamiento -335.082,70 -200.412,91
-Cobros por act.sociales y deportivas 1.656.624,32 903. 169,68 ;
-Pagos dé Honorarios -156.438,00.. 93.888,93,
-Pagos por gastos de act. Sociales ; 1 :
-extraordinarias | 0 2.246,835,19 -2.560.542,05
-2.344.644,98 2.378,843,17
-97.809,79 -181.698,88
-
+[Firma y sello: Dr. CLAUDIO GUSTAVO VEGA, Contador Público (U.M.S.A.), C.P.C.E.P.B.A. Tº 92 Fº 194]  
+[Firma y sello: ERGUY OSCAR H., TESORERO]  
+[Sello: CLUB ATLETICO LOS ANDES, FUNDADO 1 DE ENERO 1917]  
+[Firma y sello: VICENTE RUDI, PRESIDENTE]
 
 --- pág. 11 ---
 

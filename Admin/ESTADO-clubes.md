@@ -27,13 +27,13 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 162 clubes, 297 ejercicios, 14 países.
+TOTAL: 169 clubes, 386 ejercicios, 16 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
   Argentinos Juniors             5 ejercicios (2014/2015 a 2018/2019), balance, ARS
   Banfield                       1 ejercicio (2019/2020), balance, ARS
-  Boca Juniors                   2 ejercicios (2024/2025, 2026/2027), balance + presupuesto, ARS
+  Boca Juniors                   4 ejercicios (2021/2022, 2022/2023, 2024/2025, 2026/2027), balance + presupuesto, ARS
   Estudiantes de La Plata        4 ejercicios (2021/2022 a 2024/2025), balance, ARS
   Ferro Carril Oeste             2 ejercicios (2021/2022 a 2022/2023), balance, ARS
   Gimnasia y Esgrima (La Plata)  4 ejercicios (2022/2023 a 2025/2026), balance + presupuesto y balance + presupuesto, ARS
@@ -43,7 +43,7 @@ ARGENTINA (19)
   Los Andes                      2 ejercicios (2019/2020 a 2020/2021), balance, ARS
   Newell's Old Boys              1 ejercicio (2018/2019), balance, ARS
   Racing Club                    17 ejercicios (2008/2009, 2009/2010, 2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2023/2024, 2024/2025, 2025/2026, 2026/2027), balance + presupuesto y balance + presupuesto, USD/ARS
-  River Plate                    1 ejercicio (2023/2024), balance de réplica no oficial, ARS
+  River Plate                    2 ejercicios (2020/2021, 2023/2024), balance + balance de réplica no oficial, ARS
   Rosario Central                2 ejercicios (2022/2023, 2024/2025), balance, ARS
   San Lorenzo                    8 ejercicios (2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2023/2024), balance + presupuesto, ARS
   Talleres                       2 ejercicios (2024 a 2025), balance, ARS
@@ -66,7 +66,7 @@ BE (14)
   Westerlo              1 ejercicio (2024/2025), balance, EUR
   Zulte Waregem         1 ejercicio (2024/2025), balance, EUR
 
-BRASIL (32)
+BRASIL (34)
   Amazonas              1 ejercicio (2024), balance, BRL
   América Mineiro       3 ejercicios (2023 a 2025), balance, BRL
   Athletico Paranaense  2 ejercicios (2024 a 2025), balance, BRL
@@ -83,12 +83,14 @@ BRASIL (32)
   Flamengo              2 ejercicios (2024 a 2025), balance, BRL
   Fluminense            2 ejercicios (2024 a 2025), balance, BRL
   Fortaleza             1 ejercicio (2025), balance, BRL
+  Goiás                 15 ejercicios (2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2021, 2022, 2023, 2024, 2025), balance, BRL, sin deuda/caja
   Grêmio                1 ejercicio (2024), balance, BRL
   Guarani               2 ejercicios (2024 a 2025), balance, BRL
   Internacional         2 ejercicios (2024 a 2025), balance, BRL
   Ituano                1 ejercicio (2024), balance, BRL
   Juventude             1 ejercicio (2020), balance, BRL
   Mirassol              1 ejercicio (2024), balance, BRL, sin deuda/caja
+  Novorizontino         14 ejercicios (2010, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025), balance, BRL
   Operário Ferroviário  2 ejercicios (2024 a 2025), balance, BRL
   Palmeiras             2 ejercicios (2024 a 2025), balance, BRL
   Ponte Preta           3 ejercicios (2022 a 2024), balance, BRL
@@ -102,19 +104,21 @@ BRASIL (32)
 
 CHILE (3)
   Colo-Colo             3 ejercicios (2022 a 2024), balance, CLP, sin deuda/caja
-  Universidad Católica  3 ejercicios (2022 a 2024), balance, CLP
+  Universidad Católica  16 ejercicios (2010 a 2025), balance, CLP
   Universidad de Chile  3 ejercicios (2022 a 2024), balance, CLP
 
-COLOMBIA (10)
+COLOMBIA (12)
   América de Cali         1 ejercicio (2025), balance, COP
   Atlético Nacional       1 ejercicio (2025), balance, COP
+  Boyacá Chicó            1 ejercicio (2024), balance, COP, sin deuda/caja
   Deportivo Cali          1 ejercicio (2025), balance, COP
   Deportivo Pereira       1 ejercicio (2025), balance, COP
   Envigado FC             1 ejercicio (2025), balance, COP
+  Fortaleza CEIF          9 ejercicios (2017 a 2025), balance, COP
   Independiente Santa Fe  1 ejercicio (2025), balance, COP
   Junior de Barranquilla  1 ejercicio (2025), balance, COP
   Millonarios             1 ejercicio (2025), balance, COP
-  Once Caldas             1 ejercicio (2025), balance, COP, sin deuda/caja
+  Once Caldas             4 ejercicios (2022 a 2025), balance, COP, sin deuda/caja
   Unión Magdalena         1 ejercicio (2018), balance, COP
 
 ALEMANIA (11)
@@ -185,6 +189,10 @@ INGLATERRA (19)
   West Ham United          1 ejercicio (2024/2025), balance, GBP
   Wolverhampton Wanderers  2 ejercicios (2023/2024 a 2024/2025), balance, GBP
 
+GR (2)
+  AEL Larissa    10 ejercicios (2015/2016 a 2024/2025), balance, EUR
+  Panathinaikos  1 ejercicio (2024/2025), balance, EUR
+
 HR (8)
   Dinamo Zagreb  1 ejercicio (2024), balance, EUR
   Gorica         1 ejercicio (2025), balance, EUR
@@ -194,6 +202,9 @@ HR (8)
   Rijeka         1 ejercicio (2024), balance, EUR
   Slaven Belupo  1 ejercicio (2025), balance, EUR
   Varaždin       1 ejercicio (2025), balance, EUR
+
+IT (1)
+  Juventus  20 ejercicios (2002/2003, 2003/2004, 2004/2005, 2005/2006, 2006/2007, 2007/2008, 2008/2009, 2009/2010, 2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2024/2025), balance, EUR, sin deuda/caja
 
 JAPÓN (10)
   Cerezo Osaka         1 ejercicio (2025), balance, JPY, sin deuda/caja

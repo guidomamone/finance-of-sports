@@ -43,3 +43,45 @@ para varios ejercicios recientes) — no se bajaron en esta sesión porque el ob
 de bilancio en sí, no la documentación de auditoría suelta.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2012 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.pdf` (sourceId `juventus-it-annual-financial-report-2011-12`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2013 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2012-13.pdf` (sourceId `juventus-it-annual-financial-report-2012-13`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2014 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2013-14.pdf` (sourceId `juventus-it-annual-financial-report-2013-14`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2015 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2014-15.pdf` (sourceId `juventus-it-annual-financial-report-2014-15`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2025 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2024-25.pdf` (sourceId `juventus-it-annual-financial-report-2024-25`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2016 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2015-16.pdf` (sourceId `juventus-it-annual-financial-report-2015-16`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2017 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2016-17.pdf` (sourceId `juventus-it-annual-financial-report-2016-17`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2018 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2017-18.pdf` (sourceId `juventus-it-annual-financial-report-2017-18`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2020 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2019-20.pdf` (sourceId `juventus-it-annual-financial-report-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2021 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.pdf` (sourceId `juventus-it-annual-financial-report-2020-21`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2007 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2006-07.pdf` (sourceId `juventus-it-annual-financial-report-2006-07`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2009 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2008-09.pdf` (sourceId `juventus-it-annual-financial-report-2008-09`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2010 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2009-10.pdf` (sourceId `juventus-it-annual-financial-report-2009-10`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2019 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2018-19.pdf` (sourceId `juventus-it-annual-financial-report-2018-19`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2003 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.pdf` (sourceId `juventus-it-annual-financial-report-2002-03`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2004 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf` (sourceId `juventus-it-annual-financial-report-2003-04`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2005 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2004-05.pdf` (sourceId `juventus-it-annual-financial-report-2004-05`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2006 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf` (sourceId `juventus-it-annual-financial-report-2005-06`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2008 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.pdf` (sourceId `juventus-it-annual-financial-report-2007-08`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2011 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2010-11.pdf` (sourceId `juventus-it-annual-financial-report-2010-11`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2025 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2024-25.pdf` (sourceId `juventus-it-annual-financial-report-2024-25`).

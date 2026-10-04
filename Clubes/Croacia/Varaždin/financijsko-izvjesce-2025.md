@@ -14,23 +14,22 @@ Varaždin, ožujak, travanj 2026. godine
 
 --- pág. 2 ---
 
-SADRŽAJ:
+**SADRŽAJ:**
 
 strana
 
 Odgovornost Uprave Društva za pripremu i odobravanje godišnjih financijskih izvještaja
 
-| IZVJEŠĆE OVLAŠTENOG REVIZORA _............0000000 aaa aaa 1.2
-II FINANCIJSKI IZVJEŠTAJ
-
-Račun dobiti i gubitka od 01.01.2025. do 31.12.2025. godine _................... 3-4
-Blarica na. dan 51.12.2025. godina ask SEE EAST EL 564i 1) ERRNNK 5-6
-Izvještaj o promjenama kapitala u 2025. godini ...........0..aaaaaa aaa aaa 7
-Izvještaj o novčanim tokovima za razdoblje od 01.01. do 31.12.2025. godine .... 8
-
-Ill BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE
-
-Računovodstvene metode i politike 4.2.0000 aa aaa aaa kaaa 9-32
+| | | strana |
+|---|---|---|
+| I | IZVJEŠĆE OVLAŠTENOG REVIZORA | 1-2 |
+| II | FINANCIJSKI IZVJEŠTAJ | |
+| | Račun dobiti i gubitka od 01.01.2025. do 31.12.2025. godine | 3-4 |
+| | Bilanca na dan 31.12.2025. godine | 5-6 |
+| | Izvještaj o promjenama kapitala u 2025. godini | 7 |
+| | Izvještaj o novčanim tokovima za razdoblje od 01.01. do 31.12.2025. godine | 8 |
+| III | BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE | |
+| | Računovodstvene metode i politike | 9-32 |
 
 Prilog
 
@@ -38,55 +37,30 @@ Prilog
 
 --- pág. 3 ---
 
-Odgovornost Uprave za pripremu i odobravanje
-godišnjih financijskih izvještaja
+**Odgovornost Uprave za pripremu i odobravanje godišnjih financijskih izvještaja**
 
-Temeljem Zakona o računovodstvu Republike Hrvatske, Uprava je dužna osigurati da financijski izvještaji za
-svaku financijsku godinu budu pripremljeni u skladu s Hrvatskim standardima financijskog izvještavanja (HSFI),
-izdanih od Odbora za standarde financijskog izvještavanja, a koji su utemeljeni na Međunarodnim standardima
-financijskog izvještavanja (IFRS) koje je usvojila Europska Unija, tako da daju istinitu i objektivnu sliku
-financijskog stanja i rezultata poslovanja Nogometnog kluba Varaždin sportsko dioničko društvo za obavljanje
-sportskih djelatnosti, sa sjedištem u Varaždinu, Zagrebačka 94 (skraćeno: NK VARAŽDIN S.d.d.) (dalje u tekstu
-Društvo), za to razdoblje.
+Temeljem Zakona o računovodstvu Republike Hrvatske, Uprava je dužna osigurati da financijski izvještaji za svaku financijsku godinu budu pripremljeni u skladu s Hrvatskim standardima financijskog izvještavanja (HSFI), izdanih od Odbora za standarde financijskog izvještavanja, a koji su utemeljeni na Međunarodnim standardima financijskog izvještavanja (IFRS) koje je usvojila Europska Unija, tako da daju istinitu i objektivnu sliku financijskog stanja i rezultata poslovanja Nogometnog kluba Varaždin sportsko dioničko društvo za obavljanje sportskih djelatnosti, sa sjedištem u Varaždinu, Zagrebačka 94 (skraćeno: NK VARAŽDIN s.d.d.) (dalje u tekstu Društvo), za to razdoblje.
 
-Nakon provedenih istraživanja, Uprava razumno očekuje da Društvo ima odgovarajuća sredstva za nastavak
-poslovanja u doglednoj budućnosti. Iz navedenog razloga, Uprava i dalje prihvaća načelo nastavka poslovanja
-pri izradi financijskih izvještaja.
+Nakon provedenih istraživanja, Uprava razumno očekuje da Društvo ima odgovarajuća sredstva za nastavak poslovanja u doglednoj budućnosti. Iz navedenog razloga, Uprava i dalje prihvaća načelo nastavka poslovanja pri izradi financijskih izvještaja.
 
 Pri izradi financijskih izvještaja Uprava je odgovorna:
 
-- da se odaberu i potom dosljedno primjenjuju odgovarajuće računovodstvene politike;
-
+- da se odaberu i potom dosljedno primjenjuju odgovarajuća računovodstvene politike;
 - da prosudbe i procjene budu razumne i oprezne;
+- da se primjenjuju važeći računovodstveni standardi, a svako materijalno značajno odstupanje obznani i objasni u financijskim izvještajima; te
+- da se financijski izvještaji pripreme po načelu nastavka poslovanja, osim ako je neprimjereno pretpostaviti da će Društvo nastaviti svoje poslovne aktivnosti.
 
-- da se primjenjuju važeći računovodstveni standardi, a svako materijalno značajno odstupanje obznani i objasni
-u financijskim izvještajima; te
+Uprava je odgovorna za vođenje ispravnih računovodstvenih evidencija, koje će u bilo koje doba s prihvatljivom točnošću odražavati financijski položaj Društva, kao i njihovu usklađenost s hrvatskim Zakonom o računovodstvu. Uprava je također odgovorna za čuvanje imovine Društva, pa stoga i za poduzimanje razumnih mjera da bi se spriječile i otkrile pronevjere i ostale nezakonitosti.
 
-- da se financijski izvještaji pripreme po načelu nastavka poslovanja, osim ako je neprimjereno pretpostaviti da
-će Društvo nastaviti svoje poslovne aktivnosti.
-
-Uprava je odgovorna za vođenje ispravnih računovodstvenih evidencija, koje će u bilo koje doba s prihvatljivom
-točnošću odražavati financijski položaj Društva, kao i njihovu usklađenost s hrvatskim Zakonom o
-računovodstvu. Uprava je također odgovorna za čuvanje imovine Društva, pa stoga i za poduzimanje razumnih
-mjera da bi se spriječile i otkrile pronevjere i ostale nezakonitosti.
-
-Financijski izvještaji prikazani na stranicama 3 do 32, odobreni su od strane Uprave Društva dana 14. travnja
-2026. godine za podnošenje Glavnoj skupštini vlasnika i u skladu s tim potpisani u nastavku.
+Financijski izvještaji prikazani na stranicama 3 do 32, odobreni su od strane Uprave Društva dana 14. travnja 2026. godine za podnošenje Glavnoj skupštini vlasnika i u skladu s tim potpisani u nastavku.
 
 Za Upravu NK VARAŽDIN d.d. Varaždin:
 
-x
-predsjednik Uprave: Dražen Vitez /
+predsjednik Uprave: Dražen Vitez [potpis]
 
-/
-/ B A
+član Uprave: Toni Dalić [potpis]
 
-55 ES
-
-član Uprave: Toni Dalić
-
-—__ do“
-
+[pečat: NK Varaždin s.d.d., Zagrebačka 94, 42000 Varaždin]
 
 --- pág. 4 ---
 
@@ -1488,40 +1462,37 @@ Bilješke na stranama 9 do 32 čine sastavni dio financijskih izvještaja NK VAR
 22
 
 BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE
-RAČUNOVODSTVENE METODE | POLITIKE
+RAČUNOVODSTVENE METODE I POLITIKE
 
-RA-2c Troškovi primanja ostalih zaposlenika
+**RA-2c Troškovi primanja ostalih zaposlenika**
 
-I-XII 2025. I-XII 2024.
-euro euro
-Troškovi neto plaća ostalih zaposlenika (757.794) (5650.301)
-Troškovi poreza i doprinosa iz i na plaću ostalih zaposlenika (225.889) (97.245)
-Troškovi prigodnih nagrada, prijevoza i službenih putovanja (39.019) (18.489)
-Ukupno troškovi primanja stručnog stožera (1.022.702) (666.035)
+| | I-XII 2025. euro | I-XII 2024. euro |
+|---|---|---|
+| Troškovi neto plaća ostalih zaposlenika | (757.794) | (550.301) |
+| Troškovi poreza i doprinosa iz i na plaću ostalih zaposlenika | (225.889) | (97.245) |
+| Troškovi prigodnih nagrada, prijevoza i službenih putovanja | (39.019) | (18.489) |
+| **Ukupno troškovi primanja stručnog stožera** | **(1.022.702)** | **(666.035)** |
 
-RA-3 — Umanjenje vrijednosti i amortizacija
+**RA-3 Umanjenje vrijednosti i amortizacija**
 
-Amortizacija i umanjenje vrijednosti dugotrajne materijalne imovine u razdoblju I-XIl 2025. godine iskazana je
-u iznosu od 147.343 eura (I-XII 2024.: 87.179 eura), a sadrži troškove amortizacije dugotrajne materijalne
-imovine i dugotrajne nematerijalne imovine (bez registracije igrača). Iznos obračunate amortizacije po
-grupama dugotrajne imovine dan je pod oznakama izvješćivanja A-5 i A-6.
+Amortizacija i umanjenje vrijednosti dugotrajne materijalne imovine u razdoblju I-XII 2025. godine iskazana je u iznosu od 147.343 eura (I-XII 2024.: 87.179 eura), a sadrži troškove amortizacije dugotrajne materijalne imovine i dugotrajne nematerijalne imovine (bez registracije igrača). Iznos obračunate amortizacije po grupama dugotrajne imovine dan je pod oznakama izvješćivanja A-5 i A-6.
 
-RA4 Ostali poslovni rashodi
+**RA-4 Ostali poslovni rashodi**
 
-I-XIl 2025. I-XII 2024.
-euro euro
-Troškovi hitne službe, osiguranja, snimanja utakmica, sudaca i delegata (189.024) (145.511)
-Troškovi prijevoza, prehrane i smještaja igrača (241.290) (234.707)
-Troškovi najamnina (8.984) (18.182)
-Troškovi čišćenja (23.350) (32.611)
-Troškovi imovine i objekta - održavanje (378.705) (175.215)
-Troškovi sponzorstva i oglašavanja (89.866) (93.046)
-Troškovi liječničkih pregleda (5.484) (7.598)
-Troškovi premija osiguranja 0 (13.541)
-Troškovi reprezentacije (347.544) (53.381)
-Troškovi kotizacija i članarina (115.255) (105.998)
-Ostali troškovi i poslovni rashodi (kazne, donacije, otpisi potraživanja i sl.) (93.525) (98.466)
-Ukupno ostali poslovni rashodi (1.493.027) (978.256)
+| | I-XII 2025. euro | I-XII 2024. euro |
+|---|---|---|
+| Troškovi hitne službe, osiguranja, snimanja utakmica, sudaca i delegata | (189.024) | (145.511) |
+| Troškovi prijevoza, prehrane i smještaja igrača | (241.290) | (234.707) |
+| Troškovi najamnine | (8.984) | (18.182) |
+| Troškovi čišćenja | (23.350) | (32.611) |
+| Troškovi imovine i objekta - održavanje | (378.705) | (175.215) |
+| Troškovi sponzorstva i oglašavanja | (89.866) | (93.046) |
+| Troškovi liječničkih pregleda | (5.484) | (7.598) |
+| Troškovi premija osiguranja | 0 | (13.541) |
+| Troškovi reprezentacije | (347.544) | (53.381) |
+| Troškovi kotizacija i članarina | (115.255) | (105.998) |
+| Ostali troškovi i poslovni rashodi (kazne, donacije, otpisi potraživanja i sl.) | (93.525) | (98.466) |
+| **Ukupno ostali poslovni rashodi** | **(1.493.027)** | **(978.256)** |
 
 Bilješke na stranama 9 do 32 čine sastavni dio financijskih izvještaja NK VARAŽDIN s.d.d. Varaždin na stranama 3 do 8
 
@@ -2046,240 +2017,147 @@ PRILOG
 
 Račun dobiti i gubitka
 
-Račun dobiti i gubitka
+Naziv izvještajnog subjekta (NK):
+NOGOMETNI KLUB VARAŽDIN, Š.D.D.
+
+**Račun dobiti i gubitka**
 za godinu koja završava na dan 31. prosinca 2025.
 
-PRIHODI
+| | 2025. EUR | 2024. EUR |
+|---|---|---|
+| **PRIHODI** | | |
+| Prihodi od ulaznica - Nacionalna natjecanja | 507.364 | 290.813 |
+| Prihodi od ulaznica - UEFA klupska natjecanja | 27.838 | 0 |
+| Prihodi od ulaznica - VIP ulaznice i hospitality | 0 | 0 |
+| Prihodi od ulaznica - Godišnje ulaznice | 19.953 | 29.057 |
+| Prihodi od ulaznica - Članarine | 0 | 0 |
+| Ostali nerazvrstani prihodi od ulaznica | 0 | 0 |
+| **Prihodi od ulaznica - ukupno** | **555.155** | **319.870** |
+| | | |
+| Prihod od sponzorstva i oglašavanja - Sponzor za opremu (Proizvođač opreme) | 299.925 | 254.950 |
+| Prihod od sponzorstva i oglašavanja - Glavni sponzor na opremi | 275.360 | 192.000 |
+| Prihod od sponzorstva i oglašavanja - Sponzor za stadion | 0 | 0 |
+| Prihod od sponzorstva i oglašavanja - Reklamiranje na panoima oko terena za igru | 777.719 | 678.144 |
+| Ostali nerazvrstani prihodi od sponzorstva i oglašavanja | 0 | 0 |
+| **Prihod od sponzorstva i oglašavanja - Ukupno** | **1.353.004** | **1.125.094** |
+| | | |
+| Prava emitiranja - Nacionalna natjecanja | 1.016.900 | 868.300 |
+| Prava emitiranja - Ostali nerazvrstani prihodi | 0 | 0 |
+| **Prihod od prava emitiranja - Ukupno** | **1.016.900** | **868.300** |
+| | | |
+| Komercijalni prihodi - Nacionalna natjecanja | 0 | |
+| Komercijalni prihodi - Prodaja proizvoda | 41.493 | |
+| Komercijalni prihodi od članstva (nevezano za utakmice) | 0 | |
+| Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica | 65.153 | |
+| Ostali nerazvrstani komercijalni prihodi | 0 | |
+| **Komercijalni prihodi - Ukupno** | **106.646** | **0** |
+| | | |
+| Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade | 0 | 0 |
+| Uefina klupska natjecanja - solidarne uplate | 1.488.194 | 971.394 |
+| Uefine nagrade i solidarne uplate - nerazvrstano | 0 | 0 |
+| **Uefine nagrade i solidarne uplate - Ukupno** | **1.488.194** | **971.394** |
+| | | |
+| Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela | 45.000 | 315.961 |
+| Donacije i dotacije ili drugi iznosi od države (na teritoriju sjedišta) i lokalne samouprave | 350.721 | 109.236 |
+| Donacije nepovezanih strana | 2.374 | 0 |
+| Donacije i doprinosi povezanih strana | 0 | 0 |
+| Prihodi od nenogometnih djelatnosti | 0 | 13.953 |
+| Izvanredni prihodi | 0 | 0 |
+| Ostali nerazvrstani poslovni prihodi (Bilješka IX) | 217.272 | 100.932 |
+| **Ostali poslovni prihodi - Ukupno** | **615.367** | **540.082** |
+| | | |
+| **Ukupno - Prihodi** | **5.135.266** | **3.824.740** |
 
-Prihodi od ulaznica - Nacionalna natjecanja
-Prihodi od ulaznica - UEFA klupska natjecanja
-Prihodi od ulaznica - V/P ulaznice i hospitality
-Prihodi od ulaznica - Godišnje ulaznice
-Prihodi od ulaznica - Članarine
-
-Ostali nerazvrstani prihodi od ulaznica
-Prihodi od ulaznica - ukupno
-
-Prihod od sponzorstva i oglašavanja - Sponzor za opremu (Proizvođač opreme)
-Prihod od sponzorstva i oglašavanja - Glavni sponzor na opremi
-
-Prihod od sponzorstva i oglašavanja - Sponzor za stadion
-
-Prihod od sponzorstva i oglašavanja - Reklamiranje na panoima oko terena za igru
-Ostali nerazvrstani prihodi od sponzorstva i oglašavanja
-
-Prihod od sponzorstva i oglašavanja - Ukupno
-
-Prava emitiranja - Nacionalna natjecanja
-Prava emitiranja - Ostali nerazvrstani prihodi
-Prihodi od prava emitiranja - Ukupno
-
-Komercijalni prihodi - Nacionalna natjecanja
-
-Komercijalni prihodi - Prodaja proizvoda
-
-Komercijalni prihodi od članstva (nevezano za utakmice)
-
-Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica
-Ostali nerazvrstani komercijalni prihodi
-
-Komercijalni prihodi - Ukupno
-
-Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade
-Uefina klupska natjecanja - solidarne uplate
-
-Uefine nagrade i solidarne uplate - nerazvrstano
-
-Uefine nagrade i solidarne uplate - Ukupno
-
-Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela
-
-Donacije i dotacije ili drugi iznosi od države (na teritoriju sjedišta) i lokalne samouprave
-Donacije nepovezanih strana
-
-Donacije i doprinosi povezanih strana
-
-Prihodi od nenogometnih djelatnosti
-
-izvanredni prihodi
-
-Ostali nerazvrstani poslovni prihodi
-
-Ostali poslovni prihodi - Ukupno
-
-Financijski kriteriji - RAČUN DOBITI | GUBITKA
+Financijski kriteriji - RAČUN DOBITI I GUBITKA
 
 --- pág. 40 ---
 
 Račun dobiti i gubitka
 
-RASHODI
-Troškovi prodaje robe/proizvoda - izravni
+| | 2025. EUR | 2024. EUR |
+|---|---|---|
+| **RASHODI** | | |
+| Troškovi prodaje robe/proizvoda - izravni | (167.793) | (157.785) |
+| Troškovi prodaje robe/proizvoda - ostali nerazvrstani | 0 | 0 |
+| **Troškovi prodaje/materijala - Ukupno** | **(167.793)** | **(157.785)** |
+| | | |
+| Plaće igrača | (1.881.899) | (1.434.307) |
+| Porezi i doprinosi - igrači | 0 | 0 |
+| Ostali nerazvrstani troškovi primanja igrača | (493.939) | (135.076) |
+| **Troškovi primanja igrača - ukupno** | **(2.375.838)** | **(1.569.383)** |
+| | | |
+| Plaće stručnog stožera | (490.361) | (325.307) |
+| Porezi i doprinosi - stručni stožer | (54.907) | (35.729) |
+| Ostali nerazvrstani troškovi primanja stručnog stožera | (108.493) | (28.047) |
+| **Troškovi primanja stručnog stožera - ukupno** | **(653.761)** | **(389.083)** |
+| | | |
+| Plaće ostalih zaposlenika | (757.794) | (550.301) |
+| Porezi i doprinosi - ostali zaposlenici | (225.889) | (97.245) |
+| Ostali nerazvrstani troškovi za primanja ostalih zaposlenika | (39.019) | (18.489) |
+| **Trošak primanja ostalih zaposlenika - Ukupno** | **(1.022.702)** | **(666.035)** |
+| | | |
+| Troškovi primanja zaposlenika - ostali / nerazvrstani | 0 | |
+| **Ukupni troškovi primanja zaposlenika** | **[ilegible]** | **(2.624.501)** |
+| | | |
+| Amortizacija dugotrajne materijalne imovine | (79.408) | (34.141) |
+| Umanjenje vrijednosti dugotrajne materijalne imovine | 0 | 0 |
+| Amortizacija ostale nematerijalne imovine (bez registracija igrača) | (67.935) | (53.038) |
+| Umanjenje vrijednosti ostale nematerijalne imovine (bez registracija igrača) | 0 | 0 |
+| **Amortizacija i umanjenje vrijednosti - Ukupno (bez registracija igrača)** | **(147.343)** | **(87.179)** |
+| | | |
+| Trošak imovine s pravom korištenja (operativni najam) | 0 | 0 |
+| Troškovi utakmica | (976.424) | (620.055) |
+| Troškovi sponzorstva i oglašavanja | (89.866) | (93.046) |
+| Troškovi komercijalnih aktivnosti | 0 | 0 |
+| Troškovi imovine i objekata | (378.705) | (175.215) |
+| Troškovi za nenogometne djelatnosti | 0 | 0 |
+| Izvanredni troškovi | 0 | 0 |
+| Ostali nerazvrstani poslovni rashodi (Bilješka X) | (48.032) | (89.940) |
+| **Ostali poslovni rashodi - Ukupno** | **(1.493.027)** | **(978.256)** |
+| | | |
+| **Ukupno - poslovni rashodi (bez registracija igrača)** | **(5.860.464)** | **(3.847.721)** |
+| | | |
+| **Poslovni rezultat (bez registracija igrača)** | **(725.198)** | **(22.981)** |
+| | | |
+| **Transferi igrača i ostalog osoblja** | 0 | |
+| Amortizacija nematerijalne imovine (registracije igrača) | 0 | 0 |
+| Umanjenje vrijednosti nematerijalne imovine (registracije igrača) | 0 | 0 |
+| Dobit od raspolaganja nematerijalnom imovinom (registracije igrača) | 0 | 0 |
+| Gubitak od raspolaganja nematerijalnom imovinom (registracije igrača) | 0 | 0 |
+| Troškovi stjecanja registracija igrača (uključujući troškove ustupanja, solidarne doprinose i naknade za treniranje) | (253.899) | (138.678) |
+| Prihod od raspolaganja registracijama igrača ((uključujući prihode od ustupanja, solidarnih doprinosa i naknada za treniranje) | 2.707.554 | 1.903.116 |
+| Amortizacija/umanjenje nematerijalne imovine (ostalo osoblje) | 0 | 0 |
+| Dobit / gubitak od ustupanja ostalog osoblja | 0 | 0 |
+| Prihod / trošak od ustupanja ostalog osoblja | 0 | 0 |
+| Nekapitalizirani troškovi za naknade agentima/posrednicima | (349.203) | (90.501) |
+| Troškovi nastali s povezanim stranama | 0 | |
+| **Neto rezultat od raspolaganja registracijama igrača - po metodi kapitalizacije troškova** | **2.104.452** | **1.673.937** |
+| | | |
+| Dobit /(gubitak) od raspolaganja dugotrajnom imovinom | | 0 |
+| Dobit /(gubitak) od raspolaganja ostalom nematerijalnom imovinom | | 0 |
+| **Ukupno - dobit/(gubitak) od raspolaganja imovinom** | **0** | 0 |
+| | | |
+| Financijski prihodi | 5.573 | 9.363 |
+| Financijski rashodi | (19.059) | (9.488) |
+| Neto tečajne razlike/(gubici) | | |
+| **Ukupni neto prihod/rashod od financiranja** | **(13.486)** | **(125)** |
+| | | |
+| Ostali neposlovni prihodi | | |
+| Ostali neposlovni rashodi | | |
 
-Troškovi en robe/proizvoda - ostali nerazvrstani :
-
-Plaće igrača
-Porezi i doprinosi - igrači
-Ostali nerazvrstani troškovi primanja igrača
-
-Plaće stručnog stožera
-Porezi i doprinosi - stručni stožer
-Ostali nerazvrstani troškovi primanja stručnog stožera
-
-Plaće ostalih zaposlenika
-Porezi i doprinosi - ostali zaposlenici
-Ostali nerazvrstani troškovi za primanja ostalih zaposlenika
-
-Troškovi primanja zaposlenika - ostali / nerazvrstani
-
-Amortizacija dugotrajne materijalne imovine
-
-Umanjenje vrijednosti dugotrajne materijalne imovine
-
-Amortizacija ostale nematerijalne imovine (bez registracija igrača)
-Umanjenje vrijednosti ostale nematerijalne imovine (bez registracija igrača
-
-Trošak imovine s pravom korištenja (operativni najam)
-
-Troškovi utakmica
-
-Troškovi sponzorstva i oglašavanja
-
-Troškovi komercijalnih aktivnosti
-
-Troškovi imovine i objekata
-
-Troškovi za nenogometne djelatnosti
-
-Izvanredni troškovi
-
-Ostali nerazvrstani rashodi | Bilješka X
-
-Amortizacija nematerijalne imovine (registracije igrača)
-Umanjenje vrijednosti nematerijalne imovine (registracije igrača)
-
-Dobit od raspolaganja nematerijalnom imovinom (registracije igrača)
-
-Gubitak od raspolaganja nematerijalnom imovinom (registracije igrača)
-
-Troškovi stjecanja registracija igrača (uključujući troškove ustupanja, solidarne doprinose i
-naknade za treniranje)
-
-Prihod od raspolaganja registracijama igrača ((uključujući prihode od ustupanja, solidarnih
-doprinosa i naknada za treniranje)
-
-Amortizacija/umanjenje nematerijalne imovine (ostalo osoblje)
-
-Dobit / gubitak od ustupanja ostalog osoblja
-
-Prihod / trošak od ustupanja ostalog osoblja
-
-Nekapitalizirani troškovi za naknade agentima/posrednicima
-
-Troškovi nastali s povezanim stranama
-
-Dobit /igubitak) od raspolaganja dugotrajnom imovinom
-Dobit /(gubitak) od raspolaganja ostalom r ijalnom imovi
-
-Ukupno - dobit/(gubitak) od raspolaganja imovinom
-
-Financijski prihodi
-
-Financijski rashodi
-
-Neto tečajne razlike/(gubici)
-
-Ukupni neto prihod/rashad od financiranja
-
-Ostali neposlovni prihodi
-Ostali neposlovni rashodi
-
-Financijski kriteriji - RAČUN DOBITI | GUBITKA
+Financijski kriteriji - RAČUN DOBITI I GUBITKA
 
 --- pág. 41 ---
 
-VALIEND | ILIBOG NNJVH - IuĐJLY pisfioueui 4
+Račun dobiti i gubitka
 
-ZAVUdN NINOarsaaud
-ZIMA Nazvia
-a(nsidzod aneudn au n afezsafazi aysfpueuiy
+| | 2025. EUR | 2024. EUR |
+|---|---|---|
+| **Ukupni neposlovni prihodi/rashodi** | | 0 |
+| **Porezni prihod/(rashod)** | (160.177) | |
+| **Dobit/(gubitak) poslije oporezivanja** | **1.205.591** | **1.650.831** |
 
-*927072'£0'80
-
-euep afuenljaefqo eggsndop | eneudn af eruqopo a[eagolnzi ajsfrrueujg
-
-=
-TE8'0S9'T T6S'SOZ'T
-
-E»liqn6 1 NIqop unzeu
-
-
---- pág. 42 ---
-
-Kratkotrajna imovina
-Novac i novčani ekvivalenti
-Potraživanja od transfera igrača
-Potraživanja od subjekata grupe i ostalih povezanih strana
-Potraživanja - ostala
-Porezna imovina
-Zalihe
-Ostala kratkotrajna Imovina
-Ukupno - Kratkotrajna Imovina
-
-Dugotrajna Imovina
-Materijalna Imovina
-Nematerijalna Imovina - registracije igrača
-Nematerijalna imovina - ostala
-Potraživanja od transfera igrača
-Potraživanja od subjekata grupe i ostalih povezanih strana
-Porezna imovina
-Ulaganja
-Ostala dugotrajna imovina
-Ukupno - Dugotrajna imovina
-
-Kratkoročne obveze
-Prekoračenja po bankovnim računima
-Bankovni | ostali zajmovi
-Obveze prema subjek grupe i p
-Obveze koje su pi s ferima Igrača - klub
-Obveze koje su povezane s transferima igrača - faktoring
-Obveze prema agentima/posrednicima
-
-Obračunati troškovi i odgođeni prihodi
-Ostale porezne obveze
-Ostale kratkoročne obveze
-Kratkoročna rezerviranja
-
-Ukupno - Kratkoročne obveze
-
-obveze
-Bankovni i ostali zajmovi
-
-Obveze prema subjektima grupe | drugim povezanim stranama
-
-Obveze koje su povezane s transferima igrača - klubovi
-Obveze koje su povezane s transferima igrača - faktoring
-Obveze prema agentima/posrednicima
-Obveze prema zaposlenicima
-Obveze prema državi (porezi | doprinosi)
-Obračunati troškovi i odgođeni prihodi
-Ostale porezne obveze
-Ostale dugoročne obveze
-Dugoročna rezerviranja
-Ukupno - Dugoročne obveze
-Ukupne obveze
-Neto imovina/(obveze)
-Kapital i rezerve
-Dionički/temeljni kapital
-Revalorizacijske rezerve
-Ostale rezerve
-
-Zadržana dobit / (gubitak)
-Dobit / (gubitak) tekuće godine / razdoblja
-
-Ukupno kapital i rezerve
-
-UKUPNO KAPITAL | OBVEZE
+KONTROLA: TOČNO (2025.) | TOČNO (2024.)
 
 Financijske izvještaje odobrila je Uprava i dopustila objavljivanje dana
 
@@ -2289,88 +2167,172 @@ Financijske izvještaje u ime Uprave potpisuje
 DRAŽEN VITEZ
 PREDSJEDNIK UPRAVE
 
+Potpis i pečat: [potpis i pečat: NK Varaždin s.d.d., Zagrebačka 94, 42000 Varaždin]
+
+Financijski kriteriji - RAČUN DOBITI I GUBITKA
+
+--- pág. 42 ---
+
+Bilanca
+
+Naziv izvještajnog subjekta (NK):
+NOGOMETNI KLUB VARAŽDIN, Š.D.D.
+
+**Bilanca**
+Na dan 31. prosinca 2025.
+
+| | Bilješka | 31.12.2025. EUR | 31.12.2024. EUR |
+|---|---|---|---|
+| **Kratkotrajna imovina** | | | |
+| Novac i novčani ekvivalenti | | 2.079.826 | 886.558 |
+| Potraživanja od transfera igrača | | 1.296.333 | 1.033.778 |
+| Potraživanja od subjekata grupe i ostalih povezanih strana | Bilješka II. | | 0 |
+| Potraživanja - ostala | Bilješka II. | 1.379.992 | 310.980 |
+| Porezna imovina | | | |
+| Zalihe | | 43.388 | |
+| Ostala kratkotrajna imovina | Bilješka II. | 190.605 | 1.058.639 |
+| **Ukupno - Kratkotrajna imovina** | | **4.990.144** | **3.289.955** |
+| | | | |
+| **Dugotrajna imovina** | | | |
+| Materijalna imovina | Bilješka III. | 700.961 | 304.096 |
+| Nematerijalna imovina - registracije igrača | Bilješka IV. | | |
+| Nematerijalna imovina - ostala | Bilješka IV. | 1.959.317 | 625.368 |
+| Potraživanja od transfera igrača | | | |
+| Potraživanja od subjekata grupe i ostalih povezanih strana | | | |
+| Porezna imovina | | | |
+| Ulaganja | Bilješka II. | 2.500 | |
+| Ostala dugotrajna imovina | Bilješka II. | 80.917 | |
+| **Ukupno - Dugotrajna imovina** | | **2.743.695** | **929.464** |
+| | | | |
+| **UKUPNO - IMOVINA** | | **7.733.839** | **4.219.419** |
+| | | | |
+| **Kratkotrajne obveze** | | | |
+| Prekoračenja po bankovnim računima | Bilješka V. | | |
+| Bankovni i ostali zajmovi | Bilješka V. | | 289.336 |
+| Obveze prema subjektima grupe i povezanim stranama | Bilješka V. | | 175.000 |
+| Obveze koje su povezane s transferima igrača - klubovi | | | 46.733 |
+| Obveze koje su povezane s transferima igrača - faktoring | | | |
+| Obveze prema agentima/posrednicima | | 54.506 | |
+| Obveze prema dobavljačima | | 533.765 | 137.910 |
+| Obveze prema zaposlenicima | | 451.590 | 241.564 |
+| Obveze prema državi (porezi i doprinosi) | | 33.260 | 16.991 |
+| Obračunati troškovi i odgođeni prihodi | Bilješka V. | | |
+| Ostale porezne obveze | | 174.116 | |
+| Ostale kratkoročne obveze | Bilješka V. | 7.593 | 13.467 |
+| Kratkoročna rezerviranja | Bilješka VI. | | |
+| **Ukupno - Kratkotrajne obveze** | | **1.254.830** | **921.001** |
+| | | | |
+| **Dugoročne obveze** | | | |
+| Bankovni i ostali zajmovi | Bilješka V. | | |
+| Obveze prema subjektima grupe i drugim povezanim stranama | Bilješka V. | | |
+| Obveze koje su povezane s transferima igrača - klubovi | | | |
+| Obveze koje su povezane s transferima igrača - faktoring | | | |
+| Obveze prema agentima/posrednicima | | | |
+| Obveze prema zaposlenicima | | | |
+| Obveze prema državi (porezi i doprinosi) | | | |
+| Obračunati troškovi i odgođeni prihodi | Bilješka V. | | |
+| Ostale porezne obveze | | | |
+| Ostale dugoročne obveze | Bilješka V. | | |
+| Dugoročna rezerviranja | Bilješka VI. | | |
+| **Ukupno - Dugoročne obveze** | | **0** | **0** |
+| | | | |
+| **Ukupne obveze** | | **1.254.830** | **921.001** |
+| | | | |
+| **Neto imovina/(obveze)** | | **6.479.009** | **3.298.418** |
+| | | | |
+| **Kapital i rezerve** | | | |
+| Dionički/temeljni kapital | Bilješka VII. | 1.975.000 | |
+| Revalorizacijske rezerve | | 0 | |
+| Ostale rezerve | | 0 | |
+| Zadržana dobit / (gubitak) | | 3.298.418 | 1.647.587 |
+| Dobit / (gubitak) tekuće godine / razdoblja | | 1.205.591 | 1.650.831 |
+| **Ukupno kapital i rezerve** | | **6.479.009** | **3.298.418** |
+| | | | |
+| **UKUPNO KAPITAL I OBVEZE** | | **7.733.839** | **4.219.419** |
+
+Financijske izvještaje odobrila je Uprava i dopustila objavljivanje dana
+08.03.2026.
+Financijske izvještaje u ime Uprave potpisuje
+DRAŽEN VITEZ
+PREDSJEDNIK UPRAVE
+
 Potpis i pečat:
 
-| Bilješka Ii.
-! Bilieška il.
-
-| Billeška 1.
-
-Bilješka MI.
-! Billeška IV.
-| Bllfeška IV.
-
-1 Bifleška II.
-! Bilteška li.
-
-! Billeška V.
-1 Bilieška V.
-| Bilješka V.
-
-! Bilieška V.
-
-1 Billeška V.
-1 Billeška VI.
-
-KONTROLA
+KONTROLA: TOČNO | TOČNO (2025.) ; TOČNO | TOČNO (2024.)
 
 Financijski kriteriji - BILANCA
 
-
 --- pág. 43 ---
-
-e
-
-za godinu koja zavrlava na dan 31. prosinca 2025.
-
-Gotovinski primici od prihoda od ulsznica
-
-Gotovinski primici od donacija i sličnih davanja lokalne samouprave:
-
-Gotovinski primici od Uefa nagrada i solldarnih uplata
-izdaci usluge
-
-izdaci iuime
-
-Gotovinski Izdaci! u vezi s ostalim poslovnim aktivnostima
-
-Novčani tijakovi od ulaganja
-primici od prodaj Igrača ( ostalog osoblja m
-primlike od mian ini
-izdaci za Igrača i ostal bi data
-za solidarne inaknade za
-Gotovinski primici od prodaje dugotrajna imovine
-Izdaci za stjecanj n
-Ostali odio
-Nerazvrstani gotovini primuci/idaci od/1a ulaganja
-Novčani tijakovi od financiranje
-
-Gotovinski primici od pozajmica - dloničari i povezane strane
-Gotovinski izdaci za pozajmice - dloničari | povezana strane
-
-primici od fin
-Izdad Institu
-primici od kapiteli
-
-Izdaci za div isplaćene
-Ostali priljevi/odijevi od/za financiranja
-U od/za financiranja
-
-== KONTROLA: u žuta ozmoćene ćelije upisat iznose ]
-= Rs : o
-
-o = dii
-
-IN laftajnog razdoblja
-
-Bilanes)
 
 Izvještaj o novčanom toku
 
-"iš,
+Naziv izvještajnog subjekta (NK):
+NOGOMETNI KLUB VARAŽDIN, Š.D.D.
+
+**Izvještaj o novčanom tijeku**
+za godinu koja završava na dan 31. prosinca 2025.
+
+| | 2025. EUR | 2024. EUR |
+|---|---|---|
+| **Novčani tijekovi od poslovnih aktivnosti (od redovnog poslovanja)** | | |
+| Gotovinski primici od prihoda od ulaznica | [ilegible] | 315.479 |
+| Gotovinski primici od sponzorstva i oglašavanja | [ilegible] | 953.033 |
+| Gotovinski primici od prava emitiranja | [ilegible] | 982.250 |
+| Gotovinski primici od komercijalnih aktivnosti | 0 | 0 |
+| Gotovinski primici od donacija i sličnih davanja lokalne samouprave | 350.711 | 315.961 |
+| Gotovinski primici od ostalih poslovnih aktivnosti | [ilegible] | 862.796 |
+| Gotovinski primici od Uefa nagrada i solidarnih uplata | 1.900.000 | |
+| Gotovinski izdaci dobavljačima za proizvode i usluge | [ilegible] | (792.693) |
+| Gotovinski izdaci zaposlenicima i u ime zaposlenika | [ilegible] | (2.693.613) |
+| Gotovinski izdaci prema agentima/posrednicima | [ilegible] | (110.001) |
+| Gotovinski izdaci u vezi s ostalim poslovnim aktivnostima | (582.570) | (357.689) |
+| **Gotovinski priljev/(odljev) od poslovnih aktivnosti (redovnog poslovanja)** | **(879.276)** | **(524.677)** |
+| | | |
+| **Novčani tijekovi od ulaganja** | | |
+| Gotovinski primici od prodaje registracija igrača i ostalog osoblja (uključujući primitke od ustupanja, solidarne doprinose i naknada za treniranje) | 2.609.834 | 2.186.631 |
+| Gotovinski izdaci za stjecanje registracija igrača i ostalog osoblja (uključujući izdatke za ustupanja, solidarne doprinose i naknade za treniranje) | (148.914) | (367.879) |
+| Gotovinski primici od prodaje dugotrajne imovine | 0 | 0 |
+| Gotovinski izdaci za stjecanje dugotrajne imovine | (1.321.569) | (399.242) |
+| Ostali gotovinski primici/izdaci od/za ulaganja | 0 | 0 |
+| Nerazvrstani gotovinski primici/izdaci od/za ulaganja | 0 | 0 |
+| **Gotovinski priljev/(odljev) od ulaganja** | **639.351** | **1.419.510** |
+| | | |
+| **Novčani tijekovi od financiranja** | | |
+| Gotovinski primici od pozajmica - dioničari i povezane strane | 0 | 0 |
+| Gotovinski izdaci za pozajmice - dioničari i povezane strane | 0 | (82.288) |
+| Gotovinski primici od pozajmica - financijske institucije | 0 | 0 |
+| Gotovinski izdaci za pozajmice - financijske institucije | 0 | 0 |
+| Gotovinski primici od povećanja kapitala | 1.418.625 | 0 |
+| Gotovinski izdaci za dividende isplaćena vlasnicima/dioničarima | 0 | 0 |
+| Ostali priljevi/odljevi od/za financiranja | 4.568 | (3.088) |
+| Nerazvrstani gotovinski priljevi/odljevi od/za financiranja | 10.000 | 0 |
+| **Gotovinski priljev/(odljev) od/za financiranja** | **1.433.193** | **(85.376)** |
+| | | |
+| **Neto povećanje/(smanjenje) gotovog novca u izvještajnom razdoblju** | **1.193.268** | **809.457** |
+
+KONTROLA: u žuto označene ćelije upisati iznose
+
+| | 2025. | 2024. |
+|---|---|---|
+| **1. Preneseno na početku izvještajnog razdoblja (prepisati početno stanje)** | 886.558 | 77.101 |
+| | TOČNO | TOČNO |
+| **2. Neto gotovinski priljev/odljev u izvještajnom razdoblju** | 1.193.268 | 809.457 |
+| | TOČNO | TOČNO |
+| **3. Novac i novčani ekvivalenti na kraju izvještajnog razdoblja (prepisati stanja iz Bilance)** | 2.079.826 | 886.558 |
+| | TOČNO | TOČNO |
+| **4. Kontrola Neto povećanje/(smanjenje) gotovog novca u izvještajnom razdoblju** | TOČNO | TOČNO |
+| | TOČNO | TOČNO |
+
+(desno, izvan tablice: TOČNO)
+
+Financijske izvještaje odobrila je Uprava i dopustila objavljivanje dana
+
+08.03.2026.
+Financijske izvještaje u ime Uprave potpisuje
+DRAŽEN VITEZ
+PREDSJEDNIK UPRAVE
+
+Potpis i pečat: [potpis i pečat: NK Varaždin s.d.d., Zagrebačka 94, 42000 Varaždin]
 
 Financijski kriteriji - IZVJEŠTAJ O NOVČANOM TOKU
 
-|
-
-TrAV1

@@ -19,8 +19,9 @@
 // Corre entero desde tu propia terminal: no necesita ninguna sesión de Claude Code para nada, así que
 // no consume tokens de Claude sea 1 PDF o sean 2000 -- ver la sección de esto en Admin/test-costo-transcripcion.md.
 
-import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync, unlinkSync } from 'node:fs';
+import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { resolve, dirname, basename, extname, join } from 'node:path';
+import { derivado, ubicar } from './rutas.mjs';
 import { execFileSync } from 'node:child_process';
 
 const MISTRAL_SCANNED_MARKER = 'ESCANEADO, TRANSCRIPTO CON MISTRAL OCR';
@@ -133,9 +134,26 @@ function findPdfsSinTranscribir(startDir) {
   return out.sort();
 }
 
-async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS) {
-  const mdPath = resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
-  if (existsSync(mdPath)) {
+async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, opts = {}) {
+  // `opts.outSuffix` (mismo patrón que ya tiene mistral-ocr-transcribe.mjs): escribe a un archivo
+  // aparte en vez de al `.md` canónico -- lo usa tools/onboard.mjs para transcribir con Gemini EN
+  // PARALELO a Mistral (no como redo de un escaneo), sin pisar el .md de Mistral, así
+  // compare-transcripts.mjs puede comparar los dos.
+  const outSuffix = opts.outSuffix || '';
+  // Versión 317: con --out-suffix (una segunda voz, un rehacer, un test) el .md es un DERIVADO y va a Generados/ (tools/rutas.mjs); sin
+  // sufijo es LA transcripción del documento y queda al lado del PDF, en Clubes/.
+  const mdPath = outSuffix ? derivado(pdfPath, outSuffix + '.md') : resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
+  // `opts.redo`: --redo-mistral-scanned SÍ quiere pisar un .md que ya existe (el de Mistral).
+  // BUG REAL, 2026-09-28: la versión anterior de este flag borraba TODOS los .md del lote entero
+  // ANTES de arrancar a procesarlos uno por uno -- si la corrida se cortaba a mitad de camino
+  // (cerrar la terminal, Ctrl+C), quedaban cientos de archivos borrados y sin reemplazo, el
+  // trabajo de Mistral ya hecho perdido de verdad (recuperado a mano con `git restore` porque
+  // no había commit de por medio, pero no iba a haber red de seguridad la próxima vez). El fix:
+  // NO se borra nada por adelantado. Acá abajo directamente no se saltea por `existsSync`, y
+  // `writeFileSync()` (más abajo) ya pisa el archivo solo -- no hace falta un `unlinkSync`
+  // previo. Si esta llamada puntual falla o se corta, el .md de Mistral sigue intacto: recién se
+  // pierde en el mismo instante en que se reemplaza por uno bueno.
+  if (existsSync(mdPath) && !opts.redo) {
     return { skipped: true, pdf: pdfPath };
   }
 
@@ -256,7 +274,7 @@ async function runPool(items, concurrency, worker) {
   });
 }
 
-async function runBatch(pending, apiKey, concurrency, timeoutMs) {
+async function runBatch(pending, apiKey, concurrency, timeoutMs, opts = {}) {
   let ok = 0, fail = 0, cost = 0, fidelidadAlertas = 0;
   const startAll = Date.now();
   await runPool(pending, concurrency, async (pdfPath) => {
@@ -265,7 +283,7 @@ async function runBatch(pending, apiKey, concurrency, timeoutMs) {
     // se anota y se sigue, para que una corrida de 1000 no se corte por el documento #300.
     let res;
     try {
-      res = await transcribeOne(pdfPath, apiKey, timeoutMs);
+      res = await transcribeOne(pdfPath, apiKey, timeoutMs, opts);
     } catch (err) {
       res = { ok: false, pdf: pdfPath, error: String(err?.message ?? err) };
       appendFileSync(
@@ -313,11 +331,10 @@ async function main() {
   if (args.includes('--redo-mistral-scanned')) {
     const pending = findMistralScannedNotYetRedone();
     console.log(`${pending.length} PDFs marcados como escaneados por Mistral y sin re-hacer todavía, procesando con Gemini (concurrencia=${concurrency})`);
-    for (const pdfPath of pending) {
-      const md = pdfPath.slice(0, -4) + '.md';
-      if (existsSync(md)) unlinkSync(md); // se reemplaza la version de Mistral, no queda al lado
-    }
-    await runBatch(pending, apiKey, concurrency, timeoutMs);
+    // NO se borra nada acá (ver el comentario de `transcribeOne`, `opts.redo`): cada .md de
+    // Mistral se pisa recién cuando Gemini termina bien ESE archivo puntual, uno por uno. Cortar
+    // la corrida a la mitad deja a medio hacer, nunca deja a medio BORRAR.
+    await runBatch(pending, apiKey, concurrency, timeoutMs, { redo: true });
     return;
   }
 
@@ -335,9 +352,9 @@ async function main() {
     return;
   }
 
-  const pdfArg = args[0];
+  const pdfArg = args.find((a, idx) => !a.startsWith('--') && args[idx - 1] !== '--out-suffix');
   if (!pdfArg) {
-    console.error('Uso: node tools/gemini-transcribe.mjs <ruta-al-pdf>\n   o: node tools/gemini-transcribe.mjs --all [--dir Clubes/Colombia] [--limit 1000] [--concurrency 2] [--timeout 150]\n   o: node tools/gemini-transcribe.mjs --redo-mistral-scanned\n   o: node tools/gemini-transcribe.mjs --pendientes-claude');
+    console.error('Uso: node tools/gemini-transcribe.mjs <ruta-al-pdf> [--out-suffix -gemini-check]\n   o: node tools/gemini-transcribe.mjs --all [--dir Clubes/Colombia] [--limit 1000] [--concurrency 2] [--timeout 150]\n   o: node tools/gemini-transcribe.mjs --redo-mistral-scanned\n   o: node tools/gemini-transcribe.mjs --pendientes-claude');
     process.exit(1);
   }
   const pdfPath = resolve(projectRoot, pdfArg);
@@ -345,7 +362,9 @@ async function main() {
     console.error(`No existe: ${pdfPath}`);
     process.exit(1);
   }
-  const res = await transcribeOne(pdfPath, apiKey, timeoutMs);
+  const suffixFlag = args.indexOf('--out-suffix');
+  const outSuffix = suffixFlag >= 0 ? args[suffixFlag + 1] : '';
+  const res = await transcribeOne(pdfPath, apiKey, timeoutMs, { outSuffix });
   if (res.skipped) {
     console.error(`Ya existe el .md -- no lo piso. Borralo a mano si querés re-correr.`);
     process.exit(1);

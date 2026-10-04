@@ -47,6 +47,15 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 
 ## Estado actual
 
+### Inventario de transcripciones y pipeline PDF -> Jev (2026-09-30, rama `inventario-transcripciones`, sin push)
+
+- Hay un comando único, `node tools/pipeline.mjs --ejecutar --limit 50 --concurrencia 4`, que lleva cada PDF de `Clubes/` (no cargado en el sitio) desde la
+  transcripción (Mistral, documento entero) hasta la categorización (precedente del club -> Jev >= 0,90 -> Claude por API >= 0,80), y deja `<md>.rubros.json` /
+  `<md>.jev.json` / `<md>.categorias.json`. La validación paga (Gemini, Claude) solo toca páginas con números que los chequeos gratis no respaldan. Cargar el
+  ejercicio al sitio por script NO existe todavía (to-do 108; `tools/proponer-carga.mjs` solo mide; `tools/alta-club.mjs` propone el alta de un club nuevo). El registro por PDF (motor que hizo el `.md`, estado, reservas) es `Admin/transcripciones-estado.jsonl`.
+- Inventario hoy: 3.358 PDFs; 316 cargados; 1.106 sin ningún `.md`; el resto en distintos estados de validación. Para entender todo: `Admin/HANDOFF-pipeline.md`
+  (estado, decisiones de Guido, números medidos, qué falta).
+
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
 qué se decidió tal cosa?", NO está acá: está en `Admin/CHANGELOG.md` (resumen por
 versión, 96 versiones) y en `Admin/finance-of-sports-project.md` (narrativa completa). Este bloque
@@ -279,7 +288,7 @@ se reescribe, no se acumula.
   fuente, qué ejercicios respalda, tipo de cambio con su procedencia y
   salvedades), más `fuentes.html`, que desde la Versión 162 es el ÍNDICE: una fila
   por club con su conteo y el link a su página, sin contenido de fuentes adentro.
-  Las 162 páginas, el índice y `sitemap.xml` los GENERA
+  Las 164 páginas, el índice y `sitemap.xml` los GENERA
   `node tools/generate-fuentes-page.js`: no se editan a mano, y el generador borra
   la página de un club que deje de existir (si no, Netlify la seguiría sirviendo).
   POR QUÉ POR CLUB Y NO POR PAÍS, que es lo que pedía el to-do viejo: el club es la
@@ -326,6 +335,19 @@ se reescribe, no se acumula.
   Versión 243) o eligiendo una liga en el selector, que hasta acá terminaba en
   Finanzas del primer club de esa liga por orden alfabético. No necesita club
   activo.
+- SIMULAR CLUBES (O LIGAS ENTERAS) EN UNA LIGA QUE NO ES LA SUYA (Versiones 281-285, to-do 83) — por
+  ingresos, no predicción deportiva. DOS caminos, misma vista de resultado: (a) desde Finanzas, botón
+  "¿Cómo le iría en otra liga?" con el club activo; (b) desde CUALQUIER liga, un buscador ("Sumar un
+  club o una liga entera…") que acepta tanto un club suelto (se baja con `loadClubData()` antes de
+  calcular, y su ejercicio queda editable con un dropdown inline) como una LIGA COMPLETA (inserta
+  TODOS sus clubes de una, reusando `data/rankings/<liga>.js` ya calculado — no baja nada, por eso
+  esos clubes no tienen dropdown de año). Cada club insertado se dibuja distinto (barra translúcida,
+  fondo ámbar, badge "(simulado)") y NUNCA cuenta para los totales/cobertura reales de esa liga.
+  Mientras hay algo simulado, un dropdown deja cambiar de liga sin perder los clubes, y "Volver a
+  Ligas" reabre el picker con ellos en cola en vez de resetear todo. Se guarda solo en Mi Cuenta
+  (to-do 70) como `state.clubes` (siempre array, mismo caso con 1 club o con varios). El botón de
+  Finanzas solo aparece en modo "Año a año" (no "Por gestión"): el motor real compara un ejercicio
+  puntual, no un rango.
 - UI: EL SELECTOR DE CLUB ES UN MODAL PASO A PASO (Versión 146, reemplaza al panel
   de 5 columnas de la Versión 137, que a su vez había reemplazado a un `<select>`
   plano de 41 opciones). Una pregunta por vez, los pasos apilados: Deporte →
@@ -586,7 +608,7 @@ completo está en `Admin/CONVENCIONES.md`.
   `Clubes/` cada sesión. Es una FOTO puntual, no se regenera sola: borrar la línea de lo que se vaya
   onboardeando.
 
-**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY lo interno: la carpeta `Admin/` entera, `CLAUDE.md`, las 655 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`. O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 162 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, va adentro de `Admin/` si es interno (no hace falta tocar este archivo); si lo dejás suelto en la raíz, se publica.**
+**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY lo interno: la carpeta `Admin/` entera, `CLAUDE.md`, las 671 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`. O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 164 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, va adentro de `Admin/` si es interno (no hace falta tocar este archivo); si lo dejás suelto en la raíz, se publica.**
 
 ---
 

@@ -1080,6 +1080,30 @@ function checkCarpetasClubes() {
     if (!docs.length) continue;
     add('P2', 'carpeta-sin-pais', `Clubes/${pais}/ tiene ${docs.length} documento(s) sueltos (${docs.slice(0, 3).join(', ')}${docs.length > 3 ? ', ...' : ''}) en vez de subcarpetas de club. Si es un club, le falta la carpeta de país en el medio: la convención es Clubes/<País>/<Club>/, nunca una carpeta de club al nivel de arriba (ver CLAUDE.md)`);
   }
+
+  // Versión 309: ¿cada carpeta de club resuelve a UN club sin ambigüedad? La regla vive en tools/carpetas-clubes.mjs (cita en
+  // data/<id>-data.js, y si no, nombre IGUAL dentro del mismo país) y la usan onboard.mjs, el registro de transcripciones y el pipeline.
+  // Con la regla vieja (substring, sin país) 17 clubes del sitio no se reconocían y 11 carpetas caían en un club EQUIVOCADO (Porto ->
+  // Grêmio, Inter -> Internacional): el registro marcaba "ya cargado" PDFs que no lo estaban, y al revés. Si una carpeta vuelve a ser
+  // ambigua (la citan dos clubes, o su nombre es igual a dos clubes del país), es P1: el pipeline no puede saber de quién es.
+  // Las carpetas de agregado ("_J.League", "_DFL-Finanzkennzahlen") alimentan varios clubes a propósito y no cuentan.
+  let carpetas = [];
+  try { carpetas = JSON.parse(execFileSync('node', [path.join(ROOT, 'tools', 'carpetas-clubes.mjs'), '--json'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 })); }
+  catch (e) { add('P1', 'carpetas-clubes-fallo', `tools/carpetas-clubes.mjs falló: ${String(e.message).slice(0, 200)}. Sin esa regla el registro de transcripciones no sabe qué PDF es de qué club`); return; }
+  for (const c of carpetas) {
+    if (c.via === 'ambigua' && !c.carpeta.startsWith('_')) add('P1', 'carpeta-club-ambigua', `Clubes/${c.pais}/${c.carpeta}/ no resuelve a un solo club (${c.fuente}). Que la cite UN solo data/<id>-data.js (o renombrar la carpeta): mientras tanto el pipeline y el registro no saben de quién son sus PDFs`);
+  }
+  // Y al revés: un club del sitio cuyos PDFs ninguna carpeta identifica (no cita su carpeta ni se llama igual). Sus PDFs figurarían como
+  // de un club nuevo y el pipeline los procesaría aunque el ejercicio ya esté cargado.
+  const resueltos = new Set(carpetas.filter(c => c.clubId).map(c => c.clubId));
+  for (const f of fs.readdirSync(path.join(ROOT, 'data')).filter(x => x.endsWith('-data.js'))) {
+    const id = f.replace(/-data\.js$/, '');
+    if (resueltos.has(id)) continue;
+    const txt = fs.readFileSync(path.join(ROOT, 'data', f), 'utf8');
+    if (/Clubes\/[^/\n`'"]+\/_/.test(txt)) continue; // se alimenta de una carpeta de agregado (J.League)
+    if (!/Clubes\//.test(txt)) continue; // club cargado solo de fuentes externas (prensa): no tiene PDFs en Clubes/
+    add('P2', 'club-sin-carpeta', `data/${f} cita Clubes/ pero ninguna carpeta de Clubes/ resuelve a '${id}' (tools/carpetas-clubes.mjs): sus PDFs se tratarían como de un club nuevo`);
+  }
 }
 
 // --- D13: qué de las fuentes se le muestra al visitante (Versión 127) -------

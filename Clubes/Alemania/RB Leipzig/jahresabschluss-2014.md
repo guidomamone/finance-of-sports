@@ -45,362 +45,262 @@ Auszug aus dem Unternehmensregister
 
 --- pág. 2 ---
 
-UNTERNEHMENS-
-REGISTER
+UNTERNEHMENSREGISTER
 
 Unsere Plausibilitätsbeurteilung der Plan-Gewinn- und Verlustrechnung hat keine Anhaltspunkte dafür ergeben, dass Einwendungen erhoben werden müssten.
 
 Leipzig, 11. Februar 2015
 
-Aktiva
+**Ernst & Young GmbH, Wirtschaftsprüfungsgesellschaft**  
+*Mandler, Wirtschaftsprüfer*  
+*Zeidler, Wirtschaftsprüfer*
 
-A. Anlagevermögen
-I. Immaterielle Vermögensgegenstände
-1. Spielerwerte
+## Bilanz zum 31. Dezember 2014
 
-2. Software
+### Aktiva
 
-Il. Sachanlagen
-1. Bauten auf fremden Grundstücken
-2. Andere Anlagen, Betriebs- und Geschäftsausstattung
+| | EUR | EUR | 31.07.2014<br>TEUR |
+| :--- | :--- | :--- | :--- |
+| **A. Anlagevermögen** | | | |
+| I. Immaterielle Vermögensgegenstände | | | |
+| 1. Spielerwerte | 20.114.619,49 | | 0 |
+| 2. Software | 137.106,17 | | 0 |
+| | | 20.251.725,66 | 0 |
+| II. Sachanlagen | | | |
+| 1. Bauten auf fremden Grundstücken | 1.729.353,93 | | 0 |
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 2.285.161,49 | | 0 |
+| 3. Geleistete Anzahlungen | 281.556,95 | | 0 |
+| | | 4.296.072,37 | 0 |
+| | | 24.547.798,03 | 0 |
+| **B. Umlaufvermögen** | | | |
+| I. Vorräte | | | |
+| Waren | | 117.343,00 | 0 |
+| II. Forderungen und sonstige Vermögensgegenstände | | | |
+| 1. Forderungen aus Lieferungen und Leistungen | 1.557.952,33 | | 0 |
+| 2. Forderungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht (Gesellschafter) | 1.678.531,11 | | |
+| 3. Sonstige Vermögensgegenstände | 961.945,69 | | 0 |
+| | | 4.198.429,13 | 0 |
+| III. Kassenbestand und Guthaben bei Kreditinstituten | | 2.494.067,25 | 25 |
 
-3. Geleistete Anzahlungen
-
-B. Umlaufvermögen
-
-I. Vorräte
-
-Waren
-
-Il. Forderungen und sonstige Vermögensgegenstände
-
-1. Forderungen aus Lieferungen und Leistungen
-
-2. Forderungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht (Gesellschafter)
-
-3. Sonstige Vermögensgegenstände
-
-III. Kassenbestand und Guthaben bei Kreditinstituten
-
-Ernst & Young GmbH, Wirtschaftsprüfungsgesellschaft
-Mandler, Wirtschaftsprüfer
-
-Zeidler, Wirtschaftsprüfer
-
-Bilanz zum 31. Dezember 2014
-
-EUR
-
-20.114.619,49
-137.106,17
-
-1.729.353,93
-2.285.161,49
-281.556,95
-
-1.557.952,33
-1.678.531,11
-961.945,69
-
-EUR
-
-20.251.725,66
-
-4.296.072,37
-
-24.547.798,03
-
-117.343,00
-
-4.198.429 ,13
-2.494.067 25
-
-31.07.2014
-TEUR
-
-o oo oo © ©
-
-25
-
-— Seite 2 von 11 -
-Tag der Erstellung: 22.03.2016
+---
+– Seite 2 von 11 –  
+Tag der Erstellung: 22.03.2016  
 Auszug aus dem Unternehmensregister
 
 --- pág. 3 ---
 
-UNTERNEHMENS-
-REGISTER
+UNTERNEHMENSREGISTER
 
-C. Rechnungsabgrenzungsposten
+| | EUR | EUR | 31.07.2014<br>TEUR |
+| :--- | :--- | :--- | :--- |
+| | | 6.809.839,38 | 25 |
+| **C. Rechnungsabgrenzungsposten** | | 621.954,56 | 0 |
+| | | 31.979.591,97 | 25 |
 
-Passiva
+### Passiva
 
-A. Eigenkapital
+| | EUR | EUR | 31.07.2014<br>TEUR |
+| :--- | :--- | :--- | :--- |
+| **A. Eigenkapital** | | | |
+| I. Gezeichnetes Kapital | | 50.000,00 | 25 |
+| II. Zur Durchführung der Kapitalerhöhung geleistete Einlagen<br>(am 27. Januar 2015 im Handelsregister eingetragen) | | 2.450.000,00 | 0 |
+| III. Jahresüberschuss | | 118.822,11 | 0 |
+| | | 2.618.822,11 | 25 |
+| **B. Rückstellungen** | | | |
+| 1. Steuerrückstellungen | 170.000,00 | | 0 |
+| 2. Sonstige Rückstellungen | 3.888.489,83 | | 0 |
+| | | 4.058.489,83 | 0 |
+| **C. Verbindlichkeiten** | | | |
+| 1. Verbindlichkeiten aus Lieferungen und Leistungen | 702.836,02 | | 0 |
+| 2. Verbindlichkeiten aus Transfer | 1.882.540,46 | | 0 |
+| 3. Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht (Gesellschafter) | 20.109.056,50 | | 0 |
+| 4. Sonstige Verbindlichkeiten | 947.284,97 | | 0 |
+| *davon aus Steuern TEUR 693 (31.07.2014: TEUR 0)* | | | |
+| *davon im Rahmen der sozialen Sicherheit TEUR 22 (31.07.2014: TEUR 0)* | | | |
+| | | 23.641.717,95 | 0 |
+| **D. Rechnungsabgrenzungsposten** | | 1.660.562,08 | 0 |
+| | | 31.979.591,97 | 25 |
 
-I. Gezeichnetes Kapital
+## Gewinn- und Verlustrechnung vom 31. Juli bis 31. Dezember 2014 (Rumpfgeschäftsjahr)
 
-I. Zur Durchführung der Kapitalerhöhung geleistete Einlagen
-(am 27. Januar 2015 im Handelsregister eingetragen)
-
-III. Jahresüberschuss
-
-B. Rückstellungen
-1. Steuerrückstellungen
-
-2. Sonstige Rückstellungen
-
-C. Verbindlichkeiten
-
-1. Verbindlichkeiten aus Lieferungen und Leistungen
-
-2. Verbindlichkeiten aus Transfer
-
-3. Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht (Gesellschafter)
-4. Sonstige Verbindlichkeiten
-
-davon aus Steuern TEUR 693 (31.07.2014: TEUR 0)
-
-davon im Rahmen der sozialen Sicherheit TEUR 22 (31.07.2014: TEUR 0)
-
-D. Rechnungsabgrenzungsposten
-
-Gewinn- und Verlustrechnung vom 31. Juli bis 31. Dezember 2014 (Rumpfgeschäftsjahr)
-
-EUR EUR
-
-6.809.839 38
-621.954,56
-31.979.591,97
-
-EUR EUR
-50.000,00
-2.450.000 ,00
-118.822,11
-2.618.822,11
-170.000,00
-3.888.489,83
-4.058.489,83
-702.836,02
-1.882.540,46
-
-20.109.056,50
-947.284,97
-
-23.641.717,95
-1.660.562,08
-31.979.591,97
-
-31.07.2014
-TEUR
-
-25
-0
-25
-
-31.07.2014
-TEUR
-
-25
-
-oo oo 0 ©
-
-25
-
-— Seite 3 von 11 —
-Tag der Erstellung: 22.03.2016
-
+---
+– Seite 3 von 11 –  
+Tag der Erstellung: 22.03.2016  
 Auszug aus dem Unternehmensregister
 
 --- pág. 4 ---
 
-UNTERNEHMENS-
-—— 11 REGISTER
+UNTERNEHMENSREGISTER
 
-EUR EUR
-1. Umsatzerlöse 31.025.236,23
-2. Sonstige betriebliche Erträge 424.026,66
+| | EUR | EUR |
+| :--- | :--- | :--- |
+| 1. Umsatzerlöse | | 31.025.236,23 |
+| 2. Sonstige betriebliche Erträge | | 424.026,66 |
+| | | 31.449.262,89 |
+| 3. Materialaufwand | | |
+| Aufwendungen für bezogene Waren | | 433.347,09 |
+| 4. Personalaufwand | | |
+| a) Löhne und Gehälter | 11.216.547,50 | |
+| b) Soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung | 1.220.773,26 | |
+| 5. Abschreibungen | | |
+| a) auf Spielerwerte | 4.244.088,96 | |
+| b) auf sonstige immaterielle Vermögensgegenstände | 35.535,89 | |
+| c) auf Sachanlagen | 425.781,70 | |
+| 6. Sonstige betriebliche Aufwendungen | | 13.227.989,00 |
+| | | 30.804.063,40 |
+| 7. Sonstige Zinsen und ähnliche Erträge | | 2.091,00 |
+| 8. Zinsen und ähnliche Aufwendungen | | 329.469,59 |
+| | | -327.378,59 |
+| 9. Ergebnis der gewöhnlichen Geschäftstätigkeit | | 317.820,90 |
+| 10. Steuern vom Einkommen und vom Ertrag | | 170.000,00 |
+| 11. Sonstige Steuern | | 28.998,79 |
+| | | 198.998,79 |
+| 12. Jahresüberschuss | | 118.822,11 |
 
-31.449.262,89
-3. Materialaufwand
-Aufwendungen für bezogene Waren 433.347,09
+## Entwicklung des Anlagevermögens Rumpfgeschäftsjahr 31. Juli 2014 bis 31. Dezember 2014
 
-4. Personalaufwand
+### Anschaffungs- und Herstellungskosten
 
-a) Löhne und Gehälter 11.216.547 ,50
-b) Soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung 1.220.773,26
-5. Abschreibungen
-a) auf Spielerwerte 4.244.088,96
-b) auf sonstige immaterielle Vermögensgegenstände 35.535,89
-c) auf Sachanlagen 425.781,70
-6. Sonstige betriebliche Aufwendungen 13.227.989,00
-30.804.063 40
-7. Sonstige Zinsen und ähnliche Erträge 2.091,00
-8. Zinsen und ähnliche Aufwendungen 329.469,59
--327.378,59
-9. Ergebnis der gewöhnlichen Geschäftstätigkeit 317.820,90
-10. Steuern vom Einkommen und vom Ertrag 170.000,00
-11. Sonstige Steuern 28.998,79
-198.998 ,79
-12. Jahresüberschuss 118.822,11
-Entwicklung des Anlagevermögens Rumpfgeschäftsjahr 31. Juli 2014 bis 31. Dezember 2014
-Anschaffungs- und Herstellungskosten
-31.07.2014 Zugänge aus Ausgliederung Zugänge Abgänge 31.12.2014
-TEUR TEUR TEUR TEUR TEUR
-I. Immaterielle Vermögensgegenstände
-1. Spielerwerte 0 16.977 7.623 258 24.342
-2. Software 0 78 117 27 168
-0 17.055 7.740 285 24.510
+| | 31.07.2014<br>TEUR | Zugänge aus Ausgliederung<br>TEUR | Zugänge<br>TEUR | Abgänge<br>TEUR | 31.12.2014<br>TEUR |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **I. Immaterielle Vermögensgegenstände** | | | | | |
+| 1. Spielerwerte | 0 | 16.977 | 7.623 | 258 | 24.342 |
+| 2. Software | 0 | 78 | 117 | 27 | 168 |
+| | 0 | 17.055 | 7.740 | 285 | 24.510 |
 
-— Seite 4 von 11 -
-Tag der Erstellung: 22.03.2016
+---
+– Seite 4 von 11 –  
+Tag der Erstellung: 22.03.2016  
 Auszug aus dem Unternehmensregister
 
 --- pág. 5 ---
 
-UNTERNEHMENS-
-—— 11 REGISTER
+UNTERNEHMENSREGISTER
 
-Anschaffungs- und Herstellungskosten
+### Anschaffungs- und Herstellungskosten (Fortsetzung)
 
-31.07.2014 Zugänge aus Ausgliederung Zugänge Abgänge 31.12.2014
-TEUR TEUR TEUR TEUR TEUR
+| | 31.07.2014<br>TEUR | Zugänge aus Ausgliederung<br>TEUR | Zugänge<br>TEUR | Abgänge<br>TEUR | 31.12.2014<br>TEUR |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **II. Sachanlagen** | | | | | |
+| 1. Bauten auf fremden Grundstücken | 0 | 1.095 | 771 | 0 | 1.866 |
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 0 | 1.316 | 1.257 | 0 | 2.573 |
+| 3. Geleistete Anzahlungen | 0 | 150 | 132 | 0 | 282 |
+| | 0 | 2.561 | 2.160 | 0 | 4.721 |
+| | 0 | 19.616 | 9.900 | 285 | 29.231 |
 
-Il. Sachanlagen
-1. Bauten auf fremden Grundstücken 0 1.095 771 0 1.866
-2. Andere Anlagen, Betriebs- und Geschäftsausstattung 0 1.316 1.257 0 2.573
-3. Geleistete Anzahlungen 0 150 132 0 282
-[) 2.561 2.160 [) 4.721
-0 19.616 9.900 285 29.231
+### Kumulierte Abschreibungen
 
-Kumulierte Abschreibungen
+| | 31.07.2014<br>TEUR | Zugänge<br>TEUR | Abgänge<br>TEUR | 31.12.2014<br>TEUR |
+| :--- | :--- | :--- | :--- | :--- |
+| **I. Immaterielle Vermögensgegenstände** | | | | |
+| 1. Spielerwerte | 0 | 4.244 | 17 | 4.227 |
+| 2. Software | 0 | 36 | 5 | 31 |
+| | 0 | 4.280 | 22 | 4.258 |
+| **II. Sachanlagen** | | | | |
+| 1. Bauten auf fremden Grundstücken | 0 | 137 | 0 | 137 |
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 0 | 288 | 0 | 288 |
+| 3. Geleistete Anzahlungen | 0 | 0 | 0 | 0 |
+| | 0 | 425 | 0 | 425 |
+| | 0 | 4.705 | 22 | 4.683 |
 
-31.07.2014 Zugänge Abgänge 31.12.2014
-TEUR TEUR TEUR TEUR
+### Buchwerte 31.12.2014
 
-I. Immaterielle Vermögensgegenstände
-1. Spielerwerte 0 4.244 17 4.227
-2. Software 0 36 5 31
-0 4.280 22 4.258
+| | TEUR |
+| :--- | :--- |
+| **I. Immaterielle Vermögensgegenstände** | |
+| 1. Spielerwerte | 20.115 |
+| 2. Software | 137 |
+| | 20.252 |
+| **II. Sachanlagen** | |
+| 1. Bauten auf fremden Grundstücken | 1.729 |
+| 2. Andere Anlagen, Betriebs- und Geschäftsausstattung | 2.285 |
+| 3. Geleistete Anzahlungen | 282 |
+| | 4.296 |
 
-Il. Sachanlagen
-
-1. Bauten auf fremden Grundstücken 0 137 0 137
-2. Andere Anlagen, Betriebs- und Geschäftsausstattung 0 288 0 288
-3. Geleistete Anzahlungen 0 0 0 0
-0 425 0 425
-0 4.705 22 4.683
-
-Buchwerte 31.12.2014
-
-TEUR
-I. Immaterielle Vermögensgegenstände
-1. Spielerwerte 20.115
-2. Software 137
-20.252
-Il. Sachanlagen
-1. Bauten auf fremden Grundstücken 1.729
-2. Andere Anlagen, Betriebs- und Geschäftsausstattung 2.285
-3. Geleistete Anzahlungen 282
-4.296
-
-— Seite 5 von 11 —
-Tag der Erstellung: 22.03.2016
+---
+– Seite 5 von 11 –  
+Tag der Erstellung: 22.03.2016  
 Auszug aus dem Unternehmensregister
 
 --- pág. 6 ---
 
-UNTERNEHMENS-
-—— 11 REGISTER
+UNTERNEHMENSREGISTER
 
-Buchwerte 31.12.2014
-TEUR
-24.548
+### Buchwerte 31.12.2014 (Fortsetzung)
 
-Anhang für das Rumpfgeschäftsjahr vom 31. Juli 2014 bis 31. Dezember 2014
+| | TEUR |
+| :--- | :--- |
+| | 24.548 |
 
-Allgemeine Hinweise
-Der vorliegende Jahresabschluss wurde gemäß $$ 242 ff. und 264 ff. HGB sowie unter der Berücksichtigung der Gliederungsvorschriften der DFL erstellt. Es wurden die Vorschriften für große Kapitalgesellschaften angewendet.
+## Anhang für das Rumpfgeschäftsjahr vom 31. Juli 2014 bis 31. Dezember 2014
+
+### Allgemeine Hinweise
+Der vorliegende Jahresabschluss wurde gemäß §§ 242 ff. und 264 ff. HGB sowie unter der Berücksichtigung der Gliederungsvorschriften der DFL erstellt. Es wurden die Vorschriften für große Kapitalgesellschaften angewendet.
+
 Die Gewinn- und Verlustrechnung ist nach dem Gesamtkostenverfahren unter Berücksichtigung des Gliederungsschemas der Lizenzierungsordnung der DFL aufgestellt.
 
-Gemäß Urkunde 6285/2014 des Notars Dr. Bernhard Schaub vom 03.12.2014 hat die Gesellschaft vom Rasensportes Leipzig e. V. die 1. Herrenmannschaft, die u.Ä. Mannschaft und die Nachwuchsmannschaften u.Ä. bis u.Ä. sowie alle zu diesen Mannschaften
-gehörenden Bereiche mit sämtlichen wirtschaftlichen zugehörigen materiellen und immateriellen Vermögensgegenstände, Forderungen, Verpflichtungen und Verbindlichkeiten, sowie mit sämtlichen Arbeitsverhältnissen und sonstigen vertraglichen und gesetzlichen- auch
-öffentlich-rechtlichen- Schuldverhältnissen und sonstigen Rechtsverhältnissen aller Art gegen Gewährung von Anteilen und barer Zuzahlung im Wege der Ausgliederung zum 01.07.2014 (Ausgliederungsstichtag) übernommen.
+Gemäß Urkunde 6285/2014 des Notars Dr. Bernhard Schaub vom 03.12.2014 hat die Gesellschaft vom Rasensportes Leipzig e. V. die 1. Herrenmannschaft, die u.Ä. Mannschaft und die Nachwuchsmannschaften u.Ä. bis u.Ä. sowie alle zu diesen Mannschaften gehörenden Bereiche mit sämtlichen wirtschaftlichen zugehörigen materiellen und immateriellen Vermögensgegenstände, Forderungen, Verpflichtungen und Verbindlichkeiten, sowie mit sämtlichen Arbeitsverhältnissen und sonstigen vertraglichen und gesetzlichen- auch öffentlich-rechtlichen- Schuldverhältnissen und sonstigen Rechtsverhältnissen aller Art gegen Gewährung von Anteilen und barer Zuzahlung im Wege der Ausgliederung zum 01.07.2014 (Ausgliederungsstichtag) übernommen.
 
 Infolge der rückwirkenden Ausgliederung umfasst das Rumpfgeschäftsjahr die Aufwendungen und Erträge für den Zeitraum vom 1. Juli bis 31. Dezember 2014.
+
 In der Buchführung der Gesellschaft wurden die übernommenen Vermögensgegenstände und Schulden mit folgenden Anschaffungskosten erfasst:
-Betrag in EUR
-Anlagevermögen
 
-Immaterielle Vermögensgegenstände
+| | Betrag in EUR |
+| :--- | :--- |
+| **Anlagevermögen** | |
+| *Immaterielle Vermögensgegenstände* | |
+| Spielerwerte | 16.977.335,68 |
+| Sonstige immaterielle Vermögensgegenstände | 77.829,54 |
+| *Sachanlagen* | |
+| Bauten auf fremden Grundstücken | 1.095.334,17 |
+| Andere Anlagen, Betriebs- und Geschäftsausstattung | 1.316.091,53 |
+| Geleistete Anzahlungen | 149.641,40 |
+| **Umlaufvermögen** | |
+| *Vorräte* | |
+| Waren | 40.779,79 |
+| *Forderungen und sonstige Vermögensgegenstände* | |
+| Forderungen aus Lieferungen und Leistungen | 327.436,57 |
+| Sonstige Vermögensgegenstände | 964.435,87 |
+| **Rechnungsabgrenzungsposten** | 167.371,48 |
+| | 21.116.256,02 |
+| **Rückstellungen** | |
 
-Spielerwerte 16.977 .335,68
-Sonstige immaterielle Vermögensgegenstände 77.829,54
-Sachanlagen
-
-Bauten auf fremden Grundstücken 1.095.334,17
-Andere Anlagen, Betriebs- und Geschäftsausstattung 1.316.091,53
-Geleistete Anzahlungen 149.641 ,40
-Umlaufvermögen
-
-Vorräte
-
-Waren 40.779,79
-
-Forderungen und sonstige Vermögensgegenstände
-
-Forderungen aus Lieferungen und Leistungen 327 .436,57
-Sonstige Vermögensgegenstände 964.435,87
-Rechnungsabgrenzungsposten 167.371,48
-
-21.116.256,02
-
-Rückstellungen
-
-— Seite 6 von 11 —
-Tag der Erstellung: 22.03.2016
+---
+– Seite 6 von 11 –  
+Tag der Erstellung: 22.03.2016  
 Auszug aus dem Unternehmensregister
 
 --- pág. 7 ---
 
-UNTERNEHMENS-
-—— 11 REGISTER
+UNTERNEHMENSREGISTER
 
-Betrag in EUR
+| | Betrag in EUR |
+| :--- | :--- |
+| Sonstige Rückstellungen | 2.433.057,58 |
+| **Verbindlichkeiten** | |
+| Verbindlichkeiten aus Lieferungen und Leistungen | 147.256,83 |
+| Verbindlichkeiten aus Transfer | 7.658.400,00 |
+| Verbindlichkeit ggü. RasenBallsport Leipzig e.V. | 3.456.118,00 |
+| Sonstige Verbindlichkeiten | 6.186.230,95 |
+| **Rechnungsabgrenzungsposten** | 1.235.192,67 |
+| | 21.116.256,02 |
 
-Sonstige Rückstellungen 2.433.057,58
+### 1. Bilanzierungs- und Bewertungsmethoden
 
-Verbindlichkeiten
+#### Aktiva
+Das Anlagevermögen besteht aus immateriellen Vermögensgegenständen und Sachanlagen. Diese sind mit den Anschaffungs- und Herstellungskosten, vermindert um planmäßige Abschreibungen bewertet. Die Vermögensgegenstände des Sachanlagevermögens werden nach Maßgabe der voraussichtlichen Nutzungsdauer abgeschrieben; die planmäßige Abschreibung erfolgt nach der linearen Methode.
 
-Verbindlichkeiten aus Lieferungen und Leistungen 147.256,83
-
-Verbindlichkeiten aus Transfer 7.658.400 ,00
-
-Verbindlichkeit ggü. RasenBallsport Leipzig e.V. 3.456.118,00
-
-Sonstige Verbindlichkeiten 6.186.230,95
-1.235.192,67
-
-Rechnungsabgrenzungsposten
-21.116.256,02
-
-1. Bilanzierungs- und Bewertungsmethoden
-
-Aktiva
-
-Das Anlagevermögen besteht aus immateriellen Vermögensgegenständen und Sachanlagen. Diese sind mit den Anschaffungs- und Herstellungskosten, vermindert um planmäßige Abschreibungen bewertet. Die Vermögensgegenstände des Sachanlagevermögens werden
-nach Maßgabe der voraussichtlichen Nutzungsdauer abgeschrieben; die planmäßige Abschreibung erfolgt nach der linearen Methode.
-
-Bei den Spielerwerten sind die Anschaffungskosten einschließlich Anschaffungsnebenkosten unter Berücksichtigung der BFH-Urteile vom 26. August 1992, IR 24/91 sowie vom 14. Dezember 2011, IR 108/10 ermittelt. Als voraussichtliche Nutzungsdauer wurde je
-Spieler die individuelle Vertragslaufzeit des Anstellungsvertrages angesetzt. Soweit Zahlungen eine Laufzeit von über einem Jahr haben, wurde der Barwert als Anschaffungskosten und der Differenzbetrag unter den aktiven Rechnungsabgrenzungsposten angesetzt.
+Bei den Spielerwerten sind die Anschaffungskosten einschließlich Anschaffungsnebenkosten unter Berücksichtigung der BFH-Urteile vom 26. August 1992, I R 24/91 sowie vom 14. Dezember 2011, I R 108/10 ermittelt. Als voraussichtliche Nutzungsdauer wurde je Spieler die individuelle Vertragslaufzeit des Anstellungsvertrages angesetzt. Soweit Zahlungen eine Laufzeit von über einem Jahr haben, wurde der Barwert als Anschaffungskosten und der Differenzbetrag unter den aktiven Rechnungsabgrenzungsposten angesetzt.
 
 Geringwertige Anlagegüter mit Anschaffungskosten bis in Höhe von EUR 410,00 sind im Jahr des Zugangs voll abgeschrieben bzw. als Aufwand erfasst worden; ihr sofortiger Abgang wurde unterstellt.
+
 Die Vorräte an Merchandiseartikeln wurden zu Anschaffungskosten bzw. zu den niedrigeren Tageswerten bewertet.
 
 Die Forderungen aus Lieferungen und Leistungen, die sonstigen Vermögensgegenstände, der Kassenbestand und die Bankguthaben sind mit den Nennwerten aktiviert.
 
 Als Rechnungsabgrenzungsposten werden Ausgaben vor dem Abschlussstichtag, die Aufwendungen für einen bestimmten Zeitraum nach dem Abschlussstichtag darstellen, ausgewiesen.
-Passiva
 
+#### Passiva
 Unter dem gezeichneten Kapital wird das Stammkapital der Gesellschaft zum Nennbetrag ausgewiesen.
 
 Die Rückstellungen sind in Höhe des nach vernünftiger kaufmännischer Beurteilung notwendigen Erfüllungsbetrages passiviert.
@@ -409,81 +309,65 @@ Die Verbindlichkeiten sind mit ihrem Erfüllungsbetrag angesetzt.
 
 Als Rechnungsabgrenzungsposten werden Einnahmen vor dem Abschlussstichtag, die Erträge für einen bestimmten Zeitraum nach dem Abschlussstichtag darstellen, ausgewiesen.
 
-2. Erläuterungen zur Bilanz
+### 2. Erläuterungen zur Bilanz
 
-2.1. Anlagevermögen
-
+#### 2.1. Anlagevermögen
 Die Entwicklung der einzelnen Posten des Anlagevermögens ist unter Angabe der Abschreibungen des Geschäftsjahres im Anlagenspiegel dargestellt.
 
-2.2. Forderungen und sonstige Vermögensgegenstände/Rechnungsabgrenzungsposten
-
+#### 2.2. Forderungen und sonstige Vermögensgegenstände/Rechnungsabgrenzungsposten
 Die Forderungen und sonstigen Vermögensgegenstände haben in Höhe von TEUR 608 eine Restlaufzeit von über einem Jahr.
 
-Unter der aktiven Rechnungsabgrenzung wird ein Betrag nach $ 250 Abs. 3 HGB in Höhe von TEUR 17 ausgewiesen.
+Unter der aktiven Rechnungsabgrenzung wird ein Betrag nach § 250 Abs. 3 HGB in Höhe von TEUR 17 ausgewiesen.
 
-2.3. Eigenkapital
+#### 2.3. Eigenkapital
 
-— Seite 7 von 11 -
-Tag der Erstellung: 22.03.2016
+---
+– Seite 7 von 11 –  
+Tag der Erstellung: 22.03.2016  
 Auszug aus dem Unternehmensregister
 
 --- pág. 8 ---
 
-UNTERNEHMENS-
-REGISTER
+UNTERNEHMENSREGISTER
 
 Das Stammkapital der Gesellschaft beträgt zum 31.12.2014 TEUR 50.
 
-2.4. Sonstige Rückstellungen/Verbindlichkeiten/Rechnungsabgrenzungsposten
+#### 2.4. Sonstige Rückstellungen/Verbindlichkeiten/Rechnungsabgrenzungsposten
 
-Unter diesem Bilanzposten sind Rückstellungen u. a. Rückstellungen für Berufsgenossenschaft in Höhe von TEUR 1.254, für Rechts- und Steuerberatung in Höhe von TEUR 121, für Abschluss- und Prüfungskosten/Steuererklärung in Höhe von TEUR 47, ausstehenden
-Urlaub in Höhe von TEUR 222 und ausstehende Rechnungen in Höhe von TEUR 1.227 ausgewiesen.
+Unter diesem Bilanzposten sind Rückstellungen u. a. Rückstellungen für Berufsgenossenschaft in Höhe von TEUR 1.254, für Rechts- und Steuerberatung in Höhe von TEUR 121, für Abschluss- und Prüfungskosten/Steuererklärung in Höhe von TEUR 47, ausstehenden Urlaub in Höhe von TEUR 222 und ausstehende Rechnungen in Höhe von TEUR 1.227 ausgewiesen.
 
 Die Restlaufzeiten und die Besicherung der Verbindlichkeiten sind im Verbindlichkeitenspiegel im Einzelnen dargestellt.
 
-31.12.2014 31.07.2014
-Restlaufzeit
-bis 1 Jahr über 5 Jahre gesamt Restlaufzeit bis 1 Jahr gesamt
-TEUR TEUR TEUR TEUR TEUR
+| | 31.12.2014<br>Restlaufzeit bis 1 Jahr<br>TEUR | 31.12.2014<br>Restlaufzeit über 5 Jahre<br>TEUR | 31.12.2014<br>gesamt<br>TEUR | 31.07.2014<br>Restlaufzeit bis 1 Jahr<br>TEUR | 31.07.2014<br>gesamt<br>TEUR |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1. Verbindlichkeiten aus Lieferungen und Leistungen | 703 | 0 | 703 | 0 | 0 |
+| 2. Verbindlichkeiten aus Transfer | 954 | 0 | 1.883 | 0 | 0 |
+| 3. Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht | 10.007 | 0 | 20.109 | 0 | 0 |
+| 4. Sonstige Verbindlichkeiten | 947 | 0 | 947 | 0 | 0 |
+| **Gesamt** | **12.611** | **0** | **23.642** | **0** | **0** |
 
-1. Verbindlichkeiten aus Lieferungen und 703 0 703 0 0
-Leistungen
-2. Verbindlichkeiten aus Transfer 954 0 1.883 0 0
-3. Verbindlichkeiten gegenüber Unterneh- 10.007 0 20.109 0 0
-men, mit denen ein Beteiligungsverhältnis be-
-steht
-4. Sonstige Verbindlichkeiten 947 0 947 0 0
-Gesamt 12.611 [) 23.642 [) [)
+### 3. Erläuterungen zur Gewinn- und Verlustrechnung
 
-3. Erläuterungen zur Gewinn- und Verlustrechnung
-
-3.1 Umsatzerlöse
-
+#### 3.1 Umsatzerlöse
 Die Umsatzerlöse resultieren aus Erträgen mit Sponsoren, Erträgen aus Einnahmen des laufenden Spielbetriebs und aus der Fernsehverwertung.
-3.2 Steuern vom Einkommen und vom Ertrag
 
+#### 3.2 Steuern vom Einkommen und vom Ertrag
 Die Steuern von Einkommen und Ertrag resultieren aus der Tätigkeit der Gesellschaft im abgelaufenen Rumpfgeschäftsjahr.
 
-Latente Steuern (Ansatz)
+##### Latente Steuern (Ansatz)
+Latente Steuern werden für zeitliche Unterschiede zwischen den handelsrechtlichen und steuerlichen Wertansätzen von Vermögensgegenständen, Schulden und Rechnungsabgrenzungsposten ermittelt. Nutzbare steuerliche Verlustvorträge sind bei dem Ansatz der aktiven latenten Steuern zu berücksichtigen. Die Ermittlung der latenten Steuern erfolgt auf Basis des individuellen Steuersatzes der Gesellschaft. Der individuelle Steuersatz umfasst Körperschaftsteuer, Gewerbesteuer und Solidaritätszuschlag. Dieser beträgt für das aktuelle Geschäftsjahr rund 32 %.
 
-Latente Steuern werden für zeitliche Unterschiede zwischen den handelsrechtlichen und steuerlichen Wertansätzen von Vermögensgegenständen, Schulden und Rechnungsabgrenzungsposten ermittelt. Nutzbare steuerliche Verlustvorträge sind bei dem Ansatz der aktiven
-latenten Steuern zu berücksichtigen. Die Ermittlung der latenten Steuern erfolgt auf Basis des individuellen Steuersatzes der Gesellschaft. Der individuelle Steuersatz umfasst Körperschaftsteuer, Gewerbesteuer und Solidaritätszuschlag. Dieser beträgt für das aktuelle
-Geschäftsjahr rund 32 %.
+Im Geschäftsjahr entstand als Ergebnis der Verrechnung der aktiven und passiven latenten Steuern (Verrechnung nach § 274 Abs. 1 Satz 3 HGB) ein Aktivüberhang. Von dem Wahlrecht zum Ansatz des aktiven latenten Steuerüberhangs aufgrund sich ergebender Steuerentlastungen nach § 274 Abs. 1 Satz 2 HGB wird kein Gebrauch gemacht.
 
-Im Geschäftsjahr entstand als Ergebnis der Verrechnung der aktiven und passiven latenten Steuern (Verrechnung nach $ 274 Abs. 1 Satz 3 HGB) ein Aktivüberhang. Von dem Wahlrecht zum Ansatz des aktiven latenten Steuerüberhangs aufgrund sich ergebender
-Steuerentlastungen nach $ 274 Abs. 1 Satz 2 HGB wird kein Gebrauch gemacht.
+##### Latente Steuern (Bewertung)
+Der Überhang der aktiven latenten Steuern resultiert aus handels- und steuerrechtlich voneinander abweichenden Wertansätzen (Bilanzunterschiede multipliziert mit dem individuellen Steuersatz). Aktive latente Steuern resultieren aus den Posten Rückstellungen sowie sonstige Verbindlichkeiten.
 
-Latente Steuern (Bewertung)
-
-Der Überhang der aktiven latenten Steuern resultiert aus handels- und steuerrechtlich voneinander abweichenden Wertansätzen (Bilanzunterschiede multipliziert mit dem individuellen Steuersatz). Aktive latente Steuern resultieren aus den Posten Rückstellungen sowie
-sonstige Verbindlichkeiten.
-
-3.4 Periodenfremde Aufwendungen und Erträge
-
+#### 3.4 Periodenfremde Aufwendungen und Erträge
 In der vorliegenden GuV werden unter dem Posten sonstige betriebliche Aufwendungen periodenfremden Aufwendungen ausgewiesen. Sie resultieren im Wesentlichen aus der Nebenkostenabrechnung des Vermieters für das Vorjahr (TEUR 5).
 
-— Seite 8 von 11 —
-Tag der Erstellung: 22.03.2016
+---
+– Seite 8 von 11 –  
+Tag der Erstellung: 22.03.2016  
 Auszug aus dem Unternehmensregister
 
 --- pág. 9 ---

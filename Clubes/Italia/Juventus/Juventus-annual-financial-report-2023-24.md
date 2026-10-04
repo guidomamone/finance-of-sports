@@ -7615,99 +7615,104 @@ Annual financial report as at 30 June 2024 – Separate financial statements as 
 
 --- pág. 202 ---
 
-# **Appendix – Table of changes in players' registration rights in the 2023/2024 financial year, in compliance with FIGC regulations**
+Annual financial report as at 30 June 2024 – Separate financial statements as at 30 June 2024 202
 
-|  NAME OF FLOOR | NAME OF SURVEY | Contract |   | From |   | To |   | Values of beginning of the period |   |   | Changes in values for period |   |   | Economic effects for period |   |   |   | Values at the end of the period |   |   | Miscellaneous  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |  Start date of the first contract | Expiry date of the last contract | Acquisition date | Company | Date of disposal | Company | 01/01/2023 |   |   | Acquisition | Disposals | Amortization * | Write-downs* | Capital losses* | Capital gains* | 30/06/2024 |   |   | Agents fees | Other acquisition costs | Value of the call on tax  |   |
-|   |   |   |   |   |   |   |   |  Historical cost | Accumulated amortization | Net |   |   |   |   |   |   | Historical cost | Accumulated amortization | (1+6) |   |   |   | (10-11-7)  |
-|   |  |  |  |  |  |  |  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |  |  |   |   |
-|  Amounts in thousands of Euro |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |   |
-|  **Press Equality** |  |  |  |  |  |  |  | **489,747** | **240,141** | **229,000** | **65,722** | **0** | **89,840** | **7,170** |  |  | **510,753** | **280,426** | **210,387** | **47,197** |  |   |   |
-|  Borocci Leonardo | 01/05/07 | 01/07/10 | 30/06/24 | 02/08/19 | AC Milan | 01/09/22 | I Fubbenclub Union | 24,849 | 24,849 |  |  | 0 |  |  |  |  |  |  |  |  |  |   |   |
-|  Cambiasco Andrea | 20/02/03 | 13/07/22 | 30/06/27 | 13/07/22 | Genco Crotani and FC |  |  | 12,807 | 2,501 | 10,300 | 981 |  | 2,633 |  |  |  | 13,652 | 5,334 | 8,498 | 476 |  |   |   |
-|  Chiesa Federico | 20/10/07 | 05/10/20 | 30/06/25 | 05/10/20 | HCF Fiorentina |  |  | 43,599 | 16,027 | 27,000 | 2,000 |  | 15,035 | 3,800 |  |  | 46,086 | 34,907 | 11,189 | 2,486 |  |   |   |
-|  Cicadella Bella Jan-Galilemo | 06/06/06 | 31/06/16 | 30/06/23 | 31/06/17 | Chiesan FC | 01/07/23 | scadenza centralis | 23,492 | 20,499 |  |  | 0 |  |  |  |  |  |  |  |  |  |   |   |
-|  De Silva Dennis Leo | 13/07/01 | 07/08/19 | 30/06/24 | 07/08/19 | Marchante Udry M |  |  | 37,213 | 27,067 | 10,128 |  |  | 0,083 |  |  |  | 37,213 | 32,133 | 0,082 |  |  |   |   |
-|  De Sciglio Mattia | 20/10/02 | 20/07/17 | 30/06/25 | 20/07/17 | AC Milan |  |  | 12,241 | 10,964 | 1,287 |  |  | 843 |  |  |  | 12,241 | 11,603 | 847 | 833 |  |   |   |
-|  Di Maria Angel Fabian | 14/02/08 | 06/07/22 | 30/06/23 | 06/07/22 | Porto Santo German FC | 01/07/23 | scadenza centralis | 1,294 | 1,294 |  |  | 0 |  |  |  |  |  |  |  |  |  |   |   |
-|  Embals' State' Tiago Emanuel | 06/04/03 | 22/01/24 | 30/06/28 | 22/01/24 | Luxo Lille |  |  |  |  |  | 5,166 |  | 932 |  |  |  | 5,166 | 932 | 4,223 | 1,949 |  |   |   |
-|  Fagani Nicola | 12/02/01 | 20/07/19 | 30/06/28 | 06/08/19 | US Cremonese Spa |  |  | 853 | 338 | 312 |  |  | 62 |  |  |  | 853 | 428 | 350 | 320 |  |   |   |
-|  Garb Federico | 26/06/08 | 31/07/22 | 30/06/28 | 31/07/22 | Prochione Calcio SA |  |  | 6,914 | 1,718 | 5,166 | 2,162 |  | 1,477 |  |  |  | 9,166 | 3,166 | 5,011 | 784 |  |   |   |
-|  Gog Junior Samuel | 06/10/03 | 31/06/20 | 30/06/25 | 31/06/20 | Chiesan FC |  |  | 1,892 | 562 | 1,148 |  |  | 526 |  |  |  | 1,892 | 1,261 | 549 | 1,763 |  |   |   |
-|  Keanాపин Ворис | 26/02/05 | 30/06/21 | 30/06/23 | 30/06/21 | The Everton FC LM |  |  | 30,907 | 17,755 | 10,201 | 1,258 |  | 10,145 |  |  |  | 37,069 | 27,093 | 10,144 | 3,227 |  |   |   |
-|  Keado Rita | 01/11/02 | 11/06/22 | 30/06/28 | 11/06/22 | Embals/Frankfurt Funchal |  |  | 14,035 | 5,201 | 10,004 | 1,281 |  | 4,226 |  |  |  | 15,266 | 7,225 | 8,097 | 1,449 |  |   |   |
-|  Lotto Silva Alex Soriano | 26/01/01 | 20/06/19 | 30/06/24 | 18/08/19 | Forstoli Club de Porto |  |  | 26,125 | 26,843 | 1,262 |  |  | 1,282 |  |  |  | 26,125 | 26,125 |  | 2,855 |  |   |   |
-|  Locatelli Manuel | 06/01/08 | 18/06/21 | 30/06/28 | 18/08/21 | US Seccaldo Calcio SA |  |  | 25,138 | 12,447 | 22,001 | 2,162 |  | 4,975 |  |  |  | 27,321 | 17,422 | 19,699 | 2,109 |  |   |   |
-|  MC Kenney Weston James Karl | 26/06/08 | 26/02/21 | 30/06/25 | 26/02/21 | FC Gelsenkirchen-Schalke SA DV |  |  | 21,394 | 11,511 | 9,083 | 1,514 |  | 5,058 |  |  |  | 22,009 | 17,258 | 9,089 | 411 |  |   |   |
-|  Milo Albatrossi Kiyaban | 26/02/04 | 21/06/23 | 30/06/25 | 21/06/23 | Champions de Marseille SABP |  |  | 8,007 | 73 | 7,928 |  |  | 2,643 |  |  |  | 8,001 | 2,718 | 5,289 | 1,918 |  |   |   |
-|  Merit Fabio | 03/06/03 | 14/02/20 | 30/06/27 | 03/06/17 | Secondmanis GDS |  |  | 60 | 24 | 48 | 120 |  | 48 |  |  |  | 210 | 75 | 140 | 210 |  |   |   |
-|  Moducci Giorgio Hans | 18/06/02 | 12/07/17 | 30/06/28 | 22/07/17 | Secondmanis GDS |  |  | 1,015 | 1,064 | 540 |  |  | 742 |  |  |  | 1,015 | 1,241 | 543 |  |  |   |   |
-|  Paris Mattia | 10/11/02 | 08/06/19 | 30/06/25 | 31/07/19 | Genco Crotani and FC |  |  | 16,298 | 13,627 | 2,402 |  |  | 1,227 |  |  |  | 16,298 | 10,064 | 1,226 | 747 |  |   |   |
-|  Prosiglio Carlo | 18/03/05 | 18/03/09 | 30/06/23 | 22/04/25 | US Serbien Gaudens |  |  | 828 | 513 |  |  |  | 0 |  |  |  | 828 | 833 | 0 | 20 |  |   |   |
-|  Papua Paul Labria | 15/03/02 | 11/07/22 | 30/06/28 | 11/07/22 | Marchante Udry FC |  |  | 3,120 | 765 | 2,300 |  |  | 680 | 1,710 |  |  | 3,120 | 3,120 | 0 | 3,120 |  |   |   |
-|  Patriot Adrian | 03/04/06 | 04/07/19 | 30/06/24 | 04/07/19 | Redondome cedro |  |  | 1,461 | 1,298 | 180 |  |  | 183 |  |  |  | 1,461 | 1,461 |  | 1,461 |  |   |   |
-|  Rugani Dominik | 26/07/04 | 04/08/12 | 30/06/24 | 31/07/13 | Empoli FC |  |  | 5,203 | 3,914 | 201 | 582 |  | 281 |  |  |  | 4,787 | 4,203 | 582 | 882 |  |   |   |
-|  Slow Nascimento Gideon Bracher | 18/03/07 | 20/07/22 | 30/06/28 | 20/07/22 | Torino FC Spa |  |  | 49,437 | 8,507 | 35,929 | 5,512 |  | 8,197 |  |  |  | 49,443 | 16,094 | 32,749 | 2,977 |  |   |   |
-|  Stoney De Paulo Douglas Leo | 06/05/08 | 20/06/24 | 30/06/25 | 20/06/24 | Neon-Joe FC LM |  |  |  |  |  | 48,728 |  | 64 |  |  |  | 48,728 | 64 | 48,854 | 1,462 |  |   |   |
-|  Stuyvescu Maravon | 18/04/05 | 01/07/14 | 30/06/25 | 18/07/17 | Montréal FC |  |  | 18,443 | 19,103 | 3,110 |  |  | 1,584 | 1,890 |  |  | 18,443 | 18,443 |  | 3,223 |  |   |   |
-|  Wohum Simeon | 26/01/03 | 26/01/22 | 30/06/28 | 26/01/22 | HCF Fiorentina SA |  |  | 62,370 | 26,705 | 50,071 | 1,981 |  | 19,221 |  |  |  | 65,307 | 46,256 | 39,101 | 10,059 |  |   |   |
-|  Stadt Trinity Targah | 22/02/03 | 01/07/23 | 30/06/28 | 01/07/23 | Luxo Lille |  |  |  |  |  | 11,715 |  | 2,343 |  |  |  | 11,715 | 2,343 | 6,372 | 1,162 |  |   |   |
-|  Wolchkanen | 04/09/02 | 07/07/22 | 30/06/27 | 31/07/22 | Redondome cedro |  |  | 175 | 58 | 117 | 760 |  | 219 |  |  |  | 555 | 277 | 658 | 790 |  |   |   |
+Appendix – Table of changes in players' registration rights in the 2023/2024 financial year, in compliance with FIGC regulations
 
-Annual financial report as at 30 June 2024 – Separate financial statements as at 30 June 2024
+Amounts in thousands of Euro
 
-202
+Encabezado de columnas: PLAYER | DATE OF BIRTH | Contract (Start date of the first contract; Expiry date of the last contract) | From (Acquisition date; Company) | To (Date of disposal; Company) | Values at beginning of the period 01/07/2023 (Historical cost; Accumulated amortisation; Net) | Changes in values for period (Acquisition; Disposals) | Economic effects for period (Amortisation*; Writedowns*; Capital losses*; Capital gains*) | Values at the end of the period 30/06/2024 (Historical cost (1+4); Accumulated amortisation (2+6); Net* (10-11-7)) | Miscellaneous (Agents' fees; Other acquisition costs; Value of the sell-on fee)
+
+Numeración de columnas impresa: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+
+| PLAYER | DATE OF BIRTH | Start date of the first contract | Expiry date of the last contract | Acquisition date | From – Company | Date of disposal | To – Company | Historical cost | Accumulated amortisation (2) | Net (3) | Acquisition (4) | Disposals (5) | Amortisation* (6) | Writedowns* (7) | Capital losses* (8) | Capital gains* (9) | Historical cost (10) (1+4) | Accumulated amortisation (11) (2+6) | Net* (12) (10-11-7) | Agents' fees | Other acquisition costs | Value of the sell-on fee |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Prima Squadra | | | | | | | | 489,741 | 260,141 | 229,600 | 85,722 | 0 | 89,845 | 7,170 | - | - | 518,733 | 300,426 | 218,307 | 47,107 | - | - |
+| Bonucci Leonardo | 01/05/87 | 01/07/10 | 30/06/24 | 02/08/18 | AC Milan | 01/09/23 | 1 Fubbalclub Union | 34,946 | 34,946 | - | | 0 | - | - | - | - | - | - | | | | |
+| Cambiaso Andrea | 20/02/00 | 13/07/22 | 30/06/27 | 13/07/22 | Genoa Cricket and FC | | | 12,851 | 2,501 | 10,350 | 981 | | 2,833 | | | | 13,832 | 5,334 | 8,498 | 475 | | |
+| Chiesa Federico | 25/10/97 | 05/10/20 | 30/06/25 | 05/10/20 | ACF Fiorentina | | | 43,596 | 16,027 | 27,569 | 2,500 | | 15,035 | 3,845 | | | 46,096 | 34,907 | 11,189 | 2,496 | | |
+| Cuadrado Bello Jan Guillermo | 26/05/88 | 31/08/16 | 30/06/23 | 21/05/17 | Chelsea FC | 01/07/23 | scadenza contratto | 20,490 | 20,490 | - | | 0 | - | - | - | - | | | | | | |
+| Da Silva Danilo Luiz | 15/07/91 | 07/08/19 | 30/06/25 | 07/08/19 | Manchester City Ltd | | | 37,213 | 27,087 | 10,126 | | | 5,063 | | | | 37,213 | 32,150 | 5,063 | | | |
+| De Sciglio Mattia | 20/10/92 | 20/07/17 | 30/06/25 | 20/07/17 | AC Milan | | | 12,241 | 10,960 | 1,281 | | | 640 | | | | 12,241 | 11,600 | 641 | 600 | | |
+| Di Maria Angel Fabian | 14/02/88 | 08/07/22 | 30/06/23 | 08/07/22 | Paris Saint-Germain FC | 01/07/23 | scadenza contratto | 1,294 | 1,294 | - | - | 0 | - | - | - | - | | | | | | |
+| Embalo' Dialo' Tiago Emanuel | 09/04/00 | 22/01/24 | 30/06/26 | 22/01/24 | Losc Lille | | | | | | 5,155 | | 932 | | | | 5,155 | 932 | 4,223 | 1,599 | | |
+| Fagioli Nicolò | 12/02/01 | 25/07/19 | 30/06/28 | 06/08/15 | US Cremonese Spa | | | 650 | 338 | 312 | | | 62 | | | | 650 | 400 | 250 | 320 | | |
+| Gatti Federico | 24/06/98 | 31/01/22 | 30/06/28 | 31/01/22 | Frosinone Calcio Srl | | | 6,914 | 1,718 | 5,196 | 2,192 | | 1,477 | | | | 9,106 | 3,195 | 5,911 | 750 | | |
+| Iling Junior Samuel | 04/10/03 | 31/08/20 | 30/06/25 | 31/08/20 | Chelsea FC | | | 1,880 | 682 | 1,198 | | | 599 | | | | 1,880 | 1,281 | 599 | 1,750 | | |
+| Kean Bioty Moise | 28/02/00 | 30/08/21 | 30/06/25 | 30/08/21 | The Everton FC Ltd | | | 36,981 | 17,700 | 19,281 | 1,008 | | 10,145 | | | | 37,989 | 27,845 | 10,144 | 3,227 | | |
+| Kostic Filip | 01/11/92 | 11/08/22 | 30/06/26 | 11/08/22 | Eintracht Frankfurt Fussball | | | 14,005 | 3,201 | 10,804 | 1,281 | | 4,028 | | | | 15,286 | 7,229 | 8,057 | 1,448 | | |
+| Lobo Silva Alex Sandro | 26/01/91 | 20/08/15 | 30/06/24 | 19/08/15 | Futebol Clube do Porto | | | 28,125 | 26,843 | 1,282 | | | 1,282 | | | | 28,125 | 28,125 | - | 2,850 | | |
+| Locatelli Manuel | 08/01/98 | 18/08/21 | 30/06/28 | 18/08/21 | US Sassuolo Calcio Srl | | | 35,138 | 12,447 | 22,691 | 2,183 | | 4,975 | | | | 37,321 | 17,422 | 19,899 | 3,106 | | |
+| MC Kennie Weston James Earl | 28/08/98 | 26/02/21 | 30/06/25 | 26/02/21 | FC Gelsenkirchen-Schalke 04 EV | | | 21,394 | 11,511 | 9,883 | 1,514 | | 5,698 | | | | 22,908 | 17,209 | 5,699 | 411 | | |
+| Milik Arkadiusz Krystian | 28/02/94 | 21/06/23 | 30/06/26 | 21/06/23 | Olympique de Marseille SASP | | | 8,001 | 73 | 7,928 | | | 2,643 | | | | 8,001 | 2,716 | 5,285 | 1,918 | | |
+| Miretti Fabio | 03/08/03 | 14/02/20 | 30/06/27 | 03/08/17 | tesseramento GDS | | | 60 | 24 | 36 | 150 | | 46 | | | | 210 | 70 | 140 | 210 | | |
+| Nicolussi Caviglia Hans | 18/06/00 | 12/07/17 | 30/06/26 | 22/07/14 | tesseramento GDS | | | 1,610 | 1,065 | 545 | | | 182 | | | | 1,610 | 1,247 | 363 | | | |
+| Perin Mattia | 10/11/92 | 08/06/18 | 30/06/25 | 01/07/18 | Genoa Cricket and FC | | | 16,290 | 13,837 | 2,453 | | | 1,227 | | | | 16,290 | 15,064 | 1,226 | 747 | | |
+| Pinsoglio Carlo | 16/03/90 | 18/03/09 | 30/06/25 | 02/04/04 | Da Settore Giovanile | | | 826 | 819 | 7 | | | 3 | | | | 826 | 822 | 4 | 20 | - | |
+| Pogba Paul Labile | 15/03/93 | 11/07/22 | 30/06/26 | 11/07/22 | Manchester United FC | | | 3,125 | 765 | 2,360 | | | 590 | 1,770 | | | 3,125 | 3,125 | - | 3,125 | | |
+| Rabiot Adrien | 03/04/95 | 04/07/19 | 30/06/24 | 04/07/19 | Federazione estera | | | 1,481 | 1,296 | 185 | | | 185 | | | | 1,481 | 1,481 | - | 1,481 | | |
+| Rugani Daniele | 29/07/94 | 04/08/12 | 30/06/24 | 31/07/13 | Empoli FC | | | 4,205 | 3,914 | 291 | 582 | | 291 | | | | 4,787 | 4,205 | 582 | 882 | - | |
+| Silva Nascimento Gleison Bremer | 18/03/97 | 20/07/22 | 30/06/28 | 20/07/22 | Torino FC Spa | | | 44,431 | 8,507 | 35,924 | 5,012 | | 8,187 | | | | 49,443 | 16,694 | 32,749 | 2,977 | | |
+| Soares De Paulo Douglas Luiz | 09/05/98 | 29/06/24 | 30/06/29 | 29/06/24 | Aston villa FC Ltd | | | | | | 48,708 | | 54 | | | | 48,708 | 54 | 48,654 | 1,460 | | |
+| Szczesny Wojciech | 18/04/90 | 01/07/14 | 30/06/25 | 19/07/17 | Arsenal FC | | | 18,443 | 15,333 | 3,110 | | | 1,555 | 1,555 | | | 18,443 | 18,443 | - | 3,333 | - | |
+| Vlahovic Dusan | 28/01/00 | 28/01/22 | 30/06/26 | 28/01/22 | ACF Fiorentina Srl | | | 83,376 | 26,705 | 56,671 | 1,981 | | 19,551 | | | | 85,357 | 46,256 | 39,101 | 10,000 | - | |
+| Weah Timoty Tarpeh | 22/02/00 | 01/07/23 | 30/06/28 | 01/07/23 | Loac Lille | | | | | | 11,715 | | 2,343 | | | | 11,715 | 2,343 | 9,372 | 1,162 | | |
+| Yildiz Kenan | 04/05/02 | 07/07/22 | 30/06/27 | 01/07/22 | Federazione estera | | | 175 | 58 | 117 | 760 | | 219 | | | | 935 | 277 | 658 | 760 | | |
+
+Annual financial report as at 30 June 2024 – Separate financial statements as at 30 June 2024 202
 
 --- pág. 203 ---
 
-| GROUP | HUMAN ID. S/HD | Contract | From | To | Values of beginning of the period | Changes in values for period | Economic effects for period | Values at the end of the period | Miscellaneous |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Start date of the first contract | Expire date of the last contract | Acquisition date | Company | Date of disposal | Company | 01/01/2023 | Acquisition | Disposals | Amortization * | Write-down* | Capital losses* | Capital gains* | Historical cost (1+4) | Accumulated amortization (1+4) | Net* (10-11-1) | 30/04/2024 | Agents fees | Other acquisition costs | Value of the sell on fee |
-| Historical cost | Accumulated amortization | Net | Acquisition | Disposals | Amortization * | Write-down* | Capital losses* | Capital gains* | 13 | 11 | 12 |
-| Amounts in thousands of Euro |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| **Temporary transferred players** |  |  |  |  |  |  |  | **332,450** | **150,278** | **82,815** | **9,661** | **11,155** | **32,942** | **5,997** | **324** | **9,394** | **205,209** | **154,576** | **50,752** | **11,630** |  |  | **131** |
-| Abbey Nur | 0001/01 | 27/01/21 | 0000/20 | 27/01/21 | Olympique de Marseille SASP |  |  | 8,061 | 4,408 | 3,632 | 1,559 |  | 2,081 | 2,091 |  |  | 9,081 | 9,581 |  | 179 |  |  |  |
-| Fato Antoinette Antoinette Services Controls | 2001/01 | 30/06/20 | 0000/20 | 30/06/20 | Merchandis City FC LTD |  |  | 10,848 | 6,327 | 4,341 | 80 |  | 2,218 | 977 |  |  | 10,008 | 9,603 | 1,338 |  |  |  |  |
-| Tommaso Barbieri | 2000/02 | 11/09/20 | 0000/20 | 11/09/20 | Nicosia Calcio |  |  | 1,000 | 887 | 800 | 723 |  | 333 |  |  |  | 2,413 | 1,233 | 1,193 | 147 |  |  |  |
-| Enso Auri Tomas Benedeschea | 2200/01 | 30/01/20 | 0000/20 | 30/01/20 | Olympique des Alpes |  |  | 5,539 | 3,298 | 1,789 | 850 |  | 760 |  |  |  | 5,539 | 4,019 | 1,023 | 189 |  |  |  |
-| Lorraine Bilibrio | 2010/06 | 28/06/21 | 0000/20 | 21/10/20 | GDS registration |  |  | 3 | 3 | 3 |  |  | 2 |  |  |  | 3 | 3 | 3 |  |  |  |  |
-| Alessandro Lilli | 0001/03 | 02/06/21 | 0000/20 | 02/06/21 | GDS registration |  |  | 24 |  | 24 |  |  | 12 |  |  |  | 24 | 12 | 12 |  |  |  |  |
-| Melby Compagnon | 2011/02 | 18/06/21 | 0000/20 | 18/06/21 | Ostrava Calcio |  |  | 4,031 | 1,773 | 2,261 | 50 |  | 770 |  |  |  | 4,081 | 2,543 | 1,041 | 81 |  |  |  |
-| Nicuto Cudra | 0700/02 | 29/07/21 | 0000/20 | 29/07/21 | registration from foreign federation |  |  | 60 | 37 | 23 | 29 |  | 18 |  |  |  | 80 | 50 | 50 | 60 |  |  |  |
-| Danita De Marino | 1700/00 | 15/01/21 | 0000/20 | 15/01/21 | FC Pro Vercelli 1802 SV |  |  | 1,000 | 1,013 | 853 | 4 |  | 328 | 328 |  |  | 1,070 | 1,070 |  | 98 |  |  |  |
-| Forr De Winter | 1200/02 | 24/07/19 | 0000/20 | 18/07/19 | Zaria Waregem | 03/06/24 | Genex FC Spa | 1,100 | 364 | 771 |  | 7,470 | 150 |  |  | 8,800 |  |  |  |  |  |  |  |
-| Ferdinando Del Soler | 1701/08 | 31/08/17 | 0000/24 | 31/08/17 | Delfino Pescara 1836 |  |  | 3,351 | 3,372 | 778 |  |  | 778 |  |  |  | 3,351 | 3,351 |  | 104 |  |  |  |
-| Gianluca Fabiotto | 2400/08 | 02/08/19 | 0000/20 | 02/08/19 | Belagros FC |  |  | 2,000 | 1,879 | 1,021 |  |  | 340 | 601 |  |  | 2,000 | 2,000 |  | 110 |  |  |  |
-| Facundo González | 0600/02 | 07/08/22 | 0000/20 | 07/08/22 | registration from foreign federation |  |  |  |  |  | 1,800 |  | 580 |  |  |  | 1,800 | 580 | 1,210 | 1,800 |  |  |  |
-| Stefano Gari | 0900/06 | 01/09/20 | 0000/20 | 28/09/20 | A.C. Pica 1800 S.S.A.R.L. |  |  | 3,239 | 2,431 | 808 |  |  | 444 |  |  |  | 3,239 | 2,835 | 454 |  |  |  |  |
-| Greco Donny Huijsen | 1400/05 | 24/08/21 | 0000/20 | 24/08/21 | from foreign federation |  |  | 971 | 111 | 360 |  |  | 60 |  |  |  | 471 | 191 | 280 | 400 |  |  |  |
-| Mirico Lani | 1907/02 | 30/08/19 | 0000/24 | 30/08/19 | Empoli FC SpA |  |  | 984 | 565 | 98 | 33 |  | 134 |  |  |  | 719 | 719 |  | 84 |  |  |  |
-| Christopher Lungay | 0407/00 | 21/01/21 | 0000/20 | 21/01/21 | FC Lugano SA |  |  | 3,428 | 1,801 | 1,627 | 140 |  | 684 | 633 |  |  | 3,588 | 3,318 | 250 | 73 |  |  |  |
-| Tommaso Moresco | 2000/04 | 01/02/21 | 0000/20 | 30/08/19 | Empoli FC SpA |  |  | 488 | 401 | 67 | 150 |  | 108 | 128 |  |  | 508 | 508 |  |  |  |  |  |
-| Alessandro Minelli | 2007/08 | 31/01/20 | 0000/20 | 31/01/20 | Perma Calcio 1813 |  |  | 2,920 | 2,255 | 665 | 17 |  | 341 | 341 |  |  | 2,957 | 2,927 |  | 25 |  |  |  |
-| Jean Claude Nierda Vis Dondonda | 0300/02 | 09/01/20 | 0000/20 | 09/01/20 | SASP Football clubs de Nardo |  |  | 600 | 465 | 120 | 220 |  | 220 | 220 |  |  | 500 | 500 |  | 200 |  |  |  |
-| Erasimo Moll | 1300/08 | 31/07/19 | 0000/20 | 31/07/19 | Sampdoria Spa |  |  | 3,488 | 2,091 | 598 |  | 50 | 224 |  | 334 |  |  |  |  | 25 |  | 25 |  |
-| Marco Olivan | 3000/08 | 30/08/19 | 0000/20 | 30/08/19 | Empoli FC SpA |  |  | 2,725 | 2,015 | 715 |  |  | 355 | 140 |  |  | 2,725 | 2,015 | 215 | 39 |  |  |  |
-| Emamado Pecorino | 0907/01 | 01/02/21 | 0000/20 | 01/02/21 | Calcio-Catarina |  |  | 993 | 347 | 349 | 18 |  | 120 |  |  |  | 768 | 467 | 241 | 25 |  |  |  |
-| Daniele Predere | 2801/08 | 29/01/19 | 0000/20 | 29/01/19 | GC Sampdoria |  |  | 3,900 | 3,262 | 650 | 80 |  | 366 |  |  |  | 4,059 | 3,648 | 387 | 29 |  |  |  |
-| Luca Pellegrini | 0700/08 | 01/07/19 | 0000/20 | 30/08/19 | AE Roma |  |  | 22,903 | 15,864 | 6,989 |  |  | 2,333 |  |  |  | 22,903 | 18,194 | 4,899 | 375 |  |  |  |
-| Raio Jorge Pinto Ramos | 2401/02 | 18/08/21 | 0000/20 | 18/08/21 | Genex FC |  |  | 6,719 | 2,608 | 4,175 | 850 |  | 1,557 |  |  |  | 7,279 | 4,183 | 3,113 | 3,821 |  |  |  |
-| Marco Pava | 0600/05 | 21/07/19 | 0000/24 | 21/07/19 | QMA Dinamo | 01/09/23 | HMK Rijeka | 25,474 | 25,474 |  |  | 0 |  |  |  |  |  |  |  |  |  |  |  |
-| Arthur Henrique Ramos de Oliveira Melo | 1200/06 | 29/06/20 | 0000/20 | 29/06/20 | FC Barcelona |  |  | 60,620 | 47,904 | 32,666 |  |  | 10,689 |  |  |  | 60,620 | 58,643 | 21,777 | 494 |  |  |  |
-| Filippo Ramarchos | 1400/01 | 31/01/19 | 0000/20 | 31/01/19 | GC Perugia | 18/01/24 | Palermo FC Spa | 2,808 | 1,188 | 1,618 | 100 | 3,639 | 298 |  |  | 2,232 |  |  |  |  |  | 90 |  |
-| Alessandro Pio Riccio | 0602/02 | 07/12/18 | 0000/20 | 12/07/19 | GDS registration |  |  | 64 | 52 | 12 | 45 |  | 29 | 29 |  |  | 109 | 109 |  | 40 |  |  |  |
-| Nicola Rosella | 1412/01 | 28/01/21 | 0000/20 | 28/01/21 | Genex Cricket and FC |  |  | 26,124 | 12,178 | 13,949 | 2,432 |  | 5,499 |  |  |  | 28,589 | 17,638 | 10,918 | 1,194 |  |  |  |
-| Alessandro Tancanti | 1602/02 | 30/07/21 | 0000/20 | 30/07/21 | GDS registration |  |  | 174 | 65 | 68 | 45 |  | 43 |  |  |  | 214 | 128 | 88 | 194 |  |  |  |
-| Melise South Melvino | 1500/03 | 13/01/20 | 0000/20 | 15/10/19 | GDS registration |  |  | 2,220 | 924 | 1,288 | 800 |  | 728 |  |  |  | 3,120 | 1,662 | 1,458 | 2,100 |  |  |  |
-| Andrea Valdoni | 1500/04 | 12/06/22 | 0000/20 | 10/06/19 | GDS Rocca di Capri Leone |  |  | 86 | 45 | 35 | 21 |  | 28 | 28 |  |  | 101 | 101 |  | 10 |  |  |  |
-| Alessandro Verde | 2400/06 | 28/06/23 | 0000/20 | 02/06/20 | GDS registration |  |  | 0 |  | 0 | 23 |  | 8 |  |  |  | 23 | 8 | 15 |  |  |  |  |
-| **Other charges** |  |  |  |  |  |  |  | **46,793** | **35,251** | **11,342** | **4,127** | **20,700** | **3,012** | **174** | **40** | **13,763** | **72,641** | **7,139** | **5,584** | **1,934** |  | **2,487** |  |
-| **TOTAL** |  |  |  |  |  |  |  | **769,227** | **445,679** | **233,507** | **99,518** | **31,855** | **120,799** | **13,541** | **364** | **23,857** | **736,765** | **462,127** | **274,565** | **60,671** |  | **2,888** |  |
+Annual financial report as at 30 June 2024 – Separate financial statements as at 30 June 2024 203
 
-Annual financial report as at 30 June 2024 – Separate financial statements as at 30 June 2024
+Amounts in thousands of Euro
 
-203
+Encabezado de columnas: PLAYER | DATE OF BIRTH | Contract (Start date of the first contract; Expiry date of the last contract) | From (Acquisition date; Company) | To (Date of disposal; Company) | Values at beginning of the period 01/07/2023 (Historical cost; Accumulated amortisation; Net) | Changes in values for period (Acquisition; Disposals) | Economic effects for period (Amortisation*; Writedowns*; Capital losses*; Capital gains*) | Values at the end of the period 30/06/2024 (Historical cost (1+4); Accumulated amortisation (2+6); Net* (10-11-7)) | Miscellaneous (Agents' fees; Other acquisition costs; Value of the sell-on fee)
+
+Numeración de columnas impresa: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+
+| PLAYER | DATE OF BIRTH | Start date of the first contract | Expiry date of the last contract | Acquisition date | From – Company | Date of disposal | To – Company | Historical cost | Accumulated amortisation (2) | Net (3) | Acquisition (4) | Disposals (5) | Amortisation* (6) | Writedowns* (7) | Capital losses* (8) | Capital gains* (9) | Historical cost (10) (1+4) | Accumulated amortisation (11) (2+6) | Net* (12) (10-11-7) | Agents' fees | Other acquisition costs | Value of the sell-on fee |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Temporary transferred players | | | | | | | | 232,693 | 150,278 | 82,415 | 9,661 | 11,155 | 32,942 | 5,997 | 324 | 9,094 | 205,328 | 154,576 | 50,752 | 11,630 | - | 121 |
+| Marley Aké | 05/01/01 | 27/01/21 | 30/06/25 | 27/01/21 | Olympique de Marseille SASP | | | 8,041 | 4,409 | 3,632 | 1,550 | | 2,591 | 2,591 | | | 9,591 | 9,591 | - | 179 | | |
+| Feliz Alexandre Andrade Sanches Correia | 22/01/01 | 30/06/20 | 30/06/25 | 30/06/20 | Manchester City FC LTD | | | 10,848 | 6,507 | 4,341 | 90 | | 2,216 | 877 | | | 10,938 | 9,600 | 1,338 | | | |
+| Tommaso Barbieri | 29/08/02 | 11/09/20 | 30/06/26 | 11/09/20 | Novara Calcio | | | 1,690 | 887 | 803 | 723 | | 333 | | | | 2,413 | 1,220 | 1,193 | 147 | | |
+| Enzo Alan Tomas Barrenechea | 22/05/01 | 30/01/20 | 30/06/26 | 30/01/20 | Olympique des Alpes | | | 5,039 | 3,259 | 1,780 | 500 | | 760 | | | | 5,539 | 4,019 | 1,520 | 169 | | |
+| Lorenzo Biliboc | 22/10/06 | 28/08/23 | 30/06/25 | 23/10/20 | GDS registration | | | 8 | 4 | 4 | | | 2 | | | | 8 | 6 | 2 | | | |
+| Alessandro Citi | 06/01/03 | 02/08/21 | 30/06/25 | 02/08/21 | GDS registration | | | 24 | | 24 | | | 12 | | | | 24 | 12 | 12 | | | |
+| Mattia Compagnon | 05/11/02 | 16/06/21 | 30/06/26 | 16/06/21 | Udinese Calcio | | | 4,031 | 1,770 | 2,261 | 50 | | 770 | | | | 4,081 | 2,540 | 1,541 | 87 | | |
+| Nicolò Cudrig | 07/08/02 | 29/07/21 | 30/06/26 | 29/07/21 | registration from foreign federation | | | 60 | 37 | 23 | 26 | | 16 | | | | 86 | 53 | 33 | 60 | | |
+| Davide De Marino | 17/03/00 | 15/01/21 | 30/06/25 | 15/01/21 | FC Pro Vercelli 1892 Srl | | | 1,666 | 1,013 | 653 | 4 | | 328 | 329 | | | 1,670 | 1,670 | - | 98 | | |
+| Koni De Winter | 12/06/02 | 24/07/18 | 30/06/26 | 18/07/18 | Zulte Waregem | 03/06/24 | Genoa FC Spa | 1,155 | 384 | 771 | | 7,470 | 193 | | | 6,892 | - | - | - | | | |
+| Ferdinando Del Sole | 17/01/98 | 31/08/17 | 30/06/24 | 31/08/17 | Delfino Pescara 1936 | | | 3,551 | 3,373 | 178 | | | 178 | | | | 3,551 | 3,551 | - | 104 | | |
+| Gianluca Frabotta | 24/06/99 | 02/08/19 | 30/06/26 | 02/08/19 | Bologna FC | | | 2,695 | 1,674 | 1,021 | | | 340 | 681 | | | 2,695 | 2,695 | - | 110 | | |
+| Facundo Gonzalez | 06/06/03 | 07/08/23 | 30/06/26 | 07/08/23 | registration from foreign federation | | | | | | 1,900 | | 590 | | | | 1,900 | 590 | 1,310 | 1,650 | | |
+| Stefano Gori | 09/03/96 | 01/09/20 | 30/06/25 | 28/06/20 | A.C. Pisa 1909 S.S.A.R.L. | | | 3,239 | 2,431 | 808 | | | 404 | | | | 3,239 | 2,835 | 404 | | | |
+| Dean Donny Huijsen | 14/04/05 | 24/08/21 | 30/06/28 | 24/08/21 | from foreign federation | | | 471 | 111 | 360 | | | 80 | | | | 471 | 191 | 280 | 400 | | |
+| Mirco Lipari | 19/07/02 | 30/06/19 | 30/06/24 | 30/06/19 | Empoli FC SpA | | | 684 | 585 | 99 | 35 | | 134 | | | | 719 | 719 | - | 30 | | |
+| Christopher Lungoyi | 04/07/00 | 21/01/21 | 30/06/25 | 21/01/21 | FC Lugano SA | | | 3,428 | 1,801 | 1,627 | 140 | | 884 | 633 | | | 3,568 | 3,318 | 250 | 73 | | |
+| Tommaso Maressa | 29/02/04 | 01/02/21 | 30/06/25 | 30/06/19 | Empoli FC SpA | | | 488 | 401 | 87 | 150 | | 108 | 129 | | | 638 | 638 | - | - | | |
+| Alessandro Minelli | 23/07/99 | 31/01/20 | 30/06/25 | 31/01/20 | Parma Calcio 1913 | | | 2,920 | 2,255 | 665 | 17 | | 341 | 341 | | | 2,937 | 2,937 | - | 25 | | |
+| Jean Claude Ntenda Wa Dimbonda | 03/09/02 | 09/01/20 | 30/06/25 | 09/01/20 | SASP Football clube de Nante | | | 600 | 480 | 120 | 320 | | 220 | 220 | | | 920 | 920 | - | 200 | | |
+| Erasmo Mulè | 13/06/99 | 31/07/19 | 30/06/25 | 31/07/19 | Sampdoria Spa | | | 3,489 | 2,891 | 598 | | 50 | 224 | 324 | | | - | - | - | 25 | | 25 |
+| Marco Olivieri | 30/06/99 | 30/06/19 | 30/06/25 | 30/06/19 | Empoli FC SpA | | | 2,725 | 2,015 | 710 | | | 355 | 140 | | | 2,725 | 2,510 | 215 | 35 | | |
+| Emanuele Pecorino | 05/07/01 | 01/02/21 | 30/06/26 | 01/02/21 | Calcio Catania | | | 693 | 347 | 346 | 15 | | 120 | | | | 708 | 467 | 241 | 20 | | |
+| Daouda Peeters | 28/01/99 | 29/01/19 | 30/06/25 | 29/01/19 | UC Sampdoria | | | 3,955 | 3,262 | 693 | 80 | | 386 | | | | 4,035 | 3,648 | 387 | 25 | | |
+| Luca Pellegrini | 07/03/99 | 01/07/19 | 30/06/26 | 30/06/19 | AS Roma | | | 22,853 | 15,864 | 6,989 | | | 2,330 | | | | 22,853 | 18,194 | 4,659 | 375 | | |
+| Kaio Jorge Pinto Ramos | 24/01/02 | 16/08/21 | 30/06/26 | 16/08/21 | Santos FC | | | 6,776 | 2,606 | 4,170 | 500 | | 1,557 | | | | 7,276 | 4,163 | 3,113 | 3,821 | | |
+| Marco Pjaca | 06/05/95 | 21/07/16 | 30/06/24 | 21/07/16 | GNK Dinamo | 01/09/23 | HNK Rijeka | 29,474 | 29,474 | - | | 0 | - | - | - | - | | | | | | |
+| Arthur Henrique Ramos de Oliveira Melo | 12/08/96 | 29/06/20 | 30/06/25 | 29/06/20 | FC Barcelona | | | 80,620 | 47,954 | 32,666 | | | 10,889 | | | | 80,620 | 58,843 | 21,777 | 494 | | |
+| Filippo Ranocchia | 14/05/01 | 31/01/19 | 30/06/26 | 31/01/19 | AC Perugia | 18/01/24 | Palermo FC Spa | 2,808 | 1,189 | 1,619 | 100 | 3,635 | 286 | | | 2,202 | - | - | - | | | 96 |
+| Alessandro Pio Riccio | 06/02/02 | 07/12/18 | 30/06/25 | 12/07/16 | GDS registration | | | 64 | 52 | 12 | 45 | | 29 | 28 | | | 109 | 109 | - | 45 | | |
+| Nicolò Rovella | 14/12/01 | 28/01/21 | 30/06/26 | 28/01/21 | Genoa Cricket and FC | | | 26,124 | 12,179 | 13,945 | 2,432 | | 5,459 | | | | 28,556 | 17,638 | 10,918 | 1,154 | | |
+| Alessandro Sersanti | 16/02/02 | 30/07/21 | 30/06/26 | 30/07/21 | GDS registration | | | 174 | 85 | 89 | 40 | | 43 | | | | 214 | 128 | 86 | 194 | | |
+| Matias Soulè Malvano | 15/04/03 | 13/01/20 | 30/06/26 | 10/10/19 | GDS registration | | | 2,220 | 934 | 1,286 | 900 | | 728 | | | | 3,120 | 1,662 | 1,458 | 2,100 | | |
+| Andrea Valdesi | 15/02/04 | 12/08/22 | 30/06/25 | 10/08/18 | USD Rocca di Capri Leone | | | 80 | 45 | 35 | 21 | | 28 | 28 | | | 101 | 101 | - | 10 | | |
+| Alessandro Ventre | 24/02/06 | 28/08/23 | 30/06/26 | 02/09/20 | GDS registration | | | 0 | - | 0 | 23 | | 8 | | | | 23 | 8 | 15 | | | |
+| Other changes | | | | | | | | 46,793 | 35,251 | 11,542 | 4,127 | 20,700 | 3,012 | 174 | 40 | 13,763 | 12,641 | 7,135 | 5,506 | 1,934 | - | 2,687 |
+| TOTAL | | | | | | | | 769,227 | 445,670 | 323,557 | 99,510 | 31,855 | 125,799 | 13,341 | 364 | 22,857 | 736,702 | 462,137 | 274,565 | 60,671 | - | 2,808 |
+
+Annual financial report as at 30 June 2024 – Separate financial statements as at 30 June 2024 203
 
 --- pág. 204 ---
 

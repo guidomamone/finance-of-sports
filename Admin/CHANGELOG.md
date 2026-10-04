@@ -27,7 +27,1352 @@ que dice `ESTADO.md` era verdad ese día.
 - Mismo día, archive.org de vuelta: Sevilla 8 ejercicios (+4 históricos 2014-2020 del archivo legado),
   Mallorca 5 (+2013-14); Levante: 14 PDFs de reestructuración 2025 (deuda/viabilidad/valoración).
 - Línea `**Ángulos**` agregada a las 13 fichas de club tocadas; `fuentes/_indice/España.md`
-  actualizado. Pendientes reales en `Admin/TODO.md` punto 95.
+  actualizado. Pendientes reales en `Admin/TODO.md` punto 113.
+## Versión 439 — El diccionario de deuda en inglés vuelve a funcionar (+3 términos) (2026-10-03)
+
+- `tools/vocabulario.mjs`: la lista `en` de DEUDA_FINANCIERA había quedado dentro de un comentario desde la Versión 422 (ningún balance en inglés encontraba su deuda por diccionario). Va en su propia línea y suma 'due to banks', 'loans and other financial*', 'bonds and other financial liabilities' (formato italiano en inglés, Juventus). Aprobado por Guido.
+- Medido (`caja-deuda.mjs --medir`, todos los clubes): resumen idéntico (deuda: 30 iguales, 7 distintos; caja sin cambios). Solo aparecen propuestas nuevas en años sin dato (Arsenal, Burnley, Sunderland, Wolves), que la compuerta rechaza.
+
+## Versión 438 — `carpetas-clubes.mjs --json` ya no se corta en 64 KB (2026-10-03)
+
+- `tools/carpetas-clubes.mjs`: con `--json` sale recién cuando terminó de escribir (antes `process.exit(0)` inmediato perdía todo lo que pasaba de 64 KB por un pipe). La lista llegó a ~68 KB con las carpetas nuevas de otra sesión y `audit.js` daba P1 `carpetas-clubes-fallo`, así que `cargar.mjs --escribir` revertía cualquier carga. Aprobado por Guido.
+- Verificado: JSON completo (68.785 bytes, 644 carpetas), salida normal idéntica, auditoría P1 0.
+
+## Versión 437 — Arreglo de G: un ajuste `fila` financiero también entra en las lecturas 5 y 6; ajustes manuales de Juventus 2003-2006 y 2021 (2026-10-03)
+
+- `tools/verificar.mjs`: en las lecturas 5/6 el ajuste `fila` del lado financiero con `reemplaza` saca la fila vieja Y agrega la suya (antes solo la sacaba). Medido: lotes 07-13 idénticos.
+- Ajustes manuales (decisión de Guido, formato italiano viejo, el signo lo da el encabezado): 2003-2006 gastos financieros de "17)" en negativo; 2003-2005 partidas de "19)", "20)" y "21)" con su lado; 2021 sale la fila de pérdida por acción "(0,157)". Los cinco años cierran (2003-2006 con la lectura 5, 2021 con la 6).
+- Cambio H probado con Juventus 2020-21: localizar eligió el individual (b87).
+
+## Versión 436 — Cambio H: el ajuste de perímetro llega a localizar (etapa 3, escalón 0) (2026-10-03)
+
+- `tools/lote.mjs`: pasa `ajustePerimetroDe(pdf)` (del documento o del club) a las cuatro llamadas a `localizar`, que ya tenía el parámetro pero no lo recibía; hasta acá el ajuste solo lo leía cargar (etapa 8). Diseño aprobado por Guido.
+- Caso: Juventus 2020-21, localizar eligió el consolidado (b15, pág. 32) aunque el club tiene ajuste "individual" (b87, pág. 69).
+- Medido: el ensayo de los lotes 07-13 da idéntico (solo cambia una localización nueva en un club con ajuste `perimetro`).
+
+## Versión 435 — Cambio G: el ajuste manual `fila` actúa en las lecturas 5 y 6, y con valor 0 solo saca la fila (2026-10-03)
+
+- `tools/verificar.mjs`: la fila que nombra `reemplaza` sale también de las hojas de la lectura 5 y de los renglones sin lado de la 6; con `--valor 0` el ajuste solo la saca (no agrega una línea en cero). Diseño aprobado por Guido.
+- Caso: Juventus 2018-19, "Basic and diluted earning/(loss) per share (0,040)" (.md L1160) se leía como 40 € y la lectura 6 no cerraba; con el ajuste cierra exacto contra −39.895.794.
+- Medido con `verificar.mjs` sobre los lotes 07-13: sin el ajuste, todo idéntico; con el ajuste, solo cambia Juventus 2018-19.
+- Lote 13 (Juventus, 17 años): listos para cargar 2013, 2014, 2015 y 2025.
+
+## Versión 434 — Cambio F: lectura 6 de la etapa 6 (la 5 + los renglones sin lado según su signo) (2026-10-03)
+
+- `tools/verificar.mjs`: lectura 6 al final de la escalera de lecturas = la 5 (solo hojas, sin totales, resultado impreso exacto) más los renglones sin lado por su signo, como la 3. También en el chequeo de año vecino (`ingresosConLectura`). Diseño aprobado por Guido.
+- Caso: Juventus 2015-16 a 2019-20, "Other non-recurring revenues and costs" (+10.638.769 en 2015-16) y "Group's share of results of associates" quedaban sin lado y ninguna lectura cerraba. Ahora cierran 2015-16, 2016-17, 2017-18 y 2019-20; 2018-19 no (la fila "per share" "(0,040)" se lee como 40 €).
+- Medido con `verificar.mjs` sobre los lotes 07-12: todo idéntico salvo esos años de Juventus.
+
+## Versión 433 — Cambio E: el lote pasa por las voces (resolver-inventario) antes de rearmar una transcripción "revisar" (2026-10-03)
+
+- `tools/lote.mjs`, etapa 2, escalón 1a: si el inventario dice "revisar", corre `resolver-inventario.mjs --pdf` (en el ensayo, su estimación; con `--ejecutar`, de verdad), regenera el inventario y, si queda "listo", sigue; si no, el rearmado (escalón 1b) como antes. Pedido y diseño aprobados por Guido.
+- Caso: Juventus 2015-16 a 2019-20, marcados "revisar" por códigos postales y años ("10121 Torino" contra "10151 Turin"); el lote los salteaba o les reescribía todas las páginas. Ahora: 5 páginas con cifras dudosas de 650, ~US$ 0,10.
+- Medido: el ensayo de los lotes 07-11 da idéntico (sus 64 documentos están "cargado").
+
+## Versión 432 — Juventus: alta del club y ejercicio 2012 (2026-10-03)
+
+- Alta `juventus-it` (Italia, EUR, ejercicio desde el 07-01, "Juventus Football Club S.p.A."). Perfil (sin socios ni otros deportes) y ligas 2003-2025 en la caché (Serie B en 2007).
+- Ejercicio 2011-12 por el proceso nuevo (`lote-12a.txt`, el único año en "listo" en el inventario): cierra con la lectura 5 contra la pérdida impresa (−48.654.550). Categorías: "Other personnel" y compras a administración; provisiones/reversiones a otras amortizaciones; "Expenses from players' registration rights" a otros gastos (decisiones de Guido).
+- Sin abrir: las notas de "Other revenues" y "Other expenses" no suman su renglón (no se reintentó).
+
+## Versión 431 — Cambio C: en la lectura 2, el total impreso puede ser el total de una nota abierta por el escalón 1 (2026-10-03)
+
+- `tools/verificar.mjs` (`ajuste` de totales, desde la lectura 2): si el total impreso de un lado es el de una nota que abrió el escalón 1 de las notas (grupo de renglones), sus filas lo cierran y el resto del lado queda afuera, como ya pasaba con un renglón (Forest). La compuerta sigue siendo el resultado impreso. Diseño aprobado por Guido.
+- Caso: AEL Larissa 2019, extraer tomó como total de gastos el de la nota 15 (3.534.818,85, sin los 21.600 de otros gastos); ahora cierra con la lectura 2 y el gasto queda por naturaleza (antes ganaba la lectura 5, por función).
+- Medido con `verificar.mjs` sobre los lotes 07-11: todo idéntico salvo AEL 2019.
+
+## Versión 430 — B2, lectura de filas de caja y deuda: una celda "Γ.9" es referencia a nota, no importe (2026-10-03)
+
+- `tools/caja-deuda.mjs` (`esRefNota`): una celda con 1-2 letras y un número ("Γ.9", "C.7") se descarta antes de tomar las cifras. Diseño aprobado por Guido.
+- Caso: AEL Larissa 2025 "| Δάνεια | Γ.9 | 7.031,22 | 7.500,00 |" se leía como deuda 0,9 y pasaba la compuerta; además corría la columna del año anterior y rechazaba la caja 2024. Ahora: deuda 2025 7.031,22, caja 2025 252.355,66, caja 2024 212.242,36.
+- Medido (`--medir --club`): UC, Fortaleza y Novorizontino idénticos (Goiás no tiene caja ni deuda cargadas).
+
+## Versión 429 — AEL Larissa: alta del club y ejercicios 2016-2018, 2020, 2022, 2024 y 2025 (2026-10-03)
+
+- Alta `aellarissa-gr` (Grecia, EUR, ejercicio desde el 07-01; nombre legal `Athlitiki Enosi Larissas AEL P.A.E.`, transliterado como Panathinaikos). Primer club de la Super League 2 (`data/rankings/gr-superleague2.js`).
+- Años del proceso nuevo (`lote-11.txt`), un commit por año; gasto por naturaleza en 2020, 2022, 2024 y 2025 (Versión 427), por función en 2016-2018. Categorías de las 7 etiquetas griegas aceptadas por Guido en la cola.
+- 2021 cargado después de re-extraer (la nota 16 no había venido); 2019 después del cambio C (Versión 431); 2023 por función con ajuste `sin-dudas` (decisión de Guido: su nota de gastos suma también los intereses). Caja 2016-2025 y deuda 2020-2025 con `caja-deuda.mjs` (después de B2, Versión 430). Los 10 años cargados.
+
+## Versión 428 — Cambio B: una nota con una sola fila con importe que da su renglón no marca reintento (2026-10-03)
+
+- `tools/verificar.mjs` (`desgloseTrivial`): si una nota no abre su renglón porque tiene una sola fila con importe (o todas en 0) y esa fila da exacto el renglón, deja una nota y no marca el documento para el reintento. Solo cambia el aviso; queda el renglón, con el mismo importe. Diseño aprobado por Guido.
+- Casos: AEL Larissa 2022 "Κύκλος εργασιών" (mercadería 0,00 + servicios 2.068.146,00); 2023 "Λοιπά έξοδα" en 0.
+- Medido sobre los lotes 07-11: lo cargado idéntico en todos; dejan de pedir reintento 7 documentos de AEL, Fortaleza 2019 y 2020 y Novorizontino 2020 (los tres con una sola fila, ya cargados).
+
+## Versión 427 — Escalón 1 de las notas: una nota sin renglón que desglosa un grupo de renglones de gasto (2026-10-03)
+
+- `tools/verificar.mjs` (`notaDeGrupo`): si ninguna fila de una nota dice qué renglón abre, propone el único conjunto de 2+ renglones de gasto del estado (sin nota propia) que suma su total impreso; decide la compuerta de siempre (`cerrarNota`). La duda de extraer de esa nota se cierra con nota si la lectura que ganó la usó. Diseño aprobado por Guido.
+- Caso: AEL Larissa, gasto por función (costo de ventas + administración + comercialización) abierto por naturaleza por la nota "Έξοδα". Pasan 2020, 2022, 2024 y 2025. No pasan, a propósito: 2019 (gana la lectura 5, que no abre notas), 2021 (extraer no trajo las filas de la nota) y 2023 (la nota suma también los intereses).
+- Medido con `verificar.mjs` sobre los lotes 07-11: UC, Fortaleza, Goiás y Novorizontino idénticos (estado, totales, líneas, cola).
+
+## Versión 426 — Ligas estaduales: Paulista A1, A2 y A3 (2026-10-02)
+
+- `data/leagues.js`: `br-paulistaA1`, `br-paulistaA2`, `br-paulistaA3`, con `scope:'estadual'` y sin `tier` (el Paulista no es un escalón de la pirámide nacional); el orden de las ligas de un país (`leaguesOfCountry`, `js/liga.js`) pone al final las que no tienen tier. Decisión de Guido.
+- Planteles cacheados (pt.wikipedia, sección "Participantes"; A1 de en.wikipedia) y Novorizontino 2013-2017 recargados con `--reemplazar` (mismos números): 2013-2014 A3, 2015 A2, 2016-2017 A1. 2010 sigue null (solo juveniles).
+- Verificado en el sitio local: orden de ligas de Brasil, sin "Nª división" para las estaduales, `leagueAt` por año; sin errores de consola propios.
+
+## Versión 425 — Ajuste manual `deuda-incluye`, por club: términos de deuda propios del club para el diccionario (2026-10-02)
+
+- `ajustes.mjs`: `deuda-incluye` (términos separados por ';'), para un documento o todo el club (`ajusteClubODoc`, mismo mecanismo que `perimetro`). `caja-deuda.mjs`: el escalón 1 (diccionario) suma esos términos para ese club; la compuerta sigue decidiendo.
+- Caso: Novorizontino, la deuda es el mútuo de su controlante I-9 Sports ("Débitos com partes relacionadas" / "Partes relacionadas"; 2015 ya cargado así como "Empréstimos e mútuos"). Pasan la compuerta 2019 (32,3 M), 2023 (94,0 M), 2024 (111,8 M), 2025 (145,2 M).
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos.
+
+## Versión 424 — Caja y deuda: balance de dos lados en una fila (2026-10-02)
+
+- `caja-deuda.mjs` (`filasDelMd`): en una fila de tabla con dos etiquetas ("| Caixa | 4 | 952 | 85 | Empréstimos e financiamentos | 8 | 87 | 79 |"), cada etiqueta con sus cifras es una fila. Antes las cifras del pasivo quedaban pegadas a la caja y la deuda no existía como fila.
+- Caso: Novorizontino 2018-2025 (la IA elegía la fila de "Caixa" como deuda porque esa línea dice "Empréstimos").
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos. Novorizontino: ahora aparecen los empréstimos bancarios; la deuda grande (I-9 Sports, "partes relacionadas") espera decisión de Guido, no se escribió nada.
+
+## Versión 423 — Caja y deuda, escalón 1: jerarquía de un balancete y lado de la cuenta (2026-10-02)
+
+- `caja-deuda.mjs` (`propuestaVocabulario`): una fila hija de otra que también coincide sale (código de cuenta que empieza con el de la otra, o, sin códigos, pegada abajo con el mismo importe); en deuda, una fila con marca D (deudora, activo) no cuenta.
+- Caso: Novorizontino 2016, "2.2.01 EMPRESTIMOS E FINANCIAMENTOS" y "2.2.01.01 EMPRESTIMOS E MUTUOS" se sumaban (31,9 M) más "1.2.02.05 CONTRATOS DE MUTUOS 4.000 D"; ahora 15.965.049.
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos.
+
+## Versión 422 — Caja y deuda: el diccionario ignora el código de cuenta del balancete; "mutuo" (2026-10-02)
+
+- `caja-deuda.mjs`: para el diccionario (`norm`), la etiqueta va sin el código de cuenta del principio ("2.2.01 EMPRESTIMOS…", "29 2201010001 - …"); la etiqueta impresa y la familia no cambian. `vocabulario.mjs`: "mutuo*" en DEUDA_FINANCIERA (pt).
+- Caso: Novorizontino 2013-2017. El escalón 1 de deuda ahora propone (antes "sin propuesta"), pero todavía no destraba: suma el préstamo en los tres niveles del balancete (2016: 31,9 M contra ~10 M) y la compuerta lo frena.
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos.
+
+## Versión 421 — Caja y deuda: una sola referencia a nota por fila (2026-10-02)
+
+- `caja-deuda.mjs` (lectura de filas): se saca UNA referencia a nota al principio de las cifras, no en bucle; el importe siguiente también puede ser un entero chico (en miles).
+- Caso: Novorizontino 2020 "Caixa e equivalentes de caixa | 4 | 85 | 695 |": sacaba el 4 y el 85 y leía 695 (2019); 2019 fallaba contra esa lectura. Ahora 2019 = 0,695 y 2020 = 0,085, con la compuerta del año anterior.
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos.
+
+## Versión 420 — Caja y deuda: la compuerta exige la familia de la fila (2026-10-02)
+
+- `caja-deuda.mjs` (`compuerta`): deuda nunca con una fila de caja (CAJA_RE) y caja nunca con una fila de deuda financiera (DEUDA_FINANCIERA_RE). Es el filtro que los escalones 0 y 1 ya usaban al buscar; ahora también frena la propuesta de la IA (escalón 2). La comparación con el vecino no lo atrapaba: el mismo error en los dos años coincide.
+- Caso: Novorizontino 2021, 2022, 2024 y 2025: la IA proponía "Caixa e equivalentes de caixa" como deuda (2024: 2.133.179, pasaba la compuerta del documento siguiente).
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos.
+
+## Versión 419 — Ajuste manual `caja` (2026-10-02)
+
+- `ajustes.mjs`: `caja` (--valor tal cual impreso en el documento del año). `caja-deuda.mjs` lo toma como escalón 0 (gana sobre la escalera, sin compuerta) y lo pasa a millones con la escala del documento.
+- Caso: Novorizontino 2022: el documento imprime 721.730 (con aplicaciones de proyectos incentivados); el 2023 lo reclasificó a 146.924, coherente con 2023-2025.
+- Medido: ningún otro documento tiene este ajuste.
+
+## Versión 418 — Caja y deuda: la compuerta pasa el documento siguiente a su propia escala (2026-10-02)
+
+- `caja-deuda.mjs` (`compuerta`): las cifras del documento siguiente se multiplican por la escala de ESE documento (`factorSiguiente`, de sus ingresos cargados), no por la de este; si no se conoce, la de este, como antes.
+- Caso: Novorizontino 2021 (en miles), caja 0,952 contra 951.927 del documento 2022 (en reales): el mismo número; ahora pasa.
+- Medido (`--medir --club`): UC, Fortaleza y Goiás idénticos.
+
+## Versión 417 — Ajuste manual `confirmado`: un número confirmado a mano contra el PDF (2026-10-02)
+
+- `ajustes.mjs`: `confirmado` (--linea N --valor "tal cual en el .md"), varios por documento. `verificar.mjs` (compuerta del registro): un número sin confirmar por la segunda lectura que tiene su ajuste no frena el paso a "listo".
+- Casos: Novorizontino 2016 (Gemini leyó otro dígito en 2.204, 1.794, 1.945, 1.422; la versión detallada en reais del mismo PDF confirma el .md, L157, L216, L247) y 2014 (Gemini no leyó 5 números chicos; la lectura 5 cierra al centavo).
+- Medido: ningún otro documento tiene este ajuste (sin cambios fuera de esos dos).
+
+## Versión 416 — Etapa 6, chequeos cruzados: la columna del año en común tiene que existir (2026-10-02)
+
+- `verificar.mjs`: compuerta del escalón 0 de los dos chequeos cruzados (año vecino y año anterior cargado): si ninguna fila del estado trae la columna del año anterior, "no se puede comparar" (sin caso en la cola), en vez de comparar 0. El año anterior cargado también usa la lectura 5 cuando esa fue la que cerró.
+- Casos: Novorizontino 2014 y 2015 (balancetes de una sola columna: 0 contra 1.060.016) y 2023 (su extracción no trajo la columna 2022: 0 contra 30.003.234).
+- Medido: lotes 07, 08 y 09 idénticos; lote 10: 14 de 14 OK.
+
+## Versión 415 — Etapa 6, resultado impreso, escalón 2: la línea pegada al último bloque (2026-10-02)
+
+- `verificar.mjs`: si extraer no encontró el resultado en los bloques (ni el de antes de impuestos), una línea PREJUÍZO / DÉFICIT / SUPERÁVIT / LUCRO con un número, hasta 4 líneas después del último bloque del estado, propone el resultado. Compuerta: alguna lectura cierra con él exacto (a media unidad por fila).
+- Casos: Novorizontino 2015 ("PREJUIZO: 5.598.142,50", L158) y 2013 ("PREJUÍZO 728.230,75", L225): los dos cierran exacto con la lectura 5.
+- Medido: lotes 07, 08 y 09 idénticos.
+
+## Versión 414 — Etapa 6, lectura 5: solo las hojas con su signo (C/D de los balancetes) (2026-10-02)
+
+- `verificar.mjs`: lectura 5, después de la 4. Usa solo los renglones del estado (ningún subtotal ni total), con su signo: la marca C/D de un balancete si la trae (D en ingresos resta, C en gastos resta, financiero C − D) y si no, el impreso. No usa los totales como chequeo; la única compuerta es el resultado impreso, exacto a media unidad por fila. El chequeo de año vecino usa la misma lectura.
+- Casos (diagnóstico de Novorizontino 2013-2017): grupos de un solo renglón repetidos como subtotal y total (2017: 8.019.563,48 contado 3 veces), subtotales que mezclan lados (en los 5), marcas C/D descartadas (2013-2015).
+- Medido: lotes 07 (UC), 08 (Fortaleza) y 09 (Goiás) idénticos; lote 10: 2017, 2016 y 2014 cierran exacto con la lectura 5 (2017 y 2016 OK; 2014 frena por el falso rojo de año vecino; 2013 y 2015 no tienen resultado impreso en sus bloques).
+
+## Versión 413 — Ajustes manuales `cierre` y `reportType` (2026-10-02)
+
+- `ajustes.mjs`: `cierre` (AAAA-MM-DD) y `reportType` (official_balance_sheet | official_budget), por documento. Escalón 0 en `alta-club.mjs` (ganan sobre lo detectado y sobre la respuesta de Claude por API) y, el cierre, en `localizar.mjs` (el ejercicio que se le pide buscar).
+- Casos: Novorizontino 2022 (el detector de período tomó la fecha de la firma, 28/04/2023; localizar lo dejó "sin estado") y 2010 (estado de resultados en una tabla con pocas filas numéricas: el alta preguntaba si era un dictamen).
+- Medido: ningún documento de los lotes 07-10 tenía estos ajustes (sin cambios hasta agregar uno).
+- `inventario-transcripciones.mjs`: el ajuste `cierre` fija el `periodo` del registro, de donde lo toman localizar, verificar (año y año vecino) y cargar. Medido sobre el registro entero: 3.358 documentos, solo cambia Novorizontino 2022 (28/04/2023 → 31/12/2022).
+- `cargar.mjs`: con ajuste `cierre` no recalcula el período desde el .md (lo pisaba con la fecha de la firma).
+
+## Versión 412 — Ajuste manual `perimetro`, por documento o por club (2026-10-02)
+
+- `ajustes.mjs`: campo `perimetro` (individual | consolidado); se fija para un documento o para la carpeta del club (`Clubes/<País>/<Club>/`), y el del documento gana. `cargar.mjs`: es el escalón 0 del perímetro (gana sobre lo que detecta el documento y sobre la cola).
+- Caso: Novorizontino, una sola entidad; "Consolidado" en el membrete del auditor hacía preguntar cada año (2018-2020; una vez se cargó al revés). Ajuste del club: individual.
+- Medido: ningún documento de los lotes 07-10 tenía ajuste de perímetro (sin cambios hasta agregar uno); Goiás no recibe el de Novorizontino.
+
+## Versión 411 — Etapa 2, escalón 1b: compuerta del rearmado por página (2026-10-02)
+
+- `texto-propio-a-md.mjs` (`rearmar`): una página rearmada con el texto propio se usa solo si conserva al menos la mitad de las filas de tabla (etiqueta + número) de la anterior; si no, queda la anterior con una marca "Página NO rearmada" (el escalón no se repite). `lote.mjs` dice qué páginas rechazó.
+- Caso: Novorizontino 2025, pág. 7 (estado de resultados girado 90° en una hoja vertical): Mistral 16 filas, rearmada 3. Rechazadas 6, 7, 8 y 10; rearmadas las otras 19.
+- Medido sobre los 12 documentos ya rearmados: Goiás (9) ninguna página rechazada; Novorizontino 2023 rechazaría las págs. 20 y 25, que su carga no usa (7, 8 y 26), y su rearmado ya está hecho.
+
+## Versión 410 — Ligas: celdas de estado con rowspan en las tablas de Wikipedia; Série D en el catálogo (2026-10-02)
+
+- `fetch-club-league-reference.mjs`: una fila que abre un grupo de estado (`|rowspan=N |{{flagicon|...}}`, también dentro de `{{nowrap|...}}`) toma como club la celda siguiente. Antes guardaba el estado y perdía el primer club del grupo.
+- `data/leagues.js`: `br-serieD` (decisión de Guido).
+- Caso: Série D 2020, fila "São Paulo | Novorizontino". Medido: 7 planteles ya cacheados (B 2017, 2022-2024; C 2021, 2025; A 2024) dan el mismo conjunto de clubes; Série D 2019 y 2020 con Novorizontino y sin estados.
+- Novorizontino 2019 y 2020 recargados con `--reemplazar`: liga `br-serieD`, mismos rubros.
+
+## Versión 409 — Etapa 6, lectura 4: deducciones de la receita bruta (2026-10-02)
+
+- `verificar.mjs`, solo en la lectura 4 (signos impresos): (1) un subtotal igual al único renglón que tiene arriba es ese renglón repetido, no una fila más; (2) el total impreso puede ser el bruto: si los renglones de signo normal lo suman, cierra, y las deducciones restan aparte. La compuerta sigue siendo el resultado impreso.
+- Caso: Novorizontino 2024, "Receita bruta" 40.157.783, "Impostos incidentes sobre a receita" (1.303.783) y "(-) Deduções" (1.303.783): ingresos 81.619.349 → 38.854.000; el resultado −22.692.012 cierra con el impreso.
+- Medido: lotes 07 (UC), 08 (Fortaleza) y 09 (Goiás) idénticos; lote 10, 2024 pasa de 5 casos en la cola a 1.
+
+## Versión 408 — Cola: --corregir-categoria graba la corrección aunque la fila ya tenga un caso abierto (2026-10-02)
+
+- `cola.mjs --corregir-categoria`: la respuesta es `corregir` con la categoría, no `aceptar`. Si la fila ya tenía un caso abierto, `aceptar` aceptaba la propuesta vieja de ese caso.
+- Caso: Novorizontino 2021, "Repasse da federação" seguía como competition_bonus después de fijarlo como broadcasting. Medido sobre ese caso: queda broadcasting.
+
+## Versión 407 — Lote: un .md registrado pero ausente en disco ya no tira abajo el lote (2026-10-02)
+
+- `lote.mjs`: si el registro tiene la ruta del `.md` pero el archivo no está (`tieneMd: false`), el documento queda "sin transcripción (etapa 2)" y el lote sigue. Antes pasaba a `localizar.mjs` y se caía con ENOENT.
+- Caso: Novorizontino 2022 ("PAGADO SIN .md"). Medido en ensayo con 2022 + 2010: 2022 "sin .md", 2010 sigue normal.
+
+## Versión 406 — Lote: con --reintentar, un año ya cargado no se reprocesa por desgloses (2026-10-03)
+
+- `lote.mjs`: un documento cuyo año ya está en el sitio solo se reintenta por "categoría en 0" de su propuesta de carga, y solo si esa propuesta es posterior al último ajuste manual. Por "desglose que no suma" no (se cargó con el renglón sin abrir, a propósito).
+- Casos: `lote-08 --reintentar` iba a reprocesar Fortaleza 2018-2024 ya cargados (US$ 0,61; en 2018-2020 las marcas eran ruido: 5.867,807 contra 5.867,804); Goiás 2025 y 2017 se reprocesaron por una propuesta anterior a sus ajustes cero-real (US$ 0,45).
+- Medido (ensayo con --reintentar): lotes 07, 09 y 09b, nada; 08 y 08b, solo Fortaleza 2017 (sueldos en 0, el caso buscado).
+
+## Versión 405 — Carga: una fila sin desglosar apaga solo los avisos de "categorías en 0" de su lado (2026-10-03)
+
+- `cargar.mjs`: ingresos sin desglosar → no se revisan televisión, estadio, cuotas sociales ni otros deportes; gastos sin desglosar → no se revisa sueldos del plantel. Hasta la 404 cualquier fila `lump_` apagaba todos los avisos del año.
+- Caso: Fortaleza 2017, "Actividades Deportivas" (ingresos, sin desglosar) apagaba el aviso de sueldos en 0; los sueldos (nota 21, "Sueldos 705.432") quedaron dentro de "Total Gastos de Administración" porque la duda de extraer que proponía cargar el detalle la silenció `sin-dudas`. Ahora pide el reintento.
+- Medido (propuesta de carga de los 40 años cargados): UC sin cambios; Fortaleza solo 2017 (reintento por sueldos); Goiás 2025 muestra sus ajustes cero-real; Goiás 2012, 2013 y 2023 avisan "otras secciones deportivas en 0" (esportes olímpicos no desglosados en el estado: ajustes cero-real con ese motivo, como 2014, 2015 y 2017).
+
+## Versión 404 — Etapa 7: la caché de Claude es un escalón con la nota en la clave (2026-10-03)
+
+- `respuestas-cache.mjs` / `categorizar-claude.mjs`: escalón 5a "¿Claude ya respondió esto?" con clave carpeta del club + lado + etiqueta + nota (antes: id del club + lado + etiqueta). Si no está, escalón 5b, preguntar por API. `--sembrar` rearma la caché de Claude con la clave nueva desde los `.categorias.json` (solo las respuestas pagadas, no las que salieron de la caché vieja). Jev sigue igual (no ve la nota).
+- Caso: Goiás "Despesa com pessoal": la respuesta para la nota administrativa ("gastos generales", guardada como 'goias-br') se reusaba en la nota de fútbol de 2024 (44.603.582); la de fútbol estaba guardada como 'goias' (id antes del alta).
+- Medido (filas que hoy resolvió Claude): UC 19 (4 en la caché nueva, 15 a volver a preguntar si se recategoriza), Fortaleza 196 (99 / 97), Goiás 94 (86 / 8); 2 dan otra categoría, las dos de Goiás 2021 ("(-) Direito de Arena" y "(-) INSS Patrocínio", cargadas como otros ingresos; la caché nueva da televisión y patrocinio, el criterio de 2022-2024).
+
+## Versión 403 — Etapa 7: el precedente y las respuestas de la cola miran en qué nota está la fila (2026-10-03)
+
+- `padres-filas.mjs` (nuevo, gratis): en qué nota está cada fila ya verificada (lo lee del `.verificacion.json`); `sinMarca()` saca la marca de nota del final ("(a)", "(1)", "(nota 17)"); `mismoPadre()` compara notas por palabras de contenido (sin "gastos", "despesas", "total"...), porque cada año nombra distinto la misma nota.
+- `categorizar-claude.mjs` y `cargar.mjs`: (A) el precedente con contexto compara etiquetas sin la marca de nota y usa también lo cargado; (B) si la etiqueta tiene precedentes con nota conocida y ninguno está en la misma nota, el precedente sin contexto no decide (baja a Jev/Claude); (C) una respuesta de la cola de otro documento del club se aplica solo si la fila está en la misma nota.
+- Casos: Goiás "Despesa com pessoal" (2014, 2015, 2017, 2021, nota de fútbol) y "Serviços de terceiros" (2008-2016 administrativo; 2023-2025 de "Custo com futebol") salen bien solos por contexto.
+- Medido (precedente de cada fila cargada contra los otros años del club): UC bien 500 → 498, mal 0 → 0; Fortaleza bien 433 → 414, mal 7 → 7; Goiás bien 407 → 420, mal 1 → 1. Lo que deja de decidir baja a Jev/Claude. Comparar la nota por texto exacto daba Fortaleza 433 → 286 y no entró.
+
+## Versión 402 — Carga: una liga en null se reemplaza por una verificada (2026-10-02)
+
+- `cargar.mjs`: una fila de liga existente en `null` ("nadie lo verificó") ya no frena una liga verificada nueva, y al escribir se reemplaza ese año en vez de agregarlo repetido.
+- Goiás: 2009-2011, 2013, 2014 y 2016 recargados con `--reemplazar`; las 15 temporadas tienen liga (2008-2010, 2013-2015, 2022-2023 Série A; el resto Série B). Rosters de 2014 (plantilla sports table) y 2016 a la caché. Medido: rubros, importes y meta de los 15 años idénticos antes y después.
+
+## Versión 401 — Ligas: escalón por la plantilla "sports table" de Wikipedia (2026-10-02)
+
+- `fetch-club-league-reference.mjs`: escalón 0, una tabla común en la sección de equipos (lo de siempre); escalón 1, si no hay, la tabla de posiciones hecha con la plantilla `{{#invoke:sports table}}` en cualquier parte de la página (sus `name_XXX`). Compuerta: al menos 4 equipos.
+- Caso: Brasileirão 2009 y 2010 Série A y 2011 Série B: 20 equipos cada uno, Goiás 9°, 19° y 11° (coincide con las capturas de Guido). Caché `tools/club-league-reference/br.json`.
+
+## Versión 400 — Texto propio: etiquetas partidas en dos renglones (escalón con compuerta) (2026-10-02)
+
+- `texto-propio-a-md.mjs`: escalón 0, el renglón tal cual; escalón 1, se une con el renglón de texto inmediatamente de arriba solo si la compuerta dice que es su continuación (el de arriba termina en un conector, "DAS", "de", "e", "com"…, o este empieza en minúscula; y están pegados). Un título arriba de un renglón completo ("RECEITAS" / "Futebol profissional e de base") no pasa.
+- Caso: Goiás 2016, "ATIVIDADES (nota 17)" → "RECEITA LÍQUIDA DAS ATIVIDADES (nota 17)"; "profissional e amador (nota 18)" → "Despesas com futebol profissional e amador (nota 18)".
+- Medido en las 8 transcripciones rearmadas de Goiás: en los estados de resultados solo cambia 2016; en los demás años, renglones del flujo de caja y párrafos de notas (nada que se cargue). Se rearmó solo 2016.
+
+## Versión 399 — Rearmado con el texto propio: escalón por el registro de transcripciones (2026-10-02)
+
+- `texto-propio-a-md.mjs` / `lote.mjs`: si el registro de transcripciones (que compara el .md ENTERO con el texto propio) dice "revisar" por cifras con un dígito distinto, se rearman las páginas con texto propio que todavía no se rearmaron (método columnas), aunque la etapa 6 cierre: ese estado frena la carga igual.
+- Casos: Goiás 2016 (la pág. 2, nota 17 de ingresos, seguía con la lectura de Mistral: 94 cifras distintas) y 2014 (cierra, pero 10 cifras mal leídas en otras páginas).
+- Cola: dudas de 2008-2013 contestadas en bloque (escala en reales; ejercicio 2011; 2012 ingresos con la columna TOTAL de la nota 19; gastos de 2012 y 2013 con las filas del estado). 2008-2015 quedan ok sin casos.
+- Medido (ensayo): UC (lote 07) y Fortaleza (lote 08) no lo activan; en Goiás solo 2016 (pág. 2) y 2014.
+
+## Versión 398 — Etapa 6: el chequeo del año vecino lee cada documento con la lectura con la que cerró (2026-10-02)
+
+- `verificar.mjs`: el chequeo 4b (año vecino) suma los ingresos de este documento con la lectura con la que cerró y los del vecino con la suya (la que dejó escrita en su `.verificacion.json`). Hasta la 397 los dos se leían con la lectura 0.
+- Caso: Goiás 2011 cerró con la lectura 4 (ingresos 17.096.667 = total impreso = columna 2011 del documento 2012) y el chequeo comparaba 52.419.680 contra 17.096.667. En 2008-2010 coincidía por casualidad: los dos documentos se inflaban igual.
+- Medido: UC (lote 07) y Fortaleza (lote 08) idénticos; Goiás 2011 pasa a ok y 2012 deja de marcar el vecino; los demás años solo cambian los importes del detalle del chequeo (ahora los reales).
+
+## Versión 397 — Rearmado con el texto propio: escalera de métodos (columnas → regiones) (2026-10-02)
+
+- `texto-propio-a-md.mjs`: el rearmado tiene su propia escalera (pedido de Guido: una escalera en vez de cambiar el método para todos). Escalón 0, método "columnas" (cortes verticales en toda la página, el de la Versión 395). Escalón 1, método "regiones" (cortes alternados horizontales y verticales), solo si el .md ya se rearmó con "columnas" y la etapa 6 sigue sin cerrar el resultado impreso. Una vez cada uno; la marca del .md dice cuál se usó. `lote.mjs` lo usa en `--reintentar`.
+- Caso: Goiás 2010, pág. 1: el balance de arriba y el estado de resultados de abajo tienen columnas en lugares distintos; con "columnas" el estado salió mezclado renglón por renglón con el flujo de caja ("Premiação 2.913.373 1.574.641 Lucro (prejuízo) líquido do exercício"). Con "regiones" sale limpio (17 renglones de ingresos hasta "TOTAL DAS RECEITAS 30.362.984").
+- Medido (ensayo): UC (lote 07) y Fortaleza (lote 08) no lo activan; en Goiás solo 2010 sube al escalón 1.
+
+## Versión 396 — Etapa 6: lectura 4, signos impresos (2026-10-02)
+
+- `verificar.mjs`: lectura 4 de la escalera de lecturas (solo si 0-3 no cierran): los renglones del estado conservan su signo respecto del signo normal de su lado (un renglón negativo entre los ingresos resta) y los subtotales se reconocen por la suma con signo.
+- Caso: Goiás 2008, "(-) Dedução da receita (1.290.613)" sumaba; los ingresos daban 62.455.533 en vez de 20.242.293. Con la lectura 4 cierran 2008, 2009 y 2011 (2010 no).
+- El chequeo del año anterior cargado también acepta la columna contra lo cargado más una ganancia extraordinaria (`exceptional_items` positivo) que un ajuste sacó de ingresos (Goiás 2024 contra 2023, la venta a la LFU).
+- Medido: UC (lote 07) y Fortaleza (lote 08), 26 verificaciones idénticas (una nota de ajuste se repetía en Fortaleza 2022 y se corrigió); Goiás: 2008, 2009, 2011 cierran con la lectura 4; 2014 pasa a ok (su vecino 2015 ya está bien).
+
+## Versión 395 — Etapa 2, escalón 1: rearmar páginas con el texto propio del PDF (2026-10-02)
+
+- `texto-propio-a-md.mjs` (nuevo, gratis): rearma páginas del .md con el texto propio del PDF (`pdftotext -bbox`): separa las columnas de la página por los huecos verticales que casi ningún renglón cruza, une a su izquierda una "columna" que es solo importes (la del otro año), y arma tablas Markdown con etiqueta + importes (el número de nota va a la etiqueta). Guarda el .md anterior en Generados/ (`.antes-texto-propio.md`).
+- `lote.mjs`: escalón en el camino de error (`--reintentar`): si la etapa 4 dijo que el .md no coincide con el texto propio (cifras con un dígito distinto, casi nada en común, o texto parcial con números no confirmados) y la verificación no quedó ok, se rearman esas páginas y el documento vuelve a localizar, validar y extraer. Una vez por documento (el .md queda marcado).
+- Caso: Goiás 2008, pág. 1: "Pessoal (15.643.605)" (PDF) contra "Passas (15.845.699)" (Mistral); 2015: "Receita líquida 70.333.324,50" contra "70.303.924.30".
+- Medido (ensayo): UC (lote 07) y Fortaleza (lote 08) no lo activan; Goiás, los 7 documentos de 2008-2012, 2015 y 2016. UC 2015 (híbrido, 2 números no confirmados en la pág. 59) lo activaba hasta exigir que la verificación no esté ok.
+
+## Versión 394 — Ajuste manual `categoria` (escalón 0 de la categorización, también entre lados) (2026-10-02)
+
+- `ajustes.mjs`: campo nuevo `categoria` (--etiqueta, --valor <categoría>). `cargar.mjs` lo toma como escalón 0: gana sobre todo, también sobre la compuerta del lado; si la categoría es del otro lado, la fila se muda sin cambiar su efecto en el resultado (un ingreso de 140 pasa a gasto de +140).
+- Caso: Goiás 2023, "Outras Receitas e Despesas" 140.214.785 (venta del 20% de la Liga Forte União) como exceptional_items. La corrección a mano de `ed302de9` se rehízo con `cargar.mjs --reemplazar`: mismo resultado (ingresos 89.972.753, officialTotalRevenue = Receita líquida impresa), ahora sobrevive a una recarga. `cola.mjs --corregir-categoria` no servía: la compuerta del lado la descartaba en silencio.
+
+## Versión 393 — Etapa 6: el chequeo del año anterior usa la lectura con la que cerró el año (2026-10-02)
+
+- `verificar.mjs`: si el año cerró con la lectura 3, la columna del año anterior también suma los renglones sin lado por su signo (y lee los subtotales con ellos), igual que lo cargado.
+- Caso: Goiás 2024, la columna 2023 sumaba 89.972.753 y el sitio tiene 230.187.538 (con "Outras Receitas e Despesas" 140.214.785): falsa alarma. Ahora 230.187.538 = 230.187.538; 2023 contra 2022, 106.090.159 = 106.090.159.
+- Medido: Fortaleza (lote 08) idéntico; Goiás 2023 y 2024 pasan de cola a ok; el resto igual.
+
+## Versión 392 — Etapa 6: una hoja de nota que resta del otro lado se escribe en su lado (2026-10-02)
+
+- `verificar.mjs`: al escribir las líneas, una hoja de nota de un lado que quedó restando dentro del otro (signo negativo) se escribe en su propio lado y en positivo. Las sumas y el cierre no cambian.
+- Caso: Goiás 2025, "Outras Receitas (b)" 1.439.848 (ingreso) dentro de "Outras Receitas e Despesas" (gastos), .md L1299-1303: salía como ingreso de −1.439.848 y la carga no cerraba (ingresos 43.934.776 en vez de 46.814.472).
+- Medido: Fortaleza (lote 08) idéntico; Goiás: solo cambia esa fila de 2025. 2023 y 2024 pasan a la cola por el chequeo del año anterior cargado, que ahora corre (2022 y 2023 están en el sitio) y no ve las filas sin lado de la lectura 3: pendiente.
+
+## Versión 391 — Carga: la apertura de un bloque se busca al principio de una línea (2026-10-02)
+
+- `cargar.mjs` (`insertarEnObjeto`): "Object.assign(sources, {" y las demás aperturas se buscan al principio de una línea. El esqueleto de `alta-club.mjs` trae un comentario que nombra esa apertura y la búsqueda caía en el comentario: la primera carga de Goiás (2021) se revertía con "no pude cerrar el bloque".
+
+## Versión 390 — Ajuste manual `anio` (escalón 0 del año del ejercicio) (2026-10-02)
+
+- `ajustes.mjs`: campo nuevo `anio`. `alta-club.mjs` (y con él `cargar.mjs`) y `onboard.mjs --quien` lo toman antes que el nombre del archivo.
+- Caso: Goiás, `demonstracoes-contabeis-2017-2016.pdf` daba ejercicio 2016 (último año del nombre); el contenido cierra el 31-12-2017. Ajustes para los 10 archivos 2008-2007 a 2017-2016. Con el ajuste, 2017: año 2017, liga br-serieB, tipo de cambio BRL@2017-12-31.
+- Perfil de Goiás (`Admin/perfil-clubes.jsonl`, subagente Sonnet): socios sí (Associados, Nação Esmeraldina, Sou Goiás), otros deportes sí ("Esportes Olímpicos" como renglón de ingresos, sin disciplinas nombradas).
+- Cola: perímetro de Goiás 2022-2025 contestado "individual" (la palabra "consolidado" era de deudas parceladas).
+
+## Versión 389 — Ligas: tablas de "equipos por estado" en Wikipedia (2026-10-02)
+
+- `fetch-club-league-reference.mjs`: si la última columna del encabezado es plural ("Team(s)", "Teams", "Clubs"), se toman todos los equipos de esa celda. Caso: Série B 2017 y 2021, cuya única tabla es "Number of teams by state": salían números de rowspan y nombres sueltos, y Goiás no aparecía.
+- Caché `tools/club-league-reference/br.json`: Série B 2017, 2021, 2024 y 2025 y Série A 2023 (20 equipos en 2017 y 2021; Série B 2024-2025 traen además nombres de estadios, regla vieja de la primera celda, sin tocar). Série B 2024 y 2025 iguales con la regla nueva.
+
+## Versión 388 — Etapa 6: financiero e impuesto sin renglones toman su subtotal impreso (2026-10-02)
+
+- `verificar.mjs`: si el estado no trae ningún renglón financiero (o de impuesto) pero sí UN subtotal/total de ese lado, se usa ese subtotal. Si hay renglones, el subtotal no se usa.
+- Caso: Goiás 2023, solo "Resultado financeiro líquido (1.425.102)" (pág. 7 del visor, .md L221): el financiero daba 0 y el resultado no cerraba. Ahora cierra (124.434.274); queda en la cola solo por una duda de extraer (nota 19).
+- Medido: Fortaleza (lote 08) idéntico; Goiás: solo cambia 2023.
+
+## Versión 387 — Etapa 6: la lectura 3 lee los subtotales con los renglones sin lado (2026-10-02)
+
+- `verificar.mjs`, lectura 3 ("renglones sin lado según su signo"): antes de decidir si un subtotal es la suma de los renglones de arriba o de abajo, cuenta también los renglones sin lado, con signo o en valor absoluto. Hasta ahora esos renglones se ubicaban después y el subtotal se sumaba además de sus componentes.
+- Caso: Goiás 2024, "Despesas (34.610.029)" impreso arriba de administrativas + tributárias + "Outras Receitas e Despesas" (6.903.788, sin lado), pág. 7 del visor, .md L209-212. Los gastos daban 138.963.710 en vez de 111.257.469. En 2022, "Outras" es positivo (8.918.100) y solo cierra la suma con signo.
+- Medido: Fortaleza (lote 08) igual (2023 cambia solo porque ahora el sitio tiene 2022 para el chequeo del año anterior). Goiás: 2022 y 2024 pasan de cola a ok; el resto igual. UC no se midió (decisión de Guido).
+
+## Versión 386 — Etapa 8: escalón de materialidad en la categorización (2026-10-02)
+
+- `cargar.mjs`: después de todos los escalones, por lado (ingresos / gastos): si la suma de todas las filas en duda es como mucho el 1% del total de ese lado (compuerta), las de confianza 0,60 o más se cargan con su categoría y un aviso; las de menos siguen a la cola; si pasa el 1%, todas a la cola. Los casos de la cola se crean después de este escalón.
+- Medido: propuestas de carga de UC (16) y Fortaleza (9) idénticas; ninguna tiene dudas abiertas, así que el escalón todavía no actuó sobre un caso real.
+
+## Versión 385 — Caja y deuda: el total de la nota de deuda (2026-10-02)
+
+- `caja-deuda.mjs`, escalón 1: si no hay filas de deuda financiera pero sí el TOTAL de una nota de deuda (en cualquier página), se propone ese total; "ninguna fila = 0" solo si tampoco existe ese total. La compuerta busca una fila de notas también en las notas del documento vecino.
+- Caso: Fortaleza 2018 y 2019 tienen solo "Total Prestamos y Sobregiros Bancarios" (4.398, L396; 794, L582): se escribía deuda 0 y la compuerta lo dejaba pasar (2017 también es 0). Se corrigió antes de commitear.
+- Fortaleza (corrida de Guido con IA, US$ 0,20, y esta): caja 2017 1.181.510 y 2018 919.687 (totales de la nota 6); deuda 2017 0, 2018 4.398, 2019 794, 2020 188.998, 2021 102.513. Medido: propuestas de UC idénticas.
+
+## Versión 384 — Fortaleza CEIF 2017-2025 entero en el sitio local (2026-10-02)
+
+- 2021 (ajuste `cero-real` de Estadio) y 2022 (ajuste `desglose` de Patrocinios; categorización ~US$ 0,05) cargados con `cargar.mjs --desde-verificacion --escribir`, auditoría P0 0 · P1 0. Totales de los 9 años iguales a la verificación; revisado en el sitio local (2025: ingresos 6,3 M USD, resultado +0,1 M USD).
+
+## Versión 383 — Caja y deuda: la caja es una parte de la nota de efectivo (2026-10-02)
+
+- `caja-deuda.mjs`, escalón 1: si la fila de caja está en una tabla que termina en un total que suma sus filas, se proponen todas esas filas; la compuerta compara contra el total de la nota de efectivo del documento vecino (las filas cambian de nombre entre años, el total no). Un 0 al principio de la fila ya no se toma como número de nota.
+- Casos: Fortaleza 2024 "Caja 430" pasa a 97.795 (Bancos 97.365 + Caja 430); 2023 "Caja | 0 | 2.152" se leía 2.152 (columna 2022), ahora 19.742; 2025, 1.767.496.
+- Medido: propuestas de UC idénticas. Fortaleza: 5 datos (caja 2023-2025, deuda 2024-2025).
+
+## Versión 382 — Ajuste manual `desglose`: escalón 0 del cierre de una nota con un error del documento (2026-10-02)
+
+- `ajustes.mjs`: campo `desglose` (etiqueta del renglón, valor = la diferencia impresa, categoría opcional). `verificar.mjs`: si la nota de ese renglón no suma, se abre igual con una fila "Diferencia en el documento", solo si la diferencia es exactamente la del ajuste (compuerta). `cargar.mjs`: la categoría del ajuste es escalón 0 de esa fila.
+- Caso: Fortaleza 2022 "Patrocinios (1)" 2.334.630 con detalle que suma 2.280.630: se abre y la televisión (1.208.394) queda aparte; diferencia 54.000 como patrocinio.
+- Medido: carga de UC idéntica (16 de 16). Fortaleza: solo cambia 2022 (más el chequeo "año anterior cargado", que ahora corre contra los años ya cargados y coincide).
+
+## Versión 381 — Ajuste manual `cero-real`: escalón 0 del aviso de categorías en 0 (2026-10-02)
+
+- `ajustes.mjs`: campo `cero-real` (valor = la categoría del aviso: "Estadio", "Televisión"...). `cargar.mjs`: si hay un ajuste para esa categoría, el 0 es real: no frena ni pide reintento, queda como aviso.
+- Caso: Fortaleza 2021, Estadio en 0 (boletería "-" en 2021, L1141). Medido: propuesta de carga de UC idéntica (16 de 16).
+
+## Versión 380 — Fortaleza CEIF 2017-2020 y 2023-2025 en el sitio local (2026-10-02)
+
+- Alta del club (`alta-club.mjs`, color #003366 de Guido) y 7 años con `cargar.mjs --desde-verificacion --escribir`, un commit por año, auditoría P0 0 · P1 0 en cada uno.
+- Frenan 2021 (Estadio en 0: real, la boletería 2021 es "-", L1141) y 2022 (Televisión en 0: el renglón "Patrocinios (1)" dice 2.334.630 y su detalle suma 2.280.630, error del documento; la TV 1.208.394 queda adentro).
+- Caja y deuda sin escribir: `caja-deuda.mjs` toma "Caja 430" en vez del total del efectivo 97.795 (2024, nota 6).
+
+## Versión 379 — Alta: el esqueleto del archivo de datos trae el bloque de fuentes (2026-10-02)
+
+- `alta-club.mjs`: el `data/<id>-data.js` nuevo trae `Object.assign(sources, {});`, donde `cargar.mjs` agrega la fuente de cada año. Sin él, la primera carga de un club dado de alta por script se revertía ("no encontré Object.assign(sources, {"). Caso: Fortaleza CEIF, primera vez que alta y carga corrieron juntas; a su archivo se le agregó el mismo bloque.
+
+## Versión 378 — Etapa 8: una fila verificada no se excluye sola por "no es rubro" dudoso (2026-10-02)
+
+- `cargar.mjs`: en una fila que viene de la verificación, un "no_es_rubro" de Claude por debajo del umbral sigue el camino de la compuerta del lado (precedente de su lado, o la genérica a la cola). Cierra el pendiente del HANDOFF (UC 2010, "Ingresos por recaudaciones y otros").
+- Caso: Fortaleza 2019 "Total Costo de Ventas" 137.713 y 2020 52.995 (Claude, 0,6) se excluían y el resultado no cerraba.
+- Medido: propuesta de carga de UC idéntica (16 de 16). Fortaleza: los 9 años cierran en la carga; quedan preguntas de categoría y categorías en 0.
+
+## Versión 377 — Etapa 8: compuerta del lado en toda la escalera de categorización (2026-10-02)
+
+- `cargar.mjs`: la lista de categorías del documento se busca por etiqueta y lado; una categoría (de la lista o del precedente) del otro lado que la fila no se acepta; si no hay ninguna de su lado, se propone la genérica del lado (otros ingresos / otros gastos) con confianza 0 y va a la cola con la clave "etiqueta|lado".
+- Caso: Fortaleza 2025 "Diversos" 1.986 (otros ingresos) que Jev categorizó other_expenses con 0,99; "Ajuste al peso" del lado contrario.
+- Medido: propuesta de carga de UC idéntica (16 de 16); en Fortaleza 2021-2025 los cierres de la carga coinciden con la verificación.
+
+## Versión 376 — Etapa 8: "impuesto" / "intereses" en la etiqueta no mueven una fila verificada con lado (2026-10-02)
+
+- `cargar.mjs`: el destino por palabras (a impuesto o a financiero) solo para filas sin lado; una fila que viene de la verificación con lado se queda de ese lado.
+- Casos: Fortaleza 2025 "Impuestos" 11.98 (gasto) iba a impuesto a las ganancias; 2019 "Intereses por mora" 55.745 (ingreso) iba a financiero.
+- Medido: propuesta de carga de UC idéntica (16 de 16); en Fortaleza el financiero de la carga coincide con el de la verificación.
+
+## Versión 375 — Etapa 6 → 8: financiero e impuesto se escriben como su efecto en el resultado (2026-10-02)
+
+- `verificar.mjs`: `financiero` e `impuesto` del `.verificacion.json` llevan el signo con que cerró el resultado (lectura con signos invertidos, impuesto "restado", ajuste con impuesto deducido); `signosCarga` dice qué se invirtió. `cargar.mjs` los suma tal cual. Escalón "lo que cerró en la etapa 6 no se vuelve a decidir en la 8" (aprobado por Guido).
+- Caso: Fortaleza 2025, impuesto 372.407 que había que restar; la carga lo sumaba.
+- Medido: propuesta de carga de UC idéntica (16 de 16). Fortaleza: el impuesto resta en todos los años; 2017 y 2018 cargarían.
+
+## Versión 374 — Etapa 8: la respuesta de categoría de la cola respeta el lado de la fila (2026-10-02)
+
+- `cargar.mjs`: compuerta del escalón 0 de la categorización: la respuesta de Guido se aplica solo si su categoría es del mismo lado que la fila en el documento; si no, la fila sigue por la escalera y, si llega a la cola, su caso lleva el lado en la clave ("etiqueta|lado"), así no choca con el ya contestado.
+- Caso: Fortaleza 2025 "Comisiones" 17 (ingreso) tomaba "gasto de administración" de la respuesta de 2024; ahora `other_income`. "Auxilio de transporte" es gasto en 2020/2023 e ingreso en 2021-2024.
+- Medido: propuesta de carga de UC (lote 07, `--reemplazar`) idéntica en los 16 años; Fortaleza cambia solo esa fila.
+- Cola: 160 respuestas de categoría de Fortaleza (tabla aprobada por Guido; auxilios y subsidio de la Dimayor a `other_income`).
+
+## Versión 373 — Etapa 8: escalera del tipo de cambio con compuerta de fecha (2026-10-02)
+
+- `alta-club.mjs` (lo usa también `cargar.mjs`): escalón 0, ajuste manual `fx` (nuevo campo de `ajustes.mjs`); escalón 1, declarado por el documento, con COMPUERTA: si la frase de la cotización trae una fecha completa que no es la del cierre, no es la de cierre y se descarta (queda escrito en el aviso); después tabla y serie oficial, como antes. `fechasDe` lee también "20 de noviembre del año 2025".
+- Caso: Fortaleza CEIF 2025, L534 "El 20 de noviembre del año 2025 ... a la TRM de $ 3.716,73" se tomaba como declarado; ahora 3.757,08 (TRM oficial al 31-12-2025).
+- Medido: tipo de cambio de los 16 años de UC idéntico; Fortaleza solo cambia 2025.
+
+## Versión 372 — Fortaleza CEIF 2017-2025 verificado entero; el impuesto calculado de cada ajuste, a la vista (2026-10-02)
+
+- `ajustes.mjs`: el listado muestra, al lado de cada `resultado-final`, el impuesto que verificar.mjs calculó por diferencia (el ajuste no tiene compuerta: un error en las filas termina en el impuesto).
+- `verificar.mjs`: fuera la parte B de la Versión 363 (una duda de escala contestada por la escala del año vecino: era un desvío entre escaleras). Queda la parte A: el tema "escala" no lo confirma la aritmética.
+- Ajustes: Fortaleza 2018 y 2019, costo financiero en negativo (2018: total rotulado "Total Otros Ingresos" en el PDF, como 2017; el impuesto pasa de 248.440 a 40.604 y el documento imprime 40.612; 2019: de 114.320 a 17.462); `sin-dudas` en 2018, 2019 y 2022.
+- Resultado (lote 08c, ~US$ 0,83 + 0,07 de categorización, y verificar): los 9 años de Fortaleza en "ok", cola vacía. Lote 07 (UC) idéntico.
+
+## Versión 371 — Revertida la Versión 367 (2026-10-02)
+
+- `indice-bloques.mjs`: fuera la regla "encabezado que es fila de datos continúa la tabla anterior" y `VERSION_AMPLIADO` vuelve a 2. Decisión de Guido: era una regla, no una escalera, y el caso que la originó (Fortaleza 2017, nota 23) lo resuelve un ajuste manual. Si vuelve a hacer falta, entra como escalón.
+- Medido: los índices de UC y Fortaleza son idénticos a los de antes de la 367; UC 2010, 2011, 2013, 2015 y 2022 vuelven a `reintentado: true`.
+
+## Versión 370 — Etapa 3: el ajuste manual de resultado es la pista para "las notas hacen de estado" (2026-10-02)
+
+- `ajustes.mjs`: `--linea` para cualquier campo. `localizar.mjs`: opción `pistaResultado` (valor y línea): le dice a la IA dónde está impreso el resultado y muestra ese bloque aunque tenga una sola cifra; deja `intentoNotasConAjuste`. `lote.mjs --reintentar`: un documento que quedó como fuente y tiene un ajuste `resultado-final` con línea repite una vez las notas como estado con esa pista.
+- Ajustes: Fortaleza 2018 "Resultado Año 2018 (639,077)" (L542) y 2019 "Utilidad Contable (52,122)" (L455). `Admin/lote-08b.txt`: Fortaleza 2022, para volver a localizar con el año bien leído.
+- Medido (ensayos, gratis): lote 07 (UC) no reintenta nada (US$ 0,00); lote 08 reintenta 2018 y 2019 (con la pista) y 2020 y 2024 (desgloses, índice v3), ~US$ 0,49; lote 08b ~US$ 0,12.
+
+## Versión 369 — Etapa 1: escalera de la fecha de cierre (2026-10-02)
+
+- `periodo.mjs`: compuerta, un cierre no puede ser de más de 2 años después de hoy (Fortaleza CEIF 2022 leía 2050-12-31 de "la duración legal del Club es definida hasta el 31 de diciembre del 2050"; "posterior a hoy", lo primero que se probó, dejaba sin fecha los presupuestos 2026-27 de Boca y Racing). Escalón 1: si los títulos no traen el cierre, la primera fecha de los encabezados de columna de las tablas cuya columna de al lado es el mismo día un año antes (Fortaleza 2017-2020: "| | A 31 de Diciembre de 2020 | A 31 de Diciembre de 2019 |").
+- Medido: UC sin cambios (ni en `periodo` ni en la verificación). Fortaleza 2017-2020 y 2022 con el año correcto; 2020 y 2021 se confirman por año vecino y quedan en "ok". El registro (`inventario-transcripciones.mjs`, global) suma fecha a 102 documentos que no tenían (1 con "el nombre no coincide": Levadiakos 2019, leído 2018-06-30) y no pierde ninguna.
+
+## Versión 368 — Ajustes manuales de filas; Fortaleza CEIF 2017 cierra (2026-10-02)
+
+- `tools/ajustes.mjs`: campo `fila` (etiqueta, lado, valor impreso con signo, línea, `reemplaza` opcional); varias por documento. `verificar.mjs` las aplica antes de la escalera de lecturas (escalón 0); `reemplaza` saca también las filas de la nota que abría esa fila.
+- Fortaleza 2017 (decisión de Guido: el camino de error para un año así es el ajuste manual, no otro reintento): "Otros gastos" 41.780 (nota 23 perdida en un salto de página), "Costos financieros" (3.581) en lugar de "Total Otros Ingresos" (etiqueta cruzada en el PDF), resultado final 1.347.094. Antes de impuestos 1.638.692, impuesto deducido 291.598.
+- Medido: lote 07 (UC) idéntico salvo `reintentado` (true → false en 2010, 2011, 2013, 2015, 2022: efecto de `VERSION_AMPLIADO` 3 de la Versión 367; el ensayo de `--reintentar` no reintenta ninguno, no tienen desgloses pendientes). Lote 08: solo cambia 2017.
+
+## Versión 367 — Índice ampliado: una tabla cuyo encabezado es una fila de datos continúa la de la página anterior (2026-10-02)
+
+- `indice-bloques.mjs` (solo el índice AMPLIADO, el del reintento): en la página siguiente, una tabla con separadora cuyo "encabezado" es una etiqueta con importes que no son años se marca `continuaDe` y ese encabezado pasa al cuerpo. Caso: Fortaleza CEIF 2017, nota 23 "Otros gastos" (filas L756-761, total 41.780 solo en L771). `VERSION_AMPLIADO` 2 → 3.
+- Medido en las 41 transcripciones de UC y Fortaleza: el índice normal no cambia; el ampliado de UC no cambia; en Fortaleza cambian 27 bloques, todos tablas cortadas por un salto de página. Descartado al medir: contar los años de los encabezados como importes (encadenaba casi todas las tablas) y la misma página (3 falsos positivos en 2021-2022).
+
+## Versión 366 — Ajustes manuales: una base de consulta que leen los scripts (2026-10-02)
+
+- `tools/ajustes.mjs` + `Admin/ajustes-manuales.jsonl`: una decisión de Guido atada al documento y al campo (no al texto de una pregunta de la cola). `node tools/ajustes.mjs` lista; `--agregar "<pdf>" <campo> --valor --motivo --evidencia` agrega. Campos: `resultado-final` (el impreso; el impuesto se deduce) y `sin-dudas` (las dudas del documento quedan como nota).
+- `verificar.mjs`: el ajuste es el escalón 0 (gana siempre); con `resultado-final` los chequeos de resultado que no cerraban quedan aceptados por el ajuste. Queda en el `.verificacion.json` (`ajustes`). El caso `resultado-final` de la cola ahora pide un ajuste (la respuesta en la cola de la Versión 365 ya no aplica).
+- `cargar.mjs`: cada ajuste aplicado se escribe como comentario arriba de la meta del año.
+- Fortaleza CEIF 2023 pasó de las respuestas de la cola a dos ajustes (resultado final 1.021.768; sin dudas). Medido: lote 07 (UC) idéntico; lote 08 igual salvo 2023 (mismo resultado, ahora por ajuste).
+
+## Versión 365 — Fortaleza CEIF 2023 cerrado por decisión de Guido (2026-10-02)
+
+- `verificar.mjs`: una respuesta `corregir --valor` al caso `resultado-final` fija el resultado final y DEDUCE el impuesto (antes de impuestos − final), para que la carga cierre.
+- Cola: Guido decidió cerrar Fortaleza 2023 por la fuerza ("que nunca más vuelva como problema o duda"). Respuestas: `b5a087e` resultado final 1.021.768 (patrimonio, .md L1099; impuesto deducido 588.049 en vez de 589.589), y las dudas `e415497`, `69bf7de`, `5cad482`, `96d6edd` aceptadas, `247c2f6` "no". 2023 queda en "ok" (cola 29 → 23). Lote 07 (UC) idéntico.
+
+## Versión 364 — Etapa 6: escalera del resultado final (el signo del impuesto) (2026-10-02)
+
+- `verificar.mjs`: si se cerró contra "resultado antes de impuestos", el resultado final ya no es siempre antes + impuesto: candidatos antes ± impuesto; escalón 0, el que está impreso en el .md del documento; escalón 1, el que imprime el documento del año siguiente en la columna del año anterior; compuerta, uno solo coincide. Si no, caso `resultado-final` en la cola (`corregir --valor` con el impreso fija el resultado) y `resultadoParaCargar` null. Queda en `totales.resultadoFinal`.
+- Medido: lote 07 (UC) mismo resultado y rubros en los 16 años (2012 suma el chequeo "resultado final": −742.014 impreso en L149). Lote 08: Fortaleza 2025 pasa de 1.058.254 a 313.440 y 2024 de 1.287.455 a 466.323 (impuesto restado, impreso en la nota de patrimonio); 2023 a la cola (impreso 1.021.768, ningún candidato).
+
+## Versión 363 — Etapa 6: las dudas de escala las contesta la escalera de escala, no las sumas (2026-10-02)
+
+- `verificar.mjs`: el tema "escala" sale del escalón 2 de las dudas (las sumas no confirman una escala: cerrar es invariante a la escala del documento entero). Si el documento tomó la escala del año vecino (escalón 1 de la Versión 362), la duda queda contestada por esa escala, con nota; si no, a la cola. Caso: Fortaleza CEIF 2023 tenía aceptadas a la vez "¿están en miles?" y "¿están en unidades y no en miles?".
+- Medido: lote 07 (UC) idéntico (ninguna duda de escala). Lote 08: misma cola; 2023 y 2024 cambian solo el texto de las notas.
+
+## Versión 362 — Etapa 6: escalera de escala (la del año vecino) (2026-10-02)
+
+- `verificar.mjs`: si el documento dice escala "no se sabe", el escalón 1 propone la del año vecino anclado (la declara o ya la resolvió así) cuando los ingresos del año en común dan exactamente x1.000 o x1.000.000; la compuerta es el mismo chequeo de año vecino (4b). Queda en el `.verificacion.json` como `escala { valor, escalon, factor, de }`. Una escala declarada nunca se pisa.
+- `verificar.mjs`: el año vecino se busca entre los documentos del año que pasaron por extraer (antes, el primero del año: Fortaleza 2023 nunca se comparó con 2024 porque el primero era `certificacion-ef-2024.pdf`).
+- `verificarLista()` (usada por `verificar.mjs --lista` y la etapa 6 de `lote.mjs`): si un documento resolvió la escala por el escalón 1, repite la pasada una vez.
+- Medido: lote 07 (UC) idéntico (16 `.verificacion.json` y `.rubros.json`). Lote 08: Fortaleza 2024 y 2023 pasan a miles (ingresos 12.206,258 y 5.998,469 millones de COP; rubros exactamente x1000), 2025↔2024↔2023 coinciden; salen de la cola 9535f3f, 19ba845, e4c96b9 y los "primer año" de 2025 y 2023 (cola 35 → 28).
+
+## Versión 361 — Verificar lee el resultado impreso por su etiqueta (2026-10-02)
+
+- `verificar.mjs`: si la línea que extraer marcó como "resultado del ejercicio" dice "antes de impuestos", se toma como resultado antes de impuestos (lectura 1), no como final. Caso: Fortaleza CEIF 2023-2025 (las notas hacen de estado), donde se restaba el impuesto a "Utilidad contable antes de impuesto". Medido: UC 16 años idéntico; Fortaleza 2023, 2024 y 2025 pasan a cerrar, 2021 sigue cerrando (por la lectura 1).
+
+## Versión 360 — Etapa 3, escalón 2: las notas hacen de estado (2026-10-02)
+
+- `lote.mjs --reintentar`: un documento cuya localización no encontró estado de resultados pero sí notas de ingresos y de gastos (y no es candidato a re-transcribir) vuelve a localizar con `notasComoEstado`, una vez. `localizar.mjs`: PEDIDO_NOTAS_COMO_ESTADO (elegir las notas cuyo total es un renglón del estado y el bloque del resultado impreso). `extraer.mjs`: INSTRUCCION_NOTAS_COMO_ESTADO (una fila por nota con el título como etiqueta y el TOTAL impreso; sus filas la desglosan). Verificar sin cambios. Caso: Fortaleza CEIF (solo notas; 2023: notas 19-25 suman 1.609.817 = "Utilidad contable antes de impuesto", nota 8).
+- Medido: lote 07 (UC), con y sin `--reintentar`, idéntico antes y después. Ensayo del lote 08: 8 de 9 años entran al escalón (~US$ 0,97); 2022 no, porque `periodo.mjs` le dedujo cierre 2050-12-31 ("duración legal hasta 2050").
+
+## Versión 359 — Universidad Católica 2010-2025 escrita en el sitio por el script (2026-10-02)
+
+- UC 2010-2017 cargados con `cargar.mjs --desde-verificacion --escribir` (un commit por año, audit.js P0 0 · P1 0). 2022-2024 rehechos con `--reemplazar`: "Servicios de Seguridad" pasa a organización de partidos (65,574 / 72,244 / 77,365 millones de CLP), tipo de cambio del documento en vez del de mercado, se conservan caja, deuda, gestión y los jugadores vendidos.
+- Caja y deuda de 2010-2025 con `caja-deuda.mjs --club catolica-cl --escribir`: 21 de 26 vacíos; sin dato deuda 2011, 2012, 2015, 2016 y caja 2015 (2016 reexpresa la caja de 2015; 2011 tiene "Pasivos financieros no corrientes" que no coincide con 2010).
+- `cargar.mjs`: la meta escribe `gestionId`, `grossDebt` y `cash` reales (en un año nuevo siguen en null); arreglo del escape en la búsqueda del año de `--reemplazar`.
+
+## Versión 358 — cargar.mjs --reemplazar: rehacer con el script un ejercicio ya cargado (2026-10-02)
+
+- `cargar.mjs --reemplazar`: "ya cargado", "la fuente ya existe" y "sin .categorias.json" pasan de frenar a aviso (lo demás frena igual); al escribir borra los bloques del año y escribe los nuevos, conservando grossDebt/cash (si el script no los trae), gestionId, la fuente existente y los `items` (jugadores vendidos) por etiqueta. Sin `--reemplazar`, la propuesta de los 16 años de UC es idéntica antes y después.
+
+## Versión 357 — Caja y deuda: una escalera con una sola compuerta (2026-10-01)
+
+- `caja-deuda.mjs` rehecho a pedido de Guido ("siempre escalera, sin reglas una encima de otra"): una escala por documento (la del estado de resultados contra lo cargado); los escalones 0 (precedente del club), 1 (vocabulario, con "ninguna fila" = deuda 0) y 2 (IA, solo números de línea) solo PROPONEN filas; una sola compuerta para los tres (año anterior cargado o documento siguiente, mismas filas, columna del año anterior). Fuera: escala propia por escalón, confirmaciones distintas por escalón, el "ninguna" de la IA, la deduplicación por importe. Valor absoluto al leer cualquier fila.
+- Medido (205 años, respuestas de IA guardadas): deuda 10 iguales / 8 distintos / 187 sin dato; caja 50 / 4 / 151. Los distintos que pasan la compuerta: compuerta circular (Bahia 2025, Tottenham 2025), número del año no confirmado (Espanyol 2025 "13.950,790,99", Flamengo 2024 dos columnas pegadas), lectura del balance (U. de Chile 2022, Wolves 2025), y 6 que no son error del script (Colo-Colo con 0 de relleno en el sitio; AZ, PSV, Athletico con otro criterio en lo cargado a mano).
+
+## Versión 356 — Caja y deuda como comando aparte, sobre clubes ya publicados (2026-10-01)
+
+- `caja-deuda.mjs --club <id> [--ejecutar] [--escribir]` (decisión de Guido: "dos scripts"; caja y deuda no van en el lote): completa `grossDebt`/`cash` solo donde el sitio tiene null, de más viejo a más nuevo (un dato completado cuenta como cargado para el año siguiente); `--escribir` reemplaza solo esos null en `data/<club>-data.js` con un comentario de la fuente, y publica (ASSET_V, generadores, audit.js; revierte si da P0/P1).
+- `cargar.mjs`: `publicarCambios()` sacado de `escribir()` sin cambios (lo reusa caja-deuda.mjs); exporta `snapshot`, `revertir`, `runNode`.
+- UC: los 10 vacíos (2018-2021 y 2025) salen sin IA; deuda 2018-2019 = 0, 2020 = 1.016.921 (L138 + L146), 2021 = 763.151, 2025 = 30.952.393.
+
+## Versión 355 — Caja y deuda: la medición con IA hace 6 llamadas a la vez (2026-10-01)
+
+- `caja-deuda.mjs --medir --ia --ejecutar`: llamadas de a 6 en paralelo, con avance cada 10 documentos (pedido de Guido: tardaba demasiado de a una).
+
+## Versión 354 — Caja y deuda: escalón 2 con IA (2026-10-01)
+
+- `caja-deuda.mjs`: `porIA()` (una llamada a Claude por documento, solo si los escalones 0 y 1 no dieron nada) elige las líneas del balance de caja y de deuda (criterio del club si hay precedente; si no, deuda financiera) y la escala con su frase. `datoDeIA()`: las cifras salen de esas líneas del .md, nunca de la IA; se descarta si una línea no es fila del balance o la frase de la escala no está en el balance; se acepta confirmada por un año vecino; "ninguna deuda" + total del pasivo = 0. Respuesta guardada en `Generados/<doc>.caja-deuda-ia.json`. `--medir --ia`: ensayo 171 documentos, ~US$ 5,49.
+
+## Versión 353 — Caja y deuda: un balance completo sin deuda financiera es deuda 0 (2026-10-01)
+
+- `caja-deuda.mjs`: deuda 0 (decisión de Guido) cuando el balance tiene su total del pasivo, ninguna fila es deuda financiera y el club tiene un precedente aprendido de deuda financiera que en este documento no aparece. UC 2010-2019: 0 (2015 y 2019 revisados: el pasivo son cuentas por pagar, provisiones e impuestos). Medido: sin cambios en los 205 años (ningún 0 equivocado). Probado y descartado: sin exigir el precedente, 3 aciertos y 25 ceros equivocados (Boca, Flamengo, Talleres: su deuda se llama de otra forma).
+
+## Versión 352 — Caja y deuda del balance, etapa 6b (paso 1: escalones 0 y 1, sin conectar al lote) (2026-10-01)
+
+- `tools/caja-deuda.mjs` (nuevo): lee `cash` y `grossDebt` del balance. Escalón 0: precedente del club (qué filas, 1 a 3, suman lo cargado en otro año; mismas familias en este documento). Escalón 1: vocabulario. Un dato se acepta solo si lo confirma un año vecino (año anterior cargado o documento siguiente, en su columna del año anterior); el escalón 1 necesita el año anterior cargado (el documento siguiente no ataja un error de escala). Si no, null con el motivo: nunca frena. `--medir`: lectura de los años ya cargados contra lo cargado a mano, con precedente solo de los OTROS años del club.
+- `vocabulario.mjs`: conceptos CAJA y DEUDA_FINANCIERA (nuevos, no cambian los existentes).
+- Medido (205 años con deuda y caja y con transcripción): deuda 11 iguales, 1 distinta, 193 sin dato; caja 47 iguales, 1 distinta, 157 sin dato. Las 2 distintas las confirma el documento vecino (Athletico Paranaense 2024, Wolves 2025): a revisar si es el criterio de lo cargado a mano. Probado y descartado: leer solo el "balance principal" (arreglaba U. de Chile 2022 y perdía 13 cajas).
+
+## Versión 351 — El lote termina con "Listo para cargar Y" y "Frenados X" (2026-10-01)
+
+- `lote.mjs`: bloque RESULTADO al final de la corrida, con la última propuesta de carga de cada documento de la lista (también los que no pasaron por la etapa 8 en esa corrida): listos (con años), frenados (año y primer motivo), ya en el sitio y sin propuesta. Pedido de Guido. Probado sobre los archivos del lote 07: 8 listos (2010-2017), 0 frenados, 8 ya en el sitio.
+
+## Versión 350 — En la cola, "obsoleto" es un estado y no una respuesta; un caso que vuelve a aparecer se reabre (2026-10-01)
+
+- `cola.mjs`: solo cuentan como respuesta las de Guido (aceptar, corregir, descartar, preguntar-club). "obsoleto" y "reabierto" son estados. `agregarCaso` reabre un caso cerrado como obsoleto que una etapa vuelve a levantar; `pendientes()` y `cola.mjs` lo muestran. Antes: `cargar.mjs` frenaba por un caso que la cola no mostraba (UC 2013, "Otras ganancias (pérdidas)", regresión de la Versión 348) y `verificar.mjs` daba por contestado un chequeo fallado que había vuelto. `cargar.mjs`: sin la excepción por 'obsoleto' (ya no hace falta).
+- Medido en los 17 documentos con verificación, dos pasadas con el código viejo y dos con el nuevo desde la misma cola: `verificar` idéntico; `cargar` solo cambia UC 2013 (FRENA → CARGA); la cola no cambia; pasada 1 = pasada 2. Prueba aparte sobre una cola de prueba: cerrar, no volver a cerrar, reabrir.
+
+## Versión 349 — El proceso nuevo le avisa al registro cuando un documento queda listo para categorizar (2026-10-01)
+
+- `verificar.mjs` (`avisarRegistro`): al terminar ok desde el lote, si el `.md` no está cargado ni ya es `listo-para-jev` para su huella, y `validacion.json` es posterior al `.md` y no tiene números sin confirmar, agrega al historial (`transcripciones-verificaciones.jsonl`) la misma línea que escribe `pipeline.mjs`, con método "validar-bloques (proceso nuevo)" y el detalle "solo los bloques que se cargan; el resto del .md no se validó". Caso: UC 2015, re-transcripto, quedaba "sin-verificar" y la etapa 7 no lo categorizaba. Medido en los 16 años de UC: una sola línea nueva (2015); en el registro solo cambia 2015 (sin-verificar → listo, listo-para-jev).
+
+## Versión 348 — Un caso de categoría que una respuesta del club ya resolvió se cierra solo (2026-10-01)
+
+- `cola.mjs`: `cerrarResueltoPorClub()`. `cargar.mjs`: cuando aplica a un documento la respuesta de categoría que Guido dio en otro año del club, cierra el caso pendiente de ese documento con la misma etiqueta (`obsoleto`, con la respuesta que lo resolvió). UC 2013, caso 6c69d0a ("Otras ganancias (pérdidas)", resuelto por 4094e9d de 2014). Medido en los 17 documentos de UC: `.carga.json` y salida de `cargar.mjs` idénticos antes y después; en la cola solo cambia ese caso.
+
+## Versión 347 — El documento re-transcripto en el lote pasa a verificar en la misma corrida (2026-10-01)
+
+- `lote.mjs`: la etapa 6 toma todo estado que empiece con "extraído" (antes, igualdad exacta: UC 2015, re-transcripto con Mistral y extraído en el reintento del lote 06, quedaba sin verificar). Los testigos siguen afuera. Ensayo del lote 06, con y sin `--reintentar`: idéntico antes y después.
+
+## Versión 346 — Dudas confirmadas por la aritmética; la categorización sabe cuándo una fila entró por su signo; diagnóstico de desgloses (2026-10-01)
+
+- `verificar.mjs`: escalón 2 de las dudas: si la escalera cerró, ningún año vecino da distinto, el tema es cuadro por segmento / cuadro duplicado / columna / escala y la propuesta "sí" ya está aplicada, se acepta sola con nota. Las filas que entran por su signo (lectura 3) llevan esa explicación como sección para Jev y Claude. Guarda `faltasDesglose` siempre.
+- `tools/diagnostico-desglose.mjs` (nuevo): para un desglose que sigue sin sumar después del reintento, lista las líneas con cifras fuera de los bloques elegidos y por qué el índice las dejó afuera (índice, etapa 3) o dice que no hay (transcripción, etapa 2). `lote.mjs` lo recomienda al final. HANDOFF: escalera de troubleshooting.
+
+## Versión 345 — Índice ampliado v2 (etiquetas partidas en dos renglones); el reintento re-transcribe moviendo la transcripción vieja (2026-10-01)
+
+- `indice-bloques.mjs` (solo el índice ampliado, que usa el reintento): un renglón solo de números debajo de un renglón solo de texto es una fila con la etiqueta partida (UC 2013, cuadro por segmento). `VERSION_AMPLIADO = 2`: un documento reintentado con una versión anterior tiene un reintento más (`verificar.mjs`, `cargar.mjs`, `localizar.mjs`). Medido: ampliado v2 505.203 filas en bloques (v1 498.282, normal 485.595), ningún documento pierde filas.
+- `lote.mjs`: el escalón 1 de la etapa 2 mueve la transcripción vieja a Generados/ antes de llamar a Mistral (no la pisaba: "Ya existe el .md"); si Mistral falla, la restaura.
+- Lote 06, reintento: UC 2017 da CARGA; UC 2013 vuelve a reintentar con el índice v2; UC 2015 se re-transcribe en la próxima corrida.
+
+## Versión 344 — Arreglos del lote 06: respuesta de categoría por club, resultado derivado, año vecino con fecha deducida, descartados (2026-10-01)
+
+- `cargar.mjs`: una respuesta de categoría vale para todos los documentos del mismo club con la misma etiqueta ("Otras ganancias (pérdidas)" de UC llegaba una vez por año). Tie-out contra `resultadoParaCargar` (si la verificación cerró contra "antes de impuestos", el resultado del ejercicio es ese más el impuesto impreso: UC 2013, 220.616).
+- `verificar.mjs`: el chequeo de año vecino usa la fecha deducida del otro documento (UC 2010 contra 2011: ok; ya no pide "primer año").
+- `Admin/documentos-descartados.txt` (nuevo): lo saltea `lote.mjs`. UC 2009.
+
+## Versión 343 — Escaleras de la etapa 2 (re-transcribir) y de la 7 (precedente con contexto); dibujos en el HANDOFF (2026-10-01)
+
+- `lote.mjs`: si localizar dice "no hay estado de resultados", la transcripción no es de Mistral y el PDF tiene páginas interiores en imagen, se marca para re-transcribir; con `--reintentar` re-transcribe con Mistral (guarda la anterior en Generados/) y vuelve a localizar y extraer. Caso: UC 2015 (páginas 4-9 en imagen).
+- `categorizar-claude.mjs` / `memoria-categorias.mjs` / `cargar.mjs`: lo aprendido guarda el renglón que desglosa su fila (`padre`); el precedente prueba primero misma etiqueta y mismo renglón. Probado con "Remuneraciones" bajo "Costo de ventas" (sueldos del plantel) y bajo "Gastos de Administración" (administración).
+- HANDOFF: el dibujo de la escalera de cada etapa (2, 3, 4, 6, 7, 8).
+
+## Versión 342 — Etapa 6: escalera de lecturas; fecha de cierre deducida de los vecinos (2026-10-01)
+
+- `verificar.mjs`: si la lectura base no cierra con un número impreso, prueba en orden: (1) "resultado antes de impuestos" si no hay resultado final, (2) el total impreso puede ser un renglón, (3) renglones sin lado según su signo. Acumulativas; gana la primera que cierra y queda escrita. Si el documento no tiene ningún número impreso para cerrar, es un fallo (antes pasaba como OK). Prueba gratis sobre UC 2010-2025: 2010-2014 cierran con la lectura 3 ("Otras ganancias (pérdidas)" quedaba afuera); los 8 años que ya cerraban siguen con la lectura 0 y las mismas líneas.
+- `tools/cierre-vecinos.mjs` (nuevo): sin fecha de cierre detectada, se deduce si el documento anterior y el siguiente del club cierran el mismo día y mes; con aviso. Lo usan `verificar.mjs` y `cargar.mjs`. UC 2011: 31-12-2011, y los chequeos de año vecino contra 2010 y 2012 dan ok.
+- Lote 06 (UC 2009-2017): 2009 descartado (PDF de una página escaneada); 2015 sin estado de resultados en la transcripción vieja (falta re-transcribir); 2016 y 2017 limpios.
+
+## Versión 341 — UC 2018-2020 cargados; dudas reconocidas por club + tema + renglón (2026-10-01)
+
+- UC 2018, 2019 y 2020 escritos (reintento por "cuotas sociales en 0": ahora con socios 98.296 / 202.753 / 99.645 y escuelas de fútbol). UC queda con 2018-2025.
+- `localizar.mjs` / `extraer.mjs`: cada duda trae `tema` (lista fija: usar-cuadro-por-segmento, cuadro-duplicado, cuadro-de-otro-anio, perimetro, escala, columna, fila-ilegible, otro) y `renglon`. `verificar.mjs` reconoce las de tema fijo por club + tema + renglón (`cola.mjs respuestaPorDetalle`): una respuesta de Guido en cualquier año del club se aplica a todos. Motivo: la misma pregunta del cuadro por segmento llegó tres veces redactada distinto. La respuesta ya dada para UC se pasó a la clave nueva.
+
+## Versión 340 — Reintento por categorías en 0; perfil de clubes (socios, otros deportes) (2026-10-01)
+
+- `cargar.mjs` (etapa 8, con `--desde-verificacion`): marca reintento si salarios del plantel, televisión o estadio dan 0 (siempre), o cuotas sociales / otras secciones deportivas dan 0 y el perfil del club dice que tiene socios / otros deportes. Si el perfil no lo sabe, pregunta de sí o no en la cola y la respuesta se guarda en el perfil. Medido sobre 241 años cargados: con "cualquier categoría en 0" se reintentaría el 94% de los documentos.
+- `tools/perfil-clubes.mjs` (nuevo) y `Admin/perfil-clubes.jsonl` (66 clubes sudamericanos, armado por un subagente con evidencia de data/ y transcripciones).
+- `lote.mjs --reintentar` toma también estas marcas; `localizar.mjs` y `extraer.mjs` reciben qué faltó en el intento anterior.
+- UC 2018-2020: frenan por "cuotas sociales en 0" (localizar no había elegido el cuadro por segmento); reintento pendiente.
+
+## Versión 339 — Peso chileno: la cotización de un cierre es la del primer día con dato posterior (2026-10-01)
+
+- `lookup-fx-close.js` (`diaCierre: 'siguiente'` en CLP) y `alta-club.mjs` (`FX_DIA_SIGUIENTE`): para CLP se toma el primer día con dato posterior al cierre (el dólar observado se publica al día siguiente). Los 12 cierres declarados por UC y Palestino: 11 exactos, 2024 a 0,02 (antes, entre 0,04% y 0,85% de diferencia). Las demás monedas no cambian.
+
+## Versión 338 — Series oficiales de EUR, DKK y GBP; la carga usa el signo verificado (2026-10-01)
+
+- `fetch-fx-reference.mjs`: EUR (BCE, tipo de referencia diario, invertido), DKK (Danmarks Nationalbank, Statbank DNVALD, por 100) y GBP (Bank of England, serie XUDLUSS, invertida). Banco central de cada moneda en vez de la Reserva Federal (H.10 se aleja hasta 0,4-0,9% de lo que declaran los documentos). EUR coincide exacto con 4 cierres declarados por Hajduk Split (tomando el hábil ANTERIOR, aun cuando el 31/12 tiene dato); DKK y GBP sin tipos declarados en las transcripciones: comparados contra BCE cruzado y FRED. `lookup-fx-close.js` y `alta-club.mjs` las conocen.
+- `cargar.mjs --desde-verificacion`: usa el signo que decidió verificar.mjs (`signoFijo`) en vez de adivinarlo por tabla. UC 2020 frenaba porque "Feriado Legal −15.597" (reversión dentro de gastos de administración) quedaba sumando gasto (31.194 de diferencia). UC 2018-2020: los tres dan CARGA.
+- Lote 05 (UC 2018-2020): la cadena de años vecinos coincide al peso en los tres.
+
+## Versión 337 — UC 2021 y 2025 cargados con todos los desgloses; perímetro del año más cercano (2026-10-01)
+
+- `cargar.mjs`: el perímetro se hereda del año cargado más cercano (UC: individual hasta 2021, consolidado desde 2022); si no se puede heredar, va a la cola como pregunta de sí o no (antes frenaba sin cola).
+- UC 2025 recargado (se revirtió la carga anterior): costo de ventas abierto por la columna de totales del cuadro por segmento (sueldos del plantel 10.762.861) e "Ingresos Comerciales" por la columna Comerciales (Membresía de Socios 278.185). En el sitio local: sueldos del plantel 11,9 M USD (42% de los ingresos); "Salarios / Ingresos" ya no da 0%.
+- UC 2021 cargado (perímetro individual, como el documento): ingresos 16,8 M USD, resultado −4,2 M, tipo de cambio 844,69 declarado.
+
+## Versión 336 — Camino de error: reintento cuando un desglose no suma (2026-10-01)
+
+- `verificar.mjs` marca `reintentar` con los desgloses (notas o anidados) de 2+ filas que no suman. `lote.mjs --reintentar` vuelve a localizar SOLO esos documentos con el índice ampliado (`indice-bloques.mjs`, opción `ampliado`: filas que terminan en "-") y a extraer con la lista de lo que no sumó y la regla de la columna de Totales para un renglón del estado. Una vez por documento. El camino limpio no cambia (decisión de Guido: las reglas extra son para cuando hay errores).
+- Caso que lo motivó, UC 2025 (lote 04): la nota de segmentos tiene el desglose de "Ingresos Comerciales" y del costo de ventas, pero las filas con "-" partían el cuadro (5.180.336 contra 7.940.492; 20.162.209 contra 20.985.893). Con el índice ampliado el cuadro queda entero.
+- Lote 04: UC 2021 con "Ingresos Comerciales" abierto por la nota de segmentos da CARGA.
+
+## Versión 335 — Desgloses anidados y cuadros por segmento (2026-10-01)
+
+- `localizar.mjs` / `extraer.mjs`: una nota puede desglosar un renglón de otra nota; un cuadro por segmento se usa solo con la columna del segmento que abre un renglón (UC: columna "Comerciales" -> "Ingresos Comerciales"); los cuadros por jugador no se eligen.
+- `verificar.mjs`: `abrirAnidadas()` reemplaza una hoja de una nota por su propio desglose si suma (misma regla de `cerrarNota`), hasta 3 niveles. Probado con las filas de segmentos de UC 2021 agregadas a mano a una copia: "Ingresos Comerciales 6.542.146" se abre en socios, escuelas de fútbol, publicidad, tienda y merchandising; el resultado y la columna del documento 2022 siguen cerrando. Con lo ya extraído, UC 2021 y 2025 no cambian.
+- Guido cambió sus respuestas sobre la nota de segmentos de UC 2021 y 2025: sí se usa como desglose de "Ingresos Comerciales", como en 2022-2024.
+
+## Versión 334 — Lote: documentos testigo; UC 2021 da CARGA (2026-10-01)
+
+- `lote.mjs`: una línea `testigo <pdf>` entra solo hasta extraer (para el chequeo de año vecino de otro documento); no se verifica, categoriza ni propone cargar.
+- Lote 03: UC 2021 verificado contra la columna 2021 del documento 2022 (14.157.951 contra 14.157.952): primera vez que el chequeo de año vecino corre con datos reales. Propuesta de carga: CARGA (resultado −3.538.301, tipo de cambio 844,69 declarado). No se escribió el sitio.
+- Probada y descartada en la misma sesión: "las notas por segmento nunca se eligen". En UC el desglose de "Ingresos Comerciales" (socios, escuelas de fútbol, publicidad, tienda, merchandising) solo está en la nota de segmentos, y 2022-2024 se cargaron con él.
+
+## Versión 333 — Serie oficial del peso chileno (CLP) (2026-10-01)
+
+- `fetch-fx-reference.mjs`: CLP, "dólar observado" del Banco Central de Chile publicado por el SII (HTML público, sin usuario; la API del Banco Central y la de la CMF piden credenciales). 6.666 cotizaciones, 2000-2026, en `tools/fx-reference/clp-usd.json`. `lookup-fx-close.js` y `alta-club.mjs` la conocen.
+- Verificada contra los 12 cierres que declaran UC (2016-2025) y Palestino (2018, 2019): 11 exactos y uno a 0,02, PERO tomando el primer día con dato posterior al cierre (el dólar observado de un día se publica al día siguiente). El lookup de hoy toma el hábil anterior y queda entre 0,04% y 0,85% lejos: decisión pendiente.
+
+## Versión 332 — UC 2025 cargado: primer año del proceso nuevo en el sitio; costo de ventas "sin desglosar" (2026-10-01)
+
+- Universidad Católica 2025 escrito por `cargar.mjs --escribir`: ingresos 25.850.434, gastos 25.665.995, resultado −729.845 (miles de CLP), tipo de cambio 907,13 declarado. Auditoría P0 0 · P1 0. Visto en el sitio local: 28,5 / 28,3 / −0,8 M USD.
+- "Costo de ventas" (20.985.893, sin desglose porque la Nota 20 del documento trae la tabla equivocada) va a `lump_football_operations_expense` ("sin desglosar por la fuente"); sueldos del plantel se ve "—". Marca nueva `fiscalYearMeta.sinDesglose` (renglón, importe, motivo), que la página todavía no lee.
+- `cola.mjs --corregir-categoria`: Guido fija la categoría de una fila aunque la categorización no haya tenido dudas. `cargar.mjs`: escribe `sinDesglose` para toda línea "sin desglosar".
+- Visto y pendiente: "Salarios / Ingresos" muestra 0% para UC 2025 (los sueldos están adentro del costo de ventas).
+
+## Versión 331 — Categoría dudosa a la cola en la etapa 8; UC 2025 da "CARGA" (2026-10-01)
+
+- `cargar.mjs`: una fila con categoría menor a 0,80 va a la cola como pregunta de sí o no, cuenta en las sumas con la categoría propuesta y el documento frena con "N filas esperan categoría" (antes quedaba afuera y frenaba con un "no cierra" engañoso). La respuesta de Guido gana sobre cualquier categoría de esa fila y se guarda en `Admin/categorias-aprendidas.jsonl` con confianza 1 (precedente del club). `cola.mjs`: `casoYRespuesta()`.
+- UC 2025: con las 3 respuestas de Guido (Transporte, Arriendo de Bienes, Provisión No Operacionales -> gastos de administración), la propuesta de carga da CARGA: ingresos 25.850.434, gastos 25.665.995, resultado −729.845 (igual al impreso), tipo de cambio 907,13 del documento. Primer documento del proceso nuevo que llega a "carga". No se escribió el sitio.
+
+## Versión 330 — La etapa 8 imprime un resumen; UC 2025 espera la Nota 20 del club (2026-10-01)
+
+- `cargar.mjs --lista`: imprime siempre el resumen por documento (carga o frena, motivos, avisos) y deja la propuesta completa en `Generados/.../<doc>.carga.json` (sufijo nuevo en `rutas.mjs`). Antes, un lote de un documento imprimía ~400 líneas de JSON.
+- UC 2025: segunda corrida, verificación OK y cola vacía; la carga frena por 3 filas con categoría menor a 0,80. Guido decidió no cargar 2025 hasta tener la Nota 20 (en una línea, sueldos del plantel quedaría en 0).
+
+## Versión 329 — Dudas de la IA como preguntas de sí o no (2026-10-01)
+
+- `localizar.mjs` y `extraer.mjs`: cada duda trae `pregunta` (concreta, se contesta sí o no mirando el PDF) y `propuesta` (sí/no), además del porqué. `verificar.mjs` y `cola.mjs` muestran la pregunta y la propuesta. Pedido de Guido: la cola mostraba explicaciones exploratorias. Dudas en el formato anterior se muestran como antes.
+
+## Versión 328 — Tipo de cambio: con varios valores en una tabla, gana la fecha más nueva (2026-10-01)
+
+- `alta-club.mjs`: si el documento declara más de un tipo de cambio y están en una fila de tabla cuyo encabezado tiene una fecha completa por columna, gana la columna con la fecha más nueva (decisión de Guido). Frases, años sueltos o filas que no se corresponden con el encabezado siguen yendo a la pregunta (cola).
+- Medido sobre los 3.358 documentos: cambia en 11 (UC 2016-2025 y Palestino 2018, verificados contra el .md); Fluminense 2022, Argentinos 2019, Racing 2012, San Lorenzo 2015, Club América 2025, Atlético Nacional 2025 y Rubin Kazan 2025 siguen en la cola.
+- Reglas confirmadas por Guido: gana el tipo de cambio que declara el documento; si no declara, la serie oficial de `tools/fx-reference/` (nunca una cotización dada por Claude).
+
+## Versión 327 — Primer documento por el proceso nuevo (UC 2025); cierre de notas por estructura; HANDOFF corto (2026-10-01)
+
+- Primera corrida real del proceso nuevo, un solo PDF: Universidad Católica (Cruzados) 2025 (`Admin/lote-02.txt`, US$ 0,24). El resultado cierra y la columna 2024 coincide con el sitio; frenó en la carga por la cola y por dos tipos de cambio declarados.
+- `verificar.mjs`: `cerrarNota()` lee la estructura impresa (subtotal que cierra lo de arriba o lo de abajo, renglón suelto en negrita, cuadros de detalle y notas repetidas que no se suman dos veces), con tolerancia de media unidad por fila en vez de 0,5%. Medido en 69 renglones con nota de 27 extracciones: 62 igual, 5 mejoran (UC, Betis, Athletic, Nordsjælland, Levante), Chapecoense deja de "cerrar" 917 contra 912. Filas sin importe ("-") no se cargan.
+- Dudas: `localizar.mjs` y `extraer.mjs` las devuelven con bloques y `afecta_carga`; `verificar.mjs` manda a la cola las de las dos etapas, con página y líneas del bloque, y deja las que no afectan la carga como notas.
+- `cola.mjs`: casos que la última corrida ya no levanta se cierran solos como `obsoleto`.
+- `lote.mjs`: el ensayo ya no llama a extraer de verdad cuando localizar estaba hecho; la etapa 7 no imprime el registro entero.
+- Probada y descartada: elegir el tipo de cambio por el encabezado de la columna (4 errores en 17 documentos).
+- `tools/archivo/`: `localizar-extraer.mjs` y `test-motores.mjs`. `Admin/Archive/`: `MAPA-DE-TOOLS.md` y el HANDOFF largo; `Admin/HANDOFF-pipeline.md` reescrito corto.
+- UC 2025, Nota 20 con la tabla equivocada: a `Admin/dudas-por-club.md` (decisión de Guido: costo de ventas en una línea).
+
+## Versión 326 — La cola humana dice la página del visor y el número impreso (2026-10-01)
+
+- `cola.mjs`: "Abrí el PDF en la página N del visor (la hoja tiene impreso "M" al pie)". El número impreso sale del último renglón de la página en el .md o, si no está, del texto propio del PDF; si no hay, lo dice. Pedido de Guido: buscó "pág. 8" de Bahia en la hoja con el "6" impreso (era otro documento y otra numeración).
+
+## Versión 325 — Índice de bloques: no perder renglones sueltos del estado de resultados (2026-10-01)
+
+- `indice-bloques.mjs`: dentro de un bloque de texto tolera huecos de hasta 3 líneas (blancas, hasta dos líneas de texto sin cifras, o un número de página suelto), y cuenta como fila una línea que termina en 2+ números chicos. Encontrado antes de correr el lote 01: en Bahia 2021 pág. 8 "Outras receitas (despesas), líquidas 64.283" y "Receitas financeiras 77" quedaban fuera de todo bloque, y extraer no los iba a ver.
+- Medido sobre las 2.249 transcripciones: filas en bloques 436.679 -> 485.595, ningún documento pierde filas. Bahia 2021 y 2022 y FC Midtjylland 2021 (bilingüe; antes 0 filas de estado) quedan con el estado de resultados entero en un bloque.
+
+## Versión 324 — El proceso nuevo (localizar, validar, extraer, verificar) con cola humana: tools construidas, sin correr (2026-10-01)
+
+- Diseño acordado con Guido etapa por etapa (riesgos, mitigaciones, cola humana) en `Admin/HANDOFF-pipeline.md`, "El proceso nuevo", junto con lo que falló en los tests y lo que no entró. Se trabaja en lotes de 5; no se corrió ningún piloto (pedido de Guido).
+- Tools nuevas: `indice-bloques.mjs` (localizar por bloque, no por página: el estado puede empezar a mitad de página), `localizar.mjs`, `validar-bloques.mjs` (números contra el PDF: texto propio o lectura de la imagen; solo los bloques elegidos), `extraer.mjs` (escala por bloque, línea del .md, columna del año anterior), `verificar.mjs` (notas por cierre, totales, resultado, año anterior cargado y documento del año vecino: 101 de los 159 años nuevos tienen el documento siguiente transcripto y solo 2 el año anterior cargado), `cola.mjs` (cola humana con qué abrir en el PDF y en el .md; respuestas que la próxima corrida toma), `lote.mjs` (orquesta las etapas 3-8, ensayo por defecto), `claude-llamada.mjs`. `cargar.mjs --desde-verificacion`. `rutas.mjs`: sufijos nuevos.
+- `estado.mjs`: lista los PDFs rotos con el archivo de `fuentes/` a reabrir (antes quedaban como caso cerrado), y el comando del proceso nuevo.
+- Probado gratis: índice de bloques (Köln, PSV), ensayos de costo (lote 01: ~US$ 0,63 + categorización), `verificar.mjs` con datos sintéticos del test por página (Köln y Bournemouth cierran; Forest frena por el resultado). `Admin/lote-01.txt`: Bahia 2021-2023 y Athletic Club 2022-2023.
+
+## Versión 323 — Etapa 6 en el tablero por grupo; test localizar-extraer-verificar con IA (2026-10-01)
+
+- `cargar.mjs --lista` deja su última corrida en `Admin/cargar-ultimo.jsonl`; `estado.mjs` la muestra (6c) por grupo y motivo.
+- Test de la etapa 4 por grupo (266 años cargados, gratis): la selección por palabras reproduce los ingresos de producción (±2%) en 7%, y "solo el estado principal y sus notas" en 11%.
+- `tools/localizar-extraer.mjs` (nuevo, test): Claude localiza las páginas del estado de resultados y sus notas, extrae las filas tal cual y un script verifica (importe literal en la página, escala de la nota deducida del cierre, suma contra producción). 31 años: 5 bien descartados por no tener estado; de 26, ingresos 11 y gastos 18 a ±2% (palabras: 0-1 y 2); 1 de 1.117 importes no literal. US$ 3,52. `rutas.mjs`: sufijos `.localizar.json` / `.extraccion.json`.
+
+## Versión 322 — Grupos de países en el tablero; escala: el "000" de adentro de un número; etapa 6 sobre 159 años nuevos (2026-09-30)
+
+- `tools/grupos-pais.mjs` (nuevo): 12 grupos por marco contable (ARG, BRA, LAT, IBE, GBR, GER, BNL, NOR, EST, MED, ASI, OTR) y, por grupo y etapa, lo propio que ya se vio en documentos reales (pedido de Guido: partir la lógica por país).
+- `estado.mjs`: qué tools hacen las etapas 2, 3 y 4; desglose por grupo debajo de cada estado y en la etapa 6; `--logica [grupo]`.
+- `proponer-carga.mjs detectScale()`: el "000" de adentro de un número ("363,750,000.00", "$1.000.000") ya no dice "en miles" (Almagro 2023, Racing 2012). Sobre 199 años cargados reconstruidos: ingresos x1000 de más 40 -> 9, bien 71 -> 92. Escala única por documento probada en dos variantes y descartada (empeoraba 15 y 7 años: la prosa de la página engaña).
+- Etapa 6 sobre `Admin/piloto-existentes.txt` (159 años nuevos de clubes existentes, categorizados por Guido): 0 cargan; 150 frenan por el cierre de sumas, por tablas que no son el estado de resultados (detalle por grupo y ejemplos en el HANDOFF).
+- HANDOFF: reglas de trabajo de Guido (etapa y para qué al proponer un comando, ejemplos reales, siglas explicadas).
+
+## Versión 321 — Etapa 3 = lo que carga la etapa 6; familia de etiquetas; memoria de respuestas pagas; fila de redondeo (2026-09-30)
+
+- `pipeline.mjs` etapa 3: la lista de rubros (`.rubros.json`) pasa a ser la selección de `seleccionarFilas()` (lo que carga `cargar.mjs`) más cada renglón del estado que se abrió en una nota (`esAncla`); lista vieja solo si la selección falla (`seleccion.ok: false`). Medido en 719 documentos: de 17.266 filas categorizadas, 4.700 no se cargaban nunca y 3.068 que se cargaban no se categorizaban. Regenerado sin API: 429 con rubros (antes 407), 290 sin rubros; selección en 475, lista vieja en 244. Se conserva la glosa de etiquetas ya glosadas.
+- `pipeline.mjs --solo-preparar` ya no corre la etapa 5 (bug: prometía "sin API" y después mandaba todo a Jev y Claude).
+- `proponer-carga.mjs`: no abre en una nota el resultado del ejercicio, el impuesto a las ganancias ni el resultado financiero (van enteros al fiscalYearMeta); su nota se consume sin abrir y sus filas quedan como vistas. Una ventana con una fila de resultado del ejercicio no es desglose de nada. Un estado PRINCIPAL que repite importes ya vistos es una copia (Sandefjord 2019, controladora + consolidado de Brann y Parma). Cada fila lleva su sección. Contra la selección anterior (719 documentos, gratis): 85 cambian, ningún documento deja de cerrar contra un total impreso y 7 empiezan a cerrar.
+- `vocabulario.mjs`: `FINANCIERO_RE`, `IMPUESTO_GANANCIAS_RE`, `IMPUESTO_SOLO_RE` (mudados desde cargar.mjs); "totaalresultaat", "resultaat (van het) boekjaar"; `claveFamilia()` / `mismaFamilia()`.
+- Precedente por FAMILIA de etiquetas (`precedenteFamilia()` en categorizar-claude.mjs, usado también por cargar.mjs; pedido de Guido): sin número de nota, numeración, markdown ni traducción `<br>`, hasta 1 letra de diferencia (10+ caracteres) o 2 (20+); el paréntesis final (el sector) tiene que coincidir si las dos lo tienen. Contra producción (7.098 líneas): 110 líneas más con 96,4% de acierto con lado conocido; sin lado (antes no había precedente) exacto 99,7% y familia estricta 60 más con 100%.
+- `tools/respuestas-cache.mjs` (nuevo): toda respuesta de Jev y de Claude por (club, lado, rubro) en `Generados/_cache/`; `jev-categorizar.mjs` y `categorizar-claude.mjs` no vuelven a preguntar lo ya contestado (`--sin-cache` sí). Resuelve pagar dos veces tras cada cambio de listas y que Jev no sea determinista. Sembrada con lo ya pagado: 12.348 respuestas de Jev, 977 de Claude.
+- `cargar.mjs`: fila explícita "Diferencia de redondeo" cuando un total impreso difiere de la suma solo por redondeo (menos de media unidad impresa por fila; decisión 3 de Guido), y el resultado se vuelve a buscar con ella. Decisión 1 (Claude < 0,80 aunque cierre el resultado): no se carga; decisión 2 (`por-resultado`): se acepta, doble chequeo propuesto.
+- `Admin/piloto-existentes.txt`: los 159 documentos con rubros de clubes que ya están en el sitio.
+
+## Versión 320 — Etapa 6: `tools/cargar.mjs`, probada de punta a punta (2026-09-30)
+
+- `tools/cargar.mjs` (nuevo): carga un año nuevo de un club existente; `--propuesta` / `--escribir` (reversión automática si audit.js da P0/P1, probada) / `--comparar`. Frena con motivo escrito si falta algo (anual, categorías al día, fx, liga, cierre de sumas contra los totales impresos). Backtest sobre 18 ejercicios cargados reconstruidos: 1 idéntico a producción (Alianza Lima 2023), 17 frenados con motivo, ningún número falso; PSV 2019-20 carga con `--umbral-claude 0.7`. Informe y lista de problemas de etapas anteriores: `Admin/tests/test-cargar.md`.
+- `proponer-carga.mjs`: exporta `seleccionarFilas`, `briefingFor`, `loadSite`, `parseNumber` (el CLI no corre al importarse); marca el ancla de cada fila; `esNoPL()` descarta flujos de fondos y tablas de balance. `periodo.mjs`: reconoce temporadas "AAAA-AA" (nombreNoCoincide 226 -> 15).
+- Gasto de API del test: ~US$ 1,60 (quedó en el log del worktree borrado, no en `Admin/claude-api/resultados.jsonl`).
+
+## Versión 319 — Memoria de categorías: lo que Claude resuelve y Jev no sabía queda para la próxima (2026-09-30)
+
+- Sembrada con 148 rubros de 61 documentos. Bug encontrado al sembrar: respuestas viejas traían el club equivocado (el Athletic Club brasileño como 'athleticclub', el de Bilbao) y los clubes nuevos tienen id provisorio: la memoria recalcula el club desde la carpeta del documento con `carpetas-clubes.mjs` al leer.
+- `inventario-transcripciones.mjs --verificar --estado <x>`: revalida solo los de ese estado. Pasos gratis corridos: los 7 `sin-verificar` revalidados; los 43 validados sin preparar (memorias de más de 100 páginas, que `--max-paginas` dejaba afuera) preparados: 3 con rubros, 2 sin rubros, 38 `sin-tablas` (transcripciones viejas sin tablas: hay que rehacerlas con Mistral, pago).
+- `tools/memoria-categorias.mjs` (nuevo) + `Admin/categorias-aprendidas.jsonl`: cada rubro que Claude por API categoriza con confianza >= 0,80 queda registrado (club, año, lado, rubro, glosa, categoría, confianza, motivo, qué decía Jev). Pedido de Guido: "debería quedar documentado para que Jev la próxima vez sepa".
+- `categorizar-claude.mjs`: registra lo que resuelve; usa lo aprendido con >= 0,90 como PRECEDENTE del mismo club (escalón 0, gratis: el año siguiente no vuelve a pagar el mismo rubro) y lo aprendido con >= 0,80 como contexto y ejemplos. `jev-categorizar.mjs --listos`: lo aprendido entra entre los ejemplos parecidos que ve Jev. Lo cargado en el sitio siempre gana; los backtests no usan la memoria. `--sembrar` la llena con los `.categorias.json` ya hechos.
+
+## Versión 318 — Tablero del inventario (`tools/estado.mjs`) y tools/ fuera del deploy (2026-09-30)
+
+- `tools/estado.mjs` (nuevo, gratis): por estado, cuántos PDFs, qué significa, qué le falta, con qué comando se avanza y cuánto cuesta; detalle de los que tienen rubros (categorización al día, club en el sitio o nuevo, no anuales, reservas) y de las altas. `--actualizar` regenera el registro antes.
+- `tools/estado.mjs` reorganizado por etapas del proyecto (1 conseguir ... 7 en el sitio), con los estados en 0 (pedido de Guido). HANDOFF reescrito al cierre de la sesión.
+- `netlify.toml`: `rm -rf tools` (pedido de Guido: "no publiquemos tools"); ninguna página carga nada de `tools/`.
+
+## Versión 317 — Los archivos generados salen de Clubes/: todo derivado vive en Generados/ (2026-09-30)
+
+- `tools/rutas.mjs` (nuevo): la única regla de dónde vive un derivado de un documento. `Clubes/<País>/<Club>/` queda SOLO con el PDF y su `.md`; los derivados (`.briefing.json`, `.rubros.json`, `.jev.json`, `.categorias.json`, `.previo-*.md`, `.antes-sumas.md`, `.mistral-redo.md`, `.gemini-check.md`, `.claude-check.md`, `.t-*.md`) van a `Generados/<País>/<Club>/` con la misma ruta relativa (gitignoreado). `ubicar()` traduce las rutas viejas que guarda el historial.
+- 17 tools pasaron de armar la ruta a mano (~45 lugares) a `derivado()`: los tres transcriptores (con `--out-suffix`), resolver, pipeline, prepare-onboarding, onboard, inventario, huellas, jev, categorizar-claude, glosar, proponer-carga, chequeos-gratis, revisar-reservas, test-motores.
+- Mudanza (`node tools/rutas.mjs --mudar --aplicar`): 2.704 archivos movidos, ninguno borrado (varios son caché de APIs ya pagadas o evidencia de correcciones). Las 10 transcripciones `-mistral-test.md` del test de costo del 26/09, que estaban trackeadas, se movieron con `git mv` a `Admin/test-costo-transcripcion/mistral-test/`.
+- Informes de tests (`Admin/test-*`, 37) a `Admin/tests/`; las tools que los escriben y los documentos vivos apuntan ahí. Quedan en `Admin/` `test-costo-transcripcion.md` (+ su carpeta) y `test-barridos.md` porque los citan `CLAUDE.md` y dos skills (mover sus referencias en las skills requiere el OK de Guido).
+- Verificado: una "foto" sin API del estado (resumen, ensayos del pipeline, del resolver, de Jev y Claude, revisar-reservas, chequeos-gratis --prueba, gasto, periodo, altas) tomada con el código y los archivos de antes es IDÉNTICA a la de después.
+
+## Versión 316 — Vocabulario contable en 29 idiomas en un solo módulo (2026-09-30)
+
+- `tools/vocabulario.mjs` (nuevo): por concepto (título de estado de resultados, ingresos, gastos, impuestos, resultado, total al comienzo y al final, total de ingresos, resultado del ejercicio, flujo de efectivo, cambios en el patrimonio, saldo inicial, balance, total del activo/pasivo, columna de notas / código de fila) los términos en 29 idiomas (es, pt, en, de, fr, it, nl, da, no, sv, fi, cs, sk, pl, hr/bs/sr, sr cirílico, sl, hu, ro, bg, el, tr, ru, uk, zh, ja, ko, ar, he), con límites de palabra y UNA normalización (`normalizar()`). `pipeline.mjs`, `extract-table-rows.mjs`, `filas-rubro.mjs`, `proponer-carga.mjs` y `chequeos-gratis.mjs` toman el vocabulario de ahí; la lógica de cada tool no cambió.
+- Bugs de vocabulario arreglados (medidos): "venta" encontraba "inventario" (91 tablas de notas de activo/inventario entraban como rubros); "oneri", "costi", "custo", "cost", "tulos", "ertr" dentro de otras palabras; la ı turca y el Hangul coreano nunca coincidían (Beşiktaş 0 -> 93 rubros, Jeju SK 0 -> 34); la columna "Код рядка" (código de fila ruso/ucraniano) se tomaba como importes; estados de resultados españoles que no entraban (Barcelona 2015-16 0 -> 49, Getafe 3 -> 55, Celta 2 -> 42); ligaduras de PDF ("Deﬁcit").
+- Medido sobre 1.061 `.md` (Admin/test-vocabulario.md): documentos con estado de resultados 675 -> 684, `listo-para-jev` 621 -> 631, rubros 30.083 -> 30.949, rubros con lado 76% -> 81%, lado contradictorio con producción 4,90% -> 4,83%. Los 150 documentos que perdieron filas las perdieron por falsos positivos, flujo/patrimonio o totales reconocidos; los 17 que duplicaron son estados de resultados reales (revisados uno por uno). Re-preparados los 713 documentos del inventario (sin API). `chequeos-gratis.mjs --prueba` sigue en 196/196 errores reales detectados en páginas con números.
+- Pendiente: Japón (14 documentos) sigue sin ningún estado de resultados reconocido; sv, fi, sk, pl, sr, sl, hu, ro, bg, ar y he están en el vocabulario pero sin documentos para medirlos. Los `.jev.json`/`.categorias.json` de los 404 documentos re-preparados quedaron desactualizados (la huella lo detecta): la próxima categorización los rehace (Jev + Claude por API).
+
+## Versión 315 — Ligas y países de los clubes nuevos en el catálogo; liga por la categoría al cierre y nombres sin palabras genéricas (2026-09-30)
+
+- `data/leagues.js`: 11 países (AT, CH, CN, CZ, EC, IT, KR, NO, PT, RU, TR) y 25 ligas (Serie A/B de Italia, Eliteserien, Primeira Liga, Süper Lig, K League, Eerste Divisie, League One/Two...) agregados ANTES de tener ejercicios cargados. Decisión de Guido ("no pasa nada si están vacías"), que cambia la regla del archivo ("ni una liga sin ejercicios"); anotada en el comentario. Verificado en el navegador: la pestaña Ligas las lista y una liga vacía muestra "todavía no hay ejercicios". ASSET_V 292 -> 293, generadores regenerados.
+- `alta-club.mjs`: (1) temporada por "la categoría al CIERRE del ejercicio" (regla de la Versión 132): en una liga de temporada partida, un ejercicio que cierra entre julio y diciembre usa la temporada que empezó ese año (antes Atalanta 2020, Sassuolo 2021, Genoa 2022, Thun 2019 y los rusos recibían la anterior); (2) nombres comparados sin palabras genéricas (FC, AC, SK, NFC...) y una coincidencia parcial ÚNICA en la temporada vale ("AC Milan" = "Milan", "OFI Crete" = "OFI", confirmado por Guido); (3) `data/leagues.js` en la huella del registro de altas. Liga resuelta: 17 -> 63 de 150 carpetas con `.md`; ninguna duda de nombre pendiente.
+- Rosters: 146 liga-temporadas de 13 países más (`tools/club-league-reference/`); "co-primeraa" unificada con "co-primeraA".
+- Bug encontrado: correr `alta-club.mjs --todos` SIN `--claude` descartaba del registro las respuestas de Claude ya pagadas (quedaban 12 de 36). Recuperadas desde git y recalculado con `--claude --tope-usd 0` (reusa sin pagar): 78 listos para alta. Arreglado: las respuestas anteriores viajan en `claudeAnterior` hasta que una corrida con `--claude` las reemplace.
+
+## Versión 314 — Período de cada documento leído del contenido: trimestral, semestral, anual calendario o temporada (2026-09-30)
+
+- `tools/periodo.mjs` (nuevo, gratis): tipo de período (anual calendario / temporada, trimestral, semestral, nueve meses, bimestral, intermedio, otro), meses, cierre y la cita que lo sostiene, leídos de los TÍTULOS de las primeras páginas en ~15 idiomas ("three months ended", "Üç Aylık Ara Hesap Dönemi", "01.01.2018 bis 30.06.2018", "13 month period ended"); avisa si el nombre del archivo dice otra fecha. `--grupos` lista por club y año los períodos parciales para juntarlos cuando lleguen los demás.
+- Primera versión medida sobre 2.249 `.md`: 58 "intermedio" casi todos falsos ("intermediação de atletas", "segundo semestre" en prosa). Con frases completas y solo títulos: 16 no anuales, todos casos reales (Galatasaray T1 2019, América trimestral, Osasuna intermedios, RB Leipzig y OH Leuven 6 meses, Westerlo 18, Midtjylland y Wolves 13, Gaziantep 7) + 2 dudosos (U. de Chile anual con columnas trimestrales, Real Madrid).
+- `inventario-transcripciones.mjs`: campo `periodo` por PDF en `Admin/transcripciones-estado.jsonl`.
+
+## Versión 313 — La aritmética decide las páginas "con reserva": sumas verticales y horizontales (2026-09-30)
+
+- `chequeos-gratis.mjs`: `respaldoFilas()` (nuevo): en tablas de movimiento (saldo inicial + altas - bajas = saldo final) una celda es igual a una combinación con signo de las demás de su fila. `respaldoSumas()` exportada.
+- `resolver-inventario.mjs`: el desempate por aritmética usa celdas respaldadas por sumas verticales y horizontales (antes `tieScore()`, que solo veía filas "total" y había decidido 2 de 1.190 páginas); gana la lectura que le saca >= 3 celdas a la segunda. También se aplica cuando Gemini rechaza la página y solo quedan dos lecturas (antes ganaba Claude directo, con reserva).
+- `tools/revisar-reservas.mjs` (nuevo, gratis): aplica ese criterio a los documentos ya resueltos. Sobre 163 páginas con reserva (31 documentos): 44 confirmadas por sumas, 10 CORREGIDAS (la lectura anterior cerraba sumas y la elegida no; Rubin Kazan 2025 págs. 14 y 32 entre ellas), 109 siguen con reserva. Aplicado; el `.md` anterior queda en `<nombre>.antes-sumas.md` (gitignoreado).
+
+## Versión 312 — Piloto D: estados de resultados sin título en la tabla, etiqueta en la segunda columna, flujo de efectivo y patrimonio fuera, lado en ucraniano/checo/turco (2026-09-30)
+
+- Piloto D (`Admin/piloto-d.txt`, 10 PDFs): US$ 1,73 de transcripción y validación + US$ 0,42 de categorización; PDFs con texto validados 100% gratis (Athletic Club, Fortaleza CEIF, Vitória Guimarães, Rubin 2023: 0 páginas a Claude); las carpetas que antes caían en otro club resolvieron bien; 69% de rubros categorizados solos (bajado por los formularios en cirílico, con muchas filas que no son rubros).
+- `extract-table-rows.mjs`: en formularios oficiales (checo, ucraniano, ruso) la primera columna es un código ("I.", "A.") y el rubro está en la segunda: se toma la segunda como etiqueta. Nuevo `filasDeResultados` (>= 3 filas con palabras de ingresos/gastos); NO cambia `likelyRelevant` (probado así: Real Madrid 32 -> 253 rubros, Polissya 0 -> 200).
+- `pipeline.mjs`: una tabla con filas de resultados en una página cuyo TÍTULO (línea corta fuera de tablas) es de estado de resultados cuenta como estado de resultados (Baník 1997: 3 -> 31 rubros; Polissya 0 -> 56; Galatasaray 0 -> 48). Los estados de flujo de efectivo y de cambios en el patrimonio se excluyen (Karpaty 60 -> 41).
+- `filas-rubro.mjs`: palabras de ingreso/gasto en ucraniano, checo y turco (filas con lado: Karpaty 11 -> 24 de 41, Polissya 12 -> 26).
+- Pendiente anotado: Fortaleza CEIF 2025 trae solo notas (sin estados) pero la nota 19 abre los ingresos; hoy queda `sin-rubros`.
+
+## Versión 311 — Registro de altas por script y preguntas del alta resueltas por Claude con cita verificada (2026-09-30)
+
+- `tools/altas-registro.mjs` (nuevo) + `alta-club.mjs --todos`: `Admin/altas-club.jsonl`, una línea por carpeta de club nuevo con estado (`listo-para-alta` / `con-preguntas` / `faltan-datos` / `existe`), preguntas, pendientes y la huella de sus entradas (`.md`, series de fx, rosters, `data/clubs.js`); si algo cambia, se recalcula solo. `pipeline.mjs --resumen` lo muestra. Hoy, de 212 carpetas: 77 listos para alta, 63 con preguntas, 72 esperando datos (63 sin `.md`).
+- `tools/alta-claude.mjs` (nuevo, `alta-club.mjs --claude`): las preguntas del alta (perímetro, tipo de documento, cierre, moneda, nombre legal) van a Claude por API, una llamada por club, y cada respuesta tiene que traer una cita textual que el script verifica en la página del `.md`; sin cita verificada no se da por resuelta. Backtest sobre 13 club-años cargados: 60/62 coinciden con producción (los 2 restantes son de convención de nombre), 71/71 citas verificadas, US$ 0,088 por club. Corrida real: 36 carpetas, US$ 1,73, 17 pasaron a listo. `--dudas` lista lo que queda (12, casi todo criterio de perímetro); no escribe en `dudas-por-club.md`. Informe: `Admin/test-altas-claude.md`.
+- La liga ya no bloquea el alta (queda `null` con nota); `alta-club.mjs` usa `carpetas-clubes.mjs`; rangos plausibles de fx ajustados a las series reales (TRY [0,5; 70]).
+
+## Versión 310 — Lotes de Claude de hasta 8 páginas (2026-09-30)
+
+- `resolver-inventario.mjs`: Claude recibe como máximo 8 páginas por llamada. Una página densa de escaneo son ~2.300 tokens de salida (Real Madrid 2005-06: 18 páginas = 41.763 tokens, US$ 0,45) y el tope es 64.000: con lotes de 18-25 páginas un intento se cortaba por `max_tokens`, se pagaba y se tiraba. El costo por página no cambia.
+
+## Versión 309 — Una sola regla carpeta -> club, vigilada por audit.js; el registro marca lo pagado sin .md (2026-09-30)
+
+- `tools/carpetas-clubes.mjs` (nuevo): el club de `Clubes/<País>/<Club>/` sale de la cita en `data/<id>-data.js`, y si no la hay, de un nombre IGUAL entre los clubes del mismo país; si no, es club nuevo. `onboard.mjs` (y con él `--quien`, el registro y el pipeline) la usa en vez de `guessClubId()` (substring, sin país).
+- Medido con la regla vieja: 17 carpetas de clubes del sitio quedaban ambiguas (Racing = Racing Club y Genk; Nacional = Internacional y Atlético Nacional) y 11 caían en un club EQUIVOCADO (Porto -> Grêmio, Inter -> Internacional, Lazio y Rubin Kazan -> AZ, Braga -> Bragantino, Vitória Guimarães -> Vitória, Independiente Rivadavia -> Independiente). En el registro: 15 PDFs figuraban "ya cargados" sin estarlo y 87 figuraban pendientes estando cargados (316 -> 388 cargados).
+- `audit.js`: P1 `carpeta-club-ambigua` (salvo carpetas de agregado `_*`), P2 `club-sin-carpeta`.
+- `inventario-transcripciones.mjs`: un `sin-md` con transcripción de Mistral registrada dice "PAGADO SIN .md" en el detalle (21 PDFs).
+- Tipos de cambio locales para NOK (Norges Bank), CZK (ČNB), TRY (TCMB), RUB (Banco de Rusia), UAH (NBU), CHF y KRW (Reserva Federal H.10), 2000-2026, en `tools/fx-reference/` (`fetch-fx-reference.mjs`, `lookup-fx-close.js`, `alta-club.mjs`). Verificados contra los tipos declarados en Krasnodar 2020/2021 y Fenerbahçe 2020 (exactos) y contra el BCE día por día (mediana < 0,3%; las diferencias grandes son crisis o tipos oficiales fijos).
+
+## Versión 308 — La etapa 5 solo toca los documentos de la corrida; resultados derivados con huella; lotes de Claude que exceden el tope se parten (2026-09-30)
+
+- Bug del piloto C: la etapa 5 del pipeline tomaba TODOS los `listo-para-jev` del inventario; `categorizar-claude.mjs` mandó 44 documentos a Claude (US$ 1,90) con `.jev.json` hechos sobre la lista de rubros anterior a la Versión 307 antes de que se cortara. Ahora `pipeline.mjs` pasa `--lista` (los documentos de la corrida) a `glosar-rubros`, `jev-categorizar` y `categorizar-claude`.
+- `tools/huellas.mjs` (nuevo): `.jev.json` guarda la huella de su `.rubros.json`, y `.categorias.json` la de los dos. Una etapa rehace su salida si la huella falta o no coincide; Claude no recibe un documento cuyo `.jev.json` está desactualizado. Los documentos preparados sin categorizar entran solos en la siguiente corrida (`needsCategorize`).
+- `resolver-inventario.mjs`: un lote que Claude corta por `max_tokens` se reparte en mitades (Real Madrid 2005-06: 18 páginas densas en un lote dejaban el documento en `revisar`).
+- `glosar-rubros.mjs --listos` ya no saltea las listas con un `.jev.json` viejo.
+- Piloto C: el estado de resultados ucraniano en nominativo ("ФІНАНСОВІ РЕЗУЛЬТАТИ") y el turco ("Kar veya Zarar", "Hasılat") no se reconocían (Polissya y Galatasaray quedaban `sin-rubros`): regex en `pipeline.mjs`, `proponer-carga.mjs` y `extract-table-rows.mjs`. El año de un club que `onboard.mjs` no identifica se tomaba del PRIMER año del nombre ("2023-24" -> 2023): ahora el de cierre, misma regla que `guessYear()`. `gasto.mjs` ya no cuenta dos veces el Mistral que el resolver hace adentro de la validación.
+
+## Versión 307 — Validación paga solo en páginas con números y dudosas, Claude después de Jev, alta de club por script, tabla por ancla, lado corregido (2026-09-30)
+
+- `tools/paginas-con-numeros.mjs` (nuevo, gratis): decide con el `.md` de Mistral qué páginas tienen cifras de carga. Sobre 222 ejercicios cargados elige el 58% de las páginas y cubre el 99,7% de los importes de producción. Con `pdftotext` rinde menos y no sirve en el 23% de los PDFs (escaneo o mojibake). Informe: `Admin/test-seleccion-paginas.md`.
+- `tools/chequeos-gratis.mjs` (nuevo, gratis): cascada por página (texto del PDF, sumas de la tabla, columna del año anterior en producción, balance). Sobre 104 documentos ya resueltos: 163 de 163 páginas con números con error real quedan `dudosa`, ahorro ~49% del costo. La regla "una tabla que cierra valida la página" se descartó (dejaba pasar 37 páginas con error). Informe: `Admin/test-chequeos-gratis.md`.
+- `resolver-inventario.mjs`: Gemini y Claude solo reciben las páginas `dudosa` de la cascada; la prosa no se paga. Bug arreglado: en un escaneo con lista de páginas chica, Gemini recibía el PDF entero.
+- `tools/categorizar-claude.mjs` (nuevo) y etapa 5b de `pipeline.mjs`: precedente del club, Jev >= 0,90, y el resto a Claude por API (Opus 5.5, una llamada por documento, con las líneas ya cargadas del club); se acepta >= 0,80. Backtest sobre 3.975 rubros: 80,2% automático con 94,5% de acierto (Jev sola: 69,4% con 94,4%), ~US$ 0,015 por documento. Deja `<md>.categorias.json`. Informe: `Admin/test-categorizar-claude.md`.
+- `tools/alta-club.mjs` (nuevo): propone la entrada de `data/clubs.js`, moneda, cierre del ejercicio, tipo de cambio, liga, perímetro; `--escribir` solo sin preguntas abiertas, con reversión si `audit.js` da P0/P1. Sobre 141 clubes nuevos: 75% de campos `ok`, 39% escribibles hoy. Todavía no está en el pipeline (el alta va con la carga del primer año). Informe: `Admin/test-alta-club.md`.
+- `proponer-carga.mjs`: estrategia `--tabla ancla-listas` (default): carga la nota cuyas filas suman la línea del estado de resultados. Sobre 92 ejercicios: ingresos bien ubicados 54% -> 64% (mediana 63% -> 77%), ingresos cargados de más 53% -> 20%; gastos sin cambio (55%). Informe: `Admin/test-eleccion-tabla.md`.
+- `filas-rubro.mjs` + `pipeline.mjs`: lado ingreso/gasto corregido (resultados con palabra de gasto, columna "Notas" tomada como importes, "rendimentos"). Contra producción, 913 filas: contradicciones 67 -> 27. `pipeline.mjs` usa `columnaDeImportes()`; `--repreparar` ya no crea marcas `sin-tablas`.
+- `tools/gasto.mjs` (nuevo, gratis): gasto por motor, día y documento; lista lo pagado cuyo `.md` no está en disco (25 transcripciones, US$ 5,01). Cuenta una sola vez las validaciones que el pipeline vuelve a escribir.
+- Gasto de API de los tests: Claude US$ 5,62, Mistral US$ 2,75, Jev ~US$ 0,3.
+
+## Versión 306 — Piloto de 9 documentos de punta a punta: Gemini página por página, PDFs dañados, filtro de filas, lado por estructura, glosa para Jev (2026-09-30)
+
+- `tools/reparar-pdf.mjs` (nuevo): diagnostica y arregla PDFs antes de gastar API. `qpdf` reconstruye los dañados recuperables; las páginas con imágenes de más de 8000 px (Thun: 128x105.696, Mistral respondía HTTP 400) se rasterizan en una copia; un PDF truncado (PEC Zwolle) queda como `no-es-pdf` con el link de `fuentes/` para volver a bajarlo. Conectado a `mistral-ocr-transcribe.mjs` y a `resolver-inventario.mjs`. Thun 2019 verificado: 20 de 20 páginas por $0,08.
+- `resolver-inventario.mjs`: cuando Gemini rechaza un documento entero por RECITATION (124 de 141 fallos registrados), se prueba página por página (medido: Ituano 7/8 aceptadas, Alverca 21/29, Start 17/17, Sandefjord 16/16) y Claude recibe solo las rechazadas. Antes recibía el documento entero (~$0,016 por página contra ~$0,003 de Gemini).
+- `pipeline.mjs`: la etapa 5 usaba el registro viejo y los documentos preparados en la misma corrida quedaban sin categorizar hasta la siguiente; ahora lo regenera antes. `--repreparar` ahora sí rehace los que ya tenían lista de rubros. `STATEMENT_RE` no reconocía "Rendimentos e gastos" (SNC portugués): Alverca quedaba con 0 rubros.
+- `tools/filas-rubro.mjs` (nuevo, gratis): descarta filas que no son rubros (números sueltos, subtotales detectados por suma, resultados, metadatos) y deduce el lado ingreso/gasto por la estructura de la tabla. Rosenborg pasó de 10 a 57 filas con lado.
+- `tools/glosar-rubros.mjs` (nuevo, ~$0,001 por documento): glosa en español de cada rubro para que la búsqueda de ejemplos parecidos funcione en idiomas que el sitio no tiene. Sobre 7 documentos: Jev con confianza >= 0,90 pasó de 30% a 39,5%.
+- `proponer-carga.mjs`: `--solo-totales`, `--sin-filtro`, `--con-escape`, `--etiqueta`. Hallazgo: el 14% de "total impreso = oficial de producción" no es un bug del detector, en 23 de 35 ejercicios el total de producción no está impreso (definiciones curadas: Dortmund usa HGB de la KGaA, Fluminense suma las líneas ordinarias). Ofrecerle `no_es_rubro` a Jev no ayudó (68% / 60% contra 67% / 60%).
+
+## Versión 305 — Inventario de transcripciones: registro de quién hizo cada `.md`, validación gratis contra el texto del PDF, y resolución paga solo de las páginas dudosas (2 pilotos, 21 documentos)
+
+- **`tools/verify-numbers.mjs`**: compara los números de un `.md` contra el texto interno del PDF (`pdftotext`),
+  sin depender del formato de tablas. Detecta cifras mal leídas (dígito distinto, mismo largo) y `.md`
+  incompletos; "no aplica" en escaneos o texto ilegible (cobertura < 25%). Bugs encontrados al calibrarlo:
+  pegaba columnas contiguas (`133.816 189.064` como un solo número) y una referencia de nota con su importe
+  (`13 228.106`); ignora cifras redondas al buscar "casi iguales".
+- **`tools/inventario-transcripciones.mjs`**: registro `Admin/transcripciones-estado.jsonl` (regenerable): por
+  cada PDF con `.md`, motor/modelo/fecha/costo de quien lo hizo (de los logs de las APIs; "legado" = anterior a
+  las APIs), otras versiones que existen, si el ejercicio ya está cargado y estado de validación (`cargado`,
+  `listo`, `revisar`, `pendiente-segunda-voz`, `reintentar`, `sin-verificar`). Las validaciones se guardan en
+  `Admin/transcripciones-verificaciones.jsonl` (solo se agrega, con hash del `.md`: si el archivo cambia, el
+  estado vuelve solo a sin-verificar). NO se escribe dentro de los `.md`. Resultado inicial sobre 2.166 PDFs
+  con `.md`: 276 cargados, 598 listos sin gastar API, 561 a revisar, 730 escaneos pendientes de segunda voz.
+  Hallazgo: los `.md` viejos (Tesseract/subagentes) tienen cifras mal leídas en ~42% de los casos con texto,
+  también entre los ya cargados (el dato del sitio se corrigió a mano; el `.md` quedó con el error).
+- **`tools/resolver-inventario.mjs`**: la fase paga, con `--ejecutar` (sin él es un ensayo con estimación de
+  costo), `--dir`, `--lista`, `--limit`, `--estado`, `--concurrencia`. Claude ve SOLO las páginas dudosas
+  (recortadas con qpdf). PDF con texto: páginas cuyos números no cierran con el texto del PDF -> Claude -> revalida;
+  si sigue mal o más de la mitad no coincide, el texto del PDF no es confiable y pasa a comparar voces.
+  Escaneo: Gemini entero como segunda voz -> Claude solo en páginas que difieren -> voto entre voces por página
+  (un número gana si está en 2 voces) -> cuarta voz (Mistral, solo en esas páginas) si sigue sin consenso; si
+  Gemini rechaza por RECITATION, Claude transcribe entero y Gemini desempata página a página; si también rechaza
+  la página, gana Claude y queda como `reserva` (cerrar con sum-check al onboardear). Cada página reemplazada
+  queda registrada con su motor. Fallos por crédito/límite/red: espera con backoff creciente y reintenta el MISMO
+  motor, deja el documento en `reintentar` y corta la corrida tras 3 seguidos.
+- **`tools/test-motores.mjs`** + `Admin/test-motores-lista.txt` / `test-motores-resultados.md`: test de los 3 motores
+  sobre 15 PDFs. Claude por API: 15/15, 0 bloqueos, ~$0,016/pág.; Gemini rechazó 7/15 (5 de 6 escaneos, incluidos
+  balances numéricos, no solo memorias); Mistral leyó mal cifras en Ponte Preta aunque el PDF tiene texto.
+- **`tools/compare-transcripts.mjs`**: ignora la columna "Nota", celdas vacías, símbolos de moneda y una columna de
+  más en un lado (antes: ~280 discrepancias falsas en 15 documentos, ahora 33, casi todas errores reales del `.md` viejo).
+- **`tools/claude-api-transcribe.mjs`**: parte PDFs de más de 25 páginas o más de 20 MB en tramos (antes una memoria
+  de 88 páginas se guardó cortada en la 46 sin avisar); nunca guarda una transcripción truncada por `max_tokens`;
+  `qpdf` código 3 (éxito con advertencias) ya no cuenta como fallo.
+- Bugs del piloto ya corregidos: decidir por página aceptaba un error de Claude cuando Mistral y Gemini coincidían
+  (Almagro 2018); texto de PDF roto (Ferro 121, Cuiaba) gastaba Claude en vano; PDFs de 34 MB superaban el límite de
+  la API (Temperley: una página de 25 MB se rasteriza a 130 dpi -> 170 KB).
+- Pilotos: 21 documentos de 14 países, todos `listo` (algunos con `reserva`), ~$5,20 de API.
+- **Bugs de las tools de onboarding encontrados corriéndolas (gratis) sobre los 21 documentos del piloto:**
+  - `tools/onboard.mjs` `guessYear()`: una fecha ISO en el nombre (`...-2025-12-31.pdf`) se leía como el rango
+    "2025-12" -> **2012**, y `2011-06-30` como 2006. Efecto real: **26 ejercicios ya cargados** (Bélgica 2025-06-30,
+    Dinamarca, etc.) figuraban como pendientes, así que un `--all` los habría re-transcripto y pagado de nuevo. Corregido
+    (fecha ISO = año de cierre; un sufijo de 2 dígitos solo es rango si es el año siguiente). Cargados en el registro: 276 -> 302.
+  - `tools/prepare-onboarding.mjs` tie-out: en un balance con jerarquía sumaba subtotales Y sus rubros (cada peso dos veces:
+    la "diferencia" daba exactamente el total). Ahora, si no cierra, prueba sin las filas en negrita y solo con ellas
+    (cierre exacto obligatorio), y tolera ±redondeo en documentos de importes enteros. Fallos falsos en los 21: 244 -> 107;
+    los que quedan son totales encadenados/jerárquicos sin negrita (límite conocido), y las cuentas de los documentos cierran a mano.
+  - `tools/extract-table-rows.mjs` `RELEVANT_KEYWORDS`: solo reconocía ingresos/gastos en ES/IT/EN/NO/GR sin acentos, así que en
+    balances en alemán, croata, francés/neerlandés, danés y portugués no marcaba NINGUNA tabla como relevante y el precedente de
+    categorías se omitía en silencio (0 de 13-35 tablas en Mönchengladbach, Hamburger, Dinamo, Gorica, Anderlecht). Ampliada y
+    comparada sin acentos/diéresis: pasan a 2-12 tablas relevantes y calculan precedente.
+  - Probado y DESCARTADO (revertido): ignorar en `suggest-category-precedent.mjs` las palabras genéricas de un club para el nivel
+    PARECIDO. No arregló el caso real (Dinamo: "Prihodi od ulaznica" = entradas, emparejado con derechos de TV "Prihodi od prava
+    emitiranja" al 50%) y empeoró Ferro (más emparejamientos entre ingreso y egreso del mismo nombre). PARECIDO seguirá siendo baja
+    confianza por diseño; la mejora de fondo es Jev (to-do 99).
+  - Piloto de 44: los `Syntax Error` que inundaban la terminal eran mensajes de poppler (`pdftotext`/`pdfinfo`) leyendo PDFs
+    dañados, no bugs del código; `execFileSync` los heredaba a la pantalla. Ahora se silencian (`stdio` sin stderr). Bug real
+    del mismo piloto: `qpdf` devuelve código 2 en un PDF dañado (DNCG Francia 2018-19) y el resolver lo marcaba `revisar`;
+    ahora cae a `pdfseparate` + `pdfunite` (poppler, más tolerante).
+  - **`tools/pipeline.mjs`: el comando único de punta a punta** (`node tools/pipeline.mjs --ejecutar [--limit N] [--dir ...] [--lista ...]`,
+    sin `--ejecutar` es un ensayo con estimación de costo; `--resumen` muestra el estado sin correr nada). Toma los PDFs no cargados en
+    el sitio que no tienen `.md` o tienen uno sin confirmar; Mistral transcribe los que no tienen; `resolver-inventario.mjs` valida; las
+    tools gratis de onboarding preparan la lista de rubros; y deja `<md>.rubros.json` (gitignoreado) con la marca `listo-para-jev`, o
+    `sin-rubros` (actas, memorias narrativas). NO categoriza rubros (eso es Jev, to-do 99). Probado de verdad con 3 documentos
+    (uno sin `.md`, uno sin confirmar, uno ya validado). El registro pasó a incluir los PDFs sin `.md` (estado `sin-md`, 1.178) y el campo `jev`.
+  - Consenso entre voces en una página, en este orden: mayoría -> **parche de dígitos por mayoría** (cifra que ninguna otra voz tiene y casi
+    igual a una que tienen 2 -> se corrige el dígito) -> cuarta voz (Mistral) -> **aritmética del documento** (gana la versión cuyas
+    sumas cierran, vía prepare-onboarding) -> Claude con `reserva`. Un `revisar` por "sin consenso" ya solo queda si no hay versión de Claude.
+  - Primera corrida real del pipeline (50 documentos): los 4 primeros eran informes anuales de Borussia Dortmund de 224-244 páginas en
+    paralelo; Gemini tiene un tope de 150 s y de tokens de salida, así que daba timeout seguro y gastaba reintentos. Arreglado:
+    documentos de más de 40 páginas se transcriben por tramos de 20 (Gemini y Claude), timeouts proporcionales, `--max-paginas 100`
+    por defecto (los más grandes quedan aparte, `--max-paginas 0` los incluye) y un lote con `--limit` toma una muestra repartida
+    por tamaño en vez de los N primeros del listado.
+  - Resolver, PDF con texto y más de la mitad de las páginas sin coincidir con el texto del PDF: antes se asumía que el texto del PDF
+    era el roto y se pasaba a Gemini + Claude (visto en la corrida de 50 con `.md` viejos de Tesseract, incluso de 1 página). Ahora
+    primero se hace una lectura fresca con Mistral (~$0,004/pág.): si esa sí coincide, el `.md` viejo era el malo y se lo reemplaza
+    (el original queda en `.previo-*.md`); solo si tampoco coincide se comparan voces.
+  - Resolver, PDF con texto: el veredicto final ya no es el chequeo global (que contaba como "cifras sin respaldo" las de páginas-imagen sin
+    texto en el PDF y, por coincidencias de un dígito con cifras de otras páginas, las tomaba por lecturas mal hechas: Gent, Charleroi,
+    Sint-Truiden mandaban el documento ENTERO a Gemini + Claude). Ahora es por página: las páginas con texto se verifican contra el texto
+    del PDF (una cifra de Claude ausente en el PDF solo es sospechosa si se parece a una que sí está); las páginas SIN texto en el PDF
+    (imágenes dentro de un PDF con texto), y aquellas donde Claude discrepa de todo, pasan al camino de voces SOLO ellas. Si el `.md`
+    viejo y Claude leyeron igual y el texto del PDF difiere, se acepta (es el texto del PDF).
+  - Casos nuevos de la primera corrida del pipeline: (1) **`.pdf` que no es PDF** (2 en Clubes/: Unión Magdalena, un HTML de 38 KB guardado como
+    .pdf; DNCG Francia 2014-15, 2,9 MB sin cabecera): el resolver los marca `no-es-pdf` (no reintenta) para volver a conseguir el documento.
+    (2) **Un motor que devuelve menos páginas que las pedidas** (Aston Martin F1, Claude: 12 de 20): antes fallaba todo el documento; ahora
+    reparte el lote en mitades y reintenta, y una página sola que vuelve vacía se toma como página en blanco.
+  - **`tools/jev-categorizar.mjs`: la etapa de Jev** (API de typesafe.ai, ~$42 por mil millones de tokens; 0 tokens de Claude Code). `--backtest`
+    toma rubros de ejercicios YA CARGADOS (3.975 rubros únicos de 164 clubes), cuya categoría real ya decidió una sesión humana, se los
+    pregunta a Jev sin mostrársela y deja `Admin/test-jev-resultados.md`: acierto total, por banda de confianza, errores con confianza
+    ≥ 0,70 (el caso peligroso para una integración automática), acierto por categoría. `--listos` categoriza los `<md>.rubros.json` de los
+    documentos `listo-para-jev` y deja `<md>.jev.json` (gitignoreado). El lado (ingreso/gasto) no se le dice: se le ofrecen las 26
+    categorías juntas (`--lado-conocido` las separa). Las descripciones de las categorías salen de `data/category-map.js`. Probado con 6 rubros reales.
+  - **Backtest de Jev completo** (3.975 rubros únicos ya cargados, 164 clubes; informes en `Admin/test-jev-resultados*.md`): sin ayuda 69,5%
+    (90,3% en la banda de confianza ≥ 0,90); diciéndole el lado (ingreso/gasto) 74,2% (93,0%); lado + 8 ejemplos parecidos ya categorizados
+    86,6% (95,9% en la banda alta, que cubre el 72% de los rubros); lado + ejemplos SOLO de otros clubes (el caso de un club nuevo) 83,0% (94,4%,
+    69% de los rubros). Los errores que quedan son sobre todo entre catch-alls (`admin_general_expense` <-> `other_expenses`) y convenciones
+    propias de cada club. Conclusión: sirve como primer piso con la banda alta, pero un ~5% de error en esa banda no alcanza para aceptar sin un
+    segundo control. `--listos` ahora usa lado (cuando el documento lo indica) y ejemplos por defecto.
+  - `tools/pipeline.mjs`: `<md>.rubros.json` ahora lleva el `lado` de cada tabla (por palabras del título y las columnas en varios idiomas; 49% de
+    los rubros lo traen) y un documento solo es `listo-para-jev` si tiene un **estado de resultados** (o de recursos y gastos) con al menos 5 rubros;
+    si no, `sin-rubros` (272 de los 304 `sin-rubros` no tienen ninguno: actas, dictámenes, certificaciones, memorias narrativas). Nuevos flags:
+    `--solo-preparar` (solo la preparación gratis, sin API), `--repreparar` (rehace documentos que ya la tenían). Corrida sin API sobre los 640
+    documentos validados: 336 `listo-para-jev`, 304 `sin-rubros`.
+  - **`tools/proponer-carga.mjs` (etapa 5, versión 0, solo mide; no escribe nada del sitio)** + `onboard.mjs --quien <pdf>` (a qué club/año corresponde un PDF,
+    aunque ya esté cargado). Primer backtest sobre 40 ejercicios ya cargados: 0% de aciertos en total de ingresos y resultado; 53% arma alguna propuesta,
+    7% de cobertura de los rubros de producción. Es un resultado útil, no un bug: (1) los `rawLabel` de producción son agrupaciones curadas a mano, no
+    filas literales del documento, así que el precedente por texto exacto casi nunca coincide; (2) elegir la tabla correcta y la columna del año es la parte
+    difícil; (3) la detección de escala por palabras da falsos positivos (Volta Redonda: dividió por 1.000 un documento en unidades). Siguiente versión:
+    escala por plausibilidad contra la historia del club, tablas elegidas por chequeo de sumas, rubros categorizados con Jev y comparación a nivel de
+    total por categoría (no por texto de rubro).
+  - **Segundo lote de 50** (24 `listo-para-jev`, 25 `sin-rubros`, 1 `no-es-pdf`; $11,58). Casos nuevos y arreglos: (1) **el 82% de los `.md` viejos (778 de 954) no
+    tiene NINGUNA tabla** (0 líneas con `|`; etiquetas e importes en bloques separados, típico de Bélgica y Argentina): sus números validan contra el PDF pero no
+    sirven para rubros, sumas ni categorías. El resolver ahora los rehace con Mistral (~$0,004/pág.) si el nuevo tiene tablas (el viejo queda en `.previo-*.md`), y el
+    pipeline marca `sin-tablas` para que la próxima corrida lo haga (una sola vez, `formatoIntentado`). (2) Documentos en ruso/ucraniano, checo, neerlandés, japonés,
+    coreano y chino no reconocían sus tablas de resultados: ampliadas las palabras clave (`extract-table-rows.mjs`) y la detección de estado de resultados y de lado
+    (`pipeline.mjs`). (3) Unión Magdalena figuraba `sin-md` en vez de `no-es-pdf` y consumía un lugar en cada lote. (4) **Jev es la etapa 5 del pipeline**
+    (`--sin-jev` la saltea). Nuevo `Admin/MAPA-DE-TOOLS.md`: qué es cada archivo de `tools/`.
+  - **`proponer-carga.mjs` versión 1** (escala por plausibilidad contra la historia del club, filas categorizadas con Jev con lado y ejemplos que EXCLUYEN el ejercicio
+    reconstruido, comparación por categoría; `--mistral-fresco` usa una transcripción nueva con tablas). Backtest de 40 ejercicios cargados: con el `.md` guardado (casi sin
+    tablas) 75% arma propuesta, dinero bien ubicado 45% ingresos / 26% gastos; con Mistral fresco 88% arma propuesta, el total de ingresos oficial se detecta en 14%, el
+    resultado en 17%, y el dinero bien ubicado (solo filas con Jev >= 0,90) es 67% ingresos / 60% gastos. Conclusión: la carga 100% automática todavía no es viable; lo
+    que falta es sobre todo detectar de forma robusta los totales impresos (son la puerta de aceptación) y no la categorización.
+  - Documentación de traspaso para sesiones nuevas: `Admin/HANDOFF-pipeline.md` (estado, decisiones de Guido, números medidos, qué falta), `Admin/MAPA-DE-TOOLS.md`, cabecera de `pipeline.mjs` con las 7 etapas y snapshot en `Admin/ESTADO.md`. Nuevo to-do 109 (ordenar las carpetas del proyecto).
+  - Bug: `inventario-transcripciones.mjs` contaba como "cargado" todo lo que `onboard.mjs --all` no listaba, incluidos los documentos
+    con briefing al día (lo que el propio pipeline prepara). `ONBOARD_IGNORE_BRIEFING=1` separa las dos cosas.
+  - Jev (typesafe.ai): API `POST https://api.typesafe.ai/v1/systemone`, `Authorization: Bearer`, cuerpo `{state, model:"jev-latest",
+    questions:{<nombre>:{type:"choice", instructions, criteria:{<categoría>:<descripción>}}}}`; devuelve `choice`, `confidence` y
+    `probabilities`. Docs: https://docs.typesafe.ai/ (índice en `/llms.txt`). Categorizar rubros NO es parte del pipeline actual.
+
+
+## Versión 304 — `tools/claude-api-transcribe.mjs`: la 3ra API conectada de verdad (Claude, API directa), y el paso 2 del HTML al día
+
+- **`tools/thirdapi-transcribe.mjs` (placeholder de la Versión 301) renombrado a `tools/claude-api-transcribe.mjs`
+  y conectado de verdad**: Guido decidió Claude como 3ra API. Llama a `POST /v1/messages` con el PDF
+  adjunto (`claude-sonnet-5-5`, $2/$10 por MTok) por HTTP crudo con `fetch()` (sin SDK, mismo
+  criterio que Mistral/Gemini: este proyecto no tiene `package.json` ni `node_modules`, a propósito),
+  **streameado** (no una espera simple) porque una transcripción completa puede generar decenas de
+  miles de tokens de salida y a la velocidad normal de generación eso puede tardar varios minutos —
+  una respuesta no streameada se corta sola antes de terminar. Mismo prompt, mismo formato de
+  resultado/fallidos.jsonl y mismo chequeo de fidelidad que `gemini-transcribe.mjs`, para que
+  `tools/onboard.mjs` no tenga que tratarla distinto. `tools/onboard.mjs` actualizado con el nuevo
+  nombre; `Admin/claude-api/.env` (antes `Admin/thirdapi/.env`) sumado a `.gitignore`.
+- **Todavía sin key ni test de calidad propio** — Guido va a abrir la API key de Anthropic
+  (aclarado: es facturación aparte, pago por uso, NO consume los tokens semanales de su plan de
+  Claude Code/Claude.ai) y correr su propia prueba antes de confiar en esto para casos reales.
+- **`Admin/COMO-CORRE-EL-PROYECTO.html`, "El paso 2, en detalle" actualizado**: la tabla y el texto
+  describían el flujo viejo (Gemini solo redoing escaneos, subagente de Claude como única red de
+  contención) — ahora describe el flujo real desde la Versión 302/303: Mistral y Gemini SIEMPRE en
+  paralelo + comparación, Claude API como reemplazo puntual cuando Gemini rechaza por RECITATION, y
+  el subagente completo como última red.
+- **Mergeado `worktree-todo-106-mistral-gemini`** (sesión terminada): el test real de 8 escaneos que
+  fundamenta la Versión 303, con `Admin/test-mistral-gemini-escaneos.md` como detalle completo.
+
+## Versión 303 — to-do 106, la corrida real: head-to-head Mistral vs. Gemini en 8 escaneos (8 subagentes, ~1.660 celdas), confirma "ninguna es mejor"
+
+- **La corrida ampliada que la Versión 302 (abajo) anticipaba con un solo documento**, ahora hecha
+  de verdad: 8 documentos que Mistral marcó como escaneados (Brasil, Colombia, Grecia y Noruega — 2
+  por país), verificados celda por celda contra el PDF fuente por 8 subagentes en paralelo, uno por
+  documento. Resultado: ningún motor domina — cada uno cometió errores reales que el otro no
+  cometió, en cantidad similar, sobre una tasa de error minúscula (~1.660 celdas comparadas). **No
+  se cambia el DEFAULT Mistral→Gemini** de CLAUDE.md/`club-data-mapping/SKILL.md` sección 15.
+- **2 hallazgos nuevos, ninguno detectable con un chequeo de sumas**: Mistral puede saltearse
+  contenido real SIN NINGUNA advertencia (una columna entera de ratios, en un documento); Gemini
+  puede fabricar un valor en una celda vacía, o "corregir" en silencio un dígito hacia lo que le
+  parece más consistente. Confirma que la verificación manual obligatoria para escaneos sigue
+  siendo necesaria con cualquiera de los dos motores — el chequeo de comparación (`tools/compare-
+  transcripts.mjs`, Versión 302) atrapa un desacuerdo ENTRE los dos, pero no un error en el que
+  ambos coincidan por accidente. Detalle completo en `Admin/test-mistral-gemini-escaneos.md`.
+
+## Versión 302 — to-do 106 cerrado: "ninguna es mejor" → Mistral+Gemini en paralelo con comparación, no un default
+
+- **to-do 106 (¿conviene cambiar el default Mistral→Gemini?) cerrado con una respuesta distinta a
+  la esperada**: una sesión en worktree corrió el comparativo de punta a punta contra una muestra
+  amplia de documentos y el resultado fue que NINGUNA de las dos es sistemáticamente mejor — cada
+  motor se equivoca en celdas DISTINTAS del mismo documento. Elegir un default no resuelve nada.
+- **Propuesta de Guido, adoptada**: correr Mistral Y Gemini en paralelo para cada documento (acepta
+  el costo 2x) y usar el DESACUERDO entre los dos como la señal de qué necesita revisión humana, en
+  vez de confiar en uno solo. `tools/compare-transcripts.mjs` (nueva) compara ambas transcripciones
+  por rubro — probado contra River 2021 (Mistral vs. la transcripción de Gemini de la Versión
+  298/299): encontró el error ya conocido ("Amortización de software") MÁS otras 18 discrepancias
+  reales en el mismo documento, confirmando el diagnóstico de "ninguna es mejor".
+- **`tools/onboard.mjs` reescrito** con el flujo completo: Mistral → Gemini en paralelo → comparar →
+  si coinciden, `prepare-onboarding.mjs` automático; si no, para ahí y deja los 2 `.md` listos para
+  cuando Guido convoque a Claude a resolverlo (nunca automático). `gemini-transcribe.mjs` sumó
+  `--out-suffix` (mismo patrón que ya tenía `mistral-ocr-transcribe.mjs`) para poder transcribir en
+  paralelo sin pisar el `.md` de Mistral.
+- `*.gemini-check.md` sumado a `.gitignore`, mismo criterio que `*.briefing.json`.
+
+## Versión 301 — `tools/onboard.mjs`: el comando único (Mistral → Gemini redo → prepare-onboarding)
+
+- **Pedido de Guido**: que correr Mistral/Gemini desde su terminal también dispare las tools nuevas
+  del to-do 105, sin un comando aparte que acordarse de correr. `tools/onboard.mjs` encadena, sin
+  tocarlas, `mistral-ocr-transcribe.mjs` → `gemini-transcribe.mjs --redo-mistral-scanned` →
+  `prepare-onboarding.mjs` (un briefing.json por documento). Uso individual (`<pdf> [--club]
+  [--year]`) o en lote (`--all [--dir] [--limit]`).
+- **`--club` se adivina comparando el nombre de la CARPETA contra `data/clubs.js`, solo si hay UNA
+  coincidencia clara** — probado con un caso real ambiguo ("Racing" matchea tanto a Racing Club
+  como a Genk, cuyo nombre legal en bélgico incluye "Racing"): ahí se niega a adivinar y pide
+  `--club` explícito, en vez de arriesgar cargar bajo el clubId equivocado. `--year` sí se adivina
+  siempre del nombre del archivo (bajo riesgo, solo afecta la búsqueda de liga cacheada).
+- **OJO para cuando se corra `--all` de verdad**: el paso de Gemini (`--redo-mistral-scanned`) barre
+  TODO el proyecto, no solo el `--dir` pedido — no se corrió de punta a punta en esta sesión por
+  eso, queda para que Guido lo tire desde su terminal.
+
+## Versión 300 — to-do 105 #1, ronda 2: `prepare-onboarding.mjs` probado contra portugués/EUR, 3 bugs más en `extract-table-rows.mjs`
+
+- **`extract-table-rows.mjs` no encontraba NINGUNA tabla en un documento sin "|"** (Corinthians
+  2024-25: Mistral transcribió un PDF con capa de texto nativa muy limpia como texto corrido en vez
+  de tabla Markdown -- 0 tablas en un documento de 5000+ líneas con datos reales adentro). Agregado
+  un segundo parser (`parsePlainTextRow`) que reconoce "Etiqueta [Nota] Valor1 [Valor2]" en texto
+  plano, escaneando desde la derecha por tokens que parecen un valor monetario real (con separador
+  de miles/decimal) para distinguirlos de una referencia de Nota.
+- **Una sub-nota tipo "24.1"/"24.2" se confundía con un valor real** (ambas tienen un "."), corregido
+  con la señal que las distingue: un separador de miles real agrupa de a 3 dígitos, una sub-nota de
+  a 1.
+- **Un heading FUERTE repetido en cada página (membrete de Corinthians) bloqueaba para siempre el uso
+  del heading DÉBIL real** ("Demonstração do Resultado do Exercício"), porque el trail de headings
+  nunca se reseteaba por página y la ventana de solo 2 headings se llenaba con metadata (fecha,
+  moneda, fila "Nota AÑO AÑO") antes de llegar a la tabla. Arreglado reseteando el trail en cada
+  salto de página y ensanchando la ventana de 2 a 5 (`TRAIL_MAX`).
+- Probado sin regresión contra los 3 documentos de la Versión 299 (River, Once Caldas, Rosenborg) +
+  2 nuevos (Corinthians portugués/BRL en texto plano, AC Milan italiano/EUR con tablas `|`
+  normales) -- 8 bugs reales encontrados y arreglados en total entre las 2 rondas.
+- Sigue sin conectarse a ningún skill (misma razón que la Versión 299): ya cubrió la diversidad de
+  idioma/moneda/formato que hacía falta, queda pendiente que Guido confirme antes de sumarlo.
+
+## Versión 299 — to-do 105 #1: `tools/prepare-onboarding.mjs`, construido y probado (todavía sin conectar a ningún skill)
+
+- **Nueva tool, pensada para correr desde la terminal de Guido** (no desde una sesión de Claude):
+  orquesta extract-table-rows + sum-check + suggest-category-precedent + lookup-club-league de una
+  sola vez y deja un `<archivo>.briefing.json` compacto al lado del `.md` (gitignoreado).
+- **5 bugs reales encontrados y arreglados probándola contra 3 documentos reales** (River 2021, Once
+  Caldas 2024, Rosenborg 2012 en noruego): tie-out por tabla entera en vez de por segmento (no
+  chequeaba nada en tablas con varios "Total" en cascada, que es el caso normal), un crash de
+  proceso hijo sin `stdio` capturado, un Anexo con encabezado de 2 niveles rompiendo `sum-check.mjs`,
+  un heading en negrita (`**Estado de Recursos y Gastos**`) que dejaba la tabla MÁS IMPORTANTE de
+  River marcada `likelyRelevant:false` (arreglado en `extract-table-rows.mjs`), y `sum-check.mjs`
+  sin soporte para el formato escandinavo (espacio como separador de miles) ni para "Sum" como
+  palabra de total. Con los 2 últimos arreglados, Rosenborg pasó de 28 a 55 tie-outs cerrando de 82.
+- **Todavía NO conectada a `club-or-year-onboarding`/`club-data-mapping`** a pedido explícito de
+  Guido, para seguir probando antes de fijar el paso en los skills.
+
+## Versión 298 — to-do 103 cerrado: SEGUNDO error real encontrado en River 2021 "Amortización de software" ($12.326.234, no $12.326.254)
+
+- **`data/river-data.js`, Ejercicio 2021**: el dato que estaba cargado en producción para
+  "Amortización de software" (`-12.326254`, $12.326.254) era en sí mismo un error, distinto del que
+  ya se sabía de Mistral ($12.336.254). El valor real impreso en el PDF es **$12.326.234** —
+  confirmado con zoom sobre la celda y con `tools/sum-check.mjs` contra el subtotal de la fila
+  (cierra EXACTO, sin ningún residual). Corregido en el archivo. `node tools/audit.js` y
+  `auditAll()` corridos después del fix: 0 P0/P1, River 2021 no aparece entre los que no cierran.
+- **Gemini transcribió esta celda bien a la primera** (probado con `tools/gemini-transcribe.mjs`
+  sobre el mismo PDF), lo que originalmente motivó el to-do 103 (comparar Mistral vs. Gemini en
+  escaneos). Es un solo documento, no alcanza para cambiar el DEFAULT del proyecto — sigue abierto
+  como to-do 106, con una muestra más amplia por correr antes de decidir.
+- **ASSET_V 291 → 292** (`index.html`) por el cambio en `data/river-data.js`; regenerados
+  `data/rankings/*.js` (afectado además por el fix de `ceara-br` de la Versión 297),
+  `Admin/ESTADO-clubes.md` y `fuentes.html`/páginas de club.
+
+## Versión 297 — to-do 104 arreglado (heurística de tabla en `fetch-club-league-reference.mjs`), 2 ligas más cacheadas, y guía de ritmo de onboarding en el skill
+
+- **to-do 104 cerrado**: `tools/fetch-club-league-reference.mjs` tomaba la PRIMERA tabla wikitable de
+  la sección "Teams", que a veces no es el roster (Grecia). Ahora extrae todas las tablas de la
+  sección y se queda con la que tiene más equipos ÚNICOS (no más filas) — probado sin regresión
+  contra Colombia 2016 (sigue en 20) y Noruega 2019 (sigue en 16), y corregido contra Grecia
+  "2024–25 Super League Greece" (ahora trae los 14 reales en vez de 2). La limitación de Argentina
+  (páginas sin wikitable, usan una plantilla Lua) sigue sin resolver, es otro tipo de problema, ver
+  `tools/club-league-reference/README.md`.
+- **2 liga-temporada más cacheadas con la tool ya corregida**: Grecia Super League 2024-25 y Brasil
+  Série A/Série B 2024. De paso se resolvió `ceara-br` 2024 (marcado `null`/"sin verificar"): el
+  roster de Série A 2024 no lo incluye, el de Série B sí — jugó la B en 2024, ascendió para 2025.
+  Corregido en `data/club-leagues/br.js`.
+- **`club-or-year-onboarding/SKILL.md` sección 1**: agregada guía de ritmo (to-do 105, pedido de
+  Guido de subir el ritmo rumbo a 2000 PDFs) — agrupar varios ejercicios del MISMO club en una sola
+  sesión (el precedente de `suggest-category-precedent.mjs` mejora con cada año sumado), y
+  paralelizar clubes DISTINTOS con el Agent tool (baja tiempo de reloj, no tokens).
+
+## Versión 296 — to-do 50: Pumas/Tigres descartado, DIABLOS explicado y sigue pendiente de Guido
+
+- **Pumas y Tigres (México) descartado**: decisión de Guido, 2026-09-29 ("elijo no hacerlo, me da
+  igual") — las 2 solicitudes de transparencia (UNAM/UANL) ya redactadas no se van a presentar.
+- **DIABLOS (Diablos Rojos del México, béisbol, cotiza en BMV) sigue sin decisión**: se le agregó al
+  to-do la explicación completa (por qué abre liga Y deporte nuevos, y que el proyecto ya tiene
+  contenido de otro deporte sin cargar en `Clubes/` por el piloto de Firecrawl del to-do 75) para que
+  Guido decida con contexto la próxima vez que lo lea.
+- León (venta sin cerrar) y SIIS Colombia/León-Pachuca (ya resueltos) quedan como estaban, solo
+  reordenados para separar lo cerrado de lo que sigue en puro monitoreo.
+
+## Versión 295 — ronda de 5 onboardings de prueba de los tools del to-do 98/95, y plan de velocidad (to-do 105)
+
+- **Once Caldas Ejercicios 2022 y 2023 cargados** (Colombia, años nuevos de club ya cargado):
+  ingresos/gastos reconciliados exacto en los dos. `suggest-category-precedent.mjs` sugirió 15/16
+  rubros EXACTO en 2022 y 11/11 en 2023 — el precedente mejora con cada año que se suma.
+- **River Plate Ejercicio 2021 cargado** (Argentina, año nuevo de club grande): reemplaza el
+  placeholder inventado que tenía desde la Versión 138, con el balance auditado real (CNV,
+  individual). Transcripción propia con Mistral OCR encontró y corrigió un dígito transpuesto real
+  contra el PDF ($12.336.254 leído vs. $12.326.254 real, ver to-do 103). Encontró (sin corregir, a
+  pedido de Guido) un bug real en datos YA publicados de 2024 de este mismo club — to-do 102.
+- **Boyacá Chicó cargado** (Colombia, club nuevo): primer ejercicio real de este club. La liga se
+  confirmó contra un roster ya cacheado del onboarding de Once Caldas, cero fetches nuevos.
+- **Panathinaikos cargado** (Grecia, primer país 100% nuevo del sitio): descartó sin usar un archivo
+  mal nombrado cuyo contenido era en realidad el ejercicio 2020, no 2025 — chequeando la fecha del
+  propio documento antes de cargar nada. PAT reconcilia exacto, sin residuo.
+- **Ecuador/LDU Quito evaluado y descartado** (no es un club nuevo cargado): el único documento de
+  resultados disponible consolida escuela y country club, cero líneas de fútbol — ya decidido por
+  una sesión anterior (`fuentes/Ecuador/LDU Quito.md`, 2026-09-25), redescubierto y confirmado.
+- Consolidación: Grecia registrada en `data/leagues.js` (faltaba), 3 generadores corridos, `ASSET_V`
+  290→291, 3 párrafos con conteos de páginas/notas desactualizados corregidos (162→164, 655→671).
+  Estado final: 164 clubes, 305 ejercicios, 0 P0/P1 en `node tools/audit.js`.
+- to-do 101: 3 conflictos de categorización reales (y 1 falso positivo de la propia tool) del
+  barrido de `suggest-category-precedent.mjs` contra los 162 clubes, sin revisar todavía.
+- to-do 104: 2 casos reales donde `fetch-club-league-reference.mjs` toma la tabla wikitable
+  equivocada de Wikipedia (Argentina sin sección "Teams", Grecia con un resumen antes de la real).
+- to-do 105: plan para subir el ritmo de onboarding rumbo a 2000 PDFs antes de fin de año — JEV
+  solo no alcanza (resuelve solo categorización, y ni está prendido todavía), el cuello de botella
+  real es el sourcing de clubes 100% nuevos. Recomendación principal: armar un script
+  `tools/prepare-onboarding.mjs` que corra todo lo mecánico de una sola vez antes de que arranque
+  la sesión de Claude, sin construir todavía.
+
+## Versión 294 — to-do 98, paso 5 (tier 0): sugerir categoría por precedente del mismo club, y skills al día
+
+- **`tools/suggest-category-precedent.mjs` nuevo**: si un rubro nuevo tiene el mismo texto que uno ya
+  categorizado en un año anterior del MISMO club, lo sugiere en vez de que Claude decida de cero.
+  Tres niveles (EXACTO/PARECIDO/SIN_PRECEDENTE), nunca escribe datos. Bug real encontrado
+  probándola contra Boca ("Futbol Femenino" es ingreso en un año y gasto en otros, mismo texto) —
+  corregido separando el precedente de ingresos y gastos (antes se mezclaban en un mapa). Barrido
+  completo de los 162 clubes sin fallos; encontró 4 conflictos de categorización reales y genuinos
+  (mismo rubro, mismo lado, categoría distinta entre años) en Argentinos Juniors, Estudiantes LP,
+  Mallorca y San Lorenzo — anotados para revisar en una sesión futura, no tocados hoy.
+- **Skills actualizados con los tools nuevos de esta sesión** (`club-data-mapping`,
+  `club-or-year-onboarding`): `extract-table-rows.mjs`, `sum-check.mjs` y
+  `suggest-category-precedent.mjs` en el flujo de categorización/verificación; el pipeline de 3 tools
+  del to-do 95 (`resolve-wikipedia-season-page.mjs` → `fetch-club-league-reference.mjs` →
+  `lookup-club-league.js`) en el paso de `data/club-leagues/<iso2>.js`.
+
+## Versión 293 — Once Caldas Ejercicio 2024 cargado: validación real del to-do 98 (y el to-do 95 en simultáneo)
+
+- **to-do 98 validado con un onboarding real**: Once Caldas Ejercicio 2024 (Colombia), usando
+  `tools/extract-table-rows.mjs` para navegar el documento. Ingresos y gastos reconciliados EXACTO
+  contra los totales impresos. Encontró un bug real en el extractor (tabla cortada por salto de
+  página, un separador Markdown mal puesto en la continuación) — no es un bug de Mistral, y no se
+  arregla con más regex: el tie-out obligatorio es la red de seguridad real. Detalle en el to-do 98
+  de `Admin/TODO.md`.
+- **`tools/sum-check.mjs` nuevo** (pedido de Guido en el camino): saca la aritmética de los tie-outs
+  de Claude, sin tocar la parte que sigue siendo juicio (qué filas entran en cada suma).
+- **to-do 95 usado en el mismo onboarding**: `data/club-leagues/co.js` — Once Caldas 2024 confirmado
+  en Categoría Primera A vía el pipeline de Wikipedia (`2024 Liga DIMAYOR`, el título cambió de
+  sponsor respecto de años anteriores).
+- Pregunta nueva a Once Caldas/SIIS en `Admin/dudas-por-club.md`: la Nota 25 (Gastos No
+  Operacionales) del Ejercicio 2024 no reconcilia contra su propio total, mismo patrón ya visto en el
+  Ejercicio 2025 de este club. `tax` cargado como residuo, documentado explícito.
+- `ASSET_V` 289→290 (tocó `data/`), 3 generadores corridos.
+
+## Versión 292 — to-do 95 corregido: sí se puede automatizar, con las páginas de TEMPORADA de Wikipedia
+
+- La evaluación de la Versión 291 había mirado las fuentes equivocadas (página del club, RSSSF) y
+  concluyó que no alcanzaba. Guido corrigió: la página de la TEMPORADA en Wikipedia (no la del club)
+  tiene una tabla de equipos en wikitext estándar de MediaWiki, parseable de forma mecánica.
+- Pipeline de 3 tools probado de punta a punta: `tools/resolve-wikipedia-season-page.mjs` (encuentra
+  el título exacto), `tools/fetch-club-league-reference.mjs` (baja y cachea el roster completo, sin
+  escribir nada si no encuentra tabla), `tools/lookup-club-league.js` (busca por nombre contra la
+  caché — reescrito, ya no busca por `clubId`). Probado con Colombia 2016 (20 equipos, incluido
+  Boyacá Chicó) y Noruega 2019 (16 equipos, incluido Lillestrøm).
+- Detalle completo en el to-do 95 de `Admin/TODO.md` y en `tools/club-league-reference/README.md`.
+
+## Versión 291 — to-do 98 (paso 4) y to-do 95: prototipos probados, sin integrar todavía
+
+- **to-do 98, paso 4**: `tools/extract-table-rows.mjs` (prototipo, no integrado a ningún flujo) saca
+  las tablas Markdown de un `.md` transcripto a JSON compacto, sin convertir los números a float.
+  Detecta el separador decimal del documento automáticamente (no por país: Almagro y River/Boca,
+  mismo país, usan formatos distintos). Probado contra 6 documentos de países/formatos distintos,
+  26-96% menos caracteres según el caso. Detalle completo en el to-do 98 de `Admin/TODO.md`.
+- **to-do 95**: evaluado contra un caso difícil (Boyacá Chicó, Colombia) — Wikipedia, TheSportsDB y
+  RSSSF no alcanzan para un scraper masivo tipo "precargar toda la liga", así que no se construyó.
+  En cambio: `tools/lookup-club-league.js` + `tools/club-league-reference/` (vacío), una caché liviana
+  de lo que ya se buscó y confirmó a mano, sin el riesgo del scraper. Detalle en el to-do 95 de
+  `Admin/TODO.md` y en `tools/club-league-reference/README.md`.
+
+## Versión 290 — limpieza de to-do list: 40 y 39 cerrados por decisión de Guido, 74+36 fusionados, 73 dividido
+
+- **to-do 40 (CMS) cerrado**: la motivación real era ahorrar tokens de sesión, no editar sin código —
+  ya resuelta por el to-do 65 (CSS inline de `index.html` extraído a `js/styles.css`). No hace falta
+  un CMS.
+- **to-do 39 (camiseta vs. círculo) cerrado**: decisión de Guido, no lo va a hacer.
+- **to-dos 74 y 36 fusionados en el 99**: eran el mismo backtest de JEV escrito en 2 lugares. El
+  nuevo plan incorpora la idea de Guido de probarlo onboardeando 2-3 clubes reales de países (y
+  deportes) distintos de la cola de sourcing, en vez de solo contra ejercicios ya categorizados.
+- **to-do 73 dividido**: su núcleo (cargar los 2 balances de Boca) ya estaba cerrado desde la
+  Versión 289; lo que seguía abierto (el balance de River en Scribd, los 4 ejercicios de Boca sin
+  encontrar) pasó a su propio número, el 100, para que no quedara escondido bajo un to-do que ya
+  figuraba como resuelto.
+- to-do 34 actualizado con lo que cambió desde el merge del selector (to-dos 70 y 83) y los números
+  reales de hoy (88 de 162 clubes con un solo ejercicio, antes 34 de 41). to-do 23 pasa a prioridad
+  activa (Guido, 2026-09-29).
+
+## Versión 289 — to-do 73 cerrado: Boca Juniors, Ejercicios 2022 y 2023 (N°118 y N°119) cargados
+
+- `data/boca-data.js`: 2 balances auditados reales nuevos, encontrados vía Wayback CDX el
+  2026-09-26 y transcriptos con Mistral OCR. Categorizados siguiendo el mismo criterio que el
+  Ejercicio 2025 ya cargado (separar wages_squad/player_amortisation/other_expenses por
+  departamento cuando el propio documento desglosa "Remuneraciones y cargas sociales" aparte).
+  Verificado programáticamente (no solo a mano): la suma de cada línea de primer nivel contra sus
+  `items` anidados, y el total de Revenue/Expenses de cada ejercicio contra el Total de
+  Recursos/Total de Gastos impreso en la pág. 32 (2022) y pág. 61 (2023) — cierran EXACTO, sin
+  redondeo, en los dos ejercicios.
+- Ejercicio 2022 (Ejercicio N°118): Revenue $14.279.912.579, Expenses $13.669.793.975, Superávit
+  $461.837.755. fx = $125,03 (USD activo al 30/06/2022, declarado por el propio Anexo III).
+- Ejercicio 2023 (Ejercicio N°119): Revenue $26.178.273.845, Expenses $27.795.138.995, Superávit
+  $1.022.382.735 — con un resultado financiero (RECPAM) positivo de +$2.639.247.885 que revierte un
+  resultado antes del efecto financiero deficitario. fx = $256,30.
+- `data/clubs.js`: 2 entradas nuevas en `sources{}` (`boca-balance-2021-22`, `boca-balance-2022-23`)
+  y `gestionesByClub.boca.ameal` vuelve a tener ejercicios reales de Finanzas (`firstYear:2022,
+  lastYear:2023` — antes apuntaba a los años placeholder que se habían borrado en la Versión 138).
+- `data/club-leagues/ar.js`: fila de Boca 2022/2023, Primera División los dos ejercicios.
+- Verificado en el navegador (`auditAll()`, los 4 KPIs de Finanzas, el acordeón de "Formato
+  simplificado" y "Formato del club" en los dos ejercicios): 866/869 checks cierran, las 3
+  excepciones son las mismas de siempre (redondeo de Bayern Munich, ya documentadas), 0 warnings
+  de fx, 0 clubes sin cargar. `ASSET_V` subido a 289.
+
+## Versión 288 — to-do 94 cerrado: login de Google publicado para visitantes reales
+
+- Google Cloud → OAuth consent screen: la app pasó de modo "Testing" (solo cuentas agregadas a mano)
+  a publicada — cualquier visitante puede loguearse, no solo Guido.
+- Supabase → Authentication → URL Configuration: agregado `https://financeofsports.com/*` a los
+  Redirect URLs permitidos (antes solo tenía el `localhost` de desarrollo).
+- Con esto, "Saved Searches" (to-do 70) queda usable de punta a punta en producción, no solo en local.
+
+## Versión 287 — footer actualizado: ya no habla de votar en elecciones de club
+
+- `footer.text`/`footer.note` (`index.html` + `data/lang/en.js`) describían el concepto original
+  del sitio ("El deporte en Números", ayudar a socios a votar informados) y "MVP · datos
+  placeholder · versión de prueba" — ninguna de las dos cosas es cierta hoy (162 clubes con datos
+  reales, sitio pivotado a comparador financiero). Texto nuevo, mismo criterio que ya usa
+  `terminos.html`: qué es el sitio, de dónde salen los números, que no representa a ningún club/
+  liga/federación.
+
+## Versión 286 — to-do 94: páginas de privacidad y términos, para publicar el login de Google
+
+- `privacidad.html`/`terminos.html` nuevas, en la raíz (contenido para el visitante, no interno —
+  `tools/audit-ignore.json` documenta por qué `doc-interno-no-excluido` no aplica acá). Google
+  exige un home page + link a privacidad + link a términos, los tres en el mismo dominio, antes de
+  poder pasar el proyecto de OAuth de "Testing" a "In production" (Publish app) — ver to-do 94.
+  Explican en criollo qué datos junta el sitio (nada sin login; con login, el email vía Supabase y
+  qué se guarda en "Mi Cuenta") y qué es/no es el sitio (no asesoramiento financiero, las
+  simulaciones de liga son solo por plata). Linkeadas desde el footer de `index.html`.
+
+## Versión 285 — to-do 83, dos pedidos más: año editable y sumar una liga entera
+
+- **El año de un club recién sumado ahora es un dropdown editable**, adentro de la misma frase
+  ("Racing Club (▾2019/2020): con..."), no texto fijo — pedido de Guido: "puedo elegir un club pero
+  no puedo cambiar el año". Solo aparece si ese club tiene más de un ejercicio cargado.
+- **"Sumar toda una liga" en el mismo buscador** ("quedaría muy cool tener toda la liga argentina y
+  brasilera juntas"): buscar el nombre de una liga (no solo de un club) la inserta ENTERA — todos
+  sus clubes, de una. A diferencia de sumar un club suelto, esto NO baja ningún
+  `data/<club>-data.js`: reusa `data/rankings/<liga>.js`, que ya trae cada fila calculada — insertar
+  10-20 clubes de golpe es tan barato como insertar 1. Por eso esos clubes no tienen el dropdown de
+  año (no se les cargó el detalle por ejercicio, no hay entre qué elegir) — trade-off aceptado a
+  propósito por la diferencia de costo.
+
+## Versión 284 — fix real: `--redo-mistral-scanned` podía borrar transcripciones sin reemplazo
+
+- **Incidente, 2026-09-28**: Guido corrió `node tools/gemini-transcribe.mjs --redo-mistral-scanned`
+  (Grecia/Italia/Noruega, ~203 PDFs marcados como escaneados por Mistral) y lo cerró a mitad de
+  camino porque "andaba raro". Al cerrarlo, 203 archivos `.md` de Grecia/Italia/Noruega quedaron
+  BORRADOS del working tree, sin ningún reemplazo de Gemini escrito — trabajo de Mistral ya hecho,
+  desaparecido. Recuperado entero con `git checkout -- Clubes/Grecia Clubes/Italia Clubes/Noruega`
+  porque nada se había commiteado todavía (si se hubiera commiteado antes de cerrar la sesión, se
+  perdía de verdad).
+- **Causa raíz, ya arreglada**: `--redo-mistral-scanned` borraba los `.md` de LOS 203 PDFs DEL LOTE
+  ENTERO, de una, ANTES de arrancar a procesarlos uno por uno con Gemini (para evitar el guard
+  `if (existsSync(mdPath)) return skipped` de `transcribeOne()`, que si no los saltea a todos). Con
+  eso, cualquier corte a mitad de la corrida (Ctrl+C, cerrar la terminal) dejaba cientos de archivos
+  borrados sin haber llegado siquiera a intentarlos con Gemini.
+- **El fix**: `transcribeOne()` ahora acepta `opts.redo` — con eso saltea el guard de `existsSync`
+  SIN borrar nada; `writeFileSync()` ya pisa el archivo solo cuando Gemini responde bien. Resultado:
+  un .md solo se pierde en el mismo instante en que se reemplaza por uno bueno, nunca antes. Cortar
+  la corrida a la mitad deja trabajo a medio HACER (algunos redos pendientes), nunca a medio BORRAR.
+
+## Versión 283 — to-do 83, segunda parte: "sumar uno o más equipos" desde Ligas
+
+- Al ver cualquier liga, un buscador nuevo ("Sumar un club a este ranking…") deja insertar cualquier
+  club del sitio — no hace falta venir de Finanzas. A diferencia de ese camino, el club acá NO está
+  cargado: se baja su `data/<club>-data.js` con `loadClubData()` (de index.html, reusada igual que
+  `computeYearGeneric`) antes de poder calcular su ingreso.
+- `st.simulado` (un objeto) pasa a ser `st.simulados` (array) en todo `js/liga.js` — generaliza el
+  camino de la Versión 281/282 en vez de duplicarlo: 1 club sigue siendo el caso normal, solo que
+  ahora es un array de 1. El dropdown de "probar en otra liga" y "Volver a Ligas con el club en cola"
+  ahora llevan TODOS los clubes simulados, no solo uno.
+- Guardado en Mi Cuenta: `state.clubes` es siempre un array (mismo criterio, ni el caso de 1 club
+  guarda distinto). El label reusa el patrón de `labelForLado()` (Comparar): hasta 3 nombres unidos
+  con "+", de ahí para arriba "2 primeros + N más".
+- **Bug real encontrado y corregido en el camino**: `notifyStateChange()` en `js/cuenta.js` validaba
+  `!!state.club`, que con el `state.club` singular ya reemplazado por `state.clubes` daba `false`
+  SIEMPRE — sin el fix, ninguna simulación se hubiera guardado nunca, en silencio, sin error visible.
+
+## Versión 282 — to-do 83: 2 ajustes tras probarlo en producción
+
+- **"Volver a Ligas" durante una simulación ya no te saca del flujo**: antes reseteaba todo y había
+  que ir hasta Finanzas de nuevo para retomar; ahora vuelve al picker de ligas CON el mismo club en
+  cola, listo para probar otra. `botonVolver()` restaura `pendingSim` desde `st.simulado`.
+- **Dropdown de liga nuevo** (`selectorDeLigaSimulada()`), visible solo mientras hay una simulación
+  activa, agrupado por continente igual que el picker: cambiar de liga ahí recalcula la simulación
+  para el mismo club sin volver atrás (ej. Brasileirão Série A → Série B en un clic).
+
+## Versión 281 — to-do 83: "¿cómo le iría este club en otra liga?"
+
+- Simulación por plata (NO predicción deportiva): desde la ficha de Finanzas de un club, botón
+  "¿Cómo le iría en otra liga?" → se elige la liga destino → el club se inserta en el ranking real
+  de esa liga-ejercicio, en su posición por ingresos, marcado visualmente distinto (barra
+  translúcida + fila con fondo ámbar + badge "(simulado)"), con un callout arriba que dice la frase
+  ("Con MUSD X, sería el Nº de M en Liga Y"). Nunca cuenta para los totales/coberturas reales de esa
+  liga — la fila simulada es una vista, `window.RANKINGS` no se toca.
+- Mismo motor que `tools/generate-rankings.js` (`computeYearGeneric` + `toDisplayValue` +
+  `simplifiedReportForClub`, `js/finanzas-calc.js`), corrido EN VIVO en el navegador porque el club
+  ya está cargado — sin bajar nada nuevo. Bug real encontrado y corregido en el camino: `reportType`/
+  `sourceId` salen de `computeYearGeneric().meta`, NO de `yearMetaFor()` (mismo gotcha que ya
+  documentaba el generador de rankings, ver su cabecera) — el primer intento los leía mal y la fila
+  simulada mostraba "Ejercicio" en vez de "Balance" y sin tipo de documento.
+- Se guarda en Mi Cuenta (to-do 70) como cualquier otra búsqueda: template pedido por Guido, "River
+  2024/2025 en LaLiga, ejercicio 2025" — `js/cuenta.js` suma un `view:'ligaSim'` nuevo a
+  `stateKey()`/`labelFor()`. El año de la LIGA se etiqueta "ejercicio N" (no "N/N+1"): es como
+  `js/liga.js` ya etiqueta un ranking, inventar un formato de temporada para ligas sería una segunda
+  convención para lo mismo.
+- `js/liga.js` gana `iniciarSimulacion()`/`showConSimulado()` (nuevas, exportadas) y un hook
+  `onSimulado` para que index.html decida guardar — el módulo sigue sin saber de Supabase, mismo
+  principio que ya usaba con `pickClub`/`goFinanzas`. El botón se esconde en modo "Por gestión": la
+  simulación es de UN ejercicio puntual, el motor real no calcula por rango de gestión.
+
+## Versión 280 — River Plate: 4 balances reales nuevos encontrados vía CNV, y un fix a `wayback-verify-download.mjs`
+
+- **Hallazgo grande, sourcing (pedido explícito de Guido)**: River es emisor regulado por la
+  Comisión Nacional de Valores desde su primera Obligación Negociable (feb. 2025) y al inscribirse
+  subió varios ejercicios históricos — canal verdaderamente oficial, mejor que cualquier mirror.
+  Descubierto el mecanismo genérico para bajar un adjunto público de `aif2.cnv.gov.ar` sin login
+  (GET a `ValetKeyProvider/GetPublicValetKey` + POST a `blob.cnv.gov.ar/.../DownloadBlob`),
+  documentado en `fuentes/Argentina/River.md` para reusar con cualquier otro emisor argentino.
+- Descargados a `Clubes/Argentina/River/` (no trackeados, `*.pdf` gitignoreado, pendientes de
+  transcripción): Ejercicio 120 (2020-21, individual + consolidado), 121 (2021-22), 122 (2022-23),
+  una copia oficial del 123 (2023-24, ya cargado vía mirror de tuRiver) y un documento con Fecha de
+  Cierre 31/12/2025 — este último con una PREGUNTA ABIERTA (¿cambio de ejercicio fiscal a
+  calendario, o período irregular de transición?) anotada en `Admin/dudas-por-club.md`.
+- Agotadas sin resultado, para los 2 ejercicios que siguen faltando (118 2018-19, 119 2019-20):
+  `cariverplate.com.ar` (dominio viejo, hoy redirige a riverplate.com; sus PDFs archivados en
+  Wayback son memoria narrativa duplicada o anexo DEPORTIVO, no financiero) y Wayback CDX de
+  dominio completo sobre `riverplate.com`. Quedan documentadas con cifras de prensa (La Página
+  Millonaria, Olé, Doble Amarilla) como corroboración, no como fuente primaria.
+- `tools/wayback-verify-download.mjs` (to-do 79): fix a un falso positivo del chequeo `id_`/`if_` —
+  la regex exigía una barra ANTES de `id_`, pero el formato real de Wayback es
+  `/web/<timestamp>id_/<url>` (el `id_` pega contra el timestamp, sin barra previa). Encontrado al
+  usar la herramienta de verdad por primera vez contra un caso real (`cariverplate.com.ar`).
 
 ## Versión 279 — to-do 67 cerrado: confirmado en producción
 

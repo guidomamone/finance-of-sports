@@ -274,113 +274,140 @@ Mer om lån og sikkerhetsstillelse
 
 --- pág. 7 ---
 
-## Resultatregnskap
+**Resultatregnskap**
 
-### Aalesunds Fotballklubb
+**Aalesunds Fotballklubb**
 
-|   | Note | 2022 | 2021  |
-| --- | --- | --- | --- |
-|  Salgsinntekter | 1,2,3 | 39 388 463 | 25 494 389  |
-|  **Sum driftsinntekter** |  | **39 388 463** | **25 494 389**  |
-|  Varekostnad |  | 206 707 | 241 308  |
-|  Lernskostnad | 4 | 38 061 623 | 24 158 301  |
-|  Annen driftskostnad | 5,6 | 960 926 | 629 300  |
-|  **Sum driftskostnad** |  | **39 228 256** | **25 028 909**  |
-|  **Driftsresultat** |  | **160 208** | **465 480**  |
-|  Annen renteinntekt |  | 1 868 | 1 351  |
-|  Annen finansinntekt |  | 0 | 4 665 962  |
-|  **Sum finansinntekter** |  | **1 868** | **4 667 313**  |
-|  Annen rentekostnad |  | 0 | 51 761  |
-|  Annen finanskostnad |  | 532 337 | 937 953  |
-|  **Sum finanskostnader** |  | **532 337** | **980 714**  |
-|  **Sum netto finansposter** |  | **-530 469** | **3 677 600**  |
-|  **Ordinært resultat** | **7** | **-370 261** | **4 143 079**  |
-|  **Årsresultat** |  | **-370 261** | **4 143 079**  |
-|  Overført fra annen egenkapital |  | -370 261 | 0  |
-|  Avsatt til egenkapital | 12 | 0 | 4 143 079  |
-|  **Sum disponert** |  | **-370 261** | **4 143 079**  |
+| | Note | 2022 | 2021 |
+|---|---|---|---|
+| Salgsinntekter | 1,2,3 | 39 388 463 | 25 494 389 |
+| **Sum driftsinntekter** | | **39 388 463** | **25 494 389** |
+| | | | |
+| Varekostnad | | 206 707 | 241 308 |
+| Lønnskostnad | 4 | 38 061 623 | 24 158 301 |
+| Annen driftskostnad | 5,6 | 960 926 | 629 300 |
+| **Sum driftskostnad** | | **39 228 256** | **25 028 909** |
+| | | | |
+| **Driftsresultat** | | **160 208** | **465 480** |
+| | | | |
+| Annen renteinntekt | | 1 868 | 1 351 |
+| Annen finansinntekt | | 0 | 4 665 962 |
+| **Sum finansinntekter** | | **1 868** | **4 667 313** |
+| Annen rentekostnad | | 0 | 51 761 |
+| Annen finanskostnad | | 532 337 | 937 953 |
+| **Sum finanskostnader** | | **532 337** | **989 714** |
+| **Sum netto finansposter** | | **-530 469** | **3 677 600** |
+| | | | |
+| **Ordinært resultat** | 7 | **-370 261** | **4 143 079** |
+| | | | |
+| **Årsresultat** | | **-370 261** | **4 143 079** |
+| | | | |
+| Overført fra annen egenkaital | | -370 261 | 0 |
+| Avsatt til egenkapital | 12 | 0 | 4 143 079 |
+| **Sum disponert** | | **-370 261** | **4 143 079** |
 
 Aalesunds Fotballklubb Org.nr. 942478844
 
 --- pág. 8 ---
 
-# Balanse
+## Balanse
 
-## Aalesunds Fotballklubb
+### Aalesunds Fotballklubb
 
-|   | Note | 2022 | 2021  |
-| --- | --- | --- | --- |
-|  **Eiendeler** |  |  |   |
-|  **Anleggsmidler** |  |  |   |
-|  **Finansielle anleggsmidler** |  |  |   |
-|  Investeringer i datterselskap | 8 | 7 674 500 | 8 206 837  |
-|  Investeringer i aksjer og andeler |  | 432 200 | 432 200  |
-|  **Sum finansielle anleggsmidler** |  | **8 106 700** | **8 639 037**  |
-|  **Sum anleggsmidler** |  | **8 106 700** | **8 639 037**  |
-|  **Omløpsmidler** |  |  |   |
-|  **Fordringer** |  |  |   |
-|  Kundefordringer | 9,10 | 11 248 083 | 6 548 471  |
-|  Andre fordringer | 9 | 4 890 431 | 3 558 020  |
-|  **Sum fordringer** |  | **16 138 514** | **10 106 491**  |
-|  **Bankinnskudd, kontanter o.l.** | 11 | **2 406 804** | **4 638 024**  |
-|  **Sum omløpsmidler** |  | **18 545 318** | **14 744 515**  |
-|  **Sum eiendeler** |  | **26 652 018** | **23 383 552**  |
+| | Note | 2022 | 2021 |
+| :--- | :--- | :--- | :--- |
+| **Eiendeler** | | | |
+| **Anleggsmidler** | | | |
+| | | | |
+| **Finansielle anleggsmidler** | | | |
+| Investeringer i datterselskap | 8 | 7 674 500 | 8 206 837 |
+| Investeringer i aksjer og andeler | | 432 200 | 432 200 |
+| **Sum finansielle anleggsmidler** | | **8 106 700** | **8 639 037** |
+| | | | |
+| **Sum anleggsmidler** | | **8 106 700** | **8 639 037** |
+| | | | |
+| **Omløpsmidler** | | | |
+| | | | |
+| **Fordringer** | | | |
+| Kundefordringer | 9,10 | 11 248 083 | 6 548 471 |
+| Andre fordringer | 9 | 4 890 431 | 3 558 020 |
+| **Sum fordringer** | | **16 138 514** | **10 106 491** |
+| | | | |
+| **Bankinnskudd, kontanter o.l.** | 11 | **2 406 804** | **4 638 024** |
+| | | | |
+| **Sum omløpsmidler** | | **18 545 318** | **14 744 515** |
+| | | | |
+| **Sum eiendeler** | | **26 652 018** | **23 383 552** |
 
-Aalesunds Fotballklubb Org.nr. 942478864
+---
+Aalesunds Fotballklubb Org.nr. 942478844
 
 --- pág. 9 ---
 
-# **Balanse**
+## Balanse
 
-# **Aalesunds Fotballklubb**
+### Aalesunds Fotballklubb
 
-|   | Note | 2022 | 2021  |
-| --- | --- | --- | --- |
-|  **Egenkapital og gjeld** |  |  |   |
-|  **Egenkapital** |  |  |   |
-|  **Opptjent egenkapital** |  |  |   |
-|  Opptjent egenkapital | 12 | 14 456 303 | 14 826 565  |
-|  **Sum opptjent egenkapital** |  | 14 456 303 | 14 826 565  |
-|  **Sum egenkapital** |  | **14 456 303** | **14 826 565**  |
-|  **Gjeld** |  |  |   |
-|  **Kortsiktig gjeld** |  |  |   |
-|  Leverandørgjeld | 9 | 181 445 | 1 188 229  |
-|  Skyldige offentlige avgifter |  | 4 273 097 | 2 106 757  |
-|  Annen kortsiktig gjeld | 9 | 7 741 172 | 5 263 001  |
-|  **Sum kortsiktig gjeld** |  | **12 195 715** | **8 556 987**  |
-|  **Sum gjeld** |  | **12 195 715** | **8 556 987**  |
-|  **Sum egenkapital og gjeld** |  | **26 652 018** | **23 383 552**  |
+| | Note | 2022 | 2021 |
+| :--- | :--- | :--- | :--- |
+| **Egenkapital og gjeld** | | | |
+| **Egenkapital** | | | |
+| | | | |
+| **Opptjent egenkapital** | | | |
+| Opptjent egenkapital | 12 | 14 456 303 | 14 826 565 |
+| **Sum opptjent egenkapital** | | **14 456 303** | **14 826 565** |
+| | | | |
+| **Sum egenkapital** | | **14 456 303** | **14 826 565** |
+| | | | |
+| **Gjeld** | | | |
+| | | | |
+| **Kortsiktig gjeld** | | | |
+| Leverandørgjeld | 9 | 181 445 | 1 188 229 |
+| Skyldige offentlige avgifter | | 4 273 097 | 2 105 757 |
+| Annen kortsiktig gjeld | 9 | 7 741 172 | 5 263 001 |
+| **Sum kortsiktig gjeld** | | **12 195 715** | **8 556 987** |
+| | | | |
+| **Sum gjeld** | | **12 195 715** | **8 556 987** |
+| | | | |
+| **Sum egenkapital og gjeld** | | **26 652 018** | **23 383 552** |
 
-Ålesund, 20.02.2023
-Styret for Aalesunds Fotballklubb
+Ålesund , 20.02.2023  
+Styret for Aalesunds Fotballklubb  
 
+[Signatur]  
 Jan Petter Hagen  
-Styreleder
+Styreleder  
 
-Ege Gjørts  
-Styremedlem
+[Signatur]  
+Egil Gjørtz  
+Styremedlem  
 
+[Signatur]  
 Jan Rune Hurlen  
-Styremedlem
+Styremedlem  
 
-Maria Elena Kjell  
-Styremedlem
+[Signatur]  
+Maria Elena Kvalen  
+Styremedlem  
 
-Benny Stokke  
-Daglig leder
+[Signatur]  
+Ronny Stokke  
+Daglig leder  
 
-Toril Vreberg  
-Styremedlem
+[Signatur]  
+Torill Ytreberg  
+Styremedlem  
 
+[Signatur]  
 Hans Ove Holmøy  
-Nestleder
+Nestleder  
 
+[Signatur]  
 Peter Orry Larsen  
-Styremedlem
+Styremedlem  
 
-Aalesunds Fotballklubb
-
-Org.nr. 942478844
+---
+Aalesunds Fotballklubb Org.nr. 942478844
 
 --- pág. 10 ---
 

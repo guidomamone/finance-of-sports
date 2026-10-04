@@ -284,31 +284,42 @@ RUA GONÇALVES DIAS 1428 - ARARAQUARA - SP - 14801-290 - Fone: (16)33354699
 
 --- pág. 5 ---
 
-|  Empresa: FERROVIARIA FUTEBOL S/A | Página: 5  |
-| --- | --- |
-|  CNPJ: 06.020.811/0001-30 |   |
-|  Periodo: 01/01/2018 a 31/12/2018 - CONSOLIDADO |   |
-|  Balanço Patrimonial  |   |
-|  Contingencias | 685.839,04  |
-|  Contingencias | 685.839,04  |
-|  Provisão p/Contingencias Trabalhistas | 486.901,32  |
-|  Provisão p/Contingencias Cíveis | 198.937,72  |
-|  Patrimonio Líquido | (4.825.287,19)  |
-|  Patrimonio Líquido | (4.825.287,19)  |
-|  Capital Social Integralizado | 950.000,00  |
-|  Capital Social | 950.000,00  |
-|  Capital Social Subscrito | 950.000,00  |
-|  Capital Autorizado a Subscrever | 1.550.000,00  |
-|  Capital a Subscrever | (1.550.000,00)  |
-|  Adiantamento Subscrição Capital | 2.765.734,00  |
-|  Adiantamento Subscrição Capital | 2.765.734,00  |
-|  Valdir Antonio Massucato | 11.000,00  |
-|  Carlos Alberto Salmazo | 82.917,00  |
-|  IESA PROJETOS EQUIP MONTAGENS SA | 627.000,00  |
-|  KNOW HOW LTDA | 2.044.817,00  |
-|  Lucros ou Prejuízos Acumulados | (8.541.021,19)  |
-|  Lucros ou Prejuízos Acumulados | (8.541.021,19)  |
-|  Prejuízos Acumulados | (8.541.021,19)  |
-|  ARARAQUARA, 31 de dezembro de 2018.  |   |
-|  PRESIDENTE CARLOS ALBERTO SALMAZO CPF: 084.882.938-79 | CONTADOR RESPONSÁVEL JOSÉ ROBERTO DE CASTRO CT CRC: 1SP131130/O-7  |
-|  CASTRO ASSESSORIA CONTABIL SS LTDA EPP RUA GONÇALVES DIAS 1428 - ARARAQUARA - SP - 14601-290 - Fone: (16)33354699  |   |
+| Empresa: FERROVIARIA FUTEBOL S/A | Página: 5 |
+| :--- | ---: |
+| CNPJ: 06.020.811/0001-30 | |
+| Período: 01/01/2018 a 31/12/2018 - CONSOLIDADO | |
+
+### Balanço Patrimonial
+
+| | |
+| :--- | ---: |
+| Contingencias | 685.839,04 |
+| Contingencias | 685.839,04 |
+| Provisão p/Contingencias Trabalhistas | 486.901,32 |
+| Provisão p/Contingencias Cíveis | 198.937,72 |
+| Patrimonio Líquido | (4.825.287,19) |
+| Patrimonio Líquido | (4.825.287,19) |
+| Capital Social Integralizado | 950.000,00 |
+| Capital Social | 950.000,00 |
+| Capital Social Subscrito | 950.000,00 |
+| Capital Autorizado a Subscrever | 1.550.000,00 |
+| Capital a Subscrever | (1.550.000,00) |
+| Adiantamento Subscrição Capital | 2.765.734,00 |
+| Adiantamento Subscrição Capital | 2.765.734,00 |
+| Valdir Antonio Massucato | 11.000,00 |
+| Carlos Alberto Salmazo | 82.917,00 |
+| IESA PROJETOS EQUIP MONTAGENS SA | 627.000,00 |
+| KNOW HOW LTDA | 2.044.817,00 |
+| Lucros ou Prejuízos Acumulados | (8.541.021,19) |
+| Lucros ou Prejuízos Acumulados | (8.541.021,19) |
+| Prejuízos Acumulados | (8.541.021,19) |
+
+ARARAQUARA, 31 de dezembro de 2018.
+
+| | |
+| :---: | :---: |
+| PRESIDENTE<br>CARLOS ALBERTO SALMAZO<br>CPF: 084.882.938-79 | CONTADOR RESPONSAVEL<br>JOSÉ ROBERTO DE CASTRO<br>CT CRC: 1SP131130/O-7 |
+
+CASTRO ASSESSORIA CONTABIL SS LTDA EPP  
+RUA GONÇALVES DIAS 1428 - ARARAQUARA - SP - 14801-290 - Fone: (16)33354699
+

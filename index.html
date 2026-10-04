@@ -28,7 +28,7 @@ consulta puntual, nunca lectura de corrido.
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="site.title">El deporte en Números | Datos para votar informado</title>
-<link rel="stylesheet" href="js/styles.css?v=246">
+<link rel="stylesheet" href="js/styles.css?v=394">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -263,6 +263,14 @@ consulta puntual, nunca lectura de corrido.
           <button data-simplify="0" data-i18n="finanzas.fmt.club">Formato del club</button>
           <button data-simplify="1" class="active" data-i18n="finanzas.fmt.simple">Formato simplificado</button>
         </div>
+      </span>
+
+      <!-- to-do 83: "¿cómo le iría este club en otra liga?" — simulación por plata, no
+           predicción deportiva. Solo tiene sentido para UN ejercicio puntual (el motor real,
+           computeYearGeneric(), toma un año, no un rango de gestión), así que se esconde en
+           modo "Por gestión" — ver refreshFinanzas(). -->
+      <span id="ligaSimWrap">
+        <button type="button" id="btnLigaSim" class="btn-secondary" data-i18n="finanzas.ligasim.btn">¿Cómo le iría en otra liga?</button>
       </span>
     </div>
 
@@ -609,12 +617,16 @@ consulta puntual, nunca lectura de corrido.
 </main>
 
 <footer>
-  <span data-i18n="footer.text">Este sitio no representa a ninguna lista ni candidatura. Su único objetivo es facilitar el acceso a datos públicos para que cada socio decida su voto.</span><br>
-  <span style="opacity:.7;" data-i18n="footer.note">MVP · datos placeholder · versión de prueba</span><br>
+  <span data-i18n="footer.text">financeofsports.com publica datos financieros de clubes de fútbol, tomados de balances y presupuestos oficiales citados en cada ficha. No representa a ningún club, liga ni federación.</span><br>
+  <span style="opacity:.7;" data-i18n="footer.note">Proyecto personal, sin fines de lucro.</span><br>
   <!-- Link ESTÁTICO a fuentes.html (Versión 128). Los otros 2 links a esa página los arma
        js/finanzas-render.js en runtime, así que un crawler que no ejecuta JS no la encontraba:
        la página hecha para que la indexen era huérfana. Este <a> vive en el HTML servido. -->
   <a href="fuentes.html" style="color:inherit;opacity:.7;" data-i18n="footer.fuentes">Todas las fuentes del sitio</a>
+  <span style="opacity:.5;"> · </span>
+  <a href="privacidad.html" style="color:inherit;opacity:.7;" data-i18n="footer.privacidad">Privacidad</a>
+  <span style="opacity:.5;"> · </span>
+  <a href="terminos.html" style="color:inherit;opacity:.7;" data-i18n="footer.terminos">Términos de uso</a>
 </footer>
 
 <!-- MODAL DE CONTACTO -->
@@ -673,45 +685,45 @@ consulta puntual, nunca lectura de corrido.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '246';</script>
-<script src="data/lang/langs.js?v=246"></script>
-<script src="js/i18n.js?v=246"></script>
-<script src="data/clubs.js?v=246"></script>
+<script>window.ASSET_V = '394';</script>
+<script src="data/lang/langs.js?v=394"></script>
+<script src="js/i18n.js?v=394"></script>
+<script src="data/clubs.js?v=394"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=246"></script>
+<script src="data/club-index.js?v=394"></script>
 <!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=246"></script>
-<script src="data/club-leagues.js?v=246"></script>
-<script src="data/category-map.js?v=246"></script>
-<script src="data/site-labels.js?v=246"></script>
-<script src="data/currency-map.js?v=246"></script>
-<script src="data/sources-view.js?v=246"></script>
+<script src="data/leagues.js?v=394"></script>
+<script src="data/club-leagues.js?v=394"></script>
+<script src="data/category-map.js?v=394"></script>
+<script src="data/site-labels.js?v=394"></script>
+<script src="data/currency-map.js?v=394"></script>
+<script src="data/sources-view.js?v=394"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/finanzas-calc.js?v=246"></script>
-<script src="js/finanzas-render.js?v=246"></script>
+<script src="js/finanzas-calc.js?v=394"></script>
+<script src="js/finanzas-render.js?v=394"></script>
 <!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=246"></script>
-<script src="data/destacados.js?v=246"></script>
-<script src="js/liga.js?v=246"></script>
+<script src="js/selector.js?v=394"></script>
+<script src="data/destacados.js?v=394"></script>
+<script src="js/liga.js?v=394"></script>
 <!-- js/cuenta.js (to-do 70): login con Google vía Supabase + guardado automático de búsquedas.
      No sabe cómo se renderiza el resto del sitio, igual que js/selector.js — recibe `reopen` por
      CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=246"></script>
+<script src="js/cuenta.js?v=394"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -805,6 +817,10 @@ consulta puntual, nunca lectura de corrido.
     isGestion ? updateFinanzasByGestionGeneric(currentClub) : updateFinanzasByAnioGeneric(currentClub);
     renderDataQualityBannerForCurrentSelection();
     renderFuentesCard();
+    // to-do 83: el botón de simulación solo tiene sentido con un club elegido y en
+    // modo "Año a año" (la simulación es de UN ejercicio puntual, no de una gestión).
+    const ligaSimWrap = document.getElementById('ligaSimWrap');
+    if(ligaSimWrap) ligaSimWrap.style.display = (currentClub && !isGestion) ? '' : 'none';
     // to-do 70, "Saved Searches": cada vez que el club/año/gestión se asienta, se avisa a
     // js/cuenta.js. Si no hay sesión (o `currentClub` es null, portada), CUENTA.notifyStateChange
     // no hace nada — no es un botón, se guarda sola (decisión de Guido, 2026-09-27).
@@ -937,6 +953,21 @@ consulta puntual, nunca lectura de corrido.
       irASeccion('vs');
       return;
     }
+    // to-do 83: simulación de uno o más clubes en una liga que no es la suya.
+    // `state.clubes` es SIEMPRE un array (hasta un solo club de Finanzas se
+    // guarda como array de 1) — necesitan sus `data/<club>-data.js` cargados
+    // para poder recalcular el ingreso con computeYearGeneric(), pero NO pasa
+    // por selectClub(): esto no cambia "el club activo" del sitio, solo arma
+    // una vista, en paralelo con Promise.all (LIGA_VIEW no sabe cargar clubes).
+    if(state.view === 'ligaSim'){
+      if(!state.league || !state.clubes || !state.clubes.length) return;
+      Promise.all(state.clubes.map(c => loadClubData(c.club).catch(() => null))).then(() => {
+        LIGA_VIEW.showConSimulados(state.league, state.leagueYear,
+          state.clubes.map(c => ({ clubId:c.club, clubYear:c.clubYear })));
+        irASeccion('liga');
+      });
+      return;
+    }
     if(!state.club) return;
     selectClub(state.club).then(() => {
       const isGestion = state.mode === 'gestion';
@@ -1012,6 +1043,19 @@ consulta puntual, nunca lectura de corrido.
     goFinanzas: () => irASeccion('finanzas'),
     // Versión 184: el "Ver la liga ›" de cada bloque de la vidriera de Inicio.
     goLiga: () => irASeccion('liga'),
+    // to-do 83: LIGA_VIEW no sabe de Supabase (mismo principio que CLUB_SELECTOR/
+    // js/cuenta.js), así que avisa acá cuando una simulación se armó de verdad, y
+    // acá se decide si guardarla — mismo gateo que refreshFinanzas() (sin sesión,
+    // notifyStateChange no hace nada).
+    onSimulado: (league, leagueYear, clubes) => {
+      if(window.CUENTA) window.CUENTA.notifyStateChange({
+        view: 'ligaSim', league, leagueYear, clubes,
+      });
+    },
+  });
+  document.getElementById('btnLigaSim').addEventListener('click', () => {
+    LIGA_VIEW.iniciarSimulacion(currentClub, parseInt(document.getElementById('anioSelect').value, 10));
+    irASeccion('liga');
   });
   // Se dibujan las dos pantallas del módulo: la pestaña (estado frío: la grilla de las 8
   // ligas, para que llegar por el nav sin liga elegida no muestre una sección vacía) y la

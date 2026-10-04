@@ -83,7 +83,7 @@ async function main() {
     );
     process.exit(1);
   }
-  if (!/\/(id_|if_)\//.test(sourceUrl)) {
+  if (!/\/web\/\d+(id_|if_)\//.test(sourceUrl)) {
     console.error(
       `AVISO: la URL no tiene el modificador id_/if_ (${sourceUrl}) — sin él, Wayback devuelve la ` +
         'página con su toolbar inyectado, no el archivo crudo. Revisá la URL antes de seguir.'

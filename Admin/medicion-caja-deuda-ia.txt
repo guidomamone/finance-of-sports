@@ -1,0 +1,360 @@
+
+IA: gastado US$ 6.36 en 192 documentos
+
+## DEUDA: {"total":205,"aciertos":16,"distintos":16,"sinDato":173}
+   escalón 0: {"total":10,"aciertos":9,"distintos":1,"sinDato":0}
+   escalón 1: {"total":2,"aciertos":2,"distintos":0,"sinDato":0}
+   escalón 2: {"total":20,"aciertos":5,"distintos":15,"sinDato":0}
+   confirmado por año anterior: {"total":10,"aciertos":10,"distintos":0,"sinDato":0}
+   confirmado por documento siguiente: {"total":9,"aciertos":4,"distintos":5,"sinDato":0}
+   DISTINTOS de lo cargado (16):
+     athleticoparanaense-br 2024: script 0.356 (escalón 0, precedente del club (2025: emprestimos e financiamentos)) · sitio 0.518 · filas: "Empréstimos e financiamentos" 356 (pág. 15, L479)
+     az-nl 2024: script 11.844 (escalón 2, IA (escala miles: "€ x 1000")) · sitio 39.275 · filas: "Schulden aan kredietinstellingen" 7333 (pág. 18, L747) + "Lening gemeente Zaanstad" 4511 (pág. 32, L1514)
+     bahia-br 2024: script 0 (escalón 2, IA: el balance no tiene deuda financiera) · sitio 679.901 · filas: 
+     bahia-br 2025: script 0 (escalón 2, IA: el balance no tiene deuda financiera) · sitio 36.841 · filas: 
+     boca 2022: script 0 (escalón 2, IA: el balance no tiene deuda financiera) · sitio 2863.64336 · filas: 
+     boca 2023: script 0 (escalón 2, IA: el balance no tiene deuda financiera) · sitio 3348.078759 · filas: 
+     botafogosp-br 2024: script 0 (escalón 2, IA: el balance no tiene deuda financiera) · sitio 53.593257 · filas: 
+     colocolo-cl 2022: script 410.88 (escalón 2, IA (escala miles: "(Cifras en miles de pesos - M$)")) · sitio 0 · filas: "Otros pasivos financieros corrientes" 403639 (pág. 6, L227) + "Otros pasivos financieros, no corrientes" 7241 (pág. 6, L234)
+     flamengo-br 2024: script 0 (escalón 2, IA: el balance no tiene deuda financiera) · sitio 912.581 · filas: 
+     flamengo-br 2025: script 0 (escalón 2, IA: el balance no tiene deuda financiera) · sitio 1038.223 · filas: 
+     losandes-ar 2020: script 0 (escalón 2, IA: el balance no tiene deuda financiera) · sitio 59.358045 · filas: 
+     losandes-ar 2021: script 0 (escalón 2, IA: el balance no tiene deuda financiera) · sitio 67.996953 · filas: 
+     psv-nl 2024: script 45.706 (escalón 2, IA (escala miles: "(Bedragen in EUR x 1.000)")) · sitio 163.391 · filas: "Achtergestelde leningen" 45100 (pág. 37, L1645) + "Overige schulden" 404 (pág. 37, L1647) + "Aflossingsverplichting langlopende schul" 202 (pág. 37, L1653)
+     talleres-ar 2024: script 0 (escalón 2, IA: el balance no tiene deuda financiera) · sitio 21486.534385 · filas: 
+     talleres-ar 2025: script 0 (escalón 2, IA: el balance no tiene deuda financiera) · sitio 30269.641516 · filas: 
+     tottenham-gb 2024: script -851.448 (escalón 2, IA (escala miles: "£’000")) · sitio 851.448 · filas: "Interest-bearing loans and borrowings" -851448 (pág. 21, L1296)
+     sin dato: agf-dk 2021 (sitio 4.627): IA: línea que no es una fila del balance ()
+     sin dato: ajax-nl 2024 (sitio 296.182): IA: ninguna (sin total del pasivo para dar 0)
+     sin dato: ajax-nl 2025 (sitio 219.259): IA: ninguna (sin total del pasivo para dar 0)
+     sin dato: alianzalima-pe 2023 (sitio 47.027776): IA: línea que no es una fila del balance ()
+     sin dato: amazonas-br 2024 (sitio 0.9230075): IA: línea que no es una fila del balance (17, 30)
+     sin dato: americadecali-co 2025 (sitio 11835.971): IA 11835.971: ningún año vecino para confirmar
+     sin dato: americamineiro-br 2023 (sitio 22.705352): IA 22.705352: ningún año vecino para confirmar
+     sin dato: americamineiro-br 2024 (sitio 29.444135): IA 31.01677: no-coincide (23.277987 contra 22.705352)
+     sin dato: americamineiro-br 2025 (sitio 36.494416): IA 36.494416: no-coincide (28.539668 contra 29.444135)
+     sin dato: anderlecht-be 2025 (sitio 57.066235): IA: línea que no es una fila del balance ()
+     sin dato: antwerp-be 2025 (sitio 50.748888): IA: línea que no es una fila del balance ()
+     sin dato: arsenal-gb 2024 (sitio 341.784): IA: línea que no es una fila del balance ()
+     sin dato: arsenal-gb 2025 (sitio 358.294): IA: línea que no es una fila del balance ()
+     sin dato: astonvilla-gb 2025 (sitio 110.571): IA: línea que no es una fila del balance ()
+     sin dato: athleticclub 2025 (sitio 0): sin filas en el balance · IA: sin páginas de balance
+     sin dato: athleticoparanaense-br 2025 (sitio 0.13): IA 0.292: no-coincide (106.249 contra 0.518)
+     sin dato: atleticogoianiense 2025 (sitio 9.666): IA 4.288: ningún año vecino para confirmar
+     sin dato: atleticomadrid 2025 (sitio 61.04928): sin filas en el balance · IA: sin páginas de balance
+     sin dato: atleticomineiro-br 2023 (sitio 465.387): IA 34465387992.753: ningún año vecino para confirmar
+     sin dato: atleticomineiro-br 2024 (sitio 554.702): IA: línea que no es una fila del balance (2241, 2251, 2247, 2258)
+     sin dato: atleticomineiro-br 2025 (sitio 721.757): IA: línea que no es una fila del balance (5357, 5366, 5362, 5372)
+     sin dato: atlnacional-co 2025 (sitio 15948.285): IA: línea que no es una fila del balance ()
+     sin dato: augsburg-de 2024 (sitio 35.487566): IA: línea que no es una fila del balance ()
+     sin dato: augsburg-de 2025 (sitio 27.810112): IA: línea que no es una fila del balance ()
+     sin dato: az-nl 2025 (sitio 37.578): IA 6.667: no-coincide (7.333 contra 39.275)
+     sin dato: botafogo 2023 (sitio 358.871): IA 10563.441: ningún año vecino para confirmar
+     sin dato: botafogo 2024 (sitio 48.112): IA: la frase de la escala no está en el balance
+     sin dato: botafogo 2025 (sitio 138.972): IA: línea que no es una fila del balance (1304, 1313)
+     sin dato: bournemouth-gb 2024 (sitio 122.779): IA: línea que no es una fila del balance ()
+     sin dato: bournemouth-gb 2025 (sitio 48.905): IA: línea que no es una fila del balance (810, 815)
+     sin dato: boyacachico-co 2024 (sitio 0): IA 441.174314: ningún año vecino para confirmar
+     sin dato: brentford-gb 2024 (sitio 98.347): IA: línea que no es una fila del balance ()
+     sin dato: brentford-gb 2025 (sitio 132.072): IA: línea que no es una fila del balance ()
+     sin dato: brighton-gb 2024 (sitio 229.2): IA: línea que no es una fila del balance ()
+     sin dato: brighton-gb 2025 (sitio 336.069): IA: línea que no es una fila del balance ()
+     sin dato: brondby-dk 2020 (sitio 0): IA 0.02428: ningún año vecino para confirmar
+     sin dato: burnley-gb 2024 (sitio 112.393): IA: línea que no es una fila del balance (2351)
+     sin dato: burnley-gb 2025 (sitio 142.372): IA -112.393: no-coincide (-29.979 contra 112.393)
+     sin dato: ceara-br 2024 (sitio 47.159): IA: línea que no es una fila del balance (594, 606)
+     sin dato: ceara-br 2025 (sitio 84.732): IA: línea que no es una fila del balance (594, 606)
+     sin dato: celtavigo 2025 (sitio 60.315351): sin filas en el balance · IA: sin páginas de balance
+     sin dato: cerclebrugge-be 2025 (sitio 19.177608): IA: línea que no es una fila del balance ()
+     sin dato: chapecoense-br 2021 (sitio 14.025): IA 16.553: ningún año vecino para confirmar
+     sin dato: charleroi-be 2025 (sitio 10.64103): IA: línea que no es una fila del balance ()
+     sin dato: chelsea-gb 2025 (sitio 0): IA: línea que no es una fila del balance ()
+     sin dato: clubbrugge-be 2025 (sitio 98.745): IA: línea que no es una fila del balance (600, 609)
+     sin dato: colocolo-cl 2023 (sitio 0): IA 2811.656: ningún año vecino para confirmar
+     sin dato: colocolo-cl 2024 (sitio 0): IA 10.162: ningún año vecino para confirmar
+     sin dato: corinthians-br 2024 (sitio 244.672): IA: línea que no es una fila del balance (356, 369)
+     sin dato: corinthians-br 2025 (sitio 250.032): IA 11146793330.372: ningún año vecino para confirmar
+     sin dato: coritiba 2023 (sitio 0): IA: línea que no es una fila del balance ()
+     sin dato: coritiba 2024 (sitio 49.4): IA 55.884752: no-coincide (31.38477 contra 0)
+     sin dato: cruzeiro 2022 (sitio 19.719): IA 19.719: no-coincide (10 en el documento siguiente)
+     sin dato: cruzeiro 2023 (sitio 16.514): IA 93.613: no-coincide (106.721 en el documento siguiente)
+     sin dato: cruzeiro 2024 (sitio 37.329): IA 89.742: no-coincide (71.972 en el documento siguiente)
+     sin dato: cruzeiro 2025 (sitio 12.645): IA 148.695: no-coincide (96.31 contra 37.329)
+     sin dato: crystalpalace-gb 2024 (sitio 157.905): IA: línea que no es una fila del balance ()
+     sin dato: crystalpalace-gb 2025 (sitio 121.918): IA: línea que no es una fila del balance ()
+     sin dato: dender-be 2025 (sitio 21.68247): IA: línea que no es una fila del balance (195)
+     sin dato: depcali-co 2025 (sitio 40639.552): IA: línea que no es una fila del balance ()
+     sin dato: deportivoalaves 2025 (sitio 0): sin filas en el balance · IA: sin páginas de balance
+     sin dato: deportivopereira-co 2025 (sitio 11271.366835): IA: línea que no es una fila del balance ()
+     sin dato: dinamozagreb-hr 2024 (sitio 3.7): IA 3.7: ningún año vecino para confirmar
+     sin dato: eintrachtfrankfurt-de 2024 (sitio 57.069177): IA: línea que no es una fila del balance ()
+     sin dato: eintrachtfrankfurt-de 2025 (sitio 60.715487): IA: línea que no es una fila del balance ()
+     sin dato: elche-es 2024 (sitio 13.134695): IA 13.134695: ningún año vecino para confirmar
+     sin dato: elche-es 2025 (sitio 13.047943): IA: línea que no es una fila del balance (312, 323)
+     sin dato: envigado 2025 (sitio 3236.656641): sin filas en el balance · IA: sin páginas de balance
+     sin dato: espanyol-es 2024 (sitio 0.425716): IA 95.749458: ningún año vecino para confirmar
+     sin dato: espanyol-es 2025 (sitio 0.0417): IA 0: no-coincide (0.364016 contra 0.425716)
+     sin dato: everton-gb 2024 (sitio 593.772): IA 593772341385393700000: ningún año vecino para confirmar
+     sin dato: everton-gb 2025 (sitio 468.542): IA: línea que no es una fila del balance (2613)
+     sin dato: fcbarcelona 2025 (sitio 305.155): sin filas en el balance · IA: sin páginas de balance
+     sin dato: fckobenhavn-dk 2024 (sitio 0): IA: ninguna (sin total del pasivo para dar 0)
+     sin dato: feyenoord-nl 2024 (sitio 97.781): IA 0.0045: ningún año vecino para confirmar
+     sin dato: feyenoord-nl 2025 (sitio 113.356): IA 0.0027: no-coincide (0.0045 contra 97.781)
+     sin dato: fluminense-br 2024 (sitio 31.479): IA 31.479: no-coincide (62.958 en el documento siguiente)
+     sin dato: fortaleza-br 2025 (sitio 60.166): IA 60.166: ningún año vecino para confirmar
+     sin dato: fredericia-dk 2019 (sitio 4.905334): sin filas en el balance · IA: sin páginas de balance
+     sin dato: fulham-gb 2024 (sitio 44.398): IA: línea que no es una fila del balance ()
+     sin dato: fulham-gb 2025 (sitio 0): IA: línea que no es una fila del balance ()
+     sin dato: genk-be 2025 (sitio 34.505065): IA: línea que no es una fila del balance ()
+     sin dato: gent-be 2025 (sitio 70.411806): IA: línea que no es una fila del balance ()
+     sin dato: getafe-es 2024 (sitio 77.934725): IA: línea que no es una fila del balance (533, 534, 607, 608)
+     sin dato: getafe-es 2025 (sitio 85.300451): sin filas en el balance · IA: sin páginas de balance
+     sin dato: girona-es 2020 (sitio 3.167): IA 0.03232: ningún año vecino para confirmar
+     sin dato: girona-es 2025 (sitio 47.221): IA 0.06354: ningún año vecino para confirmar
+     sin dato: godoycruz-ar 2020 (sitio 80.537132): IA: línea que no es una fila del balance ()
+     sin dato: gorica-hr 2025 (sitio 0.12651): IA: línea que no es una fila del balance (779, 780, 795)
+     sin dato: gremio 2024 (sitio 99.636): IA 74.982: ningún año vecino para confirmar
+     sin dato: guarani-br 2024 (sitio 144.944): IA 11.484: ningún año vecino para confirmar
+     sin dato: guarani-br 2025 (sitio 142.494): IA 0.001018: ningún año vecino para confirmar
+     sin dato: hajduksplit-hr 2024 (sitio 5.124513): IA: línea que no es una fila del balance (402, 427)
+     sin dato: hoffenheim-de 2024 (sitio 58.277885): IA: línea que no es una fila del balance (249)
+     sin dato: hoffenheim-de 2025 (sitio 79.418182): IA: línea que no es una fila del balance (283)
+     sin dato: internacional-br 2024 (sitio 189.031): IA: línea que no es una fila del balance (1121, 1135)
+     sin dato: internacional-br 2025 (sitio 188.975): IA: línea que no es una fila del balance (1059, 1075)
+     sin dato: ituano 2024 (sitio 10.847429): IA 11.15184: ningún año vecino para confirmar
+     sin dato: junior-co 2025 (sitio 8213.691): IA: línea que no es una fila del balance ()
+     sin dato: juventude-br 2020 (sitio 0.73381295): IA: línea que no es una fila del balance (268)
+     sin dato: koln-de 2024 (sitio 37.862442): IA: línea que no es una fila del balance (69, 73)
+     sin dato: koln-de 2025 (sitio 31.996691): IA: línea que no es una fila del balance (97, 99)
+     sin dato: leeds-gb 2024 (sitio 60.297537): IA: línea que no es una fila del balance ()
+     sin dato: leeds-gb 2025 (sitio 58.824929): IA: línea que no es una fila del balance ()
+     sin dato: levante-es 2025 (sitio 121.12351): IA 103.07996: ningún año vecino para confirmar
+     sin dato: liverpool-gb 2024 (sitio 314.295): IA: línea que no es una fila del balance (1793)
+     sin dato: liverpool-gb 2025 (sitio 285.256): IA: línea que no es una fila del balance ()
+     sin dato: mancity-gb 2024 (sitio 0): IA: ninguna (sin total del pasivo para dar 0)
+     sin dato: mancity-gb 2025 (sitio 0): IA: ninguna (sin total del pasivo para dar 0)
+     sin dato: mechelen-be 2025 (sitio 27.9558): IA: línea que no es una fila del balance ()
+     sin dato: midtjylland-dk 2019 (sitio 0): IA: línea que no es una fila del balance (2103, 2159, 2162, 2106, 2165)
+     sin dato: millonarios-co 2025 (sitio 28.34): IA: línea que no es una fila del balance ()
+     sin dato: mirassol 2024 (sitio 0): IA: línea que no es una fila del balance ()
+     sin dato: monchengladbach-de 2023 (sitio 107.105528): IA: línea que no es una fila del balance ()
+     sin dato: monchengladbach-de 2024 (sitio 107.921968): IA 771.322541: no-coincide (62.189561 contra 107.105528)
+     sin dato: newcastle-gb 2025 (sitio 58.314): IA: línea que no es una fila del balance ()
+     sin dato: nordsjaelland-dk 2024 (sitio 20.625): IA 20.625: ningún año vecino para confirmar
+     sin dato: nottinghamforest-gb 2024 (sitio 95.847): IA: línea que no es una fila del balance ()
+     sin dato: nottinghamforest-gb 2025 (sitio 146.485): IA: línea que no es una fila del balance ()
+     sin dato: oncecaldas 2022 (sitio 0): sin filas en el balance · IA: sin páginas de balance
+     sin dato: oncecaldas 2023 (sitio 0): sin filas en el balance · IA: sin páginas de balance
+     sin dato: oncecaldas 2024 (sitio 0): sin filas en el balance · IA: sin páginas de balance
+     sin dato: oncecaldas 2025 (sitio 0): IA: línea que no es una fila del balance ()
+     sin dato: operarioferroviario-br 2024 (sitio 0.425): IA 0.005: ningún año vecino para confirmar
+     sin dato: operarioferroviario-br 2025 (sitio 0): IA 1.363: no-coincide (1.343 contra 0.425)
+     sin dato: osasuna-es 2022 (sitio 45.839328): IA 45.839328: ningún año vecino para confirmar
+     sin dato: osasuna-es 2024 (sitio 50.186677): IA 50.186677: ningún año vecino para confirmar
+     sin dato: osijek-hr 2025 (sitio 11.470126): IA: línea que no es una fila del balance (412, 414, 470)
+     sin dato: palmeiras-br 2024 (sitio 39.759): IA: línea que no es una fila del balance (1249, 1260)
+     sin dato: palmeiras-br 2025 (sitio 0.234): IA 0.0021: no-coincide (10.254 contra 39.759)
+     sin dato: pontepreta-br 2022 (sitio 156.048883): IA: ninguna (sin total del pasivo para dar 0)
+     sin dato: pontepreta-br 2023 (sitio 155.365802): sin filas en el balance · IA: sin páginas de balance
+     sin dato: pontepreta-br 2024 (sitio 175.746869): IA: ninguna (sin total del pasivo para dar 0)
+     sin dato: psv-nl 2025 (sitio 140.827): IA 45.503: no-coincide (45.706 contra 163.391)
+     sin dato: racing 2027 (sitio 0): sin filas en el balance · IA: sin páginas de balance
+     sin dato: randers-dk 2023 (sitio 2.062693): IA 1.626121: ningún año vecino para confirmar
+     sin dato: rayovallecano-es 2025 (sitio 1.202364): IA: línea que no es una fila del balance ()
+     sin dato: rcdmallorca-es 2025 (sitio 59.60432): IA 7.224974: ningún año vecino para confirmar
+     sin dato: realbetis 2025 (sitio 129.106402): sin filas en el balance · IA: sin páginas de balance
+     sin dato: realmadrid 2025 (sitio 141.014): sin filas en el balance · IA: sin páginas de balance
+     sin dato: realoviedo-es 2025 (sitio 8.124554): sin filas en el balance · IA: sin páginas de balance
+     sin dato: rijeka-hr 2024 (sitio 14.092288): IA 14.092288: ningún año vecino para confirmar
+     sin dato: santafe-co 2025 (sitio 4645.154895): IA 4645.154895: ningún año vecino para confirmar
+     sin dato: santos-br 2024 (sitio 129.591): IA 11129.591: ningún año vecino para confirmar
+     sin dato: santos-br 2025 (sitio 94.338): IA 83085136.465: ningún año vecino para confirmar
+     sin dato: saopaulo-br 2023 (sitio 217.528): IA: línea que no es una fila del balance (621, 622, 636, 643)
+     sin dato: saopaulo-br 2024 (sitio 259.26): IA 0.0331: ningún año vecino para confirmar
+     sin dato: sevillafc 2025 (sitio 268.353): IA: línea que no es una fila del balance (61, 64)
+     sin dato: silkeborg-dk 2024 (sitio 0): IA: ninguna (sin total del pasivo para dar 0)
+     sin dato: sinttruiden-be 2025 (sitio 24.290111): IA: línea que no es una fila del balance ()
+     sin dato: slavenbelupo-hr 2025 (sitio 1.179036): IA: línea que no es una fila del balance (225)
+     sin dato: sonderjyske-dk 2022 (sitio 14.080333): sin filas en el balance · IA: sin páginas de balance
+     sin dato: sportrecife-br 2025 (sitio 26.786): IA 26.793: ningún año vecino para confirmar
+     sin dato: standardliege-be 2025 (sitio 23.461701): IA: línea que no es una fila del balance ()
+     sin dato: stuttgart-de 2023 (sitio 125.909849): sin filas en el balance · IA: sin páginas de balance
+     sin dato: stuttgart-de 2024 (sitio 140.706446): sin filas en el balance · IA: sin páginas de balance
+     sin dato: sunderland-gb 2024 (sitio 8.289): IA: línea que no es una fila del balance (1509)
+     sin dato: sunderland-gb 2025 (sitio 25.217): IA: línea que no es una fila del balance (1536)
+     sin dato: tottenham-gb 2025 (sitio 851.652): IA: línea que no es una fila del balance (1500, 1506)
+     sin dato: unionmagdalena-co 2018 (sitio 1058.314): IA 1058.314: ningún año vecino para confirmar
+     sin dato: unionsg-be 2025 (sitio 31.660587): IA: línea que no es una fila del balance ()
+     sin dato: valenciacf 2025 (sitio 121.693): sin filas en el balance · IA: sin páginas de balance
+     sin dato: varazdin-hr 2025 (sitio 0): IA: línea que no es una fila del balance (2210, 2211, 2226)
+     sin dato: vascodagama-br 2023 (sitio 44.654): IA 62.654: ningún año vecino para confirmar
+     sin dato: vejle-dk 2024 (sitio 24.128): IA: línea que no es una fila del balance (658, 664)
+     sin dato: viborg-dk 2024 (sitio 29.385639): IA 975935.073365: ningún año vecino para confirmar
+     sin dato: villarrealcf 2024 (sitio 116.355224): sin filas en el balance · IA: sin páginas de balance
+     sin dato: vitoria-br 2025 (sitio 10.273): IA: línea que no es una fila del balance (287)
+     sin dato: westerlo-be 2025 (sitio 39.407332): IA: línea que no es una fila del balance ()
+     sin dato: westham-gb 2025 (sitio 20.799): IA: línea que no es una fila del balance (2233, 2235, 2236)
+     sin dato: wolves-gb 2024 (sitio 100.609): IA: línea que no es una fila del balance ()
+     sin dato: wolves-gb 2025 (sitio 101.394): IA: línea que no es una fila del balance (1814, 1846)
+     sin dato: zultewaregem-be 2025 (sitio 29.448037): IA: línea que no es una fila del balance ()
+
+## CAJA: {"total":205,"aciertos":52,"distintos":4,"sinDato":149}
+   escalón 0: {"total":43,"aciertos":43,"distintos":0,"sinDato":0}
+   escalón 1: {"total":5,"aciertos":4,"distintos":1,"sinDato":0}
+   escalón 2: {"total":8,"aciertos":5,"distintos":3,"sinDato":0}
+   confirmado por año anterior: {"total":35,"aciertos":33,"distintos":2,"sinDato":0}
+   confirmado por documento siguiente: {"total":21,"aciertos":19,"distintos":2,"sinDato":0}
+   DISTINTOS de lo cargado (4):
+     colocolo-cl 2022: script 1293.536 (escalón 2, IA (escala miles: "(Cifras en miles de pesos - M$)")) · sitio 0 · filas: "Efectivo y Equivalentes al Efectivo" 1293536 (pág. 5, L192)
+     espanyol-es 2025: script 0.013951 (escalón 2, IA (escala unidades: "Euros")) · sitio 13.950791 · filas: "Efectivo y otros activos líquidos equiva" 13950.79099 (pág. 9, L361)
+     flamengo-br 2024: script 70557234.487 (escalón 2, IA (escala miles: "(Em milhares de reais)")) · sitio 70.557 · filas: "Caixa e equivalentes de caixa" 70557234487 (pág. 27, L901)
+     wolves-gb 2025: script 3.943 (escalón 1, vocabulario) · sitio 33.439 · filas: "Cash at bank and in hand" 3943 (pág. 22, L1083)
+     sin dato: agf-dk 2021 (sitio 29.347): IA: línea que no es una fila del balance ()
+     sin dato: alianzalima-pe 2023 (sitio 3.371734): IA 0.001776: no-coincide (438.69287 contra 6.131999)
+     sin dato: alianzalima-pe 2024 (sitio 2.709729): IA 0.003719: no-coincide (0.104177 contra 3.371734)
+     sin dato: amazonas-br 2024 (sitio 0.12759833): IA 0.127598: ningún año vecino para confirmar
+     sin dato: americadecali-co 2025 (sitio 870.325): IA: línea que no es una fila del balance (27)
+     sin dato: anderlecht-be 2025 (sitio 1.516035): IA: línea que no es una fila del balance (419)
+     sin dato: antwerp-be 2025 (sitio 4.159718): IA: línea que no es una fila del balance (345)
+     sin dato: arsenal-gb 2024 (sitio 66.819): IA: línea que no es una fila del balance (1402)
+     sin dato: arsenal-gb 2025 (sitio 55.994): IA: línea que no es una fila del balance (1457)
+     sin dato: astonvilla-gb 2025 (sitio 6.299): IA 6.299: ningún año vecino para confirmar
+     sin dato: athleticclub 2025 (sitio 46.086948): sin filas en el balance · IA: sin páginas de balance
+     sin dato: atleticogoianiense 2025 (sitio 0.767): IA 0.662: ningún año vecino para confirmar
+     sin dato: atleticomadrid 2025 (sitio 130.17651): sin filas en el balance · IA: sin páginas de balance
+     sin dato: atleticomineiro-br 2023 (sitio 191.231): IA 50537140.931: ningún año vecino para confirmar
+     sin dato: atleticomineiro-br 2024 (sitio 3.382): IA 43.068: no-coincide (50.537 contra 191.231)
+     sin dato: atleticomineiro-br 2025 (sitio 5.939): IA 47.364: no-coincide (43.068 contra 3.382)
+     sin dato: atlnacional-co 2025 (sitio 17130.558): IA: línea que no es una fila del balance ()
+     sin dato: augsburg-de 2024 (sitio 15.706786): IA: línea que no es una fila del balance (117)
+     sin dato: augsburg-de 2025 (sitio 14.134535): IA: línea que no es una fila del balance (90)
+     sin dato: boca 2022 (sitio 311.870166): IA 311.870166: no-coincide (672.330557 en el documento siguiente)
+     sin dato: boca 2023 (sitio 568.183797): IA 568.183797: no-coincide (672.330557 contra 311.870166)
+     sin dato: botafogo 2023 (sitio 16.057): IA 16.057: ningún año vecino para confirmar
+     sin dato: botafogosp-br 2024 (sitio 0.013588): IA 0.013588: ningún año vecino para confirmar
+     sin dato: boyacachico-co 2024 (sitio 0): IA 441.174314: ningún año vecino para confirmar
+     sin dato: brighton-gb 2024 (sitio 14.966): IA: línea que no es una fila del balance (854)
+     sin dato: brighton-gb 2025 (sitio 39.836): IA: línea que no es una fila del balance (893)
+     sin dato: brondby-dk 2020 (sitio 0): IA 22.985: ningún año vecino para confirmar
+     sin dato: burnley-gb 2024 (sitio 8.91): IA: línea que no es una fila del balance (738)
+     sin dato: burnley-gb 2025 (sitio 12.909): IA: línea que no es una fila del balance (679)
+     sin dato: ceara-br 2024 (sitio 0.619): IA 2.11042: no-coincide (0.619156 en el documento siguiente)
+     sin dato: celtavigo 2025 (sitio 13.97507): sin filas en el balance · IA: sin páginas de balance
+     sin dato: cerclebrugge-be 2025 (sitio 6.900418): IA: línea que no es una fila del balance (282)
+     sin dato: chapecoense-br 2017 (sitio 8.340897): IA 8.340897: ningún año vecino para confirmar
+     sin dato: chapecoense-br 2021 (sitio 2.531): IA 2.531: ningún año vecino para confirmar
+     sin dato: charleroi-be 2025 (sitio 0.898948): IA: línea que no es una fila del balance (308)
+     sin dato: chelsea-gb 2025 (sitio 49.009): IA: línea que no es una fila del balance (1056)
+     sin dato: clubbrugge-be 2025 (sitio 21.401): IA 21.401: ningún año vecino para confirmar
+     sin dato: colocolo-cl 2023 (sitio 0): IA 43.523: no-coincide (1293.536 contra 0)
+     sin dato: colocolo-cl 2024 (sitio 0): IA 3435.024: no-coincide (43.523 contra 0)
+     sin dato: corinthians-br 2024 (sitio 12.699): IA 0.0127: ningún año vecino para confirmar
+     sin dato: corinthians-br 2025 (sitio 26.019): IA: línea que no es una fila del balance (1328)
+     sin dato: coritiba 2023 (sitio 11.830912): IA: línea que no es una fila del balance ()
+     sin dato: dender-be 2025 (sitio 0.044976): IA: línea que no es una fila del balance (163)
+     sin dato: depcali-co 2025 (sitio 21158.174): IA: línea que no es una fila del balance ()
+     sin dato: deportivoalaves 2025 (sitio 5.216203): sin filas en el balance · IA: sin páginas de balance
+     sin dato: deportivopereira-co 2025 (sitio 9.65677): IA: línea que no es una fila del balance ()
+     sin dato: dinamozagreb-hr 2024 (sitio 0.562542): IA 562542.790271: ningún año vecino para confirmar
+     sin dato: eintrachtfrankfurt-de 2024 (sitio 3.666443): IA: línea que no es una fila del balance ()
+     sin dato: eintrachtfrankfurt-de 2025 (sitio 4.383441): IA: línea que no es una fila del balance ()
+     sin dato: elche-es 2024 (sitio 23.896009): IA 23.896009: ningún año vecino para confirmar
+     sin dato: elche-es 2025 (sitio 14.55): IA: línea que no es una fila del balance (293)
+     sin dato: envigado 2025 (sitio 9181.759716): sin filas en el balance · IA: sin páginas de balance
+     sin dato: fcbarcelona 2025 (sitio 136.328): sin filas en el balance · IA: sin páginas de balance
+     sin dato: fckobenhavn-dk 2024 (sitio 0): IA 76684102.463: ningún año vecino para confirmar
+     sin dato: feyenoord-nl 2024 (sitio 0.062): IA 0.0015: no-coincide (14.648 en el documento siguiente)
+     sin dato: feyenoord-nl 2025 (sitio 14.648): IA 0.0015: no-coincide (14.648 contra 0.062)
+     sin dato: flamengo-br 2025 (sitio 143.941): IA 3143.941: no-coincide (70557191.714 contra 70.557)
+     sin dato: fortaleza-br 2025 (sitio 4.074): IA 12.136: ningún año vecino para confirmar
+     sin dato: fredericia-dk 2019 (sitio 1.182138): sin filas en el balance · IA: sin páginas de balance
+     sin dato: fulham-gb 2024 (sitio 32.768): IA 32.768: ningún año vecino para confirmar
+     sin dato: fulham-gb 2025 (sitio 13.172): IA: línea que no es una fila del balance (778)
+     sin dato: genk-be 2025 (sitio 3.500316): IA: línea que no es una fila del balance (251)
+     sin dato: gent-be 2025 (sitio 9.057614): IA: línea que no es una fila del balance (307)
+     sin dato: getafe-es 2024 (sitio 3.374345): IA: línea que no es una fila del balance ()
+     sin dato: getafe-es 2025 (sitio 6.450427): sin filas en el balance · IA: sin páginas de balance
+     sin dato: girona-es 2020 (sitio 3.856412): IA 0.0127: ningún año vecino para confirmar
+     sin dato: girona-es 2025 (sitio 11.121773): IA 0.0127: ningún año vecino para confirmar
+     sin dato: godoycruz-ar 2020 (sitio 161.039724): IA: línea que no es una fila del balance (81)
+     sin dato: gorica-hr 2025 (sitio 0.002263): IA: línea que no es una fila del balance (756)
+     sin dato: gremio 2024 (sitio 11.145): IA 11.145: ningún año vecino para confirmar
+     sin dato: guarani-br 2024 (sitio 0.298): IA 4298.19: ningún año vecino para confirmar
+     sin dato: guarani-br 2025 (sitio 6.535): IA 0.001018: ningún año vecino para confirmar
+     sin dato: hajduksplit-hr 2024 (sitio 1.414039): IA 1414039.465381: ningún año vecino para confirmar
+     sin dato: hoffenheim-de 2024 (sitio 35.578492): IA: línea que no es una fila del balance (157)
+     sin dato: hoffenheim-de 2025 (sitio 41.681699): IA: línea que no es una fila del balance (182)
+     sin dato: internacional-br 2024 (sitio 3.77): IA: línea que no es una fila del balance (1069)
+     sin dato: internacional-br 2025 (sitio 2.261): IA: línea que no es una fila del balance (995)
+     sin dato: ituano 2024 (sitio 0.054008): IA 0.054008: ningún año vecino para confirmar
+     sin dato: junior-co 2025 (sitio 9012.064): IA: línea que no es una fila del balance ()
+     sin dato: juventude-br 2020 (sitio 0.02633058): IA 0.026331: ningún año vecino para confirmar
+     sin dato: koln-de 2024 (sitio 11.88274): IA: línea que no es una fila del balance (48)
+     sin dato: koln-de 2025 (sitio 6.197026): IA: línea que no es una fila del balance (105)
+     sin dato: leeds-gb 2024 (sitio 5.008994): IA 5.008994: ningún año vecino para confirmar
+     sin dato: leeds-gb 2025 (sitio 33.952665): IA: línea que no es una fila del balance (914)
+     sin dato: levante-es 2025 (sitio 0.60815): IA 13.60815: ningún año vecino para confirmar
+     sin dato: losandes-ar 2020 (sitio 2.476216): IA 0.000004: no-coincide (8.159819 en el documento siguiente)
+     sin dato: losandes-ar 2021 (sitio 8.159819): IA 0.000004: no-coincide (8.159819 contra 2.476216)
+     sin dato: mechelen-be 2025 (sitio 3.134613): IA: línea que no es una fila del balance (248)
+     sin dato: midtjylland-dk 2019 (sitio 0): IA 0.053453: ningún año vecino para confirmar
+     sin dato: millonarios-co 2025 (sitio 6465.046): IA: línea que no es una fila del balance ()
+     sin dato: mirassol 2024 (sitio 0): IA 11.583747: ningún año vecino para confirmar
+     sin dato: monchengladbach-de 2023 (sitio 0.493335): IA: línea que no es una fila del balance ()
+     sin dato: newcastle-gb 2025 (sitio 12.701): IA: línea que no es una fila del balance (1089)
+     sin dato: nordsjaelland-dk 2024 (sitio 16.943338): IA 16.943338: ningún año vecino para confirmar
+     sin dato: nottinghamforest-gb 2024 (sitio 0.029): IA: línea que no es una fila del balance (618)
+     sin dato: nottinghamforest-gb 2025 (sitio 13.224): IA: línea que no es una fila del balance (699)
+     sin dato: oncecaldas 2022 (sitio 0): sin filas en el balance · IA: sin páginas de balance
+     sin dato: oncecaldas 2023 (sitio 0): sin filas en el balance · IA: sin páginas de balance
+     sin dato: oncecaldas 2024 (sitio 0): sin filas en el balance · IA: sin páginas de balance
+     sin dato: oncecaldas 2025 (sitio 0): IA: línea que no es una fila del balance ()
+     sin dato: osasuna-es 2022 (sitio 6.029247): IA 6.029247: ningún año vecino para confirmar
+     sin dato: osasuna-es 2024 (sitio 3.067461): IA 3.067461: ningún año vecino para confirmar
+     sin dato: osijek-hr 2025 (sitio 1.585818): IA 0.000007: ningún año vecino para confirmar
+     sin dato: palmeiras-br 2024 (sitio 38.363): IA 1.325: ningún año vecino para confirmar
+     sin dato: palmeiras-br 2025 (sitio 118.371): IA 1.907: no-coincide (1.325 contra 38.363)
+     sin dato: panathinaikos-gr 2025 (sitio 1.474426): IA 1.620564: ningún año vecino para confirmar
+     sin dato: pontepreta-br 2022 (sitio 0.043848): IA 8.263039: ningún año vecino para confirmar
+     sin dato: pontepreta-br 2023 (sitio 0.067135): sin filas en el balance · IA: sin páginas de balance
+     sin dato: pontepreta-br 2024 (sitio 16.148531): IA: línea que no es una fila del balance (15)
+     sin dato: psv-nl 2024 (sitio 21.859): IA 21.859: ningún año vecino para confirmar
+     sin dato: racing 2027 (sitio 0): sin filas en el balance · IA: sin páginas de balance
+     sin dato: randers-dk 2023 (sitio 11.464548): IA 11.464548: ningún año vecino para confirmar
+     sin dato: rayovallecano-es 2025 (sitio 39.714987): IA: línea que no es una fila del balance ()
+     sin dato: rcdmallorca-es 2025 (sitio 3.599131): IA 3.599131: ningún año vecino para confirmar
+     sin dato: realbetis 2025 (sitio 15.954506): sin filas en el balance · IA: sin páginas de balance
+     sin dato: realmadrid 2025 (sitio 175.827): sin filas en el balance · IA: sin páginas de balance
+     sin dato: realoviedo-es 2025 (sitio 1.433716): sin filas en el balance · IA: sin páginas de balance
+     sin dato: rijeka-hr 2024 (sitio 1.691323): IA 1.691323: ningún año vecino para confirmar
+     sin dato: santafe-co 2025 (sitio 684.927123): IA 684.927123: ningún año vecino para confirmar
+     sin dato: santos-br 2024 (sitio 0.17): IA 5170.582: ningún año vecino para confirmar
+     sin dato: santos-br 2025 (sitio 0.295): IA 5295.17: ningún año vecino para confirmar
+     sin dato: saopaulo-br 2023 (sitio 3.346): IA: línea que no es una fila del balance (620)
+     sin dato: sevillafc 2025 (sitio 39.247): IA: línea que no es una fila del balance (60)
+     sin dato: silkeborg-dk 2024 (sitio 20.522): IA 20.522: ningún año vecino para confirmar
+     sin dato: sinttruiden-be 2025 (sitio 3.805795): IA: línea que no es una fila del balance (303)
+     sin dato: slavenbelupo-hr 2025 (sitio 0.026003): IA 0.000003: ningún año vecino para confirmar
+     sin dato: sonderjyske-dk 2022 (sitio 0.014547): sin filas en el balance · IA: sin páginas de balance
+     sin dato: sportrecife-br 2025 (sitio 2.388): IA 83.775: ningún año vecino para confirmar
+     sin dato: standardliege-be 2025 (sitio 0.311835): IA: línea que no es una fila del balance (344)
+     sin dato: stuttgart-de 2023 (sitio 9.153243): sin filas en el balance · IA: sin páginas de balance
+     sin dato: stuttgart-de 2024 (sitio 10.438385): sin filas en el balance · IA: sin páginas de balance
+     sin dato: sunderland-gb 2024 (sitio 0): IA: línea que no es una fila del balance (809)
+     sin dato: sunderland-gb 2025 (sitio 20.711): IA: línea que no es una fila del balance (840)
+     sin dato: talleres-ar 2024 (sitio 220.025129): IA 0.000002: no-coincide (519.884887 en el documento siguiente)
+     sin dato: talleres-ar 2025 (sitio 519.884887): IA 0.000002: no-coincide (519.884887 contra 220.025129)
+     sin dato: tottenham-gb 2024 (sitio 78.974): IA 78974198.265: no-coincide (78.974 en el documento siguiente)
+     sin dato: unionmagdalena-co 2018 (sitio 1494.693): IA 1494.693: ningún año vecino para confirmar
+     sin dato: unionsg-be 2025 (sitio 1.27532): IA: línea que no es una fila del balance (279)
+     sin dato: valenciacf 2025 (sitio 31.752): sin filas en el balance · IA: sin páginas de balance
+     sin dato: varazdin-hr 2025 (sitio 2.079826): IA 2.079826: ningún año vecino para confirmar
+     sin dato: vascodagama-br 2023 (sitio 79.922): IA 0.079923: ningún año vecino para confirmar
+     sin dato: vejle-dk 2024 (sitio 4.548): IA 4.548: ningún año vecino para confirmar
+     sin dato: viborg-dk 2024 (sitio 30.026932): IA 30.026932: ningún año vecino para confirmar
+     sin dato: villarrealcf 2024 (sitio 47.616789): sin filas en el balance · IA: sin páginas de balance
+     sin dato: vitoria-br 2025 (sitio 0.066): IA 66.228: ningún año vecino para confirmar
+     sin dato: westerlo-be 2025 (sitio 0.13509): IA: línea que no es una fila del balance (281)
+     sin dato: westham-gb 2025 (sitio 0.422): IA 0.422: ningún año vecino para confirmar
+     sin dato: wolves-gb 2024 (sitio 30.563): IA: línea que no es una fila del balance (981)
+     sin dato: zultewaregem-be 2025 (sitio 0.629659): IA: línea que no es una fila del balance (247)

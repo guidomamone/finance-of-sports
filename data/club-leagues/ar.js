@@ -37,7 +37,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // El único de los 11 que cambió de categoría en el período cargado: descendió al terminar el
   // torneo de transición 2016 y jugó la B Nacional 2016-17, que ganó (terminó el 30/7/2017, o sea
   // que al cierre del ejercicio 2017 todavía estaba en curso). Volvió a Primera para 2017-18.
-  boca: { 2025: 'ar-primera', 2027: null },          // 2027 es el presupuesto jul-2026/jun-2027: cierra en el futuro
+  boca: { 2025: 'ar-primera', 2027: null, 2022: 'ar-primera', 2023: 'ar-primera' },          // 2027 es el presupuesto jul-2026/jun-2027: cierra en el futuro; 2022/2023 (to-do 73) Boca jugó Primera todo el período, ambos cierres 30/6
   estudianteslp: { 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },
   independiente: { 2024: 'ar-primera', 2026: 'ar-primera' },
   instituto: { 2024: 'ar-primera' },              // ascendido para 2023, ya en Primera al cierre
@@ -45,7 +45,11 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // 2026 y 2027 son presupuestos: el de 2027 cierra en el futuro, y el de 2026 (cerrado el
   // 30/6/2026) no se verificó contra la temporada, así que queda en null como cualquier otro
   // dato sin chequear.
-  river: { 2024: 'ar-primera' },
+  // 2021 verificado el 2026-09-28 contra "2021 Copa de la Liga Profesional" (Wikipedia): River
+  // ("RIV") aparece en la Zona A. Esta página usa una plantilla de tabla deportiva sin sección
+  // "Teams" (a diferencia de las ligas que sí trae tools/fetch-club-league-reference.mjs hoy),
+  // así que se confirmó a mano con el wikitext crudo, no con el pipeline automático completo.
+  river: { 2021: 'ar-primera', 2024: 'ar-primera' },
   rosariocentral: { 2023: 'ar-primera', 2025: 'ar-primera' },
   sanlorenzo: { 2011: 'ar-primera', 2012: 'ar-primera', 2013: 'ar-primera', 2014: 'ar-primera', 2015: 'ar-primera', 2016: 'ar-primera', 2017: 'ar-primera', 2024: 'ar-primera' },
   union: { 2022: 'ar-primera', 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera' },

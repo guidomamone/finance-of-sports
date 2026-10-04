@@ -8374,95 +8374,93 @@ JAMES
 
 --- pág. 229 ---
 
-# APPENDIX – TABLE OF CHANGES IN PLAYERS’ REGISTRATION RIGHTS IN THE 2022/2023 FINANCIAL YEAR, IN COMPLIANCE WITH FIGC REGULATIONS
+**APPENDIX – TABLE OF CHANGES IN PLAYERS' REGISTRATION RIGHTS IN THE 2022/2023 FINANCIAL YEAR, IN COMPLIANCE WITH FIGC REGULATIONS**
 
-|  Amounts in thousands of euro |   | Contract |   |   | From |   | To |   | Values at beginning of the period 01/07/2022  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Player | Date of birth | Start date of the first contract | Expiry date of the last contract | Acquisition date | Company | Date of disposal | Company | Historical cost | Accem. amortization | Net |   |
-|   |   |   |   |   |   |   |   |  1 | 2 | 3 |   |
-|  First Team |  |  |  |  |  |  |  | 543,919 | 290,370 | 253,549 |   |
-|  Bernardeschi Federico | 16/02/94 | 24/07/17 | 30/06/22 | 24/07/17 | ACF Fiorentina |  | End of contract | 39,411 | 39,411 | - |   |
-|  Bonucci Leonardo | 01/05/87 | 01/07/10 | 30/06/24 | 02/08/18 | AC Milan |  |  | 34,946 | 23,763 | 11,183 |   |
-|  Chielini Giorgio | 14/08/84 | 02/08/21 | 30/06/23 | 02/08/21 | update position | 01/07/22 | End of contract | - | - | - |   |
-|  Chiesa Federico | 25/10/97 | 05/10/20 | 30/06/25 | 05/10/20 | ACF Fiorentina |  |  | 42,596 | 2,242 | 40,354 |   |
-|  Cuadrado Bello Jan Guillermo | 26/05/88 | 31/08/16 | 30/06/23 | 21/05/17 | Chelsea FC |  |  | 20,490 | 19,330 | 1,160 |   |
-|  Da Silva Danilo Luiz | 15/07/91 | 07/08/19 | 30/06/25 | 07/08/19 | Manchester City Ltd |  |  | 37,213 | 22,024 | 15,189 |   |
-|  De Ligt Matthijs | 12/08/99 | 17/07/19 | 30/06/24 | 17/07/19 | ATC Apa SC | 19/07/22 | FC Bayern Munchen | 85,701 | 51,113 | 34,588 |   |
-|  De Sciglio Mattia | 20/10/92 | 20/07/17 | 30/06/25 | 20/07/17 | AC Milan |  |  | 12,141 | 10,320 | 1,821 |   |
-|  Di Maria Angel Fabian | 14/02/88 | 08/07/22 | 30/06/23 | 08/07/22 | Paris Saint-Germain FC |  |  | - | - | - |   |
-|  Dybala Paulo Samuel | 15/11/93 | 01/07/15 | 30/06/22 | 01/07/15 | US Città di Palermo |  | End of contract | 41,439 | 41,439 | - |   |
-|  Fagioli Nicolò | 12/02/01 | 25/07/19 | 30/06/26 | 06/08/15 | US Cremonese Spa |  |  | 310 | 234 | 76 |   |
-|  Gatti Federico | 24/06/98 | 31/01/22 | 30/06/27 | 31/01/22 | Frosinone Calcio Srl |  |  | 5,414 | 419 | 4,995 |   |
-|  Illing Junior Samuel | 04/10/03 | 31/08/20 | 30/06/25 | 31/08/20 | Chelsea FC |  |  | 130 | 84 | 46 |   |
-|  Kean Bioty Moise | 28/02/00 | 30/08/21 | 30/06/25 | 30/08/21 | The Everton FC Ltd |  |  | 36,981 | 8,060 | 28,921 |   |
-|  Kostic Filip | 01/11/92 | 11/08/22 | 30/06/26 | 11/08/22 | Entraniti Frankfurt Fussball |  |  | - | - | - |   |
-|  Lobo Silva Alex Sandro | 26/01/91 | 20/08/15 | 30/06/24 | 19/08/15 | Futebol Clube do Porto |  |  | 28,125 | 25,561 | 2,564 |   |
-|  Locatelli Manuel | 08/01/98 | 18/08/21 | 30/06/26 | 18/08/21 | US Sassuolo Calcio Srl |  |  | 27,353 | 4,884 | 22,469 |   |
-|  Mills Arkadiusz Krystian | 28/02/94 | 21/06/23 | 30/06/26 | 21/06/23 | Olympique de Marseille SASP |  |  | - | - | - |   |
-|  Miratti Fabio | 03/08/03 | 14/02/20 | 30/06/26 | 03/08/17 | GDS registration |  |  | 60 | 12 | 48 |   |
-|  Perin Mattia | 10/11/92 | 08/06/18 | 30/06/25 | 01/07/18 | Genoa Cricket and FC |  |  | 16,290 | 12,611 | 3,679 |   |
-|  Pinsoglio Carlo | 16/03/90 | 18/03/09 | 30/06/25 | 02/04/04 | From Youth Sector |  |  | 826 | 816 | 10 |   |
-|  Pinto Ramos Kaio Jorge | 24/01/02 | 16/08/21 | 30/06/26 | 16/08/21 | Santos FC |  |  | 6,776 | 1,216 | 5,560 |   |
-|  Pogba Paul Lubile | 15/03/93 | 11/07/22 | 30/06/26 | 11/07/22 | Manchester United FC |  |  | - | - | - |   |
-|  Rabiot Adrien | 03/04/95 | 04/07/19 | 30/06/24 | 04/07/19 | Foreign federation |  |  | 1,481 | 1,110 | 371 |   |
-|  Rugani Daniele | 29/07/94 | 04/08/12 | 30/06/24 | 31/07/13 | Empoli FC |  |  | 4,205 | 3,623 | 582 |   |
-|  Silva Nascimento Gleison Bremer | 18/03/97 | 20/07/22 | 30/06/27 | 20/07/22 | Torino FC Spa |  |  | - | - | - |   |
-|  Sisulé Mahrano Matias | 15/04/03 | 13/01/20 | 30/06/26 | 10/10/19 | GDS registration |  |  | 2,220 | 505 | 1,715 |   |
-|  Szczeany Wojciech | 18/04/90 | 01/07/14 | 30/06/25 | 19/07/17 | Arsenal FC |  |  | 18,443 | 13,778 | 4,665 |   |
-|  Vlahovic Dusan | 28/01/00 | 28/01/22 | 30/06/26 | 28/01/22 | ACF Fiorentina Srl |  |  | 81,368 | 7,815 | 73,553 |   |
-|  Temporarily transferred players |  |  |  |  |  |  |  | 371,795 | 204,962 | 166,883 |   |
-|  Aldi Marley | 05/01/01 | 27/01/21 | 30/06/25 | 27/01/21 | Olympique de Marseille SASP |  |  | 8,041 | 2,593 | 5,448 |   |
-|  Andrade Sanches C. F. Alexandre | 22/01/01 | 30/06/20 | 30/06/25 | 30/06/20 | Manchester City FC LTD |  |  | 10,832 | 4,336 | 6,496 |   |
-|  Bandolo Obam Randy Nils | 25/09/05 | 11/01/22 | 30/06/24 | 25/09/21 | GDS registration |  |  | - | - | - |   |
-|  Brunori Matteo Luigi | 01/11/94 | 24/01/20 | 30/06/24 | 24/01/20 | Delfino Pescara 1936 | 17/07/22 | Palermo FC Spa | 2,930 | 1,609 | 1,321 |   |
-|  Cambiaco Andrea | 20/02/00 | 13/07/22 | 30/06/27 | 13/07/22 | Genoa Cricket and FC |  |  | - | - | - |   |
-|  Capellini Riccardo | 01/03/00 | 24/09/18 | 30/06/23 | 22/07/17 | US Cremonese Spa | 01/07/22 | Benevento Calcio Srl | 271 | 271 | - |   |
-|  Clemenza Luca | 09/07/97 | 22/09/14 | 30/06/23 | 19/08/01 | Vicenza Calcio | 06/07/22 | Delfino Pescara | 1,375 | 1,375 | - |   |
-|  Coccolo Luca | 23/02/98 | 01/07/19 | 30/06/23 | 29/05/12 | From Youth Sector | 18/08/22 | Cesena FC Srl | 48 | 45 | 3 |   |
-|  Costa de Souza Douglas | 14/09/90 | 07/06/18 | 30/06/22 | 07/06/18 | FC Bayern Munchen |  | End of contract | 44,616 | 44,616 | - |   |
-|  De Marino Davide | 17/03/00 | 15/01/21 | 30/06/25 | 15/01/21 | FC Pro Vercelli 1892 Srl |  |  | 1,625 | 686 | 939 |   |
-|  De Oliveira Andrade Wesley | 13/03/00 | 28/01/00 | 30/06/23 | 28/01/00 | Hellas Verona Spa | 04/08/22 | Cruzeiro Esporte Clube | 2,007 | 1,548 | 459 |   |
-|  De Winter Koni | 12/06/02 | 24/07/18 | 30/06/26 | 18/07/18 | Qalle Waregem |  |  | 162 | 127 | 35 |   |
-|  Del Fabro Dario | 24/03/95 | 28/07/17 | 30/06/23 | 28/07/17 | Cagliari Calcio |  |  | 4,452 | 3,767 | 685 |   |
-|  Del Favero Mattia | 05/06/98 | 22/07/19 | 30/06/24 | 01/07/14 | AC Prato Spa |  |  | 262 | 240 | 22 |   |
-|  Del Sole Ferdinando | 17/01/98 | 31/08/17 | 30/06/24 | 31/08/17 | Delfino Pescara 1936 |  |  | 3,551 | 3,196 | 355 |   |
-|  Delli Cam Filippo | 03/05/99 | 31/08/17 | 30/06/22 | 31/08/17 | Delfino Pescara 1936 |  | End of contract | 1,113 | 1,113 | - |   |
-|  Di Paolo Alessandro | 18/07/99 | 22/01/18 | 30/06/24 | 22/01/18 | SpaI 2013 Srl | 11/06/23 | Cagliari Calcio Spa | 2,053 | 1,391 | 462 |   |
-|  Dragusin Radu Matei | 03/02/02 | 03/08/18 | 30/06/25 | 03/08/18 | ACSC De Persormanta Rapid | 13/07/22 | Genoa Cricket and fc spa | 2,688 | 1,099 | 1,589 |   |
-|  Flumano Filippo | 23/02/03 | 31/08/20 | 30/06/23 | 31/05/17 | GDS registration |  |  | - | - | - |   |
-|  Frabotta Gianluca | 24/06/99 | 02/08/19 | 30/06/26 | 02/08/19 | Bologna FC |  |  | 2,695 | 1,334 | 1,361 |   |
-|  Galarte Tommaso | 27/11/04 | 16/12/22 | 30/06/25 | 09/01/19 | GDS registration |  |  | 20 | 16 | 4 |   |
-|  Gori Stefano | 09/03/96 | 01/09/20 | 30/06/24 | 28/06/20 | AC PGA 1909 SSARL |  |  | 3,239 | 1,623 | 1,616 |   |
-|  Gozzi Iweru Paolo | 25/04/01 | 16/04/18 | 30/06/23 | 29/05/15 | From Youth Sector | 18/08/22 | Genoa Cricket and fc spa | 35 | 20 | 15 |   |
-|  Hajdan Albian | 18/05/03 | 30/06/20 | 30/06/24 | 01/07/20 | FC Basel 1893 | 20/03/23 | FC Lugano SA | 4,618 | 3,065 | 1,553 |   |
-|  Kastanos Grigoris | 30/01/98 | 31/01/14 | 30/06/23 | 31/01/14 | Enosis Athletic Union of Paralimni | 01/08/22 | US Salernitana 1919 Srl | 419 | 380 | 39 |   |
-|  Kulusinski Dejan | 25/04/00 | 02/01/00 | 30/06/25 | 02/01/20 | Atalanta BC | 17/06/23 | Tottenham H. F. Company LTD | 36,438 | 16,776 | 19,662 |   |
-|  Leo Daniel Cosimo Osvaldo Leo | 19/09/01 | 12/01/20 | 30/06/24 | 12/01/20 | FC Lugano SA |  |  | 396 | 289 | 107 |   |
-|  Lungosi Christopher | 04/07/00 | 21/01/21 | 30/06/25 | 21/01/21 | FC Lugano SA |  |  | 3,078 | 987 | 2,091 |   |
-|  Mandragora Rolando | 29/06/97 | 03/10/20 | 30/06/25 | 03/10/20 | Udinese Calcio | 01/07/22 | ACF Fiorentina | 15,087 | 7,073 | 8,014 |   |
-|  Marques Mendez Alejandro Jose | 04/08/00 | 24/01/20 | 30/06/24 | 24/01/20 | FC Barcelona |  |  | 8,067 | 4,430 | 3,637 |   |
-|  MC Kenne Weston James Earl | 28/08/98 | 26/02/21 | 30/06/25 | 26/02/21 | FC Gelsenkirchen-Schaike 04 EV |  |  | 21,394 | 6,569 | 14,825 |   |
-|  Minelli Alessandro | 23/07/99 | 31/01/20 | 30/06/24 | 31/01/20 | Parma Calcio 1913 |  |  | 2,915 | 1,591 | 1,324 |   |
-|  Mulii Erasmo | 13/06/99 | 31/07/19 | 30/06/24 | 31/07/19 | Sampdoria Spa |  |  | 3,489 | 2,293 | 1,196 |   |
-|  Nicolussi Cariglia Hans | 18/06/00 | 12/07/17 | 30/06/26 | 22/07/14 | GDS registration |  |  | 1,060 | 883 | 177 |   |
-|  Olivieri Marco | 30/06/99 | 30/06/19 | 30/06/25 | 30/06/19 | Empoli FC Spa |  |  | 2,725 | 1,660 | 1,065 |   |
-|  Pellegrini Luca | 07/03/99 | 01/07/19 | 30/06/25 | 30/06/19 | AS Roma |  |  | 22,853 | 12,370 | 10,483 |   |
-|  Perotti Clemente | 22/01/03 | 08/08/22 | 30/06/25 | 22/07/22 | ASD Chisola Calcio |  |  | - | - | - |   |
-|  Pjaca Marco | 06/05/95 | 21/07/16 | 30/06/24 | 21/07/16 | QNK Dinamo |  |  | 29,474 | 25,822 | 3,652 |   |
-|  Ramos De Oliveira M. A. Henrique | 12/08/96 | 29/06/20 | 30/06/25 | 29/06/20 | FC Barcelona |  |  | 80,620 | 31,621 | 48,999 |   |
-|  Ramsay Aaron James | 26/12/90 | 11/02/19 | 30/06/23 | 01/07/19 | Foreign federation | 26/07/22 | Consensual termination | 3,650 | 3,650 | - |   |
-|  Ranocchia Filippo | 14/05/01 | 31/01/19 | 30/06/26 | 31/01/19 | AC Perugia |  |  | 1,133 | 649 | 484 |   |
-|  Ribeiro Joel | 14/02/03 | 08/08/19 | 30/06/23 | 08/08/19 | La Vaca! Font SA | 15/07/22 | FC Lugano SA | 130 | 130 | - |   |
-|  Rovella Nicolo | 14/12/01 | 28/01/21 | 30/06/26 | 28/01/21 | Genoa Cricket and FC |  |  | 26,124 | 7,531 | 18,593 |   |
-|  Vlasenko Nikita | 20/03/01 | 26/01/19 | 30/06/23 | 26/01/19 | FC Lugano SA | 18/07/22 | NHK Rijeka | 1,846 | 1,846 | - |   |
-|  Zakaria Lako Lado Denis Lemi | 20/11/96 | 31/01/22 | 30/06/26 | 31/01/22 | Bonanza VFL 1900 M. GmbH |  |  | 10,144 | 963 | 9,181 |   |
-|  Zanimacchia Luca | 19/07/98 | 17/08/18 | 30/06/23 | 24/01/19 | Genoa Cricket and FC | 04/09/22 | US Cremonese Spa | 4,120 | 3,179 | 941 |   |
-|  Other changes |  |  |  |  |  |  |  | 39,792 | 21,156 | 18,636 |   |
-|  TOTAL |  |  |  |  |  |  |  | 955,506 | 516,488 | 439,018 |   |
+Amounts in thousands of euro
 
-230
+| Player | Date of birth | Start date of the first contract | Expiry date of the last contract | Acquisition date | From – Company | Date of disposal | To – Company | Historical cost (1) | Accum. amortisation (2) | Net (3) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **First Team** | | | | | | | | **543,919** | **290,370** | **253,549** |
+| Bernardeschi Federico | 16/02/94 | 24/07/17 | 30/06/22 | 24/07/17 | ACF Fiorentina | | End of contract | 39,411 | 39,411 | - |
+| Bonucci Leonardo | 01/05/87 | 01/07/10 | 30/06/24 | 02/08/18 | AC Milan | | | 34,946 | 23,763 | 11,183 |
+| Chiellini Giorgio | 14/08/84 | 02/08/21 | 30/06/23 | 02/08/21 | update position | 01/07/22 | End of contract | - | - | - |
+| Chiesa Federico | 25/10/97 | 05/10/20 | 30/06/25 | 05/10/20 | ACF Fiorentina | | | 42,596 | 2,242 | 40,354 |
+| Cuadrado Bello Jan Guillermo | 26/05/88 | 31/08/16 | 30/06/23 | 21/05/17 | Chelsea FC | | | 20,490 | 19,330 | 1,160 |
+| Da Silva Danilo Luiz | 15/07/91 | 07/08/19 | 30/06/25 | 07/08/19 | Manchester City Ltd | | | 37,213 | 22,024 | 15,189 |
+| De Ligt Matthijs | 12/08/99 | 17/07/19 | 30/06/24 | 17/07/19 | AFC Ajax NV | 19/07/22 | FC Bayern Munchen | 85,701 | 51,113 | 34,588 |
+| De Sciglio Mattia | 20/10/92 | 20/07/17 | 30/06/25 | 20/07/17 | AC Milan | | | 12,141 | 10,320 | 1,821 |
+| Di Maria Angel Fabian | 14/02/88 | 08/07/22 | 30/06/23 | 08/07/22 | Paris Saint-Germain FC | | | - | - | - |
+| Dybala Paulo Exequiel | 15/11/93 | 01/07/15 | 30/06/22 | 01/07/15 | US Città di Palermo | | End of contract | 41,439 | 41,439 | - |
+| Fagioli Nicolò | 12/02/01 | 25/07/19 | 30/06/26 | 06/08/15 | US Cremonese Spa | | | 310 | 234 | 76 |
+| Gatti Federico | 24/06/98 | 31/01/22 | 30/06/27 | 31/01/22 | Frosinone Calcio Srl | | | 5,414 | 419 | 4,995 |
+| Iling Junior Samuel | 04/10/03 | 31/08/20 | 30/06/25 | 31/08/20 | Chelsea FC | | | 130 | 84 | 46 |
+| Kean Bioty Moise | 28/02/00 | 30/08/21 | 30/06/25 | 30/08/21 | The Everton FC Ltd | | | 36,981 | 8,060 | 28,921 |
+| Kostic Filip | 01/11/92 | 11/08/22 | 30/06/26 | 11/08/22 | Eintracht Frankfurt Fussball | | | - | - | - |
+| Lobo Silva Alex Sandro | 26/01/91 | 20/08/15 | 30/06/24 | 19/08/15 | Futebol Clube do Porto | | | 28,125 | 25,561 | 2,564 |
+| Locatelli Manuel | 08/01/98 | 18/08/21 | 30/06/26 | 18/08/21 | US Sassuolo Calcio Srl | | | 27,353 | 4,884 | 22,469 |
+| Milik Arkadiusz Krystian | 28/02/94 | 21/06/23 | 30/06/26 | 21/06/23 | Olympique de Marseille SASP | | | - | - | - |
+| Miretti Fabio | 03/08/03 | 14/02/20 | 30/06/26 | 03/08/17 | GDS registration' | | | 60 | 12 | 48 |
+| Perin Mattia | 10/11/92 | 08/06/18 | 30/06/25 | 01/07/18 | Genoa Cricket and FC | | | 16,290 | 12,611 | 3,679 |
+| Pinsoglio Carlo | 16/03/90 | 18/03/09 | 30/06/25 | 02/04/04 | From Youth Sector | | | 826 | 816 | 10 |
+| Pinto Ramos Kaio Jorge | 24/01/02 | 16/08/21 | 30/06/26 | 16/08/21 | Santos FC | | | 6,776 | 1,216 | 5,560 |
+| Pogba Paul Labile | 15/03/93 | 11/07/22 | 30/06/26 | 11/07/22 | Manchester United FC | | | - | - | - |
+| Rabiot Adrien | 03/04/95 | 04/07/19 | 30/06/24 | 04/07/19 | Foreign federation | | | 1,481 | 1,110 | 371 |
+| Rugani Daniele | 29/07/94 | 04/08/12 | 30/06/24 | 31/07/13 | Empoli FC | | | 4,205 | 3,623 | 582 |
+| Silva Nascimento Gleison Bremer | 18/03/97 | 20/07/22 | 30/06/27 | 20/07/22 | Torino FC Spa | | | - | - | - |
+| Soulè Malvano Matias | 15/04/03 | 13/01/20 | 30/06/26 | 10/10/19 | GDS registration | | | 2,220 | 505 | 1,715 |
+| Szczesny Wojciech | 18/04/90 | 01/07/14 | 30/06/25 | 19/07/17 | Arsenal FC | | | 18,443 | 13,778 | 4,665 |
+| Vlahovic Dusan | 28/01/00 | 28/01/22 | 30/06/26 | 28/01/22 | ACF Fiorentina Srl | | | 81,368 | 7,815 | 73,553 |
+| **Temporarily transferred players** | | | | | | | | **371,795** | **204,962** | **166,883** |
+| Akè Marley | 05/01/01 | 27/01/21 | 30/06/25 | 27/01/21 | Olympique de Marseille SASP | | | 8,041 | 2,593 | 5,448 |
+| Andrade Sanches C. F. Alexandre | 22/01/01 | 30/06/20 | 30/06/25 | 30/06/20 | Manchester City FC LTD | | | 10,832 | 4,336 | 6,496 |
+| Bandolo Obam Randy Nils | 25/09/05 | 11/02/22 | 30/06/24 | 25/09/21 | GDS registration | | | - | - | - |
+| Brunori Matteo Luigi | 01/11/94 | 24/01/20 | 30/06/24 | 24/01/20 | Delfino Pescara 1936 | 17/07/22 | Palermo FC Spa | 2,930 | 1,609 | 1,321 |
+| Cambiaso Andrea | 20/02/00 | 13/07/22 | 30/06/27 | 13/07/22 | Genoa Cricket and FC | | | - | - | - |
+| Capellini Riccardo | 01/03/00 | 24/09/18 | 30/06/23 | 22/07/17 | US Cremonese Spa | 01/07/22 | Benevento Calcio Srl | 271 | 271 | - |
+| Clemenza Luca | 09/07/97 | 22/09/14 | 30/06/23 | 19/08/01 | Vicenza Calcio | 06/07/22 | Delfino Pescara | 1,375 | 1,375 | - |
+| Coccolo Luca | 23/02/98 | 01/07/19 | 30/06/23 | 29/05/12 | From Youth Sector | 18/08/22 | Cesena FC Srl | 48 | 45 | 3 |
+| Costa de Souza Douglas | 14/09/90 | 07/06/18 | 30/06/22 | 07/06/18 | FC Bayern Munchen | | End of contract | 44,616 | 44,616 | - |
+| De Marino Davide | 17/03/00 | 15/01/21 | 30/06/25 | 15/01/21 | FC Pro Vercelli 1892 Srl | | | 1,625 | 686 | 939 |
+| De Oliveira Andrade Wesley | 13/03/00 | 28/01/00 | 30/06/23 | 28/01/00 | Hellas Verona Spa | 04/08/22 | Cruzeiro Esporte Clube | 2,007 | 1,548 | 459 |
+| De Winter Koni | 12/06/02 | 24/07/18 | 30/06/26 | 18/07/18 | Zulte Waregem | | | 162 | 127 | 35 |
+| Del Fabro Dario | 24/03/95 | 28/07/17 | 30/06/23 | 28/07/17 | Cagliari Calcio | | | 4,452 | 3,767 | 685 |
+| Del Favero Mattia | 05/06/98 | 22/07/19 | 30/06/24 | 01/07/14 | AC Prato Spa | | | 262 | 240 | 22 |
+| Del Sole Ferdinando | 17/01/98 | 31/08/17 | 30/06/24 | 31/08/17 | Delfino Pescara 1936 | | | 3,551 | 3,196 | 355 |
+| Delli Carri Filippo | 03/05/99 | 31/08/17 | 30/06/22 | 31/08/17 | Delfino Pescara 1936 | | End of contract | 1,113 | 1,113 | - |
+| Di Pardo Alessandro | 18/07/99 | 22/01/18 | 30/06/24 | 22/01/18 | Spal 2013 Srl | 11/06/23 | Cagliari Calcio Spa | 2,053 | 1,591 | 462 |
+| Dragusin Radu Matei | 03/02/02 | 03/08/18 | 30/06/25 | 03/08/18 | ACSC De Persormanta Rapid | 13/07/22 | Genoa Cricket and fc spa | 2,688 | 1,099 | 1,589 |
+| Fiumano Filippo | 23/02/03 | 31/08/20 | 30/06/23 | 31/05/17 | GDS registration | | | - | - | - |
+| Frabotta Gianluca | 24/06/99 | 02/08/19 | 30/06/26 | 02/08/19 | Bologna FC | | | 2,695 | 1,334 | 1,361 |
+| Galante Tommaso | 27/11/04 | 16/12/22 | 30/06/25 | 09/01/19 | GDS registration | | | 20 | 16 | 4 |
+| Gori Stefano | 09/03/96 | 01/09/20 | 30/06/24 | 28/06/20 | AC Pisa 1909 SSARL | | | 3,239 | 1,623 | 1,616 |
+| Gozzi Iweru Paolo | 25/04/01 | 16/04/18 | 30/06/23 | 29/05/15 | From Youth Sector | 18/08/22 | Genoa Cricket and fc spa | 35 | 20 | 15 |
+| Hajdari Albian | 18/05/03 | 30/06/20 | 30/06/24 | 01/07/20 | FC Basel 1893 | 20/03/23 | FC Lugano SA | 4,618 | 3,065 | 1,553 |
+| Kastanos Grigoris | 30/01/98 | 31/01/14 | 30/06/23 | 31/01/14 | Enosis Athletic Union of Paralimi | 01/08/22 | US Salernitana 1919 Srl | 419 | 380 | 39 |
+| Kulusevski Dejan | 25/04/00 | 02/01/00 | 30/06/25 | 02/01/20 | Atalanta BC | 17/06/23 | Tottenham H. F. Company LTD | 36,438 | 16,776 | 19,662 |
+| Leo Daniel Cosimo Osvaldo Leo | 19/09/01 | 12/01/20 | 30/06/24 | 12/01/20 | FC Lugano SA | | | 396 | 289 | 107 |
+| Lungoyi Christopher | 04/07/00 | 21/01/21 | 30/06/25 | 21/01/21 | FC Lugano SA | | | 3,078 | 987 | 2,091 |
+| Mandragora Rolando | 29/06/97 | 03/10/20 | 30/06/25 | 03/10/20 | Udinese Calcio | 01/07/22 | ACF Fiorentina | 15,087 | 7,073 | 8,014 |
+| Marques Mendez Alejandro Jose | 04/08/00 | 24/01/20 | 30/06/24 | 24/01/20 | FC Barcelona | | | 8,067 | 4,430 | 3,637 |
+| MC Kennie Weston James Earl | 28/08/98 | 26/02/21 | 30/06/25 | 26/02/21 | FC Gelsenkirchen-Schalke 04 EV | | | 21,394 | 6,569 | 14,825 |
+| Minelli Alessandro | 23/07/99 | 31/01/20 | 30/06/24 | 31/01/20 | Parma Calcio 1913 | | | 2,915 | 1,591 | 1,324 |
+| Mulè Erasmo | 13/06/99 | 31/07/19 | 30/06/24 | 31/07/19 | Sampdoria Spa | | | 3,489 | 2,293 | 1,196 |
+| Nicolussi Caviglia Hans | 18/06/00 | 12/07/17 | 30/06/26 | 22/07/14 | GDS registration | | | 1,060 | 883 | 177 |
+| Olivieri Marco | 30/06/99 | 30/06/19 | 30/06/25 | 30/06/19 | Empoli FC Spa | | | 2,725 | 1,660 | 1,065 |
+| Pellegrini Luca | 07/03/99 | 01/07/19 | 30/06/25 | 30/06/19 | AS Roma | | | 22,853 | 12,370 | 10,483 |
+| Perotti Clemente | 22/01/03 | 08/08/22 | 30/06/25 | 22/07/22 | ASD Chisola Calcio | | | - | - | - |
+| Pjaca Marco | 06/05/95 | 21/07/16 | 30/06/24 | 21/07/16 | GNK Dinamo | | | 29,474 | 25,822 | 3,652 |
+| Ramos De Oliveira M. A. Henrique | 12/08/96 | 29/06/20 | 30/06/25 | 29/06/20 | FC Barcellona | | | 80,620 | 31,621 | 48,999 |
+| Ramsey Aaron James | 26/12/90 | 11/02/19 | 30/06/23 | 01/07/19 | Foreign federation | 26/07/22 | Consensual termination | 3,650 | 3,650 | - |
+| Ranocchia Filippo | 14/05/01 | 31/01/19 | 30/06/26 | 31/01/19 | AC Perugia | | | 1,133 | 649 | 484 |
+| Ribeiro Joel | 14/02/03 | 08/08/19 | 30/06/23 | 08/08/19 | Ls Vaud Foot SA | 15/07/22 | FC Lugano SA | 130 | 130 | - |
+| Rovella Nicolo | 14/12/01 | 28/01/21 | 30/06/26 | 28/01/21 | Genoa Cricket and FC | | | 26,124 | 7,531 | 18,593 |
+| Vlasenko Nikita | 20/03/01 | 26/01/19 | 30/06/23 | 26/01/19 | FC Lugano SA | 18/07/22 | NHK Rijeka | 1,846 | 1,846 | - |
+| Zakaria Lako Lado Denis Lemi | 20/11/96 | 31/01/22 | 30/06/26 | 31/01/22 | Borussia VFL 1900 M. Gmbh | | | 10,144 | 963 | 9,181 |
+| Zanimacchia Luca | 19/07/98 | 17/08/18 | 30/06/23 | 24/01/19 | Genoa Cricket and FC | 04/09/22 | US Cremonese Spa | 4,120 | 3,179 | 941 |
+| **Other changes** | | | | | | | | **39,792** | **21,156** | **18,636** |
+| **TOTAL** | | | | | | | | **955,506** | **516,488** | **439,018** |
 
-JUVENTUS FOOTBALL CLUB S.P.A.
+230 JUVENTUS FOOTBALL CLUB S.P.A.
 
 --- pág. 230 ---
 

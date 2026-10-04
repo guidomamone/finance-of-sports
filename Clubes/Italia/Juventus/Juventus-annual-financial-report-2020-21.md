@@ -1552,92 +1552,87 @@ ANNUAL FINANCIAL REPORT AT 30 06 21 - Consolidated financial statements
 
 --- pág. 33 ---
 
-## CONSOLIDATED STATEMENT OF CHANGES IN SHAREHOLDERS' EQUITY
+62 JUVENTUS FOOTBALL CLUB S.P.A.
 
-|  Amounts in euro | Share capital | Share premium reserve | Legal reserve | Cash flow hedge reserve | Financial asset for local reserve | Reserve for IFRS first-time equivalent | Retained earnings (losses) carried forward | Results for the year | Shareholders' equity  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  **Balance at 30/06/2019 ^{a)}** | **8,182,123** | **34,310,104** | **1,636,427** | **(57,750)** | **(995,662)** | **-** | **28,063,253** | **(39,895,794)** | **31,242,711**  |
-|  Coverage of loss for the previous financial year | - | (11,832,541) | - | - | - | - | (28,063,253) | 39,895,794 | -  |
-|  Share issue through the emission of 314,541,184 ordinary shares of a price of € 0.93 | 3,224,854 | 296,686,502 | - | - | - | - | - | - | 299,911,356  |
-|  Collection on transfer 24,825,450 unclaimed rights at € 0.1084 each | - | 2,691,079 | - | - | - | - | - | - | 2,691,079  |
-|  Allocation of share issue costs | - | (4,617,990) | - | - | - | - | - | - | (4,617,990)  |
-|  Total loss for the period | - | - | - | 3,768 | (344,231) | - | - | (89,682,106) | (90,022,569)  |
-|  **Balance at 30/06/2020 ^{b)}** | **11,406,987** | **317,237,154** | **1,636,427** | **(53,982)** | **(1,339,893)** | **-** | **-** | **(89,682,106)** | **239,204,587**  |
-|  Collection on transfer 24,825,450 unclaimed rights at € 0.1084 each | - | (89,682,106) | - | - | - | - | - | 89,682,106 | -  |
-|  Allocation of share issue costs | - | - | - | - | - | - | - | - | -  |
-|  Total loss for the period | - | - | - | (1,070) | (862,371) | (16,891) | - | (209,885,432) | (210,765,764)  |
-|  **Balance at 30/06/2021** | **11,406,987** | **227,555,048** | **1,636,427** | **(55,052)** | **(2,202,264)** | **(16,891)** | **-** | **(209,885,432)** | **28,438,822**  |
+# CONSOLIDATED STATEMENT OF CHANGES IN SHAREHOLDERS' EQUITY
+
+| Amounts in euro | Share capital | Share premium reserve | Legal reserve | Cash flow hedge reserve | Financial asset fair value reserve | Reserve for IFRS first-time application | Retained earnings (losses) carried forward | Results for the year | Shareholders' equity |
+|---|---|---|---|---|---|---|---|---|---|
+| **Balance at 30/06/2019 (a)** | 8,182,133 | 34,310,104 | 1,636,427 | (57,750) | (995,662) | - | 28,063,253 | (39,895,794) | 31,242,711 |
+| Coverage of loss for the previous financial year | - | (11,832,541) | - | - | - | - | (28,063,253) | 39,895,794 | - |
+| Share issue through the emission of 314,541,184 ordinary shares of a price of € 0.93 | 3,224,854 | 296,686,502 | - | - | - | - | - | - | 299,911,356 |
+| Collection on transfer 24,825,450 unclaimed rights at € 0.1084 each | - | 2,691,079 | - | - | - | - | - | - | 2,691,079 |
+| Allocation of share issue costs | - | (4,617,990) | - | - | - | - | - | - | (4,617,990) |
+| Total loss for the period | - | - | - | 3,768 | (344,231) | - | - | (89,682,106) | (90,022,569) |
+| **Balance at 30/06/2020 (a)** | 11,406,987 | 317,237,154 | 1,636,427 | (53,982) | (1,339,893) | - | - | (89,682,106) | 239,204,587 |
+| Collection on transfer 24,825,450 unclaimed rights at € 0.1084 each | - | (89,682,106) | - | - | - | - | - | 89,682,106 | - |
+| Allocation of share issue costs | - | - | - | - | - | - | - | - | - |
+| Total loss for the period | - | - | - | (1,070) | (862,371) | (16,891) | - | (209,885,432) | (210,765,764) |
+| **Balance at 30/06/2021** | 11,406,987 | 227,555,048 | 1,636,427 | (55,052) | (2,202,264) | (16,891) | - | (209,885,432) | 28,438,822 |
 
 (a) At 30 June 2019 and 30 June 2020, the Company was not required to draft consolidated financial statements.
 
 For additional information, see the Notes (Note 24).
 
-## CONSOLIDATED STATEMENT OF CASH FLOWS
+ANNUAL FINANCIAL REPORT AT 30 06 21 - Consolidated financial statements 63
 
-|  Amounts in euro | Note | 2020/2021 Financial year | 2019/2020 ^{a)} Financial year  |
-| --- | --- | --- | --- |
-|  Income (loss) before taxes |  | (207,800,171) | (81,657,094)  |
-|  Non-cash items: |  |  |   |
-|  - amortisation, depreciation and write-downs |  | 217,242,538 | 211,964,201  |
-|  - employees' severance indemnity provision and other provisions |  | 23,420,886 | 11,366,807  |
-|  - gains on disposal of players' registration rights | 36 | (30,831,861) | (166,584,138)  |
-|  - revenues from temporary disposals of players' registration rights | 36 | (6,268,580) | (874,783)  |
-|  - gains on disposal of other fixed assets |  | - | (17,075)  |
-|  - losses on disposal of players' registration rights | 43 | 196,384 | 53,400  |
-|  - charges from temporary acquisitions of players' registration rights | 43 | 15,696,494 | -  |
-|  - auxiliary non-capitalised expenses for acquisitions of players' registration rights |  | 16,687,928 | 26,083,981  |
-|  - losses on disposal of other fixed assets |  | - | 324,499  |
-|  - share of results of associates and joint ventures |  | (591,171) | 1,107,177  |
-|  - financial income | 48 | (5,420,514) | (4,217,342)  |
-|  - financial expenses | 49 | 16,617,595 | 17,706,544  |
-|  Change in trade receivables and other non-financial assets |  | 33,886,436 | (49,441,886)  |
-|  Change in trade payables and other non-financial liabilities |  | 1,250,904 | 2,268,324  |
-|  Income taxes paid |  | (3,462,227) | (8,612,657)  |
-|  Use of the Employees' Severance Indemnity provision and other provisions |  | (28,601,422) | (18,120,524)  |
-|  **Net cash from (used in) operating activities** |  | **42,023,219** | **(58,650,566)**  |
-|  Investments in players' registration rights | 8 | (121,602,235) | (349,467,075)  |
-|  Increase (decrease) of payables related to players' registration rights |  | (40,200,296) | 75,815,062  |
-|  Disposals of players' registration rights |  | 31,388,877 | 239,961,439  |
-|  (Increase) decrease of receivables related to players' registration rights |  | 163,785,713 | (97,745,119)  |
-|  Temporary (acquisitions) disposals of players' registration rights |  | (9,427,914) | 874,783  |
-|  Auxiliary non-capitalised expenses for acquisitions of players' registration rights |  | (16,687,928) | (26,083,981)  |
-|  Increase (decrease) of payables for auxiliary expenses on players' registration rights |  | (13,790,808) | 26,847,364  |
-|  Investments in other fixed assets |  | (6,136,212) | (5,234,260)  |
-|  Purchases of investments |  | - | (364,346)  |
-|  Disposals of other fixed assets |  | (531) | 33,682  |
-|  Interest income | 50 | 139,676 | 57,660  |
-|  **Net cash from (used in) investing activities** |  | **(12,531,658)** | **(135,304,791)**  |
-|  Share capital increase |  |  | 297,984,444  |
-|  New loans |  | 2,653,172 | 35,000,000  |
-|  Repayment of loans |  | (41,351,763) | (76,228,500)  |
-|  Repayment of IFRS 16 payable |  | (6,789,932) | (4,875,491)  |
-|  Increase (decrease) of uses of committed lines |  | 25,000,000 | 15,000,000  |
-|  Increase (decrease) of uses of factoring lines |  | 13,800,106 | (97,230,735)  |
-|  Interest on loans |  | (7,987,954) | (8,398,021)  |
-|  Other interest expenses |  | (2,850,653) | (3,701,071)  |
-|  Other movements related to financing activities |  | 320,511 | 14,940  |
-|  **Net cash from (used in) financing activities** |  | **(17,206,513)** | **157,365,566**  |
-|  **Net cash from (used in) the period** |  | **12,285,048** | **(36,589,791)**  |
-|  **Changes in cash and bank overdrafts:** |  |  |   |
-|  Balances at the beginning of the period | 22 e 26 | (26,845,069) | 9,744,722  |
-|  Balances at the end of the period | 22 e 26 | (14,560,021) | (26,845,069)  |
-|  **Changes in cash and bank overdrafts** |  | **12,285,048** | **(36,589,791)**  |
-|  **Composition of cash and cash equivalents:** |  |  |   |
-|  Cash and cash equivalents | 22 | 10,533,461 | 5,917,079  |
-|  Bank overdrafts | 26 | (25,093,482) | (32,762,148)  |
-|  **Cash and cash equivalents at the end of the period** |  | **(14,560,021)** | **(26,845,069)**  |
+# CONSOLIDATED STATEMENT OF CASH FLOWS
+
+| Amounts in euro | Note | 2020/2021 Financial year | 2019/2020 (a) Financial year |
+|---|---|---|---|
+| Income (loss) before taxes | | (207,800,171) | (81,657,094) |
+| Non-cash items: | | | |
+| - amortisation, depreciation and write-downs | | 217,242,538 | 211,964,201 |
+| - employees' severance indemnity provision and other provisions | | 23,420,886 | 11,366,807 |
+| - gains on disposal of players' registration rights | 36 | (30,831,861) | (166,584,138) |
+| - revenues from temporary disposals of players' registration rights | 36 | (6,268,580) | (874,783) |
+| - gains on disposal of other fixed assets | | - | (17,075) |
+| - losses on disposal of players' registration rights | 43 | 196,384 | 53,400 |
+| - charges from temporary acquisitions of players' registration rights | 43 | 15,696,494 | - |
+| - auxiliary non-capitalised expenses for acquisitions of players' registration rights | | 16,687,928 | 26,083,981 |
+| - losses on disposal of other fixed assets | | - | 324,499 |
+| - share of results of associates and joint ventures | | (591,171) | 1,107,177 |
+| - financial income | 48 | (5,420,514) | (4,217,342) |
+| - financial expenses | 49 | 16,617,595 | 17,706,544 |
+| Change in trade receivables and other non-financial assets | | 33,886,436 | (49,441,886) |
+| Change in trade payables and other non-financial liabilities | | 1,250,904 | 2,268,324 |
+| Income taxes paid | | (3,462,227) | (8,612,657) |
+| Use of the Employees' Severance Indemnity provision and other provisions | | (28,601,422) | (18,120,524) |
+| **Net cash from (used in) operating activities** | | **42,023,219** | **(58,650,566)** |
+| Investments in players' registration rights | 8 | (121,602,235) | (349,467,075) |
+| Increase (decrease) of payables related to players' registration rights | | (40,200,296) | 75,815,062 |
+| Disposals of players' registration rights | | 31,388,877 | 239,961,439 |
+| (Increase) decrease of receivables related to players' registration rights | | 163,785,713 | (97,745,119) |
+| Temporary (acquisitions) disposals of players' registration rights | | (9,427,914) | 874,783 |
+| Auxiliary non-capitalised expenses for acquisitions of players' registration rights | | (16,687,928) | (26,083,981) |
+| Increase (decrease) of payables for auxiliary expenses on players' registration rights | | (13,790,808) | 26,847,364 |
+| Investments in other fixed assets | | (6,136,212) | (5,234,260) |
+| Purchases of investments | | - | (364,346) |
+| Disposals of other fixed assets | | (531) | 33,682 |
+| Interest income | 50 | 139,676 | 57,660 |
+| **Net cash from (used in) investing activities** | | **(12,531,658)** | **(135,304,791)** |
+| Share capital increase | | - | 297,984,444 |
+| New loans | | 2,653,172 | 35,000,000 |
+| Repayment of loans | | (41,351,763) | (76,228,500) |
+| Repayment of IFRS 16 payables (b) | | (6,789,932) | (4,875,491) |
+| Increase (decrease) of uses of committed lines | | 25,000,000 | 15,000,000 |
+| Increase (decrease) of uses of factoring lines | | 13,800,106 | (97,230,735) |
+| Interest on loans | | (7,987,954) | (8,598,021) |
+| Other interest expenses | | (2,850,653) | (3,701,071) |
+| Other movements related to financing activities | | 320,511 | 14,940 |
+| **Net cash from (used in) financing activities** | | **(17,206,513)** | **157,365,566** |
+| **Net cash from (used in) the period** | | **12,285,048** | **(36,589,791)** |
+| **Changes in cash and bank overdrafts:** | | | |
+| Balances at the beginning of the period | 22 e 26 | (26,845,069) | 9,744,722 |
+| Balances at the end of the period | 22 e 26 | (14,560,021) | (26,845,069) |
+| **Changes in cash and bank overdrafts** | | **12,285,048** | **(36,589,791)** |
+| **Composition of cash and cash equivalents:** | | | |
+| Cash and cash equivalents | 22 | 10,533,461 | 5,917,079 |
+| Bank overdrafts | 26 | (25,093,482) | (32,762,148) |
+| **Cash and cash equivalents at the end of the period** | | **(14,560,021)** | **(26,845,069)** |
 
 a) At 30 June 2020, the Company was not required to draft consolidated financial statements.
-
 b) The amount includes the implicit financial expenses whose value is not generally significant.
-
-62
-
-JUDENTUS FOOTBALL CLUB S.P.A.
-
-ANNUAL FINANCIAL REPORT AT 30 06 21 - Consolidated financial statements
-
-63
 
 --- pág. 34 ---
 
@@ -2281,98 +2276,85 @@ ANNUAL FINANCIAL REPORT AT 30 06 21 - Consolidated financial statements
 
 --- pág. 43 ---
 
+82 JUVENTUS FOOTBALL CLUB S.P.A.
+
 The changes in the item as shown below:
 
-|  Amounts in thousands of euro | Professional players | Registered young players | Female players | Total  |
-| --- | --- | --- | --- | --- |
-|  Book value | 935,915 | 2,240 | 9 | 938,164  |
-|  Accumulated amortisation | (406,502) | (863) | (4) | (407,369)  |
-|  Allowance for doubtful accounts | (22,372) | - | - | (22,372)  |
-|  **Balance at 30/06/2020** | **507,041** | **1,377** | **5** | **508,423**  |
-|  **Investimenti** | **120,818** | **749** | **35** | **121,602**  |
-|  Disinvestments (gross) | (122,125) | (807) | (9) | (122,941)  |
-|  Use of accumulated amortisation | 98,716 | 533 | 8 | 99,257  |
-|  Use of allowance for doubtful | 22,426 | 222 | - | 22,648  |
-|  **Disinvestments (net)** | **(983)** | **(52)** | **(1)** | **(1,036)**  |
-|  **Amortisation** | **(176,907)** | **(390)** | **(20)** | **(177,317)**  |
-|  **Write-downs** | **(19,860)** | **(260)** | **-** | **(20,120)**  |
-|  **Reclassifications** | **393** | **(393)** | **-** | **-**  |
-|  **Balance at 30/06/2021** | **430,502** | **1,031** | **19** | **431,552**  |
-|  Book value | 935,100 | 1,690 | 35 | 936,825  |
-|  Accumulated amortisation | (484,792) | (621) | (16) | (485,429)  |
-|  Allowance for doubtful accounts | (19,806) | (38) | - | (19,844)  |
-|  **Balance at 30/06/2021** | **430,502** | **1,031** | **19** | **431,552**  |
+| Amounts in thousands of euro | Professional players | Registered young players | Female players | Total |
+|---|---|---|---|---|
+| Book value | 935,915 | 2,240 | 9 | 938,164 |
+| Accumulated amortisation | (406,502) | (863) | (4) | (407,369) |
+| Allowance for doubtful accounts | (22,372) | - | - | (22,372) |
+| **Balance at 30/06/2020** | **507,041** | **1,377** | **5** | **508,423** |
+| **Investimenti** | **120,818** | **749** | **35** | **121,602** |
+| *Disinvestments (gross)* | *(122,125)* | *(807)* | *(9)* | *(122,941)* |
+| *Use of accumulated amortisation* | *98,716* | *533* | *8* | *99,257* |
+| *Use of allowance for doubtful* | *22,426* | *222* | *-* | *22,648* |
+| **Disinvestments (net)** | **(983)** | **(52)** | **(1)** | **(1,036)** |
+| **Amortisation** | **(176,907)** | **(390)** | **(20)** | **(177,317)** |
+| **Write-downs** | **(19,860)** | **(260)** | **-** | **(20,120)** |
+| **Reclassifications** | **393** | **(393)** | **-** | **-** |
+| **Balance at 30/06/2021** | **430,502** | **1,031** | **19** | **431,552** |
+| Book value | 935,100 | 1,690 | 35 | 936,825 |
+| Accumulated amortisation | (484,792) | (621) | (16) | (485,429) |
+| Allowance for doubtful accounts | (19,806) | (38) | - | (19,844) |
+| **Balance at 30/06/2021** | **430,502** | **1,031** | **19** | **431,552** |
 
 Below is an illustration of the main transactions related to players' registration rights during the period:
 
-|  Amounts in thousands of euro | Counterparty clubs | Price | IFRS (right value (including expenses and bonuses)) | Years of contract  |
-| --- | --- | --- | --- | --- |
-|  **Definitive acquisitions**  |   |   |   |   |
-|  Aké Marley | Olympique de Marseille | 8,000 | 8,041 | 4.5  |
-|  Barbieri Tommaso | Novara Calcio | 1,400 (a) | 1,583 | 5  |
-|  Compagnon Mattia | Udinese Calcio | 4,000 | 3,943 | 4  |
-|  De Marino Davide | FC Pro Vercelli 1897 | 1,500 (b) | 1,625 | 3.5  |
-|  Hajdari Albian | FC Basel 1893 | 4,380 (a) | 4,538 | 3  |
-|  Lungoyi Christopher | FC Lugano | 2,500 | 2,903 (c) | 2.5  |
-|  Mandragora Rolando | Udinese Calcio | 10,700 (d) | 15,087 | 5  |
-|  Weston McKenzie | Schalke 04 | 18,500 (e) | 20,385 | 5  |
-|  Nzouango Bikien Felix Victor | Amiens Sporting | 1,900 (a) | 2,950 | 3  |
-|  Rovella Nicolò | Genoa Cricket and FC | 18,000 (f) | 23,228 | 3.5  |
-|  **Definitive acquisitions in application of IFRS16**  |   |   |   |   |
-|  Chiesa Federico | ACF Fiorentina | 10,000 (g) | 12,621 | 2  |
-|  Other investments/increases (h) |  |  | 24,698 |   |
-|  **Total investments** |  |  | **121,602** |   |
+| Amounts in thousands of euro — Player | Counterparty clubs | Price | IFRS rights value (including expenses and bonuses) | Years of contract |
+|---|---|---|---|---|
+| **Definitive acquisitions** | | | | |
+| Aké Marley | Olympique de Marseille | 8,000 | 8,041 | 4.5 |
+| Barbieri Tommaso | Novara Calcio | 1,400 (a) | 1,583 | 5 |
+| Compagnon Mattia | Udinese Calcio | 4,000 | 3,943 | 4 |
+| De Marino Davide | FC Pro Vercelli 1897 | 1,500 (b) | 1,625 | 3.5 |
+| Hajdari Albian | FC Basel 1893 | 4,380 (a) | 4,538 | 3 |
+| Lungoyi Christopher | FC Lugano | 2,500 | 2,903 (c) | 2.5 |
+| Mandragora Rolando | Udinese Calcio | 10,700 (d) | 15,087 | 5 |
+| Weston McKennie | Schalke 04 | 18,500 (e) | 20,385 | 5 |
+| Nzouango Bikien Felix Victor | Amiens Sporting | 1,900 (a) | 2,950 | 3 |
+| Rovella Nicolò | Genoa Cricket and FC | 18,000 (f) | 23,228 | 3.5 |
+| *Definitive acquisitions in application of IFRS16* | | | | |
+| Chiesa Federico | ACF Fiorentina | 10,000 (g) | 12,621 | 2 |
+| *Other investments/increases (h)* | | | 24,698 | |
+| **Total investments** | | | **121,602** | |
 
-(a) The purchase value could increase following the recognition to the selling clubs of any additional components if certain conditions occur, of which € 1.4 million already accrued.
-
+(a) The purchase value could increase following the recognition to the selling clubs of any additional components if certain conditions occur, of which € 1,4 million already accrued.
 (b) The purchase value could increase by up to € 1.1 million if certain conditions are met during the course of the contract's duration.
-
-(c) Of which € 0.075 million for bonus accrued following the two-year temporary disposal.
-
+(c) Of which € 0.375 million for bonus accrued following the two-year temporary disposal.
 (d) The consideration could increase by as much as an additional € 6 million if given sporting objectives are achieved, of which 4 million already accrued.
-
 (e) The consideration could increase by as much as an additional € 6.5 million if given conditions are met.
-
 (f) The purchase value could increase by up to € 8.5 million if certain conditions are met during the course of the contract's duration, of which € 4.5 million already accrued.
-
 (g) The temporary acquisition of the player was recognised in application of IFRS 16. The purchase value could increase following the recognition of additional fees if certain conditions occur, of which € 2.5 million already accrued. In addition, a purchase obligation is envisaged for a value of € 40 million at the end of the 2021/2022 football season upon the occurrence of certain conditions.
-
 (h) Include the capitalisation of bonuses linked to sports results paid to the football clubs for players acquired during the previous Transfer Campaigns.
 
-|  Amounts in thousands of euro | Counterparty clubs | Price | Price present value | Net book value | Solidarity subsidy | Capital (less event losses)  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  **Pass**  |   |   |   |   |   |   |
-|  **Cessioni definitive**  |   |   |   |   |   |   |
-|  Ahamada Naouirou | VfB Stuttgart 1893 | 1,500 | 1,480 | 19 | - | 1,461  |
-|  Monzalo Kevin | FC Lugano | 2,500 | 2,454 | 68 | 64 | 2,322  |
-|  Parodi Giulio | FC Pro Vercelli 1897 | 1,320 | 1,309 | 9 | - | 1,300  |
-|  Petrelli Elia | Genoa Cricket and FC | 8,000 | 7,861 (a) | 387 | - | 7,474  |
-|  Portanova Manolo | Genoa Cricket and FC | 10,000 | 9,824 (b) | 354 | - | 9,470  |
-|  Tongya Heubang Franco Daryl | Olympique de Marseille | 8,000 | 7,791 | - | - | 7,791  |
-|  Other disinvestments |  |  | 889 | 199 | - | 690  |
-|  **Total disinvestments (net)** |  |  | **31,608** | **1,036** | **64** | **30,508**  |
+ANNUAL FINANCIAL REPORT AT 30 06 21 - Consolidated financial statements 83
+
+| Amounts in thousands of euro — Player | Counterparty clubs | Price | Price present value | Net book value | Solidarity subsidy | Capital gains (capital losses) |
+|---|---|---|---|---|---|---|
+| **Cessioni definitive** | | | | | | |
+| Ahamada Naouirou | VfB Stuttgart 1893 | 1,500 | 1,480 | 19 | - | 1,461 |
+| Monzialo Kevin | FC Lugano | 2,500 | 2,454 | 68 | 64 | 2,322 |
+| Parodi Giulio | FC Pro Vercelli 1897 | 1,320 | 1,309 | 9 | - | 1,300 |
+| Petrelli Elia | Genoa Cricket and FC | 8,000 | 7,861 (a) | 387 | - | 7,474 |
+| Portanova Manolo | Genoa Cricket and FC | 10,000 | 9,824 (b) | 354 | - | 9,470 |
+| Tongya Heubang Franco Daryl | Olympique de Marseille | 8,000 | 7,791 | - | - | 7,791 |
+| Other disinvestments | | | 889 | 199 | - | 690 |
+| **Total disinvestments (net)** | | | **31,608** | **1,036** | **64** | **30,508** |
 
 (a) The sale price may increase by an additional € 5.3 million if certain conditions are met during the contract's duration.
-
 (b) The sale price may increase by an additional € 5 million if certain conditions are met during the contract's duration.
 
 The net total financial effect of the Transfer Campaign, which also includes the income and expenses deriving from temporary transfers, capitalised auxiliary expenses and financial income and expenses implicit in deferred receipts and payments, amounts to € 88.711 thousand, distributed as follows:
 
-|  Amounts in thousands of euro | Expiration  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|   |  Total | 2020/2021 | 2021/2022 | 2022/2023 | 2023/2024 | 2024/2025  |
-|  LNP and minor contributions | (35,237) | (7,484) | (23,150) | (3,130) | (1,473) | -  |
-|  Foreign FC | (48,768) | (21,522) | (13,996) | (5,750) | (7,500) | -  |
-|  Agents | (4,706) | (2,365) | (1,113) | (478) | (400) | (350)  |
-|  **Total** | **(88,711)** | **(31,371)** | **(38,259)** | **(9,358)** | **(9,373)** | **(350)**  |
-
-82
-
-JUVENTUS FOOTBALL CLUB S.P.A.
-
-ANNUAL FINANCIAL REPORT AT 30 06 21 - Consolidated financial statements
-
-83
+| Amounts in thousands of euro | Total | 2020/2021 | 2021/2022 | 2022/2023 | 2023/2024 | 2024/2025 |
+|---|---|---|---|---|---|---|
+| | | | *Expiration* | | | |
+| LNP and minor contributions | (35,237) | (7,484) | (23,150) | (3,130) | (1.473) | - |
+| Foreign FC | (48,768) | (21,522) | (13,996) | (5,750) | (7.500) | - |
+| Agents | (4,706) | (2,365) | (1,113) | (478) | (400) | (350) |
+| **Total** | **(88,711)** | **(31,371)** | **(38,259)** | **(9,358)** | **(9.373)** | **(350)** |
 
 --- pág. 44 ---
 
@@ -6862,87 +6844,83 @@ Santon
 
 --- pág. 98 ---
 
-# **APPENDIX – TABLE OF CHANGES IN PLAYERS' REGISTRATION RIGHTS IN THE 2020/2021 FINANCIAL YEAR, IN COMPLIANCE WITH FIOC REGULATIONS**
+192 JUVENTUS FOOTBALL CLUB S.P.A. ANNUAL FINANCIAL REPORT AT 30 06 21 - Financial statements 193
 
-|  Amounts in thousands of Euro |   | Contract |   | Item |   | % Values in beginning of the period 01/01/2020 |   |   |   | Changes in values for period |   |   | Increases (in %)(b) for period |   |   | Values at the end of the period 20/06/2021 |   |   | Miscellaneous  |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Player | Date of birth | Start date of the first contract | Expiry date of the last contract | Acquisition date | Company | Date of disposal | Company | Historical cost | Accum. amortisation | Net | Acquisitions | Disposal | Amount* | Write-downs** | Capital losses** | Capital gains* | Historical cost | Accumulated amort. | Net* | Agents/ fees | Other deposit costs | Value of the left-to- fee  |
-|   |  |  |  |  |  |  |  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |  |  |   |
-|  **First Team**  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  Benbecar Cormac Rodrigo | 25/06/97 | 30/06/17 | 30/06/24 | 20/04/17 | CH-Boss James |  |  | 12,714 | 6,680 | 6,631 | 2,000 | - | 2,410 | - | - | - | 15,722 | 8,495 | 7,229 | 1,283 | - | -  |
-|  Bernadysch Federico | 16/02/94 | 24/07/17 | 30/06/22 | 24/07/17 | ACF Fiorentina |  |  | 39,411 | 23,647 | 15,764 | - | - | 7,882 | - | - | - | 39,411 | 31,329 | 7,882 | 680 | - | -  |
-|  Bonsuol Leonardo | 01/05/97 | 01/07/19 | 30/06/24 | 02/08/19 | AC Milan |  |  | 34,946 | 12,581 | 22,363 | - | - | 5,591 | - | - | - | 34,946 | 18,172 | 16,774 | 480 | - | -  |
-|  Buffon Geofugi | 28/01/78 | 01/07/19 | 30/06/21 | 01/07/19 | Foreign Federation |  |  | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Chalini Giorgio | 19/08/94 | 06/07/04 | 30/06/21 | 01/07/05 | ACF Fiorentina |  |  | 8,034 | 7,946 | 88 | - | - | 80 | - | - | - | 8,034 | 8,034 | - | 684 | - | -  |
-|  Chiesa Federico | 25/10/97 | 05/10/20 | 30/06/22 | 05/10/20 | ACF Fiorentina |  |  | - | - | - | 12,621 | - | 5,363 | - | - | - | 12,621 | 5,363 | 7,258 | 380 | - | -  |
-|  Coadnato Bello con Guillerme | 06/05/98 | 01/08/16 | 30/06/22 | 21/05/17 | Chiesa FC |  |  | 30,490 | 15,881 | 4,629 | - | - | 2,320 | - | - | - | 35,490 | 18,171 | 2,319 | 580 | - | -  |
-|  De Silva Sainfo Luiz | 15/07/91 | 07/08/19 | 30/06/24 | 07/08/19 | Manchester City Ltd |  |  | 37,213 | 6,835 | 30,978 | - | - | 7,595 | - | - | - | 37,213 | 14,408 | 22,769 | - | - | -  |
-|  De Lugl Mattiola | 12/08/99 | 17/07/19 | 30/06/24 | 17/07/19 | JAC-Ago NV |  |  | 85,701 | 16,925 | 69,176 | - | - | 17,294 | - | - | - | 85,701 | 55,819 | 51,882 | 12,418 | - | -  |
-|  Demiral Merhi | 05/05/98 | 05/07/19 | 30/06/24 | 05/07/19 | US-Sessio Calcio |  |  | 19,502 | 3,866 | 10,606 | - | - | 3,599 | - | - | - | 19,502 | 7,715 | 11,727 | 2,128 | - | -  |
-|  Dos Santos Aveiro Cristiano Ronaldo | 05/02/95 | 10/07/16 | 30/06/22 | 10/07/19 | Red Market Club de Fabel |  |  | 115,822 | 57,911 | 57,911 | - | - | 28,956 | 14,446 | - | - | 115,822 | 101,213 | 14,508 | 11,976 | - | -  |
-|  DeMalo Paulo Escapoli | 10/11/93 | 01/07/15 | 30/06/22 | 01/07/15 | US-Sing-A-Palme |  |  | 41,439 | 35,339 | 11,104 | - | - | 5,592 | - | - | - | 41,439 | 35,687 | 5,592 | 5,699 | - | -  |
-|  Federica Gianluca | 24/04/99 | 02/08/19 | 30/06/25 | 02/08/19 | Bologna FC |  |  | 2,541 | 593 | 1,948 | 54 | - | 401 | - | - | - | 2,595 | 904 | 1,601 | 10 | - | -  |
-|  Higuain Gonzalo Gerardo | 10/12/97 | 26/07/16 | 30/06/21 | 26/07/16 | S.S.C. Napoli | 11/10/28 | End of contract | 91,296 | 91,296 | - | - | - | - | - | - | - | - | - | - | 6,082 | - | -  |
-|  Alfakha Sami | 04/04/97 | 01/07/15 | 30/06/21 | 01/07/15 | Foreign Federation |  |  | End of contract | 1,350 | 1,191 | 109 | - | - | 55 | 54 | - | - | - | - | 1,380 | - | -  |
-|  Alphonso Orcan | 25/04/93 | 02/01/00 | 30/06/25 | 02/01/00 | Alpiano SC |  |  | 24,438 | 3,918 | 21,220 | - | - | 6,054 | - | - | - | 24,438 | 10,222 | 25,214 | 1,940 | - | -  |
-|  Luiza Silva Alex Sandro | 26/01/91 | 30/06/15 | 30/06/23 | 19/08/15 | Federal State de Porto |  |  | 28,125 | 33,432 | 7,955 | - | - | 2,564 | - | - | - | 28,125 | 22,906 | 5,128 | 2,880 | - | -  |
-|  Manuel Bueco | 09/04/97 | 18/08/17 | 30/06/21 | 18/08/17 | Paris Saint-Germain | 12/08/28 | End of contract | 22,936 | 22,936 | - | - | - | - | - | - | - | - | - | - | 880 | - | -  |
-|  MC-Kenna Weston James Earl | 28/08/98 | 26/02/21 | 30/06/25 | 26/02/21 | FC-Gelsenkirchen-Schalke-DAGV |  |  | - | - | - | 33,385 | - | 1,628 | - | - | - | 33,385 | 1,628 | 18,757 | 411 | - | -  |
-|  Phyorgis Cyclic | 16/03/90 | 18/02/09 | 30/06/21 | 02/04/04 | De Saffron-Somerville |  |  | 806 | 806 | - | - | - | - | - | - | - | 806 | 806 | - | - | - | -  |
-|  Saloni Adrian | 05/04/95 | 04/07/19 | 30/06/23 | 04/07/19 | Foreign Federation |  |  | 1,481 | 368 | 1,113 | - | - | 271 | - | - | - | 1,481 | 704 | 742 | 1,481 | - | -  |
-|  Ramza De Oliveira Melo A. Henrique | 12/08/96 | 26/06/20 | 30/06/25 | 26/06/20 | FC Barcelona |  |  | 71,620 | 79 | 71,541 | - | - | 15,208 | - | - | - | 76,120 | 15,287 | 60,832 | 494 | - | -  |
-|  Ramayo Aaron James | 26/12/90 | 11/02/19 | 30/06/23 | 01/07/19 | Foreign Federation |  |  | 3,650 | 913 | 2,707 | - | - | 912 | - | - | - | 3,650 | 1,825 | 1,825 | 5,680 | - | -  |
-|  Sassenny Wojciech | 18/04/90 | 01/07/14 | 30/06/24 | 16/07/17 | Alvesa FC |  |  | 16,892 | 9,112 | 6,860 | 2,051 | - | 2,333 | - | - | - | 18,442 | 11,449 | 6,948 | 2,333 | - | -  |
-|  **Temporarily transferred players**  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  Alhambra Nissimba | 09/02/02 | 16/08/18 | 30/06/22 | 16/08/18 | Foreign Federation | 07/03/21 | VVS Stuttgart 1080 AG | 90 | 60 | 20 | - | 1,488 | 11 | 1,480 | - | 1,481 | - | - | - | - | - | -  |
-|  Benzella Pietro | 21/12/98 | 01/12/16 | 30/06/23 | 23/07/14 | From Youth Sector |  |  | - | - | - | 50 | - | 17 | - | - | - | 50 | 17 | 33 | - | - | -  |
-|  Benavica Constantin Laurentis | 30/02/94 | 18/01/11 | 30/06/20 | 20/01/19 | Virtual Leagues 1924 | 01/07/28 | End of contract | 1,225 | 1,225 | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Brunon Matteo Luigi | 01/11/94 | 24/01/20 | 30/06/24 | 24/01/20 | Delfino Pescara 1936 |  |  | 2,930 | 288 | 2,642 | - | - | 661 | - | - | - | 2,930 | 646 | 1,561 | 30 | - | -  |
-|  Clemence Luca | 09/07/97 | 22/08/14 | 30/06/22 | 19/08/01 | Vicenza Calcio |  |  | 1,375 | 1,024 | 351 | - | - | 175 | - | - | - | 1,375 | 1,199 | 176 | 50 | - | -  |
-|  Coccolò Luca | 23/02/98 | 01/07/19 | 30/06/22 | 26/05/12 | From Youth Sector |  |  | 48 | 40 | 8 | - | - | 3 | - | - | - | 48 | 40 | 8 | - | - | -  |
-|  Costa de Souza Douglas | 14/09/90 | 27/06/18 | 30/06/22 | 07/09/18 | FC Bayern München |  |  | 44,616 | 22,674 | 21,942 | - | - | 10,871 | - | - | - | 44,616 | 22,645 | 10,871 | 5,297 | - | -  |
-|  De Szigla Mattia | 20/10/92 | 20/07/17 | 30/06/22 | 20/07/17 | AC Milan |  |  | 12,141 | 7,285 | 4,856 | - | - | 2,428 | - | - | - | 12,141 | 9,713 | 2,428 | 580 | - | -  |
-|  Del Fabio Dario | 24/03/95 | 28/07/17 | 30/06/23 | 28/07/17 | Cagliari Calcio |  |  | 4,402 | 3,401 | 1,561 | - | - | 660 | - | - | - | 4,402 | 3,601 | 1,321 | - | - | -  |
-|  Del Ferenc Mattia | 05/06/98 | 20/07/16 | 30/06/23 | 01/07/14 | AC. Prato Spa |  |  | 227 | 196 | 31 | 36 | - | 22 | - | - | - | 262 | 218 | 48 | - | - | -  |
-|  De Oliveira Andrade Wesley | 13/03/93 | 28/01/00 | 30/06/22 | 28/01/00 | Walter Verona Spa |  |  | 1,937 | 264 | 1,243 | - | - | 421 | - | - | - | 1,937 | 805 | 622 | - | - | -  |
-|  Fernandes Leandro Fernandes | 25/12/99 | 01/01/18 | 30/06/21 | 01/01/18 | PSV NV | 26/08/28 | Delfino Pescara 1936 | 400 | 286 | 114 | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Frederiksen Nikolai Beden | 18/05/90 | 17/08/18 | 30/06/23 | 17/08/18 | FC Nordsjælland |  |  | 1,429 | 700 | 729 | 178 | - | 302 | - | - | - | 1,607 | 1,802 | 605 | 90 | - | -  |
-|  Evel Stefano | 09/03/96 | 01/09/20 | 30/06/24 | 28/06/20 | AC-Rios 1909 SMML |  |  | 3,239 | 7 | 3,222 | - | - | 808 | - | - | - | 3,239 | 815 | 2,424 | - | - | -  |
-|  Hopien Alfieri | 18/05/92 | 30/06/20 | 30/06/23 | 01/07/20 | FC Basel 1893 |  |  | - | - | - | 4,038 | - | 1,013 | - | - | - | 4,038 | 1,013 | 3,033 | - | - | -  |
-|  Kastavus Grigoris | 30/01/98 | 31/01/14 | 30/06/22 | 31/01/14 | Ossais AFL Union of Pensions |  |  | 359 | 262 | 96 | 60 | - | 78 | - | - | - | 419 | 341 | 78 | 219 | - | -  |
-|  Lipari Mirco | 16/07/92 | 30/06/18 | 30/06/24 | 30/06/19 | Empoli F.C. |  |  | 585 | 293 | 292 | 80 | - | 93 | - | - | - | 682 | 306 | 279 | 30 | - | -  |
-|  Lungiga Christopher | 04/07/00 | 01/01/21 | 30/06/25 | 21/01/21 | FC Lugano SA |  |  | - | - | - | 2,903 | - | 290 | - | - | - | 2,903 | 290 | 2,413 | 72 | - | -  |
-|  Mandragora Roberto | 29/06/97 | 03/10/20 | 30/06/25 | 03/10/20 | Udinese Calcio |  |  | - | - | - | 15,087 | - | 2,267 | - | - | - | 15,087 | 2,267 | 12,720 | - | - | -  |
-|  Miralli Alessandro | 23/07/99 | 01/01/20 | 30/06/24 | 31/01/20 | Parma Calcio 1910 |  |  | 2,994 | 375 | 2,619 | - | - | 653 | - | - | - | 2,994 | 930 | 1,964 | 8 | - | -  |
-|  Monzlahi Kevin | 28/07/00 | 17/08/18 | 30/06/21 | 17/08/18 | Stade Mellerche Coen | 11/01/21 | FC Lugano | 407 | 271 | 106 | - | 2,398 | 68 | - | - | 2,322 | - | - | - | 280 | - | -  |
-|  Malik Elouho | 13/06/99 | 31/07/19 | 30/06/22 | 31/07/19 | Sampohria Spa |  |  | 3,458 | 811 | 2,647 | 5 | - | 884 | - | - | - | 3,462 | 1,699 | 1,768 | 25 | - | -  |
-|  Nicolaus Cunglia Hans | 18/06/90 | 12/07/17 | 30/06/23 | 22/07/14 | From Youth Sector |  |  | 1,860 | 530 | 530 | - | - | 177 | - | - | - | 1,860 | 707 | 359 | - | - | -  |
-|  Olivier Marco | 30/06/99 | 30/06/19 | 30/06/23 | 30/06/19 | Empoli FC Spa |  |  | 2,375 | 590 | 1,760 | 283 | - | 710 | - | - | - | 2,725 | 1,309 | 1,409 | 35 | - | -  |
-|  Pellegrini Lucio | 07/03/99 | 01/07/19 | 30/06/25 | 30/06/19 | AS Roma |  |  | 21,478 | 5,381 | 16,897 | 1,375 | - | 3,494 | - | - | - | 22,852 | 8,875 | 13,978 | 379 | - | -  |
-|  Paris Mattia | 10/11/92 | 30/06/18 | 30/06/22 | 01/07/18 | Oessa Cricket and FC |  |  | 14,224 | 7,112 | 7,112 | 1,401 | - | 4,272 | - | - | - | 15,655 | 11,394 | 4,271 | 680 | - | -  |
-|  Pjaca Marco | 06/08/95 | 21/07/16 | 30/06/23 | 21/07/16 | QNK Sreene |  |  | 29,474 | 18,519 | 10,955 | - | - | 3,652 | - | - | - | 29,474 | 22,171 | 7,305 | 5,680 | - | -  |
-|  Masini Joel | 14/03/93 | 08/08/19 | 30/06/23 | 08/08/19 | Le Vauz Foot SA |  |  | 130 | 40 | 60 | - | - | 30 | - | - | - | 130 | 70 | 60 | - | - | -  |
-|  Romero Cristian | 27/04/98 | 13/07/19 | 30/06/25 | 12/07/19 | Oessa Cricket and FC |  |  | 28,310 | 5,023 | 22,767 | 5,299 | - | 5,299 | 5,213 | - | - | 31,568 | 15,945 | 15,634 | 984 | - | -  |
-|  Ravella Nicolò | 14/12/01 | 28/01/21 | 30/06/24 | 28/01/21 | Oessa Cricket and FC |  |  | - | - | - | 23,228 | - | 2,882 | - | - | - | 23,228 | 2,882 | 20,346 | 1,104 | - | -  |
-|  Ragani Dukide | 29/07/94 | 04/08/12 | 30/06/24 | 31/07/12 | Empoli FC |  |  | 4,205 | 3,041 | 1,164 | - | - | 291 | - | - | - | 4,205 | 3,202 | 875 | 380 | - | -  |
-|  Sara Nacari | 21/06/92 | 24/09/18 | 30/06/21 | 10/08/18 | From Youth Sector | 26/09/28 | Turme FC SPA | 59 | 38 | 21 | - | - | - | - | 21 | - | - | - | - | - | - | -  |
-|  Salusi Rancini | 19/08/96 | 02/09/19 | 30/06/20 | 02/09/19 | Delfino Pescara 1936 | 01/09/28 | FC Lugano | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Spina Raffaele | 07/01/02 | 01/02/19 | 30/06/21 | 01/07/19 | From Youth Sector | 02/10/28 | Turme FC SPA | 30 | 18 | 12 | - | - | 3 | - | 9 | - | - | - | - | - | - | -  |
-|  Shamassoni Diego | 02/01/01 | 02/10/20 | 30/06/23 | 02/10/20 | Nu Pesaro |  |  | - | - | - | 334 | - | 91 | - | - | - | 334 | 91 | 248 | 39 | - | -  |
-|  Toum Idross | 30/04/98 | 01/08/18 | 30/06/22 | 31/08/18 | Westat Bremen |  |  | 1,373 | 482 | 801 | - | - | 480 | - | - | - | 1,373 | 627 | 446 | 80 | - | -  |
-|  Vicente Nivita | 25/05/01 | 26/01/19 | 30/06/23 | 24/01/19 | FC Lugano SA |  |  | 1,774 | 681 | 1,898 | - | - | - | - | - | - | 1,774 | 1,947 | 702 | - | - | -  |
-|  Zamancchia Luca | 19/07/98 | 17/08/18 | 30/06/23 | 24/01/19 | Oessa Cricket and FC |  |  | 4,855 | 1,212 | 2,741 | 39 | - | 926 | - | - | - | 4,089 | 2,238 | 1,851 | 197 | - | -  |
-|  Zappa Claudia | 30/03/97 | 21/07/17 | 30/06/21 | 22/07/18 | US-Sensio Calcio | 18/08/28 | Montreal FC SA | 1,647 | 1,497 | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  **Other charges** |  |  |  |  |  |  |  | 50,858 | 13,205 | 42,863 | 25,722 | 27,674 | 15,406 | 416 | 52 | 26,924 | 78,290 | 29,292 | 51,978 | 1,734 | - | 921  |
-|  **TOTAL** |  |  |  |  |  |  |  | 938,164 | 429,741 | 308,422 | 121,682 | 31,544 | 177,317 | 20,120 | 116 | 30,707 | 936,839 | 508,273 | 431,532 | 70,872 | 1,930 | 921  |
+APPENDIX – TABLE OF CHANGES IN PLAYERS' REGISTRATION RIGHTS IN THE 2020/2021 FINANCIAL YEAR, IN COMPLIANCE WITH FIGC REGULATIONS
 
-192
+Amounts in thousands of Euro
 
-JUMENTUS FOOTBALL SUB S.P.R.
+Grupos de columnas: Contract (Date of birth, Start date of the first contract, Expiry date of the last contract) | From (Acquisition date, Company) | To (Date of disposal, Company) | Values at beginning of the period 01/07/2020 (1, 2, 3) | Changes in values for period (4, 5) | Economic effects for period (6, 7, 8, 9) | Values at the end of the period 30/06/2021 (10, 11, 12) | Miscellaneous
 
-ANNUAL FINANCIAL REPORT AT 30 00 21 - Financial statements
-
-193
+| Player | Date of birth | Start date of the first contract | Expiry date of the last contract | Acquisition date | Company (From) | Date of disposal | Company (To) | Historical cost (1) | Accum. amortisation (2) | Net (3) | Acquisitions (4) | Disposal* (5) | Ammort.* (6) | Write-downs* (7) | Capital losses* (8) | Capital gains* (9) | Historical cost (10) | Accumulated amort. (11) | Net* (12) | Agents' fees | Other acquisit. costs | Value of the sell-on fee |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| First Team | | | | | | | | 690,547 | 333,214 | 357,333 | 42,919 | - | 116,736 | 14,500 | - | - | 617,944 | 348,928 | 269,016 | 53,206 | 1,959 | - |
+| Bentancur Colman Rodrigo | 25/06/97 | 26/06/17 | 30/06/24 | 20/04/17 | CA Boca Juniors | | | 12,714 | 6,083 | 6,631 | 3,008 | - | 2,410 | - | - | - | 15,722 | 8,493 | 7,229 | 1,283 | - | - |
+| Bernardeschi Federico | 16/02/94 | 24/07/17 | 30/06/22 | 24/07/17 | ACF Fiorentina | | | 39,411 | 23,647 | 15,764 | - | - | 7,882 | - | - | - | 39,411 | 31,529 | 7,882 | 600 | - | - |
+| Bonucci Leonardo | 01/05/87 | 01/07/10 | 30/06/24 | 02/08/18 | AC Milan | | | 34,946 | 12,581 | 22,365 | - | - | 5,591 | - | - | - | 34,946 | 18,172 | 16,774 | 400 | - | - |
+| Buffon Gianluigi | 28/01/78 | 01/07/19 | 30/06/21 | 01/07/19 | Foreign Federation | | | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| Chiellini Giorgio | 14/08/84 | 06/07/04 | 30/06/21 | 01/07/05 | ACF Fiorentina | | | 8,034 | 7,946 | 88 | - | - | 88 | - | - | - | 8,034 | 8,034 | - | 604 | - | - |
+| Chiesa Federico | 25/10/97 | 05/10/20 | 30/06/22 | 05/10/20 | ACF Fiorentina | | | - | - | - | 12,621 | - | 5,363 | - | - | - | 12,621 | 5,363 | 7,258 | 300 | - | - |
+| Cuadrado Bello Jan Guillermo | 26/05/88 | 31/08/16 | 30/06/22 | 21/05/17 | Chelsea FC | | | 20,490 | 15,851 | 4,639 | - | - | 2,320 | - | - | - | 20,490 | 18,171 | 2,319 | 550 | - | - |
+| Da Silva Danilo Luiz | 15/07/91 | 07/08/19 | 30/06/24 | 07/08/19 | Manchester City Ltd | | | 37,213 | 6,835 | 30,378 | - | - | 7,595 | - | - | - | 37,213 | 14,430 | 22,783 | - | - | - |
+| De Ligt Matthijs | 12/08/99 | 17/07/19 | 30/06/24 | 17/07/19 | AFC Ajax NV | | | 85,701 | 16,525 | 69,176 | - | - | 17,294 | - | - | - | 85,701 | 33,819 | 51,882 | 12,418 | - | - |
+| Demiral Merih | 05/03/98 | 05/07/19 | 30/06/24 | 05/07/19 | US Sassuolo Calcio | | | 19,502 | 3,866 | 15,636 | - | - | 3,909 | - | - | - | 19,502 | 7,775 | 11,727 | 2,128 | - | - |
+| Dos Santos Aveiro Cristiano Ronaldo | 05/02/85 | 10/07/18 | 30/06/22 | 10/07/18 | Real Madrid Club de Futbol | | | 115,822 | 57,911 | 57,911 | - | - | 28,956 | 14,446 | - | - | 115,822 | 101,313 | 14,509 | 11,876 | - | - |
+| Dybala Paulo Exequiel | 15/11/93 | 01/07/15 | 30/06/22 | 01/07/15 | US Città di Palermo | | | 41,439 | 30,335 | 11,104 | - | - | 5,552 | - | - | - | 41,439 | 35,887 | 5,552 | 3,699 | - | - |
+| Frabotta Gianluca | 24/06/99 | 02/08/19 | 30/06/25 | 02/08/19 | Bologna FC | | | 2,541 | 593 | 1,948 | 54 | - | 401 | - | - | - | 2,595 | 994 | 1,601 | 10 | - | - |
+| Higuain Gonzalo Gerardo | 10/12/87 | 26/07/16 | 30/06/21 | 26/07/16 | S.S.C. Napoli | 17/09/20 | End of contract | 91,296 | 91,296 | - | - | - | - | - | - | - | - | - | - | 3,050 | - | - |
+| Khedira Sami | 04/04/87 | 01/07/15 | 30/06/21 | 01/07/15 | Foreign Federation | | End of contract | 1,300 | 1,191 | 109 | - | - | 55 | 54 | - | - | - | - | - | 1,300 | - | - |
+| Kulusevski Dejan | 25/04/00 | 02/01/00 | 30/06/25 | 02/01/00 | Atalanta BC | | | 35,438 | 3,918 | 31,520 | - | - | 6,304 | - | - | - | 35,438 | 10,222 | 25,216 | 1,969 | - | - |
+| Lobo Silva Alex Sandro | 26/01/91 | 20/08/15 | 30/06/23 | 19/08/15 | Futebol Clube do Porto | | | 28,125 | 20,432 | 7,693 | - | - | 2,564 | - | - | - | 28,125 | 22,996 | 5,129 | 2,850 | - | - |
+| Matuidi Blaise | 09/04/87 | 18/08/17 | 30/06/21 | 18/08/17 | Paris Saint-Germain | 12/08/20 | End of contract | 22,926 | 22,926 | - | - | - | - | - | - | - | - | - | - | 800 | - | - |
+| MC Kennie Weston James Earl | 28/08/98 | 26/02/21 | 30/06/25 | 26/02/21 | FC Gelsenkirchen-Schalke 04 EV | | | - | - | - | 20,385 | - | 1,628 | - | - | - | 20,385 | 1,628 | 18,757 | 411 | - | - |
+| Pinsoglio Carlo | 16/03/90 | 18/03/09 | 30/06/21 | 02/04/04 | Da Settore Giovanile | | | 806 | 806 | - | - | - | - | - | - | - | 806 | 806 | - | - | - | - |
+| Rabiot Adrien | 03/04/95 | 04/07/19 | 30/06/23 | 04/07/19 | Foreign Federation | | | 1,481 | 368 | 1,113 | - | - | 371 | - | - | - | 1,481 | 739 | 742 | 1,481 | - | - |
+| Ramos De Oliveira Melo A. Henrique | 12/08/96 | 29/06/20 | 30/06/25 | 29/06/20 | FC Barcellona | | | 71,620 | 79 | 71,541 | - | - | 15,208 | - | - | - | 76,120 | 15,287 | 60,833 | 494 | - | - |
+| Ramsey Aaron James | 26/12/90 | 11/02/19 | 30/06/23 | 01/07/19 | Foreign Federation | | | 3,650 | 913 | 2,737 | - | - | 912 | - | - | - | 3,650 | 1,825 | 1,825 | 3,650 | - | - |
+| Szczesny Wojciech | 18/04/90 | 01/07/14 | 30/06/24 | 19/07/17 | Arsenal FC | | | 16,092 | 9,112 | 6,980 | 2,351 | - | 2,333 | - | - | - | 18,443 | 11,445 | 6,998 | 3,333 | - | - |
+| Temporarily transferred players | | | | | | | | 191,549 | 83,322 | 108,227 | 52,950 | 3,870 | 45,175 | 5,213 | 144 | 3,873 | 240,621 | 130,063 | 110,558 | 15,932 | - | - |
+| Ahamada Naouirou | 29/03/02 | 16/08/18 | 30/06/22 | 16/08/18 | Foreign Federation | 07/05/21 | Vfb Stuttgart 1893 AG | 90 | 60 | 30 | - | 1,480 | 11 | 1,480 | - | 1,461 | - | - | - | - | - | - |
+| Beruatto Pietro | 21/12/98 | 01/12/16 | 30/06/23 | 23/07/14 | From Youth Sector | | | - | - | - | 50 | - | 17 | - | - | - | 50 | 17 | 33 | - | - | - |
+| Branescu Constantin Laurentiu | 30/03/94 | 18/01/11 | 30/06/20 | 20/01/15 | Virtus Lanciano 1924 | 01/07/20 | End of contract | 1,225 | 1,225 | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| Brunori Matteo Luigi | 01/11/94 | 24/01/20 | 30/06/24 | 24/01/20 | Delfino Pescara 1936 | | | 2,930 | 288 | 2,642 | - | - | 661 | - | - | - | 2,930 | 949 | 1,981 | 30 | - | - |
+| Clemenza Luca | 09/07/97 | 22/09/14 | 30/06/22 | 19/08/01 | Vicenza Calcio | | | 1,375 | 1,024 | 351 | - | - | 175 | - | - | - | 1,375 | 1,199 | 176 | 50 | - | - |
+| Coccolo Luca | 23/02/98 | 01/07/19 | 30/06/23 | 29/05/12 | From Youth Sector | | | 48 | 40 | 8 | - | - | 3 | - | - | - | 48 | 43 | 5 | - | - | - |
+| Costa de Souza Douglas | 14/09/90 | 07/06/18 | 30/06/22 | 07/06/18 | FC Bayern Munchen | | | 44,616 | 22,674 | 21,942 | - | - | 10,971 | - | - | - | 44,616 | 33,645 | 10,971 | 5,297 | - | - |
+| De Sciglio Mattia | 20/10/92 | 20/07/17 | 30/06/22 | 20/07/17 | AC Milan | | | 12,141 | 7,285 | 4,856 | - | - | 2,428 | - | - | - | 12,141 | 9,713 | 2,428 | 500 | - | - |
+| Del Fabro Dario | 24/03/95 | 28/07/17 | 30/06/23 | 28/07/17 | Cagliari Calcio | | | 4,402 | 2,421 | 1,981 | - | - | 660 | - | - | - | 4,402 | 3,081 | 1,321 | - | - | - |
+| Del Favero Mattia | 05/06/98 | 20/07/16 | 30/06/23 | 01/07/14 | AC Prato Spa | | | 227 | 196 | 31 | 36 | - | 22 | - | - | - | 263 | 218 | 45 | - | - | - |
+| De Oliveira Andrade Wesley | 13/03/00 | 28/01/00 | 30/06/22 | 28/01/00 | Hellas Verona Spa | | | 1,507 | 264 | 1,243 | - | - | 621 | - | - | - | 1,507 | 885 | 622 | - | - | - |
+| Fernandes Leandro Fernandes | 25/12/99 | 31/01/18 | 30/06/21 | 31/01/18 | PSV NV | 29/09/20 | Delfino Pescara 1936 | 400 | 286 | 114 | - | - | - | - | - | - | - | - | - | - | - | - |
+| Frederiksen Nikolai Baden | 18/05/00 | 17/08/18 | 30/06/23 | 17/08/18 | FC Nordsjaellan | | | 1,429 | 700 | 729 | 178 | - | 302 | - | - | - | 1,607 | 1,002 | 605 | 90 | - | - |
+| Gori Stefano | 09/03/96 | 01/09/20 | 30/06/24 | 28/06/20 | AC Pisa 1909 SSARL | | | 3,239 | 7 | 3,232 | - | - | 808 | - | - | - | 3,239 | 815 | 2,424 | - | - | - |
+| Hajdari Albian | 18/05/03 | 30/06/20 | 30/06/23 | 01/07/20 | FC Basel 1893 | | | - | - | - | 4,538 | - | 1,513 | - | - | - | 4,538 | 1,513 | 3,025 | - | - | - |
+| Kastanos Grigoris | 30/01/98 | 31/01/14 | 30/06/22 | 31/01/14 | Enosis Ath. Union of Paralimi | | | 359 | 263 | 96 | 60 | - | 78 | - | - | - | 419 | 341 | 78 | 219 | - | - |
+| Lipari Mirco | 19/07/02 | 03/08/18 | 30/06/24 | 30/06/19 | Empoli F.C. | | | 585 | 293 | 292 | 80 | - | 93 | - | - | - | 665 | 386 | 279 | 30 | - | - |
+| Lungoyi Christopher | 04/07/00 | 21/01/21 | 30/06/25 | 21/01/21 | FC Lugano SA | | | - | - | - | 2,903 | - | 290 | - | - | - | 2,903 | 290 | 2,613 | 73 | - | - |
+| Mandragora Rolando | 29/06/97 | 03/10/20 | 30/06/25 | 03/10/20 | Udinese Calcio | | | - | - | - | 15,087 | - | 2,367 | - | - | - | 15,087 | 2,367 | 12,720 | - | - | - |
+| Minelli Alessandro | 23/07/99 | 31/01/20 | 30/06/24 | 31/01/20 | Parma Calcio 1913 | | | 2,894 | 275 | 2,619 | - | - | 655 | - | - | - | 2,894 | 930 | 1,964 | 8 | - | - |
+| Monzialo Kevin | 28/07/00 | 17/08/18 | 30/06/21 | 17/08/18 | Stade Malherbe Caen | 11/01/21 | FC Lugano | 407 | 271 | 136 | - | 2,390 | 68 | - | - | 2,322 | - | - | - | 200 | - | - |
+| Mulè Erasmo | 13/06/99 | 31/07/19 | 30/06/23 | 31/07/19 | Sampdoria Spa | | | 3,458 | 811 | 2,647 | 5 | - | 884 | - | - | - | 3,463 | 1,695 | 1,768 | 25 | - | - |
+| Nicolussi Caviglia Hans | 18/06/00 | 12/07/17 | 30/06/23 | 22/07/14 | From Youth Sector | | | 1,060 | 530 | 530 | - | - | 177 | - | - | - | 1,060 | 707 | 353 | - | - | - |
+| Olivieri Marco | 30/06/99 | 30/06/19 | 30/06/23 | 30/06/19 | Empoli FC Spa | | | 2,375 | 595 | 1,780 | 350 | - | 710 | - | - | - | 2,725 | 1,305 | 1,420 | 35 | - | - |
+| Pellegrini Luca | 07/03/99 | 01/07/19 | 30/06/25 | 30/06/19 | AS Roma | | | 21,478 | 5,381 | 16,097 | 1,375 | - | 3,494 | - | - | - | 22,853 | 8,875 | 13,978 | 375 | - | - |
+| Perin Mattia | 10/11/92 | 08/06/18 | 30/06/22 | 01/07/18 | Genoa Cricket and FC | | | 14,224 | 7,112 | 7,112 | 1,431 | - | 4,272 | - | - | - | 15,655 | 11,384 | 4,271 | 600 | - | - |
+| Pjaca Marco | 06/05/95 | 21/07/16 | 30/06/23 | 21/07/16 | GNK Dinamo | | | 29,474 | 18,519 | 10,955 | - | - | 3,652 | - | - | - | 29,474 | 22,171 | 7,303 | 5,650 | - | - |
+| Ribeiro Joel | 14/02/03 | 08/08/19 | 30/06/23 | 08/08/19 | Ls Vaud Foot SA | | | 130 | 40 | 90 | - | - | 30 | - | - | - | 130 | 70 | 60 | - | - | - |
+| Romero Cristian | 27/04/98 | 13/07/19 | 30/06/25 | 12/07/19 | Genoa Cricket and FC | | | 28,310 | 5,523 | 22,787 | 3,259 | - | 5,209 | 5,213 | - | - | 31,569 | 15,945 | 15,624 | 984 | - | - |
+| Rovella Nicolo | 14/12/01 | 28/01/21 | 30/06/24 | 28/01/21 | Genoa Cricket and FC | | | - | - | - | 23,228 | - | 2,882 | - | - | - | 23,228 | 2,882 | 20,346 | 1,154 | - | - |
+| Rugani Daniele | 29/07/94 | 04/08/12 | 30/06/24 | 31/07/13 | Empoli FC | | | 4,205 | 3,041 | 1,164 | - | - | 291 | - | - | - | 4,205 | 3,332 | 873 | 300 | - | - |
+| Sava Razvan | 21/06/02 | 24/09/18 | 30/06/21 | 10/08/18 | From Youth Sector | 26/09/20 | Torino FC SPA | 59 | 38 | 21 | - | - | - | - | 21 | - | - | - | - | - | - | - |
+| Selasi Ransford | 19/08/96 | 02/09/19 | 30/06/20 | 02/09/19 | Delfino Pescara 1936 | 01/09/20 | FC Lugano | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| Spina Raffaele | 07/01/02 | 01/03/19 | 30/06/21 | 01/07/16 | From Youth Sector | 02/10/20 | Torino FC SPA | 30 | 18 | 12 | - | - | 3 | - | 9 | - | - | - | - | - | - | - |
+| Stramaccioni Diego | 02/01/01 | 02/10/20 | 30/06/23 | 02/10/20 | Vis Pesaro | | | - | - | - | 334 | - | 91 | - | - | - | 334 | 91 | 243 | 35 | - | - |
+| Toure Idrissa | 29/04/98 | 01/08/18 | 30/06/22 | 31/05/19 | Werder Bremen | | | 1,373 | 482 | 891 | - | - | 445 | - | - | - | 1,373 | 927 | 446 | 80 | - | - |
+| Vlasenko Nikita | 20/03/01 | 26/01/19 | 30/06/23 | 26/01/19 | FC Lugano SA | | | 1,779 | 681 | 1,098 | - | - | 366 | - | - | - | 1,779 | 1,047 | 732 | - | - | - |
+| Zanimacchia Luca | 19/07/98 | 17/08/18 | 30/06/23 | 24/01/19 | Genoa Cricket and FC | | | 4,053 | 1,312 | 2,741 | 36 | - | 926 | - | - | - | 4,089 | 2,238 | 1,851 | 197 | - | - |
+| Zappa Claudio | 30/03/97 | 21/07/17 | 30/06/21 | 22/07/18 | US Sassuolo Calcio | 18/08/20 | Mantova FC Srl | 1,667 | 1,667 | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| Other changes | | | | | | | | 56,068 | 13,205 | 42,863 | 25,733 | 27,674 | 15,406 | 416 | 52 | 26,924 | 78,260 | 26,282 | 51,978 | 1,734 | - | 921 |
+| TOTAL | | | | | | | | 938,164 | 429,741 | 508,423 | 121,602 | 31,544 | 177,317 | 20,120 | 196 | 30,707 | 936,825 | 505,273 | 431,552 | 70,872 | 1,959 | 921 |
 
 --- pág. 99 ---
 
@@ -7329,71 +7307,57 @@ BOARD OF STATUTORY AUDITORS' REPORT TO THE SHAREHOLDERS' MEETING ON 29 OCTOBER 2
 
 --- pág. 109 ---
 
-Building a better working world
+**EY**  
+Building a better working world  
 
-EY S.p.A.
-Via Mezzo, 5
-10121 Torino
+EY S.p.A.  
+Via Meucci, 5  
+10121 Torino  
+Tel: +39 011 5161611  
+Fax: +39 011 5612554  
+ey.com  
 
-Tel: +39 011 5101511
-Fax: +39 011 5612554
-ey.com
+### Independent auditor's report pursuant to article 14 of Legislative Decree n. 39, dated 27 January 2010 and article 10 of EU Regulation n. 537/2014
+**(Translation from the original Italian text)**
 
-Independent auditor's report pursuant to article 14 of Legislative Decree n. 39, dated 27 January 2010 and article 10 of EU Regulation n. 537/2014
-(Translation from the original Italian text)
+To the Shareholders of  
+Juventus Football Club S.p.A.  
 
-To the Shareholders of
-Juventus Football Club S.p.A.
+### Report on the Audit of the Financial Statements
 
-# Report on the Audit of the Financial Statements
-
-# Opinion
-
+#### Opinion
 We have audited the financial statements of Juventus Football Club S.p.A. (the Company), which comprise the statement of financial position as at 30 June 2021, and the income statement, the statement of comprehensive income, the statement of changes in shareholders' equity, the statement of cash flows and notes to the financial statements, including a summary of significant accounting policies.
 
 In our opinion, the financial statements give a true and fair view of the financial position of the Company as at 30 June 2021, and of its financial performance and its cash flows for the year then ended in accordance with International Financial Reporting Standards as adopted by the European Union and with the regulations issued for implementing art. 9 of Legislative Decree n. 38/2005.
 
-# Basis for Opinion
+#### Basis for Opinion
+We conducted our audit in accordance with International Standards on Auditing (ISA Italia). Our responsibilities under those standards are further described in the Auditor's Responsibilities for the Audit of the Financial Statements section of our report. We are independent of the Company in accordance with the regulations and standards on ethics and independence applicable to audits of financial statements under Italian Laws. We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our opinion.
 
-We conducted our audit in accordance with International Standards on Auditing (ISA Italia). Our responsibilities under these standards are further described in the Auditor's Responsibilities for the Audit of the Financial Statements section of our report. We are independent of the Company in accordance with the regulations and standards on ethics and independence applicable to audits of financial statements under Italian Laws. We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our opinion.
-
-# Key Audit Matters
-
+#### Key Audit Matters
 Key audit matters are those matters that, in our professional judgment, were of most significance in our audit of the financial statements of the current period. These matters were addressed in the context of our audit of the financial statements as a whole, and in forming our opinion thereon, and we do not provide a separate opinion on these matters.
 
-EY S.p.A.
-Sede Legale: Via Mezzo, 5 - 10121 Torino
-Capitale Sociale: Via Mezzo, 5 - 10121 Torino
-Istituti di Cassazione: Via Mezzo, 5 - 10121 Torino
-Istituti di Cassazione: Via Mezzo, 5 - 10121 Torino
-Istituti di Cassazione: Via Mezzo, 5 - 10121 Torino
-Istituti di Cassazione: Via Mezzo, 5 - 10121 Torino
-Istituti di Cassazione: Via Mezzo, 5 - 10121 Torino
-Istituti di Cassazione: Via Mezzo, 5 - 10121 Torino
-Istituti di Cassazione: Via Mezzo, 5 - 10121
+---
 
-214
+[ilegible]
 
-JUVENTUS FOOTBALL CLUB S.P.A.
+---
 
-Building a better working world
+**EY**  
+Building a better working world  
 
 We identified the following key audit matters:
 
-|  Key Audit Matter | Audit Response  |
-| --- | --- |
-|  Assessment of the going concern assumption |   |
-|  The Financial Statements as at June 30, 2021 reported a net loss of €209.5 million and the 2019-2024 Business Plan, as revised and updated by the Board of Directors on June 30, 2021, includes a significant net loss for the year ended June 30, 2022 as well. | Our audit procedures in response to this key audit matter included, among others: • obtaining an understanding, also through discussions with Management, of the assumptions underlying the going concern assessment; • obtaining an understanding of the process to update the 2019-2024 Business Plan and analyzing the reasonableness of the main assumptions underlying such plan; • assessing the historical accuracy of forecasts taking into account the effects from the Covid-19 pandemic; • performing sensitivity analysis of the main underlying assumptions with respect to the forecasted cash flows; • obtaining the detail of the credit facilities available at June 30, 2021, with the detail of the drawn amount as compared to the total amount of the credit lines and discussing with management about the conditions of access to new credit facilities, even considering changes in the credit rating, and the related effects on the cost of financing; • analyzing the subsequent events occurred after the financial statements date, including the supporting documentation related to the capital increase.  |
-|  In such context, the directors have assessed the going concern assumption, and concluded that no significant uncertainties (as defined in IAS 1 par. 25) exist in relation to the going concern assumption. |   |
-|  In reaching such conclusion, the directors have considered the key economic and financial metrics included in the revised 2019-2024 Business Plan approved by Board of Directors on September 17, 2021. In particular the Directors have considered the undrawn credit facilities available as at June 30, 2021 amounting to €335 million and the expected positive impacts on the net equity and the net financial debt from the capital increase with preemptive rights up to €400 million, which will be subject to the Shareholders' approval at its extraordinary meeting on October 29, 2021. In relation to the above, the majority shareholder, EXOB N.V., has committed to subscribe its pro quota of the new shares issued in the context of the capital increase and made a payment of the first tranche amounting to €75 million in August 2021. |   |
-|  In consideration of the estimation and judgment required from Management in the preparation of the forecast and its potential impacts in supporting the going concern assumption, we concluded that this represents a key audit matter. |   |
-|  The "Business Outlook" paragraph included within the Report on Operations and "Going Concern" paragraph included within the notes to the financial statements describe the results achieved for the year ended June 30, 2021, the actions taken and the considerations made by the directors in relation to the use of the going concern assumption. | Lastly, we reviewed the disclosures made in the notes to the financial statements as of June 30, 2021 and for the year then ended.  |
+| Key Audit Matter | Audit Response |
+| :--- | :--- |
+| **Assessment of the going concern assumption** | |
+| The Financial Statements as at June 30, 2021 reported a net loss of €209.5 million and the 2019-2024 Business Plan, as revised and updated by the Board of Directors on June 30, 2021, includes a significant net loss for the year ended June 30, 2022 as well.<br><br>In such context, the directors have assessed the going concern assumption, and concluded that no significant uncertainties (as defined in IAS 1 par. 25) exist in relation to the going concern assumption.<br><br>In reaching such conclusion, the directors have considered the key economic and financial metrics included in the revised 2019-2024 Business Plan approved by Board of Directors on September 17, 2021. In particular the Directors have considered the undrawn credit facilities available as at June 30, 2021 amounting to €335 million and the expected positive impacts on the net equity and the net financial debt from the capital increase with pre-emptive rights up to €400 million, which will be subject to the Shareholders' approval at its extraordinary meeting on October 29, 2021. In relation to the above, the majority shareholder, EXOR N.V., has committed to subscribe its pro quota of the new shares issued in the context of the capital increase and made a payment of the first tranche amounting to €75 million in August 2021.<br><br>In consideration of the estimation and judgment required from Management in the preparation of the forecast and its potential impacts in supporting the going concern assumption, we concluded that this represents a key audit matter.<br>The "Business Outlook" paragraph included within the Report on Operations and "Going Concern" paragraph included within the notes to the financial statements describe the results achieved for the year ended June 30, 2021, the actions taken and the considerations made by the directors in relation to the use of the going concern assumption. | Our audit procedures in response to this key audit matter included, among others:<br>• obtaining an understanding, also through discussions with Management, of the assumptions underlying the going concern assessment;<br>• obtaining an understanding of the process to update the 2019-2024 Business Plan and analyzing the reasonableness of the main assumptions underlying such plan;<br>• assessing the historical accuracy of forecasts taking into account the effects from the Covid-19 pandemic;<br>• performing sensitivity analysis of the main underlying assumptions with respect to the forecasted cash flows;<br>• obtaining the detail of the credit facilities available at June 30, 2021, with the detail of the drawn amount as compared to the total amount of the credit lines and discussing with management about the conditions of access to new credit facilities, even considering changes in the credit rating, and the related effects on the cost of financing;<br>• analyzing the subsequent events occurred after the financial statements date, including the supporting documentation related to the capital increase.<br><br>Lastly, we reviewed the disclosures made in the notes to the financial statements as of June 30, 2021 and for the year then ended. |
 
 2
 
-ANNUAL FINANCIAL REPORT AT 30 06 21 - Independent Auditors' Report
+---
 
-215
+214 JUVENTUS FOOTBALL CLUB S.P.A.  
+ANNUAL FINANCIAL REPORT AT 30 06 21 - Independent Auditors' Report 215
 
 --- pág. 110 ---
 

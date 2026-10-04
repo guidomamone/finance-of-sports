@@ -190,56 +190,29 @@ Side 3 av 4
 
 --- pág. 5 ---
 
-Langsiktig gjeld
+**Langsiktig gjeld**  
+**Annen langsiktig gjeld**  
 
-Annen langsiktig gjeld
+| Post | Note | | |
+| :--- | :---: | ---: | ---: |
+| Øvrig langsiktig gjeld | 9 | | 233 332 |
+| **Sum annen langsiktig gjeld** | | | **233 332** |
+| | | | |
+| **Sum langsiktig gjeld** | | **0** | **233 332** |
+| | | | |
+| **Kortsiktig gjeld** | | | |
+| Kortsiktige lån | | 21 000 | 21 000 |
+| Leverandørgjeld | | 4 636 436 | 2 368 930 |
+| Skyldig offentlige avgifter | | 4 155 620 | 3 975 048 |
+| Annen kortsiktig gjeld | 10 | 12 812 398 | 17 272 330 |
+| **Sum kortsiktig gjeld** | | **21 625 454** | **23 637 308** |
+| | | | |
+| **Sum gjeld** | | **21 625 454** | **23 870 640** |
+| | | | |
+| **SUM EGENKAPITAL OG GJELD** | | **27 072 278** | **28 417 386** |
 
-Øvrig langsiktig gjeld 9
-
-Sum annen langsiktig gjeld
-
-Sum langsiktig gjeld
-
-Kortsiktig gjeld
-
-Kortsiktige lån
-
-Leverandørgjeld
-
-Skyldig offentlige avgifter
-
-Annen kortsiktig gjeld 10
-
-Sum kortsiktig gjeld
-
-Sum gjeld
-
-SUM EGENKAPITAL OG GJELD
-
-233 332
-
-233 332
-
-233 332
-
-21 000
-
-2 368 930
-
-3 975 048
-
-17 272 330
-
-23 637 308
-
-23 870 640
-
-28 417 386
-
-Utskriftsdato 17.03.2025
-
-Organisasjonsnr 942 440 618
-
+Utskriftsdato 17.03.2025  
+Organisasjonsnr 942 440 618  
 Side 4 av 4
 
 --- pág. 6 ---
@@ -735,53 +708,36 @@ Penneo Dokumentnøkkel: 4MLLX-EBTL7-5E6DS-20B1B-2NK42-M775N
 
 --- pág. 16 ---
 
-HAMKAM
+HAMKAM — Årsberetning 2024
 
-Årsberetning 2024
-
-# MARKED
+MARKED
 
 HamKam hadde 138 sponsorer i 2024. Av disse var 87 med i nettverket som bedriftskamerater eller høyere.
 
 Våre største samarbeidspartnere i 2024 var:
-
 Bestekamerat: OBOS
-
 Kamerat: Puma, Eidsiva, CC, AJ Produkter, Norsk Tipping, Kildegruppen, Kiwi, Sparebank 1 Østlandet, Ringnes og SPG.
 
-Generalkamerat
-
-Kamerat
-
-Lagkamerat
-
-Bedriftskamerat
-
-Støttespiller
-
-![img-4.jpeg](img-4.jpeg)
-
+[Figur: pyramide med nivåene Generalkamerat, Kamerat, Lagkamerat, Bedriftskamerat, Støttespiller]
 HamKam sine partnernivåer i 2024
 
 Styret retter en takk til klubbens samarbeidspartnere og andre støttespillere som har vist velvilje, engasjement og ikke minst stor interesse for klubben. Styret vil til også rette en stor takk til det frivillige apparatet som omgir klubben, herunder Yngres avdeling, Allianseidrettslaget Hamarkameratene, HamKams venner, støtteapparat, spillere, trenere og administrasjon. Samtidig er det på sin plass å takke Bent Svele for sin innsats i klubben.
 
-![img-5.jpeg](img-5.jpeg)
-
+[Bilde: Archange Defringan Mondou]
 Archange Defringan Mondou 2004 - 2024
 
-# Da det utenkelige ble virkelighet
-
-2024 var året da vi dessverre mistet noen av våre egne. Onsdag 28. februar fikk vi alle den brutale beskjeden om at Archange Defringan Mondou – best kjent som Akillas, var gått bort, kun 19 år gammel.
+**Da det utenkelige ble virkelighet**
+2024 var året da vi dessverre mistet noen av våre egne. Onsdag 28. februar fikk vi alle den brutale beskjeden om at Archange Defringan Mondouo – best kjent som Akillas, var gått bort, kun 19 år gammel.
 
 Den unge Kamma-spilleren fra Elfenbenskysten kom til Briskeby for å leve ut fotballdrømmen, en drøm som dessverre fikk en brutal slutt for den svært lovende midtbanespilleren.
 
-29. oktober ble en av Gatelagets mest lojale spillere, Tommy Forsman funnet død, kun 42 år gammel. Midtbanespilleren har vært med på Gatelaget siden oppstarten i 2017 og har satt varige spor etter seg i gatelagsgarderoben.
+29. oktober ble en av Gatelagets mest lojale spillere, Tommy Forsman død, kun 42 år gammel. Midtbanespilleren har vært med på Gatelaget siden oppstarten i 2017 og har satt varige spor etter seg i gatelagsgarderoben.
 
 Akillas og Tommy kommer alltid til å være Kamerater!
 
-Penneo Dokumentnøkkel: 4MLLX-EBTL7-5E605-20818-2NK42-MT75N
-
 9
+
+(Margen, vertical: Penneo Dokumentnøkkel: 4MLLX-EBTL7-SE6D5-Z0BY8-2NK42-MT75N)
 
 --- pág. 17 ---
 
@@ -877,47 +833,36 @@ Penneo Dokumentnøkkel: 4MLLX-EBTL7-5E6D5-2DB18-2NK42-MT75N
 
 --- pág. 18 ---
 
-# PENNEO
+PENNEO
 
-Signaturene i dette dokumentet er juridisk bindende. Dokument signert med "Penneo™ - sikker digital signatur". De signerende parter sin identitet er registrert, og er listet nedenfor.
+*Signaturene i dette dokumentet er juridisk bindende. Dokument signert med "Penneo™ - sikker digital signatur". De signerende parter sin identitet er registrert, og er listet nedenfor.*
 
-"Med min signatur bekrefter jeg alle datoer og innholdet i dette dokument."
+*"Med min signatur bekrefter jeg alle datoer og innholdet i dette dokument."*
 
-Ansari, Mehran
-
+**Ansari, Mehran**
 Daglig leder
-
 Serienummer: no_bankid:9578-5999-4-1392424
-
 IP: 158.248.xxx.xxx
-
 2025-02-14 16:54:31 UTC
-
 bankID
 
-Rune Strand
-
+**Rune Strand**
 Styremedlem
-
 Serienummer: rune1.strand@hotmail.com
-
 IP: 81.166.xxx.xxx
-
 2025-02-14 17:42:03 UTC
+[firma manuscrita, ilegible]
 
-12561
+Dette dokumentet er signert digitalt via **Penneo.com**. De signerte dataene er validert ved hjelp av den matematiske hashverdien til det originale dokumentet. All kryptografisk bevisføring er innebygd i denne PDF-en for fremtidig validering.
 
-Dette dokumentet er signert digitalt via Penneo.com. De signerte dataene er validert ved hjelp av den matematiske hashverdien av det originale dokumentet. All kryptografisk bevisføring er innebygd i denne PDF-en for fremtidig validering.
+Dette dokumentet er forseglet med et kvalifisert elektronisk segl ved bruk av et sertifikat og et tidsstempel fra en kvalifisert tillitstjenesteleverandør.
 
-Dette dokumentet er forseglet med et kvalifisert elektronisk segl ved bruk av et sertifikat og et tidsstempel fra en kvalifisert tillitsjenesteleverandør.
+**Slik kan du bekrefte at dokumentet er originalt**
+Når du åpner dokumentet i Adobe Reader, kan du se at det er sertifisert av **Penneo A/S**. Dette beviser at innholdet i dokumentet ikke har blitt endret siden tidspunktet for signeringen. Bevis for de individuelle signatørenes digitale signaturer er vedlagt dokumentet.
 
-Slik kan du bekrefte at dokumentet er originalt
+Du kan bekrefte de kryptografiske bevisene ved hjelp av Penneos validator, **https://penneo.com/validator**, eller andre valideringsverktøy for digitale signaturer.
 
-Når du åpner dokumentet i Adobe Reader, kan du se at det er sertifisert av Penneo A/S. Dette beviser at innholdet i dokumentet ikke har blitt endret siden tidspunktet for signeringen. Bevis for de individuelle signatørenes digitale signaturer er vedlagt dokumentet.
-
-Du kan bekrefte de kryptografiske bevisene ved hjelp av Penneos validator, https://penneo.com/validator, eller andre valideringsverktøy for digitale signaturer.
-
-Penneo Dokumentnøkkel: 4MLLX-EBTL7-SE6DS-Z0BYB-2NK42-MT75N
+(Margen, vertical: Penneo Dokumentnøkkel: 4MLLX-EBTL7-SE6D5-Z0BY8-2NK42-MT75N)
 
 --- pág. 19 ---
 
@@ -1327,44 +1272,34 @@ Penneo Dokumentnøkkel: HFZ40-HT8ZM-SK0CX-EAG4K-06BJL-EQZYJ
 
 --- pág. 27 ---
 
-# PENNEO
+PENNEO
 
-Signaturene i dette dokumentet er juridisk bindende. Dokument signert med "Penneo™ - sikker digital signatur". De signerende parter sin identitet er registrert, og er listet nedenfor.
+*Signaturene i dette dokumentet er juridisk bindende. Dokument signert med "Penneo™ - sikker digital signatur". De signerende parter sin identitet er registrert, og er listet nedenfor.*
 
-"Med min signatur bekrefter jeg alle datoer og innholdet i dette dokument."
+*"Med min signatur bekrefter jeg alle datoer og innholdet i dette dokument."*
 
-Ansari, Mehran
-
-Daglig leder
-
-Serienummer: no_bankid:9578-5999-4-1392424
-
-IP: 158.248.xxx.xxx
-
-2025-02-14 16:54:31 UTC
-
+**Ansari, Mehran**
+**Daglig leder**
+*Serienummer: no_bankid:9578-5999-4-1392424*
+*IP: 158.248.xxx.xxx*
+*2025-02-14 16:54:31 UTC*
 bankID
 
-Rune Strand
+**Rune Strand**
+**Styremedlem**
+*Serienummer: rune1.strand@hotmail.com*
+*IP: 81.166.xxx.xxx*
+*2025-02-14 17:42:03 UTC*
+[firma manuscrita: "RSl" aprox.]
 
-Styremedlem
+Penneo Dokumentnøkkel: HFZ40-HT8ZM-5KXCX-EAG4K-068JL-EQZYJ
 
-Serienummer: rune1.strand@hotmail.com
+Dette dokumentet er signert digitalt via **Penneo.com**. De signerte dataene er validert ved hjelp av den matematiske hashverdien til det originale dokumentet. All kryptografisk bevisføring er innebygd i denne PDF-en for fremtidig validering.
 
-IP: 81.166.xxx.xxx
+Dette dokumentet er forseglet med et kvalifisert elektronisk segl ved bruk av et sertifikat og et tidsstempel fra en kvalifisert tillitstjenesteleverandør.
 
-2025-02-14 17:42:03 UTC
+**Slik kan du bekrefte at dokumentet er originalt**
+Når du åpner dokumentet i Adobe Reader, kan du se at det er sertifisert av **Penneo A/S.** Dette beviser at innholdet i dokumentet ikke har blitt endret siden tidspunktet for signeringen. Bevis for de individuelle signatørenes digitale signaturer er vedlagt dokumentet.
 
-12561
+Du kan bekrefte de kryptografiske bevisene ved hjelp av Penneos validator, **https://penneo.com/validator**, eller andre valideringsverktøy for digitale signaturer.
 
-Dette dokumentet er signert digitalt via Penneo.com. De signerte dataene er validert ved hjelp av den matematiske hashverdien av det originale dokumentet. All kryptografisk bevisføring er innebygd i denne PDF-en for fremtidig validering.
-
-Dette dokumentet er forseglet med et kvalifisert elektronisk segl ved bruk av et sertifikat og et tidsstempel fra en kvalifisert tillitsjenesteleverandør.
-
-Slik kan du bekrefte at dokumentet er originalt
-
-Når du åpner dokumentet i Adobe Reader, kan du se at det er sertifisert av Penneo A/S. Dette beviser at innholdet i dokumentet ikke har blitt endret siden tidspunktet for signeringen. Bevis for de individuelle signatørenes digitale signaturer er vedlagt dokumentet.
-
-Du kan bekrefte de kryptografiske bevisene ved hjelp av Penneos validator, https://penneo.com/validator, eller andre valideringsverktøy for digitale signaturer.
-
-Penneo Dokumentnøkkel: HF240-HT82M-SKCK-EAG4K-06BL-EQZYJ

@@ -294,6 +294,32 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   ¿qué explica la diferencia entre la "Utilidad contable" de la Nota 15 ($9.846,710 M) y la suma de
   Ingresos/Gastos operativos + financieros de las Notas 20-27 (~$13.446,121 M pretax)? Se necesitaría
   el Estado de Resultado Integral primario (no solo las notas) para confirmar.
+- **Mismo patrón otra vez en el Ejercicio 2024** (cargado 2026-09-28, validación real del to-do 98):
+  la Nota 25 "Gastos No Operacionales" imprime un total de $3.435,595 M que NO reconcilia contra la
+  suma de sus propias líneas (Financieros + Extraordinarios + Impuesto Diferido + Diversos +
+  Impuesto de Renta da ~$3.729 M SIN sumar siquiera el impuesto de renta, ya por encima del total
+  impreso) — y la fila "IMPUESTO DE RENTA Y COMPLEMENTARIO" del documento contradice a su propio
+  detalle: la fila resumen (en negrita) muestra **0**, pero la fila de detalle inmediatamente debajo
+  muestra **1.761.301**. Se cargó igual usando el mismo método de residuo que 2025 (PAT confirmado
+  menos pretax línea por línea, ver `data/oncecaldas-data.js`). A diferencia de 2025, el PAT 2024
+  ($4.112,260 M) NO está confirmado triple: sale de una sola fuente (Cuenta de Patrimonio, fila
+  "Utilidad o pérdida del ejercicio") — el dictamen del revisor fiscal 2024 es una opinión limpia
+  que no narra la cifra (a diferencia del de 2025). **Pregunta para el club/SIIS**: ¿por qué la Nota
+  25 no reconcilia contra su propio total, y cuál es el valor correcto del "Impuesto de Renta y
+  Complementario" (0 o 1.761.301)? Igual que Deportes Tolima arriba, se necesitaría el Estado de
+  Resultado Integral primario para confirmar.
+
+## Boyacá Chicó (hallazgo de esta sesión, no bloqueó la carga)
+
+- **Ejercicio 2024, Nota 16 "Ingresos Operacionales": una línea "Menos: Devoluciones" de
+  -$1.726.052.997,15, el 21% del ingreso BRUTO del club**, sin que el documento aclare a qué
+  concepto de ingreso corresponde (no está indentada bajo ninguna línea específica, aparece suelta
+  al final de la tabla). Se cargó como línea propia en `other_income` (negativa,
+  `data/boyacachico-co-data.js`) en vez de forzarla contra un rubro puntual (ej. Derechos de TV, la
+  línea más grande) sin base real para esa atribución. **Pregunta para el club/SIIS**: ¿a qué
+  ingreso corresponde esta devolución/reversión? El PAT del ejercicio reconcilia igual (confirmado
+  doble, ver comentario de cabecera del archivo), así que no bloqueó la carga — pero afecta a qué
+  categoría se le atribuye ese 21% del ingreso bruto en Formato Simplificado.
 
 ## Mirassol Futebol Clube (hallazgo de esta sesión, no bloqueó la carga del resultado, sí la del patrimonio)
 
@@ -1263,6 +1289,14 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   `other_expenses` (catch-all) por no tener con qué separarla en sub-categorías más útiles para
   "Formato Simplificado". Vale la pena preguntarle al club (o revisar si la Memoria Anual, que sí
   tiene texto narrativo, la detalla en algún párrafo) qué compone este rubro.
+- **Estados financieros 2025: la Nota 20 ("Composición de Cuentas de Costo de Ventas") trae la tabla equivocada** (2026-10-01,
+  proceso nuevo del pipeline): bajo ese título el PDF imprime la tabla "Composición Gastos de Administración", la misma de la Nota 21
+  (página 75 del visor, impreso "68", contra la página 76, impreso "69"; confirmado en el texto propio del PDF, no es la
+  transcripción). Por eso el Costo de Ventas 2025 (M$20.985.893, el 77% del gasto) no tiene desglose: en 2024 esa nota lo abría en
+  Remuneraciones, Gastos de Operación, amortización de pases, etc. Decisión de Guido (revisada el mismo día): 2025 se carga con el
+  costo de ventas marcado como "No declarado" (sin desglose), y se le pide al club la Nota 20 correcta (o una versión corregida de los
+  estados) para completarlo — a quién preguntarle: cruzados.cl/inversionistas/ o el área
+  de finanzas del club.
 
 ## Alianza Lima (Perú, onboarding financiero, sesión 2026-09-25)
 
@@ -1851,3 +1885,18 @@ precedente explícito en `club-data-mapping/SKILL.md`. Se agrupó con `wages_squ
 precedente de Racing (sección 13 del skill: costos no salariales del plantel bundle-ados con
 salarios cuando no hay categoría más específica) — confirmar si es el criterio correcto o si
 debería ir a `match_organisation_expense`/`other_expenses`.
+
+## River Plate — sourcing vía CNV, sesión 2026-09-28
+
+**¿River cambió su cierre de ejercicio de agosto a diciembre, o es un período de transición?**:
+encontrado en la CNV (`aif2.cnv.gov.ar`, presentación #3525618, filed 15/05/2026) un estado
+contable con Fecha de Cierre 31/12/2025 — los 123 ejercicios anteriores de River siempre cerraron
+31/8. El PDF (`Clubes/Argentina/River/estados-contables-cierre-2025-12-31.pdf`, 15,3 MB) no tiene
+capa de texto en las páginas numéricas, así que no se pudo leer el período exacto que cubre (¿un
+ejercicio irregular set-2024/dic-2025 de ~16 meses, cubriendo lo que hubiera sido el Ejercicio 124
+completo? ¿un ejercicio normal set-2025/dic-2025 que implicaría un Ejercicio 124 corto no
+encontrado?). El acta de asamblea que lo aprueba está adjunta a la misma presentación
+(`acta-asamblea-estados-contables-cierre-2025-12-31.pdf`) y debería aclararlo. Ver
+`fuentes/Argentina/River.md` para el detalle completo del hallazgo. Responderla en la sesión que
+transcriba estos documentos, antes de mapear el ejercicio a `river-data.js` — no asumir el período
+sin leerlo.

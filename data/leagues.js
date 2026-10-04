@@ -94,11 +94,26 @@ const COUNTRIES = {
   DK: { name:'Dinamarca', key:'country.DK', flag:'🇩🇰', region:'europa' },
   ES: { name:'España',    key:'country.ES', flag:'🇪🇸', region:'europa' },
   GB: { name:'Inglaterra',key:'country.GB', flag:'🏴', region:'europa' },
+  GR: { name:'Grecia',    key:'country.GR', flag:'🇬🇷', region:'europa' },
   HR: { name:'Croacia',   key:'country.HR', flag:'🇭🇷', region:'europa' },
   JP: { name:'Japón',     key:'country.JP', flag:'🇯🇵', region:'asia' },
   MX: { name:'México',    key:'country.MX', flag:'🇲🇽', region:'norteamerica' },
   NL: { name:'Países Bajos', key:'country.NL', flag:'🇳🇱', region:'europa' },
   PE: { name:'Perú',      key:'country.PE', flag:'🇵🇪', region:'sudamerica' },
+  // 2026-09-30 (Versión 315), DECISIÓN DE GUIDO que cambia la regla de arriba: se agregan los países y ligas de los clubes que el pipeline
+  // va a dar de alta (tools/alta-club.mjs), ANTES de tener ejercicios cargados — "agregá las ligas, no pasa nada si están vacías luego"
+  // (el sitio no tiene tráfico todavía y se está probando el proceso). Sin su liga en este catálogo, alta-club.mjs frenaba 44 clubes.
+  AT: { name:'Austria',   key:'country.AT', flag:'🇦🇹', region:'europa' },
+  CH: { name:'Suiza',     key:'country.CH', flag:'🇨🇭', region:'europa' },
+  CN: { name:'China',     key:'country.CN', flag:'🇨🇳', region:'asia' },
+  CZ: { name:'República Checa', key:'country.CZ', flag:'🇨🇿', region:'europa' },
+  EC: { name:'Ecuador',   key:'country.EC', flag:'🇪🇨', region:'sudamerica' },
+  IT: { name:'Italia',    key:'country.IT', flag:'🇮🇹', region:'europa' },
+  KR: { name:'Corea del Sur', key:'country.KR', flag:'🇰🇷', region:'asia' },
+  NO: { name:'Noruega',   key:'country.NO', flag:'🇳🇴', region:'europa' },
+  PT: { name:'Portugal',  key:'country.PT', flag:'🇵🇹', region:'europa' },
+  RU: { name:'Rusia',     key:'country.RU', flag:'🇷🇺', region:'europa' },
+  TR: { name:'Turquía',   key:'country.TR', flag:'🇹🇷', region:'europa' },
 };
 
 // ---------------------------------------------------------------------------
@@ -148,6 +163,14 @@ const LEAGUES = {
   // 3ª división (Versión 217, onboarding de Volta Redonda 2024, campeón de esa edición): mismo
   // criterio que br-serieB, el id nombra el escalón.
   'br-serieC':         { name:'Brasileirão Série C',   full:'Campeonato Brasileiro Série C',       country:'BR', sport:'futbol', tier:3 },
+  // 4ª división (Versión 410, decisión de Guido 2026-10-02, onboarding de Novorizontino 2019-2020): mismo criterio, el id nombra el escalón.
+  'br-serieD':         { name:'Brasileirão Série D',   full:'Campeonato Brasileiro Série D',       country:'BR', sport:'futbol', tier:4 },
+  // Ligas ESTADUALES (Versión 426, decisión de Guido 2026-10-02, onboarding de Novorizontino 2013-2017, años sin liga nacional): el
+  // Paulista no es un escalón de la pirámide nacional (su A1 la juegan clubes de la Série A a la D), por eso NO llevan `tier` (el selector
+  // no dice "Nª división") y van al final de la lista del país. `scope:'estadual'` las distingue.
+  'br-paulistaA1':     { name:'Paulista Série A1',     full:'Campeonato Paulista Série A1',        country:'BR', sport:'futbol', tier:null, scope:'estadual' },
+  'br-paulistaA2':     { name:'Paulista Série A2',     full:'Campeonato Paulista Série A2',        country:'BR', sport:'futbol', tier:null, scope:'estadual' },
+  'br-paulistaA3':     { name:'Paulista Série A3',     full:'Campeonato Paulista Série A3',        country:'BR', sport:'futbol', tier:null, scope:'estadual' },
   // Chile (onboarding Colo-Colo/U. de Chile/U. Católica, 2026-09-25): temporada calendario (cierra
   // 31/12), sin la ambigüedad de un ejercicio partido en 2 torneos, mismo criterio que Brasil/Japón.
   'cl-primera':        { name:'Primera División',      full:'Primera División de Chile',           country:'CL', sport:'futbol', tier:1 },
@@ -169,6 +192,10 @@ const LEAGUES = {
   // de su ascenso vía playoff para 2025/26): mismo criterio que ar-primeranacional/br-serieB/
   // de-2bundesliga/es-segunda, el id nombra el escalón.
   'gb-championship':   { name:'Championship',          full:'EFL Championship',                    country:'GB', sport:'futbol', tier:2 },
+  // Grecia (onboarding de Panathinaikos, 2026-09-28): temporada jul-jun, ejercicio contable también
+  // jul-jun (cierra 30/6). Nombre sin sponsor (regla de cabecera de este archivo): la liga se llama
+  // comercialmente "Stoiximan Super League" hoy, el nombre de la competencia es Super League Greece.
+  'gr-superleague':    { name:'Super League',           full:'Super League Greece',                 country:'GR', sport:'futbol', tier:1 },
   // Croacia (onboarding de Dinamo Zagreb/Hajduk Split/Rijeka, 2026-09-25): ejercicio CALENDARIO
   // (cierra 31/12), a diferencia de la temporada de la liga en sí (jul-jun) — el id nombra el
   // escalón, no la temporada. Nombre sin sponsor (regla de cabecera de este archivo): la liga se
@@ -180,6 +207,32 @@ const LEAGUES = {
   // mismo criterio que España/Alemania. Nombre sin sponsor (regla de cabecera de este archivo).
   'nl-eredivisie':     { name:'Eredivisie',             full:'Eredivisie de los Países Bajos',      country:'NL', sport:'futbol', tier:1 },
   'pe-liga1':          { name:'Liga 1',                full:'Liga 1 de Perú',                      country:'PE', sport:'futbol', tier:1 },
+  // 2026-09-30 (Versión 315): ligas de los clubes que tools/alta-club.mjs va a dar de alta, agregadas antes de tener ejercicios (decisión de
+  // Guido, ver COUNTRIES). Los ids son los que ya usa la caché de rosters (tools/club-league-reference/<iso2>.json). Nombres sin sponsor.
+  'at-bundesliga':     { name:'Bundesliga',            full:'Bundesliga de Austria',               country:'AT', sport:'futbol', tier:1 },
+  'at-2liga':          { name:'2. Liga',               full:'2. Liga de Austria',                  country:'AT', sport:'futbol', tier:2 },
+  'ch-superleague':    { name:'Super League',          full:'Super League de Suiza',               country:'CH', sport:'futbol', tier:1 },
+  'cn-csl':            { name:'Super League',          full:'Superliga de China',                  country:'CN', sport:'futbol', tier:1 },
+  'cn-league1':        { name:'League One',            full:'China League One',                    country:'CN', sport:'futbol', tier:2 },
+  'cz-firstleague':    { name:'Primera Liga',          full:'Primera Liga checa',                  country:'CZ', sport:'futbol', tier:1 },
+  'cz-fnl':            { name:'FNL',                   full:'Fotbalová národní liga',              country:'CZ', sport:'futbol', tier:2 },
+  'dk-1division':      { name:'1. Division',           full:'1. Division de Dinamarca',            country:'DK', sport:'futbol', tier:2 },
+  'ec-seriea':         { name:'Serie A',               full:'Serie A de Ecuador',                  country:'EC', sport:'futbol', tier:1 },
+  'ec-serieb':         { name:'Serie B',               full:'Serie B de Ecuador',                  country:'EC', sport:'futbol', tier:2 },
+  'gb-leagueone':      { name:'League One',            full:'EFL League One',                      country:'GB', sport:'futbol', tier:3 },
+  'gb-leaguetwo':      { name:'League Two',            full:'EFL League Two',                      country:'GB', sport:'futbol', tier:4 },
+  'gr-superleague2':   { name:'Super League 2',        full:'Super League 2 de Grecia',            country:'GR', sport:'futbol', tier:2 },
+  'it-seriea':         { name:'Serie A',               full:'Serie A de Italia',                   country:'IT', sport:'futbol', tier:1 },
+  'it-serieb':         { name:'Serie B',               full:'Serie B de Italia',                   country:'IT', sport:'futbol', tier:2 },
+  'kr-kleague1':       { name:'K League 1',            full:'K League 1',                          country:'KR', sport:'futbol', tier:1 },
+  'kr-kleague2':       { name:'K League 2',            full:'K League 2',                          country:'KR', sport:'futbol', tier:2 },
+  'nl-eerstedivisie':  { name:'Eerste Divisie',        full:'Eerste Divisie de los Países Bajos',  country:'NL', sport:'futbol', tier:2 },
+  'no-eliteserien':    { name:'Eliteserien',           full:'Eliteserien de Noruega',              country:'NO', sport:'futbol', tier:1 },
+  'pt-primeiraliga':   { name:'Primeira Liga',         full:'Primeira Liga de Portugal',           country:'PT', sport:'futbol', tier:1 },
+  'pt-ligaportugal2':  { name:'Liga Portugal 2',       full:'Liga Portugal 2',                     country:'PT', sport:'futbol', tier:2 },
+  'ru-premierliga':    { name:'Premier Liga',          full:'Liga Premier de Rusia',               country:'RU', sport:'futbol', tier:1 },
+  'tr-superlig':       { name:'Süper Lig',             full:'Süper Lig de Turquía',                country:'TR', sport:'futbol', tier:1 },
+  'tr-1lig':           { name:'1. Lig',                full:'TFF 1. Lig',                          country:'TR', sport:'futbol', tier:2 },
 };
 
 // ---------------------------------------------------------------------------
@@ -207,7 +260,7 @@ function tierLabel(tier){
 function leaguesOfCountry(countryId){
   return Object.keys(LEAGUES)
     .filter(id => LEAGUES[id].country === countryId)
-    .sort((a, b) => (LEAGUES[a].tier - LEAGUES[b].tier) || LEAGUES[a].name.localeCompare(LEAGUES[b].name, 'es', {sensitivity:'base'}));
+    .sort((a, b) => ((LEAGUES[a].tier ?? 99) - (LEAGUES[b].tier ?? 99)) || LEAGUES[a].name.localeCompare(LEAGUES[b].name, 'es', {sensitivity:'base'})); // sin tier (estaduales) al final
 }
 
 // Los países de una región, alfabético.

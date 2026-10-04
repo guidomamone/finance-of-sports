@@ -54,6 +54,344 @@ perdieron sino que se descartaron:
 
 ## Qué hay que hacer
 
+108. TERMINAR DE VALIDAR TODO EL INVENTARIO DE `.md` LEGADO (pedido de Guido 2026-09-29: "TODO ES TODO lo
+    legado", sin orden de prioridad por club). Estado tras los 2 pilotos (21 docs, todos `listo`): quedan ~1.436
+    documentos entre `revisar` y `pendiente-segunda-voz` (ver `node tools/inventario-transcripciones.mjs`).
+    1. Correr `node tools/pipeline.mjs --ejecutar` (50 documentos por corrida; `--limit N`, `--limit 0` = todos), mirar el resumen, y
+       seguir en tandas (se puede cortar y retomar). Costo REAL del piloto de 44 documentos: $13,99 (~$0,32 por documento, el doble de
+       lo estimado): para el inventario completo esperar del orden de $450, no $350. Medir en qué camino se va la plata antes de correr todo.
+    2. Regenerar el registro después de cada tanda (`node tools/inventario-transcripciones.mjs`) y mirar los
+       `revisar` que queden (sin consenso entre voces: resolver contra el PDF) y los `reserva`.
+    3. INTEGRAR al onboarding: `tools/onboard.mjs` hoy valida con `compare-transcripts` (rubro por rubro); el
+       resolver valida por página y por número con mucho menos Claude. Unificar en un módulo compartido para que
+       un PDF nuevo pase por el mismo criterio que el inventario. Después actualizar `CLAUDE.md` ("Cada PDF
+       nuevo") y proponerle a Guido el texto para `club-or-year-onboarding` y `club-data-mapping` (no editar
+       skills sin su ok).
+    3b. **Etapa 5 (cargar el ejercicio al sitio por script), decisiones de Guido 2026-09-30**: la idea completa del pipeline es empezar en un PDF y
+       terminar con el club cargado. Empezar por un modo "propuesta" (arma qué escribiría, sin tocar nada) para el caso fácil: club que YA tiene
+       `data/<club>-data.js`, año nuevo. Se aplica solo si: el chequeo de sumas cierra exacto contra los totales impresos; cada rubro tiene
+       categoría por precedente exacto, o por Jev con confianza >= 0,90 (aceptado por Guido); el tipo de cambio sale del documento o de una
+       cotización conocida; y después de escribir pasan los generadores, `node tools/audit.js` (0 P0/P1) y `auditAll()` (si algo falla, se revierte).
+       Lo dudoso pasa a Claude por API (dólares, no tokens de sesión) y, si sigue dudoso, a `Admin/dudas-por-club.md`. Commit local; el push es de Guido.
+       **Medición 2026-09-30 (`node tools/proponer-carga.mjs --backtest --mistral-fresco`, Admin/tests/test-proponer-carga.md)**: sobre 40 ejercicios ya cargados, con un
+       `.md` de Mistral con tablas: arma propuesta 88%; total de ingresos oficial detectado 14%; resultado del ejercicio 17%; dinero bien ubicado por categoría (solo Jev >= 0,90)
+       67% ingresos / 60% gastos. La carga sola todavía NO es viable. Lo que sigue: detectar los totales impresos por el chequeo de sumas de cada tabla (no por
+       palabras de la etiqueta), elegir la tabla y la columna del ejercicio con más cuidado, y medir de nuevo; recién con el 90% de totales detectados vale la pena dejarla escribir.
+       **Se acepta subir un club-año con solo el total de ingresos** (es mejor que nada), aunque no tenga desglose. Los documentos `sin-rubros`
+       tienen el `.md` validado y siguen disponibles como fuente; falta detectar cuáles traen un total usable.
+    3c. **REEMPLAZADO POR "EL PROCESO NUEVO" (Versión 324, 2026-10-01)**: la selección de filas por palabras de 3b reproduce 7-11% de lo
+       cargado; se diseñó con Guido y se construyó localizar -> validar -> extraer -> verificar con cola humana (`tools/lote.mjs`,
+       `tools/cola.mjs`). Detalle, riesgos y lo que falta construir: `Admin/HANDOFF-pipeline.md`, "El proceso nuevo". Siguiente paso: el
+       lote 01 (`node tools/lote.mjs --lista Admin/lote-01.txt`, ~US$ 0,8), refinando en lotes de 5.
+    4. Los 1.192 PDFs SIN ningún `.md` son otro trabajo (`node tools/onboard.mjs --all`), no entran acá.
+    5. Nota: los `.md` viejos re-hechos quedan con su original en `<nombre>.previo-<motor>.md` (gitignoreado).
+
+112. ANTES DE LA PRIMERA ALTA ESCRITA POR SCRIPT (to-do 108, etapa 6), decisiones de Guido y datos que faltan:
+    - Revisar 5 perímetros que Claude resolvió como CONSOLIDADO (criterio aplicado, no dato leído): Inter, Atalanta, Go Ahead Eagles,
+      Başakşehir, Trabzonspor. Y las 12 preguntas de `node tools/alta-club.mjs --dudas` (casi todas de perímetro, confianza 0,75).
+    - Series locales de tipo de cambio para EUR, DKK, GBP, SEK, PLN y las demás que usen clubes nuevos (hoy solo hay ARS, BRL, COP, NOK, CZK,
+      CHF, TRY, RUB, UAH, KRW): 9 carpetas quedan en `faltan-datos` por fx (Juventus 2012, Groningen 2013, Rio Ave 2015...).
+    - `FX_PLAUSIBLE_RANGE` de `data/currency-map.js`: COP [2500, 5000] -> [1600, 5500] (la serie llegó a 5.061 en 2022) y BRL [3, 7] -> [1,4; 7,5]
+      antes de cargar años brasileños anteriores a 2015 (tocar data/ obliga a subir ASSET_V y regenerar).
+    - Preguntar las ~50 carpetas que faltan: `node tools/alta-club.mjs --todos --claude --tope-usd 3` (~US$ 2,4).
+
+109. ORDENAR LAS CARPETAS DEL PROYECTO (pedido de Guido, 2026-09-30: "hay muchos files dando vueltas que ya no tienen razón de ser"). No hay apuro, pero cada lote
+    de pipeline suma archivos. Lo que ya se ve como desorden, para que la sesión que lo encare no arranque de cero:
+    - Los archivos generados ya salieron de `Clubes/` (Versión 317, `Generados/`, `tools/rutas.mjs`).
+    - **`Admin/`**: las listas de pilotos viejas ya están en `Admin/Archive/pilotos/` (2026-09-30). Quedan los informes de
+      tests (`test-*.md`, `test-*.jsonl`) que conviene juntar en una carpeta, y documentos internos viejos que hay que archivar siguiendo la regla de `CLAUDE.md`
+      (`Admin/Archive/`, sacándole antes lo que todavía sirve a `CONVENCIONES.md`/skills/`TODO.md`).
+    - **Raíz y otras carpetas** (`Prototyping/`, `auditorias/`, archivos sueltos): revisar cuáles siguen vivos. Recordá que lo suelto en la raíz se PUBLICA (`netlify.toml`).
+    - **Cuidado**: los registros (`Admin/transcripciones-*.jsonl`, `Admin/*/resultados.jsonl`) y muchas tools guardan RUTAS de archivos; mover algo obliga a actualizarlas. Proponer un script
+      `tools/inventario-archivos.mjs` que liste por tipo, peso y antigüedad qué hay, y mostrarle el plan a Guido antes de mover nada. **Nunca borrar: archivar.** Cada movimiento
+      lo aprueba Guido, y después correr `node tools/audit.js` (0 P0/P1).
+
+98. BAJAR EL COSTO EN TOKENS DE CLAUDE DEL ONBOARDING DE UN EJERCICIO NUEVO (candidato del to-do 85,
+    pedido de Guido 2026-09-28: *"sería factible un enfoque en el que se utilicen más scripts que
+    corren en mi computadora y vos solo pienses cuando haga falta?"*). Mismo principio que ya se usó
+    para la transcripción (Mistral/Gemini, CLAUDE.md "Cada PDF nuevo": 0 tokens de Claude corriendo
+    desde la terminal de Guido) — sacar de Claude todo paso MECÁNICO del resto del pipeline, dejarle
+    solo lo que es genuinamente ambiguo. Pensado sobre todo para el caso más común de acá en
+    adelante: un ejercicio NUEVO de un club que YA tiene años cargados (Boca, River, Racing, etc.) —
+    el proyecto va a crecer más por años-de-clubes-existentes que por clubes nuevos.
+
+    **Tabla completa del pipeline: quién hace cada paso HOY, qué podría bajarlo a script/API, y el
+    fallback cuando la opción barata no alcanza.**
+
+    | # | Paso | Quién lo hace HOY | Podría bajarse a (barato/gratis) | Fallback si no alcanza |
+    |---|---|---|---|---|
+    | 1 | Sourcing: encontrar el PDF del club | Claude (Sonnet, a veces escala a Exa/Firecrawl/Opus) | No — necesita criterio para elegir qué mirar, descartar sitios falsos y homónimos (ver to-do 76) | Es la propia escalera de `club-sourcing/SKILL.md` 0.1b: Sonnet → gate de señal → Exa → Opus → Sonnet |
+    | 2 | Descargar el PDF ya encontrado | Ya es mecánico (`curl`, `tools/wayback-verify-download.mjs`) | — (ya es script) | Firecrawl si el sitio bloquea `curl`/WAF |
+    | 3 | Transcribir el PDF a `.md` | Ya es mecánico desde CLAUDE.md Versiones 244-248: Mistral OCR / Gemini, 0 tokens, Guido lo corre desde su terminal | — (ya es script/API) | Un subagente de Claude con Tesseract, solo si Gemini rechaza por `RECITATION` |
+    | 4 | Sacar del `.md` transcripto la lista de rubros con su monto (hoy: Claude lee el documento ENTERO, miles de líneas, para encontrar la tabla de Recursos/Gastos entre actas, firmas y dictámenes que no aportan ningún dato) | Claude | **Propuesta nueva**: un script que parsea las tablas Markdown del `.md` (Mistral las arma bastante regulares) y arma un JSON compacto `{sección, rawLabel, monto, página}`. Claude lee el JSON, no el documento entero | Si el documento tiene una tabla con formato irregular (rotada, mezclada con texto — ver `club-data-mapping` sección 9), el script no arma nada limpio y Claude sigue leyendo el `.md` como hoy |
+    | 5 | Decidir a qué `normalizedCategory` del sitio va cada rubro | Claude, para TODOS los rubros, cada vez | **Tier 0 (script, gratis)**: si el rubro YA apareció con ese texto exacto en un año anterior del MISMO club, copiar la categoría que ya se usó — matchea contra `data/<club>-data.js` ya cargado. **Tier 1 (Jev, cuando se sume, to-do 99)**: rubro nuevo en ese club, pero parecido semánticamente a una categoría ya usada en CUALQUIER club | **Tier 2 (Claude)**: rubro genuinamente nuevo, ambiguo, o **la primera categorización de un club/país sin ningún precedente** (ver la explicación larga más abajo, es el caso que de verdad no se puede sacar de Claude) |
+    | 6 | Elegir el tipo de cambio a USD | Claude, leyendo el Anexo de moneda extranjera del balance | El tipo de cambio DECLARADO por el propio documento (la regla preferida siempre, `club-data-mapping` sección 5 regla 0) lo sigue leyendo Claude a mano — es un número puntual en una tabla chica, no vale la pena un script para esto todavía | Si el documento NO declara su propio fx, ya existe `tools/lookup-fx-close.js` (cotización de mercado, local, sin fetch) |
+    | 7 | Verificar que todo cierra (sumas de `items`, escala plausible, salto contra años anteriores) | Hoy: a mano/ad-hoc, cada sesión reinventa el chequeo | **Ya existe y no se estaba usando primero**: `node tools/audit.js` (gratis) — `items-no-cierran`, `escala-implausible`, `salto-interanual` y el resto de los checks. Ver la nota agregada el 2026-09-28 en `club-data-mapping/SKILL.md` sección 6: correrlo ANTES de cualquier verificación a mano | Si `audit.js` marca algo raro, Claude vuelve al documento para esa línea puntual, no para todo el balance |
+    | 8 | Color de marca (`brandColor`), SOLO para un club nuevo, no un año más | Claude, siguiendo `club-or-year-onboarding` sección 3 | Ya existe `tools/lookup-brand-color.js` (busca local contra ligas ya cacheadas) | Si la liga no está cacheada, Claude sale a buscar (Wikipedia/sitio oficial/agregadores), como hoy |
+    | 9 | Publicar (3 generadores + `audit.js`) | Ya es mecánico | — (ya son scripts) | — |
+
+    **Qué significa "la primera categorización de un club/país sin ningún precedente" (paso 5,
+    tier 2) — la parte que de verdad no se puede sacar de Claude, explicada con contexto porque no
+    es obvia:** cada línea de texto de un balance (ej. "Cuotas sociales", "Departamento de fútbol
+    juvenil") tiene que mapearse a una de las ~20 categorías fijas que usa el sitio para poder sumar
+    y comparar clubes entre sí (`normalizedCategory`, la lista completa está en
+    `data/category-map.js`: cosas como `member_dues`, `player_sales`, `wages_squad`). Cuando un club
+    YA tiene años cargados, el año nuevo casi siempre repite las MISMAS palabras que ya se usaron
+    para ESE club — ahí un script puede copiar la decisión vieja sin pensar (el tier 0 de arriba).
+    Pero la PRIMERA vez que aparece un club nuevo — y sobre todo un PAÍS nuevo, con su propio régimen
+    contable, que puede ser bien distinto del argentino — no hay ningún precedente en el sitio para
+    copiar. Ejemplo real, ya documentado en `club-data-mapping` sección 20: los balances daneses
+    pueden usar una exención legal (§ 32 de su ley de balances) que permite mostrar el ingreso ya
+    neteado en un solo número ("Bruttofortjeneste"), sin desglosar nada — no hay forma de que un
+    script adivine eso, hay que LEER la nota de política contable del balance y entender qué está
+    pasando. Ahí Claude tiene que: (a) leer el documento completo y entender la estructura PROPIA de
+    ese club/país (que puede no separar nada, o separar distinto a como separa Argentina); (b)
+    decidir con criterio a qué categoría del sitio corresponde cada rubro, usando de guía la tabla de
+    precedentes de OTROS clubes pero sin que haya un match exacto; (c) si la estructura es rara de
+    verdad, inventar un criterio nuevo y dejarlo ESCRITO en `club-data-mapping/SKILL.md` para que la
+    PRÓXIMA vez que aparezca algo parecido (mismo país, u otro con el mismo problema) ya exista el
+    precedente y ese caso pase a ser tier 0 o tier 1. Por esto un club/país nuevo sale más caro en
+    tokens que un año más de un club conocido, y por esto Jev tampoco alcanza acá todavía: Jev
+    clasifica ENTRE categorías que ya existen, pero la pregunta en este caso es "¿esto necesita una
+    categoría nueva, o encaja en una que ya existe con otro nombre?" — eso es una decisión de DISEÑO
+    del esquema del sitio, no una clasificación entre opciones fijas.
+
+    **PROTOTIPO PROBADO 2026-09-28 (paso 4)**: `tools/extract-table-rows.mjs` (sin integrar a ningún
+    flujo todavía) saca las tablas Markdown de un `.md` transcripto a JSON compacto
+    `{page, section, columns, rows}`, sin convertir los números a float (quedan como string tal cual
+    están impresos — la interpretación numérica sigue siendo de Claude, distintos documentos usan ","
+    o "." como decimal de forma distinta). Probado contra 6 documentos de países/formatos distintos
+    (Argentina x2, Italia, Noruega, Colombia, Estados Unidos): reducción de 26% a 96% según cuánta
+    prosa tiene el documento, y en el caso de Green Bay Packers conservó la tabla real de revenue
+    descartando 350+ líneas de prosa institucional. También detecta AUTOMÁTICAMENTE el separador
+    decimal del documento (2+ grupos de miles = señal inequívoca) — un mapeo por país se habría
+    equivocado: Almagro (Argentina) usa formato "21,597,931.54" mientras River y Boca, mismo país,
+    usan "334.420.749". Marca tablas "likelyRelevant" por palabras clave multi-idioma sin descartar
+    las demás (para no perder datos si el idioma de un país nuevo no está en la lista). Siguiente
+    paso: correr un onboarding real con el JSON en vez del `.md` completo y comparar el resultado.
+
+    El paso 4 (extracción de tablas) es el de mayor repago inmediato: no depende de sumar Jev ni de
+    rediseñar nada, achica directo cuánto documento tiene que leer Claude en CUALQUIER onboarding, no
+    solo en los repetidos.
+
+    **ONBOARDING REAL DE PRUEBA HECHO, 2026-09-28: Once Caldas Ejercicio 2024** (club existente, país
+    existente, precedente de categorización ya establecido — el caso "más común de acá en adelante"
+    que describe la intro de este punto). Resultado: 0 P0/P1 en `node tools/audit.js`, ingresos
+    ($26.814,332 M) y gastos ($21.994,867 M) reconciliados EXACTO contra los totales impresos del
+    documento. Sin embargo, encontró un BUG REAL en `extract-table-rows.mjs` (no en Mistral/Gemini,
+    que transcriben fiel página por página a propósito, ver CLAUDE.md): cuando una tabla se corta por
+    un salto de página, a veces la transcripción pega un separador Markdown (`| --- | --- |`) a la
+    fila de CONTINUACIÓN como si fuera un encabezado nuevo — un intento de arreglarlo con una
+    heurística ("sin separador = continuación") resolvió un caso pero no el otro (el "separador
+    fantasma"). NO se va a seguir persiguiendo con más regex: la red de seguridad real es el tie-out
+    obligatorio contra el total impreso (SKILL.md sección 6), que atrapó esto sin problema. **Paso 4
+    queda así: una ayuda real para NAVEGAR el documento (ahorra leer páginas de firmas/dictamen/actas
+    que no aportan nada), no algo para confiar a ciegas en una tabla que cruza un salto de página —
+    ahí conviene leer esa sección puntual a mano, igual que cualquier verificación de tie-out.**
+
+    **Pedido de Guido en el camino: sacar la ARITMÉTICA del tie-out de Claude también** (mismo
+    principio, un nivel más abajo) — `tools/sum-check.mjs`, suma una lista de números (con o sin
+    separador de miles) y compara contra un total, reemplazando la suma mental que antes hacía Claude
+    para cada Nota. Lo que sigue siendo de Claude: decidir QUÉ filas entran en la suma (el bold de
+    Mistral para marcar subtotales salió inconsistente en este mismo documento, sin patrón fijo, así
+    que un script no puede inferir la jerarquía solo). Usado y probado en el onboarding de arriba.
+
+    **Paso 5, tier 0 construido y probado, 2026-09-28: `tools/suggest-category-precedent.mjs`** — si
+    un rubro nuevo tiene el mismo texto que uno ya categorizado en un año anterior del MISMO club, lo
+    sugiere (EXACTO/PARECIDO/SIN_PRECEDENTE, separado por ingreso/gasto). Sin fallos en un barrido de
+    los 162 clubes; encontró 3 conflictos de categorización REALES entre años (no de la tool, ver
+    to-do 101) y 1 falso positivo de la propia tool (colisión de normalización, mismo to-do).
+    Documentado en `club-data-mapping/SKILL.md` sección 1. Sigue esperando: tier 1 (JEV, cross-club,
+    to-do 99) y tier 2 (categorización sin precedente, siempre Claude).
+
+101. CONFLICTOS DE CATEGORIZACIÓN REALES, ENCONTRADOS PROBANDO `tools/suggest-category-precedent.mjs`
+    CONTRA LOS 162 CLUBES (2026-09-28, ver to-do 98). Mismo rubro, mismo lado (ingreso o gasto),
+    categoría DISTINTA entre ejercicios del MISMO club — no es un bug de la tool (ya separa
+    ingreso/gasto), es una inconsistencia real que quedó en los datos ya cargados. Revisar cada uno
+    contra el documento fuente y unificar (o dejar documentado por qué el cambio de categoría entre
+    años es correcto, si lo es):
+    - **Más casos, del backtest de `tools/categorizar-claude.mjs` (2026-09-30, `Admin/tests/test-categorizar-claude.md`)**: los errores de
+      Claude con confianza >= 0,80 son casi todos incoherencias de producción, no del modelo: San Lorenzo "Ciudad deportiva" y "Ciudad
+      deportiva (gasto)" en categorías distintas; "Seguros" fuera de `admin_general_expense` contra lo que dice el skill; cargas sociales
+      de juveniles de Boca en `wages_squad` contra la regla del skill; "Interese perdidos" de Almagro como línea (los intereses van a
+      `netInterest`); River "Educación" (gasto) fuera de `education_expense`; gastos de transferencias partidos 40 `other_expenses` / 31
+      `player_amortisation`. Mientras sigan, parte del "error" medido de la categorización automática es la vara.
+    - **Argentinos Juniors** (gasto): "Estadio y predios" -> `match_organisation_expense` en 2015,
+      `admin_general_expense` en 2019.
+    - **Estudiantes LP** (gasto): "Reconocimientos y premios" -> `match_organisation_expense` en
+      2022/2023/2024, `wages_squad` en 2025.
+    - **San Lorenzo** (gasto): "Subsedes" -> `admin_general_expense` en 2011, `other_expenses` en
+      2014.
+
+    **Además, un FALSO positivo de la propia tool, no un conflicto real**: Mallorca marcó
+    "Otros gastos de gestión corriente" (2025) en conflicto, pero son 2 rubros DISTINTOS del
+    documento ("Otros gastos de gestión corriente" y "Otros (gastos de gestión corriente)") que
+    `normalize()` colapsa al mismo texto por sacar los paréntesis — la categorización de Mallorca en
+    sí está bien, es la tool la que los confunde. Si se repite este patrón, evaluar si `normalize()`
+    necesita distinguir texto entre paréntesis en vez de descartarlo.
+
+102. RIVER (Ejercicio 2024, YA PUBLICADO): "Fútbol Profesional" está entero en
+    `lump_football_operations`, con sus 4 sub-ítems reales (Venta de jugadores, Televisión,
+    Publicidad, Torneos) enterrados solo como `items` — encontrado 2026-09-28 onboardeando el
+    Ejercicio 2021 del mismo club (misma estructura de documento, Anexo VII), NO corregido a
+    pedido de Guido ("si es un error en producción, abrí un to-do para que se revise/evalúe/
+    corrija en el futuro, no lo toques ahora"). Es el mismo patrón que SKILL.md sección 1 ya
+    describe con el ejemplo de Racing (Versión 32): esos 4 conceptos tienen categoría REAL
+    distinta entre sí (`player_sales`/`broadcasting`/`sponsorship_commercial`/`competition_bonus`),
+    no son un bolsón sin desglosar — así que `sumCat()`/`computeYearGeneric()` hoy muestran
+    Televisión/Publicidad/Venta de jugadores en $0 en Formato Simplificado para River, que es el
+    club más visitado del sitio. Los montos exactos (ya verificados, listos para copiar si se
+    decide corregir) están en el comentario de `riverRevenueLinesByYear[2024]`,
+    `data/river-data.js` — los mismos 4 valores que hoy viven como `items` de la línea "Fútbol
+    Profesional". El Ejercicio 2021 (cargado en esta misma sesión) usa el MISMO criterio que 2024
+    (lump, no promovido) a propósito, para no quedar inconsistente entre años mientras esto no se
+    decide — si se corrige 2024, corregir 2021 en el mismo movimiento.
+
+105. PLAN PARA SUBIR EL RITMO DE ONBOARDING RUMBO A 2000 PDFs ANTES DE FIN DE AÑO (pregunta de
+    Guido, 2026-09-28, después de los 5 onboardings de prueba del to-do 98: *"necesito velocidad
+    para subir onboardings y de alta calidad. a este ritmo no subo 2000 pdfs antes de fin de año.
+    O crees que con JEV ya esta bien?"*). Respuesta corta: **JEV solo NO alcanza** — resuelve una
+    sola cosa (categorizar un rubro nuevo comparándolo contra clubes YA cargados, to-do 99) y ni
+    siquiera está prendido todavía (el gate de integración espera a 200 clubes, hoy 164). El cuello
+    de botella real para volumen es el SOURCING de clubes 100% nuevos (paso 1 del pipeline, to-do
+    98), que sigue siendo 100% criterio de Claude — JEV no lo toca.
+
+    **Dato a favor, para calibrar la fecha**: la ronda de 5 onboardings de hoy anduvo lenta A
+    PROPÓSITO, porque además de cargar datos estaba probando y depurando tools nuevas — encontró y
+    corrigió 5 bugs reales en el camino (mezcla ingreso/gasto en `suggest-category-precedent.mjs`,
+    error de índices en su flag `--side`, 2 casos del fetcher de ligas que toma la tabla
+    equivocada — to-do 104 —, y un dígito transpuesto real de Mistral en River). Ese costo de
+    "pagar la deuda de bugs" ya está pagado una vez; el onboarding #6 en adelante, con las tools ya
+    probadas, debería salir más rápido que cualquiera de los 5 de hoy.
+
+    **Recomendaciones concretas, en orden de impacto:**
+    1. **`tools/prepare-onboarding.mjs <club> <año> <archivo.md>`, CONSTRUIDO Y PROBADO 2026-09-28**:
+       corre de una sola vez extract-table-rows + sum-check (por SEGMENTO, no por tabla entera:
+       una tabla real tiene varios "Total"/"Subtotal" en cascada) + suggest-category-precedent (si
+       el club ya tiene data) + lookup-club-league (si el club ya tiene entrada en `clubs{}`), y deja
+       UN `<archivo>.briefing.json` al lado del `.md` (gitignoreado, se regenera en segundos).
+       Pensado para correr desde la TERMINAL DE GUIDO, antes de abrir la sesión de Claude — mismo
+       criterio que la transcripción. Probado a fondo contra 5 documentos reales y diversos (River
+       2021 ARS, Once Caldas 2024 COP, Rosenborg 2012 noruego, Corinthians 2024-25 portugués/BRL, AC
+       Milan 2022-23 italiano/EUR), encontrando y arreglando 8 bugs reales en el camino (commits
+       `99f47bd` y el de la ronda portugués/EUR): un crash de proceso hijo sin capturar, el tie-out
+       por tabla entera que no chequeaba nada, un Anexo con encabezado de 2 niveles rompiendo
+       sum-check, un heading en negrita que dejaba la tabla MÁS IMPORTANTE de River marcada
+       `likelyRelevant:false`, `sum-check.mjs`/`isTotalLabel` sin soporte para el formato escandinavo,
+       **0 tablas detectadas en documentos de texto plano sin "|"** (Corinthians -- Mistral a veces
+       transcribe un PDF con capa de texto muy limpia como texto corrido, no como tabla Markdown; se
+       agregó un segundo parser para este formato), una sub-nota tipo "24.1" confundida con un valor
+       real (agrupa de a 1 dígito, no de a 3 como un separador de miles de verdad), y un heading
+       fuerte repetido en CADA página (membrete) que bloqueaba PARA SIEMPRE el uso del heading débil
+       real -- arreglado reseteando el trail de headings por página y ensanchando la ventana de 2 a
+       5.
+
+       **`tools/onboard.mjs`, CONSTRUIDO 2026-09-28**: el comando único que pidió Guido -- encadena
+       `mistral-ocr-transcribe.mjs` → `gemini-transcribe.mjs --redo-mistral-scanned` →
+       `prepare-onboarding.mjs`, sin tocar las 2 primeras. `--club` se adivina por nombre de carpeta
+       contra `data/clubs.js` solo si hay 1 coincidencia clara (probado con un caso real ambiguo,
+       "Racing" -> Racing Club + Genk, se niega a adivinar); `--year` se adivina siempre del nombre
+       del archivo. Probado con `--dry-run` contra 4 casos reales, sin tocar ninguna API. `--all` de
+       punta a punta (con llamadas reales a Mistral/Gemini) queda para que Guido lo corra desde su
+       terminal -- el paso de Gemini barre TODO el proyecto, no solo el `--dir` pedido.
+
+       **TODAVÍA NO conectado a ningún skill** (a pedido explícito de Guido) -- ya se cubrió la
+       diversidad de idioma/moneda/formato que hacía falta probar, así que lo que sigue es sumarlo a
+       `club-or-year-onboarding/SKILL.md` y `club-data-mapping/SKILL.md` cuando Guido lo confirme.
+    2. **Agrupar varios años del MISMO club en una sola sesión**, no uno por sesión — el precedente
+       de `suggest-category-precedent.mjs` mejora con cada año que se suma (Once Caldas pasó de
+       10/11 EXACTO en su 2do año cargado a 11/11 en el 4to), y se evita pagar el arranque en frío
+       de leer los skills/entender el club de nuevo cada vez.
+    3. **Paralelizar clubes DISTINTOS con subagentes** (Agent tool) — no baja tokens totales, pero sí
+       baja tiempo de reloj, que es la métrica que más importa para la fecha límite.
+    4. **Nunca cortar el tie-out** (`sum-check.mjs`/`node tools/audit.js`) para ganar velocidad — es
+       el paso más barato de todo el pipeline y es el que atrapó los 2 errores reales de hoy (el
+       dígito transpuesto de River, la línea sin atribuir de Boyacá Chicó). Cortarlo es exactamente
+       donde se pierde "alta calidad" a cambio de velocidad.
+    5. **Antes de prometer una fecha, cuantificar la mezcla real de los 2000 PDFs**: ¿cuántos son
+       AÑOS NUEVOS de clubes que ya están en el sitio (rápido, tier 0 ya cubre la mayoría) vs.
+       CLUBES/PAÍSES 100% nuevos (lento, sourcing sigue siendo 100% Claude, ninguna tool de hoy lo
+       resuelve)? La respuesta cambia la estrategia entera — no evaluado todavía.
+
+23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación). ACTIVO,
+    prioridad de Guido (2026-09-29: "me interesa, mantenelo abierto, no pausado"):
+    (d) DEFLACTORES. El aviso de "ejercicios de años distintos" explica el problema (cada
+        ejercicio se convierte a USD con el tipo de cambio de su propio documento, sin ajustar
+        por inflación), pero no lo arregla. Arreglarlo de verdad es una serie de deflactores por
+        moneda y año. Decisión de Guido si se abre.
+    TECHO DEL MODELO, no tarea: la taxonomía es de fútbol (`player_sales`, `wages_squad`,
+    `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
+    otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.
+
+97. EL PIPELINE DE TRANSCRIPCIÓN (Mistral/Gemini) NO ACTUALIZA NINGÚN INVENTARIO — evaluar si
+    conviene que lo haga (pregunta de Guido, 2026-09-28). Lo que hay hoy: `tools/mistral-ocr-
+    transcribe.mjs` y `tools/gemini-transcribe.mjs` solo appendean a `Admin/{mistral,gemini}/
+    resultados.jsonl` y `fallidos.jsonl` (qué PDF se transcribió, costo, tiempo) — ninguno de los 2
+    toca `Admin/inventario-pendiente.md`, que es el archivo que responde "¿qué hay transcripto y
+    todavía no cargado al sitio?". Y ese archivo lo dice él mismo en su cabecera: es **"una FOTO, no
+    un archivo vivo"**, armado a mano el 2026-09-25 (barrido de filesystem + 2 agentes Explore) — hoy
+    ya está desactualizado: desde entonces se sumaron Grecia, Italia, Noruega, México, Boyacá Chicó,
+    Once Caldas y Estados Unidos, nada de eso reflejado ahí. EVALUAR (no construir todavía): ¿conviene
+    que los 2 scripts actualicen el inventario (o un archivo más chico/estructurado) cada vez que
+    escriben un `.md` nuevo, en vez de depender de un barrido manual que se desactualiza en días?
+    CONTRA A PESAR: el archivo actual también cruza contra `Admin/ESTADO-clubes.md` y las cabeceras de
+    `data/<clubId>-data.js` para saber qué YA está CARGADO (no solo qué está transcripto) — un update
+    automático del lado de la transcripción sería solo la mitad de la foto.
+
+96. EL CTA DE FINANZAS CON 2+ CLUBES ELEGIDOS SIGUE GENERANDO CONFUSIÓN, AUNQUE YA TIENE UNA
+    ACLARACIÓN (reportado por Guido, 2026-09-28: *"el selector me deja seleccionar dos equipos o más
+    pero al final dice 'ver los números de X'... es confuso, no queda claro si va a terminar viendo
+    todos los clubes seleccionados o solo el que dice el botón"*). CHEQUEADO EN VIVO antes de anotar
+    esto: `js/selector.js` línea ~1386 (Versión 106, 2026-09-16, commit `7450c93`) YA tiene, con 2+
+    clubes y camino "Finanzas": un texto arriba del botón ("Finanzas muestra un club por vez, así que
+    vas a ver el primero. Para verlos juntos está Comparar") Y el botón nombra el club exacto ("Ver
+    los números de Almagro", no un "X" genérico) — confirmado en local, debería verse igual en
+    producción. O sea, la ambigüedad LITERAL ya no existe tal cual — pero Guido la sintió de todos
+    modos usando el sitio real, así que la aclaración no está funcionando en la práctica. Hipótesis a
+    evaluar, sin asumir cuál es: (a) jerarquía visual invertida — el texto aclaratorio es chico/gris,
+    el botón es grande/azul, y se lee el botón primero; (b) 2 botones de peso similar (uno primario
+    para 1 club, uno secundario para "llevar los N a Comparar") no resuelve la pregunta real, que es
+    ANTES de llegar a esta pantalla. ANTES DE TOCAR CÓDIGO: preguntarle a Guido en qué pantalla/
+    dispositivo vio la confusión (para descartar mobile o una versión vieja en caché, ver CLAUDE.md
+    gotchas de caché) y qué jerarquía visual preferiría.
+
+95. EVALUAR UN ARCHIVO DE REFERENCIA CON QUÉ LIGA/TEMPORADA JUGÓ CADA CLUB CADA AÑO, EN VEZ DE
+    BUSCARLO ONLINE CADA VEZ (pedido de Guido, 2026-09-28). Mismo patrón que el to-do 91 (FX/
+    brandColor, ya cerrado y andando): hoy, para completar `data/club-leagues/<iso2>.js` (SE EDITA A
+    MANO, ver su propia cabecera) el paso de onboarding busca online en qué liga/división jugó el
+    club ese ejercicio — una búsqueda puntual por club-año que se repite cada vez, en vez de consultar
+    un archivo local. Evaluar precargar esto para TODOS los clubes que ya tenemos en PDF (sourceados o
+    cargados) desde una fuente pública (candidatos: RSSSF, tablas de temporada de Wikipedia, alguna
+    API de datos de fútbol tipo TheSportsDB). Misma arquitectura que el 91: archivo de referencia
+    FUERA de `data/` (no eager, no se sirve al visitante), consultado local antes de salir a buscar.
+    EVALUAR ANTES DE EJECUTAR: cobertura real de la fuente elegida para ligas chicas/países con menos
+    visibilidad (punto débil ya conocido de RSSSF/Wikipedia fuera de las ligas grandes), y que esto no
+    reemplaza la verificación humana del ascenso/descenso al cierre exacto del ejercicio — solo evita
+    la búsqueda repetida, mismo criterio que ya se estableció para el 91.
+
+    **EVALUADO 2026-09-28, primera pasada equivocada — CORREGIDO el mismo día por Guido.** La primera
+    evaluación miró la página del CLUB (sin tabla temporada-por-temporada para un club chico) y RSSSF
+    (encoding roto, formato inconsistente) y concluyó que un scraper no alcanzaba. Estaba mirando las
+    fuentes equivocadas: la página de la TEMPORADA en Wikipedia (ej.
+    `2025–26 Premier League`, no la del club) SÍ tiene una tabla "Teams" en wikitext estándar de
+    MediaWiki, consistente entre países — confirmado bajando el roster real de Colombia 2016 (20
+    equipos, incluido Boyacá Chicó) y Noruega 2019 (16 equipos, incluido Lillestrøm).
+
+    **SÍ SE CONSTRUYÓ, pipeline de 3 tools, probado de punta a punta**:
+    1. `tools/resolve-wikipedia-season-page.mjs "<liga>" <año>` — encuentra el título exacto de la
+       página de esa temporada (la convención varía por liga, sin fórmula única) vía la API de
+       búsqueda de Wikipedia. No auto-elige el resultado #1: un nombre ambiguo (ej. "Premier League")
+       trae también la canadiense, la rusa, la israelí — hay que confirmar cuál es.
+    2. `tools/fetch-club-league-reference.mjs "<título>" <leagueId> <año> --pais <iso2>` — baja el
+       wikitext (no HTML renderizado, no un resumen de modelo) y guarda el roster completo en
+       `tools/club-league-reference/<iso2>.json`. Si no encuentra tabla parseable, no escribe nada.
+    3. `tools/lookup-club-league.js "<club>" --pais <iso2>` — busca por NOMBRE (no por `clubId`: la
+       mayoría de estos clubes todavía no están onboardeados) contra los rosters cacheados.
+
+    Sigue sin ser fuente de verdad: `data/club-leagues/<iso2>.js` sigue a mano, con su nota de cómo se
+    confirmó cada club-año. Esto solo evita repetir la búsqueda de una liga-temporada ya resuelta.
+    Detalle completo en `tools/club-league-reference/README.md`.
+
 89. LEER EL DOCUMENTO FUENTE COMPLETO ES CARO, PERO ABARATARLO TIENE UN RIESGO YA CONFIRMADO
     (candidato del to-do 85, 2026-09-27). Los 6 balances de Almagro (~170 KB) se leyeron completos
     para extraer ~15-20 líneas de rubros por año — la mayor parte de cada documento (nómina de
@@ -81,18 +419,6 @@ perdieron sino que se descartaron:
     Resultado esperado: no un cambio de código, sino una lista de candidatos a to-do nuevos (uno por
     paso que valga la pena optimizar), para que Guido priorice cuáles perseguir.
 
-83. VER CÓMO QUEDARÍA UN CLUB CON SU PRESUPUESTO EN OTRA LIGA (pedido de Guido, 2026-09-27: ejemplo,
-    ver cómo quedaría Boca con su presupuesto en la liga española). Es una simulación cruzada: tomar
-    el valor ya cargado de un club e insertarlo en el ranking de OTRA liga para mostrar en qué
-    posición quedaría. Reusa la infraestructura de rankings pre-calculados que ya existe (Versiones
-    182-184, y la mejora de Ligas del to-do 68, Versión 243) — no hace falta bajar clubes de la otra
-    liga en vivo. Preguntas a resolver antes de tocar código: (a) qué métrica se usa (ingresos totales
-    parece el candidato obvio dado que 68 ya los muestra por categoría, confirmar con Guido); (b) qué
-    pasa si el club de origen y la liga destino no comparten moneda/año — mismo problema de fondo que
-    el to-do 23(d) (deflactores) y el aviso ya existente de "ejercicios de años distintos"; (c) UI:
-    ¿selector nuevo ("elegí un club, elegí una liga") o un botón dentro de la ficha de cada club
-    ("¿cómo le iría en...")? Sin evaluar todavía.
-
 82. EVALUAR SI EL FUNNEL DE SOURCING DEBERÍA TENER ARISTAS ESPECÍFICAS POR PAÍS, en vez de una
     escalera única para todos (pedido de Guido, 2026-09-27, generalizando la distinción que motivó
     separar los to-dos 80 y 81: Reddit rinde en países angloparlantes y no en LatAm, mismo patrón
@@ -114,63 +440,14 @@ perdieron sino que se descartaron:
     tener dónde guardarlos? Ligado al to-do 82 (arquitectura del funnel por país) pero es una
     pregunta más chica y puntual. Sin evaluar todavía.
 
-73. CARGAR LOS 2 BALANCES DE BOCA ENCONTRADOS VÍA WAYBACK CDX (Versión 247, 2026-09-26): Ejercicio
-    118 (cerrado 30/06/2022) y Ejercicio 119 (cerrado 30/06/2023, firmado). **Transcriptos ya
-    (2026-09-26, Mistral OCR, 101 y 128 páginas):** `Clubes/Argentina/Boca/eecc-30525418835-2022.md`
-    y `Clubes/Argentina/Boca/balance-01-07-22-al-30-06-23-firmado.md`. LISTO PARA MAPEO: no falta
-    nada de Guido, solo una sesión normal de `club-data-mapping` que categorice los rubros y cargue
-    los 2 ejercicios al sitio. Quedan sin encontrar 2018, 2019, 2021 y 2024 — no aparecieron ni en
-    este barrido de dominio completo. Detalle en `fuentes/Argentina/Boca.md`.
-    Aparte, para River: un balance del ejercicio cerrado 31/08/2016 (más viejo que cualquiera de los
-    8 ya cargados) apareció en Scribd, detrás de una suscripción paga — decisión de Guido si vale
-    pagarla, mismo criterio que el trámite de la IGJ ya documentado en `fuentes/Argentina/River.md`.
-
-74. EVALUAR JEV (TypeSafe AI) PARA CATEGORIZAR RUBROS DE INGRESOS/GASTOS EN ONBOARDING (idea de
-    Guido, 2026-09-26, a raíz de la nota de lanzamiento de TypeSafe del 2026-09-15). Motivación: Jev
-    es un modelo "System One" — no genera texto libre, solo clasifica/tipa una entrada no
-    estructurada contra un set fijo de etiquetas, rápido y barato, con probabilidad calibrada por
-    respuesta. Encaja mejor con "a qué categoría de `data/category-map.js` pertenece este rubro" que
-    con sourcing (necesita navegar con libertad) o transcripción (Jev no genera strings, no puede
-    hacer OCR — por eso ese paso se queda en Mistral).
-
-    OJO: la nota es marketing propio de una empresa recién salida de stealth (early access, benchmark
-    contra un promedio que ellos mismos eligieron) — no tomar las cifras de la nota como validadas,
-    probarlo contra el propio criterio del proyecto antes de confiarle nada.
-
-    CÓMO ENCARARLO, si se retoma:
-    - **Backtest primero, sin tocar nada del sitio**: correr Jev sobre rubros de ejercicios YA
-      categorizados a mano (Boca, River, Racing tienen varios años hechos) y comparar contra la
-      categorización real — barato, y valida el producto contra ground truth propio en vez de
-      creerle el benchmark a la nota de lanzamiento.
-    - **Dónde SÍ encaja bien**: rubros que un club ya usó antes (cargar el ejercicio N+1 de un club
-      ya onboardeado, mismo vocabulario de rubros que en N) — clasificación repetitiva de un set
-      cerrado y conocido.
-    - **Dónde NO encaja**: la primera vez que aparece un rubro nuevo o un club/país nuevo — ahí la
-      categorización es una decisión de criterio (ej. la unificación de "derechos de
-      formación"/"mecanismo de solidaridad" del to-do 43), no clasificación mecánica. Sigue siendo
-      trabajo de `club-data-mapping` con Sonnet o de Guido.
-    - **Pipeline de 3 pisos, aprovechando la confianza calibrada** (si de verdad es calibrada):
-      Jev clasifica cada rubro → confianza alta (umbral a definir) se acepta automático → confianza
-      baja pasa a Sonnet con el contexto completo del club → si Sonnet tampoco está seguro, cae en
-      `Admin/dudas-por-club.md` como ya pasa hoy.
-
-94. ANTES DE QUE "SAVED SEARCHES" (to-do 70, cerrado) SEA USABLE POR VISITANTES DE VERDAD, 2
-    CHEQUEOS DE CONFIGURACIÓN EXTERNA que no se pueden resolver escribiendo código, y que
-    nadie más que Guido puede hacer (paneles de Google/Supabase):
-
-    - **Pantalla de consentimiento OAuth de Google, probablemente en modo "Testing".** Un
-      proyecto nuevo en Google Cloud arranca así por default, y en ese modo SOLO pueden loguearse
-      las cuentas que se agreguen a mano como "test users" en el proyecto — cualquier otro
-      visitante real va a ver una pantalla de error de Google, no el login. Hay que publicarla
-      ("Publish app") en Google Cloud → APIs & Services → OAuth consent screen antes de que esto
-      sirva para alguien que no sea Guido. Con los scopes que usa este login (email, profile) no
-      debería exigir el proceso de verificación largo de Google (eso es para scopes sensibles).
-    - **Redirect URLs de Supabase, hoy solo tiene el `localhost` de desarrollo.** Supabase
-      rechaza el regreso del login de Google a cualquier URL que no esté en su lista blanca
-      (Authentication → URL Configuration → Redirect URLs). Antes de deployar, agregar ahí
-      `https://financeofsports.com/*` (y el dominio viejo que redirige, si corresponde).
-    Sin estos dos pasos, el botón de login funciona perfecto en local (probado por Guido,
-    2026-09-27) pero falla para cualquier visitante real del sitio en producción.
+100. RESTOS SIN CERRAR DEL EX TO-DO 73 (el núcleo — cargar los 2 balances de Boca vía Wayback CDX —
+    se cerró en la Versión 289; esto es lo que quedó afuera de esa carga, separado a un número propio
+    para no perderlo bajo un to-do que ya figura como resuelto). River: un balance del ejercicio
+    cerrado 31/08/2016 (más viejo que cualquiera de los ya cargados) apareció en Scribd, detrás de
+    una suscripción paga — decisión de Guido si vale pagarla, mismo criterio que el trámite de la IGJ
+    ya documentado en `fuentes/Argentina/River.md`. Boca: quedan sin encontrar los ejercicios 2018,
+    2019, 2021 y 2024 — no aparecieron ni en el barrido de dominio completo de Wayback CDX del
+    2026-09-26. Detalle en `fuentes/Argentina/Boca.md`.
 
 59. REVISAR ATLANTA, ALL BOYS Y OTROS DEAD-ENDS DEL BARRIDO POR SI CONVIENE UN RECLAMO DIRECTO AL
     CLUB (no es sourcing nuevo, es decidir si vale la pena escribirle a alguien — se beneficia del
@@ -188,6 +465,43 @@ perdieron sino que se descartaron:
     del documento del N°122 (2025-26, ya cargado, Versión 209), que Guido decidió no usar como fuente
     del 121 (ver `Admin/dudas-por-club.md`). Ver el detalle completo en `fuentes/Argentina/Atlanta.md`,
     `fuentes/Argentina/Banfield.md` y `fuentes/Argentina/Independiente.md`.
+
+99. JEV PARA CATEGORIZAR RUBROS — FUSIÓN DE LOS EX TO-DOS 74 Y 36 (2026-09-29, a pedido de Guido:
+    eran el mismo backtest escrito en 2 lugares — 36 traía el gate de integración por volumen, 74 el
+    pedido de correrlo ya que la key está lista). PLAN DE ACCIÓN:
+
+    **Por qué el backtest original (contra Boca/River/Racing ya categorizados) no alcanza**: son
+    casos FÁCILES — vocabulario argentino de fútbol, ya resuelto, sin ambigüedad real. Mide si JEV
+    puede REPETIR una decisión ya tomada, no cómo maneja el caso que el propio análisis original ya
+    marcaba como el punto débil: "la primera vez que aparece un rubro nuevo o un club/país nuevo".
+
+    **Idea de Guido que mejora el test, 2026-09-29**: en vez de (o además de) el backtest contra
+    ejercicios ya cargados, onboardear 2-3 clubes REALES de la cola de sourcing, elegidos a propósito
+    diversos — mínimo 2 países de fútbol distintos entre sí y de Argentina (vocabulario/régimen
+    contable distinto: candidatos ya transcriptos, Grecia/Italia/Noruega/Boyacá Chicó), más 1 caso de
+    OTRO DEPORTE si hay uno ya transcripto (Green Bay Packers, EE.UU. — con la salvedad de que
+    `category-map.js` es taxonomía 100% de fútbol, ver to-do 23: acá el test mide algo extra y útil,
+    si JEV devuelve confianza baja/honesta cuando el rubro no encaja en NINGUNA categoría existente,
+    o si fuerza un match con confianza alta igual — ese segundo caso es el falso positivo peligroso).
+
+    **Mecánica**: (1) elegir los 2-3 club-ejercicios; (2) correr JEV sobre la lista de rubros de cada
+    uno (categoría + confianza) ANTES de que la sesión de `club-data-mapping` los categorice, sin que
+    esa sesión vea el resultado de JEV primero (no contaminar el criterio humano con la sugerencia);
+    (3) la sesión categoriza normal, como cualquier onboarding; (4) comparar rubro por rubro, JEV vs.
+    categorización real, separado por nivel de confianza de JEV — la pregunta que importa es si algún
+    caso de CONFIANZA ALTA salió mal, no el acierto promedio; (5) documentar en `Admin/tests/test-jev.md`
+    (mismo patrón que `test-costo-transcripcion.md`/`test-barridos.md`).
+
+    **Lo que NO cambia**: el gate de integración real (conectar JEV al flujo de onboarding para que
+    decida solo, sin que Claude revise cada rubro) sigue esperando a los **200 clubes cargados** (hoy
+    162) — a este volumen, categorizar a mano sigue siendo más rápido que integrar y VALIDAR una API
+    nueva. Este test es sobre VALIDAR la herramienta con datos reales, no sobre conectarla ya. Si el
+    resultado es bueno, define de una vez el umbral de auto-aceptación para cuando se llegue a 200.
+
+    Pipeline de 3 pisos si se integra más adelante (sin cambios respecto a la idea original): JEV
+    clasifica cada rubro → confianza alta se acepta automático → confianza baja pasa a Sonnet con el
+    contexto completo del club → si Sonnet tampoco está seguro, cae en `Admin/dudas-por-club.md` como
+    ya pasa hoy.
 
 51. PROCESO DE EMAIL A CLUBES — EN CONSTRUCCIÓN, ETAPA 1 (rediseñado 2026-09-24, decisión de Guido
     tras comparar alternativas: Gmail/MCP, APIs transaccionales, no-code, agentes dedicados). El
@@ -227,141 +541,74 @@ perdieron sino que se descartaron:
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-50. LEADS DE SOURCING DE COLOMBIA Y MÉXICO — 2 de 5 puntos ejecutados el 2026-09-28, quedan 3 que
-    necesitan una acción o decisión de Guido:
+50. LEADS DE SOURCING DE COLOMBIA Y MÉXICO. Resumen 2026-09-29: SIIS Colombia y León/Pachuca ya
+    resueltos, Pumas/Tigres descartado por decisión de Guido, quedan 2 hilos de puro monitoreo, sin
+    acción pendiente de nadie hasta que algo externo cambie:
     - ✅ **SIIS Colombia**: Boyacá Chicó suma 2021-2025 (8 ejercicios en total), Once Caldas suma
-      2021-2024 (serie completa 2016-2025) — la nota anterior de "resuelto" para Once Caldas estaba
-      incompleta, corregido. Bucaramanga 2021 se investigó a fondo (endpoint + Vista 360 en browser
-      real) y se confirmó que es un hueco REAL de la fuente (la sociedad no depositó ese año), no
-      throttling como se creía. Detalle en `fuentes/Colombia/<Club>.md` de cada uno. **Pendiente el
-      paso de transcripción de los PDFs nuevos** (pipeline Mistral, `CLAUDE.md` "Cada PDF nuevo") —
-      sourcing y transcripción son pasos separados.
-    - ✅ **León y Pachuca (México)**: ya resuelto por el to-do 75 (evaluación de Firecrawl,
-      2026-09-27) — Pachuca se destrabó (sin nada financiero, blindado por el Art. 12 de LIGA MX);
-      León resistió Firecrawl, `/v1/map` Y un Browser pane real, confirmando que es un bloqueo de
-      IP/hosting, no un WAF con challenge. Ver `fuentes/México/León.md` y `Pachuca.md`.
-    - **Pumas y Tigres (México)**: texto de las 2 solicitudes de transparencia (UNAM y UANL) ya
-      redactado — ver el chat de la sesión 2026-09-28 o pedirlo de nuevo. Falta que Guido las
-      presente desde su propia cuenta en la Plataforma Nacional de Transparencia (crear cuenta y
-      presentar la solicitud no es algo que una sesión pueda hacer sola).
-    - **León se está vendiendo, sin cerrar todavía** (rechequeado 2026-09-28): plazo hasta 2027,
-      ~130 propuestas recibidas, ~25 acuerdos de confidencialidad firmados. Candidatos que suenan:
-      "Apollo Group" (si es Apollo Global Management, NYSE `APO`, abriría la ventana Ollamani) y
-      Arturo Lomelí (Clase Azul, privado). Rechequear cuando cierre la operación.
-    - **`DIABLOS` en la BMV**: sigue igual, es decisión de Guido (abre liga y deporte nuevos), no
-      se toca sin su OK.
+      2021-2024 (serie completa 2016-2025). Bucaramanga 2021 confirmado como hueco REAL de la fuente
+      (la sociedad no depositó ese año), no throttling. Detalle en `fuentes/Colombia/<Club>.md`.
+    - ✅ **León y Pachuca (México)**: resuelto por el to-do 75 (Firecrawl) — Pachuca sin nada
+      financiero, blindado por el Art. 12 de LIGA MX; León confirmado bloqueo de IP/hosting (no WAF).
+    - ❌ **Pumas y Tigres (México), descartado (decisión de Guido, 2026-09-29): "elijo no hacerlo, me
+      da igual".** Las 2 solicitudes de transparencia (UNAM/UANL) estaban redactadas pero nadie las
+      va a presentar. No retomar salvo que Guido cambie de opinión.
+    - **León se está vendiendo, sin cerrar todavía** (último chequeo 2026-09-28): plazo hasta 2027,
+      ~130 propuestas recibidas. Candidato a vigilar: si el comprador es un vehículo que cotiza en
+      bolsa (ej. Apollo Global Management, NYSE `APO`), se abre la ventana Ollamani. Puro monitoreo,
+      rechequear cuando cierre la operación — nada que hacer hoy.
+    - **`DIABLOS` en la BMV — explicado, 2026-09-29, decisión sigue pendiente de Guido**: Diablos
+      Rojos del México es un equipo de BÉISBOL (Liga Mexicana de Béisbol, no fútbol) que cotiza en la
+      Bolsa Mexicana de Valores desde diciembre 2024 y reporta trimestralmente — mismo patrón
+      "Ollamani" (disclosure vía mercado de valores en vez de FOI) que ya rindió para otros casos.
+      Por qué quedó pausado: abre LIGA nueva (LMB) Y DEPORTE nuevo (béisbol, no fútbol) — un cambio de
+      alcance real, no una fuente más del mismo tipo de club. Dato para la decisión: el sitio YA tiene
+      contenido de otro deporte en `Clubes/` sin cargar al sitio todavía (Green Bay Packers/NFL,
+      Atlanta Braves/MLB, MSG Sports/NBA-NHL — piloto de prueba de Firecrawl, to-do 75, no una
+      decisión de producto de sumar otros deportes). Si en algún momento se decide onboardear alguno
+      de esos, DIABLOS encajaría en el mismo movimiento de alcance; si no, se puede seguir ignorando
+      sin costo (no hay ninguna transcripción ni sourcing hecho todavía de DIABLOS). Sin acción hasta
+      que Guido decida.
 
-34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, terminado el
-    2026-09-17). Ninguno es un bug: son decisiones que se tomaron a propósito y que
-    conviene revisar cuando haya más datos o más uso.
+34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, 2026-09-17). ACTUALIZADO
+    2026-09-28 con lo que cambió desde entonces en features relacionadas (to-dos 70 y 83). Ninguno
+    es un bug: son decisiones a propósito, revisadas ahora que hay más uso.
 
-    (a) **MÓVIL, más allá de que entre.** Los dos cards apilan y el modal funciona a
-        375px —verificado, sin desborde horizontal— pero nadie diseñó la experiencia
-        en un teléfono. Decisión de Guido durante el prototipado: primero desktop.
-        La to-do 26 (el `.header-right` a 375px) ya se resolvió (Versión 188).
+    (a) **MÓVIL, más allá de que entre.** Sin cambios: sigue sin diseñarse la experiencia en
+        teléfono (solo verificado que no rompe a 375px). Decisión de Guido durante el
+        prototipado: primero desktop.
 
-    (b) **NO HAY GRUPOS GUARDADOS.** Armar "mis 6 brasileños" en el constructor de la
-        mezcla se pierde al cerrar el modal. Si el caso aparece seguido, es lo primero
-        que pide el modelo de bloques.
+    (b) **NO HAY GRUPOS GUARDADOS dentro del constructor de mezcla.** Sigue sin existir tal cual.
+        Parcialmente mitigado por "Saved Searches" (to-do 70, cerrado): cualquier comparación
+        TERMINADA se guarda sola y se puede reabrir desde la cuenta, así que no hace falta
+        rearmar "mis 6 brasileños" si ya se armó una vez. Pero sigue faltando un grupo REUSABLE
+        para mezclar en una comparación DISTINTA a la que se guardó — son cosas distintas.
 
-    (c) **UN BLOQUE DE CLUBES EN LA MEZCLA TIENE UN SOLO AÑO PARA TODO EL BLOQUE**
-        ("el más reciente de cada uno", o un cierre puntual). El detalle
-        ejercicio-por-club solo existe en la rama Clubes. Se hizo así para que cada
-        fila del constructor no se volviera un formulario; si hace falta, es donde
-        crece.
+    (c) **UN BLOQUE DE CLUBES EN LA MEZCLA TIENE UN SOLO AÑO PARA TODO EL BLOQUE.** Sigue igual
+        en el constructor de Comparar. Dato nuevo: el patrón "año editable por club" SÍ se
+        construyó, pero en otro lugar del sitio (Ligas, to-do 83, Versión 285) — al sumar un
+        club suelto a un ranking de liga, su año es un dropdown editable. El mismo patrón
+        podría portarse a Comparar si hiciera falta; no está hecho ahí todavía.
 
-    (d) **EL APORTE DE CADA BLOQUE NO SE MUESTRA EN EL CONSTRUCTOR.** Dice "6
-        ejercicios", no "489 M". Es a propósito: el aporte en plata obliga a bajar el
-        `data/<club>-data.js` de cada club MIENTRAS elegís, que es justo lo que el
-        selector evita (son 41 archivos y el sitio los carga por demanda). Hoy los
-        baja recién al apretar "Comparar". Es la misma tensión que resolvió el to-do 33
-        (Versiones 182-184) precalculando `data/rankings/<liga>.js`: si el aporte de cada
-        bloque hiciera falta, la salida probablemente sea la misma, no bajar los clubes.
+    (d) **EL APORTE DE CADA BLOQUE NO SE MUESTRA EN EL CONSTRUCTOR.** Sigue igual en Comparar.
+        Confirmado en la práctica que reusar rankings precalculados (en vez de bajar cada club)
+        SÍ es viable sin costo: to-do 83 lo implementó para "sumar una liga entera" en Ligas
+        (Versión 285, inserta 10-20 clubes de una reusando `data/rankings/<liga>.js`). El mismo
+        truco resolvería el aporte en plata de un bloque en Comparar sin bajar los 162 archivos
+        de club — es el camino más barato si se retoma.
 
-    (e) **UN LADO PUEDE SUMAR UN PROMEDIO CON UNA SUMATORIA.** Se avisa en pantalla,
-        no se prohíbe. Decisión explícita de Guido: "suma peras con manzanas pero no
-        es mi tema, yo tengo que dar la funcionalidad".
+    (e) **UN LADO PUEDE SUMAR UN PROMEDIO CON UNA SUMATORIA.** Sin cambios. Decisión explícita
+        de Guido: "suma peras con manzanas pero no es mi tema, yo tengo que dar la
+        funcionalidad".
 
-    (f) **LOS DATOS SON FLACOS PARA LO QUE LA INTERFAZ YA PERMITE.** 34 de los 41
-        clubes tienen UN solo ejercicio cargado, y de las 8 ligas con temporadas, 4
-        tienen una sola. Comparar la liga argentina contra la brasilera hoy es 5
-        clubes contra 1 (Mirassol). La interfaz lo dice —los chips muestran cuántos
-        equipos tiene cada temporada, y el resultado muestra la fórmula y el conteo—
-        pero el número sigue siendo pobre hasta que haya más balances cargados.
+    (f) **LOS DATOS SIGUEN FLACOS PARA LO QUE LA INTERFAZ YA PERMITE, pero mejoró la proporción**
+        (recalculado 2026-09-28 contra `Admin/ESTADO-clubes.md`): hoy 88 de 162 clubes (54%)
+        tienen UN solo ejercicio cargado — mejor que el 34 de 41 (83%) de cuando se escribió
+        esto. Las ligas con ranking precalculado pasaron de 8 a 22 (`data/rankings/`). Sigue
+        siendo cierto que comparar 2 ligas específicas puede salir desparejo según cuántos
+        ejercicios tenga cada una, pero el problema se va resolviendo solo a medida que crece
+        el proyecto — no hace falta acción.
 
-23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación):
-    (d) DEFLACTORES. El aviso de "ejercicios de años distintos" explica el problema (cada
-        ejercicio se convierte a USD con el tipo de cambio de su propio documento, sin ajustar
-        por inflación), pero no lo arregla. Arreglarlo de verdad es una serie de deflactores por
-        moneda y año. Decisión de Guido si se abre.
-    TECHO DEL MODELO, no tarea: la taxonomía es de fútbol (`player_sales`, `wages_squad`,
-    `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
-    otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.
-
-40. UN CMS PARA QUE GUIDO CAMBIE COSAS SIN CÓDIGO (pregunta suya en la sesión del 2026-09-22, al
-    pedir que la fusión de abonos dentro de "Estadio" se pudiera revertir sin un lío: *"¿se podría
-    hacer un backend así sin necesidad de código yo pueda hacer cambios?"*).
-    LO QUE YA ESTÁ HECHO, y puede alcanzar: la decisión concreta que motivó la pregunta quedó en
-    una constante con nombre (`ABONOS_DENTRO_DE_ESTADIO`, `js/finanzas-calc.js`), con el comentario
-    de qué correr después. Revertirla es cambiar una palabra.
-    LO QUE FALTARÍA, si la pregunta era más amplia: un CMS tipo Decap/Netlify CMS apuntado a un
-    archivo de configuración del repo — le da a Guido una pantalla web con formularios que
-    commitea sola, sin dejar de ser un sitio estático. Es una sesión de trabajo propia más resolver
-    la autenticación.
-    LO QUE NO: un backend con base de datos. Contradice la arquitectura (estática, sin build),
-    cuesta plata, y haría que cada visitante pida la config antes de ver una tabla.
-    ANTES DE ARRANCAR: preguntarle a Guido QUÉ querría editar desde ahí. Si es solo el orden y el
-    nombre de las filas, el archivo de configuración solo ya alcanza y el CMS es de más.
-    EN PAUSA (decisión de Guido, 2026-09-22): no retomar antes de ~un mes (fines de octubre 2026).
-
-36. EVALUAR JEV (TypeSafe, modelo `jev-latest`, docs.typesafe.ai) PARA CATEGORIZAR RUBROS
-    AUTOMÁTICAMENTE, cuando el proyecto llegue a **200 clubes cargados** (charlado con Guido el
-    2026-09-21, sesión que descubrió esta API). Es el piso del rango de escala que ya usa
-    `escala-finance-of-sports` (200-3000 clubes) — a ~5 ejercicios por club son ~1000 balances y,
-    a un orden de 12 líneas de rubro por balance, unas 12.000 categorizaciones manuales.
-
-    QUÉ ES: Jev es un modelo "System One" — no genera texto, evalúa un `state` (un texto) contra
-    preguntas tipadas (`Choice`/`Score`/`Noul`) y devuelve una opción + probabilidades +
-    confianza calibrada, todas las preguntas en paralelo, sin parsear nada. Encaja con
-    `club-data-mapping` porque categorizar una línea de rubro YA ES una pregunta de `Choice`: el
-    `state` es la línea (`rawLabel` + monto + nota del documento), el `criteria` son las mismas
-    categorías que ya están en `REVENUE_CATEGORY_LABELS`/`EXPENSE_CATEGORY_LABELS`
-    (`data/category-map.js`) — no hay que inventar taxonomía nueva.
-
-    EL PLAN: las líneas que vuelven con confianza alta se cargan directo a
-    `revenueLines`/`expenseLines`; las de confianza baja se anotan SOLAS en `Admin/dudas-por-club.md`
-    en vez de perderse o quedar mal categorizadas sin que nadie lo note — que es justo lo que le
-    pasó a Racing (ver ahí "Categorización interna inconsistente, Ejercicios 2009/2010/2012/2014":
-    5 líneas de ingresos etiquetadas con una categoría de gasto, encontrado recién en una
-    auditoría posterior).
-
-    POR QUÉ NO AHORA: a 41 clubes, la mayoría con 1 solo ejercicio, categorizar a mano (leyendo el
-    balance ya transcripto en una sesión de Claude) sigue siendo más rápido que integrar y
-    VALIDAR una API nueva — el volumen no lo justifica todavía.
-
-    ANTES DE INTEGRARLO EN SERIO (aunque ya se haya llegado a 200 clubes): correr un piloto contra
-    balances YA cargados y verificados (Boca, River) y medir si la confianza que devuelve está
-    bien calibrada en la práctica — no asumirlo de la documentación. Y esto no reemplaza el OCR:
-    Jev necesita texto como `state`, así que el paso de `pdftoppm` + Tesseract (ver CLAUDE.md,
-    "Cada PDF nuevo") sigue haciendo falta igual.
-
-39. EVALUAR REEMPLAZAR EL CÍRCULO DE INICIALES CON COLOR DE MARCA (`brandColor`, Versiones
-    178-180) por una ilustración de camiseta por club, como hace soccerassociation (mostrado por
-    Guido: para Vélez blanca con V celeste/azul, para Boca azul con franja amarilla — planas, sin
-    sponsor ni escudo). Pedido de Guido, 2026-09-22, al terminar el trabajo de color por club
-    (to-dos 23(e)/37).
-    RESEARCH YA HECHO, no repetirlo: `auditorias/2026-09-22-camiseta-vs-circulo-selector.md`. En
-    síntesis — el argumento a favor es real (27 de 39 clubes compiten por dos familias de color
-    hoy, el patrón los distinguiría donde el color solo no alcanza), pero quedan 2 cosas para
-    Guido antes de tocar código: (a) confirmar que un generador PARAMÉTRICO (nunca réplica manual
-    club por club, que ya fue el error que se corrigió una vez con los escudos) es el camino; (b)
-    la pregunta de derechos — una ilustración plana sin sponsor ni escudo probablemente pesa
-    distinto que una imagen oficial, pero el research no la puede cerrar solo. Si avanza, la
-    recomendación es un PILOTO ACOTADO sobre esos ~27 clubes de los clusters de color repetido
-    (no barrer los 41 de una), para probar legibilidad real a 24px antes de comprometerse.
-    EN PAUSA (decisión de Guido, 2026-09-22): no retomar antes de ~un mes (fines de octubre 2026).
-
-95. SOURCING ESPAÑA/FRANCIA — LO QUE QUEDÓ ABIERTO (sesión 2026-10-03, worktree
+113. SOURCING ESPAÑA/FRANCIA — LO QUE QUEDÓ ABIERTO (sesión 2026-10-03, worktree
     `sourcing-espana-francia`; detalle por club en `fuentes/España/<Club>.md`). (a) Llegar a 5
     ejercicios: faltan 1 en Elche, Rayo y Villarreal; 2 en Oviedo y Espanyol; Levante y Osasuna
     tienen 3 con cuentas (Mallorca y Sevilla ya llegaron a 5+ tras re-barrer con archive.org de vuelta). (b) Francia: el agregado DNCG ya da 20+

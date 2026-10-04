@@ -4446,13 +4446,17 @@ JPEG
 
 --- pág. 150 ---
 
-![img-71.jpeg](img-71.jpeg)
+151Relazione finanziaria annuale 30062014 - Independent Auditors' Report
+
+EY
+Building a better working world
 
 Reconta Ernst & Young S.p.A.
-Via Cianfante, 10
+Via Confienza, 10
 10121 Torino
-Tel: +39 011 5101611
-Fax: +39 011 5812564
+
+Tel: +39 011 5161611
+Fax: +39 011 5612554
 ey.com
 
 Independent auditors' report
@@ -4460,7 +4464,7 @@ pursuant to art. 14 and 16 of Legislative Decree n. 39 dated 27 January 2010
 (Translation from the original Italian text)
 
 To the Shareholders
-of Juventus Football Club S.p.A.
+of Juventus Football Cub S.p.A.
 
 1. We have audited the financial statements of Juventus Football Club S.p.A. as of 30 June 2014 and for the year then ended, comprising the statement of financial position, the income statement, the statement of comprehensive income, the statement of changes in shareholders' equity, the statement of cash flows and the related notes. The preparation of these financial statements in compliance with International Financial Reporting Standards as adopted by the European Union and with art. 9 of Legislative Decree n. 38/2005 is the responsibility of Juventus Football Club S.p.A.'s directors. Our responsibility is to express an opinion on these financial statements based on our audit.
 
@@ -4468,7 +4472,7 @@ of Juventus Football Club S.p.A.
 
 For the opinion on the financial statements of the prior year, which are presented for comparative purposes, reference should be made to our report dated 2 October 2013.
 
-3. In our opinion, the financial statements of Juventus Football Club S.p.A. at 30 June 2014 have been prepared in accordance with International Financial Reporting Standards as adopted by the European Union and with art. 9 of Legislative Decree n. 38/2005; accordingly, they present clearly and give a true and fair view of the financial position, the results of operations and the cash flows of Juventus Football Club S.p.A. for the year then ended.
+3. In our opinion, the financial statements of Juventus Football Club S.p.A. at 30 June 2014 have been prepared in accordance with International Financial Reporting Standards as adopted by the European Union and with art. 9 of Legislative Decree n. 38/2005, accordingly, they present clearly and give a true and fair view of the financial position, the results of operations and the cash flows of Juventus Football Club S.p.A. for the year then ended.
 
 4. The directors of Juventus Football Club S.p.A. are responsible for the preparation, in accordance with the applicable laws and regulations, of the Report on Operations and the Corporate Governance Annual Report published in the section "Investor Relations/Corporate Governance" of Juventus Football Club S.p.A.'s website. Our responsibility is to express an opinion on the consistency with the financial statements of the Report on Operations and of the information presented in compliance with art. 123-bis of Legislative Decree n. 58/1998, paragraph 1, letters c), d), f), l), m) and paragraph 2, letter b) in the Corporate Governance Annual Report, as required by law. For this purpose, we have performed the procedures required under Auditing Standard 001 issued by the Italian Accounting Profession (CNDCEC) and recommended by CONSOB. In our opinion, the Report on Operations and the information presented in compliance with art. 123-bis of Legislative Decree n. 58/1998, paragraph 1, letters c), d), f), l), m) and paragraph 2), letter b) in the Corporate Governance Annual Report, are consistent with the financial statements of Juventus Football Club S.p.A. at 30 June 2014.
 
@@ -4480,32 +4484,20 @@ Signed by: Stefania Boschetti, partner
 This report has been translated into the English language solely for the convenience of international readers.
 
 Reconta Ernst & Young S.p.A.
-Istituto di Statistica e di Statistica
-Capitale Str. 1, 1000 Roma
-Tel. +39 011 5101611
-Fax +39 011 5812564
-ey.com
+Sede Legale: 00198 Roma - Via Po, 32
+Capitale Sociale € 1.400.000,00 i.v.
+Iscritta alla S.O. del Registro delle Imprese presso la C.C.I.A.A. di Roma
+Codice fiscale e numero di iscrizione 00434000584
+P.IVA 00891231003
+Iscritta all'Albo Revisori Contabili al n. 70945 Pubblicato sulla G.U. Suppl. 13 - IV Serie Speciale del 17/2/1998
+Iscritta all'Albo Speciale delle società di revisione
+Consob al progressivo n. 2 delibera n. 10831 del 16/7/1997
 
-Incorporazione di Istituti di Statistica e di Statistica
-Capitale Str. 1, 1000 Roma
-Tel. +39 011 5101611
-Fax +39 011 5812564
+A member firm of Ernst & Young Global Limited
 
-Incorporazione di Istituti di Statistica e di Statistica
-Capitale Str. 1, 1000 Roma
-Tel. +39 011 5101611
-Fax +39 011 5812564
-
-Incorporazione di Istituti di Statistica e di Statistica
-Capitale Str. 1, 1000 Roma
-Tel. +39 011 5101611
-Fax +39 011 5812564
-
-RELAZIONE FINANZIARIA ANNUALE 30/06/2014 - Independent Auditors' Report
+RELAZIONE FINANZIARIA ANNUALE 30062014 - Independent Auditors' Report
 
 151
-
-● ● ● ○
 
 --- pág. 151 ---
 

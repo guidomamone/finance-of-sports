@@ -2,10 +2,11 @@
 
 **Ángulos**: sitio oficial: agotado — vistazo rápido 2026-09-26 (`club/presupuesto` sigue mostrando
 los mismos 2 documentos ya cargados, Presupuesto 2026-27 y Balance Ejercicio 121 2024-25; nada de
-Ejercicio 122 2025-26 todavía, esperable recién ~oct-2026) · Wayback CDX: **parcial — 4 documentos
-nuevos encontrados el 2026-09-26 (Ejercicios 118 y 119, ver abajo), pero 2018/2019/2021/2024 siguen
-sin aparecer en el dominio** · búsqueda web: agotado — vistazo rápido 2026-09-26 (prensa confirma
-que no hubo asamblea de balance nueva desde oct-2025) · regulador/país: no aplica — 2026-09-26
+Ejercicio 122 2025-26 todavía, esperable recién ~oct-2026) · Wayback CDX: **parcial — Ejercicios 118
+y 119 encontrados el 2026-09-26 y CARGADOS al sitio el 2026-09-28 (to-do 73, ver abajo), pero
+2018/2019/2021/2024 siguen sin aparecer en el dominio** · búsqueda web: agotado — vistazo rápido
+2026-09-26 (prensa confirma que no hubo asamblea de balance nueva desde oct-2025) · regulador/país:
+no aplica — 2026-09-26
 
 ## Chequeo 2026-09-26 (tarde) — Wayback CDX sobre el dominio completo, 4 documentos nuevos
 
@@ -19,14 +20,20 @@ no tiene ningún nombre obvio en el sitio vivo de hoy y que ningún intento ante
   2023-01-01 (`web.archive.org/web/20230101024644/...`). Período confirmado abriendo la portada del
   PDF, no solo por el nombre de archivo. Escaneado (sin capa de texto, `pdffonts` solo muestra
   Helvetica no embebida), 101 páginas. Copia local en
-  `Clubes/Argentina/Boca/eecc-30525418835-2022.pdf`. **Pendiente OCR antes de cargar** — año que
-  faltaba, ver lista de pendientes abajo.
+  `Clubes/Argentina/Boca/eecc-30525418835-2022.pdf`. **CARGADO al sitio (to-do 73, 2026-09-28,
+  Ejercicio 2022)**: transcripto con Mistral OCR, categorizado y verificado — las 12 líneas de
+  Recursos y las 18 de Gastos suman EXACTO los totales impresos pág. 32 ($14.279.912.579 /
+  $13.669.793.975 / $461.837.755 de superávit). Ver `sources['boca-balance-2021-22']` en
+  `data/clubs.js` y el comentario de cabecera de `data/boca-data.js`.
 - Memoria y Balance, **Ejercicio N° 119 (cerrado 30/06/2023), firmado** —
   `https://www.bocajuniors.com.ar/rebrand/files/balance_01_07_22_al_30_06_23_firmado.pdf`, snapshot
   del 2023-11-11. Período confirmado igual, abriendo la portada. Escaneado, sin capa de texto en
   absoluto (`pdffonts` no lista ninguna fuente), 128 páginas. Copia local en
-  `Clubes/Argentina/Boca/balance-01-07-22-al-30-06-23-firmado.pdf`. **Pendiente OCR antes de
-  cargar** — año que faltaba.
+  `Clubes/Argentina/Boca/balance-01-07-22-al-30-06-23-firmado.pdf`. **CARGADO al sitio (to-do 73,
+  2026-09-28, Ejercicio 2023)**: mismo criterio que 2022, suma EXACTO contra los totales impresos
+  pág. 61 ($26.178.273.845 / $27.795.138.995 / $1.022.382.735 de superávit, con resultado financiero
+  positivo por RECPAM que revierte un resultado antes del efecto financiero deficitario). Ver
+  `sources['boca-balance-2022-23']` en `data/clubs.js`.
 - Presupuesto Económico Financiero y de Inversiones, **Ejercicio N° 119 (jul-2022 a jun-2023)** —
   `https://www.bocajuniors.com.ar/rebrand/files/presupuesto_22_23_completo.pdf`, snapshot del
   2023-01-01. Con capa de texto real (confirmado con `pdftotext`, no hace falta OCR), 39 páginas.

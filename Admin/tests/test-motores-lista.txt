@@ -1,0 +1,21 @@
+# Lista del test de 3 motores (tools/test-motores.mjs). Generada 2026-09-29.
+# GOLD: ejercicio ya cargado al sitio y verificado a mano; el .md canónico es la mejor verdad que hay.
+# --- escaneos (sin capa de texto) ---
+Clubes/Argentina/Los Andes/balance-ejercicio-104-2019-20.pdf
+Clubes/Croacia/Osijek/financijsko-izvjesce-2025.pdf
+Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2024.pdf
+Clubes/Brasil/Volta Redonda/balanco-2024.pdf
+Clubes/Colombia/Millonarios/estados-financieros-2025.pdf
+Clubes/Colombia/Envigado/estados-financieros-2025.pdf
+# --- con capa de texto, distintos idiomas/monedas ---
+Clubes/Alemania/RB Leipzig/jahresabschluss-2023-24.pdf
+Clubes/Alemania/Werder Bremen/konzernabschluss-2024-25.pdf
+Clubes/Brasil/Ponte Preta/balanco-2023-2024.pdf
+Clubes/Brasil/Cruzeiro/informativo-financeiro-2023.pdf
+Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-119-2022-23.pdf
+Clubes/España/Athletic Club/cuentas-anuales-2024-2025.pdf
+# --- SIN GOLD: Gemini los rechazó por RECITATION. El canónico es el .md de Mistral, sin verificar. ---
+# Sirven para ver si Claude por API los transcribe sin bloqueo y si coincide con Mistral.
+Clubes/Colombia/Aguilas Doradas/estados-financieros-2022.pdf | sin-gold
+Clubes/Argentina/Ferro Carril Oeste/memoria-y-balance-ejercicio-117-2020-21.pdf | sin-gold
+Clubes/Brasil/Criciuma/balanco-2017.pdf | sin-gold

@@ -48,6 +48,16 @@ categoría nueva solo porque un club tiene un rubro con nombre distinto; primero
 conceptualmente lo mismo que ya existe (ej. "Televisión AFA" es `broadcasting`, aunque el nombre no
 diga "televisación").
 
+**Primer paso, antes de decidir a mano: `node tools/suggest-category-precedent.mjs <clubDataFile> "<rubro>" ["<rubro2>" ...] --side revenue|expense`** (to-do 98, tier 0). Busca el texto exacto (o
+parecido) contra lo YA categorizado en años anteriores del MISMO club, separado por ingreso/gasto —
+mismo rubro puede significar cosas distintas según el lado (ej. Boca: "Futbol Femenino" ingreso vs.
+"Fútbol femenino" gasto). Tres resultados posibles: `EXACTO` (mismo texto, categoría consistente
+entre años → usarla), `PARECIDO` (palabras en común, no el mismo texto → candidato a revisar, no
+aceptar sin más), `SIN_PRECEDENTE` (nada cargado → criterio de esta sección, de cero). Sin
+integrarse a ningún flujo automático: es una consulta, nunca escribe en `data/<club>-data.js`.
+`--list` vuelca todo el precedente cargado de un club. Si marca `CONFLICTO` (el mismo texto tuvo
+2 categorías distintas en años distintos), no hay nada que copiar — revisar a mano cuál es correcta.
+
 Mapeos ya usados (no son la lista completa de `category-map.js`, son los que ya salieron en la
 práctica, agregá los que falten cuando aparezcan):
 
@@ -325,9 +335,31 @@ exacto" de "esto es una estimación razonable".
 
 ## 6. Verificación antes de cargar (no es opcional)
 
+**Primer paso, siempre, antes de nada de lo de abajo: `node tools/audit.js`** (gratis, sin tokens).
+Ya chequea solo, para cualquier club: que cada `items` sume exacto contra su línea padre
+(`items-no-cierran`), que la escala en USD sea plausible (`escala-implausible`, banda absoluta) y
+que no haya un salto implausible contra los AÑOS ANTERIORES del mismo club (`salto-interanual`) —
+esto último agarra justo el bug de cargar en pesos en vez de en millones. Encontrado real: Boca
+2022/2023 (2026-09-28), un bug de suma y uno de escala, los dos detectables así en vez de a mano.
+Los puntos 1-6 de abajo son el complemento para lo que `audit.js` NO puede ver (que la
+categorización sea la CORRECTA, no solo que sume).
+
+**Antes de leer el documento entero para encontrar las tablas de Recursos/Gastos**, probar
+`node tools/extract-table-rows.mjs <archivo.md>` (to-do 98, prototipo) — saca solo las tablas del
+`.md` transcripto a JSON compacto (página, sección, filas), descartando actas/firmas/dictamen que no
+aportan ningún dato. Detecta el separador decimal del documento (coma/punto) automáticamente, NUNCA
+convierte los montos a número (quedan como string tal cual impresos — la interpretación es de esta
+sesión, no del script). **Límite conocido**: una tabla cortada por un salto de página puede perderse
+o desarmarse mal — si una tabla del JSON no tiene sentido o falta contenido, leer esa sección
+puntual del `.md` a mano, no confiar a ciegas. `--relevant` filtra a solo las tablas marcadas por
+palabra clave (no perfecto, es una ayuda de dónde mirar primero, no un filtro definitivo).
+
 1. Sumá tus propias `revenueLines`/`expenseLines` y confirmá que cierran contra el subtotal que
    imprime el DOCUMENTO fuente para esa misma categoría, no confíes en tu propia suma sin
-   cruzarla contra algo externo.
+   cruzarla contra algo externo. **La aritmética misma (no qué filas entran, eso sigue siendo
+   criterio) se puede sacar de tokens**: `node tools/sum-check.mjs <num1> <num2> ... --target
+   <total>` suma una lista de números (separador de miles "," o "." auto-detectado, negativos entre
+   paréntesis) y dice si cierra contra el total y por cuánto.
 2. Sumá `revenue + expenses + netInterest` (+ otros meta fields que correspondan) y confirmá que
    da el RESULTADO FINAL / Superávit / Déficit que imprime el balance. Este es el check más fuerte
    porque es un solo número inambiguo, no depende de cómo categorizaste cada línea individual.

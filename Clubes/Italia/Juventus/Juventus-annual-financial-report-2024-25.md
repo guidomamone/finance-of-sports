@@ -11696,87 +11696,84 @@ $^{(1)}$ The maturities of the temporary differences are estimated based on info
 
 JUVENTUS
 
-○ REPORT ON OPERATIONS
+REPORT ON OPERATIONS | CONSOLIDATED SUSTAINABILITY STATEMENT | CONSOLIDATED FINANCIAL STATEMENTS | STATUTORY FINANCIAL STATEMENTS
 
-○ CONSOLIDATED SUSTAINABILITY STATEMENT
+356 | Annual Report as at 30 June 2025
 
-● CONSOLIDATED FINANCIAL STATEMENTS
-
-○ STATUTORY FINANCIAL STATEMENTS
+357 | Juventus Football Club S.p.A.
 
 ## 50. BASIC AND DILUTED EARNINGS PER SHARE
 
-The figure is calculated by dividing the result for the year by the average number of outstanding shares in the 2024/2025 financial year (average outstanding shares weighted according to the number of days in circulation). This item can be detailed as follows:
+The figure is calculated by dividing the result for the year by the average number of outstanding shares in the 2024/2025 financial year (average outstanding shares weighted according to the number of days in circulation).
+This item can be detailed as follows:
 
-|   | For the year 2024/2025 | For the year 2023/2024  |
-| --- | --- | --- |
-|  Profit (loss) for the year (in thousands of Euro) | (58,146) | (199,229)  |
-|  Average number of outstanding shares in the year | 280,715,880 | 280,715,880  |
-|  Basic and diluted Earnings Per Share (EPS) (in Euro)^{(1)} | (0.207) | (0.710)  |
+| | For the year 2024/2025 | For the year 2023/2024 |
+|---|---|---|
+| Profit (loss) for the year (in thousands of Euro) | (58,146) | (199,229) |
+| Average number of outstanding shares in the year | 280,715,880 | 280,715,880 |
+| Basic and diluted Earnings Per Share (EPS) (in Euro) (*) | (0.207) | (0.710) |
 
-$^{(1)}$ Note that, on 22 January 2024, in execution of the resolution passed by the Shareholders' Meeting on 23 November 2023, the reverse stock split occurred of 2,557,478,770 existing Juventus ordinary shares into 252,747,877 newly issued Juventus ordinary shares, with the same characteristics as the ordinary shares issued, based on the ratio of 1 new ordinary share for every 10 existing ordinary shares.
+(*) Note that, on 22 January 2024, in execution of the resolution passed by the Shareholders' Meeting on 23 November 2023, the reverse stock split occurred of 2,527,478,770 existing Juventus ordinary shares into 252,747,877 newly issued Juventus ordinary shares, with the same characteristics as the ordinary shares issued, based on the ratio of 1 new ordinary share for every 10 existing ordinary shares.
 
-For the 2024/2025 financial year, in consideration of the loss for the year and in compliance with IAS 33, the theoretical effect deriving from the hypothetical exerci-
-
-se of all potential ordinary shares outstanding was not considered in calculating the diluted loss per share, as it would have resulted in an anti-dilutive effect.
+For the 2024/2025 financial year, in consideration of the loss for the year and in compliance with IAS 33, the theoretical effect deriving from the hypothetical exercise of all potential ordinary shares outstanding was not considered in calculating the diluted loss per share, as it would have resulted in an anti-dilutive effect.
 
 ## 51. NET FINANCIAL DEBT
 
 This item can be detailed as follows:
 
-|  amounts in thousands of Euro | At 30 June 2025 |   |   | At 30 June 2024  |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|   |  Current | Non-current | Total | Current | Non-current | Total  |
-|  Cash and cash equivalents | 36,588 | — | 36,588 | 36,424 | — | 36,424  |
-|  Current financial assets | 22,578 | — | 22,578 | — | — | —  |
-|  **Total financial assets** | **59,166** | **—** | **59,166** | **36,424** | **—** | **36,424**  |
-|  Financial liabilities |  |  |  |  |  |   |
-|  • due to Istituto per il Credito Sportivo | (1,122) | — | (1,122) | (1,093) | (1,122) | (2,215)  |
-|  • due to banks | (41,817) | (42,609) | (84,426) | (23,651) | (27,143) | (50,794)  |
-|  • due to factoring companies | (10,654) | (234,122) | (244,776) | (2,898) | (211,975) | (214,873)  |
-|  **Total financial liabilities** | **(53,593)** | **(276,731)** | **(330,324)** | **(27,642)** | **(240,240)** | **(267,882)**  |
-|  **Net financial debt - before IFRS 16** | **5,573** | **(276,731)** | **(271,158)** | **8,782** | **(240,240)** | **(231,458)**  |
-|  Lease liabilities | (2,809) | (6,243) | (9,052) | (3,138) | (8,245) | (11,383)  |
-|  **Net financial debt - after IFRS 16** | **2,764** | **(282,974)** | **(280,210)** | **5,644** | **(248,485)** | **(242,841)**  |
-|  Other non-current liabilities | — | (114,574) | (114,574) | — | (62,925) | (62,925)  |
-|  **Net financial debt according to ESMA^{(1)} recommendations** | **2,764** | **(397,548)** | **(394,784)** | **5,644** | **(311,410)** | **(305,766)**  |
+| amounts in thousands of Euro | At 30 June 2025 – Current | At 30 June 2025 – Non-current | At 30 June 2025 – Total | At 30 June 2024 – Current | At 30 June 2024 – Non-current | At 30 June 2024 – Total |
+|---|---|---|---|---|---|---|
+| Cash and cash equivalents | 36,588 | — | 36,588 | 36,424 | — | 36,424 |
+| Current financial assets | 22,578 | — | 22,578 | — | — | — |
+| **Total financial assets** | 59,166 | — | 59,166 | 36,424 | — | 36,424 |
+| Financial liabilities | | | | | | |
+| • due to Istituto per il Credito Sportivo | (1,122) | — | (1,122) | (1,093) | (1,122) | (2,215) |
+| • due to banks | (41,817) | (42,609) | (84,426) | (23,651) | (27,143) | (50,794) |
+| • due to factoring companies | (10,654) | (234,122) | (244,776) | (2,898) | (211,975) | (214,873) |
+| **Total financial liabilities** | (53,593) | (276,731) | (330,324) | (27,642) | (240,240) | (267,882) |
+| **Net financial debt - before IFRS 16** | 5,573 | (276,731) | (271,158) | 8,782 | (240,240) | (231,458) |
+| Lease liabilities | (2,809) | (6,243) | (9,052) | (3,138) | (8,245) | (11,383) |
+| **Net financial debt - after IFRS 16** | 2,764 | (282,974) | (280,210) | 5,644 | (248,485) | (242,841) |
+| *Other non-current liabilities* | — | (114,574) | (114,574) | — | (62,925) | (62,925) |
+| *Net financial debt according to ESMA(\*) recommendations* | 2,764 | (397,548) | (394,784) | 5,644 | (311,410) | (305,766) |
 
-$^{(1)}$ Financial debt according to the ESMA recommendation includes, in addition, exclusively trade and other payables due beyond 12 months. In the case of the Company, these items mainly originate from liabilities beyond 12 months related to transfer campaigns and agents' fees; these liabilities, as is standard practice in the industry, are normally settled in several annual tranches. These positions are partly balanced by receivables of the same nature, mainly from football clubs, with similar maturity profiles.
+(*) Financial debt according to the ESMA recommendation includes, in addition, exclusively trade and other payables due beyond 12 months. In the case of the Company, these items mainly originate from liabilities beyond 12 months related to transfer campaigns and agents' fees; these liabilities, as is standard practice in the industry, are normally settled in several annual tranches. These positions are partly balanced by receivables of the same nature, mainly from football clubs, with similar maturity profiles.
 
 Net financial debt at 30 June 2025 amounted to € 280,210 thousand, an increase of € 37,369 thousand compared to the previous year. This change is mainly attributable to the net effect of:
 
-- € +25,677 thousand attributable to the positive impact of cash-flow generated by operating activities during the period, which, despite showing a marked improvement compared to the previous year, is lower than the Strategic Plan's forecasts, due to lower-than-expected sports performance and sponsorship income;
-- € -91,629 thousand relating to net outflows for transfer campaigns (related to prior periods and current year);
-- € -7,184 thousand relating to investments in other tangible and intangible assets (mainly related to the purchase of hardware for stadium technological upgrading work and software for digital transformation and cybersecurity);
-- € -18,915 thousand relating to interest expenses, moderately decreasing compared to the previous year thanks to the progressive lowering of Euribor. In addition to the aforementioned factors of an ordinary nature, additional effects include:
-- € +30,000 thousand relating to payments on account of a future capital increase made by the parent company Exor;
+• € +25,677 thousand attributable to the positive impact of cash-flow generated by operating activities during the period, which, despite showing a marked improvement compared to the previous year, is lower than the Strategic Plan's forecasts, due to lower-than-expected sports performance and sponsorship income;
+
+• € -91,629 thousand relating to net outflows for transfer campaigns (related to prior periods and current year);
+
+• € -7,184 thousand relating to investments in other tangible and intangible assets (mainly related to the purchase of hardware for stadium technological upgrading work and software for digital transformation and cybersecurity);
+
+• € -18,915 thousand relating to interest expenses, moderately decreasing compared to the previous year thanks to the progressive lowering of Euribor.
+
+In addition to the aforementioned factors of an ordinary nature, additional effects include:
+
+• € +30,000 thousand relating to payments on account of a future capital increase made by the parent company Exor;
 
 • € +22,578 thousand relating to a reclassification among current financial assets of the units of the real estate fund J Village. This reclassification reflects the nature of the units, which will become due and payable by the fund's expiry date (currently set at 31 December 2025, as per the fund's regulations). At present, it is assumed that the disposal of the above-mentioned residual investments will be completed by that date. In this regard, it should be noted that during the 2024/2025 financial year, after appointing a leading international real estate brokerage firm to sell the remaining assets, the fund evaluated purchase offers for the properties in its portfolio (primarily with regard to the J Hotel, for which a potential buyer is currently conducting due diligence). The duration of the fund may also be extended by REAM SGR for a maximum of three years (the so-called grace period) if the disposal is not completed by 31 December 2025. In this case, the classification of units must be reconsidered accordingly.
 
 As at 30 June 2025, the Group has access to bank credit lines for € 629,656 thousand, of which a total of € 268,804 thousand were not utilised.
 
-For further information, please refer to the consolidated statement of cash flows and to Note 54 — Commitments and guarantees.
+For further information, please refer to the consolidated statement of cash flows and to Note 54 — *Commitments and guarantees*.
 
 ## 52. PAYMENTS INCURRED FOR SERVICES PROVIDED BY THE INDEPENDENT AUDITORS AND ITS AFFILIATED COMPANIES
 
 Agreed fees for Deloitte & Touche S.p.A. for the 2024/2025 financial year regard the following professional services:
 
-- statutory audit of the Statutory Financial Statements, Consolidated Financial Statements and half-yearly financial report, the financial position at 30 September 2024 and 31 March 2025 for COVISOC, including quarterly checks on the accounting records, as well as Consob contribution and ISTAT adjustments (€ 129 thousand);
-- audit of the statutory financial statements of the
+• statutory audit of the Statutory Financial Statements, Consolidated Financial Statements and half-yearly financial report, the financial position at 30 September 2024 and 31 March 2025 for COVISOC, including quarterly checks on the accounting records, as well as Consob contribution and ISTAT adjustments (€ 129 thousand);
 
-- subsidiary B&W Next S.r.l. (€ 7 thousand);
-- services rendered for the limited examination of the consolidated non-financial statement (€ 10 thousand);
-- services rendered for the performance of the agreed upon procedures assignment on the supplementary UEFA documentation with respect to the consolidated financial statements as at 30 June 2024 and the condensed consolidated half-yearly financial statements as at 31 December 2024 (€ 15 thousand).
+• audit of the statutory financial statements of the subsidiary B&W Nest S.r.l. (€ 7 thousand);
+
+• services rendered for the limited examination of the consolidated non-financial statement (€ 10 thousand);
+
+• services rendered for the performance of the agreed upon procedures assignment on the supplementary UEFA documentation with respect to the consolidated financial statements as at 30 June 2024 and the condensed consolidated half-yearly financial statements as at 31 December 2024 (€ 15 thousand).
 
 ## 53. INFORMATION REQUIRED BY ITALIAN LAW NO. 124 OF 4 AUGUST 2017, ART. 1, PARAGRAPH 125-BIS
 
-Pursuant to the provisions of Art. 1, paragraph 125-quinquies of Italian Law 124/2017 for the disbursements
-
-received, please refer to the indications contained in the National Register of State Aid, Transparency section,
-
-356 | Annual Report as at 30 June 2025
-
-357 | Juventus Football Club S.p.A.
+Pursuant to the provisions of Art. 1, paragraph 125-*quinquies* of Italian Law 124/2017 for the disbursements received, please refer to the indications contained in the National Register of State Aid, Transparency section,
 
 --- pág. 180 ---
 
@@ -14176,13 +14173,11 @@ cant. Unsecured trade receivables are constantly monitored. The Company sets asi
 
 JUVENTUS
 
-○ REPORT ON OPERATIONS
+REPORT ON OPERATIONS | CONSOLIDATED SUSTAINABILITY STATEMENT | CONSOLIDATED FINANCIAL STATEMENTS | STATUTORY FINANCIAL STATEMENTS
 
-○ CONSOLIDATED SUSTAINABILITY STATEMENT
+424 | Annual Report as at 30 June 2025
 
-○ CONSOLIDATED FINANCIAL STATEMENTS
-
-● STATUTORY FINANCIAL STATEMENTS
+425 | Juventus Football Club S.p.A.
 
 ## 21. CASH AND CASH EQUIVALENTS
 
@@ -14190,82 +14185,71 @@ As at 30 June 2025, cash and cash equivalents totalled € 36,004 thousand (€ 
 
 ## 22. EQUITY
 
-As at 30 June 2025, the fully subscribed and paid-up share capital of Juventus amounted to € 15,214,872.56 and is made up of 379,121,815 ordinary shares with no par value. During the 2024/2025 financial year, neither the share capital nor the number of ordinary shares outstanding have changed¹⁰.
+As at 30 June 2025, the fully subscribed and paid-up share capital of Juventus amounted to € 15,214,872.56 and is made up of 379,121,815 ordinary shares with no par value. During the 2024/2025 financial year, neither the share capital nor the number of ordinary shares outstanding have changed¹⁹.
 
 During the 2024/2025 financial year, no dividends were declared. The Company's Shareholders' Meeting of 7 November 2024 also resolved to cover the loss for the year, of € 199,173,044.52 through the utilisation of the share premium reserve.
 
-Equity as at 30 June 2025 amounted to € 24,502 thousand, down by € 25,772 thousand compared to the previous year mainly due to the loss for the 2024/2025 financial year of € 56,962 thousand, partially offset by payments for future capital increase for a total of €
-
-30,000 thousand made by the parent company Exor. In particular, on 28 March 2025, the Board of Directors, having noted Exor's availability, resolved to proceed with the request for a payment for future capital increase for a total of € 15,000 thousand, which was credited by Exor on 31 March 2025.
+Equity as at 30 June 2025 amounted to € 24,502 thousand, down by € 25,772 thousand compared to the previous year mainly due to the loss for the 2024/2025 financial year of € 56,962 thousand, partially offset by payments for future capital increase for a total of € 30,000 thousand made by the parent company Exor.
+In particular, on 28 March 2025, the Board of Directors, having noted Exor's availability, resolved to proceed with the request for a payment for future capital increase for a total of € 15,000 thousand, which was credited by Exor on 31 March 2025.
 
 On 30 June 2025, Exor, at the request of the Company, made a second payment for future capital increase for a total of € 15,000 thousand, having the same terms, conditions and purposes as the payment made on 31 March.
 
-For further details on the payments made by Exor, please refer to the "Other Information - Transactions with related parties" section of the Report on Operations.
+For further details on the payments made by Exor, please refer to the "*Other Information - Transactions with related parties*" section of the Report on Operations.
 
 The information required by Art. 2427 no. 7 bis of the Italian Civil Code on the availability and possibility of distribution of reserves is illustrated below:
 
-|  amounts in thousands of Euro | Balance at 30 June 2025 | Possibility of use | Portion available | Utilisations in the three previous years (to cover losses)  |
-| --- | --- | --- | --- | --- |
-|  Share capital | 15,215 | — | — | —  |
-|  Reserves: |  |  |  |   |
-|  - Share premium reserve | 26,800 | A, B, C¹¹ | — | 580,386  |
-|  - Shareholder reserve for future capital increase | 30,000 | A, B | 162 | —  |
-|  - Reserve for share-based payments | 448 | B | — | —  |
-|  - Financial assets fair value reserve | 889 | B | — | —  |
-|  - Retained earnings (losses carried forward)¹² | 8,112 | A, B | — | —  |
-|  Profit (loss) for the year | (56,962) | — | — | —  |
-|  **Equity** | **24,502** |  | **162** | **580,386**  |
+| amounts in thousands of Euro | Balance at 30 June 2025 | Possibility of use | Portion available | Utilisations in the three previous years (to cover losses) |
+|---|---|---|---|---|
+| Share capital | 15,215 | — | — | — |
+| Reserves: | | | | |
+| - Share premium reserve | 26,800 | A, B, C(*) | — | 580,386 |
+| - Shareholder reserve for future capital increase | 30,000 | A, B | 162 | — |
+| - Reserve for share-based payments | 448 | B | — | — |
+| - Financial assets fair value reserve | 889 | B | — | — |
+| - Retained earnings (losses carried forward)(**) | 8,112 | A, B | — | — |
+| Profit (loss) for the year | (56,962) | — | — | — |
+| **Equity** | **24,502** | | **162** | **580,386** |
 
 A for capital increase - B to cover losses - C for distribution to shareholders
+(*) C only for the distributable portion and provided that the legal reserve is at the level required by Art. 2430 of the Italian Civil Code.
+(**) The retained earnings reflect the effects of the change in the valuation method applied to the equity investment held in J Medical, passed from the equity method to the fair value criterion, as described in Note 5 — *Significant accounting standards*.
 
-¹¹ C only for the distributable portion and provided that the legal reserve is at the level required by Art. 2430 of the Italian Civil Code.
+¹⁹ Note that, on 22 January 2024, in execution of the resolution passed by the Shareholders' Meeting of 23 November 2023, the reverse stock split occurred of 2,527,478,770 existing Juventus ordinary shares into 252,747,877 newly issued Juventus ordinary shares, with the same characteristics as the ordinary shares issued, based on the ratio of 1 new ordinary share for every 10 existing ordinary shares.
 
-¹² The retained earnings reflect the effects of the change in the valuation method applied to the equity investment held in J Medical, passed from the equity method to the fair value criterion, as described in Note 5 — Significant accounting standards.
+SHARE-BASED PAYMENTS
 
-¹³ Note that, on 22 January 2024, in execution of the resolution passed by the Shareholders' Meeting of 23 November 2023, the reverse stock split occurred of 2,027,478,770 existing Juventus ordinary shares into 252,747,877 newly issued Juventus ordinary shares, with the same characteristics as the ordinary shares issued, based on the ratio of 1 new ordinary share for every 10 existing ordinary shares.
+**Performance Shares Plan 2024/2025-2028/2029**
 
-## SHARE-BASED PAYMENTS
+During the 2024/2025 financial year, the Shareholders' Meeting approved an incentive plan in favour of members of the board of directors ("**Board of Directors**"), key management personnel and other employees with strategic roles. The plan, which provides for the assignment of a maximum of 3,000,000 Performance Share Units ("**PSU**") valid for the assignment of a maximum of 3,000,000 Company shares, has a multi-year duration and is divided into three assignment cycles relating to the following vesting periods, each with a three-year duration:
 
-### Performance Shares Plan 2024/2025-2028/2029
+• First cycle: 1 July 2024 - 30 June 2027;
+• Second cycle: 1 July 2025 - 30 June 2028; and
+• Third cycle: 1 July 2026 - 30 June 2029.
 
-During the 2024/2025 financial year, the Shareholders' Meeting approved an incentive plan in favour of members of the board of directors ("Board of Directors"), key management personnel and other employees with strategic roles. The plan, which provides for the assignment of a maximum of 3,000,000 Performance Share Units ("PSU") valid for the assignment of a maximum of 3,000,000 Company shares, has a multi-year duration and is divided into three assignment cycles relating to the following vesting periods, each with a three-year duration:
-
-- First cycle: 1 July 2024 - 30 June 2027;
-- Second cycle: 1 July 2025 - 30 June 2028; and
-- Third cycle: 1 July 2026 - 30 June 2029.
-
-For the first allocation cycle relating to the 1 July 2024
-
-- 30 June 2027 vesting period, the Company allocated a target number of 1,023,456 PSUs (the "2024-2027 PSUs"), which will accrue in 2027 based on the achievement of specific targets relating to: (i) cumulative EBIT and Adjusted Cash Flow in the 2024-2027 performance period, (ii) Relative Shareholder Return ("YTSR") achieved in the performance period from 2024 to 2027, (iii) overall summary score obtained in the area of Gender Parity Certification measured at the end of the vesting period, as well as the continued service of the beneficiary at the vesting date. Each performance target will be measured and regulated regardless of the other targets and the total number of ordinary shares to be delivered at the end of the vesting period will depend on the level of achievement of the same.
+For the first allocation cycle relating to the 1 July 2024 - 30 June 2027 vesting period, the Company allocated a target number of 1,023,456 PSUs (the "**2024-2027 PSUs**"), which will accrue in 2027 based on the achievement of specific targets relating to: (*i*) cumulative EBIT and Adjusted Cash Flow in the 2024-2027 performance period, (*ii*) Relative Shareholder Return ("**rTSR**") achieved in the performance period from 2024 to 2027, (*iii*) overall summary score obtained in the area of Gender Parity Certification measured at the end of the vesting period, as well as the continued service of the beneficiary at the vesting date. Each performance target will be measured and regulated regardless of the other targets and the total number of ordinary shares to be delivered at the end of the vesting period will depend on the level of achievement of the same.
 
 The fair value of the 2024-2027 PSUs was measured at the grant date using a Monte Carlo simulation model for accounting purposes.
 
 The following table summarises the fair value for accounting purposes at the grant date and the main assumptions used in the valuation:
 
-|   | 2024-2027 PSUs  |
-| --- | --- |
-|  Unit fair value (in Euro) | 2.09 - 2.46  |
-|  Share price at grant date | 2.437  |
-|  Juventus volatility | 45.3%  |
-|  Dividend yield | —%  |
-|  Risk-free rate | 2.3%  |
+| | 2024-2027 PSUs |
+|---|---|
+| Unit fair value (in Euro) | 2.09 - 2.46 |
+| Share price at grant date | 2.437 |
+| Juventus volatility | 45.3% |
+| Dividend yield | —% |
+| Risk-free rate | 2.3% |
 
 The following table shows the changes of the 2024-2027 PSUs:
 
-|   | 2024-2027 PSUs  |
-| --- | --- |
-|  **PSUs in place at 30 June 2024** | —  |
-|  Assigned during the period | 1,023,456  |
-|  Derecognised during the period | (260,768)  |
-|  **PSUs in place at 30 June 2025** | **762,688**  |
+| | 2024-2027 PSUs |
+|---|---|
+| **PSUs in place at 30 June 2024** | **—** |
+| Assigned during the period | 1.023.456 |
+| Derecognised during the period | (260.768) |
+| **PSUs in place at 30 June 2025** | **762.688** |
 
-For the 2024/2025 financial year, the Company recognised expenses of € 449 thousand as a cost for share-based payments, with a corresponding increase in equity. As at 30 June 2025, the amount of the unreco-
-
-gnised cost relating to the 2024-2027 PSUs amounts to € 1,228 thousand, which will be recognised in the residual vesting period.
-
-424 | Annual Report as at 30 June 2025
-
-425 | Juventus Football Club S.p.A.
+For the 2024/2025 financial year, the Company recognised expenses of € 449 thousand as a cost for share-based payments, with a corresponding increase in equity. As at 30 June 2025, the amount of the unrecognised cost relating to the 2024-2027 PSUs amounts to € 1,228 thousand, which will be recognised in the residual vesting period.
 
 --- pág. 214 ---
 
@@ -16280,52 +16264,50 @@ APPENDIX - TABLE OF CHANGES IN PLAYERS' REGISTRATION RIGHTS IN THE 2024/2025 FIN
 
 JUVENTUS
 
-REPORT ON OPERATIONS
-
-CONSOLIDATED SUSTAINABILITY STATEMENT
-
-CONSOLIDATED FINANCIAL STATEMENTS
-
-STATUTORY FINANCIAL STATEMENTS
-
-|  Attracts in thousands of Euro | Contract |   |   | Provenance |   | Destination |   | Values at 1 July 2024 |   |   | Changes in values |   | Economic effects |   |   |   | Values at 30 June 2025 |   |   | Other  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Date of birth | Start date of the first contract | Expiry date of the last contract | Date of acquisition | Company | Date of disposal | Company | Historical cost | Accumulated depreciation/ amortisation | Net | Acquisitions | Disposals | Amortisation* | Write-downs* | Capital losses* | Capital gains* | Historical cost | Accumulated depreciation/ amortisation | Net* | Agents' fees | Other acquisition costs | Sell-on fee value  |
-|  Players |  |  |  |  |  |  |  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | (1+4) | (2+6) | (10+11+12) |  |  |   |
-|  **Temporary transferred players** |   |   |   |   |   |   |   | **158,681** | **108,947** | **49,734** | **1,339** | **71,539** | **18,149** | **128** | **-** | **57,034** | **112,259** | **93,968** | **18,291** | **13,557** | **-** | **198**  |
-|  Barbieri Tommaso | 29/08/2002 | 11/09/2020 | 30/06/2027 | 11/09/2020 | Novara Calcio | 6/08/2024 | US Cremonese | 2,413 | 1,220 | 1,193 | - | 1,902 | - | - | - | 709 | - | - | - | 147 | - | -  |
-|  Barranches Enzo Alan Tomas | 22/05/2001 | 30/01/2020 | 30/06/2026 | 30/01/2020 | Olympique des Alpes | 1/07/2024 | Aston Villa FC | 5,539 | 4,019 | 1,520 | - | 7,286 | - | - | - | 5,766 | - | - | - | 169 | - | -  |
-|  Bellino Filippo | 6/06/2007 | 21/07/2021 | 30/06/2027 | 21/07/2021 | GDS registration |  |  | - | - | - | 15 | - | 3 | - | - | - | 15 | 3 | 12 | - | - | -  |
-|  Biggi Silvano | 9/01/2006 | 29/07/2024 | 30/06/2026 | 29/07/2024 | GDS registration |  |  | 25 | 5 | 20 | - | - | 10 | - | - | - | 25 | 15 | 10 | - | - | -  |
-|  Cern Leonardo | 4/03/2003 | 1/07/2019 | 30/06/2027 | 1/07/2022 | GDS registration |  |  | 1,564 | 1,316 | 348 | 135 | - | 128 | - | - | - | 1,699 | 1,444 | 255 | 396 | - | -  |
-|  Compagnon Mattia | 5/11/2002 | 16/06/2021 | 30/06/2027 | 16/06/2021 | Udinese Calcio |  |  | 4,081 | 2,540 | 1,541 | - | - | 514 | - | - | - | 4,081 | 3,054 | 1,027 | 87 | - | -  |
-|  De Soglio Mattia | 20/10/1992 | 20/07/2017 | 30/06/2025 | 20/07/2017 | AC Milan |  |  | 12,241 | 11,601 | 640 | - | - | 640 | - | - | - | 12,241 | 12,241 | - | 600 | - | -  |
-|  Di Biase Gianmarco | 26/11/2005 | 30/01/2023 | 30/06/2027 | 1/07/2023 | U.S. PISTOBESE 1921 SSDAHL IN LIQUIDAZIONE |  |  | 250 | 92 | 158 | 7 | - | 64 | - | - | - | 257 | 156 | 101 | - | - | -  |
-|  Embalo' Dallo' Tiago Emanuel | 9/04/2000 | 22/01/2024 | 30/06/2026 | 22/01/2024 | Loco Lille |  |  | 5,155 | 933 | 4,222 | - | - | 2,111 | - | - | - | 5,155 | 3,044 | 2,111 | 1,599 | - | -  |
-|  Firman Andriy | 1/03/2005 | 31/07/2019 | 30/06/2026 | 1/09/2023 | GDS registration |  |  | 110 | 82 | 28 | 175 | - | 101 | - | - | - | 285 | 183 | 102 | 10 | - | -  |
-|  Flores Andrei Gabriele | 30/05/2005 | 1/01/2019 | 30/06/2026 | 1/01/2019 | GDS registration |  |  | 35 | 20 | 15 | - | - | 10 | - | - | - | 35 | 30 | 5 | 10 | - | -  |
-|  Fuscaldo Matteo | 25/02/2005 | 5/08/2019 | 30/06/2026 | 30/08/2024 | GDS registration |  |  | 28 | 25 | 3 | 90 | - | 47 | - | - | - | 118 | 72 | 46 | - | - | -  |
-|  Gonzalez Facundo | 6/06/2003 | 7/08/2023 | 30/06/2026 | 7/08/2023 | registration from foreign federation |  |  | 1,900 | 590 | 1,310 | 355 | - | 832 | - | - | - | 2,255 | 1,422 | 833 | 1,650 | - | -  |
-|  Gon Stefano | 9/03/1996 | 1/09/2020 | 30/06/2025 | 28/06/2020 | AC Pisa 1909 SSAHL |  |  | 3,239 | 2,835 | 404 | - | - | 404 | - | - | - | 3,239 | 3,239 | - | - | - | -  |
-|  Huijsen Dean Donny | 14/04/2005 | 24/08/2021 | 30/06/2028 | 24/08/2021 | from foreign federation | 27/07/2024 | ACF Baume-mouth | 471 | 191 | 280 | - | 14,059 | - | - | - | 13,779 | - | - | - | 400 | - | -  |
-|  Ledanne Nicolò | 23/03/2004 | 1/07/2017 | 30/06/2027 | 1/07/2017 | GDS registration |  |  | - | - | - | 18 | - | 6 | 12 | - | - | 18 | 18 | - | 5 | - | -  |
-|  Leone Francesco | 30/05/2007 | 19/07/2023 | 30/06/2026 | 20/02/2024 | GDS registration |  |  | - | - | - | 21 | - | 11 | - | - | - | 21 | 11 | 10 | - | - | -  |
-|  Miratti Fabio | 3/08/2003 | 14/02/2020 | 30/06/2028 | 3/08/2017 | GDS registration |  |  | 210 | 71 | 139 | 500 | - | 159 | - | - | - | 710 | 230 | 480 | 210 | - | -  |
-|  Muharemovic Tarik | 28/02/2003 | 10/08/2021 | 30/06/2026 | 3/08/2017 | registration from foreign federation | 27/05/2025 | Sassuolo | 386 | 198 | 188 | - | 1,902 | 70 | - | - | 1,784 | - | - | - | 221 | - | -  |
-|  Norge Boende Joseph | 15/05/2005 | 26/08/2021 | 30/06/2026 | 26/08/2021 | Royal Sporting Club Anderlec |  |  | 540 | 307 | 233 | - | - | 117 | 116 | - | - | 540 | 540 | - | 290 | - | -  |
-|  Pecorino Emanuele | 5/07/2001 | 1/02/2021 | 30/06/2027 | 1/02/2021 | Calcio Catania |  |  | 708 | 468 | 240 | - | - | 80 | - | - | - | 708 | 548 | 160 | 20 | - | -  |
-|  Pinto Ramos Kaio Jorge | 24/01/2002 | 16/08/2021 | 30/06/2026 | 16/08/2021 | Santos FC | 1/07/2024 | Cruzeiro Esporte Clube | 7,276 | 4,163 | 3,113 | - | 6,460 | - | - | - | 3,347 | - | - | - | 3,821 | - | 198  |
-|  Ramos De Oliveira Melo Arthur Henrique | 12/08/1996 | 29/06/2020 | 30/06/2027 | 29/06/2020 | FC Barcellona |  |  | 80,620 | 58,842 | 21,778 | - | - | 8,711 | - | - | - | 80,620 | 67,553 | 13,067 | 494 | - | -  |
-|  Rovella Nicolò | 14/12/2001 | 28/01/2021 | 30/06/2026 | 28/01/2021 | Genoa Cricket and FC | 27/05/2025 | SS Lazio | 28,556 | 17,638 | 10,918 | - | 16,144 | 4,094 | - | - | 9,320 | - | - | - | 1,154 | - | -  |
-|  Sersanti Alessandro | 16/02/2002 | 30/07/2021 | 30/06/2027 | 30/07/2021 | GDS registration |  |  | 214 | 128 | 86 | - | - | 29 | - | - | - | 214 | 157 | 57 | 174 | - | -  |
-|  Soulii Malvano Matias | 15/04/2003 | 13/01/2020 | 30/06/2026 | 10/10/2019 | GDS registration | 30/07/2024 | AS Roma | 3,120 | 1,663 | 1,457 | - | 23,786 | - | - | - | 22,329 | - | - | - | 2,100 | - | -  |
-|  Trocho Luca | 9/06/2008 | 23/07/2024 | 30/06/2027 | 23/07/2024 | registration from foreign federation |  |  | - | - | - | 23 | - | 8 | - | - | - | 23 | 8 | 15 | - | - | -  |
-|  **Other changes** |  |  |  |  |  |  |  | **210,664** | **183,058** | **27,606** | **7,119** | **18,571** | **7,952** | **3,523** | **195** | **2,496** | **13,887** | **4,905** | **6,982** | **14,275** | **-** | **1,210**  |
-|  **TOTAL** |  |  |  |  |  |  |  | **736,702** | **462,137** | **274,565** | **215,961** | **131,759** | **116,781** | **8,151** | **195** | **89,869** | **658,877** | **335,366** | **323,511** | **73,107** | **-** | **1,508**  |
+REPORT ON OPERATIONS | CONSOLIDATED SUSTAINABILITY STATEMENT | CONSOLIDATED FINANCIAL STATEMENTS | STATUTORY FINANCIAL STATEMENTS
 
 478 | Annual Report as at 30 June 2025
 
 479 | Juventus Football Club S.p.A.
+
+amounts in thousands of Euro
+
+Grupos de columnas: Contract (Date of birth, Start date of the first contract, Expiry date of the last contract) | Provenance (Date of acquisition, Company) | Destination (Date of disposal, Company) | Values at 1 July 2024 (Historical cost, Accumulated depreciation/amortisation, Net) | Changes in values (Acquisitions, Disposals) | Economic effects (Amortisation (*), Writedowns (*), Capital losses (*), Capital gains (*)) | Values at 30 June 2025 (Historical cost, Accumulated depreciation/amortisation, Net (*)) | Other (Agents' fees, Other acquisition costs, Sell-on fee value)
+
+Fila de numeración/fórmulas del encabezado: columnas 1, 2, 3, 4, 5, 6, 7, 8, 9; Historical cost 30 June 2025 = (1+4) → 10; Accumulated depreciation/amortisation 30 June 2025 = (2+6) → 11; Net 30 June 2025 = (10-11-7) → 12.
+
+| Players | Date of birth | Start date of the first contract | Expiry date of the last contract | Date of acquisition | Provenance Company | Date of disposal | Destination Company | Historical cost (1 July 2024) [1] | Accumulated depreciation/amortisation (1 July 2024) [2] | Net (1 July 2024) [3] | Acquisitions [4] | Disposals [5] | Amortisation (*) [6] | Writedowns (*) [7] | Capital losses (*) [8] | Capital gains (*) [9] | Historical cost (30 June 2025) (1+4) [10] | Accumulated depreciation/amortisation (30 June 2025) (2+6) [11] | Net (*) (30 June 2025) (10-11-7) [12] | Agents' fees | Other acquisition costs | Sell-on fee value |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Temporary transferred players** | | | | | | | | 158,681 | 108,947 | 49,734 | 1,339 | 71,539 | 18,149 | 128 | — | 57,034 | 112,259 | 93,968 | 18,291 | 13,557 | — | 198 |
+| Barbieri Tommaso | 29/08/2002 | 11/09/2020 | 30/06/2027 | 11/09/2020 | Novara Calcio | 6/08/2024 | US Cremonese | 2,413 | 1,220 | 1,193 | — | 1,902 | — | — | — | 709 | — | — | — | 147 | — | — |
+| Barrenechea Enzo Alan Tomas | 22/05/2001 | 30/01/2020 | 30/06/2026 | 30/01/2020 | Olympique des Alpes | 1/07/2024 | Aston Villa FC | 5,539 | 4,019 | 1,520 | — | 7,286 | — | — | — | 5,766 | — | — | — | 169 | — | — |
+| Bellino Filippo | 6/06/2007 | 21/07/2021 | 30/06/2027 | 21/07/2021 | GDS registration | | | — | — | — | 15 | — | 3 | — | — | — | 15 | 3 | 12 | — | — | — |
+| Biggi Silvano | 9/01/2006 | 29/07/2024 | 30/06/2026 | 29/07/2024 | GDS registration | | | 25 | 5 | 20 | — | — | 10 | — | — | — | 25 | 15 | 10 | — | — | — |
+| Cerri Leonardo | 4/03/2003 | 1/07/2019 | 30/06/2027 | 1/07/2022 | GDS registration | | | 1,564 | 1,316 | 248 | 135 | — | 128 | — | — | — | 1,699 | 1,444 | 255 | 396 | — | — |
+| Compagnon Mattia | 5/11/2002 | 16/06/2021 | 30/06/2027 | 16/06/2021 | Udinese Calcio | | | 4,081 | 2,540 | 1,541 | — | — | 514 | — | — | — | 4,081 | 3,054 | 1,027 | 87 | — | — |
+| De Sciglio Mattia | 20/10/1992 | 20/07/2017 | 30/06/2025 | 20/07/2017 | AC Milan | | | 12,241 | 11,601 | 640 | — | — | 640 | — | — | — | 12,241 | 12,241 | — | 600 | — | — |
+| Di Biase Gianmarco | 26/11/2005 | 30/01/2023 | 30/06/2027 | 1/07/2023 | U.S. PISTOIESE 1921 SSDARL IN LIQUIDAZIONE | | | 250 | 92 | 158 | 7 | — | 64 | — | — | — | 257 | 156 | 101 | — | — | — |
+| Embalo' Dialo' Tiago Emanuel | 9/04/2000 | 22/01/2024 | 30/06/2026 | 22/01/2024 | Losc Lille | | | 5,155 | 933 | 4,222 | — | — | 2,111 | — | — | — | 5,155 | 3,044 | 2,111 | 1,599 | — | — |
+| Firman Andriy | 1/03/2005 | 31/07/2019 | 30/06/2026 | 1/09/2023 | GDS registration | | | 110 | 82 | 28 | 175 | — | 101 | — | — | — | 285 | 183 | 102 | 10 | — | — |
+| Florea Andrei Gabriele | 30/05/2005 | 1/01/2019 | 30/06/2026 | 1/01/2019 | GDS registration | | | 35 | 20 | 15 | — | — | 10 | — | — | — | 35 | 30 | 5 | 10 | — | — |
+| Fuscaldo Matteo | 25/02/2005 | 5/08/2019 | 30/06/2026 | 30/08/2024 | GDS registration | | | 28 | 25 | 3 | 90 | — | 47 | — | — | — | 118 | 72 | 46 | — | — | — |
+| Gonzalez Facundo | 6/06/2003 | 7/08/2023 | 30/06/2026 | 7/08/2023 | registration from foreign federation | | | 1,900 | 590 | 1,310 | 355 | — | 832 | — | — | — | 2,255 | 1,422 | 833 | 1,650 | — | — |
+| Gori Stefano | 9/03/1996 | 1/09/2020 | 30/06/2025 | 28/06/2020 | AC Pisa 1909 SSARL | | | 3,239 | 2,835 | 404 | — | — | 404 | — | — | — | 3,239 | 3,239 | — | — | — | — |
+| Huijsen Dean Donny | 14/04/2005 | 24/08/2021 | 30/06/2028 | 24/08/2021 | from foreign federation | 27/07/2024 | ACF Bournemouth | 471 | 191 | 280 | — | 14,059 | — | — | — | 13,779 | — | — | — | 400 | — | — |
+| Ledonne Nicolò | 23/03/2004 | 1/07/2017 | 30/06/2027 | 1/07/2017 | GDS registration | | | — | — | — | 18 | — | 6 | 12 | — | — | 18 | 18 | — | 5 | — | — |
+| Leone Francesco | 30/05/2007 | 19/07/2023 | 30/06/2026 | 20/02/2024 | GDS registration | | | — | — | — | 21 | — | 11 | — | — | — | 21 | 11 | 10 | — | — | — |
+| Miretti Fabio | 3/08/2003 | 14/02/2020 | 30/06/2028 | 3/08/2017 | GDS registration | | | 210 | 71 | 139 | 500 | — | 159 | — | — | — | 710 | 230 | 480 | 210 | — | — |
+| Muharemovic Tarik | 28/02/2003 | 10/08/2021 | 30/06/2026 | 3/08/2017 | registration from foreign federation | 27/05/2025 | Sassuolo | 386 | 198 | 188 | — | 1,902 | 70 | — | — | 1,784 | — | — | — | 221 | — | — |
+| Nonge Boende Joseph | 15/05/2005 | 26/08/2021 | 30/06/2026 | 26/08/2021 | Royal Sporting Club Anderlec | | | 540 | 307 | 233 | — | — | 117 | 116 | — | — | 540 | 540 | — | 290 | — | — |
+| Pecorino Emanuele | 5/07/2001 | 1/02/2021 | 30/06/2027 | 1/02/2021 | Calcio Catania | | | 708 | 468 | 240 | — | — | 80 | — | — | — | 708 | 548 | 160 | 20 | — | — |
+| Pinto Ramos Kaio Jorge | 24/01/2002 | 16/08/2021 | 30/06/2026 | 16/08/2021 | Santos FC | 1/07/2024 | Cruzeiro Esporte Clube | 7,276 | 4,163 | 3,113 | — | 6,460 | — | — | — | 3,347 | — | — | — | 3,821 | — | 198 |
+| Ramos De Oliveira Melo Arthur Henrique | 12/08/1996 | 29/06/2020 | 30/06/2027 | 29/06/2020 | FC Barcellona | | | 80,620 | 58,842 | 21,778 | — | — | 8,711 | — | — | — | 80,620 | 67,553 | 13,067 | 494 | — | — |
+| Rovella Nicolò | 14/12/2001 | 28/01/2021 | 30/06/2026 | 28/01/2021 | Genoa Cricket and FC | 27/05/2025 | SS Lazio | 28,556 | 17,638 | 10,918 | — | 16,144 | 4,094 | — | — | 9,320 | — | — | — | 1,154 | — | — |
+| Sersanti Alessandro | 16/02/2002 | 30/07/2021 | 30/06/2027 | 30/07/2021 | GDS registration | | | 214 | 128 | 86 | — | — | 29 | — | — | — | 214 | 157 | 57 | 174 | — | — |
+| Soulè Malvano Matias | 15/04/2003 | 13/01/2020 | 30/06/2026 | 10/10/2019 | GDS registration | 30/07/2024 | AS Roma | 3,120 | 1,663 | 1,457 | — | 23,786 | — | — | — | 22,329 | — | — | — | 2,100 | — | — |
+| Trocino Luca | 9/06/2008 | 23/07/2024 | 30/06/2027 | 23/07/2024 | registration from foreign federation | | | — | — | — | 23 | — | 8 | — | — | — | 23 | 8 | 15 | — | — | — |
+| **Other changes** | | | | | | | | 210,664 | 183,058 | 27,606 | 7,119 | 18,571 | 7,952 | 3,523 | 195 | 2,496 | 13,887 | 6,905 | 6,982 | 14,275 | — | 1,310 |
+| **TOTAL** | | | | | | | | 736,702 | 462,137 | 274,565 | 215,961 | 131,759 | 116,781 | 8,151 | 195 | 89,869 | 658,877 | 335,366 | 323,511 | 73,107 | — | 1,508 |
 
 --- pág. 241 ---
 

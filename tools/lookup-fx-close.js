@@ -41,6 +41,21 @@ const CURRENCIES = {
   ARS: { file: 'ars-usd.json', fuente: 'Dólar mayorista BCRA' },
   BRL: { file: 'brl-usd.json', fuente: 'PTAX de cierre (venda) del Banco Central do Brasil' },
   COP: { file: 'cop-usd.json', fuente: 'TRM oficial (Banco de la República / Superfinanciera de Colombia)' },
+  // Agregadas el 2026-09-30 (ver fetch-fx-reference.mjs para qué tasa es cada una).
+  NOK: { file: 'nok-usd.json', fuente: 'Tipo medio de referencia de Norges Bank' },
+  CZK: { file: 'czk-usd.json', fuente: 'Fixing del Česká národní banka' },
+  CHF: { file: 'chf-usd.json', fuente: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' },
+  TRY: { file: 'try-usd.json', fuente: 'Döviz alış del TCMB' },
+  RUB: { file: 'rub-usd.json', fuente: 'Tipo oficial del Banco de Rusia' },
+  UAH: { file: 'uah-usd.json', fuente: 'Tipo oficial del Banco Nacional de Ucrania' },
+  // diaCierre 'siguiente' (Versión 339, diseño aprobado por Guido): el dólar observado de un día se publica al día hábil siguiente, así que la
+  // cotización de un cierre es la del PRIMER día con dato POSTERIOR a la fecha. Verificado contra los 12 cierres que declaran UC (2016-2025) y
+  // Palestino (2018, 2019): 11 exactos y uno a 0,02. Las demás monedas toman el día del cierre o el hábil anterior (por defecto).
+  CLP: { file: 'clp-usd.json', fuente: 'Dólar observado (Banco Central de Chile, publicado por el SII)', diaCierre: 'siguiente' },
+  KRW: { file: 'krw-usd.json', fuente: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' },
+  EUR: { file: 'eur-usd.json', fuente: 'Tipo de referencia del Banco Central Europeo' },
+  DKK: { file: 'dkk-usd.json', fuente: 'Tipo oficial de Danmarks Nationalbank' },
+  GBP: { file: 'gbp-usd.json', fuente: 'Tipo spot del Bank of England' },
 };
 
 function logMiss(reason, currency, date) {
@@ -69,7 +84,13 @@ function loadSeries(currency) {
 
 // Busca la fecha exacta, o la más cercana ANTERIOR (nunca posterior -- un
 // "cierre" no puede resolverse con una cotización de después de esa fecha).
-function findClose(series, dateStr) {
+function findClose(series, dateStr, diaCierre = 'mismo-o-anterior') {
+  if (diaCierre === 'siguiente') {
+    // primer día con dato estrictamente posterior al cierre (ver CLP en CURRENCIES)
+    const d = new Date(dateStr + 'T00:00:00Z');
+    for (let i = 0; i < 10; i++) { d.setUTCDate(d.getUTCDate() + 1); const c = d.toISOString().slice(0, 10); if (c in series) return { date: c, fx: series[c], exact: false }; }
+    return null;
+  }
   if (dateStr in series) return { date: dateStr, fx: series[dateStr], exact: true };
   let d = new Date(dateStr + 'T00:00:00Z');
   for (let i = 0; i < 10; i++) {
@@ -122,7 +143,7 @@ function main() {
     console.error(`(quedó anotado en tools/fx-reference/misses.jsonl -- avisale a Guido para que lo prepopule)`);
     process.exit(1);
   }
-  const found = findClose(data.series, date);
+  const found = findClose(data.series, date, CURRENCIES[currency]?.diaCierre);
   if (!found) {
     const reason = 'sin cotización ni en los 10 días hábiles anteriores';
     console.error(`No se encontró cotización para ${date} ni en los 10 días hábiles anteriores -- revisar a mano.`);

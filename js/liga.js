@@ -49,7 +49,23 @@ window.LIGA_VIEW = (function(){
 
   // El (liga, ejercicio) que se está mirando. `null` es el estado frío: la
   // pestaña se puede abrir desde el nav sin haber elegido nada.
-  var st = { league:null, year:null };
+  // `simulados` (to-do 83): uno o más clubes insertados a mano en ESTE ranking
+  // para ver dónde quedarían por plata — nunca se guardan en `window.RANKINGS`
+  // (esa es la verdad real, compartida y cacheada), viven solo acá, se pierden
+  // al cambiar de liga o volver, y no cuentan para ningún total/cobertura de `r`.
+  var st = { league:null, year:null, simulados:[] };
+  // LOS CLUBES EN DANZA MIENTRAS SE ELIGE LA LIGA DESTINO (to-do 83): entre
+  // apretar "¿Cómo le iría en otra liga?" en Finanzas (siempre 1 club) o "Volver
+  // a Ligas" con una simulación activa (los que hubiera, para poder probarlos en
+  // otra liga sin perderlos) y elegir una liga en la grilla de `estadoFrio()`.
+  // Array de `{clubId, clubYear}`, SIEMPRE — no es parte de `st` porque todavía
+  // no hay ninguna liga elegida. `[]` = no está en modo "elegir destino".
+  var pendingSim = [];
+  // EL TEXTO DEL BUSCADOR de "sumar un club" (más abajo, `buscadorAgregarClub()`).
+  // Vive afuera de `st` porque no es parte del ranking, es UI efímera de esta
+  // pantalla — se resetea al navegar a otra liga o volver atrás.
+  var buscadorQ = '';
+  function norm(s){ return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
   // LAS INSTANCIAS DE Chart.js, EN DOS REGISTROS SEPARADOS, y la separación importa:
   // este módulo dibuja DOS pantallas que conviven (la pestaña Ligas y la vidriera de
   // Inicio), y repintar una no puede matar los gráficos de la otra — el visitante
@@ -114,6 +130,16 @@ window.LIGA_VIEW = (function(){
   // suma cuatro veces con cuatro variables de nombre distinto.
   function totalDe(r){
     return r.clubs.reduce(function(s, f){ return s + f.revenue; }, 0);
+  }
+  // FILAS PARA DIBUJAR, reales + la simulada si hay una (to-do 83). Ordenado
+  // descendente igual que `r.clubs` (que ya viene así de `data/rankings/`), así
+  // que insertar y re-ordenar por `revenue` alcanza. SIEMPRE una función nueva,
+  // nunca mutar `r.clubs`: `r` es `window.RANKINGS[liga][año]`, compartido y
+  // cacheado — insertar ahí de verdad ensuciaría el ranking real para cualquier
+  // otra pantalla que lo lea después (la vidriera de Inicio, por ejemplo).
+  function filasConSimulado(r, filasSim){
+    if(!filasSim || !filasSim.length) return r.clubs;
+    return r.clubs.concat(filasSim).sort(function(a, b){ return b.revenue - a.revenue; });
   }
   function fmtM(v){
     var abs = Math.abs(v);
@@ -181,7 +207,179 @@ window.LIGA_VIEW = (function(){
     return loadRanking(leagueId).then(function(){
       st.league = leagueId;
       st.year = (year != null && rankingDe(leagueId, year)) ? Number(year) : anioPorDefecto(leagueId);
+      st.simulados = [];
+      buscadorQ = '';
       render();
+    });
+  }
+
+  // --------------------------------------------------------------------------
+  // TO-DO 83: "¿CÓMO LE IRÍA A ESTE CLUB EN OTRA LIGA?" — insertar un club YA
+  // CARGADO en el ranking de una liga que no es la suya, por plata nomás (no es
+  // una predicción deportiva: no hay tabla de puntos ni fixture, es "así se
+  // ubicaría si esto fuera solo ingresos").
+  //
+  // EL MOTOR ES EL MISMO QUE `tools/generate-rankings.js` (ver su cabecera):
+  // `computeYearGeneric` + `toDisplayValue` + `simplifiedReportForClub`, de
+  // `js/finanzas-calc.js`. Ahí corre en Node al generar el archivo; acá corre
+  // EN VIVO en el navegador, porque el club en cuestión ya está cargado (viene
+  // de su propia ficha de Finanzas, `data/<club>-data.js` ya en memoria) — no
+  // hace falta bajar nada nuevo ni reimplementar la cascada (regla de
+  // CLAUDE.md: ninguna verificación de plata se reimplementa por afuera del
+  // motor real).
+  function filaSimulada(clubId, year){
+    if(typeof computeYearGeneric !== 'function' || typeof toDisplayValue !== 'function'
+       || typeof yearMetaFor !== 'function') return null;
+    var c = computeYearGeneric(clubId, year);
+    var meta = yearMetaFor(clubId, year);
+    if(!c || !meta) return null;
+    var revenue = toDisplayValue(c.revenue, meta, 'USD');
+    // Mismo criterio que `tools/generate-rankings.js`: un club sin ingreso
+    // calculable (o en 0) no entra con una barra en cero, directamente no hay
+    // fila que insertar.
+    if(!revenue) return null;
+    var rep = (typeof simplifiedReportForClub === 'function' ? simplifiedReportForClub(clubId, year) : null) || {};
+    var mix = (rep.ingresos || [])
+      .map(function(row){ return [row.label, toDisplayValue(row.value, meta, 'USD')]; })
+      .filter(function(row){ return row[1] !== 0; });
+    // OJO (mismo gotcha que ya documenta tools/generate-rankings.js): `reportType`
+    // y `sourceId` salen de `c.meta` (el `fiscalYearMeta[year]` crudo que trae
+    // `computeYearGeneric()`), NO de `yearMetaFor()` — ese helper devuelve SOLO
+    // moneda y tipo de cambio, leerle `reportType` da `undefined` en silencio.
+    return { id:clubId, revenue:revenue, reportType:c.meta.reportType || null,
+             sourceId:c.meta.sourceId || null, mix:mix, year:year, simulado:true };
+  }
+
+  // Arranca el flujo desde Finanzas: guarda qué club hay que insertar y deja la
+  // pestaña en el estado frío (la grilla de ligas), en "modo elegir destino" —
+  // `estadoFrio()` y `botonLiga()` leen `pendingSim` para saber que están ahí.
+  function iniciarSimulacion(clubId, year){
+    pendingSim = [{ clubId:clubId, clubYear:year }];
+    st.league = null; st.year = null; st.simulados = [];
+    render();
+  }
+
+  // LOS EJERCICIOS CARGADOS de un club (el que ya está en `CLUB_GENERIC_DATA`,
+  // que es lo único que se puede simular sin volver a pedir nada), descendente.
+  // `agregarSimulado()` sin año explícito usa el primero (el más nuevo) como
+  // default; el dropdown de cada línea del panel (pedido de Guido, "no puedo
+  // cambiar el año del club que agrego") ofrece el resto.
+  function aniosDisponiblesDe(clubId){
+    var gd = (window.CLUB_GENERIC_DATA || {})[clubId];
+    var years = gd ? Object.keys(gd.revenueLinesByYear || {}).map(Number) : [];
+    return years.sort(function(a, b){ return b - a; });
+  }
+  // "2024/2025", salvo ejercicio calendario — mismo criterio que `seasonLabel()`
+  // en js/cuenta.js, duplicado a propósito (2 líneas, no vale la pena exponer
+  // la función privada de otro archivo por esto). Se usa en el dropdown de año
+  // de cada línea simulada: no necesita el prefijo "Balance"/"Presupuesto" de
+  // `etiquetaEjercicio()`, un dropdown compacto solo necesita distinguir años.
+  function temporadaLabel(clubId, year){
+    return clubDe(clubId).fiscalYearStart === '01-01' ? String(year) : (year - 1) + '/' + year;
+  }
+
+  // Como `show()`, pero además calcula la(s) fila(s) simulada(s) y las deja en
+  // `st.simulados` para que `render()` las pase a `grafico()`/`tabla()`/
+  // `desglose()`. `clubes` es `[{club, clubYear}, ...]` — un club que no tiene
+  // ingreso calculable para ese año (`filaSimulada` da `null`) simplemente no
+  // entra, no rompe a los demás.
+  function showConSimulados(leagueId, year, clubes){
+    return loadRanking(leagueId).then(function(){
+      st.league = leagueId;
+      st.year = (year != null && rankingDe(leagueId, year)) ? Number(year) : anioPorDefecto(leagueId);
+      pendingSim = [];
+      buscadorQ = '';
+      st.simulados = (clubes || []).map(function(c){
+        var fila = filaSimulada(c.clubId, c.clubYear);
+        return fila ? { clubId:c.clubId, clubYear:c.clubYear, fila:fila } : null;
+      }).filter(Boolean);
+      render();
+      // Avisa a index.html (que sabe de Mi Cuenta, este archivo no) para que
+      // guarde la búsqueda, igual que `refreshFinanzas()` hace con
+      // CUENTA.notifyStateChange — mismo principio de siempre: este módulo no
+      // sabe de Supabase, solo avisa que algo pasó.
+      if(st.simulados.length) api.onSimulado(leagueId, st.year, st.simulados.map(function(s){
+        return { club:s.clubId, clubYear:s.clubYear };
+      }));
+    });
+  }
+
+  // Atajo de 1 solo club (Finanzas → "¿Cómo le iría en otra liga?", y el
+  // dropdown de liga que aparece mientras se simula — los dos parten siempre
+  // de exactamente un club).
+  function showConSimulado(leagueId, year, clubId, clubYear){
+    return showConSimulados(leagueId, year, [{ clubId:clubId, clubYear:clubYear }]);
+  }
+
+  // TO-DO 83, SEGUNDA PARTE (pedido de Guido, 2026-09-28): "al ver una liga,
+  // quiero una opción para sumar uno o más equipos". A diferencia del camino de
+  // Finanzas, el club que se suma acá NO está cargado todavía — hay que bajar
+  // su `data/<club>-data.js` primero (`loadClubData()`, de index.html, mismo
+  // criterio de reuso que `computeYearGeneric` y compañía) antes de poder
+  // calcular su ingreso.
+  function agregarSimulado(clubId, year){
+    if(st.simulados.some(function(s){ return s.clubId === clubId; })) return Promise.resolve();
+    var cargar = (typeof loadClubData === 'function') ? loadClubData(clubId) : Promise.resolve();
+    return Promise.resolve(cargar).then(function(){
+      var yy = year != null ? year : aniosDisponiblesDe(clubId)[0];
+      var fila = (yy != null) ? filaSimulada(clubId, yy) : null;
+      if(!fila){ render(); return; }
+      st.simulados.push({ clubId:clubId, clubYear:yy, fila:fila });
+      render();
+      api.onSimulado(st.league, st.year, st.simulados.map(function(s){
+        return { club:s.clubId, clubYear:s.clubYear };
+      }));
+    }).catch(function(err){
+      console.error('[liga] no se pudo sumar el club a la simulación:', clubId, err);
+      render();
+    });
+  }
+  function quitarUnSimulado(clubId){
+    st.simulados = st.simulados.filter(function(s){ return s.clubId !== clubId; });
+    render();
+  }
+  // Cambiar el ejercicio de UN club ya simulado (pedido de Guido: "puedo elegir
+  // un club pero no puedo cambiar el año"). El club ya está cargado (se agregó
+  // antes), así que recalcular es sincrónico, sin volver a pedir nada.
+  function cambiarAnioSimulado(clubId, newYear){
+    var i = -1;
+    for(var k = 0; k < st.simulados.length; k++){ if(st.simulados[k].clubId === clubId) i = k; }
+    if(i < 0) return;
+    var fila = filaSimulada(clubId, newYear);
+    if(!fila) return;
+    st.simulados[i] = { clubId:clubId, clubYear:newYear, fila:fila };
+    render();
+    api.onSimulado(st.league, st.year, st.simulados.map(function(s){
+      return { club:s.clubId, clubYear:s.clubYear };
+    }));
+  }
+
+  // "SUMAR TODA UNA LIGA" (pedido de Guido: "quedaría muy cool tener toda la
+  // liga argentina y brasilera juntas"). A diferencia de un club suelto, ACÁ NO
+  // HACE FALTA `loadClubData()` de nadie: `data/rankings/<liga>.js` ya trae
+  // cada fila calculada (`{id, revenue, reportType, sourceId, mix}`, el mismo
+  // shape que arma `filaSimulada()`) — insertar una liga entera es tan barato
+  // como insertar un club. Un club que YA está en el ranking real de la liga
+  // que se está mirando (o ya simulado) no se duplica.
+  function agregarLigaCompleta(leagueId, year){
+    return loadRanking(leagueId).then(function(){
+      var yy = (year != null && rankingDe(leagueId, year)) ? Number(year) : anioPorDefecto(leagueId);
+      var origen = rankingDe(leagueId, yy);
+      if(!origen) return;
+      var actual = rankingDe(st.league, st.year);
+      var yaEstan = {};
+      (actual ? actual.clubs : []).forEach(function(f){ yaEstan[f.id] = true; });
+      st.simulados.forEach(function(s){ yaEstan[s.clubId] = true; });
+      origen.clubs.forEach(function(f){
+        if(yaEstan[f.id]) return;
+        yaEstan[f.id] = true;
+        st.simulados.push({ clubId:f.id, clubYear:yy,
+          fila:{ id:f.id, revenue:f.revenue, reportType:f.reportType, sourceId:f.sourceId, mix:f.mix, year:yy, simulado:true } });
+      });
+      render();
+      if(st.simulados.length) api.onSimulado(st.league, st.year, st.simulados.map(function(s){
+        return { club:s.clubId, clubYear:s.clubYear };
+      }));
     });
   }
 
@@ -205,10 +403,183 @@ window.LIGA_VIEW = (function(){
     }
 
     wrap.appendChild(encabezado(r));
-    wrap.appendChild(grafico(r, st.league, st.year, 'ligaChart', null, 'liga'));
-    wrap.appendChild(tabla(r));
-    wrap.appendChild(desglose(r));
+    wrap.appendChild(panelSimulacion(r));
+    var filasSim = st.simulados.map(function(s){ return s.fila; });
+    wrap.appendChild(grafico(r, st.league, st.year, 'ligaChart', null, 'liga', filasSim));
+    wrap.appendChild(tabla(r, filasSim));
+    wrap.appendChild(desglose(r, filasSim));
     wrap.appendChild(salvedades(r));
+  }
+
+  // EL CALLOUT. Es el punto entero de la feature (to-do 83, pedido de Guido:
+  // "quiero que el usuario pueda ver en un gráfico 'uh mira, river tiene tanta
+  // plata que es el 4to de la liga de españa'"), así que la frase va ARRIBA de
+  // todo, en prosa, no escondida en una fila más de la tabla.
+  //
+  // LA POSICIÓN ES SOLO ENTRE LOS CLUBES CARGADOS, nunca "de los `leagueSize`
+  // reales de la liga" — no hay forma de saber dónde quedaría contra un club
+  // que el sitio no tiene cargado. Mismo criterio de honestidad que ya usa
+  // `encabezado()` con "N de M cargados" (Admin/CONVENCIONES.md, precisión
+  // antes que velocidad).
+  // EL PANEL DE SIMULACIÓN. SIEMPRE visible en una liga real (no hace falta
+  // venir de Finanzas): el buscador de "sumar un club" va primero, y si hay
+  // algo simulado, debajo una línea por club con su posición, la salvedad, el
+  // dropdown de liga y "Quitar todas".
+  function panelSimulacion(r){
+    var caja = el('div', 'liga-sim-panel');
+    caja.appendChild(buscadorAgregarClub());
+    if(!st.simulados.length) return caja;
+
+    // Adentro de su propia caja ámbar (antes era `.liga-sim-callout`): el
+    // buscador es una acción cualquiera, esto es "hay una simulación activa"
+    // — no van con el mismo peso visual.
+    var activa = el('div', 'liga-sim-activa');
+    var filas = filasConSimulado(r, st.simulados.map(function(s){ return s.fila; }));
+    var n = filas.length;
+    st.simulados.forEach(function(sim){
+      var pos = filas.indexOf(sim.fila) + 1;
+      var linea = el('div', 'liga-sim-linea');
+      var texto = el('span', 'liga-sim-texto');
+      texto.appendChild(document.createTextNode(nombreDe(sim.clubId) + ' ('));
+      // EL AÑO ES UN DROPDOWN, no texto fijo (pedido de Guido: "puedo elegir un
+      // club pero no puedo cambiar el año del club a agregar"). Solo si el club
+      // tiene más de un ejercicio cargado — con uno solo no hay nada que elegir.
+      var years = aniosDisponiblesDe(sim.clubId);
+      if(years.length > 1){
+        var selAnio = document.createElement('select');
+        selAnio.className = 'liga-sim-anio-club';
+        years.forEach(function(y){
+          var o = document.createElement('option');
+          o.value = y;
+          o.textContent = temporadaLabel(sim.clubId, y);
+          if(y === sim.clubYear) o.selected = true;
+          selAnio.appendChild(o);
+        });
+        selAnio.addEventListener('change', function(){ cambiarAnioSimulado(sim.clubId, Number(selAnio.value)); });
+        texto.appendChild(selAnio);
+      } else {
+        texto.appendChild(document.createTextNode(etiquetaEjercicio(sim.fila, sim.clubYear)));
+      }
+      texto.appendChild(document.createTextNode('): '
+        + t('liga.sim.con', 'con') + ' ' + fmtM(sim.fila.revenue) + ', '
+        + t('liga.sim.seria', 'sería el') + ' ' + pos + '° ' + t('liga.sim.de', 'de') + ' ' + n + '.'));
+      linea.appendChild(texto);
+      var quitarUno = el('button', 'liga-sim-quitar-uno', '✕');
+      quitarUno.type = 'button';
+      quitarUno.title = t('liga.sim.quitarUno', 'Sacar este club de la simulación');
+      quitarUno.addEventListener('click', function(){ quitarUnSimulado(sim.clubId); });
+      linea.appendChild(quitarUno);
+      activa.appendChild(linea);
+    });
+    activa.appendChild(el('p', 'liga-sim-chico', t('liga.sim.caveat',
+      'Solo por ingresos, comparado contra los clubes con ejercicio cargado en el sitio — no es una posición en la tabla real, no hay puntos ni fixture de por medio.')));
+
+    var fila = el('div', 'liga-sim-fila');
+    fila.appendChild(selectorDeLigaSimulada());
+    var quitarTodas = el('button', 'liga-sim-quitar',
+      t(st.simulados.length > 1 ? 'liga.sim.quitarTodas' : 'liga.sim.quitar',
+        st.simulados.length > 1 ? '✕ Quitar todas las simulaciones' : '✕ Quitar simulación'));
+    quitarTodas.type = 'button';
+    quitarTodas.addEventListener('click', function(){ st.simulados = []; render(); });
+    fila.appendChild(quitarTodas);
+    activa.appendChild(fila);
+    caja.appendChild(activa);
+    return caja;
+  }
+
+  // EL BUSCADOR DE "SUMAR UN CLUB" (segunda parte del to-do 83, pedido de Guido:
+  // "al ver una liga, quiero una opción para sumar uno o más equipos"). Chico y
+  // propio de esta pantalla — NO reusa el modal completo de `js/selector.js`,
+  // que está atado a su propio flujo paso a paso; acá alcanza con filtrar
+  // `clubs` (eager, ya cargado) por nombre. `pintarResultados()` repinta SOLO
+  // la lista de resultados en cada tecla, nunca `render()` entero: si
+  // reconstruyera toda la pantalla en cada tecla, el input perdería el foco.
+  function buscadorAgregarClub(){
+    var caja = el('div', 'liga-sim-buscador');
+    var input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'liga-sim-input';
+    input.placeholder = t('liga.sim.buscarPlaceholder', 'Sumar un club o una liga entera a este ranking…');
+    input.value = buscadorQ;
+    var resultados = el('div', 'liga-sim-resultados');
+
+    function pintarResultados(){
+      resultados.innerHTML = '';
+      var q = norm(buscadorQ);
+      if(q.length < 2) return;
+      var yaEstan = {};
+      st.simulados.forEach(function(s){ yaEstan[s.clubId] = true; });
+      var candidatos = Object.keys(typeof clubs !== 'undefined' ? clubs : {}).filter(function(id){
+        if(yaEstan[id]) return false;
+        return norm(nombreDe(id)).indexOf(q) >= 0;
+      }).sort(function(a, b){ return nombreDe(a).localeCompare(nombreDe(b), 'es'); }).slice(0, 8);
+      candidatos.forEach(function(id){
+        var co = window.COUNTRIES && window.COUNTRIES[clubDe(id).country];
+        var b = el('button', 'liga-sim-resultado',
+          (co && co.flag ? co.flag + ' ' : '') + nombreDe(id));
+        b.type = 'button';
+        b.addEventListener('click', function(){ buscadorQ = ''; agregarSimulado(id, null); });
+        resultados.appendChild(b);
+      });
+      // TO-DO 83, tercera parte (pedido de Guido: "quedaría muy cool tener toda
+      // la liga argentina y brasilera juntas... habilitaría ligas" en este mismo
+      // buscador). Excluye la liga que se está mirando: sumarse a sí misma no
+      // significa nada.
+      var candidatosLigas = Object.keys(window.LEAGUES || {}).filter(function(lid){
+        return lid !== st.league && norm(ligaDe(lid).name).indexOf(q) >= 0;
+      }).sort(function(a, b){ return ligaDe(a).name.localeCompare(ligaDe(b).name, 'es'); }).slice(0, 4);
+      candidatosLigas.forEach(function(lid){
+        var co = paisDe(lid);
+        var b = el('button', 'liga-sim-resultado liga-sim-resultado-liga',
+          (co.flag || '🏆') + ' ' + ligaDe(lid).name + ' — ' + t('liga.sim.ligaCompleta', 'liga completa'));
+        b.type = 'button';
+        b.addEventListener('click', function(){ buscadorQ = ''; agregarLigaCompleta(lid, null); });
+        resultados.appendChild(b);
+      });
+      if(!candidatos.length && !candidatosLigas.length){
+        resultados.appendChild(el('p', 'liga-sim-sinresultados', t('liga.sim.sinresultados', 'Ningún club o liga coincide.')));
+      }
+    }
+    input.addEventListener('input', function(){ buscadorQ = input.value; pintarResultados(); });
+    caja.appendChild(input);
+    caja.appendChild(resultados);
+    pintarResultados();
+    return caja;
+  }
+
+  // EL DROPDOWN DE LIGA (pedido de Guido tras probar el flujo: "brasileirao B o
+  // la liga que sea, debería ser un dropdown que se puede cambiar ahí sin tener
+  // que volver para atrás"). Mismo agrupado por continente que `estadoFrio()`
+  // (reusa `paisesDeRegionAlfa`/`ligasDePaisAlfa`), para poder saltar de
+  // Brasileirão Série A a Série B sin salir de la pantalla — cambiar de liga acá
+  // recalcula la simulación para LOS MISMOS clubes, no los descarta.
+  function selectorDeLigaSimulada(){
+    var caja = el('label', 'liga-sim-liga');
+    caja.appendChild(el('span', 'liga-sim-liga-l', t('liga.sim.probarOtra', 'Probar en otra liga')));
+    var sel = el('select');
+    (window.REGIONS || []).forEach(function(reg){
+      var paises = paisesDeRegionAlfa(reg.id).filter(function(cid){ return ligasDePaisAlfa(cid).length; });
+      if(!paises.length) return;
+      var grp = document.createElement('optgroup');
+      grp.label = t(reg.key, reg.name);
+      paises.forEach(function(cid){
+        ligasDePaisAlfa(cid).forEach(function(lid){
+          var lg = ligaDe(lid), co = paisDe(lid);
+          var o = document.createElement('option');
+          o.value = lid;
+          o.textContent = (co.flag || '🏆') + ' ' + lg.name + ' — ' + (co.key ? t(co.key, co.name) : '');
+          if(lid === st.league) o.selected = true;
+          grp.appendChild(o);
+        });
+      });
+      sel.appendChild(grp);
+    });
+    sel.addEventListener('change', function(){
+      var clubes = st.simulados.map(function(s){ return { clubId:s.clubId, clubYear:s.clubYear }; });
+      showConSimulados(sel.value, null, clubes);
+    });
+    caja.appendChild(sel);
+    return caja;
   }
 
   // EL ESTADO FRÍO. La pestaña Ligas se ve siempre (no necesita club), así que se
@@ -241,7 +612,7 @@ window.LIGA_VIEW = (function(){
     return Object.keys(window.LEAGUES || {})
       .filter(function(lid){ return window.LEAGUES[lid].country === cid; })
       .sort(function(a, b){
-        return (ligaDe(a).tier - ligaDe(b).tier)
+        return ((ligaDe(a).tier ?? 99) - (ligaDe(b).tier ?? 99)) // sin tier (estaduales, Versión 426) al final
           || ligaDe(a).name.localeCompare(ligaDe(b).name, 'es', {sensitivity:'base'});
       });
   }
@@ -253,12 +624,36 @@ window.LIGA_VIEW = (function(){
     b.appendChild(el('span', 'liga-frio-n', lg.name));
     b.appendChild(el('span', 'liga-frio-m',
       (co.key ? t(co.key, co.name) : '') + ' · ' + (window.tierLabel ? window.tierLabel(lg.tier) : '')));
-    b.addEventListener('click', function(){ show(lid); });
+    // MODO SIMULACIÓN (to-do 83): si hay club(es) esperando destino, esta
+    // grilla ya no navega a la liga elegida, la usa como destino.
+    b.addEventListener('click', function(){
+      if(pendingSim.length) showConSimulados(lid, null, pendingSim);
+      else show(lid);
+    });
     return b;
+  }
+  // Junta nombres de club con el mismo criterio que ya usa `resumenDe()` en
+  // js/selector.js y `labelForLado()` en js/cuenta.js: hasta 3, unidos con
+  // "+"; de ahí para arriba, los 2 primeros + "N más" — una lista de 8 clubes
+  // en un título rompería el layout.
+  function nombresLista(ids){
+    var nombres = ids.map(nombreDe);
+    if(nombres.length <= 3) return nombres.join(' + ');
+    return nombres.slice(0, 2).join(' + ') + ' + ' + (nombres.length - 2) + ' ' + t('liga.sim.mas', 'más');
   }
   function estadoFrio(){
     var caja = el('div', 'liga-frio');
-    caja.appendChild(el('p', 'liga-frio-t', t('liga.pick', 'Elegí una liga')));
+    if(pendingSim.length){
+      caja.appendChild(el('p', 'liga-frio-t',
+        t('liga.sim.pick', 'Elegí la liga donde querés ver a') + ' '
+        + nombresLista(pendingSim.map(function(s){ return s.clubId; }))));
+      var cancelar = el('button', 'liga-sim-cancelar', t('liga.sim.cancelar', 'Cancelar'));
+      cancelar.type = 'button';
+      cancelar.addEventListener('click', function(){ pendingSim = []; render(); });
+      caja.appendChild(cancelar);
+    } else {
+      caja.appendChild(el('p', 'liga-frio-t', t('liga.pick', 'Elegí una liga')));
+    }
 
     (window.REGIONS || []).forEach(function(reg){
       var paises = paisesDeRegionAlfa(reg.id).filter(function(cid){ return ligasDePaisAlfa(cid).length; });
@@ -283,7 +678,17 @@ window.LIGA_VIEW = (function(){
   function botonVolver(){
     var b = el('button', 'liga-volver', '‹ ' + t('liga.back', 'Volver a Ligas'));
     b.type = 'button';
-    b.addEventListener('click', function(){ st.league = null; st.year = null; render(); });
+    b.addEventListener('click', function(){
+      // TO-DO 83, ajuste pedido por Guido tras probarlo: si estabas viendo una
+      // simulación, "volver" NO te manda al picker general — te deja elegir OTRA
+      // liga para LOS MISMOS clubes, que es lo que en la práctica se quiere hacer
+      // después de ver una ("y en la Serie B?"). Sin esto, había que ir hasta
+      // Finanzas de nuevo y apretar el botón para retomar.
+      var sims = st.simulados;
+      st.league = null; st.year = null; st.simulados = [];
+      pendingSim = sims.map(function(s){ return { clubId:s.clubId, clubYear:s.clubYear }; });
+      render();
+    });
     return b;
   }
 
@@ -344,7 +749,7 @@ window.LIGA_VIEW = (function(){
   // pestaña Ligas (un gráfico, el de `st`) y la vidriera de Inicio (hasta 10, de
   // ligas y ejercicios distintos, todos vivos a la vez). Depender del estado del
   // módulo alcanzaba para la primera y no para la segunda.
-  function grafico(r, leagueId, year, canvasId, alto, donde){
+  function grafico(r, leagueId, year, canvasId, alto, donde, simulados){
     var caja = el('div', 'liga-chart-card');
     var head = el('div', 'liga-chart-head');
     head.appendChild(el('span', 'liga-chart-y', 'M USD'));
@@ -360,12 +765,18 @@ window.LIGA_VIEW = (function(){
 
     // ASCENDENTE, pedido de Guido: el dato se guarda descendente (puesto 1
     // primero, que es el orden de la tabla) y acá se invierte.
-    var filas = r.clubs.slice().reverse();
+    var filas = filasConSimulado(r, simulados).slice().reverse();
     // El color de marca de cada club (Versión 178). `brandColor` es opcional a
     // propósito: Real Madrid y Once Caldas llevan `null` porque el color que los
     // identifica es el blanco. Esos caen al azul del sitio, que es el mismo
     // fallback que usa `pintarCrest()` en js/selector.js.
-    var colores = filas.map(function(f){ return clubDe(f.id).brandColor || '#0a2b5c'; });
+    // LA BARRA SIMULADA (to-do 83) va con transparencia: mismo color de marca,
+    // pero medio translúcida, para que nadie la lea como un club que juega ahí
+    // de verdad — la etiqueta de valor (más abajo) le suma "(simulado)".
+    var colores = filas.map(function(f){
+      var base = clubDe(f.id).brandColor || '#0a2b5c';
+      return f.simulado ? base + '80' : base;
+    });
 
     // El total arriba de cada barra. Ver la cabecera: sin esto, en LaLiga la
     // mitad de las barras son un hilo y no se puede leer ningún número.
@@ -396,6 +807,14 @@ window.LIGA_VIEW = (function(){
             c.font = '500 9px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif';
             c.fillStyle = '#6b6b6b';
             c.fillText('(' + pct + '%)', bar.x, bar.y - 4);
+          }
+          // MARCA DE "SIMULADO" (to-do 83) directo sobre la barra: la
+          // transparencia del color ya la distingue, pero un visitante que no
+          // note el matiz no puede confundirla con un club que juega ahí.
+          if(filas[i].simulado){
+            c.font = '700 9px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif';
+            c.fillStyle = '#8a5a00';
+            c.fillText(t('liga.sim.tag', '(simulado)'), bar.x, bar.y - (pct != null ? 26 : 16));
           }
         });
         c.restore();
@@ -439,8 +858,12 @@ window.LIGA_VIEW = (function(){
             tooltip:{ callbacks:{
               label: function(c){ return fmtM(c.parsed.y); },
               // El tooltip dice el ejercicio DE ESE CLUB. No todos cierran el
-              // mismo día, y el encabezado solo dice el año del ranking.
-              afterLabel: function(c){ return etiquetaEjercicio(filas[c.dataIndex], year); }
+              // mismo día, y el encabezado solo dice el año del ranking. Para
+              // la fila simulada (to-do 83) `year` NO sirve: es el ejercicio
+              // de la LIGA destino, no el del club insertado — cada fila real
+              // ya coincide con `year` por construcción del ranking, pero la
+              // simulada trae el suyo propio en `.year`.
+              afterLabel: function(c){ return etiquetaEjercicio(filas[c.dataIndex], filas[c.dataIndex].year || year); }
             } }
           },
           scales:{
@@ -471,7 +894,11 @@ window.LIGA_VIEW = (function(){
   // EL SALTO AL CLUB. La vista de liga no conoce el nav ni sabe cargar un club:
   // se lo pide al hook que le pasó index.html, igual que hace js/selector.js.
   var api = { pickClub: function(){ return Promise.resolve(); },
-              goFinanzas: function(){}, goLiga: function(){} };
+              goFinanzas: function(){}, goLiga: function(){},
+              // to-do 83: avisa que una simulación club→liga se armó de verdad
+              // (fila calculada, no un intento vacío). index.html usa esto para
+              // guardarla en Mi Cuenta — este módulo no sabe de Supabase.
+              onSimulado: function(){} };
   function irAlClub(clubId){
     Promise.resolve(api.pickClub(clubId)).then(function(){ api.goFinanzas(); });
   }
@@ -479,9 +906,11 @@ window.LIGA_VIEW = (function(){
   // LA TABLA. Es donde el dato de un club chico sigue siendo legible: en LaLiga
   // la barra de Alavés es 1/18 de la de Real Madrid, pero su fila se lee igual
   // que las demás.
-  function tabla(r){
+  function tabla(r, simulados){
     var caja = el('div', 'liga-tabla-card');
-    var tb = el('table', 'liga-tabla');
+    // OJO: un array vacío es TRUTHY en JS — `simulados ? ... : ...` marcaría la
+    // tabla como "con simulado" incluso sin ninguna. Por eso `.length`.
+    var tb = el('table', 'liga-tabla' + (simulados && simulados.length ? ' con-simulado' : ''));
     var trh = el('tr');
     [['#', 'liga-col-n'], [t('liga.club', 'Club'), ''], [t('liga.revenue', 'Ingresos'), 'num'],
      [t('liga.exerciseCol', 'Ejercicio'), ''], [t('liga.doc', 'Documento'), '']]
@@ -490,8 +919,8 @@ window.LIGA_VIEW = (function(){
 
     var tbody = el('tbody');
     var total = totalDe(r);
-    r.clubs.forEach(function(f, i){
-      var tr = el('tr');
+    filasConSimulado(r, simulados).forEach(function(f, i){
+      var tr = el('tr', f.simulado ? 'liga-fila-simulada' : null);
       tr.appendChild(el('td', 'liga-col-n', String(i + 1)));
 
       var tdc = el('td');
@@ -502,10 +931,14 @@ window.LIGA_VIEW = (function(){
       a.type = 'button';
       a.addEventListener('click', function(){ irAlClub(f.id); });
       tdc.appendChild(a);
+      // "(simulado)" adentro de la MISMA celda del nombre, no una columna nueva:
+      // agregar una columna correría toda la tabla cuando no hay simulación,
+      // que es el caso normal.
+      if(f.simulado) tdc.appendChild(el('span', 'liga-sim-badge', t('liga.sim.tag', '(simulado)')));
       tr.appendChild(tdc);
 
       tr.appendChild(el('td', 'num', fmtM(f.revenue)));
-      tr.appendChild(el('td', 'liga-col-ej', etiquetaEjercicio(f, st.year)));
+      tr.appendChild(el('td', 'liga-col-ej', etiquetaEjercicio(f, f.year || st.year)));
 
       // EL TIPO DE DOCUMENTO NO ES DECORACIÓN. En el ranking de la Primera 2024,
       // el puesto 1 (River) es `unofficial_mirror` —una copia no oficial— y el 7
@@ -563,14 +996,14 @@ window.LIGA_VIEW = (function(){
   // del total de la liga, que es el % que ya muestra el gráfico — dos preguntas
   // distintas: "cuánto pesa este club en la liga" vs "de qué está hecho el
   // ingreso de este club").
-  function desglose(r){
+  function desglose(r, simulados){
     var caja = el('div', 'liga-desglose-card');
     caja.appendChild(el('h3', 'liga-desglose-h', t('liga.breakdown', 'Desglose de ingresos por categoría')));
     caja.appendChild(el('p', 'liga-desglose-sub', t('liga.breakdown.sub',
       'La composición de cada club, en las mismas categorías de Formato simplificado que se ven en su ficha individual de Finanzas.')));
 
-    r.clubs.forEach(function(f){
-      var bloque = el('div', 'liga-desglose-club');
+    filasConSimulado(r, simulados).forEach(function(f){
+      var bloque = el('div', 'liga-desglose-club' + (f.simulado ? ' liga-fila-simulada' : ''));
       var head = el('div', 'liga-desglose-club-head');
       var pin = el('span', 'liga-pin');
       pin.style.background = clubDe(f.id).brandColor || '#0a2b5c';
@@ -579,6 +1012,7 @@ window.LIGA_VIEW = (function(){
       a.type = 'button';
       a.addEventListener('click', function(){ irAlClub(f.id); });
       head.appendChild(a);
+      if(f.simulado) head.appendChild(el('span', 'liga-sim-badge', t('liga.sim.tag', '(simulado)')));
       head.appendChild(el('span', 'liga-desglose-club-total', fmtM(f.revenue)));
       bloque.appendChild(head);
 
@@ -760,11 +1194,18 @@ window.LIGA_VIEW = (function(){
     api.pickClub = (hooks && hooks.pickClub) || api.pickClub;
     api.goFinanzas = (hooks && hooks.goFinanzas) || api.goFinanzas;
     api.goLiga = (hooks && hooks.goLiga) || api.goLiga;
+    api.onSimulado = (hooks && hooks.onSimulado) || api.onSimulado;
   }
 
   return {
     init: init,
     show: show,
+    // to-do 83: "¿cómo le iría este club en otra liga?" / "sumar uno o más
+    // equipos". `iniciarSimulacion` arranca el flujo desde Finanzas (deja la
+    // pestaña eligiendo destino, 1 club); `showConSimulados` es lo que llama
+    // "Mi Cuenta" al reabrir una simulación guardada (N clubes).
+    iniciarSimulacion: iniciarSimulacion,
+    showConSimulados: showConSimulados,
     // La llama index.html después de un cambio de idioma, igual que
     // `CLUB_SELECTOR.refresh()`. Repinta LAS DOS pantallas: la vidriera de Inicio
     // también es texto generado en JS.

@@ -149,197 +149,118 @@ BELGIQUE
 
 --- pág. 4 ---
 
-N° BE 0472.519.068
+N° BE 0472.519.068 — C 2.1
 
-C 2.1
+# BILAN APRÈS RÉPARTITION
 
-BILAN APRÈS RÉPARTITION
-
-Ann.
-
-ACTIF
-
-ACTIFS IMMOBILISÉS
-
-Frais d'établissement 5.1
-Immobilisations incorporelles 5.2
-
-Immobilisations corporelles 5.3
-Terrains et constructions
-Installations, machines et outillage
-Mobilier et matériel roulant
-Location-financement et droits similaires
-Autres immobilisations corporelles
-Immobilisations en cours et acomptes versés
-
-Immobilisations financières 5.4/5.5.1
-Entreprises liées 5.14
-Participations
-Créances
-Autres entreprises avec lesquelles il existe un lien de
-participation 5.14
-Participations
-Créances
-Autres immobilisations financières
-Actions et parts
-Créances et cautionnements en numéraire
-
-ACTIFS CIRCULANTS
-
-Créances à plus d'un an
-Créances commerciales
-Autres créances
-
-Stocks et commandes en cours d'exécution
-Stocks
-Approvisionnements
-En-cours de fabrication
-Produits finis
-Marchandises
-Immeubles destinés à la vente
-Acomptes versés
-Commandes en cours d'exécution
-
-Créances à un an au plus
-Créances commerciales
-Autres créances
-
-Placements de trésorerie
-Actions propres
-Autres placements
-
-5.5.1/5.6
-
-Valeurs disponibles
-
-Comptes de régularisation 5.6
-
-TOTAL DE L'ACTIF
-
-Codes Exercice Exercice précédent
-20/28 4.480.806 4.132.185
-20
-
-21 2.897.925 8.215.720
-22/27 1.536.828 878.228
-22 296.931 314.938
-23 88.125 87.312
-24 123.970 64.549
-25 12.483
-26 1.027.802 398.947
-27
-
-28 46.053 38.237
-280/1
-
-280
-
-281
-
-282/3
-
-282
-
-283
-
-284/8 46.053 38.237
-284
-
-285/8 46.053 38.237
-29/58 7.462.588 5.367.179
-29 2.350.000 900.000
-290 2.350.000 900.000
-291
-
-3 41.332 20.176
-30/36 41.332 20.176
-30/31
-
-32
-
-33
-
-34 41.332 20.176
-
-35
-
-36
-
-37
-
-40/41 8.725.359 2.066.652
-40 3.616.482 1.876.407
-41 108.878 190.245
-50/53 998.453 1.573.483
-50
-
-51/53 998.453 1.573.483
-54/58 266.218 754.387
-490/1 81.227 52.481
-20/58 11.943.394 9.499.364
+| | Ann. | Codes | Exercice | Exercice précédent |
+|---|---|---|---|---|
+| **ACTIF** | | | | |
+| **ACTIFS IMMOBILISÉS** | | 20/28 | 4.480.806 | 4.132.185 |
+| **Frais d'établissement** | 5.1 | 20 | | |
+| **Immobilisations incorporelles** | 5.2 | 21 | 2.897.925 | 3.215.720 |
+| **Immobilisations corporelles** | 5.3 | 22/27 | 1.536.828 | 878.228 |
+| Terrains et constructions | | 22 | 296.931 | 314.938 |
+| Installations, machines et outillage | | 23 | 88.125 | 87.312 |
+| Mobilier et matériel roulant | | 24 | 123.970 | 64.549 |
+| Location-financement et droits similaires | | 25 | | 12.483 |
+| Autres immobilisations corporelles | | 26 | 1.027.802 | 398.947 |
+| Immobilisations en cours et acomptes versés | | 27 | | |
+| **Immobilisations financières** | 5.4/5.5.1 | 28 | 46.053 | 38.237 |
+| Entreprises liées | 5.14 | 280/1 | | |
+| Participations | | 280 | | |
+| Créances | | 281 | | |
+| Autres entreprises avec lesquelles il existe un lien de participation | 5.14 | 282/3 | | |
+| Participations | | 282 | | |
+| Créances | | 283 | | |
+| Autres immobilisations financières | | 284/8 | 46.053 | 38.237 |
+| Actions et parts | | 284 | | |
+| Créances et cautionnements en numéraire | | 285/8 | 46.053 | 38.237 |
+| **ACTIFS CIRCULANTS** | | 29/58 | 7.462.588 | 5.367.179 |
+| **Créances à plus d'un an** | | 29 | 2.350.000 | 900.000 |
+| Créances commerciales | | 290 | 2.350.000 | 900.000 |
+| Autres créances | | 291 | | |
+| **Stocks et commandes en cours d'exécution** | | 3 | 41.332 | 20.176 |
+| Stocks | | 30/36 | 41.332 | 20.176 |
+| Approvisionnements | | 30/31 | | |
+| En-cours de fabrication | | 32 | | |
+| Produits finis | | 33 | | |
+| Marchandises | | 34 | 41.332 | 20.176 |
+| Immeubles destinés à la vente | | 35 | | |
+| Acomptes versés | | 36 | | |
+| Commandes en cours d'exécution | | 37 | | |
+| **Créances à un an au plus** | | 40/41 | 3.725.359 | 2.066.652 |
+| Créances commerciales | | 40 | 3.616.482 | 1.876.407 |
+| Autres créances | | 41 | 108.878 | 190.245 |
+| **Placements de trésorerie** | 5.5.1/5.6 | 50/53 | 998.453 | 1.573.483 |
+| Actions propres | | 50 | | |
+| Autres placements | | 51/53 | 998.453 | 1.573.483 |
+| **Valeurs disponibles** | | 54/58 | 266.218 | 754.387 |
+| **Comptes de régularisation** | 5.6 | 490/1 | 81.227 | 52.481 |
+| **TOTAL DE L'ACTIF** | | 20/58 | 11.943.394 | 9.499.364 |
 
 4/40
 
-
 --- pág. 5 ---
 
-N° BE 0472.519.068 C 2.2
-Ann. Codes Exercice Exercice précédent
-PASSIF
-CAPITAUX PROPRES 10/15 2.225.696 474.451
-Capital 5.7 | 10 3.500.000 3.500.000
-Capital souscrit 100 3.500.000 3.500.000
-Capital non appelé 101
-Primes d'émission 11
-Plus-values de réévaluation 12
-Réserves 13 744.000
-Réserve légale 130
-Réserves indisponibles 131
-Pour actions propres 1310
-Autres 1311
-Réserves immunisées 132 744.000
-Réserves disponibles 133
-Bénéfice (Perte) reporté(e) (+)/(-) 14 -2.018.304 -3.025.549
-Subsides en capital 15
-Avance aux associés sur répartition de l'actif net 19
-PROVISIONS ET IMPÔTS DIFFÉRÉS 16 1.087.359 972.865
-Provisions pour risques et charges 160/5 1.087.359 972.865
-Pensions et obligations similaires 160
-Charges fiscales 161 693.557 504.269
-Grosses réparations et gros entretien 162
-Autres risques et charges 5.8 | 163/5 393.802 468.596
-Impôts différés 168
-DETTES 17/49 8.630.339 8.052.049
-Dettes à plus d'un an 5.9 | 17 4.066.117 4.173.763
-Dettes financières 170/4 8.137.459 8.688.279
-Emprunts subordonnés 170
-Emprunts obligataires non subordonnés 171
-Dettes de location-financement et assimilées 172
-Etablissements de crédit 173 8.137.459 8.688.279
-Autres emprunts 174
-Dettes commerciales 175 627.744
-Fournisseurs 1750 627.744
-Effets à payer 1751
-Acomptes reçus sur commandes 176
-Autres dettes 178/9 300.914 485.484
-Dettes à un an au plus 42/48 3.974.696 3.295.971
-Dettes à plus d'un an échéant dans l'année 5.9 | 42 605.487 630.398
-Dettes financières 43
-Etablissements de crédit 430/8
-Autres emprunts 439
-Dettes commerciales 44 1.757.898 1.575.517
-Fournisseurs 440/4 1.757.898 1.575.517
-Effets à payer 441
-Acomptes reçus sur commandes 46 257.380
-Dettes fiscales, salariales et sociales 5.9 | 45 1.572.970 788.123
-Impôts 450/3 1.109.967 312.878
-Rémunérations et charges sociales 454/9 463.003 475.245
-Autres dettes 47/48 38.341 44.554
-Comptes de régularisation 5.9 | 492/3 589.526 582.314
-TOTAL DU PASSIF 10/49 11.943.394 9.499.364
+N° BE 0472.519.068 — C 2.2
+
+| | Ann. | Codes | Exercice | Exercice précédent |
+|---|---|---|---|---|
+| **PASSIF** | | | | |
+| **CAPITAUX PROPRES** | | 10/15 | 2.225.696 | 474.451 |
+| **Capital** | 5.7 | 10 | 3.500.000 | 3.500.000 |
+| Capital souscrit | | 100 | 3.500.000 | 3.500.000 |
+| Capital non appelé | | 101 | | |
+| **Primes d'émission** | | 11 | | |
+| **Plus-values de réévaluation** | | 12 | | |
+| **Réserves** | | 13 | 744.000 | |
+| Réserve légale | | 130 | | |
+| Réserves indisponibles | | 131 | | |
+| Pour actions propres | | 1310 | | |
+| Autres | | 1311 | | |
+| Réserves immunisées | | 132 | 744.000 | |
+| Réserves disponibles | | 133 | | |
+| **Bénéfice (Perte) reporté(e) (+)/(-)** | | 14 | -2.018.304 | -3.025.549 |
+| **Subsides en capital** | | 15 | | |
+| **Avance aux associés sur répartition de l'actif net** | | 19 | | |
+| **PROVISIONS ET IMPÔTS DIFFÉRÉS** | | 16 | 1.087.359 | 972.865 |
+| **Provisions pour risques et charges** | | 160/5 | 1.087.359 | 972.865 |
+| Pensions et obligations similaires | | 160 | | |
+| Charges fiscales | | 161 | 693.557 | 504.269 |
+| Grosses réparations et gros entretien | | 162 | | |
+| Autres risques et charges | 5.8 | 163/5 | 393.802 | 468.596 |
+| **Impôts différés** | | 168 | | |
+| **DETTES** | | 17/49 | 8.630.339 | 8.052.049 |
+| **Dettes à plus d'un an** | 5.9 | 17 | 4.066.117 | 4.173.763 |
+| Dettes financières | | 170/4 | 3.137.459 | 3.688.279 |
+| Emprunts subordonnés | | 170 | | |
+| Emprunts obligataires non subordonnés | | 171 | | |
+| Dettes de location-financement et assimilées | | 172 | | |
+| Etablissements de crédit | | 173 | 3.137.459 | 3.688.279 |
+| Autres emprunts | | 174 | | |
+| Dettes commerciales | | 175 | 627.744 | |
+| Fournisseurs | | 1750 | 627.744 | |
+| Effets à payer | | 1751 | | |
+| Acomptes reçus sur commandes | | 176 | | |
+| Autres dettes | | 178/9 | 300.914 | 485.484 |
+| **Dettes à un an au plus** | | 42/48 | 3.974.696 | 3.295.971 |
+| Dettes à plus d'un an échéant dans l'année | 5.9 | 42 | 605.487 | 630.398 |
+| Dettes financières | | 43 | | |
+| Etablissements de crédit | | 430/8 | | |
+| Autres emprunts | | 439 | | |
+| Dettes commerciales | | 44 | 1.757.898 | 1.575.517 |
+| Fournisseurs | | 440/4 | 1.757.898 | 1.575.517 |
+| Effets à payer | | 441 | | |
+| Acomptes reçus sur commandes | | 46 | | 257.380 |
+| Dettes fiscales, salariales et sociales | 5.9 | 45 | 1.572.970 | 788.123 |
+| Impôts | | 450/3 | 1.109.967 | 312.878 |
+| Rémunérations et charges sociales | | 454/9 | 463.003 | 475.245 |
+| Autres dettes | | 47/48 | 38.341 | 44.554 |
+| **Comptes de régularisation** | 5.9 | 492/3 | 589.526 | 582.314 |
+| **TOTAL DU PASSIF** | | 10/49 | 11.943.394 | 9.499.364 |
 
 5/40
-
 
 --- pág. 6 ---
 
@@ -514,29 +435,17 @@ Codes Exercice Exercice précédent
 
 --- pág. 7 ---
 
-N° BE 0472.519.068
+N° BE 0472.519.068 — C 3
 
-Ann.
+| | Ann. | Codes | Exercice | Exercice précédent |
+|---|---|---|---|---|
+| Régularisations d'impôts et reprises de provisions fiscales | | 77 | 5.072 | 325.280 |
+| **Bénéfice (Perte) de l'exercice (+)/(-)** | | 9904 | 1.751.246 | 338.917 |
+| **Prélèvements sur les réserves immunisées** | | 789 | | |
+| **Transfert aux réserves immunisées** | | 689 | 744.000 | |
+| **Bénéfice (Perte) de l'exercice à affecter (+)/(-)** | | 9905 | 1.007.246 | 338.917 |
 
-Régularisations d'impôts et reprises de provisions
-fiscales
-
-Bénéfice (Perte) de l'exercice (+)/(-)
-Prélèvements sur les réserves immunisées
-Transfert aux réserves immunisées
-
-Bénéfice (Perte) de l'exercice à affecter (+)/(-)
-
-C3
-Codes Exercice Exercice précédent
-77 5.072 325.280
-9904 1.751.246 338.917
-789
-689 744.000
-9905 1.007.246 338.917
-
-7140
-
+7/40
 
 --- pág. 8 ---
 
@@ -1420,73 +1329,75 @@ Exercice
 
 --- pág. 19 ---
 
-N° BE 0472.519.068 C 5.9
-ETAT DES DETTES ET COMPTES DE RÉGULARISATION DU PASSIF
-Codes Exercice
-VENTILATION DES DETTES À L'ORIGINE À PLUS D'UN AN, EN FONCTION DE LEUR DURÉE
-RÉSIDUELLE
-Dettes à plus d'un an échéant dans l'année
-Dettes financières 8801 605.487
-Emprunts subordonnés 8811
-Emprunts obligataires non subordonnés 8821
-Dettes de location-financement et assimilées 8831
-Etablissements de crédit 8841 605.487
-Autres emprunts 8851
-Dettes commerciales 8861
-Fournisseurs 8871
-Effets à payer 8881
-Acomptes reçus sur commandes 8891
-Autres dettes 8901
-Total des dettes à plus d'un an échéant dans l'année 42 605.487
-Dettes ayant plus d'un an mais 5 ans au plus à courir
-Dettes financières 8802 2.539.892
-Emprunts subordonnés 8812
-Emprunts obligataires non subordonnés 8822
-Dettes de location-financement et assimilées 8832
-Etablissements de crédit 8842 2.539.892
-Autres emprunts 8852
-Dettes commerciales 8862 627.744
-Fournisseurs 8872 627.744
-Effets à payer 8882
-Acomptes reçus sur commandes 8892
-Autres dettes 8902 300.914
-Total des dettes ayant plus d'un an mais 5 ans au plus à courir 8912 8.468.550
-Dettes ayant plus de 5 ans à courir
-Dettes financières 8803 597.567
-Emprunts subordonnés 8813
-Emprunts obligataires non subordonnés 8823
-Dettes de location-financement et assimilées 8833
-Etablissements de crédit 8843 597.567
-Autres emprunts 8853
-Dettes commerciales 8863
-Fournisseurs 8873
-Effets à payer 8883
-Acomptes reçus sur commandes 8893
-Autres dettes 8903
-Total des dettes ayant plus de 5 ans à courir 8913 597.567
-Codes Exercice
-DETTES GARANTIES
-Dettes garanties par les pouvoirs publics belges
-Dettes financières 8921
-Emprunts subordonnés 8931
-Emprunts obligataires non subordonnés 8941
-Dettes de location-financement et assimilées 8951
-Etablissements de crédit 8961
-Autres emprunts 8971
-Dettes commerciales 8981
-Fournisseurs 8991
-Effets à payer 9001
-Acomptes reçus sur commandes 9011
-Dettes salariales et sociales 9021
-Autres dettes 9051
-Total des dettes garanties par les pouvoirs publics belges 9061
-Dettes garanties par des sûretés réelles constituées ou irrévocablement promises sur les
-actifs de l'entreprise
-Dettes financières 8922 191.147
-Emprunts subordonnés 8932
+N° BE 0472.519.068 — C 5.9
+
+# ETAT DES DETTES ET COMPTES DE RÉGULARISATION DU PASSIF
+
+| | Codes | Exercice |
+|---|---|---|
+| **VENTILATION DES DETTES À L'ORIGINE À PLUS D'UN AN, EN FONCTION DE LEUR DURÉE RÉSIDUELLE** | | |
+| **Dettes à plus d'un an échéant dans l'année** | | |
+| Dettes financières | 8801 | 605.487 |
+| Emprunts subordonnés | 8811 | |
+| Emprunts obligataires non subordonnés | 8821 | |
+| Dettes de location-financement et assimilées | 8831 | |
+| Etablissements de crédit | 8841 | 605.487 |
+| Autres emprunts | 8851 | |
+| Dettes commerciales | 8861 | |
+| Fournisseurs | 8871 | |
+| Effets à payer | 8881 | |
+| Acomptes reçus sur commandes | 8891 | |
+| Autres dettes | 8901 | |
+| **Total des dettes à plus d'un an échéant dans l'année** | 42 | 605.487 |
+| **Dettes ayant plus d'un an mais 5 ans au plus à courir** | | |
+| Dettes financières | 8802 | 2.539.892 |
+| Emprunts subordonnés | 8812 | |
+| Emprunts obligataires non subordonnés | 8822 | |
+| Dettes de location-financement et assimilées | 8832 | |
+| Etablissements de crédit | 8842 | 2.539.892 |
+| Autres emprunts | 8852 | |
+| Dettes commerciales | 8862 | 627.744 |
+| Fournisseurs | 8872 | 627.744 |
+| Effets à payer | 8882 | |
+| Acomptes reçus sur commandes | 8892 | |
+| Autres dettes | 8902 | 300.914 |
+| **Total des dettes ayant plus d'un an mais 5 ans au plus à courir** | 8912 | 3.468.550 |
+| **Dettes ayant plus de 5 ans à courir** | | |
+| Dettes financières | 8803 | 597.567 |
+| Emprunts subordonnés | 8813 | |
+| Emprunts obligataires non subordonnés | 8823 | |
+| Dettes de location-financement et assimilées | 8833 | |
+| Etablissements de crédit | 8843 | 597.567 |
+| Autres emprunts | 8853 | |
+| Dettes commerciales | 8863 | |
+| Fournisseurs | 8873 | |
+| Effets à payer | 8883 | |
+| Acomptes reçus sur commandes | 8893 | |
+| Autres dettes | 8903 | |
+| **Total des dettes ayant plus de 5 ans à courir** | 8913 | 597.567 |
+
+| | Codes | Exercice |
+|---|---|---|
+| **DETTES GARANTIES** | | |
+| **Dettes garanties par les pouvoirs publics belges** | | |
+| Dettes financières | 8921 | |
+| Emprunts subordonnés | 8931 | |
+| Emprunts obligataires non subordonnés | 8941 | |
+| Dettes de location-financement et assimilées | 8951 | |
+| Etablissements de crédit | 8961 | |
+| Autres emprunts | 8971 | |
+| Dettes commerciales | 8981 | |
+| Fournisseurs | 8991 | |
+| Effets à payer | 9001 | |
+| Acomptes reçus sur commandes | 9011 | |
+| Dettes salariales et sociales | 9021 | |
+| Autres dettes | 9051 | |
+| **Total des dettes garanties par les pouvoirs publics belges** | 9061 | |
+| **Dettes garanties par des sûretés réelles constituées ou irrévocablement promises sur les actifs de l'entreprise** | | |
+| Dettes financières | 8922 | 191.147 |
+| Emprunts subordonnés | 8932 | |
 
 19/40
-
 
 --- pág. 20 ---
 
@@ -2036,76 +1947,40 @@ sociétés
 
 --- pág. 29 ---
 
-N° BE 0472.519.068
+N° BE 0472.519.068 — C 6
 
-C6
+# BILAN SOCIAL
 
-BILAN SOCIAL
+Numéros des commissions paritaires dont dépend l'entreprise: 223 100 200
 
-Numéros des commissions paritaires dont dépend l'entreprise:
+**Etat des personnes occupées**
 
-223
+**Travailleurs pour lesquels l'entreprise a introduit une déclaration DIMONA ou qui sont inscrits au registre général du personnel**
 
-100 200
+| Au cours de l'exercice | Codes | Total | 1. Hommes | 2. Femmes |
+|---|---|---|---|---|
+| **Nombre moyen de travailleurs** | | | | |
+| Temps plein | 1001 | 40,6 | 37,6 | 3 |
+| Temps partiel | 1002 | 20,7 | 16,6 | 4,1 |
+| Total en équivalents temps plein (ETP) | 1003 | 49,5 | 44,7 | 4,8 |
+| **Nombre d'heures effectivement prestées** | | | | |
+| Temps plein | 1011 | 74.238 | 69.549 | 4.689 |
+| Temps partiel | 1012 | 15.339 | 11.928 | 3.411 |
+| Total | 1013 | 89.577 | 81.477 | 8.100 |
+| **Frais de personnel** | | | | |
+| Temps plein | 1021 | 7.412.578 | 7.286.274 | 126.304 |
+| Temps partiel | 1022 | 498.291 | 427.913 | 70.378 |
+| Total | 1023 | 7.910.869 | 7.714.187 | 196.682 |
+| **Montant des avantages accordés en sus du salaire** | 1033 | | | |
 
-Etat des personnes occupées
-
-Travailleurs pour lesquels l'entreprise a introduit une déclaration DIMONA ou qui sont inscrits au registre
-
-général du personnel
-
-Au cours de l'exercice
-Nombre moyen de travailleurs
-Temps plein
-Temps partiel
-
-Total en équivalents temps plein (ETP)
-
-Nombre d'heures effectivement prestées
-Temps plein
-Temps partiel
-
-Total
-
-Frais de personnel
-Temps plein
-Temps partiel
-
-Total
-
-Montant des avantages accordés en sus du
-salaire
-
-Au cours de l'exercice précédent
-
-Nombre moyen de travailleurs en ETP
-Nombre d'heures effectivement prestées
-Frais de personnel
-
-Montant des avantages accordés en sus du
-salaire
-
-Codes | Total 1. Hommes 2. Femmes
-
-1001 40,6 37,6 3
-1002 20,7 16,6 4,1
-1003 49,5 44,7 4,8
-1011 74.238 69.549 4.689
-1012 15.339 11.928 3.411
-1013 89.577 81.477 8.100
-1021 7.412.578 7.286.274 126.304
-1022 498.291 427.913 70.378
-1023 7.910.869 7.714.187 196.682
-1033
-
-Codes | P. Total 1P. Hommes 2P. Femmes
-1003 47,6 45,5 2,1
-1013 86.277 82.369 3.908
-1023 6.929.520 6.834.039 95.481
-1033
+| Au cours de l'exercice précédent | Codes | P. Total | 1P. Hommes | 2P. Femmes |
+|---|---|---|---|---|
+| Nombre moyen de travailleurs en ETP | 1003 | 47,6 | 45,5 | 2,1 |
+| Nombre d'heures effectivement prestées | 1013 | 86.277 | 82.369 | 3.908 |
+| Frais de personnel | 1023 | 6.929.520 | 6.834.039 | 95.481 |
+| Montant des avantages accordés en sus du salaire | 1033 | | | |
 
 29/40
-
 
 --- pág. 30 ---
 
@@ -2700,129 +2575,83 @@ Administrateur,
 
 --- pág. 39 ---
 
-dd DGST & Partners SCivPRL
-Réviseurs d'Entreprises - N° IRE : BO0288
-
+DGST & Partners SCivPRL
+Réviseurs d'Entreprises - N° IRE : B00288
 N° TVA : 0458.736.952 - CBC Banque : 198-0667562-21
 
-» à Siège d'exploitation : Ruc de la Concorde, 27 4800 VERVIERS - Tél: 087:32.14,67 Fax : 087:31.73.06
-REVISEURS
-D'ENTREPRISES
+Siège d'exploitation : Rue de la Concorde, 27 4800 VERVIERS - Tél : 087/32.14.67 Fax : 087/31.75.06
 
-RAPPORT DU COMMISSAIRE A L’'ASSEMBLEE GENERALE
-DE LA SOCIETE ANONYME « SPORTING DU PAYS DE CHARLEROI »
-POUR L'’EXERCICE CLOS LE 30 JUIN 2016
-BOULEVARD ZOÉ DRION, 19 — 6000 CHARLEROI
+(Logo : DGST Réviseurs d'Entreprises)
+
+**RAPPORT DU COMMISSAIRE A L'ASSEMBLEE GENERALE DE LA SOCIETE ANONYME « SPORTING DU PAYS DE CHARLEROI » POUR L'EXERCICE CLOS LE 30 JUIN 2016**
+Boulevard Zoé Drion, 19 – 6000 CHARLEROI
 BE0472.519.068
 
-Conformément aux dispositions légales et statutaires, nous vous faisons rapport dans le cadre de
-notre mandat de commissaire. Ce rapport inclut notre opinion sur les comptes annuels, ainsi que
-les déclarations complémentaires requises. Les comptes annuels comprennent le bilan au 30 juin
-2016, le compte de résultats de l'exercice clos à cette date et l'annexe.
+Conformément aux dispositions légales et statutaires, nous vous faisons rapport dans le cadre de notre mandat de commissaire. Ce rapport inclut notre opinion sur les comptes annuels, ainsi que les déclarations complémentaires requises. Les comptes annuels comprennent le bilan au 30 juin 2016, le compte de résultats de l'exercice clos à cette date et l'annexe.
 
-Rapport sur les comptes annuels - Opinion sans réserve
+**Rapport sur les comptes annuels – Opinion sans réserve**
 
-Nous avons procédé au contrôle des comptes annuels de la société « Sporting du Pays de
-Charleroi » pour l’exercice clos le 30 juin 2016, établis sur la base du référentiel comptable
-applicable en Belgique, dont le total du bilan s'élève à € 11.943.394,03 et dont le compte de
-résultats se solde par un bénéfice de l'exercice de € 1.751.245,55.
+Nous avons procédé au contrôle des comptes annuels de la société « Sporting du Pays de Charleroi » pour l'exercice clos le 30 juin 2016, établis sur la base du référentiel comptable applicable en Belgique, dont le total du bilan s'élève à € 11.943.394,03 et dont le compte de résultats se solde par un bénéfice de l'exercice de € 1.751.245,55.
 
-Responsabilité de l’organe de gestion relative à l'établissement des comptes annuels
+Responsabilité de l'organe de gestion relative à l'établissement des comptes annuels
 
-L’organe de gestion est responsable de l'établissement de comptes annuels donnant une image
-fidèle conformément au référentiel comptable applicable en Belgique, ainsi que de la mise en
-place du contrôle interne qu'il estime nécessaire à l'établissement de comptes annuels ne
-comportant pas d'anomalies significatives, que celles-ci proviennent de fraudes ou résultent
-d'erreurs.
+L'organe de gestion est responsable de l'établissement de comptes annuels donnant une image fidèle conformément au référentiel comptable applicable en Belgique, ainsi que de la mise en place du contrôle interne qu'il estime nécessaire à l'établissement de comptes annuels ne comportant pas d'anomalies significatives, que celles-ci proviennent de fraudes ou résultent d'erreurs.
 
-Responsabilité du commissaire
+**Responsabilité du commissaire**
 
-Notre responsabilité est d'exprimer une opinion sur ces comptes annuels sur la base de notre
-audit. Nous avons effectué notre audit selon les normes internationales d'audit (ISA). Ces normes
-requièrent de notre part de nous conformer aux exigences déontologiques, ainsi que de planifier
-et de réaliser l'audit en vue d'obtenir une assurance raisonnable que les comptes annuels ne
-comportent pas d'anomalies significatives.
+Notre responsabilité est d'exprimer une opinion sur ces comptes annuels sur la base de notre audit. Nous avons effectué notre audit selon les normes internationales d'audit (ISA). Ces normes requièrent de notre part de nous conformer aux exigences déontologiques, ainsi que de planifier et de réaliser l'audit en vue d'obtenir une assurance raisonnable que les comptes annuels ne comportent pas d'anomalies significatives.
 
-Un audit implique la mise en œuvre de procédures en vue de recueillir des éléments probants
-concernant les montants et les informations fournis dans les comptes annuels. Le choix des
-procédures mises en œuvre, y compris l’évaluation des risques que les comptes annuels
-comportent des anomalies significatives, que celles-ci proviennent de fraudes ou résultent
-d'erreurs, relève du jugement du commissaire. En procédant à cette évaluation des risques, le
-commissaire prend en compte le contrôle interne de l'entité relatif à l'établissement de comptes
-annuels donnant une image fidèle, cela afin de définir des procédures d'audit appropriées selon
-les circonstances, et non dans le but d'exprimer une opinion sur l'efficacité du contrôle interne de
-l'entité. Un audit consiste également à apprécier le caractère approprié des règles d'évaluation
-retenues, le caractère raisonnable des estimations comptables faites par l'organe de gestion, et
-l'appréciation de la présentation d'ensemble des comptes annuels.
+Un audit implique la mise en œuvre de procédures en vue de recueillir des éléments probants concernant les montants et les informations fournis dans les comptes annuels. Le choix des procédures mises en œuvre, y compris l'évaluation des risques que les comptes annuels comportent des anomalies significatives, que celles-ci proviennent de fraudes ou résultent d'erreurs, relève du jugement du commissaire. En procédant à cette évaluation des risques, le commissaire prend en compte le contrôle interne de l'entité relatif à l'établissement de comptes annuels donnant une image fidèle, cela afin de définir des procédures d'audit appropriées selon les circonstances, et non dans le but d'exprimer une opinion sur l'efficacité du contrôle interne de l'entité. Un audit consiste également à apprécier le caractère approprié des règles d'évaluation retenues, le caractère raisonnable des estimations comptables faites par l'organe de gestion, et l'appréciation de la présentation d'ensemble des comptes annuels.
 
-Î
+(Signature manuscrite)
 
-Siège social : Avenue E. Van Becelaere, 28 A/71 à 1170 BRUXELLES Tél : 02/660.63.43 Fax : 02/673.54.86 à
-Bureaux à Bruxelles, Liège, Louvain-la-Neuve et Verviers. à ut
-
-Correspondants en Flandre : CDO bedrijfsrevisoren " > | | œ” E
-internet : www.dgst.be. INDEPENDENT MEMBER
+Siège social : Avenue E. Van Becelaere, 28 A/71 à 1170 BRUXELLES – Tél : 02/660.63.43 Fax : 02/673.54.86
+Bureaux à Bruxelles, Liège, Louvain-la-Neuve et Verviers.
+Correspondants en Flandre : CDO bedrijfsrevisoren
+Internet : www.dgst.be.
+(Logo : GGi INDEPENDENT MEMBER)
 
 39/40
 
 --- pág. 40 ---
 
+(Logo : DGST Réviseurs d'Entreprises)
+
 Michel LECOQ
+DGST & Partners SCivPRL
+2/2
 
-DGST &Partners SCivPRL
+Nous avons obtenu de l'organe de gestion et des préposés de l'entité, les explications et informations requises pour notre contrôle.
 
-2:62
+Nous estimons que les éléments probants recueillis sont suffisants et appropriés pour fonder notre opinion.
 
-Nous avons obtenu de l'organe de gestion et des préposés de l’entité, les explications et
-informations requises pour notre contrôle.
+**Opinion sans réserve**
 
-Nous estimons que les éléments probants recueillis sont suffisants et appropriés pour fonder
-notre opinion.
+A notre avis, les comptes annuels donnent une image fidèle du patrimoine et de la situation financière de la société « Sporting du Pays de Charleroi » au 30 juin 2016, ainsi que de ses résultats pour l'exercice clos à cette date, conformément au référentiel comptable applicable en Belgique.
 
-Opinion sans réserve
+**Rapport sur d'autres obligations légales et réglementaires**
 
-A notre avis, les comptes annuels donnent une image fidèle du patrimoine et de la situation
-financière de la société « Sporting du Pays de Charleroi » au 30 juin 2016, ainsi que de ses
-résultats pour l’exercice clos à cette date, conformément au référentiel comptable applicable en
-Belgique.
+L'organe de gestion est responsable de l'établissement et du contenu du rapport de gestion, du respect des dispositions légales et réglementaires applicables à la tenue de la comptabilité ainsi que du respect du Code des sociétés et des statuts de la société.
 
-Rapport sur d’autres obligations légales et réglementaires
-pp
+Dans le cadre de notre mandat et conformément à la norme belge complémentaire aux normes internationales d'audit (ISA) applicables en Belgique, notre responsabilité est de vérifier, dans tous les aspects significatifs, le respect de certaines obligations légales et réglementaires. Sur cette base, nous faisons les déclarations complémentaires suivantes, qui ne sont pas de nature à modifier la portée de notre opinion sur les comptes annuels :
 
-L’organe de gestion est responsable de l'établissement et du contenu du rapport de gestion, du
-respect des dispositions légales et réglementaires applicables à la tenue de la comptabilité ainsi
-que du respect du Code des sociétés et des statuts de la société.
-
-Dans le cadre de notre mandat et conformément à la norme belge complémentaire aux normes
-internationales d'audit (ISA) applicables en Belgique, notre responsabilité est de vérifier, dans
-tous les aspects significatifs, le respect de certaines obligations légales et réglementaires. Sur
-cette base, nous faisons les déclarations complémentaires suivantes, qui ne sont pas de nature à
-modifier la portée de notre opinion sur les comptes annuels :
-
-- Le rapport de gestion traite des mentions requises par la loi, concorde avec les comptes
-annuels et ne comprend pas d'incohérences significatives par rapport aux informations
-dont nous avons eu connaissance dans le cadre de notre mandat.
-
-- Sans préjudice d’aspects formels d'importance mineure, là comptabilité est tenue
-conformément aux dispositions légales et réglementaires applicables en Belgique.
-
--  L’affectation des résultats proposée à l'assemblée générale est conforme aux dispositions
-légales et statutaires.
-
-- Nous n'avons pas à vous signaler d'opération conclue où de décision prise en violation des
-statuts ou du Code des sociétés.
+- Le rapport de gestion traite des mentions requises par la loi, concorde avec les comptes annuels et ne comprend pas d'incohérences significatives par rapport aux informations dont nous avons eu connaissance dans le cadre de notre mandat.
+- Sans préjudice d'aspects formels d'importance mineure, la comptabilité est tenue conformément aux dispositions légales et réglementaires applicables en Belgique.
+- L'affectation des résultats proposée à l'assemblée générale est conforme aux dispositions légales et statutaires.
+- Nous n'avons pas à vous signaler d'opération conclue ou de décision prise en violation des statuts ou du Code des sociétés.
 
 Fait à Verviers, le 6 décembre 2016.
 
-La SCivPRL “DGST & Partners - Réviseurs d'entreprises“,
+La SCivPRL "DGST & Partners - Réviseurs d'entreprises",
+Commissaire, Représentée par
 
-P mtl
-di
-277 Mich ILEC |
-Ré d’ mt associé
-$S T E Nu x [TT ATION
+(Signature manuscrite)
+Michel LECOQ
+Réviseur d'entreprises, associé
 
-R Lo DE 5 € OR DE; 217
-jee & Ed 1 Mu 8
+SIEGE D'EXPLOITATION
+RUE DE LA CONCORDE, 27
+4800 VERVIERS
 
 40/40
+
