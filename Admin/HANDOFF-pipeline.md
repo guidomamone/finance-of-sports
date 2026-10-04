@@ -24,20 +24,25 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con los lotes de prueba de abajo):
 
-1. **Caja y deuda** (ver "Caja y deuda" más abajo). Hoy `--medir` en todos los clubes: 146 iguales, 10 distintos, 363 sin dato; Juventus
-   caja 17 de 23 y deuda 14 de 21. Quedan, sin arreglo limpio medido (no insistir sin un caso nuevo): Juventus caja 2004 (51,104 contra
-   51,101966: el resumen en €000 contra el estado en euros) y 2005 (lee "Bank and post-office deposits" del cuadro de posición financiera
-   neta, L1523); deuda 2018 (suma casual del precedente: dos activos); deuda 2007-2009 y caja 2006-2007 sin propuesta. Escalón 3 (media
-   móvil) aprobado y en pausa. Ideas a medir con un club real: precedente que sume lo cargado en DOS años; el número del año en un
-   escaneo necesita una segunda lectura (Gemini).
+1. **PRIORIDAD: `cargar.mjs` descarta las filas "Total…" que la verificación usó como renglón** (modo "las notas hacen de estado").
+   Caso: Fortaleza 2017, reintentado el 2026-10-04 con las notas como estado (V460): la verificación queda ok (ingresos 5.319,897,
+   confirmados por el documento 2018; gastos desglosados con los sueldos aparte), pero la propuesta de carga pierde "Total Ingresos
+   actividades ordinarias" 5.319,891 (pág. 14 del visor, L543) y suma ingresos 0,006 ("Aprovechamientos" 0,001 + "Ajuste al Peso" 0,005);
+   gastos 3.628,133 contra 3.677,627 verificados. Afecta a las 8 localizaciones de Fortaleza armadas con notas como estado (y a cualquier
+   club nuevo así). A diseñar y medir en esos 8 + `prueba-completa`. Después: contestar las 16 categorías de Fortaleza 2017 en la cola
+   (`node tools/cola.mjs`; conviene después del arreglo, el contexto de las filas puede cambiar) y recargar con `cargar.mjs --reemplazar`.
+   Pendiente también ahí: `node tools/diagnostico-desglose.mjs` (gratis) para un desglose que sigue sin sumar; Televisión y Estadio en 0.
 2. **Defectos chicos** (agrupados: B textos, C, D): `compararVecino` no cuenta las filas de ajuste manual (D); el escalón 1a del lote
    solo mira "revisar" y no "sin-verificar" (C); `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
    meta dice "grossDebt/cash: no se leen por script todavía" (ahora los completa `caja-deuda.mjs`).
 3. **Auditoría de los 6 clubes cargados** (subagente Sonnet): categorías dudosas o datos raros. Y la nota visible del quiebre de serie de
    Juventus 2006 (formato italiano, con extraordinarios) → 2007 (IFRS).
-4. Fortaleza 2017 (sueldos dentro de "gastos generales"; totales bien): reintentado con las notas como estado, verifica ok con los
-   gastos desglosados. Para recargarlo (`cargar.mjs --reemplazar`) faltan: las 16 categorías en la cola (`node tools/cola.mjs`) y ver por
-   qué la propuesta suma los ingresos en 0,006 (la verificación dice 5.319,897; huele a escala en `cargar.mjs` con notas como estado).
+4. **Caja y deuda, lo que queda** (ver "Caja y deuda" más abajo). Hoy `--medir` en todos los clubes: 146 iguales, 10 distintos, 363 sin dato; Juventus
+   caja 17 de 23 y deuda 14 de 21. Quedan, sin arreglo limpio medido (no insistir sin un caso nuevo): Juventus caja 2004 (51,104 contra
+   51,101966: el resumen en €000 contra el estado en euros) y 2005 (lee "Bank and post-office deposits" del cuadro de posición financiera
+   neta, L1523); deuda 2018 (suma casual del precedente: dos activos); deuda 2007-2009 y caja 2006-2007 sin propuesta. Escalón 3 (media
+   móvil) aprobado y en pausa. Ideas a medir con un club real: precedente que sume lo cargado en DOS años; el número del año en un
+   escaneo necesita una segunda lectura (Gemini).
 5. No urgentes:
    - escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final que repite el documento siguiente;
      costos financieros mal rotulados);
@@ -510,8 +515,8 @@ Pendientes, a decidir con casos reales:
 
 ## Cómo arranca la próxima sesión
 
-(2026-10-04) Sesión de arreglos (sin sumar clubes): seguir por el punto 1 de "Dónde estamos" (caja y deuda: la escala, con un
-subagente que mida primero) y después 2-3.
+(2026-10-04) Sesión de arreglos (sin sumar clubes): seguir por el punto 1 de "Dónde estamos" (`cargar.mjs` y las filas "Total…" en
+notas como estado, con Fortaleza 2017) y después 2-3.
 
 1. `git status` y `git log --oneline -5` en `main`.
 2. `node tools/estado.mjs`.
