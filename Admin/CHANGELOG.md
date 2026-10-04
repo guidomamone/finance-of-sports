@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 455 — Probado y NO adoptado todavía: "4) Due to banks"; HANDOFF reordenado (2026-10-04)
+
+- `caja-deuda.mjs`: sacar la numeración de lista ("4)", "a)", "IV.") antes del diccionario lee bien "4) Due to banks" (Juventus 2005-06 L1967, 2004-05 L1715), pero con la escala actual 2005 entra en miles y pasa de sin dato a distinto (24.973,8 contra 24,97). Revertido: va después del arreglo de la escala.
+- HANDOFF: "Dónde estamos" con todos los pendientes (sin el punto de la API, ya hecho); "Caja y deuda" con título propio y la escalera al día, sin historia (vive acá).
+
 ## Versión 454 — Caja y deuda respetan el ajuste de perímetro (2026-10-04)
 
 - `caja-deuda.mjs`: cada página del balance con título como encabezado se marca "consolidado" o "individual" (la siguiente sin título hereda). Con ajuste `perimetro` y páginas de ese perímetro en el .md, las filas del otro dejan de contar como balance; si el .md trae los dos perímetros, solo cuentan las páginas marcadas con el del ajuste (los resúmenes del balance en el informe de gestión, sin marca, también quedan afuera).

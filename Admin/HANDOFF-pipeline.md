@@ -24,41 +24,46 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con los lotes de prueba de abajo):
 
-1. **No pagar dos veces lo mismo en las APIs** (pedido de Guido, 2026-10-04). Hecho: compuerta antes de localizar (V441), `--reintentar`
-   solo lo que destraba la carga y `--detalle` (V442), validación por página (V443).
-   Hecho también: el caché de localizar, validar y extraer sabe si el .md cambió (V445, `cache-al-dia.mjs`); los `.json` de `Generados/`
-   se trackean como respaldo (V444; no se publican); el ensayo estima extraer con salida = 2 x entrada, o la mediana del club / techo
-   US$ 0,32 si todavía no se localizó (V446).
-   Y para ver dónde está cada documento: el inventario y el tablero (`estado.mjs`) dicen la etapa y el escalón del proceso nuevo, con
-   la misma lógica (`etapa-doc.mjs`, V447-448).
-   Y al final de cada lote, el gasto por documento con "N.ª vez" si se repitió (`gasto-doc.mjs`, V449).
-   Falta:
-   - `estado.mjs --logica` (lo propio de cada grupo de países) sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`).
-   - Las validaciones viejas no tienen huella por página: el ahorro de V443 empieza después de la próxima corrida del resolver de cada
-     documento (decisión de Guido, 2026-10-04: no sembrar huellas en el historial).
-2. **Caja y deuda** (defectos vistos con Juventus; deuda 2007-2025 y caja 2022, 2024, 2025 hoy cargadas a mano). Hecho: corriente + no
-   corriente de la misma etiqueta (V451) y la página del balance con "Cash flow hedge reserve" (V452): deuda de Juventus 9 de 21 iguales
-   solas; y el perímetro (V454): Juventus caja 17 de 23 y deuda 12 de 21 iguales. Falta, en orden: la escala (`factorPorIngresos`) no puede
-   confundirse con filas de ajuste manual (2003-2006 salió en miles); "4) Due to banks" no matchea por el número adelante. Escalón 3
-   (media móvil) aprobado y en pausa.
-3. **Juventus 2022, a tratar:** que `avisarRegistro` exija confirmados solo los bloques que usa la lectura ganadora (se destrabó con 29
+1. **Caja y deuda** (ver "Caja y deuda" más abajo; hoy `--medir` da Juventus caja 17 de 23 y deuda 12 de 21 iguales, los otros 5 clubes
+   todo igual o sin dato). En orden:
+   - (a) la escala (`factorPorIngresos`) se confunde con las filas de ajuste manual `fila`: en Juventus 2003-2006 gana "miles" (las filas de
+     la nota de sponsors están en €000 y el estado en euros). Antes de diseñar: un subagente Sonnet mide en qué clubes la escala decide por
+     poco margen.
+   - (b) "4) Due to banks": el diccionario no la reconoce por la numeración adelante. Probado: sacar la numeración la lee bien (Juventus
+     2005-06 L1967; 2004-05 L1715), pero sin (a) entra en miles y 2005 pasa de sin dato a distinto. Va después de (a).
+   - (c) quedan distintos en `--medir` por sumas casuales del precedente (escalón 0): deuda 2018 ("Players' registration rights" +
+     "Tangible assets in progress", dos activos) y caja 2005. No afectan lo cargado (`caja-deuda.mjs` nunca pisa un valor cargado).
+   - Escalón 3 (media móvil) aprobado y en pausa. Ideas a medir con un club real: precedente que sume lo cargado en DOS años (Bahia 2025
+     aprendió una suma casual); el número del año en un escaneo necesita una segunda lectura (Gemini), como la etapa 4.
+2. **Juventus 2022, a tratar:** que `avisarRegistro` exija confirmados solo los bloques que usa la lectura ganadora (se destrabó con 29
    ajustes `confirmado`); el rearmado no debería dispararse por la marca de una corrida con otro perímetro.
-4. **Defectos chicos:** `compararVecino` no cuenta las filas de ajuste manual; el escalón 1a del lote solo mira "revisar" y no
-   "sin-verificar"; el RESULTADO final de `lote.mjs` muestra propuestas de carga viejas ("el club no existe" en años ya cargados).
-5. **Auditoría de los 6 clubes cargados** (subagente Sonnet): categorías dudosas o datos raros. Y la nota visible del quiebre de serie de
+3. **Defectos chicos:** `compararVecino` no cuenta las filas de ajuste manual; el escalón 1a del lote solo mira "revisar" y no
+   "sin-verificar"; el RESULTADO final de `lote.mjs` muestra propuestas de carga viejas ("el club no existe" en años ya cargados);
+   `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
+   meta dice "grossDebt/cash: no se leen por script todavía" (ahora los completa `caja-deuda.mjs`).
+4. **Auditoría de los 6 clubes cargados** (subagente Sonnet): categorías dudosas o datos raros. Y la nota visible del quiebre de serie de
    Juventus 2006 (formato italiano, con extraordinarios) → 2007 (IFRS).
-6. Opcional: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs --lista
+5. Opcional: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs --lista
    Admin/lote-08b.txt --ejecutar --reintentar` (~US$ 0,30) y recargar con `cargar.mjs --reemplazar` si las notas 21-22 suman.
-7. Pendientes de la auditoría, no urgentes: escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final
-   que repite el documento siguiente; costos financieros mal rotulados); marcar "no desglosado" distinto de `cero-real` y que la página lo
-   muestre (`fiscalYearMeta.sinDesglose`); cerrar casos obsoletos de la cola automáticamente; falso positivo del inventario con números que
-   no son cifras contables (firmas digitales); chequeo de coherencia entre años (prototipado, no construido).
+6. No urgentes:
+   - escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final que repite el documento siguiente;
+     costos financieros mal rotulados);
+   - marcar "no desglosado" distinto de `cero-real`, y que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (ya lo usan
+     8 años cargados);
+   - cerrar casos obsoletos de la cola automáticamente (hoy hay 11 de Juventus 2003, 2004 y 2016, años ya cargados);
+   - falso positivo del inventario con números que no son cifras contables (firmas digitales);
+   - chequeo de coherencia entre años (prototipado, no construido);
+   - etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente);
+   - etapas 4 y 8: registrar en qué escalón salió cada dato;
+   - perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes);
+   - datos ya publicados con categorías dudosas: Almagro tiene "Sede Social - Medrano 522" como cuotas sociales; Grêmio, "Receitas
+     Patrimoniais" como cuotas sociales; Vitória, Bahia y América Mineiro tienen socios en sus documentos y no en el sitio.
 
 ### Lotes de prueba (medir CUALQUIER cambio de script antes y después)
 
-Lo cargado tiene que dar idéntico. Tres listas fijas, sin repetidos (Versión 450): `Admin/prueba-rapida.txt` (16, los casos que ya
+Lo cargado tiene que dar idéntico. Tres listas fijas, sin repetidos: `Admin/prueba-rapida.txt` (16, los casos que ya
 rompieron algo una vez), `Admin/prueba-mediana.txt` (34: la rápida + 3 años por club) y `Admin/prueba-completa.txt` (87, todos los
-documentos de los 6 clubes). Los `lote-07` a `lote-13` quedan como registro de las corridas reales (el CHANGELOG los nombra).
+documentos de los 6 clubes). Los `lote-07` a `lote-13` quedan como registro de las corridas reales.
 
 ```bash
 node tools/lote.mjs --lista Admin/prueba-completa.txt > /tmp/medir-antes.txt 2>&1     # antes del cambio
@@ -67,42 +72,33 @@ node tools/lote.mjs --lista Admin/prueba-completa.txt > /tmp/medir-despues.txt 2
 
 Además, según lo que toque: lo mismo con `--reintentar` (camino de error); `node tools/caja-deuda.mjs --medir --club <id>` (caja y deuda);
 `node tools/antes-de-localizar.mjs --lista <lista>` (compuerta de la etapa 3). Lo que no se puede ejercitar con lo cargado se simula en el
-scratchpad con copia de seguridad de `Admin/` y se restaura (V443: una validación previa falsa con huellas por página).
+scratchpad con copia de seguridad de `Admin/` y se restaura.
 
 Publicación: falta el push, que lo hace Guido (`git push origin main`).
 
-Caja y deuda (`tools/caja-deuda.mjs`, comando aparte, con el club ya publicado; nunca frena; `--medir --club <id>` para medir):
+## Caja y deuda (`tools/caja-deuda.mjs`)
+
+Comando aparte, con el club ya publicado: completa `cash` y `grossDebt` de cada año cargado donde el sitio tiene null (nunca pisa un valor
+cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [--detalle]` (gratis). Escribir: `--escribir`.
 
 ```
- LECTURA DE FILAS  una sola referencia a nota (V421); activo y pasivo en la misma fila = dos filas (V424)
- ESCALA: una por documento (la del estado de resultados contra lo cargado); la del vecino, con SU escala (V418)
- ESCALÓN 0 ajuste manual `caja` del año (V419) · precedente del club
- ESCALÓN 1 diccionario (vocabulario.mjs, sin el código de cuenta, V422) + términos del club (ajuste `deuda-incluye`, V425);
-           jerarquía de balancete: padre e hija no se suman; cuenta D no es deuda (V423)
- ESCALÓN 2 IA (solo líneas)
- COMPUERTA (la misma para todos): la familia de la fila es la del dato (V420) y el año anterior cargado o el documento siguiente
-           dicen lo mismo ── pasa → dato · no pasa → siguiente escalón · nada → null
+ LECTURA DE FILAS  una sola referencia a nota; activo y pasivo en la misma fila = dos filas; sin código de cuenta para el diccionario
+ PÁGINAS DEL BALANCE  título o total del balance, y no el flujo de efectivo ni los cambios en el patrimonio (una FILA con esas palabras
+                      no cuenta si la página tiene el título del balance como encabezado)
+ PERÍMETRO  cada página del balance es consolidado o individual por su encabezado; con ajuste `perimetro` solo cuenta ese (si el .md
+            trae los dos, solo las páginas marcadas)
+ ESCALA     una por documento (la del estado de resultados contra lo cargado); la del vecino, con SU escala
+ ESCALÓN 0  ajuste manual `caja` del año · precedente del club (las familias que suman lo cargado en el año más cercano)
+ ESCALÓN 1  diccionario (vocabulario.mjs) + términos del club o del documento (ajuste `deuda-incluye`); jerarquía de balancete: padre e
+            hija no se suman; cuenta D no es deuda. Además propone: deuda corriente + no corriente de la misma etiqueta (exactamente
+            dos filas, a cada lado del total del pasivo no corriente); las filas de la nota de efectivo si la caja es una parte; el total
+            de la nota de deuda si no hay otra fila de deuda
+ ESCALÓN 2  IA (solo líneas)
+ COMPUERTA (la misma para todos): la familia de la fila es la del dato y el año anterior cargado o el documento siguiente dicen lo mismo
+            ── pasa → dato · no pasa → siguiente escalón · nada → null
 ```
 
-El escalón 1 propone, además (Versiones 383 y 385): las filas de la nota de efectivo si la caja es una parte de ella (la compuerta compara el
-total de la nota del vecino), y el total de la nota de deuda si no hay otra fila de deuda (antes caía en "ninguna fila = 0").
-
-Pendientes:
-
-- Caja y deuda, probado y no adoptado (V453): filtrar lo que aprende el precedente de deuda (solo pasivo: 2020 pasa a distinto; solo
-  diccionario: AEL Larissa pierde 6). Juventus 2018 sigue distinto en `--medir` (suma casual de dos activos); no afecta lo cargado.
-- Caja y deuda, probado y no adoptado (manta corta, Versión 357+): compuerta con "vecino independiente" (perdía el escalón 0) y lectura en el
-  texto del PDF (no sirve en escaneos). Ideas pendientes, a medir solo con un club real: precedente que sume lo cargado en DOS años (Bahia
-  2025 aprendió una suma casual); el número del año en un escaneo necesita una segunda lectura (Gemini), como la etapa 4.
-- El comentario que escribe `cargar.mjs` en la meta todavía dice "grossDebt/cash: no se leen por script todavía": ahora los completa
-  `caja-deuda.mjs` (o los conserva `--reemplazar`).
-- Que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (otra sesión; ya lo usan 8 años cargados).
-- Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente).
-- Etapas 4 y 8: registrar en qué escalón salió cada dato (las escaleras existen, falta dejarlo escrito por documento).
-- Perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes).
-- Datos ya publicados con categorías dudosas (encontrado por el subagente del perfil, sin tocar): Almagro tiene "Sede Social - Medrano
-  522" como cuotas sociales; Grêmio, "Receitas Patrimoniais" como cuotas sociales; Vitória, Bahia y América Mineiro tienen socios en sus
-  documentos y no en el sitio.
+Los pendientes están en "Dónde estamos", punto 1.
 
 ---
 
@@ -516,7 +512,8 @@ Pendientes, a decidir con casos reales:
 
 ## Cómo arranca la próxima sesión
 
-(2026-10-04) Sesión de arreglos (sin sumar clubes): seguir por el punto 1 de "Dónde estamos" (iv, v, vi) y después 2-5.
+(2026-10-04) Sesión de arreglos (sin sumar clubes): seguir por el punto 1 de "Dónde estamos" (caja y deuda: la escala, con un
+subagente que mida primero) y después 2-4.
 
 1. `git status` y `git log --oneline -5` en `main`.
 2. `node tools/estado.mjs`.
