@@ -1,5 +1,7 @@
 # Chelsea
 
+**Ángulos**: regulador/país (Companies House): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Premier League (Inglaterra, 1ª división)
 - **Entidad legal**: Chelsea FC Holdings Limited — Companies House n° **02536231**
@@ -36,3 +38,15 @@ leer con cuidado la nota de partes relacionadas del PDF.
   no en el ejercicio cargado — si se carga 2023-24 en el futuro, ESE es el ejercicio donde aplica
   la pregunta de categorización. "Cost of sales" sin desglose propio de wages, ver
   `Admin/dudas-por-club.md`.
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/Chelsea/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `chelsea-fc-holdings-group-accounts-2024-25.pdf`
+- `chelsea-fc-holdings-group-accounts-2023-24.pdf`
+- `chelsea-fc-holdings-group-accounts-2022-23.pdf`
+- `chelsea-fc-holdings-group-accounts-2021-22.pdf`
+- `chelsea-fc-holdings-group-accounts-2020-21.pdf`
+<!-- /ing-sourcing -->

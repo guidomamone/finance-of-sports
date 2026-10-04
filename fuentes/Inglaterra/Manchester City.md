@@ -1,5 +1,7 @@
 # Manchester City
 
+**Ángulos**: regulador/país (Companies House): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Premier League (Inglaterra, 1ª división)
 - **Entidad legal**: Manchester City Football Club Limited — Companies House n° **00040946**
@@ -64,3 +66,15 @@ coinciden), verificado 2026-09-22. Ojo: el infobox de Wikipedia en inglés no ti
 color de marca estable, solo el color de la camiseta de la temporada vigente vía plantilla de kit
 (hoy `#98C6EB`, más claro, cambia cada temporada con el diseño de Puma) — se usó el hex estable de
 los agregadores de color, no el de la camiseta de esta temporada.
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/Manchester City/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `mancity-full-accounts-2022-23.pdf`
+- `mancity-full-accounts-2021-22.pdf`
+- `mancity-full-accounts-2020-21.pdf`
+- `manchester-city-full-accounts-2024-25.pdf`
+- `manchester-city-full-accounts-2023-24.pdf`
+<!-- /ing-sourcing -->

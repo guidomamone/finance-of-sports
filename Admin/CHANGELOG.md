@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Sourcing Inglaterra, 2026-10-03 (sin número de versión: asignarlo al mergear a main)
+
+- Todos los clubes ingleses con carpeta tienen ≥5 ejercicios en disco (PDF/HTM en `Clubes/Inglaterra/`, sin
+  trackear): 19 de Premier, rugby, F1 y cricket que ya existían, + Manchester United con 6 20-F de la SEC
+  (2020/21-2025/26) + ~57 clubes nuevos (Championship, League One/Two, 11 condados de cricket, Saracens).
+  Sin cargar al sitio: falta transcribir (OCR) y el pipeline de carga.
+- Tools nuevas: `tools/companies-house-fetch.mjs` (lista/busca/baja, `--include-small`) y
+  `tools/fca-mutuals-fetch.mjs`. Aprendizajes en `fuentes/Inglaterra/_notas-generales.md` sección 6.
+- Una nota `fuentes/Inglaterra/<Club>.md` por club con bloque `ing-sourcing` y línea `**Ángulos**`.
+
 ## Sourcing Italia, 2026-10-03 (fútbol; sin número de versión, para no chocar con otras sesiones)
 
 - Fútbol: **+45 ejercicios en disco** (PDFs en `Clubes/Italia/`, no trackeados). Lazio +18 (serie completa 2006/07-2024/25: CMS viejo vía Wayback y la API del widget de documentos del sitio), Torino +8 (dic 2018-2025: la sección `torinofc.it/relazioni_e_bilanci` SÍ existía, la nota del 2026-09-17 era incorrecta), Hellas Verona +4, Bologna +4, Cremonese +2, Fiorentina +3 (reconstruidos desde las imágenes del lector público de Issuu, sin capa de texto), Monza +3 (2022-2024), Sampdoria +3 (2018, 2019, 2021). Ya tienen 5 o más: Lazio, Torino, Verona, Bologna, Fiorentina.

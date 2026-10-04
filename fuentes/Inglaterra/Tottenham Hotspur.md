@@ -1,5 +1,7 @@
 # Tottenham Hotspur
 
+**Ángulos**: regulador/país (Companies House): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Premier League (Inglaterra, 1ª división)
 - **Entidad legal**: Tottenham Hotspur Limited — Companies House n° **01706358**
@@ -64,3 +66,15 @@ club") — no son solo del primer equipo masculino.
   `fiscalYearStart`, `brandColor`), así que hoy no aparece seleccionable en el dropdown del sitio
   aunque sus datos ya estén cargados y verificados. `data/club-leagues/gb.js` ya tenía la fila de
   Premier League para `tottenham-gb` (2024/2025) desde antes de esta sesión.
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/Tottenham Hotspur/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `tottenham-hotspur-group-accounts-2024-25.pdf`
+- `tottenham-hotspur-group-accounts-2023-24.pdf`
+- `tottenham-group-accounts-2022-23.pdf`
+- `tottenham-group-accounts-2021-22.pdf`
+- `tottenham-group-accounts-2020-21.pdf`
+<!-- /ing-sourcing -->

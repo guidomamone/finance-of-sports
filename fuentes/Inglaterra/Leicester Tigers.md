@@ -1,5 +1,7 @@
 # Leicester Tigers
 
+**Ángulos**: regulador/país (Companies House): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Deporte**: Rugby union
 - **Liga / competencia**: Premiership Rugby (Inglaterra, 1ª división) + European Champions Cup
 - **Entidad legal**: Leicester Football Club plc — Companies House n° **03459344**
@@ -26,3 +28,15 @@ CLUB PLC`. No es un formulario seco: el documento arranca con memoria narrativa 
 técnico, o sea que tiene contenido aprovechable además de los números.
 
 - Último chequeo: 2026-09-13.
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/Leicester Tigers/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `leicester-tigers-group-accounts-2024-25.pdf`
+- `leicester-tigers-group-accounts-2023-24.pdf`
+- `leicester-group-accounts-2022-23.pdf`
+- `leicester-group-accounts-2021-22.pdf`
+- `leicester-group-accounts-2020-21.pdf`
+<!-- /ing-sourcing -->

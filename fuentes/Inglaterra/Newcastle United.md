@@ -1,5 +1,7 @@
 # Newcastle United
 
+**Ángulos**: regulador/país (Companies House): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Premier League (Inglaterra, 1ª división)
 - **Entidad legal**: Newcastle United Limited — Companies House n° **02529667**
@@ -29,3 +31,15 @@ Company information`.
   del estadio a una sociedad hermana, PZ Holdings Ltd) — la valuación del sale-and-leaseback está
   sujeta a revisión de la Premier League y podría ajustarse retroactivamente (ver
   `Admin/dudas-por-club.md`).
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/Newcastle United/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `newcastle-united-group-accounts-2024-25.pdf`
+- `newcastle-group-accounts-2023-24.pdf`
+- `newcastle-group-accounts-2022-23.pdf`
+- `newcastle-group-accounts-2021-22.pdf`
+- `newcastle-group-accounts-2020-21.pdf`
+<!-- /ing-sourcing -->

@@ -1,5 +1,7 @@
 # Aston Villa
 
+**Ángulos**: regulador/país (Companies House): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Premier League (Inglaterra, 1ª división)
 - **Entidad legal**: Aston Villa Football Club Limited — Companies House n° **03375789**
@@ -30,3 +32,15 @@ W R Edens...`.
   (`lump_football_operations_expense`), ver duda en `Admin/dudas-por-club.md`. El ejercicio
   anterior (comparativo del mismo documento) es un período de 13 meses, no comparable, no se
   cargó.
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/Aston Villa/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `astonvilla-full-accounts-2023-24.pdf`
+- `astonvilla-full-accounts-2022-23.pdf`
+- `astonvilla-full-accounts-2021-22.pdf`
+- `astonvilla-full-accounts-2020-21.pdf`
+- `aston-villa-full-accounts-2024-25.pdf`
+<!-- /ing-sourcing -->

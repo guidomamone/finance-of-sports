@@ -1,5 +1,7 @@
 # Northampton Saints
 
+**Ángulos**: regulador/país (Companies House): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Deporte**: Rugby union
 - **Liga / competencia**: Premiership Rugby (Inglaterra, 1ª división) + European Champions Cup
 - **Entidad legal**: Northampton Saints plc — Companies House n° **04064363**
@@ -28,3 +30,15 @@ sociedad de dueño único. Eso explica el nivel de detalle del documento y hace 
 tenga una lectura distinta a la de un club-asociación argentino.
 
 - Último chequeo: 2026-09-13.
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/Northampton Saints/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `northampton-saints-group-accounts-2024-25.pdf`
+- `northampton-saints-group-accounts-2023-24.pdf`
+- `northampton-group-accounts-2022-23.pdf`
+- `northampton-group-accounts-2021-22.pdf`
+- `northampton-group-accounts-2020-21.pdf`
+<!-- /ing-sourcing -->

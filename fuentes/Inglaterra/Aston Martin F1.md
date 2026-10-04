@@ -1,5 +1,7 @@
 # Aston Martin F1
 
+**Ángulos**: regulador/país (Companies House): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Deporte**: Automovilismo — Fórmula 1
 - **Liga / competencia**: Campeonato Mundial de Fórmula 1 (FIA)
 - **Entidad legal**: AMR GP Limited (ex Racing Point UK) — Companies House n° **11496673**
@@ -36,3 +38,15 @@ Keynes (Inglaterra). Cómo tratar eso en el sitio (¿país = registro societario
 está anotado como duda abierta en `dudas-por-club.md` — no se asumió un criterio.
 
 - Último chequeo: 2026-09-13.
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/Aston Martin F1/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `amr-gp-full-accounts-2025.pdf`
+- `amr-gp-full-accounts-2024.pdf`
+- `amr-gp-full-accounts-2023.pdf`
+- `amr-gp-full-accounts-2022.pdf`
+- `amr-gp-full-accounts-2021.pdf`
+<!-- /ing-sourcing -->

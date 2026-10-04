@@ -1,5 +1,7 @@
 # AFC Bournemouth
 
+**Ángulos**: regulador/país (Companies House): agotado hasta 5 ejercicios — descarga automatizada con `tools/companies-house-fetch.mjs` · sitio oficial: no intentado (no hace falta, el registro cubre) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Premier League (Inglaterra, 1ª división)
 - **Entidad legal**: AFC Bournemouth Limited — Companies House n° **06632170**
@@ -26,3 +28,15 @@ Report`, `Directors' Report`). Entidad confirmada, no asumida.
 - Último chequeo: 2026-09-16.
 - **CARGADO al sitio (2026-09-25)**: ejercicios 2023-24 y 2024-25, `data/bournemouth-gb-data.js`
   (clubId `bournemouth-gb`). Tie-out exacto. Premier League los 2 ejercicios (12° y 9° puesto).
+
+<!-- ing-sourcing -->
+## Ejercicios en disco (sesión 2026-10-03, serie de 5)
+
+Todos en `Clubes/Inglaterra/AFC Bournemouth/` (los PDF no se trackean; son escaneos, hay que transcribirlos con OCR antes de cargar).
+
+- `bournemouth-full-accounts-2024-25.pdf`
+- `bournemouth-full-accounts-2023-24.pdf`
+- `bournemouth-full-accounts-2022-23.pdf`
+- `bournemouth-full-accounts-2021-22.pdf`
+- `bournemouth-full-accounts-2020-21.pdf`
+<!-- /ing-sourcing -->
