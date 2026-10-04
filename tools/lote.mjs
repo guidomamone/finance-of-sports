@@ -5,7 +5,7 @@
 // POR QUÉ (Versión 324; pedido de Guido el 2026-10-01: "la idea es hacer 5 PDFs juntos e ir refinando y viendo dónde se necesita cola humana;
 // vos me podés decir 'revisar tal cosa en el PDF y tal otra en el md' y yo abro el PDF por mi cuenta o la transcripción; arrancar por los
 // clubes para los cuales ya tenemos transcripción pero no están cargados"). El proceso entero, con riesgos y mitigaciones etapa por etapa,
-// está en Admin/HANDOFF-pipeline.md, "El proceso nuevo".
+// está en Admin/PIPELINE.md.
 //
 // LAS ETAPAS QUE CORRE (las 1 conseguir y 2 transcribir ya están hechas para los documentos del lote: se eligen PDFs con .md):
 //   3  localizar.mjs        qué bloques son el estado de resultados y sus notas                      IA, ~US$ 0,05

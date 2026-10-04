@@ -3,7 +3,7 @@
 // tools/verificar.mjs — ETAPA 6 del proceso nuevo: ¿lo que extrajo extraer.mjs es el estado de resultados correcto, completo y con los
 // números del papel? Script determinista, GRATIS, sin IA (un LLM no sirve para verificar aritmética: FinVerBench, arXiv 2605.29586).
 //
-// POR QUÉ (Versión 324; Admin/HANDOFF-pipeline.md, "El proceso nuevo", etapa 6). Es la red que ataja los errores de las etapas anteriores
+// POR QUÉ (Versión 324; Admin/PIPELINE.md, etapa 6). Es la red que ataja los errores de las etapas anteriores
 // (localizar eligió la tabla equivocada, extraer puso una fila del lado equivocado, Mistral inventó un número) sin confiar en ninguna IA.
 //
 // LOS CHEQUEOS, en orden (cada uno queda en `chequeos` con ok / detalle):

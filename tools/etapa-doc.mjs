@@ -4,7 +4,7 @@
 //
 // POR QUÉ (Versiones 447-448, pedido de Guido el 2026-10-04: "que marquen en qué etapa o escalón está"). La usan los DOS que muestran estados,
 // para que nunca digan cosas distintas: tools/inventario-transcripciones.mjs (el resumen "Por estado") y tools/estado.mjs (el tablero).
-// Las etapas son las de Admin/HANDOFF-pipeline.md, "El proceso nuevo": 1 conseguir, 2 transcribir, 3 localizar, 4 validar, 5 extraer,
+// Las etapas son las de Admin/PIPELINE.md: 1 conseguir, 2 transcribir, 3 localizar, 4 validar, 5 extraer,
 // 6 verificar, 7 categorizar, 8 cargar, 9 en el sitio. "listo" en el registro solo dice que la transcripción terminó (etapa 2); hasta dónde
 // llegó el documento se ve en Generados/.
 // ============================================================================

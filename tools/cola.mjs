@@ -3,7 +3,7 @@
 // tools/cola.mjs — LA COLA DE REVISIÓN HUMANA del proceso nuevo: todo lo que una etapa no puede resolver sola va acá, con instrucciones para
 // que Guido lo mire en el PDF o en la transcripción, y su respuesta se guarda y se REUSA. Gratis.
 //
-// POR QUÉ (Versión 324, diseño acordado con Guido el 2026-10-01; ver Admin/HANDOFF-pipeline.md, "El proceso nuevo"). Hasta acá, lo que no
+// POR QUÉ (Versión 324, diseño acordado con Guido el 2026-10-01; ver Admin/PIPELINE.md). Hasta acá, lo que no
 // cerraba quedaba "frenado" y nadie lo miraba hasta que una sesión lo encontraba. Los que hacen esto a escala (Moody's CreditLens, nCino,
 // Ocrolus) tienen la revisión humana como una ETAPA NORMAL, ruteada por confianza, y las correcciones vuelven al sistema. Guido lo pidió así:
 // "vos me podés decir 'revisar tal cosa en el PDF y tal otra en el md' y yo abro el PDF por mi cuenta o la transcripción".

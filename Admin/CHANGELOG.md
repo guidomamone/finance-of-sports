@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 469 — El proceso del pipeline y sus hallazgos, del HANDOFF a archivos propios (2026-10-04)
+
+- `Admin/PIPELINE.md` (nuevo): "El proceso nuevo", "Caja y deuda" y las decisiones tomadas por Guido, movidos del HANDOFF sin cambiar el texto. Se actualiza en la misma sesión en que cambia una tool, sin pedir ok para el texto (decisión de Guido).
+- `Admin/HALLAZGOS-pipeline.md` (nuevo): "Lo que falló en los tests o no entró", movido igual.
+- HANDOFF: en cada lugar movido queda una línea que dice a dónde fue; siguen ahí las reglas de trabajo, los lotes de prueba, los pendientes y el arranque (paso 1 de la mudanza del HANDOFF al skill de onboarding).
+- 15 comentarios y mensajes de 12 tools apuntan ahora a `Admin/PIPELINE.md` en vez del HANDOFF.
+
 ## Versión 468 — Pendientes de caja y deuda, del HANDOFF a la auditoría (2026-10-04)
 
 - `auditorias/2026-10-04-clubes-pipeline.md`, sección "Caja y deuda": los pendientes que estaban en el HANDOFF más 3 casos nuevos (4 propuestas sin vecino para la compuerta en Novorizontino y Fortaleza; deuda de Fortaleza 2021 cargada solo con el corto plazo; caja de Fortaleza 2019-2022 sin propuesta).

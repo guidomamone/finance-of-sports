@@ -3,7 +3,7 @@
 // tools/localizar.mjs — ETAPA 3 del proceso nuevo: qué BLOQUES de la transcripción son el estado de resultados del ejercicio y qué bloques
 // son las notas que desglosan sus ingresos y sus gastos. IA (Claude Opus 5.5, esfuerzo bajo), ~US$ 0,02 por documento.
 //
-// POR QUÉ (Versión 324; proceso completo en Admin/HANDOFF-pipeline.md, "El proceso nuevo"): la selección por palabras clave
+// POR QUÉ (Versión 324; proceso completo en Admin/PIPELINE.md): la selección por palabras clave
 // (proponer-carga.mjs seleccionarFilas) reproduce los ingresos de producción en 7-11% de los años ya cargados; el test por página
 // (localizar-extraer.mjs) llegó a 42% de ingresos y 69% de gastos, pero Guido descartó elegir páginas enteras ("el estado de resultados puede
 // arrancar por la mitad de la página"). Acá la IA ve el ÍNDICE DE BLOQUES (tools/indice-bloques.mjs: una ficha por tabla o bloque de texto con
@@ -24,7 +24,7 @@
 // segmento sirve cuando la columna de un segmento abre un renglón que nadie más abre. Caso real, UC 2021-2025: "Ingresos Comerciales" (nota 19)
 // solo se abre en la nota de segmentos, columna "Comerciales" (socios, escuelas de fútbol, publicidad, tienda, merchandising); 2022-2024 se
 // cargaron así. Los cuadros por jugador no se eligen: abrirían "Préstamo de jugadores" en nombres propios.
-// QUÉ PUEDE SALIR MAL (riesgos de la etapa 3 en el HANDOFF): elegir el balance, un presupuesto, la conciliación del impuesto o el otro perímetro;
+// QUÉ PUEDE SALIR MAL (riesgos de la etapa 3 en Admin/PIPELINE.md): elegir el balance, un presupuesto, la conciliación del impuesto o el otro perímetro;
 // quedarse con la mitad de un estado partido. Todo eso lo frena verificar.mjs (no cierra con totales, resultado ni el año anterior cargado).
 //
 // USO:

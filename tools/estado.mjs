@@ -41,7 +41,7 @@ if (args.includes('--actualizar') || !existsSync(regPath)) {
 if (args.includes('--logica')) {
   const pedido = flagVal('--logica'); const lista = pedido && !pedido.startsWith('--') ? GRUPOS.filter((g) => g.id === pedido) : GRUPOS;
   if (!lista.length) { console.error(`Grupo desconocido: ${pedido}. Grupos: ${GRUPOS.map((g) => g.id).join(', ')}`); process.exit(1); }
-  // Las etapas del proceso nuevo (Admin/HANDOFF-pipeline.md); hasta la Versión 466 eran las del viejo (2-6, con "4. Preparar").
+  // Las etapas del proceso nuevo (Admin/PIPELINE.md); hasta la Versión 466 eran las del viejo (2-6, con "4. Preparar").
   const ETAPA = { 2: '2. Transcribir', 3: '3. Localizar (qué bloques, escala, perímetro)', 4: '4. Validar', 5: '5. Extraer', 6: '6. Verificar', 7: '7. Categorizar', 8: '8. Cargar' };
   for (const g of lista) {
     console.log(`\n${g.corto} ${g.nombre.toUpperCase()}  (${g.paises.join(', ') || 'el resto'})\n  ${g.marco}`);
@@ -57,7 +57,7 @@ if (args.includes('--logica')) {
 const R = readFileSync(regPath, 'utf8').trim().split('\n').map((l) => JSON.parse(l)).filter((e) => !dir || e.pdf.startsWith(dir.replace(/\/$/, '') + '/'));
 const edad = Math.round((Date.now() - statSync(regPath).mtimeMs) / 60000);
 
-// ETAPAS DEL PROCESO NUEVO, EN ORDEN (Versión 448, aprobado por Guido el 2026-10-04: el tablero con las etapas de Admin/HANDOFF-pipeline.md,
+// ETAPAS DEL PROCESO NUEVO, EN ORDEN (Versión 448, aprobado por Guido el 2026-10-04: el tablero con las etapas de Admin/PIPELINE.md,
 // "El proceso nuevo"; hasta acá usaba las secciones del proceso viejo, "4. Preparar lista de rubros", y contaba distinto que el inventario).
 // En qué etapa está cada documento lo decide tools/etapa-doc.mjs, la MISMA función que usa el resumen del inventario. Cada fila: clave de
 // etapa-doc, qué significa, qué le falta, con qué se avanza, US$ por PDF (número, o función del PDF: localizar + extraer estimado, V446).
@@ -128,7 +128,7 @@ const porGrupo = {}; for (const e of R) { const k = clave(e); const g = grupoDe(
 const desglose = (m) => GRUPOS.filter((g) => m && m[g.id]).map((g) => `${g.corto} ${m[g.id]}`).join(' · ');
 
 console.log(`\nINVENTARIO${dir ? ` (${dir})` : ''}: ${R.length} PDFs · registro de hace ${edad} min${edad > 60 ? ' (node tools/estado.mjs --actualizar para rehacerlo)' : ''}`);
-console.log('(Si hay un proceso del pipeline corriendo, esto es una foto a mitad de camino. Etapas: Admin/HANDOFF-pipeline.md, "El proceso nuevo".)');
+console.log('(Si hay un proceso del pipeline corriendo, esto es una foto a mitad de camino. Etapas: Admin/PIPELINE.md.)');
 let total = 0;
 const w = Math.max(...ETAPAS.flatMap(([, f]) => f.map((x) => x[1].length)));
 const conocidas = new Set(ETAPAS.flatMap(([, f]) => f.map((x) => x[0])));

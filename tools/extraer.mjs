@@ -3,7 +3,7 @@
 // tools/extraer.mjs — ETAPA 5 del proceso nuevo: las FILAS de los bloques que eligió localizar.mjs, tal cual están impresas. IA (Claude Opus
 // 5.5, esfuerzo bajo), ~US$ 0,05-0,10 por documento.
 //
-// POR QUÉ (Versión 324; proceso en Admin/HANDOFF-pipeline.md, "El proceso nuevo"). La IA COPIA Y ETIQUETA; no suma, no convierte, no
+// POR QUÉ (Versión 324; proceso en Admin/PIPELINE.md). La IA COPIA Y ETIQUETA; no suma, no convierte, no
 // categoriza (eso lo hace un script en verificar.mjs: un LLM no sirve para verificar aritmética, FinVerBench, arXiv 2605.29586; y la categoría
 // es la etapa 7). Desgloses anidados y cuadros por segmento (Versión 335): ver la regla de detalla_a en SYSTEM. Lecciones del test por página (localizar-extraer.mjs) ya incorporadas:
 //   - ESCALA POR BLOQUE, no por documento: en 1. FC Köln la nota de ingresos está en miles y el estado en euros con céntimos; con una escala

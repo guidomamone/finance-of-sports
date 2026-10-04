@@ -131,7 +131,7 @@ const COMPARAR = flagVal('--comparar');
 const JSON_OUT = ARGS.includes('--json');
 const MAX_SIN_CAT = flagVal('--max-sin-categoria') !== null ? Number(flagVal('--max-sin-categoria')) : 0.05;
 const UMBRAL_CLAUDE = flagVal('--umbral-claude') !== null ? Number(flagVal('--umbral-claude')) : 0.8;
-// --desde-verificacion (Versión 324, proceso nuevo; Admin/HANDOFF-pipeline.md "El proceso nuevo"): las filas salen de
+// --desde-verificacion (Versión 324, proceso nuevo; Admin/PIPELINE.md): las filas salen de
 // Generados/.../<doc>.verificacion.json (localizar -> validar -> extraer -> verificar), no de seleccionarFilas() (selección por palabras).
 // Solo se usa si la verificación quedó en estado 'ok' (sin casos pendientes en la cola humana). SIN PROBAR DE PUNTA A PUNTA todavía: la
 // primera corrida real es el primer lote de 5 documentos (HANDOFF).

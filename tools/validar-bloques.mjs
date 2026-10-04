@@ -3,7 +3,7 @@
 // tools/validar-bloques.mjs — ETAPA 4 del proceso nuevo: cada número de los bloques que eligió localizar.mjs se confirma contra una FUENTE
 // INDEPENDIENTE DE MISTRAL. Gratis en PDFs digitales; ~US$ 0,003 por página en escaneos (Gemini).
 //
-// POR QUÉ (Versión 324; Admin/HANDOFF-pipeline.md, "El proceso nuevo", etapa 4). Mistral puede INVENTAR un número en un escaneo con la misma
+// POR QUÉ (Versión 324; Admin/PIPELINE.md, etapa 4). Mistral puede INVENTAR un número en un escaneo con la misma
 // seguridad que uno bien leído (CLAUDE.md, test de costo de transcripción). El chequeo "el importe está tal cual en la página" del test
 // localizar-extraer compara contra la TRANSCRIPCIÓN, así que un número inventado por Mistral pasaba igual (lo vio Guido el 2026-10-01). Y hoy
 // la etapa 3 del pipeline valida el documento ENTERO (~US$ 140 pendientes) cuando solo importan las tablas que se cargan. Acá se valida solo

@@ -258,7 +258,7 @@ console.log(`\n${scopeE.length} PDFs (${scopeE.filter((e) => e.tieneMd).length} 
 // POR ETAPA (Versión 447, pedido de Guido el 2026-10-04: "que marquen en qué etapa o escalón está"): cada estado del registro con la etapa
 // y el escalón del proceso nuevo; los "listo" se abren según lo que dejaron las etapas 3-8 en Generados/. La lógica vive en
 // tools/etapa-doc.mjs (Versión 448), la misma que usa el tablero (tools/estado.mjs).
-console.log('Por estado (con la etapa y el escalón del proceso, Admin/HANDOFF-pipeline.md):');
+console.log('Por estado (con la etapa y el escalón del proceso, Admin/PIPELINE.md):');
 for (const [k, v] of Object.entries(tally(scopeE, (e) => e.estado)).sort((a, b) => b[1] - a[1])) {
   if (k !== 'listo') { const nd = scopeE.filter((e) => e.estado === k && !e.cargado && DESCARTADOS.has(e.pdf)).length; console.log(`  ${String(v).padStart(5)}  ${k.padEnd(22)} ${ETAPAS_DOC[claveDeEstado(k)]?.[1] || ''}${nd ? ` (${nd} descartados como fuente)` : ''}`); continue; }
   console.log(`  ${String(v).padStart(5)}  ${'listo'.padEnd(22)} Etapa 2 terminada (transcripción validada); de esos:`);

@@ -11,7 +11,7 @@
 // local, en miles) y separados de Argentina (normas propias, inflación, Anexos); Bélgica y Países Bajos juntos (esquemas de cuentas anuales
 // con formato fijo). Un país sin grupo cae en 'otros'. Si un país se porta distinto que su grupo, se lo separa acá (un solo lugar).
 //
-// LA LÓGICA DE CADA GRUPO (`logica`, por etapa del proceso nuevo de Admin/HANDOFF-pipeline.md: 2 transcribir, 3 localizar, 4 validar,
+// LA LÓGICA DE CADA GRUPO (`logica`, por etapa del proceso nuevo de Admin/PIPELINE.md: 2 transcribir, 3 localizar, 4 validar,
 // 5 extraer, 6 verificar, 7 categorizar, 8 cargar) es CONOCIMIENTO MEDIDO, cada punto con el documento real donde se vio. Regla al editarla: no escribir nada que no se haya visto
 // en un documento (pedido de Guido: "hacés todo muy teórico"); lo que no se sabe todavía se deja como "nada propio conocido". Por ahora es
 // documentación que muestra `node tools/estado.mjs --logica`; las tools de cada etapa todavía tienen reglas generales. La idea (pendiente,
